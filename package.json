@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
+    "knockout": "^3.4.2",
     "rxjs": "~6.4.0",
     "survey-angular": "^1.1.1",
     "tslib": "^1.9.0",

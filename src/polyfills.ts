@@ -61,3 +61,6 @@ import 'zone.js/dist/zone';  // Included with Angular CLI.
 /***************************************************************************************************
  * APPLICATION IMPORTS
  */
+
+// Needed to fix https://github.com/surveyjs/surveyjs_angular_cli/issues/14
+import * as ko from 'knockout'; window['knockout'] = ko;
