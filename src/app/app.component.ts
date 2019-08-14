@@ -1,25 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Model, SurveyNG, StylesManager } from 'survey-angular'; 
-
-const surveyJSON = {
-    title: "Tell us, what technologies do you use?", pages: [
-        {
-            name: "page1", questions: [
-                { type: "radiogroup", choices: ["Yes", "No"], isRequired: true, name: "frameworkUsing", title: "Do you use any front-end framework like Bootstrap?" },
-                { type: "checkbox", choices: ["Bootstrap", "Foundation"], hasOther: true, isRequired: true, name: "framework", title: "What front-end framework do you use?", visibleIf: "{frameworkUsing} = 'Yes'" }
-            ]
-        },
-        {
-            name: "page2", questions: [
-                { type: "radiogroup", choices: ["Yes", "No"], isRequired: true, name: "mvvmUsing", title: "Do you use any MVVM framework?" },
-                { type: "checkbox", choices: ["AngularJS", "KnockoutJS", "React"], hasOther: true, isRequired: true, name: "mvvm", title: "What MVVM framework do you use?", visibleIf: "{mvvmUsing} = 'Yes'" }]
-        },
-        {
-            name: "page3", questions: [
-                { type: "comment", name: "about", title: "Please tell us about your main requirements for Survey library" }]
-        }
-    ]
-};
+import { Model, SurveyNG, StylesManager } from 'survey-angular';
+import { SurveySpecificationService } from "src/app/survey/survey-specification.service";
+import { ResponseConverterService } from "src/app/survey/response-converter.service";
+import { LimesurveyQuestionsMapping } from "./survey/limesurvey-questions-mapping";
 
 @Component( {
     selector: 'app-root',
@@ -27,16 +10,33 @@ const surveyJSON = {
     styleUrls: ['./app.component.scss']
 } )
 export class AppComponent implements OnInit {
+    
+    constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService){
+    }
 
     ngOnInit() {
-        StylesManager.applyTheme("bootstrap");
-        var survey = new Model( surveyJSON );
-        survey.onComplete.add( this.sendDataToServer );
-        SurveyNG.render("surveyElement", {model:survey});
+        let locale = 'en';
+        
+        StylesManager.applyTheme( "bootstrap" );
+        
+        var survey = new Model(this.surveySpecification.getLocalizedModel(locale) );
+        survey.onComplete.add( this.processResponse );
+
+        SurveyNG.render( "surveyElement", {
+            model: survey
+        } );
     }
-    
-    sendDataToServer(survey) {
-        var resultAsString = JSON.stringify(survey.data);
-        alert(resultAsString); //send Ajax request to your web server.
-      }
+
+    private processResponse(response) {
+        let responseData = response.data;
+        
+        // Detect survey region
+        let surveyRegion = null;
+        
+        // Convert to Limesurvey response
+        let limesurveyResponse = this.responseConverter.toLimesurveyResponse(surveyRegion);
+        
+        console.log("original", response.data);
+        console.log("limesurvey", limesurveyResponse);
+    }
 }
