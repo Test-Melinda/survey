@@ -2,14 +2,16 @@
 export class LimesurveyQuestionsMapping {
     
     constructor(public surveyId: number, protected mapping = new Map<string, {
-        limesurveyId: string,
+        gid: number,
+        qid: number,
         answers: Map<string, string>
     }>()){
     }
     
     public setMapping(questionCode: string, gid: number, qid: number, answers: Map<string, string> = new Map()){
         this.mapping.set(questionCode, {
-            limesurveyId: (this.surveyId + "X" + gid + "X" + qid),
+            gid: gid,
+            qid: qid,
             answers: answers
         });
     }
@@ -28,7 +30,7 @@ export class LimesurveyQuestionsMapping {
     public mapQuestion(questionCode: string): string {
         let questionMapping = this.mapping.get(questionCode);
         if (questionMapping){
-            return questionMapping.limesurveyId;
+            return (this.surveyId + "X" + questionMapping.gid + "X" + questionMapping.qid);
         }
         return null;
     }
