@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         let surveyRegion = null;
         
         // Convert to Limesurvey response
-        let limesurveyResponse = this.responseConverter.toLimesurveyResponse(surveyRegion);
+        let limesurveyResponse = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
         
         console.log("original", response.data);
         console.log("limesurvey", limesurveyResponse);

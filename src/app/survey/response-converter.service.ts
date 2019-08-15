@@ -9,7 +9,7 @@ export class ResponseConverterService {
 
   constructor(public limesurveyMappingProvider: LimesurveyMappingProviderService) { }
   
-  public toLimesurveyResponse(region: string): any {
+  public toLimesurveyResponse(response: any, region: string): any {
       // Get the survey questions mappings
       let mapping = this.limesurveyMappingProvider.getMapping(region);
       
