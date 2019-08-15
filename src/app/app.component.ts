@@ -20,7 +20,9 @@ export class AppComponent implements OnInit {
         StylesManager.applyTheme( "bootstrap" );
         
         var survey = new Model(this.surveySpecification.getLocalizedModel(locale) );
-        survey.onComplete.add( this.processResponse );
+        survey.onComplete.add((response) => {
+            this.processResponse(response);
+        });
 
         SurveyNG.render( "surveyElement", {
             model: survey
