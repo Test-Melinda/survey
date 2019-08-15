@@ -25,7 +25,7 @@ const mappings: {
                 ["ch", "a7"]
             ])
         }],
-        ["FS_regione_de", {
+        ["FS_region_de", {
             gid: 1,
             qid: 9,
             answers: new Map([
