@@ -11,9 +11,10 @@ const mappings: {
     slo?: LimesurveyQuestionsMapping,
     ch?: LimesurveyQuestionsMapping
 } = {
-    default: new LimesurveyQuestionsMapping(12345, new Map([
+    default: new LimesurveyQuestionsMapping(123248, new Map([
         ["FS_residence", {
-            limesurveyId: "Q1",
+            gid: 1,
+            qid: 1,
             answers: new Map([
                 ["at", "a1"],
                 ["fr", "a2"],
@@ -25,7 +26,8 @@ const mappings: {
             ])
         }],
         ["FS_regione_de", {
-            limesurveyId: "Q2",
+            gid: 1,
+            qid: 9,
             answers: new Map([
                 ["bayern", "a1"]
             ])
@@ -40,7 +42,7 @@ export class LimesurveyMappingProviderService {
 
   constructor() { }
   
-  public getMapping(region: string){
+  public getMapping(region: string): LimesurveyQuestionsMapping {
       if (region in mappings){
           return mappings[region];
       }

@@ -13,7 +13,10 @@ export class ResponseConverterService {
       // Get the survey questions mappings
       let mapping = this.limesurveyMappingProvider.getMapping(region);
       
-      // TODO
+      // Convert each response
+      for (let rCode in response){
+          let limesurveyQuestionCode = mapping;
+      }
       
       return null;
   }
