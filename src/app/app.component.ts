@@ -4,6 +4,7 @@ import { SurveySpecificationService } from "src/app/survey/survey-specification.
 import { ResponseConverterService } from "src/app/survey/response-converter.service";
 import { LimesurveyQuestionsMapping } from "./survey/limesurvey-questions-mapping";
 import { LimesurveyResponseBuilder } from "./limesurvey/limesurvey-response-builder";
+import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src/app/limesurvey/limesurvey-client-factory.service";
 
 @Component( {
     selector: 'app-root',
@@ -12,7 +13,7 @@ import { LimesurveyResponseBuilder } from "./limesurvey/limesurvey-response-buil
 } )
 export class AppComponent implements OnInit {
     
-    constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService){
+    constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService){
     }
 
     ngOnInit() {
@@ -51,5 +52,15 @@ export class AppComponent implements OnInit {
         let limesurveyResponse = builder.build();
         
         console.log("full limesurvey response", limesurveyResponse);
+        
+        // Create the client to communicate with Limesurvey
+        let limesurveyCredentials = new LimesurveyClientCredentials();
+        limesurveyCredentials.url = "http://localhost/limesurvey/index.php/admin/remotecontrol";
+        limesurveyCredentials.username = "admin";
+        limesurveyCredentials.password = "admin";
+        limesurveyCredentials.surveyId = 123248;
+        this.limesurveyClientFactory.createClient(limesurveyCredentials).subscribe((limesurveyClient) => {
+            console.log("limesurvey client", limesurveyClient);
+        });
     }
 }
