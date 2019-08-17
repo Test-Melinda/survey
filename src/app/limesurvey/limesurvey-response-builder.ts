@@ -1,3 +1,4 @@
+import * as moment from 'moment';
 
 export class LimesurveyResponseBuilder {
     
@@ -45,11 +46,11 @@ export class LimesurveyResponseBuilder {
         let built: any = {};
         
         if (this.datestamp){
-            built.datestamp = this.datestamp.toISOString(); // TODO change to correct format
+            built.datestamp = moment(this.datestamp).format('Y-MM-DD HH:mm:ss');
         }
         
         if (this.startDate){
-            built.startdate = this.startDate.toISOString(); // TODO change to correct format
+            built.startdate = moment(this.startDate).format('Y-MM-DD HH:mm:ss');
         }
         
         if (this.startLanguage){
