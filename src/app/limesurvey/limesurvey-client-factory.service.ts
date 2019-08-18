@@ -30,7 +30,7 @@ export class LimesurveyClientFactoryService {
                   observer.error(new Error("Cannot get session key: no session key in response from Limesurvey"));
               }
               else {
-                  let client = new LimesurveyClient(credentials.url, response.result);
+                  let client = new LimesurveyClient(credentials.url, response.result, this.httpClient);
                   
                   observer.next(client);
                   observer.complete();
@@ -76,14 +76,6 @@ export class LimesurveyClientCredentials {
     
     public set password(password: string){
         this._password = password;
-    }
-    
-    public get surveyId(): number {
-        return this._surveyId;
-    }
-    
-    public set surveyId(surveyId: number){
-        this._surveyId = surveyId;
     }
 
 }

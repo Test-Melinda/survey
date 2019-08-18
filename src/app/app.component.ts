@@ -58,9 +58,13 @@ export class AppComponent implements OnInit {
         limesurveyCredentials.url = "http://localhost/limesurvey/index.php/admin/remotecontrol";
         limesurveyCredentials.username = "admin";
         limesurveyCredentials.password = "admin";
-        limesurveyCredentials.surveyId = 123248;
         this.limesurveyClientFactory.createClient(limesurveyCredentials).subscribe((limesurveyClient) => {
             console.log("limesurvey client", limesurveyClient);
+            
+            // Add the survey response
+            limesurveyClient.addResponse(123248, limesurveyResponse).subscribe((responseId: number) => {
+                console.log("Limesurvey response ID", responseId);
+            });
         });
     }
 }
