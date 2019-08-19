@@ -34,7 +34,7 @@ const mappings: {
         }],
         ["CS_activities", {
             gid: 2,
-            qid: 9,
+            qid: 10,
             answers: new Map([
                 ["EQ_1", "SQ001"],
                 ["EQ_2", "SQ002"],
