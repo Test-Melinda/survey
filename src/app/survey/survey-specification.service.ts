@@ -56,6 +56,39 @@ const surveyModel = {
                     ]
                 }
             ]
+        },
+        {
+            "name": "common",
+            "elements": [
+                {
+                    "type": "checkbox",
+                    "name": "CS_activities",
+                    "title": "In [the pilot area] do you usually carry out any of the following activities?",
+                    "isRequired": true,
+                    "choices": [
+                        {
+                            "value": "EQ_1",
+                            "text": "Work/business"
+                        },
+                        {
+                            "value": "EQ_2",
+                            "text": "Study"
+                        },
+                        {
+                            "value": "EQ_3",
+                            "text": "Shopping"
+                        },
+                        {
+                            "value": "EQ_4",
+                            "text": "Leisure activities (free time)"
+                        },
+                        {
+                            "value": "EQ_5",
+                            "text": "Other"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 };

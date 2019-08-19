@@ -31,6 +31,17 @@ const mappings: {
             answers: new Map([
                 ["bayern", "a1"]
             ])
+        }],
+        ["CS_activities", {
+            gid: 2,
+            qid: 9,
+            answers: new Map([
+                ["EQ_1", "SQ001"],
+                ["EQ_2", "SQ002"],
+                ["EQ_3", "SQ003"],
+                ["EQ_4", "SQ004"],
+                ["EQ_5", "SQ005"],
+            ])
         }]
     ]))
 };
