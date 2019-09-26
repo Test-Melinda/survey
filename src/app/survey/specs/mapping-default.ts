@@ -1,34 +1,72 @@
 // Default mapping
 export const mapping = new Map([
-    ["FS_residence", {
-        gid: 1,
-        qid: 1,
+    ["QF1", {
+        gid: 3,
+        qid: 23,
         answers: new Map([
-            ["at", "a1"],
-            ["fr", "a2"],
-            ["de", "a3"],
-            ["it", "a4"],
-            ["fl", "a5"],
-            ["slo", "a6"],
-            ["ch", "a7"]
+            ["at", "A1"],
+            ["fr", "A2"],
+            ["de", "A3"],
+            ["it", "A4"],
+            ["fl", "A5"],
+            ["slo", "A6"],
+            ["ch", "A7"]
         ])
     }],
-    ["FS_region_de", {
-        gid: 1,
-        qid: 9,
-        answers: new Map([
-            ["bayern", "a1"]
-        ])
+    ["QF2FD", {
+        gid: 3,
+        qid: 24
     }],
-    ["CS_activities", {
-        gid: 2,
-        qid: 10,
-        answers: new Map([
-            ["EQ_1", "SQ001"],
-            ["EQ_2", "SQ002"],
-            ["EQ_3", "SQ003"],
-            ["EQ_4", "SQ004"],
-            ["EQ_5", "SQ005"],
-        ])
+    ["QF2AR", {
+        gid: 3,
+        qid: 25
+    }],
+    ["QF2AR2", {
+        gid: 3,
+        qid: 28
+    }],
+    ["QF2FD10", {
+        gid: 3,
+        qid: 27
+    }],
+    ["QF2FD13", {
+        gid: 3,
+        qid: 29
+    }],
+    ["QF2GB", {
+        gid: 3,
+        qid: 26
+    }],
+    ["QF2GB2", {
+        gid: 3,
+        qid: 73
+    }],
+    ["QF2GB2EB", {
+        gid: 3,
+        qid: 74
+    }],
+    ["QFSW1", {
+        gid: 3,
+        qid: 30
+    }],
+    ["QF2IT", {
+        gid: 3,
+        qid: 75
+    }],
+    ["QF2ITUTI", {
+        gid: 3,
+        qid: 76
+    }],
+    ["QF2SL", {
+        gid: 3,
+        qid: 77
+    }],
+    ["QF2SL7", {
+        gid: 3,
+        qid: 78
+    }],
+    ["QF3", {
+        gid: 3,
+        qid: 80
     }]
 ]);

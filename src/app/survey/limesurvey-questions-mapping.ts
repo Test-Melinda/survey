@@ -3,11 +3,11 @@ export class LimesurveyQuestionsMapping {
     constructor(public surveyId: number, protected mapping = new Map<string, {
         gid: number,
         qid: number,
-        answers: Map<string, string>
+        answers?: Map<string, string>
     }>()){
     }
     
-    public setMapping(questionCode: string, gid: number, qid: number, answers: Map<string, string> = new Map()){
+    public setMapping(questionCode: string, gid: number, qid: number, answers?: Map<string, string>){
         this.mapping.set(questionCode, {
             gid: gid,
             qid: qid,
@@ -21,6 +21,9 @@ export class LimesurveyQuestionsMapping {
             throw new Error("Question code unknown: " + questionCode);
         }
         
+        if (!questionMapping.answers){
+            questionMapping.answers = new Map<string, string>();
+        }
         questionMapping.answers.set(answerCode, mapping);
         
         this.mapping.set(questionCode, questionMapping);
@@ -37,7 +40,10 @@ export class LimesurveyQuestionsMapping {
     public mapAnswer(questionCode: string, answerCode: string): string {
         let questionMapping = this.mapping.get(questionCode);
         if (questionMapping){
-            return questionMapping.answers.get(answerCode);
+            let answers = questionMapping.answers;
+            if (answers){
+                return questionMapping.answers.get(answerCode);
+            }
         }
         return null;
     }

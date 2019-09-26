@@ -23,12 +23,12 @@ export class ResponseConverterService {
             let answer = response[rCode];
             if ( Array.isArray( answer ) ) {
                 for (let aCode of answer){
-                    let aMapped = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode);
+                    let aMapped = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
                     mapped[limesurveyQuestionId + aMapped] = "Y";
                 }
             }
             else {
-                mapped[limesurveyQuestionId] = this.requireLimesurveyAnswerMapping(mapping, rCode, answer);
+                mapped[limesurveyQuestionId] = this.requireLimesurveyAnswerMapping(mapping, rCode, answer, true);
             }
         }
 
@@ -43,10 +43,13 @@ export class ResponseConverterService {
         return limesurveyQuestionId;
     }
     
-    protected requireLimesurveyAnswerMapping(mapping: LimesurveyQuestionsMapping, rCode: string, aCode: string): string {
+    protected requireLimesurveyAnswerMapping(mapping: LimesurveyQuestionsMapping, rCode: string, aCode: string, defaultSelf: boolean = false): string {
         let limesurveyAnswerId = mapping.mapAnswer( rCode, aCode );
-        if ( !limesurveyAnswerId ) {
-            throw new Error( "Cannot map response to question '" + rCode + "': missing mapping for answer with code '" + aCode + "'");
+        if (limesurveyAnswerId == null) {
+            if (defaultSelf){
+                limesurveyAnswerId = aCode;
+            }
+            else throw new Error( "Cannot map response to question '" + rCode + "': missing mapping for answer with code '" + aCode + "'");
         }
         return limesurveyAnswerId;
     }
