@@ -3,7 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+    production: false,
+    limesurvey: {
+        surveys: {
+            default: 123248,
+//            at: 123248,
+//            de: 123248,
+//            fl: 123248,
+//            fr: 123248,
+//            it: 123248,
+//            slo: 123248,
+//            ch: 123248,
+        }
+    }
 };
 
 /*

@@ -1,4 +1,3 @@
-
 export class LimesurveyQuestionsMapping {
     
     constructor(public surveyId: number, protected mapping = new Map<string, {
