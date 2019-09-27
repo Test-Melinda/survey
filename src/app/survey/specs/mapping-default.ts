@@ -1,5 +1,9 @@
 // Default mapping
-export const mapping = new Map([
+export const mapping = new Map<string, {
+gid: number,
+qid: number,
+answers?: Map<string, string>
+}>([
     ["QF1", {
         gid: 3,
         qid: 23,

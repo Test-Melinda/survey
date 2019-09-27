@@ -1,5 +1,9 @@
 // Default mapping
-export const mapping = new Map([
+export const mapping = new Map<string, {
+gid: number,
+qid: number,
+answers?: Map<string, string>
+}>([
     ["QF1", {
         gid: 2269,
         qid: 44646,
@@ -68,5 +72,33 @@ export const mapping = new Map([
     ["QF3", {
         gid: 2269,
         qid: 44851
+    }],
+    ["EQ1AU", {
+        gid: 2270,
+        qid: 44654
+    }],
+    ["EQ1GE", {
+        gid: 2270,
+        qid: 44656
+    }],
+    ["EQ1FR", {
+        gid: 2270,
+        qid: 44655
+    }],
+    ["EQ1IT", {
+        gid: 2270,
+        qid: 44657
+    }],
+    ["EQ1SL", {
+        gid: 2270,
+        qid: 44658
+    }],
+    ["EQ1SW1", {
+        gid: 2270,
+        qid: 44659
+    }],
+    ["EQ1SW2", {
+        gid: 2270,
+        qid: 44660
     }]
 ]);
