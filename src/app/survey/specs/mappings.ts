@@ -12,6 +12,7 @@ mappings.set('default', mappingDefault.mapping);
 //mappings.set('at', mappingAT.mapping);
 //mappings.set('de', mappingDE.mapping);
 //mappings.set('fl', mappingFL.mapping);
+//mappings.set('fr', mappingFL.mapping);
 //mappings.set('it', mappingIT.mapping);
 //mappings.set('slo', mappingSLO.mapping);
 //mappings.set('ch', mappingCH.mapping);

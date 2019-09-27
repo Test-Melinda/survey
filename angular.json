@@ -41,6 +41,38 @@
                 {
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
+                },
+                {
+                  "replace": "src/app/survey/specs/mapping-default.ts",
+                  "with": "src/app/survey/specs/mapping-default.prod.ts"
+                },
+                {
+                  "replace": "src/app/survey/specs/mapping-at.ts",
+                  "with": "src/app/survey/specs/mapping-at.prod.ts"
+                },
+                {
+                  "replace": "src/app/survey/specs/mapping-de.ts",
+                  "with": "src/app/survey/specs/mapping-de.prod.ts"
+                },
+                {
+                  "replace": "src/app/survey/specs/mapping-fl.ts",
+                  "with": "src/app/survey/specs/mapping-fl.prod.ts"
+                },
+                {
+                  "replace": "src/app/survey/specs/mapping-fr.ts",
+                  "with": "src/app/survey/specs/mapping-fr.prod.ts"
+                },
+                {
+                  "replace": "src/app/survey/specs/mapping-it.ts",
+                  "with": "src/app/survey/specs/mapping-it.prod.ts"
+                },
+                {
+                  "replace": "src/app/survey/specs/mapping-slo.ts",
+                  "with": "src/app/survey/specs/mapping-slo.prod.ts"
+                },
+                {
+                  "replace": "src/app/survey/specs/mapping-ch.ts",
+                  "with": "src/app/survey/specs/mapping-ch.prod.ts"
                 }
               ],
               "optimization": true,
