@@ -1596,6 +1596,215 @@ export const surveyModel = {
                      "title": "Could you please specify your postal code?"
                     }
                    ]
+                  },
+                  {
+                   "name": "activities",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "EQ1AU",
+                     "visible": false,
+                     "visibleIf": "{QF1} == \"at\" or {QF1} == \"fl\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\"))",
+                     "title": "in the Vorarlberg Region do you usually carry out any of the following activities? (Multiple answers are possible)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Work/Business"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Study"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Shopping"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Leisure activities (free time)"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Other"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "EQ1GE",
+                     "visible": false,
+                     "visibleIf": "{QF1} == \"de\"",
+                     "title": "In the Landkreis Ebersberg do you usually carry out any of the following activities? (Multiple answers are possible)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Work/Business"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Study"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Shopping"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Leisure activities (free time)"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Other"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "EQ1FR",
+                     "visible": false,
+                     "visibleIf": "{QF2FD}} == \"A11\" or {QF2FD}} == \"A13\"",
+                     "title": "In the Greater Lyon or Greater Annecy do you usually carry out any of the following activities? (Multiple answers are possible)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Work/Business"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Study"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Shopping"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Leisure activities (free time)"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Other"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "EQ1IT",
+                     "visible": false,
+                     "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+                     "title": "In one or more of these municipalities: Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons do you usually carry out any of the following activities? (multiple answers are possible)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Work/Business"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Study"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Shopping"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Leisure activities (free time)"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Other"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "EQ1SL",
+                     "visible": false,
+                     "visibleIf": "{QF1} == 'slo'",
+                     "title": "In the city of Maribor do you usually carry out any of the following activities? (Multiple answers are possible)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Work/Business"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Study"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Shopping"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Leisure activities (free time)"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Other"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "EQ1SW1",
+                     "visible": false,
+                     "visibleIf": "{QFSW1} == 'A6'",
+                     "title": "In the Canton of Berne do you usually carry out any of the following activities? (Multiple answers are possible)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Work/Business"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Study"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Shopping"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Leisure activities (free time)"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Other"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "EQ1SW2",
+                     "visible": false,
+                     "visibleIf": "{QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\" or {QFSW1} == \"A19\")",
+                     "title": "In at least one of these Cantons: St.Gallen, Graubünden, Lucerne, do you usually carry out any of the following activities? (Multiple answers are possible)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Work/Business"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Study"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Shopping"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Leisure activities (free time)"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Other"
+                      }
+                     ]
+                    }
+                   ],
+                   "title": "Activities in the pilot area"
                   }
                  ]
                 };
