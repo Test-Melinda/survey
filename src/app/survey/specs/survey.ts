@@ -631,7 +631,7 @@ export const surveyModel = {
                      "type": "dropdown",
                      "name": "QF2GB2",
                      "visible": false,
-                     "visibleIf": "{QF2GB} = \"A3\"",
+                     "visibleIf": "{QF2GB} = \"A2\"",
                      "title": "Could you precise in which Landkreis?",
                      "isRequired": true,
                      "choices": [
@@ -1592,7 +1592,7 @@ export const surveyModel = {
                      "type": "text",
                      "name": "QF3",
                      "visible": false,
-                     "visibleIf": "({QF2FD} notempty && !([\"A11\", \"A13\"] anyof {QF2FD}))\nor\n({QF2AR} notempty && !([\"A1\", \"A2\"] anyof {QF2AR}))\nor\n({QF2GB2} notempty && {QF2GB2} != \"A19\")\nor\n({QFSW1}} notempty && !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\nor\n{QFSW1} == \"A2\"\nor\n({QF2SL} notempty && {QF2SL} != \"7\")",
+                     "visibleIf": "({QF2FD} notempty and !([\"A11\", \"A13\"] anyof {QF2FD}))\r\nor\r\n({QF2AR} notempty and !([\"A1\", \"A2\"] anyof {QF2AR}))\r\nor\r\n({QF2GB2} notempty and {QF2GB2} != \"19\")\r\nor\r\n({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\r\nor\r\n{QFSW1} == \"A2\"\r\nor\r\n({QF2SL} notempty and {QF2SL} != \"7\")",
                      "title": "Could you please specify your postal code?"
                     }
                    ]
