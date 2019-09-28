@@ -32,7 +32,7 @@ export class LimesurveyClient {
         return new Observable<number>((observer) => {
             // Add the response
             this.sendRequest("add_response", [surveyId, response]).subscribe((result: any) => {
-                console.log("call response", result);
+                console.log("Call response", result);
                 
                 if (!result){
                     observer.error(new Error("Cannot add response to survey: no id assigned to response from Limesurvey"));
@@ -43,7 +43,7 @@ export class LimesurveyClient {
                 }
             }, (error) => {
                 observer.error(error);
-                console.error(error);
+                console.error("Cannot add response", error);
             });
         });
     }
@@ -60,7 +60,7 @@ export class LimesurveyClient {
                 params: fullParams,
                 id: 1
             }).subscribe((response: any) => {
-                console.log(response);
+                console.log("Limesurvey request response", response);
                 
                 if (!response){
                     observer.error(new Error("Cannot call Limesurvey method '" + method + "': no response from Limesurvey"));
@@ -77,7 +77,7 @@ export class LimesurveyClient {
                 }
             }, (error) => {
                 observer.error(new Error("Cannot call Limesurvey method '" + method + "': cannot communicate with Limesurvey"));
-                console.error(error);
+                console.error("Limesurvey request error", error);
             });
         });
     }

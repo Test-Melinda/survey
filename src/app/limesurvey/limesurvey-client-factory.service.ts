@@ -18,7 +18,7 @@ export class LimesurveyClientFactoryService {
               params: [credentials.username, credentials.password],
               id: 1
           }).subscribe((response: any) => {
-              console.log(response);
+              console.log("Limesurvey client creation response", response);
               
               if (!response){
                   observer.error(new Error("Cannot get session key: no response from Limesurvey"));
@@ -37,7 +37,7 @@ export class LimesurveyClientFactoryService {
               }
           }, (error) => {
               observer.error(new Error("Cannot get session key: cannot communicate with Limesurvey"));
-              console.error(error);
+              console.error("Limesurvey client creation error", error);
           });
       });
   }
