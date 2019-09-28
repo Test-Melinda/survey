@@ -72,5 +72,33 @@ answers?: Map<string, string>
     ["QF3", {
         gid: 3,
         qid: 80
+    }],
+    ["EQ1AU", {
+        gid: 4,
+        qid: 31
+    }],
+    ["EQ1GE", {
+        gid: 4,
+        qid: 33
+    }],
+    ["EQ1FR", {
+        gid: 4,
+        qid: 32
+    }],
+    ["EQ1IT", {
+        gid: 4,
+        qid: 34
+    }],
+    ["EQ1SL", {
+        gid: 4,
+        qid: 35
+    }],
+    ["EQ1SW1", {
+        gid: 4,
+        qid: 36
+    }],
+    ["EQ1SW2", {
+        gid: 4,
+        qid: 37
     }]
 ]);
