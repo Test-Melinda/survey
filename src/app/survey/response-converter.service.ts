@@ -23,7 +23,7 @@ export class ResponseConverterService {
             let answer = response[rCode];
             if ( Array.isArray( answer ) ) {
                 for (let aCode of answer){
-                    let aMapped = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
+                    let aMapped = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode);
                     mapped[limesurveyQuestionId + aMapped] = "Y";
                 }
             }
