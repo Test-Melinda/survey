@@ -6,14 +6,14 @@ export const environment = {
     production: false,
     limesurvey: {
         surveys: {
-            default: 123248,
-//            at: 123248,
-//            de: 123248,
-//            fl: 123248,
-//            fr: 123248,
-//            it: 123248,
-//            slo: 123248,
-//            ch: 123248,
+            default: 463632,
+//            at: 463632,
+//            de: 463632,
+//            fl: 463632,
+//            fr: 463632,
+//            it: 463632,
+//            slo: 463632,
+//            ch: 463632
         }
     }
 };
