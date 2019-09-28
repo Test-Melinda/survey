@@ -1805,6 +1805,47 @@ export const surveyModel = {
                     }
                    ],
                    "title": "Activities in the pilot area"
+                  },
+                  {
+                   "name": "question1",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q1TRAIN",
+                     "title": "Which of these aspects would you associate to the  TRAIN?",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Good Comfort"
+                      },
+                      {
+                       "value": "2",
+                       "text": "High Accessibility"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Cost efficiency"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Time saving"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Reducing pollution"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Improve health conditions"
+                      },
+                      {
+                       "value": "7",
+                       "text": "High Sociability"
+                      }
+                     ]
+                    }
+                   ],
+                   "description": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones."
                   }
                  ]
                 };

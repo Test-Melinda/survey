@@ -149,5 +149,9 @@ answers?: Map<string, string>
             ["4", "SQ004"],
             ["5", "SQ005"]
         ])
+    }],
+    ["Q1TRAIN", {
+        gid: 5,
+        qid: 39
     }]
 ]);
