@@ -32,7 +32,7 @@ export class LimesurveyClient {
         return new Observable<number>((observer) => {
             // Add the response
             this.sendRequest("add_response", [surveyId, response]).subscribe((result: any) => {
-                console.log(result);
+                console.log("call response", result);
                 
                 if (!result){
                     observer.error(new Error("Cannot add response to survey: no id assigned to response from Limesurvey"));

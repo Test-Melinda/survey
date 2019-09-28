@@ -5,6 +5,11 @@
 export const environment = {
     production: false,
     limesurvey: {
+        api: {
+            url: "http://localhost/limesurvey/index.php/admin/remotecontrol",
+            username: "admin",
+            password: "admin"
+        },
         surveys: {
             default: 463632,
 //            at: 463632,

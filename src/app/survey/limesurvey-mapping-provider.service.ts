@@ -13,12 +13,17 @@ export class LimesurveyMappingProviderService {
   
   public getMapping(region: string): LimesurveyQuestionsMapping {
       let mapping = mappings.get(region) || mappings.get('default');
+      
+      return new LimesurveyQuestionsMapping(this.getSurveyId(region), mapping);
+  }
+  
+  public getSurveyId(region: string): number {
       let surveyId = environment.limesurvey.surveys.default;
       if (region in environment.limesurvey.surveys){
           surveyId = environment.limesurvey.surveys[region];
       }
       
-      return new LimesurveyQuestionsMapping(surveyId, mapping);
+      return surveyId;
   }
   
 }

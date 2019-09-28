@@ -6,6 +6,9 @@ import { LimesurveyQuestionsMapping } from "./survey/limesurvey-questions-mappin
 import { LimesurveyResponseBuilder } from "./limesurvey/limesurvey-response-builder";
 import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src/app/limesurvey/limesurvey-client-factory.service";
 
+import { environment } from '../environments/environment';
+import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-provider.service';
+
 @Component( {
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -13,7 +16,7 @@ import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src
 } )
 export class AppComponent implements OnInit {
     
-    constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService){
+    constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService){
     }
 
     ngOnInit() {
@@ -40,8 +43,8 @@ export class AppComponent implements OnInit {
         // Convert to Limesurvey response
         let limesurveyResponseData = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
         
-        console.log("original response", response.data);
-        console.log("limesurvey response data", limesurveyResponseData);
+        console.log("Original response data", response.data);
+        console.log("Limesurvey response data", limesurveyResponseData);
         
         // Build the full response information
         let builder = new LimesurveyResponseBuilder();
@@ -51,18 +54,20 @@ export class AppComponent implements OnInit {
         builder.responses = limesurveyResponseData;
         let limesurveyResponse = builder.build();
         
-        console.log("full limesurvey response", limesurveyResponse);
+        console.log("Full limesurvey response data", limesurveyResponse);
         
         // Create the client to communicate with Limesurvey
         let limesurveyCredentials = new LimesurveyClientCredentials();
-        limesurveyCredentials.url = "http://localhost/limesurvey/index.php/admin/remotecontrol";
-        limesurveyCredentials.username = "admin";
-        limesurveyCredentials.password = "admin";
+        limesurveyCredentials.url = environment.limesurvey.api.url;
+        limesurveyCredentials.username = environment.limesurvey.api.username;
+        limesurveyCredentials.password = environment.limesurvey.api.password;
+        
+        // TODO Handle errors!
         this.limesurveyClientFactory.createClient(limesurveyCredentials).subscribe((limesurveyClient) => {
-            console.log("limesurvey client", limesurveyClient);
+            console.log("Limesurvey client", limesurveyClient);
             
             // Add the survey response
-            limesurveyClient.addResponse(123248, limesurveyResponse).subscribe((responseId: number) => {
+            limesurveyClient.addResponse(this.limesurveyMappingProviderService.getSurveyId(surveyRegion), limesurveyResponse).subscribe((responseId: number) => {
                 console.log("Limesurvey response ID", responseId);
             });
         });
