@@ -71,6 +71,9 @@ export class LimesurveyClient {
                 else if (!response.result){
                     observer.error(new Error("Cannot call Limesurvey method '" + method + "': no result in response"));
                 }
+                else if (typeof(response.result) === 'object' && 'status' in response.result){
+                    observer.error(new Error("Cannot call Limesurvey method '" + method + "': " + response.result.status));
+                }
                 else {
                     observer.next(response.result);
                     observer.complete();
