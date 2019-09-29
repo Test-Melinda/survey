@@ -2368,6 +2368,62 @@ export const surveyModel = {
                     }
                    ],
                    "description": "Here you find some questions about aspects of daily life connected to mobility. Even if you don’t know the correct answer we kindly ask you to select the option you think is closest to the reality according to your experience or ideas."
+                  },
+                  {
+                   "name": "quiz2",
+                   "elements": [
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6dot2",
+                     "title": "In EU how much frequent are deaths due to air pollution versus road incidents?\n\nCompared to deaths due to road incidents, Air pollution-linked deaths, are:",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "At least 10 times more numerous"
+                      },
+                      {
+                       "value": "2",
+                       "text": "At least 5 times more numerous"
+                      },
+                      {
+                       "value": "3",
+                       "text": "At least 5 times less numerous"
+                      },
+                      {
+                       "value": "4",
+                       "text": "At least 10 times less numerous"
+                      }
+                     ]
+                    }
+                   ]
+                  },
+                  {
+                   "name": "quiz3",
+                   "elements": [
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6dot3",
+                     "title": "How much physical activity must be done every day in order to match WHO recommendations? How many minutes of daily walking activities does it correspond to?",
+                     "choices": [
+                      {
+                       "value": "A1",
+                       "text": "5 minutes"
+                      },
+                      {
+                       "value": "A2",
+                       "text": "20 minutes"
+                      },
+                      {
+                       "value": "A3",
+                       "text": "1 hour"
+                      },
+                      {
+                       "value": "A4",
+                       "text": "1,5 hours"
+                      }
+                     ]
+                    }
+                   ]
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"

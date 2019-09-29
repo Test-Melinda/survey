@@ -213,5 +213,13 @@ answers?: Map<string, string>
     ["Q6dot1GE", {
         gid: 2275,
         qid: 44678
+    }],
+    ["Q6dot2", {
+        gid: 2276,
+        qid: 44679
+    }],
+    ["Q6dot3", {
+        gid: 2277,
+        qid: 44680
     }]
 ]);
