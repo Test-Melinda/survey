@@ -1019,7 +1019,7 @@ export const surveyModel = {
                      "type": "dropdown",
                      "name": "QFSW1",
                      "visible": false,
-                     "visibleIf": "{QF1} = \"A7\"",
+                     "visibleIf": "{QF1} = \"ch\"",
                      "title": "Could you please precise in which Canton do you live?",
                      "isRequired": true,
                      "choices": [
