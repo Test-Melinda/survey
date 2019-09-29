@@ -1,5 +1,6 @@
 // Survey definition
 export const surveyModel = {
+        "checkErrorsMode": "onValueChanged",
         "pages": [
                   {
                    "name": "filtering",
@@ -1813,6 +1814,13 @@ export const surveyModel = {
                      "type": "checkbox",
                      "name": "Q1TRAIN",
                      "title": "Which of these aspects would you associate to the  TRAIN?",
+                     "validators": [
+                                    {
+                                     "type": "expression",
+                                     "text": "Please select at most 3 aspects",
+                                     "expression": "{Q1TRAIN.length} <= 3"
+                                    }
+                                   ],
                      "choices": [
                       {
                        "value": "1",
