@@ -2424,6 +2424,69 @@ export const surveyModel = {
                      ]
                     }
                    ]
+                  },
+                  {
+                   "name": "Sustainable behaviour",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q7",
+                     "title": "Have you done any of the following actions in the past six months? (Multiple answers possible)",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "You can't select anything if you selected \"None\" or \"I don't known\"",
+                       "expression": "((!({Q7} anyof \"10\")) and (!({Q7} anyof \"11\"))) or {Q7.length} == 1"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Chosen a more environmentally-friendly way of travelling (walk, bicycle, public transport, electric car)"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Avoided buying over-packaged products"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Bought local products"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Cut down your water consumption"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Separated most of your waste for recycling"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Used your car less by avoiding unnecessary trips, working from home (teleworking), etc."
+                      },
+                      {
+                       "value": "7",
+                       "text": "Bought products marked with an environmental label"
+                      },
+                      {
+                       "value": "8",
+                       "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products"
+                      },
+                      {
+                       "value": "9",
+                       "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products"
+                      },
+                      {
+                       "value": "10",
+                       "text": "None"
+                      },
+                      {
+                       "value": "11",
+                       "text": "I don’t know"
+                      }
+                     ]
+                    }
+                   ]
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"

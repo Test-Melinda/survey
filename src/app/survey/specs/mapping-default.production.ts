@@ -221,5 +221,9 @@ answers?: Map<string, string>
     ["Q6dot3", {
         gid: 2277,
         qid: 44680
+    }],
+    ["Q7", {
+        gid: 2278,
+        qid: 44681
     }]
 ]);

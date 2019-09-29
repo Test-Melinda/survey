@@ -35,6 +35,8 @@ export class AppComponent implements OnInit {
     }
 
     private processResponse(response) {
+        console.log("Original response data", response.data);
+        
         let responseData = response.data;
         
         // Detect survey region
@@ -43,7 +45,6 @@ export class AppComponent implements OnInit {
         // Convert to Limesurvey response
         let limesurveyResponseData = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
         
-        console.log("Original response data", response.data);
         console.log("Limesurvey response data", limesurveyResponseData);
         
         // Build the full response information
