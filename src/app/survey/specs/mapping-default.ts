@@ -189,5 +189,29 @@ answers?: Map<string, string>
     ["Q5", {
         gid: 8,
         qid: 48
+    }],
+    ["Q6dot1IT", {
+        gid: 9,
+        qid: 50
+    }],
+    ["Q6dot1AU", {
+        gid: 9,
+        qid: 51
+    }],
+    ["Q6dot1SL", {
+        gid: 9,
+        qid: 52
+    }],
+    ["Q6dot1SW", {
+        gid: 9,
+        qid: 53
+    }],
+    ["Q6dot1FR", {
+        gid: 9,
+        qid: 54
+    }],
+    ["Q6dot1GE", {
+        gid: 9,
+        qid: 55
     }]
 ]);

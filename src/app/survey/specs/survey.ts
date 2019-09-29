@@ -2218,6 +2218,156 @@ export const surveyModel = {
                      ]
                     }
                    ]
+                  },
+                  {
+                   "name": "quiz1",
+                   "elements": [
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6dot1IT",
+                     "visibleIf": "{QF1} == 'it'",
+                     "title": "What can be, on average, the monthly cost of owning a (petrol) car in Italy (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "150 euros"
+                      },
+                      {
+                       "value": "2",
+                       "text": "300 euros"
+                      },
+                      {
+                       "value": "3",
+                       "text": "600 euros"
+                      },
+                      {
+                       "value": "4",
+                       "text": "1200 euros"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6dot1AU",
+                     "visibleIf": "{QF1} == 'at' or {QF1} == 'fl'",
+                     "title": "What can be, on average, the monthly cost of owning a (petrol) car in Austria (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "100 euros"
+                      },
+                      {
+                       "value": "2",
+                       "text": "250 euros"
+                      },
+                      {
+                       "value": "3",
+                       "text": "500 euros"
+                      },
+                      {
+                       "value": "4",
+                       "text": "1000 euros"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6dot1SL",
+                     "visibleIf": "{QF1} == 'slo'",
+                     "title": "What can be, on average, the monthly cost of owning a (petrol) car in the EU (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "100 euros"
+                      },
+                      {
+                       "value": "2",
+                       "text": "250 euros"
+                      },
+                      {
+                       "value": "3",
+                       "text": "500 euros"
+                      },
+                      {
+                       "value": "4",
+                       "text": "1000 euros"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6dot1SW",
+                     "visibleIf": "{QF1} == 'ch'",
+                     "title": "What can be, on average, the monthly cost of owning a (petrol) car in Switzerland (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "100 Fr."
+                      },
+                      {
+                       "value": "2",
+                       "text": "250 Fr."
+                      },
+                      {
+                       "value": "3",
+                       "text": "500 Fr."
+                      },
+                      {
+                       "value": "4",
+                       "text": "1000 Fr."
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6dot1FR",
+                     "visibleIf": "{QF1} == 'fr'",
+                     "title": "What can be, on average, the monthly cost of owning a (petrol) car in France (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "100 euros"
+                      },
+                      {
+                       "value": "2",
+                       "text": "250 euros"
+                      },
+                      {
+                       "value": "3",
+                       "text": "500 euros"
+                      },
+                      {
+                       "value": "4",
+                       "text": "1000 euros"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6dot1GE",
+                     "visibleIf": "{QF1} == 'de'",
+                     "title": "What can be, on average, the monthly cost of owning a (petrol) car in Germany (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "100 euros"
+                      },
+                      {
+                       "value": "2",
+                       "text": "250 euros"
+                      },
+                      {
+                       "value": "3",
+                       "text": "500 euros"
+                      },
+                      {
+                       "value": "4",
+                       "text": "1000 euros"
+                      }
+                     ]
+                    }
+                   ],
+                   "description": "Here you find some questions about aspects of daily life connected to mobility. Even if you don’t know the correct answer we kindly ask you to select the option you think is closest to the reality according to your experience or ideas."
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"
