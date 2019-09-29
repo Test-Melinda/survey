@@ -153,5 +153,25 @@ answers?: Map<string, string>
     ["Q1TRAIN", {
         gid: 5,
         qid: 39
+    }],
+    ["Q1CAR", {
+        gid: 5,
+        qid: 40
+    }],
+    ["Q1PT", {
+        gid: 5,
+        qid: 41
+    }],
+    ["Q1BIKE", {
+        gid: 5,
+        qid: 42
+    }],
+    ["Q1WALK", {
+        gid: 5,
+        qid: 43
+    }],
+    ["Q1MOTORB", {
+        gid: 5,
+        qid: 44
     }]
 ]);

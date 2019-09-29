@@ -1,6 +1,5 @@
 // Survey definition
 export const surveyModel = {
-        "checkErrorsMode": "onValueChanged",
         "pages": [
                   {
                    "name": "filtering",
@@ -1813,14 +1812,224 @@ export const surveyModel = {
                     {
                      "type": "checkbox",
                      "name": "Q1TRAIN",
-                     "title": "Which of these aspects would you associate to the  TRAIN?",
+                     "title": "Which of these aspects would you associate to the TRAIN?",
                      "validators": [
-                                    {
-                                     "type": "expression",
-                                     "text": "Please select at most 3 aspects",
-                                     "expression": "{Q1TRAIN.length} <= 3"
-                                    }
-                                   ],
+                      {
+                       "type": "expression",
+                       "text": "Please select at most 3 aspects",
+                       "expression": "{Q1TRAIN.length} <= 3"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Good Comfort"
+                      },
+                      {
+                       "value": "2",
+                       "text": "High Accessibility"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Cost efficiency"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Time saving"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Reducing pollution"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Improve health conditions"
+                      },
+                      {
+                       "value": "7",
+                       "text": "High Sociability"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "Q1CAR",
+                     "title": "Which of these aspects would you associate to the CAR?",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "Please select at most 3 aspects",
+                       "expression": "{Q1CAR.length} <= 3"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Good Comfort"
+                      },
+                      {
+                       "value": "2",
+                       "text": "High Accessibility"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Cost efficiency"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Time saving"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Reducing pollution"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Improve health conditions"
+                      },
+                      {
+                       "value": "7",
+                       "text": "High Sociability"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "Q1PT",
+                     "title": "Which of these aspects would you associate to the PUBLIC TRANSPORT (Bus, Tram, Metro)?",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "Please select at most 3 aspects",
+                       "expression": "{Q1PT.length} <= 3"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Good Comfort"
+                      },
+                      {
+                       "value": "2",
+                       "text": "High Accessibility"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Cost efficiency"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Time saving"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Reducing pollution"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Improve health conditions"
+                      },
+                      {
+                       "value": "7",
+                       "text": "High Sociability"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "Q1BIKE",
+                     "title": "Which of these aspects would you associate to the BIKE?",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "Please select at most 3 aspects",
+                       "expression": "{Q1BIKE.length} <= 3"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Good Comfort"
+                      },
+                      {
+                       "value": "2",
+                       "text": "High Accessibility"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Cost efficiency"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Time saving"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Reducing pollution"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Improve health conditions"
+                      },
+                      {
+                       "value": "7",
+                       "text": "High Sociability"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "Q1WALK",
+                     "title": "Which of these aspects would you associate to the WALK?",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "Please select at most 3 aspects",
+                       "expression": "{Q1WALK.length} <= 3"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Good Comfort"
+                      },
+                      {
+                       "value": "2",
+                       "text": "High Accessibility"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Cost efficiency"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Time saving"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Reducing pollution"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Improve health conditions"
+                      },
+                      {
+                       "value": "7",
+                       "text": "High Sociability"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "Q1MOTORB",
+                     "title": "Which of these aspects would you associate to the MOTORBIKE/MOPED?",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "Please select at most 3 aspects",
+                       "expression": "{Q1MOTORB.length} <= 3"
+                      }
+                     ],
                      "choices": [
                       {
                        "value": "1",
@@ -1855,5 +2064,6 @@ export const surveyModel = {
                    ],
                    "description": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones."
                   }
-                 ]
+                 ],
+                 "checkErrorsMode": "onValueChanged"
                 };
