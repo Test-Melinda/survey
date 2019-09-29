@@ -2063,6 +2063,161 @@ export const surveyModel = {
                     }
                    ],
                    "description": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones."
+                  },
+                  {
+                   "name": "mobilita_quotidiana_1",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q2",
+                     "title": "What are the means of transport you use for your daily travels? (Multiple answers are possible)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Car (both as a driver/passenger)"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Motorbike"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Public transport (Bus/tram/metro)"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Train"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Bicycle"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Walk"
+                      },
+                      {
+                       "value": "7",
+                       "text": "Other"
+                      }
+                     ]
+                    }
+                   ]
+                  },
+                  {
+                   "name": "mobilita_quotidiana_2",
+                   "elements": [
+                    {
+                     "type": "radiogroup",
+                     "name": "Q3",
+                     "title": "What is the mean of transport you use the most (longest trip in terms of distance)?",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Car (both as a driver/passenger)"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Motorbike"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Public transport (Bus/tram/metro)"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Train"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Bicycle"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Walk"
+                      },
+                      {
+                       "value": "7",
+                       "text": "Other"
+                      }
+                     ]
+                    }
+                   ]
+                  },
+                  {
+                   "name": "mobilita_quotidiana_3",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q4",
+                     "title": "Which of the following Mobility Solutions have you ever heard of?",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Car sharing"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Car pooling"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Bike sharing"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Ride hailing"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Scooter sharing"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Hitchhiking benches"
+                      },
+                      {
+                       "value": "7",
+                       "text": "None of these"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "checkbox",
+                     "name": "Q5",
+                     "title": "Which of those have you ever used?",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Car sharing"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Car pooling"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Bike sharing"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Ride hailing"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Scooter sharing"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Hitchhiking benches"
+                      },
+                      {
+                       "value": "7",
+                       "text": "None of these"
+                      }
+                     ]
+                    }
+                   ]
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"

@@ -173,5 +173,21 @@ answers?: Map<string, string>
     ["Q1MOTORB", {
         gid: 5,
         qid: 44
+    }],
+    ["Q2", {
+        gid: 6,
+        qid: 45
+    }],
+    ["Q3", {
+        gid: 7,
+        qid: 46
+    }],
+    ["Q4", {
+        gid: 8,
+        qid: 47
+    }],
+    ["Q5", {
+        gid: 8,
+        qid: 48
     }]
 ]);
