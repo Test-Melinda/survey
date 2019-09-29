@@ -225,5 +225,13 @@ answers?: Map<string, string>
     ["Q7", {
         gid: 12,
         qid: 58
+    }],
+    ["Q8", {
+        gid: 13,
+        qid: 59
+    }],
+    ["Q9", {
+        gid: 14,
+        qid: 60
     }]
 ]);

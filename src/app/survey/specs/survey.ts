@@ -2487,6 +2487,133 @@ export const surveyModel = {
                      ]
                     }
                    ]
+                  },
+                  {
+                   "name": "Responsibility",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q8",
+                     "title": "In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution? (maximum two answers are possible)",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "Please select at most 2 answers",
+                       "expression": "{Q8.length} <= 2"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "City authorities"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Citizens themselves"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Regional authorities"
+                      },
+                      {
+                       "value": "4",
+                       "text": "National Government"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Private companies"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Trade Unions or Political Parties"
+                      },
+                      {
+                       "value": "7",
+                       "text": "Non-profit Associations/non-governmental organizations"
+                      },
+                      {
+                       "value": "8",
+                       "text": "Other"
+                      }
+                     ]
+                    }
+                   ]
+                  },
+                  {
+                   "name": "Sources of information",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q9",
+                     "title": "From the following list, which are your three main sources of information about the environment (climate change, pollution, …)?\n\n(maximum 3 answers possible)",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "You can't select anything if you selected \"I am not interested in the environment\" or \"I don't known\"",
+                       "expression": "((!({Q9} anyof \"12\")) and (!({Q9} anyof \"13\"))) or {Q9.length} == 1"
+                      },
+                      {
+                       "type": "expression",
+                       "text": "Maximum 3 answers possible",
+                       "expression": "{Q9.length} <= 3"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "National newspapers and magazines"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Regional or local newspapers"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Television news and/or radio"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Films and documentaries on television"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Family, friends, neighbours or colleagues"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Books or scientific publications and/or information materials"
+                      },
+                      {
+                       "value": "7",
+                       "text": "Events (conferences, fairs, exhibitions, festivals, etc.)"
+                      },
+                      {
+                       "value": "8",
+                       "text": "Museums, national or regional parks"
+                      },
+                      {
+                       "value": "9",
+                       "text": "Online social networks (facebook, Instagram, Twitter, …)"
+                      },
+                      {
+                       "value": "10",
+                       "text": "The Internet (other websites, newsletters, blogs, forums, etc., NO social networks)"
+                      },
+                      {
+                       "value": "11",
+                       "text": "Other"
+                      },
+                      {
+                       "value": "12",
+                       "text": "I am not interested in the environment"
+                      },
+                      {
+                       "value": "13",
+                       "text": "I don't know"
+                      }
+                     ]
+                    }
+                   ]
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"
