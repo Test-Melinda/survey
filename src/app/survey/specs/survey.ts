@@ -2756,6 +2756,47 @@ export const surveyModel = {
                      ]
                     }
                    ]
+                  },
+                  {
+                   "name": "job2",
+                   "elements": [
+                    {
+                     "type": "radiogroup",
+                     "name": "Q13bis",
+                     "visibleIf": "{Q13} anyof \"1\"",
+                     "title": "You work as:",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Entrepreneur"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Professional (lawyer, doctor, …)"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Manager"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Self Employed"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Employee"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Worker"
+                      },
+                      {
+                       "value": "7",
+                       "text": "Other"
+                      }
+                     ]
+                    }
+                   ]
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"
