@@ -2614,6 +2614,112 @@ export const surveyModel = {
                      ]
                     }
                    ]
+                  },
+                  {
+                   "name": "sociodemo",
+                   "elements": [
+                    {
+                     "type": "radiogroup",
+                     "name": "Q10",
+                     "title": "What is your age?",
+                     "choices": [
+                      {
+                       "value": "A1",
+                       "text": "16-20"
+                      },
+                      {
+                       "value": "A2",
+                       "text": "21-25"
+                      },
+                      {
+                       "value": "A3",
+                       "text": "26-35"
+                      },
+                      {
+                       "value": "A4",
+                       "text": "36-45"
+                      },
+                      {
+                       "value": "A5",
+                       "text": "46-55"
+                      },
+                      {
+                       "value": "A6",
+                       "text": "56-65"
+                      },
+                      {
+                       "value": "A7",
+                       "text": "66-75"
+                      },
+                      {
+                       "value": "A8",
+                       "text": "over 75"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "dropdown",
+                     "name": "Q11",
+                     "title": "You are:",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Male"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Female"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Other"
+                      },
+                      {
+                       "value": "4",
+                       "text": "I don't want to answer"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q12",
+                     "title": "What is your highest level of education?",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "PhD (ISCED 8)"
+                      },
+                      {
+                       "value": "2",
+                       "text": "University degree (ISCED 5-7)"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Upper-secondary school diploma (ISCED 3-4)"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Lower-secondary and primary school (ISCED 2-1)"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q15",
+                     "title": "Number of members in your houselhold (with you)",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Up to 2"
+                      },
+                      {
+                       "value": "2",
+                       "text": "3 or more"
+                      }
+                     ]
+                    }
+                   ],
+                   "description": "In this last section we will ask you some socio-demograpich information in order to better contextualise your answers.\n\nWe remind you that all the answers will be kept anonymous and no one will be able to connect any information to your identity now and in the future."
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"
