@@ -2797,6 +2797,94 @@ export const surveyModel = {
                      ]
                     }
                    ]
+                  },
+                  {
+                   "name": "mobility_capital",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q14",
+                     "title": "Which means of transport do you own or have access to*?",
+                     "description": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "You can't select anything if you selected \"None of these\"",
+                       "expression": "(!({Q14} anyof \"9\")) or {Q14.length} == 1"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Cars"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Public Transport Season ticket"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Motorbike/moped"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Bicycle"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Scooter/skateboard/hoverboard"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Bike Sharing account"
+                      },
+                      {
+                       "value": "7",
+                       "text": "Car sharing account"
+                      },
+                      {
+                       "value": "8",
+                       "text": "Other"
+                      },
+                      {
+                       "value": "9",
+                       "text": "None of these"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "text",
+                     "name": "Q14CARS",
+                     "visibleIf": "{Q14} anyof \"1\"",
+                     "title": "How many cars you have access to?",
+                     "description": "To have access to means that you can easily use it even if you don't own it.",
+                     "inputType": "number"
+                    },
+                    {
+                     "type": "text",
+                     "name": "Q14MOTOR",
+                     "visibleIf": "{Q14} anyof \"3\"",
+                     "title": "How many motorbikes/mopeds you have access to?",
+                     "description": "To have access to means that you can easily use it even if you don't own it.",
+                     "inputType": "number"
+                    },
+                    {
+                     "type": "text",
+                     "name": "Q14BIKES",
+                     "visibleIf": "{Q14} anyof \"4\"",
+                     "title": "How many bicycles you have access to?",
+                     "description": "To have access to means that you can easily use it even if you don't own it.",
+                     "inputType": "number"
+                    },
+                    {
+                     "type": "text",
+                     "name": "Q14SCOOT",
+                     "visibleIf": "{Q14} anyof \"5\"",
+                     "title": "How many scooter/skateboard/hoverboard you have access to?",
+                     "description": "To have access to means that you can easily use it even if you don't own it.",
+                     "inputType": "number"
+                    }
+                   ]
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"
