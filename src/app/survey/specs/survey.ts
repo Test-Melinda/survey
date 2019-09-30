@@ -2720,6 +2720,42 @@ export const surveyModel = {
                     }
                    ],
                    "description": "In this last section we will ask you some socio-demograpich information in order to better contextualise your answers.\n\nWe remind you that all the answers will be kept anonymous and no one will be able to connect any information to your identity now and in the future."
+                  },
+                  {
+                   "name": "job",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q13",
+                     "title": "What is your occupational status?",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Employed"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Unemployed"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Retired"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Student"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Pupil"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Other"
+                      }
+                     ]
+                    }
+                   ]
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"
