@@ -277,5 +277,9 @@ answers?: Map<string, string>
     ["Q14SCOOT", {
         gid: 2284,
         qid: 44695
+    }],
+    ["MA", {
+        gid: 2285,
+        qid: 44702
     }]
 ]);

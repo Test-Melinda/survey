@@ -2885,6 +2885,18 @@ export const surveyModel = {
                      "inputType": "number"
                     }
                    ]
+                  },
+                  {
+                   "name": "mail",
+                   "elements": [
+                    {
+                     "type": "text",
+                     validators: [{ type: "email"}],
+                     "name": "MA",
+                     "title": "If you like to receive any information and updates about Melinda project's events and progresses you can leave us your e-mail address in order to be informed in the future.   (The collected email addresses will be stored on secure servers located in the EU and processed in accordance to GDPR, not traded to anybody else, kept for the time of project activity, and always separately from the other survey data)",
+                     "inputType": "email"
+                    }
+                   ]
                   }
                  ],
                  "checkErrorsMode": "onValueChanged"
