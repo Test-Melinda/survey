@@ -5,6 +5,7 @@ import { ResponseConverterService } from "src/app/survey/response-converter.serv
 import { LimesurveyQuestionsMapping } from "./survey/limesurvey-questions-mapping";
 import { LimesurveyResponseBuilder } from "./limesurvey/limesurvey-response-builder";
 import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src/app/limesurvey/limesurvey-client-factory.service";
+import { ScoreCalculatorService } from "./score/score-calculator.service";
 
 import { environment } from '../environments/environment';
 import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-provider.service';
@@ -16,7 +17,7 @@ import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-pr
 } )
 export class AppComponent implements OnInit {
     
-    constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService){
+    constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
     }
 
     ngOnInit() {
@@ -38,6 +39,10 @@ export class AppComponent implements OnInit {
         console.log("Original response data", response.data);
         
         let responseData = response.data;
+        
+        // Calculate the score
+        let score = this.scoreCalculator.calculate(responseData);
+        console.log("Score", score);
         
         // Detect survey region
         let surveyRegion = null;
