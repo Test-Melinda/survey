@@ -3,10 +3,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ScoreViewerComponent } from './score-viewer/score-viewer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScoreViewerComponent
   ],
   imports: [
     BrowserModule,

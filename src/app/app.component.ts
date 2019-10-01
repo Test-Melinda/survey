@@ -17,6 +17,8 @@ import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-pr
 } )
 export class AppComponent implements OnInit {
     
+    protected score = null;
+    
     constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
     }
 
@@ -41,8 +43,8 @@ export class AppComponent implements OnInit {
         let responseData = response.data;
         
         // Calculate the score
-        let score = this.scoreCalculator.calculate(responseData);
-        console.log("Score", score);
+        this.score = this.scoreCalculator.calculate(responseData);
+        console.log("Score", this.score);
         
         // Detect survey region
         let surveyRegion = null;
