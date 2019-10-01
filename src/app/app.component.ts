@@ -17,6 +17,9 @@ import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-pr
 } )
 export class AppComponent implements OnInit {
     
+    protected done = false;
+    protected error = false;
+    
     protected score = null;
     
     constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
@@ -38,6 +41,8 @@ export class AppComponent implements OnInit {
     }
 
     private processResponse(response) {
+        this.done = true;
+        
         console.log("Original response data", response.data);
         
         let responseData = response.data;
@@ -70,14 +75,19 @@ export class AppComponent implements OnInit {
         limesurveyCredentials.username = environment.limesurvey.api.username;
         limesurveyCredentials.password = environment.limesurvey.api.password;
         
-        // TODO Handle errors!
         this.limesurveyClientFactory.createClient(limesurveyCredentials).subscribe((limesurveyClient) => {
             console.log("Limesurvey client", limesurveyClient);
             
             // Add the survey response
             limesurveyClient.addResponse(this.limesurveyMappingProviderService.getSurveyId(surveyRegion), limesurveyResponse).subscribe((responseId: number) => {
                 console.log("Limesurvey response ID", responseId);
+            }, (error) => {
+                console.error("Cannot add response", error);
+                this.error = true;
             });
+        }, (error) => {
+            console.error("Cannot authenticate with LimeSurvey platform", error);
+            this.error = true;
         });
     }
 }
