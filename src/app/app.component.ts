@@ -17,10 +17,10 @@ import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-pr
 } )
 export class AppComponent implements OnInit {
     
-    protected done = false;
-    protected error = false;
+    public done = false;
+    public error = false;
     
-    protected score = null;
+    public score = null;
     
     constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
     }
