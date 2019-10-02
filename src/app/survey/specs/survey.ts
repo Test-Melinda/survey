@@ -1823,31 +1823,38 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Good Comfort"
+                       "text": "Good Comfort",
+                       "enableIf": "{Q1TRAIN} anyof \"1\" or {Q1TRAIN.length} < 3"
                       },
                       {
                        "value": "2",
-                       "text": "High Accessibility"
+                       "text": "High Accessibility",
+                       "enableIf": "{Q1TRAIN} anyof \"2\" or {Q1TRAIN.length} < 3"
                       },
                       {
                        "value": "3",
-                       "text": "Cost efficiency"
+                       "text": "Cost efficiency",
+                       "enableIf": "{Q1TRAIN} anyof \"3\" or {Q1TRAIN.length} < 3"
                       },
                       {
                        "value": "4",
-                       "text": "Time saving"
+                       "text": "Time saving",
+                       "enableIf": "{Q1TRAIN} anyof \"4\" or {Q1TRAIN.length} < 3"
                       },
                       {
                        "value": "5",
-                       "text": "Reducing pollution"
+                       "text": "Reducing pollution",
+                       "enableIf": "{Q1TRAIN} anyof \"5\" or {Q1TRAIN.length} < 3"
                       },
                       {
                        "value": "6",
-                       "text": "Improve health conditions"
+                       "text": "Improve health conditions",
+                       "enableIf": "{Q1TRAIN} anyof \"6\" or {Q1TRAIN.length} < 3"
                       },
                       {
                        "value": "7",
-                       "text": "High Sociability"
+                       "text": "High Sociability",
+                       "enableIf": "{Q1TRAIN} anyof \"7\" or {Q1TRAIN.length} < 3"
                       }
                      ]
                     },
@@ -1865,31 +1872,38 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Good Comfort"
+                       "text": "Good Comfort",
+                       "enableIf": "{Q1CAR} anyof \"1\" or {Q1CAR.length} < 3"
                       },
                       {
                        "value": "2",
-                       "text": "High Accessibility"
+                       "text": "High Accessibility",
+                       "enableIf": "{Q1CAR} anyof \"2\" or {Q1CAR.length} < 3"
                       },
                       {
                        "value": "3",
-                       "text": "Cost efficiency"
+                       "text": "Cost efficiency",
+                       "enableIf": "{Q1CAR} anyof \"3\" or {Q1CAR.length} < 3"
                       },
                       {
                        "value": "4",
-                       "text": "Time saving"
+                       "text": "Time saving",
+                       "enableIf": "{Q1CAR} anyof \"4\" or {Q1CAR.length} < 3"
                       },
                       {
                        "value": "5",
-                       "text": "Reducing pollution"
+                       "text": "Reducing pollution",
+                       "enableIf": "{Q1CAR} anyof \"5\" or {Q1CAR.length} < 3"
                       },
                       {
                        "value": "6",
-                       "text": "Improve health conditions"
+                       "text": "Improve health conditions",
+                       "enableIf": "{Q1CAR} anyof \"6\" or {Q1CAR.length} < 3"
                       },
                       {
                        "value": "7",
-                       "text": "High Sociability"
+                       "text": "High Sociability",
+                       "enableIf": "{Q1CAR} anyof \"7\" or {Q1CAR.length} < 3"
                       }
                      ]
                     },
@@ -1907,31 +1921,38 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Good Comfort"
+                       "text": "Good Comfort",
+                       "enableIf": "{Q1PT} anyof \"1\" or {Q1PT.length} < 3"
                       },
                       {
                        "value": "2",
-                       "text": "High Accessibility"
+                       "text": "High Accessibility",
+                       "enableIf": "{Q1PT} anyof \"2\" or {Q1PT.length} < 3"
                       },
                       {
                        "value": "3",
-                       "text": "Cost efficiency"
+                       "text": "Cost efficiency",
+                       "enableIf": "{Q1PT} anyof \"3\" or {Q1PT.length} < 3"
                       },
                       {
                        "value": "4",
-                       "text": "Time saving"
+                       "text": "Time saving",
+                       "enableIf": "{Q1PT} anyof \"4\" or {Q1PT.length} < 3"
                       },
                       {
                        "value": "5",
-                       "text": "Reducing pollution"
+                       "text": "Reducing pollution",
+                       "enableIf": "{Q1PT} anyof \"5\" or {Q1PT.length} < 3"
                       },
                       {
                        "value": "6",
-                       "text": "Improve health conditions"
+                       "text": "Improve health conditions",
+                       "enableIf": "{Q1PT} anyof \"6\" or {Q1PT.length} < 3"
                       },
                       {
                        "value": "7",
-                       "text": "High Sociability"
+                       "text": "High Sociability",
+                       "enableIf": "{Q1PT} anyof \"7\" or {Q1PT.length} < 3"
                       }
                      ]
                     },
@@ -1949,31 +1970,38 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Good Comfort"
+                       "text": "Good Comfort",
+                       "enableIf": "{Q1BIKE} anyof \"1\" or {Q1BIKE.length} < 3"
                       },
                       {
                        "value": "2",
-                       "text": "High Accessibility"
+                       "text": "High Accessibility",
+                       "enableIf": "{Q1BIKE} anyof \"2\" or {Q1BIKE.length} < 3"
                       },
                       {
                        "value": "3",
-                       "text": "Cost efficiency"
+                       "text": "Cost efficiency",
+                       "enableIf": "{Q1BIKE} anyof \"3\" or {Q1BIKE.length} < 3"
                       },
                       {
                        "value": "4",
-                       "text": "Time saving"
+                       "text": "Time saving",
+                       "enableIf": "{Q1BIKE} anyof \"4\" or {Q1BIKE.length} < 3"
                       },
                       {
                        "value": "5",
-                       "text": "Reducing pollution"
+                       "text": "Reducing pollution",
+                       "enableIf": "{Q1BIKE} anyof \"5\" or {Q1BIKE.length} < 3"
                       },
                       {
                        "value": "6",
-                       "text": "Improve health conditions"
+                       "text": "Improve health conditions",
+                       "enableIf": "{Q1BIKE} anyof \"6\" or {Q1BIKE.length} < 3"
                       },
                       {
                        "value": "7",
-                       "text": "High Sociability"
+                       "text": "High Sociability",
+                       "enableIf": "{Q1BIKE} anyof \"7\" or {Q1BIKE.length} < 3"
                       }
                      ]
                     },
@@ -1991,31 +2019,38 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Good Comfort"
+                       "text": "Good Comfort",
+                       "enableIf": "{Q1WALK} anyof \"1\" or {Q1WALK.length} < 3"
                       },
                       {
                        "value": "2",
-                       "text": "High Accessibility"
+                       "text": "High Accessibility",
+                       "enableIf": "{Q1WALK} anyof \"2\" or {Q1WALK.length} < 3"
                       },
                       {
                        "value": "3",
-                       "text": "Cost efficiency"
+                       "text": "Cost efficiency",
+                       "enableIf": "{Q1WALK} anyof \"3\" or {Q1WALK.length} < 3"
                       },
                       {
                        "value": "4",
-                       "text": "Time saving"
+                       "text": "Time saving",
+                       "enableIf": "{Q1WALK} anyof \"4\" or {Q1WALK.length} < 3"
                       },
                       {
                        "value": "5",
-                       "text": "Reducing pollution"
+                       "text": "Reducing pollution",
+                       "enableIf": "{Q1WALK} anyof \"5\" or {Q1WALK.length} < 3"
                       },
                       {
                        "value": "6",
-                       "text": "Improve health conditions"
+                       "text": "Improve health conditions",
+                       "enableIf": "{Q1WALK} anyof \"6\" or {Q1WALK.length} < 3"
                       },
                       {
                        "value": "7",
-                       "text": "High Sociability"
+                       "text": "High Sociability",
+                       "enableIf": "{Q1WALK} anyof \"7\" or {Q1WALK.length} < 3"
                       }
                      ]
                     },
@@ -2033,31 +2068,38 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Good Comfort"
+                       "text": "Good Comfort",
+                       "enableIf": "{Q1MOTORB} anyof \"1\" or {Q1MOTORB.length} < 3"
                       },
                       {
                        "value": "2",
-                       "text": "High Accessibility"
+                       "text": "High Accessibility",
+                       "enableIf": "{Q1MOTORB} anyof \"2\" or {Q1MOTORB.length} < 3"
                       },
                       {
                        "value": "3",
-                       "text": "Cost efficiency"
+                       "text": "Cost efficiency",
+                       "enableIf": "{Q1MOTORB} anyof \"3\" or {Q1MOTORB.length} < 3"
                       },
                       {
                        "value": "4",
-                       "text": "Time saving"
+                       "text": "Time saving",
+                       "enableIf": "{Q1MOTORB} anyof \"4\" or {Q1MOTORB.length} < 3"
                       },
                       {
                        "value": "5",
-                       "text": "Reducing pollution"
+                       "text": "Reducing pollution",
+                       "enableIf": "{Q1MOTORB} anyof \"5\" or {Q1MOTORB.length} < 3"
                       },
                       {
                        "value": "6",
-                       "text": "Improve health conditions"
+                       "text": "Improve health conditions",
+                       "enableIf": "{Q1MOTORB} anyof \"6\" or {Q1MOTORB.length} < 3"
                       },
                       {
                        "value": "7",
-                       "text": "High Sociability"
+                       "text": "High Sociability",
+                       "enableIf": "{Q1MOTORB} anyof \"7\" or {Q1MOTORB.length} < 3"
                       }
                      ]
                     }
@@ -2505,35 +2547,43 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "City authorities"
+                       "text": "City authorities",
+                       "enableIf": "{Q8} anyof \"1\" or {Q8.length} < 2"
                       },
                       {
                        "value": "2",
-                       "text": "Citizens themselves"
+                       "text": "Citizens themselves",
+                       "enableIf": "{Q8} anyof \"2\" or {Q8.length} < 2"
                       },
                       {
                        "value": "3",
-                       "text": "Regional authorities"
+                       "text": "Regional authorities",
+                       "enableIf": "{Q8} anyof \"3\" or {Q8.length} < 2"
                       },
                       {
                        "value": "4",
-                       "text": "National Government"
+                       "text": "National Government",
+                       "enableIf": "{Q8} anyof \"4\" or {Q8.length} < 2"
                       },
                       {
                        "value": "5",
-                       "text": "Private companies"
+                       "text": "Private companies",
+                       "enableIf": "{Q8} anyof \"5\" or {Q8.length} < 2"
                       },
                       {
                        "value": "6",
-                       "text": "Trade Unions or Political Parties"
+                       "text": "Trade Unions or Political Parties",
+                       "enableIf": "{Q8} anyof \"6\" or {Q8.length} < 2"
                       },
                       {
                        "value": "7",
-                       "text": "Non-profit Associations/non-governmental organizations"
+                       "text": "Non-profit Associations/non-governmental organizations",
+                       "enableIf": "{Q8} anyof \"7\" or {Q8.length} < 2"
                       },
                       {
                        "value": "8",
-                       "text": "Other"
+                       "text": "Other",
+                       "enableIf": "{Q8} anyof \"8\" or {Q8.length} < 2"
                       }
                      ]
                     }
@@ -2891,9 +2941,13 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "text",
-                     validators: [{ type: "email"}],
                      "name": "MA",
                      "title": "If you like to receive any information and updates about Melinda project's events and progresses you can leave us your e-mail address in order to be informed in the future.   (The collected email addresses will be stored on secure servers located in the EU and processed in accordance to GDPR, not traded to anybody else, kept for the time of project activity, and always separately from the other survey data)",
+                     "validators": [
+                      {
+                       "type": "email"
+                      }
+                     ],
                      "inputType": "email"
                     }
                    ]
