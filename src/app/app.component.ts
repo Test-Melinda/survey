@@ -17,12 +17,15 @@ import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-pr
 } )
 export class AppComponent implements OnInit {
     
+    protected source = null;
+    
     public done = false;
     public error = false;
     
     public score = null;
     
     constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
+        this.source = new URLSearchParams(window.location.search).get('src') || null;
     }
 
     ngOnInit() {
