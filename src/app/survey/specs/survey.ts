@@ -2484,47 +2484,58 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Chosen a more environmentally-friendly way of travelling (walk, bicycle, public transport, electric car)"
+                       "text": "Chosen a more environmentally-friendly way of travelling (walk, bicycle, public transport, electric car)",
+                       "enableIf": "{Q7} anyof \"1\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "2",
-                       "text": "Avoided buying over-packaged products"
+                       "text": "Avoided buying over-packaged products",
+                       "enableIf": "{Q7} anyof \"2\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "3",
-                       "text": "Bought local products"
+                       "text": "Bought local products",
+                       "enableIf": "{Q7} anyof \"3\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "4",
-                       "text": "Cut down your water consumption"
+                       "text": "Cut down your water consumption",
+                       "enableIf": "{Q7} anyof \"4\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "5",
-                       "text": "Separated most of your waste for recycling"
+                       "text": "Separated most of your waste for recycling",
+                       "enableIf": "{Q7} anyof \"5\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "6",
-                       "text": "Used your car less by avoiding unnecessary trips, working from home (teleworking), etc."
+                       "text": "Used your car less by avoiding unnecessary trips, working from home (teleworking), etc.",
+                       "enableIf": "{Q7} anyof \"6\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "7",
-                       "text": "Bought products marked with an environmental label"
+                       "text": "Bought products marked with an environmental label",
+                       "enableIf": "{Q7} anyof \"7\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "8",
-                       "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products"
+                       "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products",
+                       "enableIf": "{Q7} anyof \"8\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "9",
-                       "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products"
+                       "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products",
+                       "enableIf": "{Q7} anyof \"9\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
                       },
                       {
                        "value": "10",
-                       "text": "None"
+                       "text": "None",
+                       "enableIf": "{Q7} anyof \"10\" or {Q7.length} == 0"
                       },
                       {
                        "value": "11",
-                       "text": "I don’t know"
+                       "text": "I don’t know",
+                       "enableIf": "{Q7} anyof \"11\" or {Q7.length} == 0"
                       }
                      ]
                     }
@@ -2611,55 +2622,68 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "National newspapers and magazines"
+                       "text": "National newspapers and magazines",
+                       "enableIf": "{Q9} anyof \"1\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "2",
-                       "text": "Regional or local newspapers"
+                       "text": "Regional or local newspapers",
+                       "enableIf": "{Q9} anyof \"2\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "3",
-                       "text": "Television news and/or radio"
+                       "text": "Television news and/or radio",
+                       "enableIf": "{Q9} anyof \"3\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "4",
-                       "text": "Films and documentaries on television"
+                       "text": "Films and documentaries on television",
+                       "enableIf": "{Q9} anyof \"4\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "5",
-                       "text": "Family, friends, neighbours or colleagues"
+                       "text": "Family, friends, neighbours or colleagues",
+                       "enableIf": "{Q9} anyof \"5\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "6",
-                       "text": "Books or scientific publications and/or information materials"
+                       "text": "Books or scientific publications and/or information materials",
+                       "enableIf": "{Q9} anyof \"6\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "7",
-                       "text": "Events (conferences, fairs, exhibitions, festivals, etc.)"
+                       "text": "Events (conferences, fairs, exhibitions, festivals, etc.)",
+                       "enableIf": "{Q9} anyof \"7\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "8",
-                       "text": "Museums, national or regional parks"
+                       "text": "Museums, national or regional parks",
+                       "enableIf": "{Q9} anyof \"8\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "9",
-                       "text": "Online social networks (facebook, Instagram, Twitter, …)"
+                       "text": "Online social networks (facebook, Instagram, Twitter, …)",
+                       "enableIf": "{Q9} anyof \"9\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "10",
-                       "text": "The Internet (other websites, newsletters, blogs, forums, etc., NO social networks)"
+                       "text": "The Internet (other websites, newsletters, blogs, forums, etc., NO social networks)",
+                       "enableIf": "{Q9} anyof \"10\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "11",
-                       "text": "Other"
+                       "text": "Other",
+                       "enableIf": "{Q9} anyof \"11\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
                       },
                       {
                        "value": "12",
-                       "text": "I am not interested in the environment"
+                       "text": "I am not interested in the environment",
+                       "enableIf": "{Q9} anyof \"12\" or {Q9.length} == 0"
                       },
                       {
                        "value": "13",
-                       "text": "I don't know"
+                       "text": "I don't know",
+                       "enableIf": "{Q9} anyof \"13\" or {Q9.length} == 0"
                       }
                      ]
                     }
@@ -2866,39 +2890,48 @@ export const surveyModel = {
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Cars"
+                       "text": "Cars",
+                       "enableIf": "{Q14} anyof \"1\" or !({Q14} anyof \"9\")"
                       },
                       {
                        "value": "2",
-                       "text": "Public Transport Season ticket"
+                       "text": "Public Transport Season ticket",
+                       "enableIf": "{Q14} anyof \"2\" or !({Q14} anyof \"9\")"
                       },
                       {
                        "value": "3",
-                       "text": "Motorbike/moped"
+                       "text": "Motorbike/moped",
+                       "enableIf": "{Q14} anyof \"3\" or !({Q14} anyof \"9\")"
                       },
                       {
                        "value": "4",
-                       "text": "Bicycle"
+                       "text": "Bicycle",
+                       "enableIf": "{Q14} anyof \"4\" or !({Q14} anyof \"9\")"
                       },
                       {
                        "value": "5",
-                       "text": "Scooter/skateboard/hoverboard"
+                       "text": "Scooter/skateboard/hoverboard",
+                       "enableIf": "{Q14} anyof \"5\" or !({Q14} anyof \"9\")"
                       },
                       {
                        "value": "6",
-                       "text": "Bike Sharing account"
+                       "text": "Bike Sharing account",
+                       "enableIf": "{Q14} anyof \"6\" or !({Q14} anyof \"9\")"
                       },
                       {
                        "value": "7",
-                       "text": "Car sharing account"
+                       "text": "Car sharing account",
+                       "enableIf": "{Q14} anyof \"7\" or !({Q14} anyof \"9\")"
                       },
                       {
                        "value": "8",
-                       "text": "Other"
+                       "text": "Other",
+                       "enableIf": "{Q14} anyof \"8\" or !({Q14} anyof \"9\")"
                       },
                       {
                        "value": "9",
-                       "text": "None of these"
+                       "text": "None of these",
+                       "enableIf": "{Q14} anyof \"9\" or {Q14.length} == 0"
                       }
                      ]
                     },
