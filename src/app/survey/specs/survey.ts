@@ -2775,7 +2775,7 @@ export const surveyModel = {
                    "name": "job",
                    "elements": [
                     {
-                     "type": "checkbox",
+                     "type": "radiogroup",
                      "name": "Q13",
                      "title": "What is your occupational status?",
                      "choices": [
@@ -2813,7 +2813,7 @@ export const surveyModel = {
                     {
                      "type": "radiogroup",
                      "name": "Q13bis",
-                     "visibleIf": "{Q13} anyof \"1\"",
+                     "visibleIf": "{Q13} == \"1\"",
                      "title": "You work as:",
                      "choices": [
                       {
