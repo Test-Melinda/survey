@@ -19,6 +19,16 @@ export const environment = {
 //            it: 463632,
 //            slo: 463632,
 //            ch: 463632
+        },
+        metaQuestions: {
+            score: {
+                gid: 20,
+                qid: 234
+            },
+            source: {
+                gid: 20,
+                qid: 235
+            }
         }
     }
 };

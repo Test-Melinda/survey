@@ -8,6 +8,16 @@ export const environment = {
         },
         surveys: {
             default: 463632
+        },
+        metaQuestions: {
+            score: {
+                gid: 2321,
+                qid: 45708
+            },
+            source: {
+                gid: 2321,
+                qid: 45708
+            }
         }
     }
 };

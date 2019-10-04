@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LimesurveyQuestionsMapping } from "./limesurvey-questions-mapping";
+import { LimesurveyQuestionsMapping, LimesurveyAnswerCode } from "./limesurvey-questions-mapping";
 import { LimesurveyMappingProviderService } from "src/app/survey/limesurvey-mapping-provider.service";
 import { LimesurveyResponse } from '../limesurvey/limesurvey-response';
 
@@ -24,19 +24,19 @@ export class ResponseConverterService {
             let answer = response[rCode];
             if ( Array.isArray( answer ) ) {
                 for (let aCode of answer){
-                    let aMapped = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
-                    mapped.setResponse(limesurveyQuestionId, aMapped, "Y");
+                    limesurveyQuestionId.answerId = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
+                    mapped.setResponse(limesurveyQuestionId, "Y");
                 }
             }
             else {
-                mapped.setResponse(limesurveyQuestionId, null, this.requireLimesurveyAnswerMapping(mapping, rCode, answer, true));
+                mapped.setResponse(limesurveyQuestionId, this.requireLimesurveyAnswerMapping(mapping, rCode, answer, true));
             }
         }
 
         return mapped;
     }
 
-    protected requireLimesurveyQuestionMapping(mapping: LimesurveyQuestionsMapping, rCode: string): string {
+    protected requireLimesurveyQuestionMapping(mapping: LimesurveyQuestionsMapping, rCode: string): LimesurveyAnswerCode {
         let limesurveyQuestionId = mapping.mapQuestion( rCode );
         if ( !limesurveyQuestionId ) {
             throw new Error( "Cannot map response to question '" + rCode + "'");

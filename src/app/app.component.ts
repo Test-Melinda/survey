@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Model, SurveyNG, StylesManager } from 'survey-angular';
 import { SurveySpecificationService } from "src/app/survey/survey-specification.service";
 import { ResponseConverterService } from "src/app/survey/response-converter.service";
-import { LimesurveyQuestionsMapping } from "./survey/limesurvey-questions-mapping";
+import { LimesurveyQuestionsMapping, LimesurveyAnswerCode } from "./survey/limesurvey-questions-mapping";
 import { LimesurveyResponseBuilder } from "./limesurvey/limesurvey-response-builder";
 import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src/app/limesurvey/limesurvey-client-factory.service";
 import { ScoreCalculatorService } from "./score/score-calculator.service";
@@ -58,8 +58,13 @@ export class AppComponent implements OnInit {
         let surveyRegion = null;
         
         // Convert to Limesurvey response
-        let limesurveyResponseData = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion).toResponseData();
+        let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
         
+        // Add the score to the hidden Limesurvey response
+        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);
+        limesurveyAnswers.setResponse(new LimesurveyAnswerCode(surveyId, environment.limesurvey.metaQuestions.score.gid, environment.limesurvey.metaQuestions.score.qid), this.score);
+        
+        let limesurveyResponseData = limesurveyAnswers.toResponseData();
         console.log("Limesurvey response data", limesurveyResponseData);
         
         // Build the full response information
@@ -82,7 +87,7 @@ export class AppComponent implements OnInit {
             console.log("Limesurvey client", limesurveyClient);
             
             // Add the survey response
-            limesurveyClient.addResponse(this.limesurveyMappingProviderService.getSurveyId(surveyRegion), limesurveyResponse).subscribe((responseId: number) => {
+            limesurveyClient.addResponse(surveyId, limesurveyResponse).subscribe((responseId: number) => {
                 console.log("Limesurvey response ID", responseId);
             }, (error) => {
                 console.error("Cannot add response", error);

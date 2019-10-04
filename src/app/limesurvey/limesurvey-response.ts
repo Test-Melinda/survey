@@ -1,26 +1,14 @@
+import { LimesurveyAnswerCode } from '../survey/limesurvey-questions-mapping';
+
 export class LimesurveyResponse {
     
-    protected answers: Map<string, string> = new Map<string, string>();
+    protected answers: Map<string, string|number> = new Map<string, string|number>();
     
     public constructor(){
     }
     
-    public getResponse(questionCode: string, answerCode?: string): string {
-        let code = questionCode;
-        if (answerCode){
-            code += answerCode;
-        }
-        
-        return this.answers.get(code);
-    }
-    
-    public setResponse(questionCode: string, answerCode: string = null, value: string){
-        let code = questionCode;
-        if (answerCode){
-            code += answerCode;
-        }
-        
-        this.answers.set(code, value);
+    public setResponse(questionCode: LimesurveyAnswerCode, value: string|number){
+        this.answers.set(questionCode.toCode(), value);
     }
     
     public toResponseData(){

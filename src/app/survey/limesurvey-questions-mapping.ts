@@ -29,10 +29,10 @@ export class LimesurveyQuestionsMapping {
         this.mapping.set(questionCode, questionMapping);
     }
     
-    public mapQuestion(questionCode: string): string {
+    public mapQuestion(questionCode: string): LimesurveyAnswerCode {
         let questionMapping = this.mapping.get(questionCode);
         if (questionMapping){
-            return (this.surveyId + "X" + questionMapping.gid + "X" + questionMapping.qid);
+            return new LimesurveyAnswerCode(this.surveyId, questionMapping.gid, questionMapping.qid);
         }
         return null;
     }
@@ -48,4 +48,19 @@ export class LimesurveyQuestionsMapping {
         return null;
     }
     
+}
+
+export class LimesurveyAnswerCode {
+    
+    constructor(public surveyId: number, public groupId: number, public questionId: number, public answerId?: string){
+    }
+    
+    public toCode(): string {
+        let code = (this.surveyId + "X" + this.groupId + "X" + this.questionId);
+        if (!!this.answerId){
+            code += this.answerId;
+        }
+        return code;
+    }
+
 }
