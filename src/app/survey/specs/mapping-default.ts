@@ -75,14 +75,7 @@ answers?: Map<string, string>
     }],
     ["EQ1AU", {
         gid: 4,
-        qid: 31,
-        answers: new Map([
-            ["1", "SQ001"],
-            ["2", "SQ002"],
-            ["3", "SQ003"],
-            ["4", "SQ004"],
-            ["5", "SQ005"]
-        ])
+        qid: 31
     }],
     ["EQ1GE", {
         gid: 4,
@@ -97,58 +90,23 @@ answers?: Map<string, string>
     }],
     ["EQ1FR", {
         gid: 4,
-        qid: 32,
-        answers: new Map([
-            ["1", "SQ001"],
-            ["2", "SQ002"],
-            ["3", "SQ003"],
-            ["4", "SQ004"],
-            ["5", "SQ005"]
-        ])
+        qid: 32
     }],
     ["EQ1IT", {
         gid: 4,
-        qid: 34,
-        answers: new Map([
-            ["1", "SQ001"],
-            ["2", "SQ002"],
-            ["3", "SQ003"],
-            ["4", "SQ004"],
-            ["5", "SQ005"]
-        ])
+        qid: 34
     }],
     ["EQ1SL", {
         gid: 4,
-        qid: 35,
-        answers: new Map([
-            ["1", "SQ001"],
-            ["2", "SQ002"],
-            ["3", "SQ003"],
-            ["4", "SQ004"],
-            ["5", "SQ005"]
-        ])
+        qid: 35
     }],
     ["EQ1SW1", {
         gid: 4,
-        qid: 36,
-        answers: new Map([
-            ["1", "SQ001"],
-            ["2", "SQ002"],
-            ["3", "SQ003"],
-            ["4", "SQ004"],
-            ["5", "SQ005"]
-        ])
+        qid: 36
     }],
     ["EQ1SW2", {
         gid: 4,
-        qid: 37,
-        answers: new Map([
-            ["1", "SQ001"],
-            ["2", "SQ002"],
-            ["3", "SQ003"],
-            ["4", "SQ004"],
-            ["5", "SQ005"]
-        ])
+        qid: 37
     }],
     ["Q1TRAIN", {
         gid: 5,
