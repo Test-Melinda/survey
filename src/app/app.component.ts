@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
     
     protected source = null;
     
-    public done = false;
+    public SurveyStatus = SurveyStatus;
+    public status: SurveyStatus = SurveyStatus.READY;
     public error = false;
     
     public score = null;
@@ -44,7 +45,7 @@ export class AppComponent implements OnInit {
     }
 
     private processResponse(response) {
-        this.done = true;
+        this.status = SurveyStatus.DONE;
         
         console.log("Original response data", response.data);
         
@@ -98,4 +99,20 @@ export class AppComponent implements OnInit {
             this.error = true;
         });
     }
+    
+    public onPrivacyAcceptance(accepted: boolean){
+        console.log('Privacy accepted', accepted);
+        if (accepted){
+            this.status = SurveyStatus.DOING;
+        }
+    }
+    
+}
+
+enum SurveyStatus {
+    
+    READY = 'ready',
+    DOING = 'doing',
+    DONE = 'done'
+    
 }

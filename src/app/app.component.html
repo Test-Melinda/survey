@@ -1,6 +1,8 @@
-<div id="surveyElement" [hidden]="done"></div>
+<app-survey-intro *ngIf="status == SurveyStatus.READY" (privacyAcceptance)="onPrivacyAcceptance($event)"></app-survey-intro>
 
-<div *ngIf="done" id="result">
+<div id="surveyElement" [hidden]="status != SurveyStatus.DOING"></div>
+
+<div *ngIf="status == SurveyStatus.DONE" id="result">
 	<div *ngIf="error; else success" class="alert alert-danger">Sorry, an error occurred. Plase click the button below of you want to retry the survey. Otherwise please <a href="https://www.alpine-space.eu/projects/melinda/en/contact">contact us</a>. Thank you.</div>
 	
 	<ng-template #success>
