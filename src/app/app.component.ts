@@ -9,6 +9,7 @@ import { ScoreCalculatorService } from "./score/score-calculator.service";
 
 import { environment } from '../environments/environment';
 import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-provider.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component( {
     selector: 'app-root',
@@ -25,7 +26,9 @@ export class AppComponent implements OnInit {
     
     public score = null;
     
-    constructor(public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
+    constructor(protected translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
+        translate.setDefaultLang('en');
+        
         this.source = new URLSearchParams(window.location.search).get('src') || null;
     }
 
@@ -34,7 +37,7 @@ export class AppComponent implements OnInit {
         
         StylesManager.applyTheme( "bootstrap" );
         
-        var survey = new Model(this.surveySpecification.getLocalizedModel(locale) );
+        var survey = new Model(this.surveySpecification.getLocalizedModel(locale));
         survey.onComplete.add((response) => {
             this.processResponse(response);
         });
