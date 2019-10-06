@@ -16,7 +16,7 @@ export class SurveyIntroComponent implements OnInit {
     ngOnInit() {
     }
     
-    public checkPrivacy(event: any){
+    public checkPrivacy(){
         this.privacyAcceptance.emit(this.privacyAccepted);
     }
 
