@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Model, SurveyNG, StylesManager } from 'survey-angular';
+import { Model, SurveyNG, StylesManager, Survey } from 'survey-angular';
 import { SurveySpecificationService } from "src/app/survey/survey-specification.service";
 import { ResponseConverterService } from "src/app/survey/response-converter.service";
 import { LimesurveyQuestionsMapping, LimesurveyAnswerCode } from "./survey/limesurvey-questions-mapping";
@@ -31,10 +31,11 @@ export class AppComponent implements OnInit {
         
         this.source = new URLSearchParams(window.location.search).get('src') || null;
     }
-
+    
     ngOnInit() {
         let locale = 'en';
         
+        // Styling
         StylesManager.applyTheme( "bootstrap" );
         
         var survey = new Model(this.surveySpecification.getLocalizedModel(locale));
@@ -43,7 +44,13 @@ export class AppComponent implements OnInit {
         });
 
         SurveyNG.render( "surveyElement", {
-            model: survey
+            model: survey,
+            css: {
+                matrix: {
+                    root: "table table-striped"
+                },
+                navigationButton: "btn btn-primary"
+            }
         } );
     }
 

@@ -1,4 +1,6 @@
-<app-survey-intro *ngIf="status == SurveyStatus.READY" (privacyAcceptance)="onPrivacyAcceptance($event)"></app-survey-intro>
+<div class="content" *ngIf="status == SurveyStatus.READY">
+	<app-survey-intro (privacyAcceptance)="onPrivacyAcceptance($event)"></app-survey-intro>
+</div>
 
 <div id="surveyElement" [hidden]="status != SurveyStatus.DOING"></div>
 
