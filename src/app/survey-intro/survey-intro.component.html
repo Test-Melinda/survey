@@ -61,15 +61,14 @@
 				</div>
 				
 				<div class="row">
-					<div class="col">
+					<div class="col-12 col-sm-6 text-center text-sm-left mt-3">
 						<div class="form-check">
-							<input class="form-check-input" type="checkbox" value="1"
-								id="privacy-flag" [(ngModel)]="privacyAccepted"> <label
-								class="form-check-label" for="privacy-flag"><strong>Privacy flag</strong></label>
+							<input class="form-check-input" type="checkbox" value="1" id="privacy-flag" [(ngModel)]="privacyAccepted"> <label class="form-check-label" for="privacy-flag"><strong>Privacy flag</strong></label>
 						</div>
 					</div>
-					<div class="col text-right">
-						<button class="btn btn-primary" [disabled]="!privacyAccepted" (click)="checkPrivacy()">Next</button>
+					<div class="col-12 col-sm-6 text-center text-sm-right mt-3">
+						<button class="btn btn-primary btn-lg btn-block d-sm-none" [disabled]="!privacyAccepted" (click)="checkPrivacy()">Start survey</button>
+						<button class="btn btn-primary btn-lg d-none d-sm-inline-block" [disabled]="!privacyAccepted" (click)="checkPrivacy()">Start survey</button>
 					</div>
 				</div>
 			</div>
