@@ -42,16 +42,20 @@ export class AppComponent implements OnInit {
         survey.onComplete.add((response) => {
             this.processResponse(response);
         });
-
+        
+        // Doc: https://surveyjs.io/Examples/Library/?id=survey-customcss&platform=jQuery&theme=default
         SurveyNG.render( "surveyElement", {
             model: survey,
             css: {
-                matrix: {
-                    root: "table table-striped"
+                navigationButton: "btn",
+                navigation: {
+                    next: "btn-primary"
                 },
-                navigationButton: "btn btn-primary"
+                question: {
+                    mainRoot: "sv_qstn px-4"
+                }
             }
-        } );
+        });
     }
 
     private processResponse(response) {

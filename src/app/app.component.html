@@ -2,14 +2,28 @@
 	<app-survey-intro (privacyAcceptance)="onPrivacyAcceptance($event)"></app-survey-intro>
 </div>
 
-<div id="surveyElement" [hidden]="status != SurveyStatus.DOING"></div>
+<div class="container" [hidden]="status != SurveyStatus.DOING">
+	<div class="highlighted-panel">
+		<div class="row">
+			<div class="col">
+				<div id="surveyElement"></div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<div class="container container-bordered" *ngIf="status == SurveyStatus.DONE" id="result">
-	<div *ngIf="error; else success" class="alert alert-danger">Sorry, an error occurred. Plase click the button below of you want to retry the survey. Otherwise please <a href="https://www.alpine-space.eu/projects/melinda/en/contact">contact us</a>. Thank you.</div>
-	
-	<ng-template #success>
-		<p>The survey is complete, thank you!</p>
+<div class="container" *ngIf="status == SurveyStatus.DONE" id="result">
+	<div class="highlighted-panel p-4">
+		<div class="row">
+			<div class="col">
+				<div *ngIf="error; else success" class="alert alert-danger">Sorry, an error occurred. Plase click the button below of you want to retry the survey. Otherwise please <a href="https://www.alpine-space.eu/projects/melinda/en/contact">contact us</a>. Thank you.</div>
 		
-		<app-score-viewer *ngIf="score != null" [score]="score"></app-score-viewer>
-	</ng-template>
+				<ng-template #success>
+					<p>The survey is complete, thank you!</p>
+					
+					<app-score-viewer *ngIf="score != null" [score]="score"></app-score-viewer>
+				</ng-template>
+			</div>
+		</div>
+	</div>
 </div>
