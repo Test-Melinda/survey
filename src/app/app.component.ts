@@ -47,12 +47,14 @@ export class AppComponent implements OnInit {
         SurveyNG.render( "surveyElement", {
             model: survey,
             css: {
+                pageDescription: "text-justify px-4 mb-3",
                 navigationButton: "btn",
                 navigation: {
                     next: "btn-primary"
                 },
                 question: {
-                    mainRoot: "sv_qstn px-4"
+                    mainRoot: "sv_qstn px-4",
+                    title: "mb-4 mt-2"
                 }
             }
         });
