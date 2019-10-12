@@ -19,6 +19,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent implements OnInit {
     
     protected source = null;
+    protected channel = null;
     
     public SurveyStatus = SurveyStatus;
     public status: SurveyStatus = SurveyStatus.READY;
@@ -29,7 +30,38 @@ export class AppComponent implements OnInit {
     constructor(protected translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
         translate.setDefaultLang('en');
         
-        this.source = new URLSearchParams(window.location.search).get('src') || null;
+        this.source = this.parseSource();
+        console.log("Source detected", this.source);
+        
+        this.channel = this.parseChannel();
+        console.log("Channel detected", this.channel);
+    }
+    
+    private parseSource(){
+        // Admitted values
+        let values = ['it', 'fr', 'slo', 'de', 'ch', 'at', 'fl'];
+        
+        // Parse
+        let src = new URLSearchParams(window.location.search).get('src') || null;
+        if (src){
+            src = src.toLowerCase();
+            if (values.indexOf(src) != -1){
+                return src;
+            }
+            else {
+                console.error("Source value not valid: ", src);
+            }
+        }
+        else {
+            console.error("No source defined");
+        }
+        
+        return null;
+    }
+    
+    private parseChannel(){
+        // Parse
+        return new URLSearchParams(window.location.search).get('channel') || null;
     }
     
     ngOnInit() {
