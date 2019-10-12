@@ -22,8 +22,8 @@ export class AppComponent implements OnInit {
     protected channel = null;
     
     public SurveyStatus = SurveyStatus;
-    public status: SurveyStatus = SurveyStatus.READY;
-    public error = false;
+    public status: SurveyStatus = SurveyStatus.LOADING;
+    public surveyError = false;
     
     public score = null;
     
@@ -31,7 +31,11 @@ export class AppComponent implements OnInit {
         translate.setDefaultLang('en');
         
         this.source = this.parseSource();
-        console.log("Source detected", this.source);
+        if (!this.source){
+            console.error("No source detected, halting all");
+            this.status = SurveyStatus.ERROR;
+        }
+        else console.log("Source detected", this.source);
         
         this.channel = this.parseChannel();
         console.log("Channel detected", this.channel);
@@ -65,31 +69,35 @@ export class AppComponent implements OnInit {
     }
     
     ngOnInit() {
-        let locale = 'en';
-        
-        // Styling
-        StylesManager.applyTheme( "bootstrap" );
-        
-        var survey = new Model(this.surveySpecification.getLocalizedModel(locale));
-        survey.onComplete.add((response) => {
-            this.processResponse(response);
-        });
-        
-        // Doc: https://surveyjs.io/Examples/Library/?id=survey-customcss&platform=jQuery&theme=default
-        SurveyNG.render( "surveyElement", {
-            model: survey,
-            css: {
-                pageDescription: "text-justify px-4 mb-3",
-                navigationButton: "btn",
-                navigation: {
-                    next: "btn-primary"
-                },
-                question: {
-                    mainRoot: "sv_qstn px-4",
-                    title: "mb-4 mt-2"
+        if (this.status != SurveyStatus.ERROR){
+            let locale = 'en';
+            
+            // Styling
+            StylesManager.applyTheme( "bootstrap" );
+            
+            var survey = new Model(this.surveySpecification.getLocalizedModel(locale));
+            survey.onComplete.add((response) => {
+                this.processResponse(response);
+            });
+            
+            // Doc: https://surveyjs.io/Examples/Library/?id=survey-customcss&platform=jQuery&theme=default
+            SurveyNG.render( "surveyElement", {
+                model: survey,
+                css: {
+                    pageDescription: "text-justify px-4 mb-3",
+                    navigationButton: "btn",
+                    navigation: {
+                        next: "btn-primary"
+                    },
+                    question: {
+                        mainRoot: "sv_qstn px-4",
+                        title: "mb-4 mt-2"
+                    }
                 }
-            }
-        });
+            });
+            
+            this.status = SurveyStatus.READY;
+        }
     }
 
     private processResponse(response) {
@@ -140,11 +148,11 @@ export class AppComponent implements OnInit {
                 console.log("Limesurvey response ID", responseId);
             }, (error) => {
                 console.error("Cannot add response", error);
-                this.error = true;
+                this.surveyError = true;
             });
         }, (error) => {
             console.error("Cannot authenticate with LimeSurvey platform", error);
-            this.error = true;
+            this.surveyError = true;
         });
     }
     
@@ -159,6 +167,8 @@ export class AppComponent implements OnInit {
 
 enum SurveyStatus {
     
+    LOADING = 'loading',
+    ERROR = 'error',
     READY = 'ready',
     DOING = 'doing',
     DONE = 'done'
