@@ -79,6 +79,9 @@ export class AppComponent implements OnInit {
             survey.onComplete.add((response) => {
                 this.processResponse(response);
             });
+            survey.onCurrentPageChanged.add((e) => {
+                window.scrollTo(0, 0);
+            });
             
             // Doc: https://surveyjs.io/Examples/Library/?id=survey-customcss&platform=jQuery&theme=default
             SurveyNG.render( "surveyElement", {
