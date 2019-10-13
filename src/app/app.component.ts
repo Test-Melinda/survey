@@ -79,9 +79,24 @@ export class AppComponent implements OnInit {
             survey.onComplete.add((response) => {
                 this.processResponse(response);
             });
+            survey.onRendered.add((e) => {
+                // Progress bar style
+                let progressBars = document.getElementsByClassName('survey-progress');
+                for (let i = 0; i < progressBars.length; i++){
+                    let bar = <HTMLElement>(progressBars.item(i));
+                    console.log(bar);
+                    bar.style.width = "100%";
+                    bar.parentElement.style.paddingLeft = "1.5rem";
+                    bar.parentElement.style.paddingRight = "1.5rem";
+                    
+                    (<HTMLElement>(bar.firstElementChild)).style.margin = "0";
+                }
+            });
             survey.onCurrentPageChanged.add((e) => {
+                // Scroll to top
                 window.scrollTo(0, 0);
             });
+            survey.showProgressBar = "top";
             
             // Doc: https://surveyjs.io/Examples/Library/?id=survey-customcss&platform=jQuery&theme=default
             SurveyNG.render( "surveyElement", {
@@ -95,7 +110,8 @@ export class AppComponent implements OnInit {
                     question: {
                         mainRoot: "sv_qstn px-4",
                         title: "mb-4 mt-2"
-                    }
+                    },
+                    progress: "progress center-block mx-auto mb-4 survey-progress"
                 }
             });
             
