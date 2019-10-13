@@ -1,0 +1,16 @@
+.loader {
+	width: 180px;
+	height: 180px;
+	display: inline-block;
+	border: 1px solid #bbb;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 55px;
+	
+	p {
+		margin: 0;
+	}
+	
+	img {
+		margin-bottom: 10px;
+	}
+}
