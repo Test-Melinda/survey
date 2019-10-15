@@ -148,59 +148,79 @@ answers?: Map<string, string>
         gid: 2274,
         qid: 44671
     }],
-    ["Q6dot1IT", {
+    ["Q6", {
+        gid: 2284,
+        qid: 44691
+    }],
+    ["Q6CARS", {
+        gid: 2284,
+        qid: 44692
+    }],
+    ["Q6MOTOR", {
+        gid: 2284,
+        qid: 44693
+    }],
+    ["Q6BIKES", {
+        gid: 2284,
+        qid: 44694
+    }],
+    ["Q6SCOOT", {
+        gid: 2284,
+        qid: 44695
+    }],
+    ["Q7dot1IT", {
         gid: 2275,
         qid: 44673
     }],
-    ["Q6dot1AU", {
+    ["Q7dot1AU", {
         gid: 2275,
         qid: 44674
     }],
-    ["Q6dot1SL", {
+    ["Q7dot1SL", {
         gid: 2275,
         qid: 44675
     }],
-    ["Q6dot1SW", {
+    ["Q7dot1SW", {
         gid: 2275,
         qid: 44676
     }],
-    ["Q6dot1FR", {
+    ["Q7dot1FR", {
         gid: 2275,
         qid: 44677
     }],
-    ["Q6dot1GE", {
+    ["Q7dot1GE", {
         gid: 2275,
         qid: 44678
     }],
-    ["Q6dot2", {
+    ["Q7dot2", {
         gid: 2276,
         qid: 44679
     }],
-    ["Q6dot3", {
+    ["Q7dot3", {
         gid: 2277,
         qid: 44680
     }],
-    ["Q7", {
+    ["Q8", {
         gid: 2278,
         qid: 44681
     }],
-    ["Q8", {
+    ["Q9", {
         gid: 2279,
         qid: 44682
     }],
-    ["Q9", {
+    ["Q10", {
         gid: 2280,
         qid: 44683
     }],
-    ["Q10", {
+    ["Q11", {
         gid: 2281,
         qid: 44685
     }],
-    ["Q11", {
+    ["Q12", {
         gid: 2281,
         qid: 44686
     }],
-    ["Q12", {
+    ["Q13", {
         gid: 2281,
         qid: 44687
     }],
@@ -208,33 +228,13 @@ answers?: Map<string, string>
         gid: 2281,
         qid: 44688
     }],
-    ["Q13", {
+    ["Q14", {
         gid: 2282,
         qid: 44689
     }],
-    ["Q13bis", {
+    ["Q14bis", {
         gid: 2283,
         qid: 44690
-    }],
-    ["Q14", {
-        gid: 2284,
-        qid: 44691
-    }],
-    ["Q14CARS", {
-        gid: 2284,
-        qid: 44692
-    }],
-    ["Q14MOTOR", {
-        gid: 2284,
-        qid: 44693
-    }],
-    ["Q14BIKES", {
-        gid: 2284,
-        qid: 44694
-    }],
-    ["Q14SCOOT", {
-        gid: 2284,
-        qid: 44695
     }],
     ["MA", {
         gid: 2285,

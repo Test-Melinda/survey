@@ -2132,7 +2132,7 @@ export const surveyModel = {
                       },
                       {
                        "value": "5",
-                       "text": "Bicycle"
+                       "text": "Bicycle (also e-bike)"
                       },
                       {
                        "value": "6",
@@ -2140,7 +2140,7 @@ export const surveyModel = {
                       },
                       {
                        "value": "7",
-                       "text": "Other"
+                       "text": "Other (scooter/skateboard/hoverboard, …)"
                       }
                      ]
                     }
@@ -2172,7 +2172,7 @@ export const surveyModel = {
                       },
                       {
                        "value": "5",
-                       "text": "Bicycle"
+                       "text": "Bicycle (also e-bike)"
                       },
                       {
                        "value": "6",
@@ -2180,7 +2180,7 @@ export const surveyModel = {
                       },
                       {
                        "value": "7",
-                       "text": "Other"
+                       "text": "Other (scooter/skateboard/hoverboard, …)"
                       }
                      ]
                     }
@@ -2192,7 +2192,7 @@ export const surveyModel = {
                     {
                      "type": "checkbox",
                      "name": "Q4",
-                     "title": "Which of the following Mobility Solutions have you ever heard of?",
+                     "title": "Which of the following travel services have you ever heard of?",
                      "choices": [
                       {
                        "value": "1",
@@ -2262,11 +2262,176 @@ export const surveyModel = {
                    ]
                   },
                   {
+                   "name": "mobility_capital",
+                   "elements": [
+                    {
+                     "type": "checkbox",
+                     "name": "Q6",
+                     "title": "Which means of transport do you own or have access to*?",
+                     "description": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
+                     "validators": [
+                      {
+                       "type": "expression",
+                       "text": "You can't select anything if you selected \"None of these\"",
+                       "expression": "(!({Q6} anyof \"9\")) or {Q6.length} == 1"
+                      }
+                     ],
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Cars",
+                       "enableIf": "{Q6} anyof \"1\" or !({Q6} anyof \"9\")"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Public Transport Season ticket",
+                       "enableIf": "{Q6} anyof \"2\" or !({Q6} anyof \"9\")"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Motorbike/moped",
+                       "enableIf": "{Q6} anyof \"3\" or !({Q6} anyof \"9\")"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Bicycle",
+                       "enableIf": "{Q6} anyof \"4\" or !({Q6} anyof \"9\")"
+                      },
+                      {
+                       "value": "5",
+                       "text": "Scooter/skateboard/hoverboard",
+                       "enableIf": "{Q6} anyof \"5\" or !({Q6} anyof \"9\")"
+                      },
+                      {
+                       "value": "6",
+                       "text": "Bike Sharing account",
+                       "enableIf": "{Q6} anyof \"6\" or !({Q6} anyof \"9\")"
+                      },
+                      {
+                       "value": "7",
+                       "text": "Car sharing account",
+                       "enableIf": "{Q6} anyof \"7\" or !({Q6} anyof \"9\")"
+                      },
+                      {
+                       "value": "8",
+                       "text": "Other",
+                       "enableIf": "{Q6} anyof \"8\" or !({Q6} anyof \"9\")"
+                      },
+                      {
+                       "value": "9",
+                       "text": "None of these",
+                       "enableIf": "{Q6} anyof \"9\" or {Q6.length} == 0"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6CARS",
+                     "visibleIf": "{Q6} anyof \"1\"",
+                     "title": "How often do you have access to a car?",
+                     "description": "To have access to means that you can easily use it even if you don't own it.",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Always"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Often"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Rarely"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Never"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6MOTOR",
+                     "visibleIf": "{Q6} anyof \"3\"",
+                     "title": "How often do you have access to a Motorbike/moped?",
+                     "description": "To have access to means that you can easily use it even if you don't own it.",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Always"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Often"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Rarely"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Never"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6BIKES",
+                     "visibleIf": "{Q6} anyof \"4\"",
+                     "title": "How often do you have access to a bicycle/e-bike?",
+                     "description": "To have access to means that you can easily use it even if you don't own it.",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Always"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Often"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Rarely"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Never"
+                      }
+                     ]
+                    },
+                    {
+                     "type": "radiogroup",
+                     "name": "Q6SCOOT",
+                     "visibleIf": "{Q6} anyof \"5\"",
+                     "title": "How often do you have access to a scooter/skateboard/hoverboard?",
+                     "description": "To have access to means that you can easily use it even if you don't own it.",
+                     "choices": [
+                      {
+                       "value": "1",
+                       "text": "Always"
+                      },
+                      {
+                       "value": "2",
+                       "text": "Often"
+                      },
+                      {
+                       "value": "3",
+                       "text": "Rarely"
+                      },
+                      {
+                       "value": "4",
+                       "text": "Never"
+                      }
+                     ]
+                    }
+                   ]
+                  },
+                  {
                    "name": "quiz1",
                    "elements": [
                     {
                      "type": "radiogroup",
-                     "name": "Q6dot1IT",
+                     "name": "Q7dot1IT",
                      "visibleIf": "{QF1} == 'it'",
                      "title": "What can be, on average, the monthly cost of owning a (petrol) car in Italy (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
                      "choices": [
@@ -2290,7 +2455,7 @@ export const surveyModel = {
                     },
                     {
                      "type": "radiogroup",
-                     "name": "Q6dot1AU",
+                     "name": "Q7dot1AU",
                      "visibleIf": "{QF1} == 'at' or {QF1} == 'fl'",
                      "title": "What can be, on average, the monthly cost of owning a (petrol) car in Austria (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
                      "choices": [
@@ -2314,7 +2479,7 @@ export const surveyModel = {
                     },
                     {
                      "type": "radiogroup",
-                     "name": "Q6dot1SL",
+                     "name": "Q7dot1SL",
                      "visibleIf": "{QF1} == 'slo'",
                      "title": "What can be, on average, the monthly cost of owning a (petrol) car in the EU (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
                      "choices": [
@@ -2338,7 +2503,7 @@ export const surveyModel = {
                     },
                     {
                      "type": "radiogroup",
-                     "name": "Q6dot1SW",
+                     "name": "Q7dot1SW",
                      "visibleIf": "{QF1} == 'ch'",
                      "title": "What can be, on average, the monthly cost of owning a (petrol) car in Switzerland (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
                      "choices": [
@@ -2362,7 +2527,7 @@ export const surveyModel = {
                     },
                     {
                      "type": "radiogroup",
-                     "name": "Q6dot1FR",
+                     "name": "Q7dot1FR",
                      "visibleIf": "{QF1} == 'fr'",
                      "title": "What can be, on average, the monthly cost of owning a (petrol) car in France (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
                      "choices": [
@@ -2386,7 +2551,7 @@ export const surveyModel = {
                     },
                     {
                      "type": "radiogroup",
-                     "name": "Q6dot1GE",
+                     "name": "Q7dot1GE",
                      "visibleIf": "{QF1} == 'de'",
                      "title": "What can be, on average, the monthly cost of owning a (petrol) car in Germany (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
                      "choices": [
@@ -2416,24 +2581,16 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "radiogroup",
-                     "name": "Q6dot2",
-                     "title": "In EU how much frequent are deaths due to air pollution versus road incidents?\n\nCompared to deaths due to road incidents, Air pollution-linked deaths, are:",
+                     "name": "Q7dot2",
+                     "title": "In your opinion which of these two phenomena cause more deaths in the European Union?",
                      "choices": [
                       {
                        "value": "1",
-                       "text": "At least 10 times more numerous"
+                       "text": "Roads incidents"
                       },
                       {
                        "value": "2",
-                       "text": "At least 5 times more numerous"
-                      },
-                      {
-                       "value": "3",
-                       "text": "At least 5 times less numerous"
-                      },
-                      {
-                       "value": "4",
-                       "text": "At least 10 times less numerous"
+                       "text": "Air pollution"
                       }
                      ]
                     }
@@ -2444,8 +2601,8 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "radiogroup",
-                     "name": "Q6dot3",
-                     "title": "How much physical activity must be done every day in order to match WHO recommendations? How many minutes of daily walking activities does it correspond to?",
+                     "name": "Q7dot3",
+                     "title": "How much physical activity WHO recommend to do every day? How many minutes of daily walking activities does it correspond to?",
                      "choices": [
                       {
                        "value": "A1",
@@ -2472,70 +2629,70 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "checkbox",
-                     "name": "Q7",
+                     "name": "Q8",
                      "title": "Have you done any of the following actions in the past six months? (Multiple answers possible)",
                      "validators": [
                       {
                        "type": "expression",
                        "text": "You can't select anything if you selected \"None\" or \"I don't known\"",
-                       "expression": "((!({Q7} anyof \"10\")) and (!({Q7} anyof \"11\"))) or {Q7.length} == 1"
+                       "expression": "((!({Q8} anyof \"10\")) and (!({Q8} anyof \"11\"))) or {Q8.length} == 1"
                       }
                      ],
                      "choices": [
                       {
                        "value": "1",
                        "text": "Chosen a more environmentally-friendly way of travelling (walk, bicycle, public transport, electric car)",
-                       "enableIf": "{Q7} anyof \"1\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"1\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "2",
                        "text": "Avoided buying over-packaged products",
-                       "enableIf": "{Q7} anyof \"2\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"2\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "3",
                        "text": "Bought local products",
-                       "enableIf": "{Q7} anyof \"3\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"3\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "4",
                        "text": "Cut down your water consumption",
-                       "enableIf": "{Q7} anyof \"4\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"4\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "5",
                        "text": "Separated most of your waste for recycling",
-                       "enableIf": "{Q7} anyof \"5\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"5\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "6",
                        "text": "Used your car less by avoiding unnecessary trips, working from home (teleworking), etc.",
-                       "enableIf": "{Q7} anyof \"6\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"6\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "7",
                        "text": "Bought products marked with an environmental label",
-                       "enableIf": "{Q7} anyof \"7\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"7\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "8",
                        "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products",
-                       "enableIf": "{Q7} anyof \"8\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"8\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "9",
                        "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products",
-                       "enableIf": "{Q7} anyof \"9\" or !({Q7} anyof \"10\" or {Q7} anyof \"11\")"
+                       "enableIf": "{Q8} anyof \"9\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
                       },
                       {
                        "value": "10",
                        "text": "None",
-                       "enableIf": "{Q7} anyof \"10\" or {Q7.length} == 0"
+                       "enableIf": "{Q8} anyof \"10\" or {Q8.length} == 0"
                       },
                       {
                        "value": "11",
                        "text": "I don’t know",
-                       "enableIf": "{Q7} anyof \"11\" or {Q7.length} == 0"
+                       "enableIf": "{Q8} anyof \"11\" or {Q8.length} == 0"
                       }
                      ]
                     }
@@ -2546,55 +2703,60 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "checkbox",
-                     "name": "Q8",
+                     "name": "Q9",
                      "title": "In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution? (maximum two answers are possible)",
                      "validators": [
                       {
                        "type": "expression",
                        "text": "Please select at most 2 answers",
-                       "expression": "{Q8.length} <= 2"
+                       "expression": "{Q9.length} <= 2"
                       }
                      ],
                      "choices": [
                       {
                        "value": "1",
                        "text": "City authorities",
-                       "enableIf": "{Q8} anyof \"1\" or {Q8.length} < 2"
+                       "enableIf": "{Q9} anyof \"1\" or {Q9.length} < 2"
                       },
                       {
                        "value": "2",
                        "text": "Citizens themselves",
-                       "enableIf": "{Q8} anyof \"2\" or {Q8.length} < 2"
+                       "enableIf": "{Q9} anyof \"2\" or {Q9.length} < 2"
                       },
                       {
                        "value": "3",
                        "text": "Regional authorities",
-                       "enableIf": "{Q8} anyof \"3\" or {Q8.length} < 2"
+                       "enableIf": "{Q9} anyof \"3\" or {Q9.length} < 2"
                       },
                       {
                        "value": "4",
                        "text": "National Government",
-                       "enableIf": "{Q8} anyof \"4\" or {Q8.length} < 2"
+                       "enableIf": "{Q9} anyof \"4\" or {Q9.length} < 2"
                       },
                       {
                        "value": "5",
-                       "text": "Private companies",
-                       "enableIf": "{Q8} anyof \"5\" or {Q8.length} < 2"
+                       "text": "EU bodies",
+                       "enableIf": "{Q9} anyof \"5\" or {Q9.length} < 2"
                       },
                       {
                        "value": "6",
-                       "text": "Trade Unions or Political Parties",
-                       "enableIf": "{Q8} anyof \"6\" or {Q8.length} < 2"
+                       "text": "Private companies",
+                       "enableIf": "{Q9} anyof \"6\" or {Q9.length} < 2"
                       },
                       {
                        "value": "7",
-                       "text": "Non-profit Associations/non-governmental organizations",
-                       "enableIf": "{Q8} anyof \"7\" or {Q8.length} < 2"
+                       "text": "Trade Unions or Political Parties",
+                       "enableIf": "{Q9} anyof \"7\" or {Q9.length} < 2"
                       },
                       {
                        "value": "8",
+                       "text": "Non-profit Associations/non-governmental organizations",
+                       "enableIf": "{Q9} anyof \"8\" or {Q9.length} < 2"
+                      },
+                      {
+                       "value": "9",
                        "text": "Other",
-                       "enableIf": "{Q8} anyof \"8\" or {Q8.length} < 2"
+                       "enableIf": "{Q9} anyof \"9\" or {Q9.length} < 2"
                       }
                      ]
                     }
@@ -2605,85 +2767,65 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "checkbox",
-                     "name": "Q9",
+                     "name": "Q10",
                      "title": "From the following list, which are your three main sources of information about the environment (climate change, pollution, …)?\n\n(maximum 3 answers possible)",
                      "validators": [
                       {
                        "type": "expression",
                        "text": "You can't select anything if you selected \"I am not interested in the environment\" or \"I don't known\"",
-                       "expression": "((!({Q9} anyof \"12\")) and (!({Q9} anyof \"13\"))) or {Q9.length} == 1"
+                       "expression": "((!({Q10} anyof \"8\")) and (!({Q10} anyof \"9\"))) or {Q10.length} == 1"
                       },
                       {
                        "type": "expression",
                        "text": "Maximum 3 answers possible",
-                       "expression": "{Q9.length} <= 3"
+                       "expression": "{Q10.length} <= 3"
                       }
                      ],
                      "choices": [
                       {
                        "value": "1",
-                       "text": "National newspapers and magazines",
-                       "enableIf": "{Q9} anyof \"1\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
+                       "text": "Newspapers and magazines",
+                       "enableIf": "{Q10} anyof \"1\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
                       },
                       {
                        "value": "2",
-                       "text": "Regional or local newspapers",
-                       "enableIf": "{Q9} anyof \"2\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
+                       "text": "Television news and/or radio",
+                       "enableIf": "{Q10} anyof \"3\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
                       },
                       {
                        "value": "3",
-                       "text": "Television news and/or radio",
-                       "enableIf": "{Q9} anyof \"3\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
+                       "text": "Family, friends, neighbours or colleagues",
+                       "enableIf": "{Q10} anyof \"5\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
                       },
                       {
                        "value": "4",
-                       "text": "Films and documentaries on television",
-                       "enableIf": "{Q9} anyof \"4\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
+                       "text": "Books or scientific publications and/or information materials",
+                       "enableIf": "{Q10} anyof \"6\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
                       },
                       {
                        "value": "5",
-                       "text": "Family, friends, neighbours or colleagues",
-                       "enableIf": "{Q9} anyof \"5\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
+                       "text": "Online social networks (facebook, Instagram, Twitter, …)",
+                       "enableIf": "{Q10} anyof \"9\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
                       },
                       {
                        "value": "6",
-                       "text": "Books or scientific publications and/or information materials",
-                       "enableIf": "{Q9} anyof \"6\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
+                       "text": "The Internet (other websites, newsletters, blogs, forums, etc., NO social networks)",
+                       "enableIf": "{Q10} anyof \"10\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
                       },
                       {
                        "value": "7",
-                       "text": "Events (conferences, fairs, exhibitions, festivals, etc.)",
-                       "enableIf": "{Q9} anyof \"7\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
+                       "text": "Other",
+                       "enableIf": "{Q10} anyof \"11\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
                       },
                       {
                        "value": "8",
-                       "text": "Museums, national or regional parks",
-                       "enableIf": "{Q9} anyof \"8\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
+                       "text": "I am not interested in the environment",
+                       "enableIf": "{Q10} anyof \"12\" or {Q10.length} == 0"
                       },
                       {
                        "value": "9",
-                       "text": "Online social networks (facebook, Instagram, Twitter, …)",
-                       "enableIf": "{Q9} anyof \"9\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
-                      },
-                      {
-                       "value": "10",
-                       "text": "The Internet (other websites, newsletters, blogs, forums, etc., NO social networks)",
-                       "enableIf": "{Q9} anyof \"10\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
-                      },
-                      {
-                       "value": "11",
-                       "text": "Other",
-                       "enableIf": "{Q9} anyof \"11\" or !({Q9} anyof \"12\" or {Q9} anyof \"13\")"
-                      },
-                      {
-                       "value": "12",
-                       "text": "I am not interested in the environment",
-                       "enableIf": "{Q9} anyof \"12\" or {Q9.length} == 0"
-                      },
-                      {
-                       "value": "13",
                        "text": "I don't know",
-                       "enableIf": "{Q9} anyof \"13\" or {Q9.length} == 0"
+                       "enableIf": "{Q10} anyof \"13\" or {Q10.length} == 0"
                       }
                      ]
                     }
@@ -2694,7 +2836,7 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "radiogroup",
-                     "name": "Q10",
+                     "name": "Q11",
                      "title": "What is your age?",
                      "choices": [
                       {
@@ -2733,7 +2875,7 @@ export const surveyModel = {
                     },
                     {
                      "type": "dropdown",
-                     "name": "Q11",
+                     "name": "Q12",
                      "title": "You are:",
                      "choices": [
                       {
@@ -2750,13 +2892,13 @@ export const surveyModel = {
                       },
                       {
                        "value": "4",
-                       "text": "I don't want to answer"
+                       "text": "No answer"
                       }
                      ]
                     },
                     {
                      "type": "radiogroup",
-                     "name": "Q12",
+                     "name": "Q13",
                      "title": "What is your highest level of education?",
                      "choices": [
                       {
@@ -2783,8 +2925,12 @@ export const surveyModel = {
                      "title": "Number of members in your houselhold (with you)",
                      "choices": [
                       {
+                       "value": "0",
+                       "text": "One"
+                      },
+                      {
                        "value": "1",
-                       "text": "Up to 2"
+                       "text": "Two"
                       },
                       {
                        "value": "2",
@@ -2800,7 +2946,7 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "radiogroup",
-                     "name": "Q13",
+                     "name": "Q14",
                      "title": "What is your occupational status?",
                      "choices": [
                       {
@@ -2836,136 +2982,23 @@ export const surveyModel = {
                    "elements": [
                     {
                      "type": "radiogroup",
-                     "name": "Q13bis",
-                     "visibleIf": "{Q13} == \"1\"",
+                     "name": "Q14bis",
+                     "visibleIf": "{Q14} == \"1\"",
                      "title": "You work as:",
                      "choices": [
                       {
                        "value": "1",
-                       "text": "Entrepreneur"
-                      },
-                      {
-                       "value": "2",
-                       "text": "Professional (lawyer, doctor, …)"
-                      },
-                      {
-                       "value": "3",
-                       "text": "Manager"
-                      },
-                      {
-                       "value": "4",
                        "text": "Self Employed"
                       },
                       {
-                       "value": "5",
+                       "value": "2",
                        "text": "Employee"
                       },
                       {
-                       "value": "6",
-                       "text": "Worker"
-                      },
-                      {
-                       "value": "7",
+                       "value": "3",
                        "text": "Other"
                       }
                      ]
-                    }
-                   ]
-                  },
-                  {
-                   "name": "mobility_capital",
-                   "elements": [
-                    {
-                     "type": "checkbox",
-                     "name": "Q14",
-                     "title": "Which means of transport do you own or have access to*?",
-                     "description": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
-                     "validators": [
-                      {
-                       "type": "expression",
-                       "text": "You can't select anything if you selected \"None of these\"",
-                       "expression": "(!({Q14} anyof \"9\")) or {Q14.length} == 1"
-                      }
-                     ],
-                     "choices": [
-                      {
-                       "value": "1",
-                       "text": "Cars",
-                       "enableIf": "{Q14} anyof \"1\" or !({Q14} anyof \"9\")"
-                      },
-                      {
-                       "value": "2",
-                       "text": "Public Transport Season ticket",
-                       "enableIf": "{Q14} anyof \"2\" or !({Q14} anyof \"9\")"
-                      },
-                      {
-                       "value": "3",
-                       "text": "Motorbike/moped",
-                       "enableIf": "{Q14} anyof \"3\" or !({Q14} anyof \"9\")"
-                      },
-                      {
-                       "value": "4",
-                       "text": "Bicycle",
-                       "enableIf": "{Q14} anyof \"4\" or !({Q14} anyof \"9\")"
-                      },
-                      {
-                       "value": "5",
-                       "text": "Scooter/skateboard/hoverboard",
-                       "enableIf": "{Q14} anyof \"5\" or !({Q14} anyof \"9\")"
-                      },
-                      {
-                       "value": "6",
-                       "text": "Bike Sharing account",
-                       "enableIf": "{Q14} anyof \"6\" or !({Q14} anyof \"9\")"
-                      },
-                      {
-                       "value": "7",
-                       "text": "Car sharing account",
-                       "enableIf": "{Q14} anyof \"7\" or !({Q14} anyof \"9\")"
-                      },
-                      {
-                       "value": "8",
-                       "text": "Other",
-                       "enableIf": "{Q14} anyof \"8\" or !({Q14} anyof \"9\")"
-                      },
-                      {
-                       "value": "9",
-                       "text": "None of these",
-                       "enableIf": "{Q14} anyof \"9\" or {Q14.length} == 0"
-                      }
-                     ]
-                    },
-                    {
-                     "type": "text",
-                     "name": "Q14CARS",
-                     "visibleIf": "{Q14} anyof \"1\"",
-                     "title": "How many cars you have access to?",
-                     "description": "To have access to means that you can easily use it even if you don't own it.",
-                     "inputType": "number"
-                    },
-                    {
-                     "type": "text",
-                     "name": "Q14MOTOR",
-                     "visibleIf": "{Q14} anyof \"3\"",
-                     "title": "How many motorbikes/mopeds you have access to?",
-                     "description": "To have access to means that you can easily use it even if you don't own it.",
-                     "inputType": "number"
-                    },
-                    {
-                     "type": "text",
-                     "name": "Q14BIKES",
-                     "visibleIf": "{Q14} anyof \"4\"",
-                     "title": "How many bicycles you have access to?",
-                     "description": "To have access to means that you can easily use it even if you don't own it.",
-                     "inputType": "number"
-                    },
-                    {
-                     "type": "text",
-                     "name": "Q14SCOOT",
-                     "visibleIf": "{Q14} anyof \"5\"",
-                     "title": "How many scooter/skateboard/hoverboard you have access to?",
-                     "description": "To have access to means that you can easily use it even if you don't own it.",
-                     "inputType": "number"
                     }
                    ]
                   },

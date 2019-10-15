@@ -148,59 +148,79 @@ answers?: Map<string, string>
         gid: 8,
         qid: 48
     }],
-    ["Q6dot1IT", {
+    ["Q6", {
+        gid: 18,
+        qid: 68
+    }],
+    ["Q6CARS", {
+        gid: 18,
+        qid: 69
+    }],
+    ["Q6MOTOR", {
+        gid: 18,
+        qid: 70
+    }],
+    ["Q6BIKES", {
+        gid: 18,
+        qid: 71
+    }],
+    ["Q6SCOOT", {
+        gid: 18,
+        qid: 72
+    }],
+    ["Q7dot1IT", {
         gid: 9,
         qid: 50
     }],
-    ["Q6dot1AU", {
+    ["Q7dot1AU", {
         gid: 9,
         qid: 51
     }],
-    ["Q6dot1SL", {
+    ["Q7dot1SL", {
         gid: 9,
         qid: 52
     }],
-    ["Q6dot1SW", {
+    ["Q7dot1SW", {
         gid: 9,
         qid: 53
     }],
-    ["Q6dot1FR", {
+    ["Q7dot1FR", {
         gid: 9,
         qid: 54
     }],
-    ["Q6dot1GE", {
+    ["Q7dot1GE", {
         gid: 9,
         qid: 55
     }],
-    ["Q6dot2", {
+    ["Q7dot2", {
         gid: 10,
         qid: 56
     }],
-    ["Q6dot3", {
+    ["Q7dot3", {
         gid: 11,
         qid: 57
     }],
-    ["Q7", {
+    ["Q8", {
         gid: 12,
         qid: 58
     }],
-    ["Q8", {
+    ["Q9", {
         gid: 13,
         qid: 59
     }],
-    ["Q9", {
+    ["Q10", {
         gid: 14,
         qid: 60
     }],
-    ["Q10", {
+    ["Q11", {
         gid: 15,
         qid: 62
     }],
-    ["Q11", {
+    ["Q12", {
         gid: 15,
         qid: 63
     }],
-    ["Q12", {
+    ["Q13", {
         gid: 15,
         qid: 64
     }],
@@ -208,33 +228,13 @@ answers?: Map<string, string>
         gid: 15,
         qid: 65
     }],
-    ["Q13", {
+    ["Q14", {
         gid: 16,
         qid: 66
     }],
-    ["Q13bis", {
+    ["Q14bis", {
         gid: 17,
         qid: 67
-    }],
-    ["Q14", {
-        gid: 18,
-        qid: 68
-    }],
-    ["Q14CARS", {
-        gid: 18,
-        qid: 69
-    }],
-    ["Q14MOTOR", {
-        gid: 18,
-        qid: 70
-    }],
-    ["Q14BIKES", {
-        gid: 18,
-        qid: 71
-    }],
-    ["Q14SCOOT", {
-        gid: 18,
-        qid: 72
     }],
     ["MA", {
         gid: 19,

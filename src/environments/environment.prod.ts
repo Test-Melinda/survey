@@ -3,8 +3,8 @@ export const environment = {
     limesurvey: {
         api: {
             url: "https://sondaggi.didattica.unimib.it/index.php/admin/remotecontrol",
-            username: "admin",
-            password: "admin"
+            username: "s.caiello@campus.unimib.it",
+            password: "fotowolt*555"
         },
         surveys: {
             default: 463632
