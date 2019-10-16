@@ -1,10 +1,12 @@
+import { limesurveySettings } from './limesurvey-settings';
+
 export const environment = {
     production: true,
     limesurvey: {
         api: {
-            url: "https://sondaggi.didattica.unimib.it/index.php/admin/remotecontrol",
-            username: "admin",
-            password: "admin"
+            url: limesurveySettings.url,
+            username: limesurveySettings.username,
+            password: limesurveySettings.password
         },
         surveys: {
             default: 463632
