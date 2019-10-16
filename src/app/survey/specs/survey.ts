@@ -27,11 +27,11 @@ export const surveyModel = {
                        "text": "Italy"
                       },
                       {
-                       "value": "fl",
+                       "value": "li",
                        "text": "Liechtenstein"
                       },
                       {
-                       "value": "slo",
+                       "value": "si",
                        "text": "Slovenia"
                       },
                       {
@@ -1362,7 +1362,7 @@ export const surveyModel = {
                      "type": "dropdown",
                      "name": "QF2SL",
                      "visible": false,
-                     "visibleIf": "{QF1} = \"slo\"",
+                     "visibleIf": "{QF1} = \"si\"",
                      "title": "Could you precise in which region do you live?",
                      "choices": [
                       {
@@ -1604,8 +1604,8 @@ export const surveyModel = {
                      "type": "checkbox",
                      "name": "EQ1AU",
                      "visible": false,
-                     "visibleIf": "{QF1} == \"at\" or {QF1} == \"fl\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\"))",
-                     "title": "in the Vorarlberg Region do you usually carry out any of the following activities? (Multiple answers are possible)",
+                     "visibleIf": "{QF1} == \"at\" or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\"))",
+                     "title": "In the Vorarlberg Region do you usually carry out any of the following activities? (Multiple answers are possible)",
                      "choices": [
                       {
                        "value": "1",
@@ -1720,7 +1720,7 @@ export const surveyModel = {
                      "type": "checkbox",
                      "name": "EQ1SL",
                      "visible": false,
-                     "visibleIf": "{QF1} == 'slo'",
+                     "visibleIf": "{QF1} == 'si'",
                      "title": "In the city of Maribor do you usually carry out any of the following activities? (Multiple answers are possible)",
                      "choices": [
                       {
@@ -2456,7 +2456,7 @@ export const surveyModel = {
                     {
                      "type": "radiogroup",
                      "name": "Q7dot1AU",
-                     "visibleIf": "{QF1} == 'at' or {QF1} == 'fl'",
+                     "visibleIf": "{QF1} == 'at' or {QF1} == 'li'",
                      "title": "What can be, on average, the monthly cost of owning a (petrol) car in Austria (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
                      "choices": [
                       {
@@ -2480,7 +2480,7 @@ export const surveyModel = {
                     {
                      "type": "radiogroup",
                      "name": "Q7dot1SL",
-                     "visibleIf": "{QF1} == 'slo'",
+                     "visibleIf": "{QF1} == 'si'",
                      "title": "What can be, on average, the monthly cost of owning a (petrol) car in the EU (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
                      "choices": [
                       {
