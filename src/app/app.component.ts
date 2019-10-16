@@ -84,7 +84,6 @@ export class AppComponent implements OnInit {
                 let progressBars = document.getElementsByClassName('survey-progress');
                 for (let i = 0; i < progressBars.length; i++){
                     let bar = <HTMLElement>(progressBars.item(i));
-                    console.log(bar);
                     bar.style.width = "100%";
                     bar.parentElement.style.paddingLeft = "1.5rem";
                     bar.parentElement.style.paddingRight = "1.5rem";
