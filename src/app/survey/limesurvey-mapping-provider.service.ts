@@ -26,4 +26,16 @@ export class LimesurveyMappingProviderService {
       return surveyId;
   }
   
+  public getScoreQuestionMapping(region: string): {
+      gid: number,
+      qid: number
+  } {
+      let mapping = environment.limesurvey.metaQuestions.score.default;
+      if (region in environment.limesurvey.metaQuestions.score){
+          mapping = environment.limesurvey.surveys[region];
+      }
+      
+      return mapping;
+  }
+  
 }
