@@ -129,10 +129,8 @@ export class AppComponent implements OnInit {
         this.score = this.scoreCalculator.calculate(responseData);
         console.log("Score", this.score);
         
-        // Detect survey region
-        let surveyRegion = null;
-        
         // Convert to Limesurvey response
+        let surveyRegion = this.source;
         let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
         
         // Add the score to the hidden Limesurvey response
