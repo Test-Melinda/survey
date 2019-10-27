@@ -1626,6 +1626,10 @@ export const surveyModel = {
                       {
                        "value": "5",
                        "text": "Other"
+                      },
+                      {
+                       "value": "6",
+                       "text": "None"
                       }
                      ]
                     },
@@ -1655,6 +1659,10 @@ export const surveyModel = {
                       {
                        "value": "5",
                        "text": "Other"
+                      },
+                      {
+                       "value": "6",
+                       "text": "None"
                       }
                      ]
                     },
@@ -1684,6 +1692,10 @@ export const surveyModel = {
                       {
                        "value": "5",
                        "text": "Other"
+                      },
+                      {
+                       "value": "6",
+                       "text": "None"
                       }
                      ]
                     },
@@ -1713,6 +1725,10 @@ export const surveyModel = {
                       {
                        "value": "5",
                        "text": "Other"
+                      },
+                      {
+                       "value": "6",
+                       "text": "None"
                       }
                      ]
                     },
@@ -1742,6 +1758,10 @@ export const surveyModel = {
                       {
                        "value": "5",
                        "text": "Other"
+                      },
+                      {
+                       "value": "6",
+                       "text": "None"
                       }
                      ]
                     },
@@ -1771,6 +1791,10 @@ export const surveyModel = {
                       {
                        "value": "5",
                        "text": "Other"
+                      },
+                      {
+                       "value": "6",
+                       "text": "None"
                       }
                      ]
                     },
@@ -1800,6 +1824,10 @@ export const surveyModel = {
                       {
                        "value": "5",
                        "text": "Other"
+                      },
+                      {
+                       "value": "6",
+                       "text": "None"
                       }
                      ]
                     }
