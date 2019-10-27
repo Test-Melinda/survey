@@ -79,14 +79,7 @@ answers?: Map<string, string>
     }],
     ["EQ1GE", {
         gid: 2270,
-        qid: 44656,
-        answers: new Map([
-            ["1", "SQ001"],
-            ["2", "SQ002"],
-            ["3", "SQ003"],
-            ["4", "SQ004"],
-            ["5", "SQ005"]
-        ])
+        qid: 44656
     }],
     ["EQ1FR", {
         gid: 2270,
