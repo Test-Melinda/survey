@@ -16,10 +16,11 @@ export class SurveySpecificationService {
     }
     
     public getLocalizedModel( locale: string ) {
+		console.log("Loading localized model for locale", locale);
         let model = this.model;
-
+		
         // TODO localization
-
+		
         return model;
     }
 

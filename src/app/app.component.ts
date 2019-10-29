@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     
     private parseSource(){
         // Admitted values
-        let values = ['it', 'fr', 'slo', 'de', 'ch', 'at', 'fl'];
+        let values = ['it', 'fr', 'slo', 'de', 'ch', 'at', 'li'];
         
         // Parse
         let src = new URLSearchParams(window.location.search).get('src') || null;
@@ -71,11 +71,29 @@ export class AppComponent implements OnInit {
     ngOnInit() {
         if (this.status != SurveyStatus.ERROR){
             let locale = 'en';
+			switch (this.source){
+				case 'de':
+				case 'at':
+				case 'ch':
+				case 'li':
+					locale = 'de';
+					break;
+				case 'it':
+					locale = 'it';
+					break;
+				case 'fr':
+					locale = 'fr';
+					break;
+				case 'slo':
+					locale = 'slo';
+					break;
+			}
             
             // Styling
             StylesManager.applyTheme( "bootstrap" );
             
             var survey = new Model(this.surveySpecification.getLocalizedModel(locale));
+			survey.locale = locale;
             survey.onComplete.add((response) => {
                 this.processResponse(response);
             });
