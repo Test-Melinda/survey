@@ -2059,48 +2059,120 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q1TRAIN",
-     "title": "Which of these aspects would you associate to the TRAIN?",
+     "title": {
+      "default": "Which of these aspects would you associate to the TRAIN?",
+      "it": "Quali aspetti associeresti al TRENO?",
+      "de": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
+      "de-at": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
+      "de-ch": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
+      "sl": "Katere od teh vidikov bi povezali z VLAKOM?",
+      "fr": "Quels sont les qualificatifs qui correspondent le mieux au TRAIN?"
+     },
      "validators": [
       {
        "type": "expression",
-       "text": "Please select at most 3 aspects",
+       "text": {
+        "default": "Please select at most 3 aspects",
+        "it": "Per favore, seleziona al massimo 3 delle opzioni elencate",
+        "de": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "sl": "Za vsako rešitev mobilnosti izberite največ 3 možnosti.",
+        "fr": "Sélectionnez au maximum 3 termes parmi ceux proposés",
+        "de-at": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "de-ch": "Bitte wählen Sie max. drei der folgenden Optionen"
+       },
        "expression": "{Q1TRAIN.length} <= 3"
       }
      ],
      "choices": [
       {
        "value": "1",
-       "text": "Good Comfort",
+       "text": {
+        "default": "Good Comfort",
+        "it": "Comfort/comodità",
+        "de": "Guter Komfort",
+        "de-at": "Guter Komfort",
+        "de-ch": "Guter Komfort",
+        "sl": "Udobje",
+        "fr": "Bon confort"
+       },
        "enableIf": "{Q1TRAIN} anyof \"1\" or {Q1TRAIN.length} < 3"
       },
       {
        "value": "2",
-       "text": "High Accessibility",
+       "text": {
+        "default": "High Accessibility",
+        "it": "Elevata facilità di accesso",
+        "de": "Hohe Barrierefreiheit",
+        "de-at": "Hohe Barrierefreiheit",
+        "de-ch": "Hohe Barrierefreiheit",
+        "sl": "Visoka dostopnost",
+        "fr": "Grande accesibilité"
+       },
        "enableIf": "{Q1TRAIN} anyof \"2\" or {Q1TRAIN.length} < 3"
       },
       {
        "value": "3",
-       "text": "Cost efficiency",
+       "text": {
+        "default": "Cost efficiency",
+        "it": "Buon rapporto qualità/prezzo",
+        "de-at": "Kostengünstig",
+        "de-ch": "Kostengünstig",
+        "de": "Kostengünstig",
+        "sl": "Stroškovna učinkovitost",
+        "fr": "Bon rapport qualité / prix"
+       },
        "enableIf": "{Q1TRAIN} anyof \"3\" or {Q1TRAIN.length} < 3"
       },
       {
        "value": "4",
-       "text": "Time saving",
+       "text": {
+        "default": "Time saving",
+        "it": "Risparmio di tempo",
+        "de": "Zeitsparend",
+        "de-at": "Zeitsparend",
+        "de-ch": "Zeitsparend",
+        "sl": "Prihranek časa",
+        "fr": "Gain de temps"
+       },
        "enableIf": "{Q1TRAIN} anyof \"4\" or {Q1TRAIN.length} < 3"
       },
       {
        "value": "5",
-       "text": "Reducing pollution",
+       "text": {
+        "default": "Reducing pollution",
+        "it": "Riduzione dell'inquinamento",
+        "de": "Umweltfreundlich",
+        "de-at": "Umweltfreundlich",
+        "de-ch": "Umweltfreundlich",
+        "sl": "Zmanjšanje onesnaževanja",
+        "fr": "Réduction de la pollution"
+       },
        "enableIf": "{Q1TRAIN} anyof \"5\" or {Q1TRAIN.length} < 3"
       },
       {
        "value": "6",
-       "text": "Improve health conditions",
+       "text": {
+        "default": "Improve health conditions",
+        "it": "Miglioramento della propria salute",
+        "de": "Gesundheitsfördernd",
+        "de-ch": "Gesundheitsfördernd",
+        "de-at": "Gesundheitsfördernd",
+        "sl": "Boljši zdravstveni pogoji",
+        "fr": "Amélioration de la santé"
+       },
        "enableIf": "{Q1TRAIN} anyof \"6\" or {Q1TRAIN.length} < 3"
       },
       {
        "value": "7",
-       "text": "High Sociability",
+       "text": {
+        "default": "High Sociability",
+        "it": "Elevata socialità (relazione con altre persone)",
+        "de": "Geselligkeit",
+        "de-at": "Geselligkeit",
+        "de-ch": "Geselligkeit",
+        "sl": "Družabnost",
+        "fr": "Grande sociabilité"
+       },
        "enableIf": "{Q1TRAIN} anyof \"7\" or {Q1TRAIN.length} < 3"
       }
      ]
@@ -2108,48 +2180,120 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q1CAR",
-     "title": "Which of these aspects would you associate to the CAR?",
+     "title": {
+      "default": "Which of these aspects would you associate to the CAR?",
+      "it": "Quali aspetti associeresti all'AUTO?",
+      "de": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
+      "de-ch": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
+      "de-at": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
+      "sl": "Katere od teh vidikov bi povezali z AVTOMOBILOM?",
+      "fr": "Quels sont les qualificatifs qui correspondent le mieux au CAR?"
+     },
      "validators": [
       {
        "type": "expression",
-       "text": "Please select at most 3 aspects",
+       "text": {
+        "default": "Please select at most 3 aspects",
+        "it": "Per favore, seleziona al massimo 3 delle opzioni elencate",
+        "de": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "sl": "Za vsako rešitev mobilnosti izberite največ 3 možnosti.",
+        "fr": "Sélectionnez au maximum 3 termes parmi ceux proposés",
+        "de-at": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "de-ch": "Bitte wählen Sie max. drei der folgenden Optionen"
+       },
        "expression": "{Q1CAR.length} <= 3"
       }
      ],
      "choices": [
       {
        "value": "1",
-       "text": "Good Comfort",
+       "text": {
+        "default": "Good Comfort",
+        "it": "Comfort/comodità",
+        "de": "Guter Komfort",
+        "de-at": "Guter Komfort",
+        "de-ch": "Guter Komfort",
+        "sl": "Udobje",
+        "fr": "Bon confort"
+       },
        "enableIf": "{Q1CAR} anyof \"1\" or {Q1CAR.length} < 3"
       },
       {
        "value": "2",
-       "text": "High Accessibility",
+       "text": {
+        "default": "High Accessibility",
+        "it": "Elevata facilità di accesso",
+        "de": "Hohe Barrierefreiheit",
+        "de-at": "Hohe Barrierefreiheit",
+        "de-ch": "Hohe Barrierefreiheit",
+        "sl": "Visoka dostopnost",
+        "fr": "Grande accesibilité"
+       },
        "enableIf": "{Q1CAR} anyof \"2\" or {Q1CAR.length} < 3"
       },
       {
        "value": "3",
-       "text": "Cost efficiency",
+       "text": {
+        "default": "Cost efficiency",
+        "it": "Buon rapporto qualità/prezzo",
+        "de": "Kostengünstig",
+        "de-at": "Kostengünstig",
+        "de-ch": "Kostengünstig",
+        "sl": "Stroškovna učinkovitost",
+        "fr": "Bon rapport qualité / prix"
+       },
        "enableIf": "{Q1CAR} anyof \"3\" or {Q1CAR.length} < 3"
       },
       {
        "value": "4",
-       "text": "Time saving",
+       "text": {
+        "default": "Time saving",
+        "it": "Risparmio di tempo",
+        "de": "Zeitsparend",
+        "de-at": "Zeitsparend",
+        "de-ch": "Zeitsparend",
+        "sl": "Prihranek časa",
+        "fr": "Gain de temps"
+       },
        "enableIf": "{Q1CAR} anyof \"4\" or {Q1CAR.length} < 3"
       },
       {
        "value": "5",
-       "text": "Reducing pollution",
+       "text": {
+        "default": "Reducing pollution",
+        "it": "Riduzione dell'inquinamento",
+        "de": "Umweltfreundlich",
+        "de-at": "Umweltfreundlich",
+        "de-ch": "Umweltfreundlich",
+        "sl": "Zmanjšanje onesnaževanja",
+        "fr": "Réduction de la pollution"
+       },
        "enableIf": "{Q1CAR} anyof \"5\" or {Q1CAR.length} < 3"
       },
       {
        "value": "6",
-       "text": "Improve health conditions",
+       "text": {
+        "default": "Improve health conditions",
+        "it": "Miglioramento della propria salute",
+        "de": "Gesundheitsfördernd",
+        "de-at": "Gesundheitsfördernd",
+        "de-ch": "Gesundheitsfördernd",
+        "sl": "Boljši zdravstveni pogoji",
+        "fr": "Amélioration de la santé"
+       },
        "enableIf": "{Q1CAR} anyof \"6\" or {Q1CAR.length} < 3"
       },
       {
        "value": "7",
-       "text": "High Sociability",
+       "text": {
+        "default": "High Sociability",
+        "it": "Elevata socialità (relazione con altre persone)",
+        "de": "Geselligkeit",
+        "de-at": "Geselligkeit",
+        "de-ch": "Geselligkeit",
+        "sl": "Družabnost",
+        "fr": "Grande sociabilité"
+       },
        "enableIf": "{Q1CAR} anyof \"7\" or {Q1CAR.length} < 3"
       }
      ]
@@ -2157,48 +2301,120 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q1PT",
-     "title": "Which of these aspects would you associate to the PUBLIC TRANSPORT (Bus, Tram, Metro)?",
+     "title": {
+      "default": "Which of these aspects would you associate to the PUBLIC TRANSPORT (Bus, Tram, Metro)?",
+      "it": "Quali aspetti associeresti al TRASPORTO PUBBLICO (Bus, Tram, Metro)?",
+      "de": "Welchen Aspekt verknüpfen Sie mit DEM ÖPNV?",
+      "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ÖPNV?",
+      "de-ch": "Welchen Aspekt verknüpfen Sie mit DEM ÖFFENTLICHEN VERKEHR?",
+      "sl": "Katere od teh vidikov bi povezali z JAVNIM PREVOZOM?",
+      "fr": "Quels sont les qualificatifs qui correspondent le mieux au TRANSPORT PUBLIC URBAIN (Bus, Tram, Metro)?"
+     },
      "validators": [
       {
        "type": "expression",
-       "text": "Please select at most 3 aspects",
+       "text": {
+        "default": "Please select at most 3 aspects",
+        "it": "Per favore, seleziona al massimo 3 delle opzioni elencate",
+        "de": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "sl": "Za vsako rešitev mobilnosti izberite največ 3 možnosti.",
+        "fr": "Sélectionnez au maximum 3 termes parmi ceux proposés",
+        "de-at": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "de-ch": "Bitte wählen Sie max. drei der folgenden Optionen"
+       },
        "expression": "{Q1PT.length} <= 3"
       }
      ],
      "choices": [
       {
        "value": "1",
-       "text": "Good Comfort",
+       "text": {
+        "default": "Good Comfort",
+        "it": "Comfort/comodità",
+        "de-ch": "Guter Komfort",
+        "de-at": "Guter Komfort",
+        "de": "Guter Komfort",
+        "sl": "Udobje",
+        "fr": "Bon confort"
+       },
        "enableIf": "{Q1PT} anyof \"1\" or {Q1PT.length} < 3"
       },
       {
        "value": "2",
-       "text": "High Accessibility",
+       "text": {
+        "default": "High Accessibility",
+        "it": "Elevata facilità di accesso",
+        "de": "Hohe Barrierefreiheit",
+        "de-at": "Hohe Barrierefreiheit",
+        "de-ch": "Hohe Barrierefreiheit",
+        "sl": "Visoka dostopnost",
+        "fr": "Grande accesibilité"
+       },
        "enableIf": "{Q1PT} anyof \"2\" or {Q1PT.length} < 3"
       },
       {
        "value": "3",
-       "text": "Cost efficiency",
+       "text": {
+        "default": "Cost efficiency",
+        "it": "Buon rapporto qualità/prezzo",
+        "de-ch": "Kostengünstig",
+        "de-at": "Kostengünstig",
+        "de": "Kostengünstig",
+        "sl": "Stroškovna učinkovitost",
+        "fr": "Bon rapport qualité / prix"
+       },
        "enableIf": "{Q1PT} anyof \"3\" or {Q1PT.length} < 3"
       },
       {
        "value": "4",
-       "text": "Time saving",
+       "text": {
+        "default": "Time saving",
+        "it": "Risparmio di tempo",
+        "de-ch": "Zeitsparend",
+        "de-at": "Zeitsparend",
+        "de": "Zeitsparend",
+        "sl": "Prihranek časa",
+        "fr": "Gain de temps"
+       },
        "enableIf": "{Q1PT} anyof \"4\" or {Q1PT.length} < 3"
       },
       {
        "value": "5",
-       "text": "Reducing pollution",
+       "text": {
+        "default": "Reducing pollution",
+        "it": "Riduzione dell'inquinamento",
+        "de-ch": "Umweltfreundlich",
+        "de-at": "Umweltfreundlich",
+        "de": "Umweltfreundlich",
+        "sl": "Zmanjšanje onesnaževanja",
+        "fr": "Réduction de la pollution"
+       },
        "enableIf": "{Q1PT} anyof \"5\" or {Q1PT.length} < 3"
       },
       {
        "value": "6",
-       "text": "Improve health conditions",
+       "text": {
+        "default": "Improve health conditions",
+        "it": "Miglioramento della propria salute",
+        "de-ch": "Gesundheitsfördernd",
+        "de-at": "Gesundheitsfördernd",
+        "de": "Gesundheitsfördernd",
+        "sl": "Boljši zdravstveni pogoji",
+        "fr": "Amélioration de la santé"
+       },
        "enableIf": "{Q1PT} anyof \"6\" or {Q1PT.length} < 3"
       },
       {
        "value": "7",
-       "text": "High Sociability",
+       "text": {
+        "default": "High Sociability",
+        "it": "Elevata socialità (relazione con altre persone)",
+        "de": "Geselligkeit",
+        "de-at": "Geselligkeit",
+        "de-ch": "Geselligkeit",
+        "sl": "Družabnost",
+        "fr": "Grande sociabilité"
+       },
        "enableIf": "{Q1PT} anyof \"7\" or {Q1PT.length} < 3"
       }
      ]
@@ -2206,48 +2422,120 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q1BIKE",
-     "title": "Which of these aspects would you associate to the BIKE?",
+     "title": {
+      "default": "Which of these aspects would you associate to the BIKE?",
+      "it": "Quali aspetti associeresti alla BICICLETTA?",
+      "de": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
+      "de-ch": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
+      "de-at": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
+      "sl": "Katere od teh vidikov bi povezali s KOLESOM?",
+      "fr": "Quels sont les qualificatifs qui correspondent le mieux au VÉLO?"
+     },
      "validators": [
       {
        "type": "expression",
-       "text": "Please select at most 3 aspects",
+       "text": {
+        "default": "Please select at most 3 aspects",
+        "it": "Per favore, seleziona al massimo 3 delle opzioni elencate",
+        "de": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "sl": "Za vsako rešitev mobilnosti izberite največ 3 možnosti.",
+        "fr": "Sélectionnez au maximum 3 termes parmi ceux proposés",
+        "de-at": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "de-ch": "Bitte wählen Sie max. drei der folgenden Optionen"
+       },
        "expression": "{Q1BIKE.length} <= 3"
       }
      ],
      "choices": [
       {
        "value": "1",
-       "text": "Good Comfort",
+       "text": {
+        "default": "Good Comfort",
+        "it": "Comfort/comodità",
+        "de": "Guter Komfort",
+        "de-at": "Guter Komfort",
+        "de-ch": "Guter Komfort",
+        "sl": "Udobje",
+        "fr": "Bon confort"
+       },
        "enableIf": "{Q1BIKE} anyof \"1\" or {Q1BIKE.length} < 3"
       },
       {
        "value": "2",
-       "text": "High Accessibility",
+       "text": {
+        "default": "High Accessibility",
+        "it": "Elevata facilità di accesso",
+        "de": "Hohe Barrierefreiheit",
+        "de-at": "Hohe Barrierefreiheit",
+        "de-ch": "Hohe Barrierefreiheit",
+        "sl": "Visoka dostopnost",
+        "fr": "Grande accesibilité"
+       },
        "enableIf": "{Q1BIKE} anyof \"2\" or {Q1BIKE.length} < 3"
       },
       {
        "value": "3",
-       "text": "Cost efficiency",
+       "text": {
+        "default": "Cost efficiency",
+        "it": "Buon rapporto qualità/prezzo",
+        "de": "Kostengünstig",
+        "de-at": "Kostengünstig",
+        "de-ch": "Kostengünstig",
+        "sl": "Stroškovna učinkovitost",
+        "fr": "Bon rapport qualité / prix"
+       },
        "enableIf": "{Q1BIKE} anyof \"3\" or {Q1BIKE.length} < 3"
       },
       {
        "value": "4",
-       "text": "Time saving",
+       "text": {
+        "default": "Time saving",
+        "it": "Risparmio di tempo",
+        "de": "Zeitsparend",
+        "de-at": "Zeitsparend",
+        "de-ch": "Zeitsparend",
+        "sl": "Prihranek časa",
+        "fr": "Gain de temps"
+       },
        "enableIf": "{Q1BIKE} anyof \"4\" or {Q1BIKE.length} < 3"
       },
       {
        "value": "5",
-       "text": "Reducing pollution",
+       "text": {
+        "default": "Reducing pollution",
+        "it": "Riduzione dell'inquinamento",
+        "de": "Umweltfreundlich",
+        "de-at": "Umweltfreundlich",
+        "de-ch": "Umweltfreundlich",
+        "sl": "Zmanjšanje onesnaževanja",
+        "fr": "Réduction de la pollution"
+       },
        "enableIf": "{Q1BIKE} anyof \"5\" or {Q1BIKE.length} < 3"
       },
       {
        "value": "6",
-       "text": "Improve health conditions",
+       "text": {
+        "default": "Improve health conditions",
+        "it": "Miglioramento della propria salute",
+        "de": "Gesundheitsfördernd",
+        "de-at": "Gesundheitsfördernd",
+        "de-ch": "Gesundheitsfördernd",
+        "sl": "Boljši zdravstveni pogoji",
+        "fr": "Amélioration de la santé"
+       },
        "enableIf": "{Q1BIKE} anyof \"6\" or {Q1BIKE.length} < 3"
       },
       {
        "value": "7",
-       "text": "High Sociability",
+       "text": {
+        "default": "High Sociability",
+        "it": "Elevata socialità (relazione con altre persone)",
+        "de": "Geselligkeit",
+        "de-at": "Geselligkeit",
+        "de-ch": "Geselligkeit",
+        "sl": "Družabnost",
+        "fr": "Grande sociabilité"
+       },
        "enableIf": "{Q1BIKE} anyof \"7\" or {Q1BIKE.length} < 3"
       }
      ]
@@ -2255,48 +2543,120 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q1WALK",
-     "title": "Which of these aspects would you associate to the WALK?",
+     "title": {
+      "default": "Which of these aspects would you associate to the WALK?",
+      "it": "Quali aspetti associeresti al CAMMINARE?",
+      "de": "Welchen Aspekt verknüpfen Sie mit DEM ZU Fuß GEHEN?",
+      "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ZU Fuß GEHEN?",
+      "de-ch": "Welchen Aspekt verknüpfen Sie mit DEM ZU FUSS GEHEN?",
+      "sl": "Katere od teh vidikov bi povezali s HOJO?",
+      "fr": "Quels sont les qualificatifs qui correspondent le mieux À LA MARCHE?"
+     },
      "validators": [
       {
        "type": "expression",
-       "text": "Please select at most 3 aspects",
+       "text": {
+        "default": "Please select at most 3 aspects",
+        "it": "Per favore, seleziona al massimo 3 delle opzioni elencate",
+        "de": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "sl": "Za vsako rešitev mobilnosti izberite največ 3 možnosti.",
+        "fr": "Sélectionnez au maximum 3 termes parmi ceux proposés",
+        "de-at": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "de-ch": "Bitte wählen Sie max. drei der folgenden Optionen"
+       },
        "expression": "{Q1WALK.length} <= 3"
       }
      ],
      "choices": [
       {
        "value": "1",
-       "text": "Good Comfort",
+       "text": {
+        "default": "Good Comfort",
+        "it": "Comfort/comodità",
+        "de": "Guter Komfort",
+        "de-at": "Guter Komfort",
+        "de-ch": "Guter Komfort",
+        "sl": "Udobje",
+        "fr": "Bon confort"
+       },
        "enableIf": "{Q1WALK} anyof \"1\" or {Q1WALK.length} < 3"
       },
       {
        "value": "2",
-       "text": "High Accessibility",
+       "text": {
+        "default": "High Accessibility",
+        "it": "Elevata facilità di accesso",
+        "de": "Hohe Barrierefreiheit",
+        "de-ch": "Hohe Barrierefreiheit",
+        "de-at": "Hohe Barrierefreiheit",
+        "sl": "Visoka dostopnost",
+        "fr": "Grande accesibilité"
+       },
        "enableIf": "{Q1WALK} anyof \"2\" or {Q1WALK.length} < 3"
       },
       {
        "value": "3",
-       "text": "Cost efficiency",
+       "text": {
+        "default": "Cost efficiency",
+        "it": "Buon rapporto qualità/prezzo",
+        "de": "Kostengünstig",
+        "de-at": "Kostengünstig",
+        "de-ch": "Kostengünstig",
+        "sl": "Stroškovna učinkovitost",
+        "fr": "Bon rapport qualité / prix"
+       },
        "enableIf": "{Q1WALK} anyof \"3\" or {Q1WALK.length} < 3"
       },
       {
        "value": "4",
-       "text": "Time saving",
+       "text": {
+        "default": "Time saving",
+        "it": "Risparmio di tempo",
+        "de-ch": "Zeitsparend",
+        "de-at": "Zeitsparend",
+        "de": "Zeitsparend",
+        "sl": "Prihranek časa",
+        "fr": "Gain de temps"
+       },
        "enableIf": "{Q1WALK} anyof \"4\" or {Q1WALK.length} < 3"
       },
       {
        "value": "5",
-       "text": "Reducing pollution",
+       "text": {
+        "default": "Reducing pollution",
+        "it": "Riduzione dell'inquinamento",
+        "de-ch": "Umweltfreundlich",
+        "de-at": "Umweltfreundlich",
+        "de": "Umweltfreundlich",
+        "sl": "Zmanjšanje onesnaževanja",
+        "fr": "Réduction de la pollution"
+       },
        "enableIf": "{Q1WALK} anyof \"5\" or {Q1WALK.length} < 3"
       },
       {
        "value": "6",
-       "text": "Improve health conditions",
+       "text": {
+        "default": "Improve health conditions",
+        "it": "Miglioramento della propria salute",
+        "de-ch": "Gesundheitsfördernd",
+        "de-at": "Gesundheitsfördernd",
+        "de": "Gesundheitsfördernd",
+        "sl": "Boljši zdravstveni pogoji",
+        "fr": "Amélioration de la santé"
+       },
        "enableIf": "{Q1WALK} anyof \"6\" or {Q1WALK.length} < 3"
       },
       {
        "value": "7",
-       "text": "High Sociability",
+       "text": {
+        "default": "High Sociability",
+        "it": "Elevata socialità (relazione con altre persone)",
+        "de": "Geselligkeit",
+        "de-at": "Geselligkeit",
+        "de-ch": "Geselligkeit",
+        "sl": "Družabnost",
+        "fr": "Grande sociabilité"
+       },
        "enableIf": "{Q1WALK} anyof \"7\" or {Q1WALK.length} < 3"
       }
      ]
@@ -2304,54 +2664,134 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q1MOTORB",
-     "title": "Which of these aspects would you associate to the MOTORBIKE/MOPED?",
+     "title": {
+      "default": "Which of these aspects would you associate to the MOTORBIKE/MOPED?",
+      "it": "uali aspetti associeresti alla MOTOCICLETTA/MOTORINO?",
+      "de": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
+      "de-at": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
+      "de-ch": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
+      "fr": "Quels sont les qualificatifs qui correspondent le mieux aux 2 ROUES MOTORISÉS?",
+      "sl": "Katere od teh vidikov bi povezali z MOTORJEM/MOPEDOM?"
+     },
      "validators": [
       {
        "type": "expression",
-       "text": "Please select at most 3 aspects",
+       "text": {
+        "default": "Please select at most 3 aspects",
+        "it": "Per favore, seleziona al massimo 3 delle opzioni elencate",
+        "de": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "sl": "Za vsako rešitev mobilnosti izberite največ 3 možnosti.",
+        "fr": "Sélectionnez au maximum 3 termes parmi ceux proposés",
+        "de-at": "Bitte wählen Sie max. drei der folgenden Optionen",
+        "de-ch": "Bitte wählen Sie max. drei der folgenden Optionen"
+       },
        "expression": "{Q1MOTORB.length} <= 3"
       }
      ],
      "choices": [
       {
        "value": "1",
-       "text": "Good Comfort",
+       "text": {
+        "default": "Good Comfort",
+        "it": "Comfort/comodità",
+        "de": "Guter Komfort",
+        "de-ch": "Guter Komfort",
+        "de-at": "Guter Komfort",
+        "sl": "Udobje",
+        "fr": "Bon confort"
+       },
        "enableIf": "{Q1MOTORB} anyof \"1\" or {Q1MOTORB.length} < 3"
       },
       {
        "value": "2",
-       "text": "High Accessibility",
+       "text": {
+        "default": "High Accessibility",
+        "it": "Elevata facilità di accesso",
+        "de": "Hohe Barrierefreiheit",
+        "de-at": "Hohe Barrierefreiheit",
+        "de-ch": "Hohe Barrierefreiheit",
+        "sl": "Visoka dostopnost",
+        "fr": "Grande accesibilité"
+       },
        "enableIf": "{Q1MOTORB} anyof \"2\" or {Q1MOTORB.length} < 3"
       },
       {
        "value": "3",
-       "text": "Cost efficiency",
+       "text": {
+        "default": "Cost efficiency",
+        "it": "Buon rapporto qualità/prezzo",
+        "de": "Kostengünstig",
+        "de-at": "Kostengünstig",
+        "de-ch": "Kostengünstig",
+        "sl": "Stroškovna učinkovitost",
+        "fr": "Bon rapport qualité / prix"
+       },
        "enableIf": "{Q1MOTORB} anyof \"3\" or {Q1MOTORB.length} < 3"
       },
       {
        "value": "4",
-       "text": "Time saving",
+       "text": {
+        "default": "Time saving",
+        "it": "Risparmio di tempo",
+        "de": "Zeitsparend",
+        "de-at": "Zeitsparend",
+        "de-ch": "Zeitsparend",
+        "sl": "Prihranek časa",
+        "fr": "Gain de temps"
+       },
        "enableIf": "{Q1MOTORB} anyof \"4\" or {Q1MOTORB.length} < 3"
       },
       {
        "value": "5",
-       "text": "Reducing pollution",
+       "text": {
+        "default": "Reducing pollution",
+        "it": "Riduzione dell'inquinamento",
+        "de": "Umweltfreundlich",
+        "de-at": "Umweltfreundlich",
+        "de-ch": "Umweltfreundlich",
+        "sl": "Zmanjšanje onesnaževanja",
+        "fr": "Réduction de la pollution"
+       },
        "enableIf": "{Q1MOTORB} anyof \"5\" or {Q1MOTORB.length} < 3"
       },
       {
        "value": "6",
-       "text": "Improve health conditions",
+       "text": {
+        "default": "Improve health conditions",
+        "it": "Miglioramento della propria salute",
+        "de": "Gesundheitsfördernd",
+        "de-at": "Gesundheitsfördernd",
+        "de-ch": "Gesundheitsfördernd",
+        "sl": "Boljši zdravstveni pogoji",
+        "fr": "Amélioration de la santé"
+       },
        "enableIf": "{Q1MOTORB} anyof \"6\" or {Q1MOTORB.length} < 3"
       },
       {
        "value": "7",
-       "text": "High Sociability",
+       "text": {
+        "default": "High Sociability",
+        "it": "Elevata socialità (relazione con altre persone)",
+        "de": "Geselligkeit",
+        "de-at": "Geselligkeit",
+        "de-ch": "Geselligkeit",
+        "sl": "Družabnost",
+        "fr": "Grande sociabilité"
+       },
        "enableIf": "{Q1MOTORB} anyof \"7\" or {Q1MOTORB.length} < 3"
       }
      ]
     }
    ],
-   "description": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones."
+   "description": {
+    "default": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones.",
+    "it": "Quale di questi aspetti associeresti ai seguenti mezzi di spostamento: TRENO, AUTO, TRASPORTO PUBBLICO, BICICLETTA, CAMMINARE, MOTOCICLETTA/MOTORINO?\nPer favore, per ogni mezzo seleziona al massimo 3 delle opzioni elencate",
+    "de": "Welche Assoziationen verknüpfen Sie mit den folgenden Mobilitätsformen: Eisenbahn, Auto, ÖPNV, Fahrrad, zu Fuß, Motorrad?\n(Bitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen)",
+    "de-ch": "Welche Assoziationen verknüpfen Sie mit den folgenden Mobilitätsformen: Eisenbahn, Auto, öffentlicher Verkehr, Fahrrad, zu FuSS, Motorrad?\nBitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen.",
+    "de-at": "Welche der folgenden Aspekte würden Sie den folgenden Verkehrsmitteln zuordnen? Eisenbahn, Auto, öffentlicher Nahverkehr, Fahrrad, zu Fuß, Motorrad?\n(Bitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen)",
+    "sl": "Katere od teh vidikov bi povezali z naslednjimi vrstami prevoza: VLAK, AVTOMOBIL, JAVNI PREVOZ, KOLO, HOJA, MOTOR/MOPED?\nZa vsako rešitev mobilnosti izberite največ 3 možnosti.",
+    "fr": "Quels sont les qualificatifs qui correspondent le mieux à ces différents modes de transport (train, car, transport public, vélo, marche, 2 roues motorisés)?\nPour chaque mode de transport, sélectionnez au maximum 3 termes parmi ceux proposés."
+   }
   },
   {
    "name": "mobilita_quotidiana_1",
