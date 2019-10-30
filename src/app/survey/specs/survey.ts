@@ -1726,49 +1726,63 @@ export const surveyModel = {
      "visibleIf": "{QF1} == \"at\" or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\"))",
      "title": {
       "default": "In the Vorarlberg Region do you usually carry out any of the following activities? (Multiple answers are possible)",
-      "de": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?\n(Mehrfachnennungen sind möglich)"
+      "de": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?\n(Mehrfachnennungen sind möglich)",
+      "de-at": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus? \n\n(Mehrfachnennungen sind möglich)",
+      "de-ch": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus? \n\n(Mehrfachnennungen sind möglich)"
      },
      "choices": [
       {
        "value": "1",
        "text": {
         "default": "Work/Business",
-        "de": "Arbeit/Geschäftlich"
+        "de": "Arbeit/Geschäftlich",
+        "de-at": "Arbeit/Geschäftlich",
+        "de-ch": "Arbeit/Geschäftlich"
        }
       },
       {
        "value": "2",
        "text": {
         "default": "Study",
-        "de": "Ausbildung"
+        "de": "Ausbildung",
+        "de-at": "Ausbildung",
+        "de-ch": "Ausbildung"
        }
       },
       {
        "value": "3",
        "text": {
         "default": "Shopping",
-        "de": "Einkaufen"
+        "de": "Einkaufen",
+        "de-ch": "Einkaufen",
+        "de-at": "Einkaufen"
        }
       },
       {
        "value": "4",
        "text": {
         "default": "Leisure activities (free time)",
-        "de": "Freizeitaktivitäten"
+        "de": "Freizeitaktivitäten",
+        "de-at": "Freizeitaktivitäten",
+        "de-ch": "Freizeitaktivitäten"
        }
       },
       {
        "value": "5",
        "text": {
         "default": "Other",
-        "de": "Sonstiges"
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges"
        }
       },
       {
        "value": "6",
        "text": {
         "default": "None",
-        "de": "Keine der genannten"
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten"
        }
       }
      ]
@@ -1865,31 +1879,52 @@ export const surveyModel = {
      "name": "EQ1IT",
      "visible": false,
      "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
-     "title": "In one or more of these municipalities: Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons do you usually carry out any of the following activities? (multiple answers are possible)",
+     "title": {
+      "default": "In one or more of these municipalities: Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons do you usually carry out any of the following activities? (multiple answers are possible)",
+      "it": "In uno o più di questi comuni: Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons svolgi solitamente una o più delle seguenti attività?\n(sono possibili più risposte)"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Work/Business"
+       "text": {
+        "default": "Work/Business",
+        "it": "Lavoro/affari"
+       }
       },
       {
        "value": "2",
-       "text": "Study"
+       "text": {
+        "default": "Study",
+        "it": "Studio"
+       }
       },
       {
        "value": "3",
-       "text": "Shopping"
+       "text": {
+        "default": "Shopping",
+        "it": "Acquisti"
+       }
       },
       {
        "value": "4",
-       "text": "Leisure activities (free time)"
+       "text": {
+        "default": "Leisure activities (free time)",
+        "it": "Attività di svago (nel tempo libero)"
+       }
       },
       {
        "value": "5",
-       "text": "Other"
+       "text": {
+        "default": "Other",
+        "it": "Altro"
+       }
       },
       {
        "value": "6",
-       "text": "None"
+       "text": {
+        "default": "None",
+        "it": "Nessuna"
+       }
       }
      ]
     },
@@ -1955,49 +1990,63 @@ export const surveyModel = {
      "title": {
       "default": "In the Canton of Berne do you usually carry out any of the following activities? (Multiple answers are possible)",
       "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?\n(Mehrfachnennungen sind möglich)",
-      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?\n(Možnih je več odgovorov)"
+      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?\n(Možnih je več odgovorov)",
+      "de-ch": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?\n(Mehrfachnennungen sind möglich)",
+      "de-at": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?\n(Mehrfachnennungen sind möglich)"
      },
      "choices": [
       {
        "value": "1",
        "text": {
         "default": "Work/Business",
-        "de": "Arbeit/Geschäftlich"
+        "de": "Arbeit/Geschäftlich",
+        "de-at": "Arbeit/Geschäftlich",
+        "de-ch": "Arbeit/Geschäftlich"
        }
       },
       {
        "value": "2",
        "text": {
         "default": "Study",
-        "de": "Ausbildung"
+        "de": "Ausbildung",
+        "de-at": "Ausbildung",
+        "de-ch": "Ausbildung"
        }
       },
       {
        "value": "3",
        "text": {
         "default": "Shopping",
-        "de": "Einkaufen"
+        "de": "Einkaufen",
+        "de-at": "Einkaufen",
+        "de-ch": "Einkaufen"
        }
       },
       {
        "value": "4",
        "text": {
         "default": "Leisure activities (free time)",
-        "de": "Freizeitaktivitäten"
+        "de": "Freizeitaktivitäten",
+        "de-at": "Freizeitaktivitäten",
+        "de-ch": "Freizeitaktivitäten"
        }
       },
       {
        "value": "5",
        "text": {
         "default": "Other",
-        "de": "Sonstiges"
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges"
        }
       },
       {
        "value": "6",
        "text": {
         "default": "None",
-        "de": "Keine der genannten"
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten"
        }
       }
      ]
