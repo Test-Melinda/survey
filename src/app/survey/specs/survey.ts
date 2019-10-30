@@ -1960,57 +1960,6 @@ export const surveyModel = {
        }
       }
      ]
-    },
-    {
-     "type": "checkbox",
-     "name": "EQ1SW2",
-     "visible": false,
-     "visibleIf": "{QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\" or {QFSW1} == \"A19\")",
-     "title": "In at least one of these Cantons: St.Gallen, Graubünden, Lucerne, do you usually carry out any of the following activities? (Multiple answers are possible)",
-     "choices": [
-      {
-       "value": "1",
-       "text": {
-        "default": "Work/Business",
-        "de": "Arbeit/Geschäftlich"
-       }
-      },
-      {
-       "value": "2",
-       "text": {
-        "default": "Study",
-        "de": "Ausbildung"
-       }
-      },
-      {
-       "value": "3",
-       "text": {
-        "default": "Shopping",
-        "de": "Einkaufen"
-       }
-      },
-      {
-       "value": "4",
-       "text": {
-        "default": "Leisure activities (free time)",
-        "de": "Freizeitaktivitäten"
-       }
-      },
-      {
-       "value": "5",
-       "text": {
-        "default": "Other",
-        "de": "Sonstiges"
-       }
-      },
-      {
-       "value": "6",
-       "text": {
-        "default": "None",
-        "de": "Keine der genannten"
-       }
-      }
-     ]
     }
    ]
   },
