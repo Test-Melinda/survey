@@ -10,8 +10,11 @@ export const surveyModel = {
      "title": {
       "default": "Please select your Country of residence",
       "de": "Bitte nennen Sie uns den Staat in dem Ihr Wohnort liegt.",
+      "de-at": "Bitte nennen Sie uns den Staat in dem Ihr Wohnort liegt.",
+      "de-ch": "Bitte nennen Sie uns den Staat in dem Ihr Wohnort liegt.",
       "fr": "Sélectionnez votre pays de résidence.",
-      "sl": "Izberite državo stalnega prebivališča"
+      "sl": "Izberite državo stalnega prebivališča",
+      "it": "Seleziona il tuo paese di residenza"
      },
      "isRequired": true,
      "choices": [
@@ -21,7 +24,9 @@ export const surveyModel = {
         "default": "Austria",
         "de": "Österreich",
         "fr": "Autriche",
-        "sl": "Avstrija"
+        "sl": "Avstrija",
+        "de-at": "Österreich",
+        "de-ch": "Österreich"
        }
       },
       {
@@ -29,7 +34,10 @@ export const surveyModel = {
        "text": {
         "default": "France",
         "de": "Frankreich",
-        "sl": "Francija"
+        "sl": "Francija",
+        "it": "Francia",
+        "de-at": "Frankreich",
+        "de-ch": "Frankreich"
        }
       },
       {
@@ -38,7 +46,10 @@ export const surveyModel = {
         "default": "Germany",
         "de": "Deutschland",
         "fr": "Allemagne",
-        "sl": "Nemčija"
+        "sl": "Nemčija",
+        "it": "Germania",
+        "de-at": "Deutschland",
+        "de-ch": "Deutschland"
        }
       },
       {
@@ -47,7 +58,10 @@ export const surveyModel = {
         "default": "Italy",
         "de": "Italien",
         "fr": "Italie",
-        "sl": "Italija"
+        "sl": "Italija",
+        "it": "Italia",
+        "de-at": "Italien",
+        "de-ch": "Italien"
        }
       },
       {
@@ -63,7 +77,9 @@ export const surveyModel = {
         "default": "Slovenia",
         "de": "Slowenien",
         "fr": "Slovenie",
-        "sl": "Slovenija"
+        "sl": "Slovenija",
+        "de-at": "Slowenien",
+        "de-ch": "Slowenien"
        }
       },
       {
@@ -72,7 +88,10 @@ export const surveyModel = {
         "default": "Switzerland",
         "de": "Schweiz",
         "fr": "Suisse",
-        "sl": "Švica"
+        "sl": "Švica",
+        "it": "Svizzera",
+        "de-at": "Schweiz",
+        "de-ch": "Schweiz"
        }
       }
      ]
@@ -149,7 +168,9 @@ export const surveyModel = {
      "visibleIf": "{QF1} = \"at\"",
      "title": {
       "default": "Could you please precise in which Region do you live?",
-      "de": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt."
+      "de": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt.",
+      "de-at": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt.",
+      "de-ch": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt."
      },
      "isRequired": true,
      "choices": [
@@ -198,7 +219,9 @@ export const surveyModel = {
      "visibleIf": "{QF2AR} = \"A2\"",
      "title": {
       "default": "In which municipality? (if \"other\" please specify your Postal Code)",
-      "de": "In welchem Gemeinde liegt Ihr Wohnort?\n(Wenn \"andere\", Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes)"
+      "de": "In welchem Gemeinde liegt Ihr Wohnort?\n(Wenn \"andere\", Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes)",
+      "de-at": "In welchem Gemeinde liegt Ihr Wohnort?\n(Wenn \"andere\", Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes)",
+      "de-ch": "In welchem Gemeinde liegt Ihr Wohnort?\n(Wenn \"andere\", Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes)"
      },
      "isRequired": true,
      "hasOther": true,
@@ -210,7 +233,9 @@ export const surveyModel = {
      ],
      "otherText": {
       "default": "Other (postal code)",
-      "de": "Andere (Postleitzahl)"
+      "de": "Andere (Postleitzahl)",
+      "de-at": "Andere (Postleitzahl)",
+      "de-ch": "Andere (Postleitzahl)"
      }
     },
     {
@@ -1086,7 +1111,9 @@ export const surveyModel = {
      "visibleIf": "{QF1} = \"ch\"",
      "title": {
       "default": "Could you please precise in which Canton do you live?",
-      "de": "Bitte nennen Sie uns den Kanton, in dem Ihr Wohnort liegt."
+      "de": "Bitte nennen Sie uns den Kanton, in dem Ihr Wohnort liegt.",
+      "de-at": "Bitte nennen Sie uns den Kanton, in dem Ihr Wohnort liegt.",
+      "de-ch": "Bitte nennen Sie uns den Kanton, in dem Ihr Wohnort liegt."
      },
      "isRequired": true,
      "choices": [
@@ -1201,7 +1228,10 @@ export const surveyModel = {
      "name": "QF2IT",
      "visible": false,
      "visibleIf": "{QF1} = \"it\"",
-     "title": "In which province do you live?",
+     "title": {
+      "default": "In which province do you live?",
+      "it": "In quale provincia vivi?"
+     },
      "choices": [
       {
        "value": "1",
@@ -1209,7 +1239,10 @@ export const surveyModel = {
       },
       {
        "value": "2",
-       "text": "Other"
+       "text": {
+        "default": "Other",
+        "it": "Altra provincia"
+       }
       }
      ]
     },
@@ -1218,9 +1251,11 @@ export const surveyModel = {
      "name": "QF2ITUTI",
      "visible": false,
      "visibleIf": "{QF2IT} = \"1\"",
-     "title": "In which municipality? If \"Other\" please specify your postal code",
+     "title": {
+      "default": "In which municipality?",
+      "it": "In quale comune?"
+     },
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -1423,7 +1458,10 @@ export const surveyModel = {
        "text": "Valvasone Arzene"
       }
      ],
-     "otherText": "Other (CAP)"
+     "otherText": {
+      "default": "Other (describe)",
+      "it": "Altro (CAP)"
+     }
     },
     {
      "type": "dropdown",
@@ -1670,7 +1708,10 @@ export const surveyModel = {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
       "sl": "Lahko navedete poštno številko?",
-      "fr": "Quel est votre code postal?"
+      "fr": "Quel est votre code postal?",
+      "it": "Puoi indicare per favore il codice di avviamento postale (cap) del tuo comune?",
+      "de-ch": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "de-at": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes."
      }
     }
    ]

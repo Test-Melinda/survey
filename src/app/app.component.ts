@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     
     private parseSource(){
         // Admitted values
-        let values = ['it', 'fr', 'slo', 'de', 'ch', 'at', 'li'];
+        let values = ['it', 'fr', 'si', 'de', 'ch', 'at', 'li'];
         
         // Parse
         let src = new URLSearchParams(window.location.search).get('src') || null;
@@ -73,8 +73,14 @@ export class AppComponent implements OnInit {
             let locale = 'en';
 			switch (this.source){
 				case 'de':
+					locale = 'de';
+					break;
 				case 'at':
+					locale = 'de-at';
+					break;
 				case 'ch':
+					locale = 'de-ch';
+					break;
 				case 'li':
 					locale = 'de';
 					break;
@@ -84,8 +90,8 @@ export class AppComponent implements OnInit {
 				case 'fr':
 					locale = 'fr';
 					break;
-				case 'slo':
-					locale = 'slo';
+				case 'si':
+					locale = 'sl';
 					break;
 			}
             
