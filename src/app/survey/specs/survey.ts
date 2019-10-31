@@ -2046,6 +2046,120 @@ export const surveyModel = {
    ]
   },
   {
+   "name": "activities_greater_lyon",
+   "elements": [
+    {
+     "type": "checkbox",
+     "name": "EQ1FRGL",
+     "title": {
+      "default": "In the Greater Lyon",
+      "fr": "Sur le Grand Lyon"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "fr": "Travail"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "fr": "Etudes"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "fr": "Courses"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "fr": "Loisirs"
+       }
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "fr": "Autres"
+       }
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "fr": "Aucune"
+       }
+      }
+     ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1FRGA",
+     "title": {
+      "default": "In the Greater Annecy",
+      "fr": "Sur le Grand Annecy"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "fr": "Travail"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "fr": "Etudes"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "fr": "Courses"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "fr": "Loisirs"
+       }
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "fr": "Autres"
+       }
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "fr": "Aucune"
+       }
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13'",
+   "description": {
+    "default": "In the Greater Lyon or Greater Annecy do you usually carry out any of the following activities?",
+    "fr": "Quelles activités pratiquez-vous sur le Grand Lyon ou le Grand Annecy?\n(plusieurs réponses possibles)"
+   }
+  },
+  {
    "name": "question1",
    "elements": [
     {
