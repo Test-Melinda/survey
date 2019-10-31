@@ -180,7 +180,12 @@ export const surveyModel = {
       },
       {
        "value": "A2",
-       "text": "Tyrol"
+       "text": {
+        "default": "Tyrol",
+        "de-at": "Tirol",
+        "de-ch": "Tirol",
+        "de": "Tirol"
+       }
       },
       {
        "value": "A3",
@@ -188,19 +193,39 @@ export const surveyModel = {
       },
       {
        "value": "A4",
-       "text": "Carinthia"
+       "text": {
+        "default": "Carinthia",
+        "de-at": "Kärnten",
+        "de-ch": "Kärnten",
+        "de": "Kärnten"
+       }
       },
       {
        "value": "A5",
-       "text": "Styria"
+       "text": {
+        "default": "Styria",
+        "de-at": "Steier­mark",
+        "de-ch": "Steier­mark",
+        "de": "Steier­mark"
+       }
       },
       {
        "value": "A6",
-       "text": "Upper Austria"
+       "text": {
+        "default": "Upper Austria",
+        "de-at": "Oberösterreich",
+        "de-ch": "Oberösterreich",
+        "de": "Oberösterreich"
+       }
       },
       {
        "value": "A7",
-       "text": "Lower Austria"
+       "text": {
+        "default": "Lower Austria",
+        "de-ch": "Niederösterreich",
+        "de-at": "Niederösterreich",
+        "de": "Niederösterreich"
+       }
       },
       {
        "value": "A8",
@@ -1843,39 +1868,6 @@ export const surveyModel = {
     },
     {
      "type": "checkbox",
-     "name": "EQ1FR",
-     "visible": false,
-     "visibleIf": "{QF2FD}} == \"A11\" or {QF2FD}} == \"A13\"",
-     "title": "In the Greater Lyon or Greater Annecy do you usually carry out any of the following activities? (Multiple answers are possible)",
-     "choices": [
-      {
-       "value": "1",
-       "text": "Work/Business"
-      },
-      {
-       "value": "2",
-       "text": "Study"
-      },
-      {
-       "value": "3",
-       "text": "Shopping"
-      },
-      {
-       "value": "4",
-       "text": "Leisure activities (free time)"
-      },
-      {
-       "value": "5",
-       "text": "Other"
-      },
-      {
-       "value": "6",
-       "text": "None"
-      }
-     ]
-    },
-    {
-     "type": "checkbox",
      "name": "EQ1IT",
      "visible": false,
      "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
@@ -2001,7 +1993,7 @@ export const surveyModel = {
         "default": "Work/Business",
         "de": "Arbeit/Geschäftlich",
         "de-at": "Arbeit/Geschäftlich",
-        "de-ch": "Arbeit/Geschäftlich"
+        "de-ch": "Arbeit"
        }
       },
       {
@@ -2010,7 +2002,7 @@ export const surveyModel = {
         "default": "Study",
         "de": "Ausbildung",
         "de-at": "Ausbildung",
-        "de-ch": "Ausbildung"
+        "de-ch": "Studium"
        }
       },
       {
