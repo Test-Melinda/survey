@@ -81,10 +81,6 @@ answers?: Map<string, string>
         gid: 2270,
         qid: 44656
     }],
-    ["EQ1FR", {
-        gid: 2270,
-        qid: 44655
-    }],
     ["EQ1IT", {
         gid: 2270,
         qid: 44657
@@ -100,6 +96,14 @@ answers?: Map<string, string>
     ["EQ1SW2", {
         gid: 2270,
         qid: 44660
+    }],
+    ["EQ1FRGL", {
+        gid: 2443,
+        qid: 47276
+    }],
+    ["EQ1FRGA", {
+        gid: 2443,
+        qid: 47277
     }],
     ["Q1TRAIN", {
         gid: 2271,
