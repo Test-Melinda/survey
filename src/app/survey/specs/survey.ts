@@ -3220,6 +3220,42 @@ export const surveyModel = {
    ]
   },
   {
+   "name": "q6_driving_licence",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "Q6DRIVEL",
+     "visibleIf": "{QF1} == 'ch'",
+     "title": {
+      "default": "Do you have a driving licence?",
+      "de-ch": "Hast Du einen Führerschein?",
+      "de-at": "Hast Du einen Führerschein?",
+      "de": "Hast Du einen Führerschein?"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes",
+        "de-ch": "Ja",
+        "de": "Ja",
+        "de-at": "Ja"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "No",
+        "de-ch": "Nein",
+        "de-at": "Nein",
+        "de": "Nein"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
    "name": "quiz1",
    "elements": [
     {
