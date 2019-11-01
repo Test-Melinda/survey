@@ -165,6 +165,10 @@ answers?: Map<string, string>
         gid: 18,
         qid: 72
     }],
+	["Q6DRIVEL", {
+        gid: 22,
+        qid: 259
+    }],
     ["Q7dot1IT", {
         gid: 9,
         qid: 50
