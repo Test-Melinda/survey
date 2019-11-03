@@ -26,6 +26,10 @@ export class AppComponent implements OnInit {
     public surveyError = false;
     
     public score = null;
+
+	private pilotSelectionQuestion = "QF1";
+	
+	public ignoreResponse = false;
     
     constructor(protected translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
         translate.setDefaultLang('en');
@@ -117,7 +121,18 @@ export class AppComponent implements OnInit {
                 window.scrollTo(0, 0);
             });
             survey.showProgressBar = "top";
-			survey.set
+			survey.setVariable("source", this.source);
+			survey.onValueChanged.add((s, q) => {
+				if (q.name == this.pilotSelectionQuestion){
+					if (this.isUserOutOfPilot(q.value)){
+						for (let question of s.getAllQuestions(false)){
+							if (question.name != this.pilotSelectionQuestion){
+								question.visible = false;
+							}
+						}
+					}
+				}
+			});
             
             // Doc: https://surveyjs.io/Examples/Library/?id=survey-customcss&platform=jQuery&theme=default
             SurveyNG.render( "surveyElement", {
@@ -142,57 +157,64 @@ export class AppComponent implements OnInit {
 
     private processResponse(response) {
         this.status = SurveyStatus.DONE;
-        
-        console.log("Original response data", response.data);
-        
+
         let responseData = response.data;
+        console.log("Original response data", responseData);
+
+		// Check if the response must be ignored due to the fact the the user is located out of the pilot
+		this.ignoreResponse = this.isUserOutOfPilot(responseData[this.pilotSelectionQuestion]);
         
-        // Calculate the score
-        this.score = this.scoreCalculator.calculate(responseData);
-        console.log("Score", this.score);
-        
-        // Convert to Limesurvey response
-        let surveyRegion = this.source;
-        let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
-        
-        // Add the score to the hidden Limesurvey response
-        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);
-        let scoreQuestionMapping = this.limesurveyMappingProviderService.getScoreQuestionMapping(surveyRegion);
-        limesurveyAnswers.setResponse(new LimesurveyAnswerCode(surveyId, scoreQuestionMapping.gid, scoreQuestionMapping.qid), this.score);
-        
-        let limesurveyResponseData = limesurveyAnswers.toResponseData();
-        console.log("Limesurvey response data", limesurveyResponseData);
-        
-        // Build the full response information
-        let builder = new LimesurveyResponseBuilder();
-        builder.datestamp = new Date();
-        builder.startDate = new Date(); // TODO: Change this!
-        builder.startLanguage = 'it'; // TODO: Change this!
-        builder.responses = limesurveyResponseData;
-        let limesurveyResponse = builder.build();
-        
-        console.log("Full limesurvey response data", limesurveyResponse);
-        
-        // Create the client to communicate with Limesurvey
-        let limesurveyCredentials = new LimesurveyClientCredentials();
-        limesurveyCredentials.url = environment.limesurvey.api.url;
-        limesurveyCredentials.username = environment.limesurvey.api.username;
-        limesurveyCredentials.password = environment.limesurvey.api.password;
-        
-        this.limesurveyClientFactory.createClient(limesurveyCredentials).subscribe((limesurveyClient) => {
-            console.log("Limesurvey client", limesurveyClient);
-            
-            // Add the survey response
-            limesurveyClient.addResponse(surveyId, limesurveyResponse).subscribe((responseId: number) => {
-                console.log("Limesurvey response ID", responseId);
-            }, (error) => {
-                console.error("Cannot add response", error);
-                this.surveyError = true;
-            });
-        }, (error) => {
-            console.error("Cannot authenticate with LimeSurvey platform", error);
-            this.surveyError = true;
-        });
+		if (!this.ignoreResponse){
+	        // Calculate the score
+	        this.score = this.scoreCalculator.calculate(responseData);
+	        console.log("Score", this.score);
+	        
+	        // Convert to Limesurvey response
+	        let surveyRegion = this.source;
+	        let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
+	        
+	        // Add the score to the hidden Limesurvey response
+	        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);
+	        let scoreQuestionMapping = this.limesurveyMappingProviderService.getScoreQuestionMapping(surveyRegion);
+	        limesurveyAnswers.setResponse(new LimesurveyAnswerCode(surveyId, scoreQuestionMapping.gid, scoreQuestionMapping.qid), this.score);
+	        
+	        let limesurveyResponseData = limesurveyAnswers.toResponseData();
+	        console.log("Limesurvey response data", limesurveyResponseData);
+	        
+	        // Build the full response information
+	        let builder = new LimesurveyResponseBuilder();
+	        builder.datestamp = new Date();
+	        builder.startDate = new Date(); // TODO: Change this!
+	        builder.startLanguage = 'it'; // TODO: Change this!
+	        builder.responses = limesurveyResponseData;
+	        let limesurveyResponse = builder.build();
+	        
+	        console.log("Full limesurvey response data", limesurveyResponse);
+	        
+	        // Create the client to communicate with Limesurvey
+	        let limesurveyCredentials = new LimesurveyClientCredentials();
+	        limesurveyCredentials.url = environment.limesurvey.api.url;
+	        limesurveyCredentials.username = environment.limesurvey.api.username;
+	        limesurveyCredentials.password = environment.limesurvey.api.password;
+	        
+	        this.limesurveyClientFactory.createClient(limesurveyCredentials).subscribe((limesurveyClient) => {
+	            console.log("Limesurvey client", limesurveyClient);
+	            
+	            // Add the survey response
+	            limesurveyClient.addResponse(surveyId, limesurveyResponse).subscribe((responseId: number) => {
+	                console.log("Limesurvey response ID", responseId);
+	            }, (error) => {
+	                console.error("Cannot add response", error);
+	                this.surveyError = true;
+	            });
+	        }, (error) => {
+	            console.error("Cannot authenticate with LimeSurvey platform", error);
+	            this.surveyError = true;
+	        });
+		}
+		else {
+			console.warn("Ignoring response: user located out of pilot area [selectedArea, pilot]", responseData[this.pilotSelectionQuestion], this.source);
+		}
     }
     
     public onPrivacyAcceptance(accepted: boolean){
@@ -201,6 +223,10 @@ export class AppComponent implements OnInit {
             this.status = SurveyStatus.DOING;
         }
     }
+	
+	private isUserOutOfPilot(selectedArea: string): boolean {
+		return ((selectedArea == "li" && this.source != 'at') || (selectedArea != "li" && selectedArea != this.source));
+	}
     
 }
 

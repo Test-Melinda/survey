@@ -34,9 +34,16 @@
 				<div *ngIf="surveyError; else success" class="alert alert-danger">Sorry, an error occurred. Please click the button below if you want to retry the survey. Otherwise please <a href="https://www.alpine-space.eu/projects/melinda/en/contact">contact us</a>. Thank you.</div>
 		
 				<ng-template #success>
-					<p>The survey is complete, thank you!</p>
-					
-					<app-score-viewer *ngIf="score != null" [score]="score"></app-score-viewer>
+					<div *ngIf="!ignoreResponse; else responseIgnored">
+						<app-score-viewer *ngIf="score != null; else noScore" [score]="score"></app-score-viewer>
+						
+						<ng-template #noScore>
+							<h1>Thank you for having filled up the survey!</h1>
+						</ng-template>
+					</div>
+					<ng-template #responseIgnored>
+						<h1>Thank you for having filled up the survey!</h1>
+					</ng-template>
 				</ng-template>
 			</div>
 		</div>
