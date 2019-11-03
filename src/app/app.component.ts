@@ -81,9 +81,6 @@ export class AppComponent implements OnInit {
 				case 'ch':
 					locale = 'de-ch';
 					break;
-				case 'li':
-					locale = 'de';
-					break;
 				case 'it':
 					locale = 'it';
 					break;
@@ -120,6 +117,7 @@ export class AppComponent implements OnInit {
                 window.scrollTo(0, 0);
             });
             survey.showProgressBar = "top";
+			survey.set
             
             // Doc: https://surveyjs.io/Examples/Library/?id=survey-customcss&platform=jQuery&theme=default
             SurveyNG.render( "surveyElement", {
