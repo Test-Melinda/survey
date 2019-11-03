@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
     
     private parseSource(){
         // Admitted values
-        let values = ['it', 'fr', 'si', 'de', 'ch', 'at', 'li'];
+        let values = ['it', 'fr', 'si', 'de', 'ch', 'at'];
         
         // Parse
         let src = new URLSearchParams(window.location.search).get('src') || null;
