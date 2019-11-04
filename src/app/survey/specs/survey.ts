@@ -3306,8 +3306,24 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q6",
-     "title": "Which means of transport do you own or have access to*?",
-     "description": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
+     "title": {
+      "default": "Which means of transport do you own or have access to*?",
+      "it": "A quali mezzi di trasporto hai accesso* o possiedi?",
+      "de": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
+      "de-at": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
+      "de-ch": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
+      "sl": "Lastnik katerih prevoznih sredstev ste ali do katerih imate dostop?",
+      "fr": "A quel moyens de transport avez-vous accès* ?"
+     },
+     "description": {
+      "default": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
+      "it": "* per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso (ad esempio: \"i miei genitori posseggono un'auto che posso utilizzare in caso ne avessi bisogno\")",
+      "de": " *Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
+      "de-at": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
+      "de-ch": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti (na primer: »Moji starši imajo avto, ki ga lahko uporabim, če ga hočem/potrebujem.«)",
+      "fr": "* Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété"
+     },
      "validators": [
       {
        "type": "expression",
@@ -3318,47 +3334,110 @@ export const surveyModel = {
      "choices": [
       {
        "value": "1",
-       "text": "Cars",
+       "text": {
+        "default": "Cars",
+        "it": "Automobile",
+        "de": "Autos",
+        "de-at": "Autos",
+        "de-ch": "Autos",
+        "sl": "Avtomobili"
+       },
        "enableIf": "{Q6} anyof \"1\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "2",
-       "text": "Public Transport Season ticket",
+       "text": {
+        "default": "Public Transport Season ticket",
+        "it": "Abbonamento al trasporto pubblico (o carnet multicorse)",
+        "de": "Dauerkarte ÖPNV",
+        "de-at": "Monats-/Jahres-Ticket für den öffentlichen Verkehr",
+        "de-ch": "Billette des öffentlichen Verkehrs",
+        "sl": "Mesečna vozovnica za javni prevoz"
+       },
        "enableIf": "{Q6} anyof \"2\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "3",
-       "text": "Motorbike/moped",
+       "text": {
+        "default": "Motorbike/moped",
+        "it": "Motocicletta/motorino",
+        "de": "Motorrad/Moped",
+        "de-at": "Motorrad/Moped",
+        "de-ch": "Motorrad/Moped",
+        "sl": "Motor/moped"
+       },
        "enableIf": "{Q6} anyof \"3\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "4",
-       "text": "Bicycle",
+       "text": {
+        "default": "Bicycle",
+        "it": "Bicicletta/bicicletta elettrica",
+        "de": "Fahrrad (E-Fahrrad, ...)",
+        "de-at": "Fahrrad (E-Fahrrad, ...)",
+        "de-ch": "Fahrrad (E-Fahrrad, ...)",
+        "sl": "Kolo (tudi električno kolo)"
+       },
        "enableIf": "{Q6} anyof \"4\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "5",
-       "text": "Scooter/skateboard/hoverboard",
+       "text": {
+        "default": "Scooter/skateboard/hoverboard",
+        "it": "Monopattino/skateboard/hoverboard",
+        "de": "Roller/Skateboard/Hoverboard",
+        "de-at": "(E-)Scooter/Skateboard/Hoverboard",
+        "de-ch": "Roller/Skateboard/Hoverboard",
+        "sl": "Skuter/rolka/hoverboard"
+       },
        "enableIf": "{Q6} anyof \"5\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "6",
-       "text": "Bike Sharing account",
+       "text": {
+        "default": "Bike Sharing account",
+        "it": "Abbonamento al servizio di Bike Sharing",
+        "de": "Bike-Sharing-Mitgliedschaft",
+        "de-at": "Bike-Sharing-Mitgliedschaft",
+        "de-ch": "Bike-Sharing-Mitgliedschaft",
+        "sl": "Račun za storitev skupne uporabe koles (bike sharing)"
+       },
        "enableIf": "{Q6} anyof \"6\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "7",
-       "text": "Car sharing account",
+       "text": {
+        "default": "Car sharing account",
+        "it": "Abbonamento al servizio di Car Sharing",
+        "de": "Auto-Sharing-Mitgliedschaft",
+        "de-at": "Auto-Sharing-Mitgliedschaft",
+        "de-ch": "Auto-Sharing-Mitgliedschaft",
+        "sl": "Račun za storitev skupne uporabe avtomobilov (car sharing)"
+       },
        "enableIf": "{Q6} anyof \"7\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "8",
-       "text": "Other",
+       "text": {
+        "default": "Other",
+        "it": "Altro",
+        "de": "Andere",
+        "de-at": "Andere",
+        "de-ch": "Andere",
+        "sl": "Drugo"
+       },
        "enableIf": "{Q6} anyof \"8\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "9",
-       "text": "None of these",
+       "text": {
+        "default": "None of these",
+        "it": "Nessuno di questi",
+        "de": "Nichts davon",
+        "de-at": "Nichts davon",
+        "de-ch": "Nichts davon",
+        "sl": "Ničesar od omenjenega"
+       },
        "enableIf": "{Q6} anyof \"9\" or {Q6.length} == 0"
       }
      ]
@@ -3367,24 +3446,72 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q6CARS",
      "visibleIf": "{Q6} anyof \"1\"",
-     "title": "How often do you have access to a car?",
-     "description": "To have access to means that you can easily use it even if you don't own it.",
+     "title": {
+      "default": "How often do you have access to a car?",
+      "it": "Con quale frequenza puoi accedere a un'auto?",
+      "de": "Wie oft steht Ihnen ein Auto zu Verfügung?",
+      "de-at": "Verfügbarkeit eines Autos",
+      "de-ch": "Verfügbarkeit eines Autos",
+      "sl": "Kako pogosto lahko dostopate do avtomobila?",
+      "fr": "Avez-vous accès à une voiture?"
+     },
+     "description": {
+      "default": "To have access to means that you can easily use it even if you don't own it.",
+      "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso.",
+      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Always"
+       "text": {
+        "default": "Always",
+        "it": "Sempre",
+        "de": "Immer",
+        "de-at": "Immer",
+        "de-ch": "Immer",
+        "sl": "Vedno",
+        "fr": "Toujours"
+       }
       },
       {
        "value": "2",
-       "text": "Often"
+       "text": {
+        "default": "Often",
+        "it": "Spesso",
+        "de": "Oft",
+        "de-at": "Oft",
+        "de-ch": "Oft",
+        "sl": "Pogosto",
+        "fr": "Fréquemment"
+       }
       },
       {
        "value": "3",
-       "text": "Rarely"
+       "text": {
+        "default": "Rarely",
+        "it": "Raramente",
+        "de": "Selten",
+        "de-at": "Selten",
+        "de-ch": "Selten",
+        "sl": "Redko",
+        "fr": "Rarement"
+       }
       },
       {
        "value": "4",
-       "text": "Never"
+       "text": {
+        "default": "Never",
+        "it": "Mai",
+        "de": "Nie",
+        "de-at": "Nie",
+        "de-ch": "Nie",
+        "sl": "Nikoli",
+        "fr": "Jamais"
+       }
       }
      ]
     },
@@ -3392,24 +3519,70 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q6MOTOR",
      "visibleIf": "{Q6} anyof \"3\"",
-     "title": "How often do you have access to a Motorbike/moped?",
-     "description": "To have access to means that you can easily use it even if you don't own it.",
+     "title": {
+      "default": "How often do you have access to a Motorbike/moped?",
+      "it": "Con quale frequenza puoi accedere a una bicicletta?",
+      "de": "Wie oft steht Ihnen ein Motorrad/Moped zur Vefügung?",
+      "de-at": "Verfügbarkeit eines Motorrads/Mopeds",
+      "de-ch": "Verfügbarkeit eines Motorrads/Mopeds",
+      "sl": "Kako pogosto lahko dostopate do motorja/mopeda?"
+     },
+     "description": {
+      "default": "To have access to means that you can easily use it even if you don't own it.",
+      "it": "Con quale frequenza puoi accedere a una motocicletta/motorino?",
+      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Always"
+       "text": {
+        "default": "Always",
+        "it": "Sempre",
+        "de": "Immer",
+        "de-at": "Immer",
+        "de-ch": "Immer",
+        "sl": "Vedno",
+        "fr": "Toujours"
+       }
       },
       {
        "value": "2",
-       "text": "Often"
+       "text": {
+        "default": "Often",
+        "it": "Spesso",
+        "de": "Oft",
+        "de-at": "Oft",
+        "de-ch": "Oft",
+        "sl": "Pogosto",
+        "fr": "Fréquemment"
+       }
       },
       {
        "value": "3",
-       "text": "Rarely"
+       "text": {
+        "default": "Rarely",
+        "it": "Raramente",
+        "de-ch": "Selten",
+        "de-at": "Selten",
+        "de": "Selten",
+        "sl": "Redko",
+        "fr": "Rarement"
+       }
       },
       {
        "value": "4",
-       "text": "Never"
+       "text": {
+        "default": "Never",
+        "it": "Mai",
+        "de": "Nie",
+        "de-at": "Nie",
+        "de-ch": "Nie",
+        "sl": "Nikoli",
+        "fr": "Jamais"
+       }
       }
      ]
     },
@@ -3417,24 +3590,72 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q6BIKES",
      "visibleIf": "{Q6} anyof \"4\"",
-     "title": "How often do you have access to a bicycle/e-bike?",
-     "description": "To have access to means that you can easily use it even if you don't own it.",
+     "title": {
+      "default": "How often do you have access to a bicycle/e-bike?",
+      "it": "Con quale frequenza puoi accedere a una bicicletta?",
+      "de": "Wie oft steht Ihnen ein Fahrrad zur Verfügung?",
+      "de-at": "Verfügbarkeit eines Fahrrads",
+      "de-ch": "Verfügbarkeit eines Fahrrads",
+      "sl": "Kako pogosto lahko dostopate do kolesa?",
+      "fr": "Avez-vous accès à un vélo?"
+     },
+     "description": {
+      "default": "To have access to means that you can easily use it even if you don't own it.",
+      "it": "per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso.",
+      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Always"
+       "text": {
+        "default": "Always",
+        "it": "Sempre",
+        "de": "Immer",
+        "de-at": "Immer",
+        "de-ch": "Immer",
+        "sl": "Vedno",
+        "fr": "Toujours"
+       }
       },
       {
        "value": "2",
-       "text": "Often"
+       "text": {
+        "default": "Often",
+        "it": "Spesso",
+        "de": "Oft",
+        "de-at": "Oft",
+        "de-ch": "Oft",
+        "sl": "Pogosto",
+        "fr": "Fréquemment"
+       }
       },
       {
        "value": "3",
-       "text": "Rarely"
+       "text": {
+        "default": "Rarely",
+        "it": "Raramente",
+        "de": "Selten",
+        "de-at": "Selten",
+        "de-ch": "Selten",
+        "sl": "Redko",
+        "fr": "Rarement"
+       }
       },
       {
        "value": "4",
-       "text": "Never"
+       "text": {
+        "default": "Never",
+        "it": "Mai",
+        "de": "Nie",
+        "de-at": "Nie",
+        "de-ch": "Nie",
+        "sl": "Nikoli",
+        "fr": "Jamais"
+       }
       }
      ]
     },
@@ -3442,24 +3663,71 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q6SCOOT",
      "visibleIf": "{Q6} anyof \"5\"",
-     "title": "How often do you have access to a scooter/skateboard/hoverboard?",
-     "description": "To have access to means that you can easily use it even if you don't own it.",
+     "title": {
+      "default": "How often do you have access to a scooter/skateboard/hoverboard?",
+      "de": "Wie oft steht Ihnen ein Scooter/Skateboards/Hoverboard zur Verfügung?",
+      "de-at": "Verfügbarkeit eines Scooters/Skateboards/Hoverboards",
+      "de-ch": "Verfügbarkeit eines Scooters/Skateboards/Hoverboards",
+      "sl": "Kako pogosto lahko dostopate do skuterja/rolke?",
+      "fr": "Avez-vous accès à une trotinette/skateboard/hoverboard?"
+     },
+     "description": {
+      "default": "To have access to means that you can easily use it even if you don't own it.",
+      "it": "Con quale frequenza puoi accedere a una motocicletta/motorino?",
+      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Always"
+       "text": {
+        "default": "Always",
+        "it": "Sempre",
+        "de": "Immer",
+        "de-at": "Immer",
+        "de-ch": "Immer",
+        "sl": "Vedno",
+        "fr": "Toujours"
+       }
       },
       {
        "value": "2",
-       "text": "Often"
+       "text": {
+        "default": "Often",
+        "it": "Spesso",
+        "de": "Oft",
+        "de-at": "Oft",
+        "de-ch": "Oft",
+        "sl": "Pogosto",
+        "fr": "Fréquemment"
+       }
       },
       {
        "value": "3",
-       "text": "Rarely"
+       "text": {
+        "default": "Rarely",
+        "it": "Raramente",
+        "de": "Selten",
+        "de-at": "Selten",
+        "de-ch": "Selten",
+        "sl": "Redko",
+        "fr": "Rarement"
+       }
       },
       {
        "value": "4",
-       "text": "Never"
+       "text": {
+        "default": "Never",
+        "it": "Mai",
+        "de": "Nie",
+        "de-at": "Nie",
+        "de-ch": "Nie",
+        "sl": "Nikoli",
+        "fr": "Jamais"
+       }
       }
      ]
     }
