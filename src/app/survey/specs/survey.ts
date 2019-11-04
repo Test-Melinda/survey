@@ -2905,35 +2905,98 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q2",
-     "title": "What are the means of transport you use for your daily travels? (Multiple answers are possible)",
+     "title": {
+      "default": "What are the means of transport you use for your daily travels? (Multiple answers are possible)",
+      "it": "Quali sono i mezzi di trasporto che usi abitualmente per i tuoi spostamenti quotidiani?\n(sono possibili più risposte)",
+      "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?\n(Mehrfachnennungen sind möglich)",
+      "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?\n(Mehrfachnennungen sind möglich)",
+      "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?\n(Mehrfachnennungen sind möglich)",
+      "sl": "Katera prevozna sredstva uporabljate za vsakodnevna potovanja?\n(Možnih je več odgovorov)",
+      "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?\n(plusieurs réponses possibles)"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Car (both as a driver/passenger)"
+       "text": {
+        "default": "Car (both as a driver/passenger)",
+        "it": "Automobile (sia come guidatore che come passeggero)",
+        "de": "Auto (Als Fahrer und Beifahrer)",
+        "de-at": "Auto (Als Fahrer*in und Passagier*in)",
+        "de-ch": "Auto (Als Fahrer und Beifahrer)",
+        "sl": "Avtomobil (kot voznik ali sopotnik)",
+        "fr": "Voiture (conducteur ou passager)"
+       }
       },
       {
        "value": "2",
-       "text": "Motorbike"
+       "text": {
+        "default": "Motorbike",
+        "it": "Motocicletta",
+        "de": "Motorrad",
+        "de-at": "Motorrad",
+        "de-ch": "Motorrad",
+        "sl": "Motor",
+        "fr": "2 roues motorisés"
+       }
       },
       {
        "value": "3",
-       "text": "Public transport (Bus/tram/metro)"
+       "text": {
+        "default": "Public transport (Bus/tram/metro)",
+        "it": "Trasporto Pubblico (bus/tram/metro)",
+        "de": "ÖPNV (Bus/Tram/Metro)",
+        "de-at": "Öffentlicher Verkehr (Bus/Tram/U-Bahn/Schnellzug)",
+        "de-ch": "Öffentlicher Verkehr (Bus/Tram/Metro)",
+        "sl": "Javni prevoz",
+        "fr": "Transport public (bus/tram/métro)"
+       }
       },
       {
        "value": "4",
-       "text": "Train"
+       "text": {
+        "default": "Train",
+        "it": "Treno",
+        "de": "Bahn",
+        "de-at": "Bahn",
+        "de-ch": "Bahn",
+        "sl": "Vlak"
+       }
       },
       {
        "value": "5",
-       "text": "Bicycle (also e-bike)"
+       "text": {
+        "default": "Bicycle (also e-bike)",
+        "it": "Bicicletta / Bicicletta elettrica",
+        "de": "Fahrrad (E-Fahrrad, ...)",
+        "de-at": "Fahrrad (E-Fahrrad, ...)",
+        "de-ch": "Fahrrad (E-Fahrrad, ...)",
+        "sl": "Kolo (tudi električno kolo)",
+        "fr": "Vélo/Vélo à assistance électrique"
+       }
       },
       {
        "value": "6",
-       "text": "Walk"
+       "text": {
+        "default": "Walk",
+        "it": "Camminare",
+        "de": "Zu Fuß",
+        "de-at": "Zu Fuß",
+        "de-ch": "Zu Fuß",
+        "sl": "Hoja",
+        "fr": "Marche"
+       }
       },
       {
        "value": "7",
-       "text": "Other (scooter/skateboard/hoverboard, …)"
+       "text": {
+        "default": "Other (scooter/skateboard/hoverboard, …)",
+        "it": "Altro (monopattino/skateboard/hoverboard, …)",
+        "de": "Sonstiges ((E-)Scooter, ...)",
+        "de-at": "Sonstiges ((E-)Scooter, ...)",
+        "de-ch": "Sonstiges ((E-)Scooter, ...)",
+        "sl": "Drugo",
+        "fr": "Autre (trotinette/skateboard/hoverboard/…)"
+       }
       }
      ]
     }
@@ -2945,35 +3008,98 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q3",
-     "title": "What is the mean of transport you use the most (longest trip in terms of distance)?",
+     "title": {
+      "default": "What is the mean of transport you use the most (longest trip in terms of distance)?",
+      "it": "Qual è il mezzo di trasporto che usi di più, ovvero per coprire la distanza più lunga?",
+      "de": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?",
+      "de-ch": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?\n(Nur eine Nennung möglich)",
+      "de-at": "Welches Transportmittel/Verkehrsmittel nutzen Sie am meisten (in Bezug auf die Distanz)?",
+      "sl": "Katero prevozno sredstvo najpogosteje uporabljate (najdaljše potovanje glede na razdaljo)?",
+      "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Car (both as a driver/passenger)"
+       "text": {
+        "default": "Car (both as a driver/passenger)",
+        "de": "Auto (Als Fahrer und Beifahrer)",
+        "de-ch": "Auto (Als Fahrer und Beifahrer)",
+        "de-at": "Auto (Als Fahrer*in und Passagier*in)",
+        "it": "Automobile (sia come guidatore che come passeggero)",
+        "sl": "Avtomobil (kot voznik ali sopotnik)",
+        "fr": "Voiture (conducteur ou passager)"
+       }
       },
       {
        "value": "2",
-       "text": "Motorbike"
+       "text": {
+        "default": "Motorbike",
+        "de": "Motorrad",
+        "de-at": "Motorrad",
+        "de-ch": "Motorrad",
+        "it": "Motocicletta",
+        "sl": "Motor",
+        "fr": "2 roues motorisés"
+       }
       },
       {
        "value": "3",
-       "text": "Public transport (Bus/tram/metro)"
+       "text": {
+        "default": "Public transport (Bus/tram/metro)",
+        "de": "ÖPNV (Bus/Tram/Metro)",
+        "de-at": "Öffentlicher Verkehr (Bus/Tram/U-Bahn/Schnellzug)",
+        "de-ch": "Öffentlicher Verkehr (Bus/Tram/Metro)",
+        "it": "Trasporto Pubblico (bus/tram/metro)",
+        "sl": "Javni prevoz",
+        "fr": "Transport public (bus/tram/métro)"
+       }
       },
       {
        "value": "4",
-       "text": "Train"
+       "text": {
+        "default": "Train",
+        "de": "Bahn",
+        "de-at": "Bahn",
+        "de-ch": "Bahn",
+        "it": "Treno",
+        "sl": "Vlak"
+       }
       },
       {
        "value": "5",
-       "text": "Bicycle (also e-bike)"
+       "text": {
+        "default": "Bicycle (also e-bike)",
+        "de": "Fahrrad (E-Fahrrad, ...)",
+        "de-at": "Fahrrad (E-Fahrrad, ...)",
+        "de-ch": "Fahrrad (E-Fahrrad, ...)",
+        "it": "Bicicletta / Bicicletta elettrica",
+        "sl": "Kolo (tudi električno kolo)",
+        "fr": "Vélo/Vélo à assistance électrique"
+       }
       },
       {
        "value": "6",
-       "text": "Walk"
+       "text": {
+        "default": "Walk",
+        "de": "Zu Fuß",
+        "de-at": "Zu Fuß",
+        "de-ch": "Zu Fuß",
+        "it": "Camminare",
+        "sl": "Hoja",
+        "fr": "Marche"
+       }
       },
       {
        "value": "7",
-       "text": "Other (scooter/skateboard/hoverboard, …)"
+       "text": {
+        "default": "Other (scooter/skateboard/hoverboard, …)",
+        "de": "Sonstiges ((E-)Scooter, ...)",
+        "de-at": "Sonstiges ((E-)Scooter, ...)",
+        "de-ch": "Sonstiges ((E-)Scooter, ...)",
+        "it": "Altro (monopattino/skateboard/hoverboard, …)",
+        "sl": "Drugo",
+        "fr": "Autre (trotinette/skateboard/hoverboard/…)"
+       }
       }
      ]
     }
@@ -2985,70 +3111,190 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q4",
-     "title": "Which of the following travel services have you ever heard of?",
+     "title": {
+      "default": "Which of the following travel services have you ever heard of?",
+      "it": "Di quali dei seguenti servizi di mobilità hai sentito anche solo parlare?",
+      "de": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "de-ch": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "de-at": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "sl": "Za katere od naslednjih rešitev mobilnosti ste že slišali?",
+      "fr": "Desquelles de ces solutions de mobilité avez vous entendu parler?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Car sharing"
+       "text": {
+        "default": "Car sharing",
+        "sl": "Skupna uporaba avtomobila (car sharing)",
+        "fr": "Autopartage",
+        "de": "Car-sharing",
+        "de-at": "Car-sharing",
+        "de-ch": "Car-sharing"
+       }
       },
       {
        "value": "2",
-       "text": "Car pooling"
+       "text": {
+        "default": "Car pooling",
+        "de": "Car-pooling",
+        "de-at": "Car-pooling",
+        "de-ch": "Car-pooling",
+        "sl": "Souporaba avtomobila (car pooling)",
+        "fr": "Covoiturage"
+       }
       },
       {
        "value": "3",
-       "text": "Bike sharing"
+       "text": {
+        "default": "Bike sharing",
+        "de": "Bike-sharing",
+        "de-at": "Bike-sharing",
+        "de-ch": "Bike-sharing",
+        "sl": "Skupna uporaba kolesa (bike sharing)",
+        "fr": "Vélopartage"
+       }
       },
       {
        "value": "4",
-       "text": "Ride hailing"
+       "text": {
+        "default": "Ride hailing",
+        "de": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "de-at": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "de-ch": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "it": "Servizi di trasporto a chiamata (non taxi)",
+        "sl": "Sopotništvo (ride hailing)",
+        "fr": "VTC"
+       }
       },
       {
        "value": "5",
-       "text": "Scooter sharing"
+       "text": {
+        "default": "Scooter sharing",
+        "de": "Roller-sharing",
+        "de-at": "Scooter-sharing",
+        "de-ch": "Roller-sharing",
+        "sl": "Skupna uporaba skuterja (scooter sharing)",
+        "fr": "Motopartage"
+       }
       },
       {
        "value": "6",
-       "text": "Hitchhiking benches"
+       "text": {
+        "default": "Hitchhiking benches",
+        "de": "Mitfahrbänke",
+        "de-at": "Mitfahrbänke",
+        "de-ch": "Mitfahrbänke",
+        "it": "Panchine-autostop",
+        "sl": "Klopi za štopanje",
+        "fr": "Autostop organisé"
+       }
       },
       {
        "value": "7",
-       "text": "None of these"
+       "text": {
+        "default": "None of these",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten",
+        "it": "Nessuno di questi",
+        "sl": "Nobenega izmed navedenih",
+        "fr": "Aucune"
+       }
       }
      ]
     },
     {
      "type": "checkbox",
      "name": "Q5",
-     "title": "Which of those have you ever used?",
+     "title": {
+      "default": "Which of those have you ever used?",
+      "it": "Quale di questi ti è capitato di utilizzare?",
+      "de": "Welche davon haben Sie bisher genutzt?",
+      "de-ch": "Welche davon haben Sie bisher genutzt?",
+      "de-at": "Welche davon haben Sie bisher genutzt?",
+      "sl": "Katere od teh ste že uporabili?",
+      "fr": "Lesquelles avez-vous utilisées?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Car sharing"
+       "text": {
+        "default": "Car sharing",
+        "de": "Car-sharing",
+        "de-at": "Car-sharing",
+        "de-ch": "Car-sharing",
+        "sl": "Skupna uporaba avtomobila (car sharing)",
+        "fr": "Autopartage"
+       }
       },
       {
        "value": "2",
-       "text": "Car pooling"
+       "text": {
+        "default": "Car pooling",
+        "de": "Car-pooling",
+        "de-at": "Car-pooling",
+        "de-ch": "Car-pooling",
+        "sl": "Souporaba avtomobila (car pooling)",
+        "fr": "Covoiturage"
+       }
       },
       {
        "value": "3",
-       "text": "Bike sharing"
+       "text": {
+        "default": "Bike sharing",
+        "de": "Bike-sharing",
+        "de-at": "Bike-sharing",
+        "de-ch": "Bike-sharing",
+        "sl": "Skupna uporaba kolesa (bike sharing)",
+        "fr": "Vélopartage"
+       }
       },
       {
        "value": "4",
-       "text": "Ride hailing"
+       "text": {
+        "default": "Ride hailing",
+        "it": "Servizi di trasporto a chiamata (non taxi)",
+        "de": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "de-at": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "de-ch": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "sl": "Sopotništvo (ride hailing)",
+        "fr": "VTC"
+       }
       },
       {
        "value": "5",
-       "text": "Scooter sharing"
+       "text": {
+        "default": "Scooter sharing",
+        "de": "Roller-sharing",
+        "de-at": "Scooter-sharing",
+        "de-ch": "Roller-sharing",
+        "sl": "Skupna uporaba skuterja (scooter sharing)",
+        "fr": "Motopartage"
+       }
       },
       {
        "value": "6",
-       "text": "Hitchhiking benches"
+       "text": {
+        "default": "Hitchhiking benches",
+        "it": "Panchine-autostop",
+        "de": "Mitfahrbänke",
+        "de-at": "Mitfahrbänke",
+        "de-ch": "Mitfahrbänke",
+        "sl": "Klopi za štopanje",
+        "fr": "Autostop organisé"
+       }
       },
       {
        "value": "7",
-       "text": "None of these"
+       "text": {
+        "default": "None of these",
+        "it": "Nessuno di questi",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten",
+        "sl": "Nobenega izmed navedenih",
+        "fr": "Aucune"
+       }
       }
      ]
     }
