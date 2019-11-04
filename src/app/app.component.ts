@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Model, SurveyNG, StylesManager, Survey } from 'survey-angular';
+import { Model, SurveyNG, StylesManager, Survey, IQuestion } from 'survey-angular';
 import { SurveySpecificationService } from "src/app/survey/survey-specification.service";
 import { ResponseConverterService } from "src/app/survey/response-converter.service";
 import { LimesurveyQuestionsMapping, LimesurveyAnswerCode } from "./survey/limesurvey-questions-mapping";
@@ -122,12 +122,23 @@ export class AppComponent implements OnInit {
             });
             survey.showProgressBar = "top";
 			survey.setVariable("source", this.source);
-			survey.onValueChanged.add((s, q) => {
+			
+			// Hide questions which are normally shown when the user is located out of the pilot area
+			let hiddenQuestions: IQuestion[] = [];
+			survey.onValueChanging.add((s, q) => {
 				if (q.name == this.pilotSelectionQuestion){
-					if (this.isUserOutOfPilot(q.value)){
-						for (let question of s.getAllQuestions(false)){
-							if (question.name != this.pilotSelectionQuestion){
+					for (let question of hiddenQuestions){
+						question.visible = true;
+					}
+				}
+			});
+			survey.onValueChanged.add((s, q) => {
+				if (q.name == this.pilotSelectionQuestion && this.isUserOutOfPilot(q.value)){
+					for (let question of s.getAllQuestions(false)){
+						if (question.name != this.pilotSelectionQuestion){
+							if (question.visible){
 								question.visible = false;
+								hiddenQuestions.push(question);
 							}
 						}
 					}
@@ -148,7 +159,7 @@ export class AppComponent implements OnInit {
                         title: "mb-4 mt-2"
                     },
                     progress: "progress center-block mx-auto mb-4 survey-progress"
-                }
+                },
             });
             
             this.status = SurveyStatus.READY;
