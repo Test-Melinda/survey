@@ -38,11 +38,11 @@
 						<app-score-viewer *ngIf="score != null; else noScore" [score]="score"></app-score-viewer>
 						
 						<ng-template #noScore>
-							<h1>Thank you for having filled up the survey!</h1>
+							<h1>Thank you for having taken part to the survey!</h1>
 						</ng-template>
 					</div>
 					<ng-template #responseIgnored>
-						<h1>Thank you for having filled up the survey!</h1>
+						<h1>Thank you for having taken part to the survey!</h1>
 					</ng-template>
 				</ng-template>
 			</div>
