@@ -4033,15 +4033,39 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q7dot2",
-     "title": "In your opinion which of these two phenomena cause more deaths in the European Union?",
+     "title": {
+      "default": "In your opinion which of these two phenomena cause more deaths in the European Union?",
+      "it": "In base al tuo parere quale di questi due fenomeni causa maggiori decessi nell'Unione Europea?",
+      "de": "Wodurch werden Ihrer Meinung nach in der EU mehr Todesfälle verursacht?",
+      "de-ch": "Wodurch werden mehr Todesfälle verursacht?",
+      "de-at": "Wodurch werden Ihrer Meinung nach in der EU mehr Todesfälle verursacht?",
+      "sl": "Kateri od omenjenih fenomenov v EU povzroča več smrtnih žrtev?",
+      "fr": "A votre avis lequel de ces deux phénomènes génére le plus de décès dans l'Union Européenne?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Roads incidents"
+       "text": {
+        "default": "Roads incidents",
+        "it": "Incidenti stradali",
+        "de": "Durch Verkehrsunfälle",
+        "de-ch": "Verkehrsunfälle",
+        "de-at": "Verkehrsunfälle",
+        "sl": "Nesreče v cestnem prometu",
+        "fr": "Accidents de la route"
+       }
       },
       {
        "value": "2",
-       "text": "Air pollution"
+       "text": {
+        "default": "Air pollution",
+        "it": "Inquinamento atmosferico",
+        "de": "Durch Luftverschmutzung",
+        "de-ch": "Luftverschmutzung",
+        "de-at": "Luftverschmutzung",
+        "sl": "Onesnaževanje zraka",
+        "fr": "Pollution de l'air"
+       }
       }
      ]
     }
