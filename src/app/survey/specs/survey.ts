@@ -3360,7 +3360,8 @@ export const surveyModel = {
         "de": "Autos",
         "de-at": "Autos",
         "de-ch": "Autos",
-        "sl": "Avtomobili"
+        "sl": "Avtomobili",
+        "fr": "Voiture"
        },
        "enableIf": "{Q6} anyof \"1\" or !({Q6} anyof \"9\")"
       },
@@ -3372,7 +3373,8 @@ export const surveyModel = {
         "de": "Dauerkarte ÖPNV",
         "de-at": "Monats-/Jahres-Ticket für den öffentlichen Verkehr",
         "de-ch": "Billette des öffentlichen Verkehrs",
-        "sl": "Mesečna vozovnica za javni prevoz"
+        "sl": "Mesečna vozovnica za javni prevoz",
+        "fr": "Abonnement transports en commun"
        },
        "enableIf": "{Q6} anyof \"2\" or !({Q6} anyof \"9\")"
       },
@@ -3384,7 +3386,8 @@ export const surveyModel = {
         "de": "Motorrad/Moped",
         "de-at": "Motorrad/Moped",
         "de-ch": "Motorrad/Moped",
-        "sl": "Motor/moped"
+        "sl": "Motor/moped",
+        "fr": "2 roues motorisés"
        },
        "enableIf": "{Q6} anyof \"3\" or !({Q6} anyof \"9\")"
       },
@@ -3396,7 +3399,8 @@ export const surveyModel = {
         "de": "Fahrrad (E-Fahrrad, ...)",
         "de-at": "Fahrrad (E-Fahrrad, ...)",
         "de-ch": "Fahrrad (E-Fahrrad, ...)",
-        "sl": "Kolo (tudi električno kolo)"
+        "sl": "Kolo (tudi električno kolo)",
+        "fr": "Vélo/Vélo à assistance électrique"
        },
        "enableIf": "{Q6} anyof \"4\" or !({Q6} anyof \"9\")"
       },
@@ -3408,7 +3412,8 @@ export const surveyModel = {
         "de": "Roller/Skateboard/Hoverboard",
         "de-at": "(E-)Scooter/Skateboard/Hoverboard",
         "de-ch": "Roller/Skateboard/Hoverboard",
-        "sl": "Skuter/rolka/hoverboard"
+        "sl": "Skuter/rolka/hoverboard",
+        "fr": "Trotinette/skateboard/hoverboard"
        },
        "enableIf": "{Q6} anyof \"5\" or !({Q6} anyof \"9\")"
       },
@@ -3420,7 +3425,8 @@ export const surveyModel = {
         "de": "Bike-Sharing-Mitgliedschaft",
         "de-at": "Bike-Sharing-Mitgliedschaft",
         "de-ch": "Bike-Sharing-Mitgliedschaft",
-        "sl": "Račun za storitev skupne uporabe koles (bike sharing)"
+        "sl": "Račun za storitev skupne uporabe koles (bike sharing)",
+        "fr": "Abonnement vélo"
        },
        "enableIf": "{Q6} anyof \"6\" or !({Q6} anyof \"9\")"
       },
@@ -3432,7 +3438,8 @@ export const surveyModel = {
         "de": "Auto-Sharing-Mitgliedschaft",
         "de-at": "Auto-Sharing-Mitgliedschaft",
         "de-ch": "Auto-Sharing-Mitgliedschaft",
-        "sl": "Račun za storitev skupne uporabe avtomobilov (car sharing)"
+        "sl": "Račun za storitev skupne uporabe avtomobilov (car sharing)",
+        "fr": "Abonnement autopartage"
        },
        "enableIf": "{Q6} anyof \"7\" or !({Q6} anyof \"9\")"
       },
@@ -3444,7 +3451,8 @@ export const surveyModel = {
         "de": "Andere",
         "de-at": "Andere",
         "de-ch": "Andere",
-        "sl": "Drugo"
+        "sl": "Drugo",
+        "fr": "Autre"
        },
        "enableIf": "{Q6} anyof \"8\" or !({Q6} anyof \"9\")"
       },
@@ -3456,7 +3464,8 @@ export const surveyModel = {
         "de": "Nichts davon",
         "de-at": "Nichts davon",
         "de-ch": "Nichts davon",
-        "sl": "Ničesar od omenjenega"
+        "sl": "Ničesar od omenjenega",
+        "fr": "Aucun"
        },
        "enableIf": "{Q6} anyof \"9\" or {Q6.length} == 0"
       }
@@ -3545,7 +3554,8 @@ export const surveyModel = {
       "de": "Wie oft steht Ihnen ein Motorrad/Moped zur Vefügung?",
       "de-at": "Verfügbarkeit eines Motorrads/Mopeds",
       "de-ch": "Verfügbarkeit eines Motorrads/Mopeds",
-      "sl": "Kako pogosto lahko dostopate do motorja/mopeda?"
+      "sl": "Kako pogosto lahko dostopate do motorja/mopeda?",
+      "fr": "Avez-vous accès à une mobylette / moto?"
      },
      "description": {
       "default": "To have access to means that you can easily use it even if you don't own it.",
@@ -3553,7 +3563,8 @@ export const surveyModel = {
       "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti."
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
      },
      "choices": [
       {
