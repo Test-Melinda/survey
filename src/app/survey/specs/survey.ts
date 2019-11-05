@@ -2905,35 +2905,98 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q2",
-     "title": "What are the means of transport you use for your daily travels? (Multiple answers are possible)",
+     "title": {
+      "default": "What are the means of transport you use for your daily travels? (Multiple answers are possible)",
+      "it": "Quali sono i mezzi di trasporto che usi abitualmente per i tuoi spostamenti quotidiani?\n(sono possibili più risposte)",
+      "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?\n(Mehrfachnennungen sind möglich)",
+      "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?\n(Mehrfachnennungen sind möglich)",
+      "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?\n(Mehrfachnennungen sind möglich)",
+      "sl": "Katera prevozna sredstva uporabljate za vsakodnevna potovanja?\n(Možnih je več odgovorov)",
+      "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?\n(plusieurs réponses possibles)"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Car (both as a driver/passenger)"
+       "text": {
+        "default": "Car (both as a driver/passenger)",
+        "it": "Automobile (sia come guidatore che come passeggero)",
+        "de": "Auto (Als Fahrer und Beifahrer)",
+        "de-at": "Auto (Als Fahrer*in und Passagier*in)",
+        "de-ch": "Auto (Als Fahrer und Beifahrer)",
+        "sl": "Avtomobil (kot voznik ali sopotnik)",
+        "fr": "Voiture (conducteur ou passager)"
+       }
       },
       {
        "value": "2",
-       "text": "Motorbike"
+       "text": {
+        "default": "Motorbike",
+        "it": "Motocicletta",
+        "de": "Motorrad",
+        "de-at": "Motorrad",
+        "de-ch": "Motorrad",
+        "sl": "Motor",
+        "fr": "2 roues motorisés"
+       }
       },
       {
        "value": "3",
-       "text": "Public transport (Bus/tram/metro)"
+       "text": {
+        "default": "Public transport (Bus/tram/metro)",
+        "it": "Trasporto Pubblico (bus/tram/metro)",
+        "de": "ÖPNV (Bus/Tram/Metro)",
+        "de-at": "Öffentlicher Verkehr (Bus/Tram/U-Bahn/Schnellzug)",
+        "de-ch": "Öffentlicher Verkehr (Bus/Tram/Metro)",
+        "sl": "Javni prevoz",
+        "fr": "Transport public (bus/tram/métro)"
+       }
       },
       {
        "value": "4",
-       "text": "Train"
+       "text": {
+        "default": "Train",
+        "it": "Treno",
+        "de": "Bahn",
+        "de-at": "Bahn",
+        "de-ch": "Bahn",
+        "sl": "Vlak"
+       }
       },
       {
        "value": "5",
-       "text": "Bicycle (also e-bike)"
+       "text": {
+        "default": "Bicycle (also e-bike)",
+        "it": "Bicicletta / Bicicletta elettrica",
+        "de": "Fahrrad (E-Fahrrad, ...)",
+        "de-at": "Fahrrad (E-Fahrrad, ...)",
+        "de-ch": "Fahrrad (E-Fahrrad, ...)",
+        "sl": "Kolo (tudi električno kolo)",
+        "fr": "Vélo/Vélo à assistance électrique"
+       }
       },
       {
        "value": "6",
-       "text": "Walk"
+       "text": {
+        "default": "Walk",
+        "it": "Camminare",
+        "de": "Zu Fuß",
+        "de-at": "Zu Fuß",
+        "de-ch": "Zu Fuß",
+        "sl": "Hoja",
+        "fr": "Marche"
+       }
       },
       {
        "value": "7",
-       "text": "Other (scooter/skateboard/hoverboard, …)"
+       "text": {
+        "default": "Other (scooter/skateboard/hoverboard, …)",
+        "it": "Altro (monopattino/skateboard/hoverboard, …)",
+        "de": "Sonstiges ((E-)Scooter, ...)",
+        "de-at": "Sonstiges ((E-)Scooter, ...)",
+        "de-ch": "Sonstiges ((E-)Scooter, ...)",
+        "sl": "Drugo",
+        "fr": "Autre (trotinette/skateboard/hoverboard/…)"
+       }
       }
      ]
     }
@@ -2945,35 +3008,98 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q3",
-     "title": "What is the mean of transport you use the most (longest trip in terms of distance)?",
+     "title": {
+      "default": "What is the mean of transport you use the most (longest trip in terms of distance)?",
+      "it": "Qual è il mezzo di trasporto che usi di più, ovvero per coprire la distanza più lunga?",
+      "de": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?",
+      "de-ch": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?\n(Nur eine Nennung möglich)",
+      "de-at": "Welches Transportmittel/Verkehrsmittel nutzen Sie am meisten (in Bezug auf die Distanz)?",
+      "sl": "Katero prevozno sredstvo najpogosteje uporabljate (najdaljše potovanje glede na razdaljo)?",
+      "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Car (both as a driver/passenger)"
+       "text": {
+        "default": "Car (both as a driver/passenger)",
+        "de": "Auto (Als Fahrer und Beifahrer)",
+        "de-ch": "Auto (Als Fahrer und Beifahrer)",
+        "de-at": "Auto (Als Fahrer*in und Passagier*in)",
+        "it": "Automobile (sia come guidatore che come passeggero)",
+        "sl": "Avtomobil (kot voznik ali sopotnik)",
+        "fr": "Voiture (conducteur ou passager)"
+       }
       },
       {
        "value": "2",
-       "text": "Motorbike"
+       "text": {
+        "default": "Motorbike",
+        "de": "Motorrad",
+        "de-at": "Motorrad",
+        "de-ch": "Motorrad",
+        "it": "Motocicletta",
+        "sl": "Motor",
+        "fr": "2 roues motorisés"
+       }
       },
       {
        "value": "3",
-       "text": "Public transport (Bus/tram/metro)"
+       "text": {
+        "default": "Public transport (Bus/tram/metro)",
+        "de": "ÖPNV (Bus/Tram/Metro)",
+        "de-at": "Öffentlicher Verkehr (Bus/Tram/U-Bahn/Schnellzug)",
+        "de-ch": "Öffentlicher Verkehr (Bus/Tram/Metro)",
+        "it": "Trasporto Pubblico (bus/tram/metro)",
+        "sl": "Javni prevoz",
+        "fr": "Transport public (bus/tram/métro)"
+       }
       },
       {
        "value": "4",
-       "text": "Train"
+       "text": {
+        "default": "Train",
+        "de": "Bahn",
+        "de-at": "Bahn",
+        "de-ch": "Bahn",
+        "it": "Treno",
+        "sl": "Vlak"
+       }
       },
       {
        "value": "5",
-       "text": "Bicycle (also e-bike)"
+       "text": {
+        "default": "Bicycle (also e-bike)",
+        "de": "Fahrrad (E-Fahrrad, ...)",
+        "de-at": "Fahrrad (E-Fahrrad, ...)",
+        "de-ch": "Fahrrad (E-Fahrrad, ...)",
+        "it": "Bicicletta / Bicicletta elettrica",
+        "sl": "Kolo (tudi električno kolo)",
+        "fr": "Vélo/Vélo à assistance électrique"
+       }
       },
       {
        "value": "6",
-       "text": "Walk"
+       "text": {
+        "default": "Walk",
+        "de": "Zu Fuß",
+        "de-at": "Zu Fuß",
+        "de-ch": "Zu Fuß",
+        "it": "Camminare",
+        "sl": "Hoja",
+        "fr": "Marche"
+       }
       },
       {
        "value": "7",
-       "text": "Other (scooter/skateboard/hoverboard, …)"
+       "text": {
+        "default": "Other (scooter/skateboard/hoverboard, …)",
+        "de": "Sonstiges ((E-)Scooter, ...)",
+        "de-at": "Sonstiges ((E-)Scooter, ...)",
+        "de-ch": "Sonstiges ((E-)Scooter, ...)",
+        "it": "Altro (monopattino/skateboard/hoverboard, …)",
+        "sl": "Drugo",
+        "fr": "Autre (trotinette/skateboard/hoverboard/…)"
+       }
       }
      ]
     }
@@ -2985,70 +3111,210 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q4",
-     "title": "Which of the following travel services have you ever heard of?",
+     "title": {
+      "default": "Which of the following travel services have you ever heard of?",
+      "it": "Di quali dei seguenti servizi di mobilità hai sentito anche solo parlare?",
+      "de": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "de-ch": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "de-at": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "sl": "Za katere od naslednjih rešitev mobilnosti ste že slišali?",
+      "fr": "Desquelles de ces solutions de mobilité avez vous entendu parler?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Car sharing"
+       "text": {
+        "default": "Car sharing",
+        "sl": "Skupna uporaba avtomobila (car sharing)",
+        "fr": "Autopartage",
+        "de": "Car-sharing",
+        "de-at": "Car-sharing",
+        "de-ch": "Car-sharing"
+       }
       },
       {
        "value": "2",
-       "text": "Car pooling"
+       "text": {
+        "default": "Car pooling",
+        "de": "Car-pooling",
+        "de-at": "Car-pooling",
+        "de-ch": "Car-pooling",
+        "sl": "Souporaba avtomobila (car pooling)",
+        "fr": "Covoiturage"
+       }
       },
       {
        "value": "3",
-       "text": "Bike sharing"
+       "text": {
+        "default": "Bike sharing",
+        "de": "Bike-sharing",
+        "de-at": "Bike-sharing",
+        "de-ch": "Bike-sharing",
+        "sl": "Skupna uporaba kolesa (bike sharing)",
+        "fr": "Vélopartage"
+       }
       },
       {
        "value": "4",
-       "text": "Ride hailing"
+       "text": {
+        "default": "Ride hailing",
+        "de": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "de-at": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "de-ch": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "it": "Servizi di trasporto a chiamata (non taxi)",
+        "sl": "Sopotništvo (ride hailing)",
+        "fr": "VTC"
+       }
+      },
+      {
+       "value": "8",
+       "text": {
+        "default": "Dial-a-bus",
+        "de": "Bedarfsbusse",
+        "de-at": "Bedarfsbusse",
+        "de-ch": "Bedarfsbusse"
+       },
+       "visibleIf": "{QF1} == \"ch\""
       },
       {
        "value": "5",
-       "text": "Scooter sharing"
+       "text": {
+        "default": "Scooter sharing",
+        "de": "Roller-sharing",
+        "de-at": "Scooter-sharing",
+        "de-ch": "Roller-sharing",
+        "sl": "Skupna uporaba skuterja (scooter sharing)",
+        "fr": "Motopartage"
+       }
       },
       {
        "value": "6",
-       "text": "Hitchhiking benches"
+       "text": {
+        "default": "Hitchhiking benches",
+        "de": "Mitfahrbänke",
+        "de-at": "Mitfahrbänke",
+        "de-ch": "Mitfahrbänke",
+        "it": "Panchine-autostop",
+        "sl": "Klopi za štopanje",
+        "fr": "Autostop organisé"
+       }
       },
       {
        "value": "7",
-       "text": "None of these"
+       "text": {
+        "default": "None of these",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten",
+        "it": "Nessuno di questi",
+        "sl": "Nobenega izmed navedenih",
+        "fr": "Aucune"
+       }
       }
      ]
     },
     {
      "type": "checkbox",
      "name": "Q5",
-     "title": "Which of those have you ever used?",
+     "title": {
+      "default": "Which of those have you ever used?",
+      "it": "Quale di questi ti è capitato di utilizzare?",
+      "de": "Welche davon haben Sie bisher genutzt?",
+      "de-ch": "Welche davon haben Sie bisher genutzt?",
+      "de-at": "Welche davon haben Sie bisher genutzt?",
+      "sl": "Katere od teh ste že uporabili?",
+      "fr": "Lesquelles avez-vous utilisées?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Car sharing"
+       "text": {
+        "default": "Car sharing",
+        "de": "Car-sharing",
+        "de-at": "Car-sharing",
+        "de-ch": "Car-sharing",
+        "sl": "Skupna uporaba avtomobila (car sharing)",
+        "fr": "Autopartage"
+       }
       },
       {
        "value": "2",
-       "text": "Car pooling"
+       "text": {
+        "default": "Car pooling",
+        "de": "Car-pooling",
+        "de-at": "Car-pooling",
+        "de-ch": "Car-pooling",
+        "sl": "Souporaba avtomobila (car pooling)",
+        "fr": "Covoiturage"
+       }
       },
       {
        "value": "3",
-       "text": "Bike sharing"
+       "text": {
+        "default": "Bike sharing",
+        "de": "Bike-sharing",
+        "de-at": "Bike-sharing",
+        "de-ch": "Bike-sharing",
+        "sl": "Skupna uporaba kolesa (bike sharing)",
+        "fr": "Vélopartage"
+       }
       },
       {
        "value": "4",
-       "text": "Ride hailing"
+       "text": {
+        "default": "Ride hailing",
+        "it": "Servizi di trasporto a chiamata (non taxi)",
+        "de": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "de-at": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "de-ch": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
+        "sl": "Sopotništvo (ride hailing)",
+        "fr": "VTC"
+       }
+      },
+      {
+       "value": "8",
+       "text": {
+        "default": "Dial-a-bus",
+        "de": "Bedarfsbusse",
+        "de-at": "Bedarfsbusse",
+        "de-ch": "Bedarfsbusse"
+       },
+       "visibleIf": "{QF1} == \"ch\""
       },
       {
        "value": "5",
-       "text": "Scooter sharing"
+       "text": {
+        "default": "Scooter sharing",
+        "de": "Roller-sharing",
+        "de-at": "Scooter-sharing",
+        "de-ch": "Roller-sharing",
+        "sl": "Skupna uporaba skuterja (scooter sharing)",
+        "fr": "Motopartage"
+       }
       },
       {
        "value": "6",
-       "text": "Hitchhiking benches"
+       "text": {
+        "default": "Hitchhiking benches",
+        "it": "Panchine-autostop",
+        "de": "Mitfahrbänke",
+        "de-at": "Mitfahrbänke",
+        "de-ch": "Mitfahrbänke",
+        "sl": "Klopi za štopanje",
+        "fr": "Autostop organisé"
+       }
       },
       {
        "value": "7",
-       "text": "None of these"
+       "text": {
+        "default": "None of these",
+        "it": "Nessuno di questi",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten",
+        "sl": "Nobenega izmed navedenih",
+        "fr": "Aucune"
+       }
       }
      ]
     }
@@ -3060,8 +3326,24 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q6",
-     "title": "Which means of transport do you own or have access to*?",
-     "description": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
+     "title": {
+      "default": "Which means of transport do you own or have access to*?",
+      "it": "A quali mezzi di trasporto hai accesso* o possiedi?",
+      "de": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
+      "de-at": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
+      "de-ch": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
+      "sl": "Lastnik katerih prevoznih sredstev ste ali do katerih imate dostop?",
+      "fr": "A quel moyens de transport avez-vous accès* ?"
+     },
+     "description": {
+      "default": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
+      "it": "* per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso (ad esempio: \"i miei genitori posseggono un'auto che posso utilizzare in caso ne avessi bisogno\")",
+      "de": " *Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
+      "de-at": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
+      "de-ch": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti (na primer: »Moji starši imajo avto, ki ga lahko uporabim, če ga hočem/potrebujem.«)",
+      "fr": "* Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété"
+     },
      "validators": [
       {
        "type": "expression",
@@ -3072,47 +3354,110 @@ export const surveyModel = {
      "choices": [
       {
        "value": "1",
-       "text": "Cars",
+       "text": {
+        "default": "Cars",
+        "it": "Automobile",
+        "de": "Autos",
+        "de-at": "Autos",
+        "de-ch": "Autos",
+        "sl": "Avtomobili"
+       },
        "enableIf": "{Q6} anyof \"1\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "2",
-       "text": "Public Transport Season ticket",
+       "text": {
+        "default": "Public Transport Season ticket",
+        "it": "Abbonamento al trasporto pubblico (o carnet multicorse)",
+        "de": "Dauerkarte ÖPNV",
+        "de-at": "Monats-/Jahres-Ticket für den öffentlichen Verkehr",
+        "de-ch": "Billette des öffentlichen Verkehrs",
+        "sl": "Mesečna vozovnica za javni prevoz"
+       },
        "enableIf": "{Q6} anyof \"2\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "3",
-       "text": "Motorbike/moped",
+       "text": {
+        "default": "Motorbike/moped",
+        "it": "Motocicletta/motorino",
+        "de": "Motorrad/Moped",
+        "de-at": "Motorrad/Moped",
+        "de-ch": "Motorrad/Moped",
+        "sl": "Motor/moped"
+       },
        "enableIf": "{Q6} anyof \"3\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "4",
-       "text": "Bicycle",
+       "text": {
+        "default": "Bicycle",
+        "it": "Bicicletta/bicicletta elettrica",
+        "de": "Fahrrad (E-Fahrrad, ...)",
+        "de-at": "Fahrrad (E-Fahrrad, ...)",
+        "de-ch": "Fahrrad (E-Fahrrad, ...)",
+        "sl": "Kolo (tudi električno kolo)"
+       },
        "enableIf": "{Q6} anyof \"4\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "5",
-       "text": "Scooter/skateboard/hoverboard",
+       "text": {
+        "default": "Scooter/skateboard/hoverboard",
+        "it": "Monopattino/skateboard/hoverboard",
+        "de": "Roller/Skateboard/Hoverboard",
+        "de-at": "(E-)Scooter/Skateboard/Hoverboard",
+        "de-ch": "Roller/Skateboard/Hoverboard",
+        "sl": "Skuter/rolka/hoverboard"
+       },
        "enableIf": "{Q6} anyof \"5\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "6",
-       "text": "Bike Sharing account",
+       "text": {
+        "default": "Bike Sharing account",
+        "it": "Abbonamento al servizio di Bike Sharing",
+        "de": "Bike-Sharing-Mitgliedschaft",
+        "de-at": "Bike-Sharing-Mitgliedschaft",
+        "de-ch": "Bike-Sharing-Mitgliedschaft",
+        "sl": "Račun za storitev skupne uporabe koles (bike sharing)"
+       },
        "enableIf": "{Q6} anyof \"6\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "7",
-       "text": "Car sharing account",
+       "text": {
+        "default": "Car sharing account",
+        "it": "Abbonamento al servizio di Car Sharing",
+        "de": "Auto-Sharing-Mitgliedschaft",
+        "de-at": "Auto-Sharing-Mitgliedschaft",
+        "de-ch": "Auto-Sharing-Mitgliedschaft",
+        "sl": "Račun za storitev skupne uporabe avtomobilov (car sharing)"
+       },
        "enableIf": "{Q6} anyof \"7\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "8",
-       "text": "Other",
+       "text": {
+        "default": "Other",
+        "it": "Altro",
+        "de": "Andere",
+        "de-at": "Andere",
+        "de-ch": "Andere",
+        "sl": "Drugo"
+       },
        "enableIf": "{Q6} anyof \"8\" or !({Q6} anyof \"9\")"
       },
       {
        "value": "9",
-       "text": "None of these",
+       "text": {
+        "default": "None of these",
+        "it": "Nessuno di questi",
+        "de": "Nichts davon",
+        "de-at": "Nichts davon",
+        "de-ch": "Nichts davon",
+        "sl": "Ničesar od omenjenega"
+       },
        "enableIf": "{Q6} anyof \"9\" or {Q6.length} == 0"
       }
      ]
@@ -3121,24 +3466,72 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q6CARS",
      "visibleIf": "{Q6} anyof \"1\"",
-     "title": "How often do you have access to a car?",
-     "description": "To have access to means that you can easily use it even if you don't own it.",
+     "title": {
+      "default": "How often do you have access to a car?",
+      "it": "Con quale frequenza puoi accedere a un'auto?",
+      "de": "Wie oft steht Ihnen ein Auto zu Verfügung?",
+      "de-at": "Verfügbarkeit eines Autos",
+      "de-ch": "Verfügbarkeit eines Autos",
+      "sl": "Kako pogosto lahko dostopate do avtomobila?",
+      "fr": "Avez-vous accès à une voiture?"
+     },
+     "description": {
+      "default": "To have access to means that you can easily use it even if you don't own it.",
+      "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso.",
+      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Always"
+       "text": {
+        "default": "Always",
+        "it": "Sempre",
+        "de": "Immer",
+        "de-at": "Immer",
+        "de-ch": "Immer",
+        "sl": "Vedno",
+        "fr": "Toujours"
+       }
       },
       {
        "value": "2",
-       "text": "Often"
+       "text": {
+        "default": "Often",
+        "it": "Spesso",
+        "de": "Oft",
+        "de-at": "Oft",
+        "de-ch": "Oft",
+        "sl": "Pogosto",
+        "fr": "Fréquemment"
+       }
       },
       {
        "value": "3",
-       "text": "Rarely"
+       "text": {
+        "default": "Rarely",
+        "it": "Raramente",
+        "de": "Selten",
+        "de-at": "Selten",
+        "de-ch": "Selten",
+        "sl": "Redko",
+        "fr": "Rarement"
+       }
       },
       {
        "value": "4",
-       "text": "Never"
+       "text": {
+        "default": "Never",
+        "it": "Mai",
+        "de": "Nie",
+        "de-at": "Nie",
+        "de-ch": "Nie",
+        "sl": "Nikoli",
+        "fr": "Jamais"
+       }
       }
      ]
     },
@@ -3146,24 +3539,70 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q6MOTOR",
      "visibleIf": "{Q6} anyof \"3\"",
-     "title": "How often do you have access to a Motorbike/moped?",
-     "description": "To have access to means that you can easily use it even if you don't own it.",
+     "title": {
+      "default": "How often do you have access to a Motorbike/moped?",
+      "it": "Con quale frequenza puoi accedere a una bicicletta?",
+      "de": "Wie oft steht Ihnen ein Motorrad/Moped zur Vefügung?",
+      "de-at": "Verfügbarkeit eines Motorrads/Mopeds",
+      "de-ch": "Verfügbarkeit eines Motorrads/Mopeds",
+      "sl": "Kako pogosto lahko dostopate do motorja/mopeda?"
+     },
+     "description": {
+      "default": "To have access to means that you can easily use it even if you don't own it.",
+      "it": "Con quale frequenza puoi accedere a una motocicletta/motorino?",
+      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Always"
+       "text": {
+        "default": "Always",
+        "it": "Sempre",
+        "de": "Immer",
+        "de-at": "Immer",
+        "de-ch": "Immer",
+        "sl": "Vedno",
+        "fr": "Toujours"
+       }
       },
       {
        "value": "2",
-       "text": "Often"
+       "text": {
+        "default": "Often",
+        "it": "Spesso",
+        "de": "Oft",
+        "de-at": "Oft",
+        "de-ch": "Oft",
+        "sl": "Pogosto",
+        "fr": "Fréquemment"
+       }
       },
       {
        "value": "3",
-       "text": "Rarely"
+       "text": {
+        "default": "Rarely",
+        "it": "Raramente",
+        "de-ch": "Selten",
+        "de-at": "Selten",
+        "de": "Selten",
+        "sl": "Redko",
+        "fr": "Rarement"
+       }
       },
       {
        "value": "4",
-       "text": "Never"
+       "text": {
+        "default": "Never",
+        "it": "Mai",
+        "de": "Nie",
+        "de-at": "Nie",
+        "de-ch": "Nie",
+        "sl": "Nikoli",
+        "fr": "Jamais"
+       }
       }
      ]
     },
@@ -3171,24 +3610,72 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q6BIKES",
      "visibleIf": "{Q6} anyof \"4\"",
-     "title": "How often do you have access to a bicycle/e-bike?",
-     "description": "To have access to means that you can easily use it even if you don't own it.",
+     "title": {
+      "default": "How often do you have access to a bicycle/e-bike?",
+      "it": "Con quale frequenza puoi accedere a una bicicletta?",
+      "de": "Wie oft steht Ihnen ein Fahrrad zur Verfügung?",
+      "de-at": "Verfügbarkeit eines Fahrrads",
+      "de-ch": "Verfügbarkeit eines Fahrrads",
+      "sl": "Kako pogosto lahko dostopate do kolesa?",
+      "fr": "Avez-vous accès à un vélo?"
+     },
+     "description": {
+      "default": "To have access to means that you can easily use it even if you don't own it.",
+      "it": "per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso.",
+      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Always"
+       "text": {
+        "default": "Always",
+        "it": "Sempre",
+        "de": "Immer",
+        "de-at": "Immer",
+        "de-ch": "Immer",
+        "sl": "Vedno",
+        "fr": "Toujours"
+       }
       },
       {
        "value": "2",
-       "text": "Often"
+       "text": {
+        "default": "Often",
+        "it": "Spesso",
+        "de": "Oft",
+        "de-at": "Oft",
+        "de-ch": "Oft",
+        "sl": "Pogosto",
+        "fr": "Fréquemment"
+       }
       },
       {
        "value": "3",
-       "text": "Rarely"
+       "text": {
+        "default": "Rarely",
+        "it": "Raramente",
+        "de": "Selten",
+        "de-at": "Selten",
+        "de-ch": "Selten",
+        "sl": "Redko",
+        "fr": "Rarement"
+       }
       },
       {
        "value": "4",
-       "text": "Never"
+       "text": {
+        "default": "Never",
+        "it": "Mai",
+        "de": "Nie",
+        "de-at": "Nie",
+        "de-ch": "Nie",
+        "sl": "Nikoli",
+        "fr": "Jamais"
+       }
       }
      ]
     },
@@ -3196,24 +3683,71 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q6SCOOT",
      "visibleIf": "{Q6} anyof \"5\"",
-     "title": "How often do you have access to a scooter/skateboard/hoverboard?",
-     "description": "To have access to means that you can easily use it even if you don't own it.",
+     "title": {
+      "default": "How often do you have access to a scooter/skateboard/hoverboard?",
+      "de": "Wie oft steht Ihnen ein Scooter/Skateboards/Hoverboard zur Verfügung?",
+      "de-at": "Verfügbarkeit eines Scooters/Skateboards/Hoverboards",
+      "de-ch": "Verfügbarkeit eines Scooters/Skateboards/Hoverboards",
+      "sl": "Kako pogosto lahko dostopate do skuterja/rolke?",
+      "fr": "Avez-vous accès à une trotinette/skateboard/hoverboard?"
+     },
+     "description": {
+      "default": "To have access to means that you can easily use it even if you don't own it.",
+      "it": "Con quale frequenza puoi accedere a una motocicletta/motorino?",
+      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Always"
+       "text": {
+        "default": "Always",
+        "it": "Sempre",
+        "de": "Immer",
+        "de-at": "Immer",
+        "de-ch": "Immer",
+        "sl": "Vedno",
+        "fr": "Toujours"
+       }
       },
       {
        "value": "2",
-       "text": "Often"
+       "text": {
+        "default": "Often",
+        "it": "Spesso",
+        "de": "Oft",
+        "de-at": "Oft",
+        "de-ch": "Oft",
+        "sl": "Pogosto",
+        "fr": "Fréquemment"
+       }
       },
       {
        "value": "3",
-       "text": "Rarely"
+       "text": {
+        "default": "Rarely",
+        "it": "Raramente",
+        "de": "Selten",
+        "de-at": "Selten",
+        "de-ch": "Selten",
+        "sl": "Redko",
+        "fr": "Rarement"
+       }
       },
       {
        "value": "4",
-       "text": "Never"
+       "text": {
+        "default": "Never",
+        "it": "Mai",
+        "de": "Nie",
+        "de-at": "Nie",
+        "de-ch": "Nie",
+        "sl": "Nikoli",
+        "fr": "Jamais"
+       }
       }
      ]
     }
