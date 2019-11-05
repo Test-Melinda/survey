@@ -4458,7 +4458,15 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q10",
-     "title": "From the following list, which are your three main sources of information about the environment (climate change, pollution, …)?\n\n(maximum 3 answers possible)",
+     "title": {
+      "default": "From the following list, which are your three main sources of information about the environment (climate change, pollution, …)?\n\n(maximum 3 answers possible)",
+      "it": "Scegliendo dalla seguente lista, quali sono le tue tre principali fonti di informazione riguardo all'ambiente? (cambiamento climatico, inquinamento…)\n(sono possibili al massimo 3 risposte)",
+      "de": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umwelt (Klimawandel, Umweltverschmutzung,....)?\n(maximal 3 Antworten möglich)",
+      "de-ch": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umwelt (Klimawandel, Umweltverschmutzung,....)?\n(maximal 3 Antworten möglich)",
+      "de-at": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umweltaspekte (Klimawandel, Umweltverschmutzung,....)?\n(maximal 3 Antworten möglich)",
+      "sl": "Kateri so vaši trije glavni viri informacij o okolju (podnebnih spremembah, onesnaževanju, ...)?\n(Možni so največ trije odgovori)",
+      "fr": "Dans la liste suivante, indiquez quelles sont les 3 principales sources d'information sur l'environnement (changement climatique, pollution, …)?"
+     },
      "validators": [
       {
        "type": "expression",
@@ -4474,47 +4482,119 @@ export const surveyModel = {
      "choices": [
       {
        "value": "1",
-       "text": "Newspapers and magazines",
+       "text": {
+        "default": "Newspapers and magazines",
+        "it": "Quotidiani e riviste",
+        "de": "Zeitungen und Zeitschriften",
+        "de-at": "Zeitungen und Zeitschriften",
+        "de-ch": "Zeitungen und Zeitschriften",
+        "sl": "Časopisi in revije",
+        "fr": "Journaux et magazines"
+       },
        "enableIf": "{Q10} anyof \"1\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
       },
       {
        "value": "2",
-       "text": "Television news and/or radio",
+       "text": {
+        "default": "Television news and/or radio",
+        "it": "Notiziari televisivi e/o radio",
+        "de": "Fernsehnachrichten und/oder Radio",
+        "de-at": "Fernsehnachrichten und/oder Radio",
+        "de-ch": "Fernsehnachrichten und/oder Radio",
+        "sl": "Televizijske novice in/ali radio",
+        "fr": "Journaux radiophoniques et/ou télévisés"
+       },
        "enableIf": "{Q10} anyof \"3\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
       },
       {
        "value": "3",
-       "text": "Family, friends, neighbours or colleagues",
+       "text": {
+        "default": "Family, friends, neighbours or colleagues",
+        "it": "La famiglia, gli amici, i vicini o colleghi",
+        "de": "Familie, Freunde, Nachbarn oder Kollegen",
+        "de-at": "Familie, Freunde, Nachbarn oder Kollegen",
+        "de-ch": "Familie, Freunde, Nachbarn oder Kollegen",
+        "sl": "Družina, prijatelji, sosedje ali znanci",
+        "fr": "Famille, amis, voisins, collègues"
+       },
        "enableIf": "{Q10} anyof \"5\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
       },
       {
        "value": "4",
-       "text": "Books or scientific publications and/or information materials",
+       "text": {
+        "default": "Books or scientific publications and/or information materials",
+        "it": "Libri o pubblicazioni e materiali informativi scientifici",
+        "de": "Bücher oder wissenschaftliche Veröffentlichungen und/oder Informationsmaterialien",
+        "de-at": "Bücher oder wissenschaftliche Veröffentlichungen und/oder Informationsmaterialien",
+        "de-ch": "Bücher oder wissenschaftliche Veröffentlichungen und/oder Informationsmaterialien",
+        "sl": "Knjige ali znanstvene publikacije in/ali informativno gradivo",
+        "fr": "Livres, publications scientifiques"
+       },
        "enableIf": "{Q10} anyof \"6\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
       },
       {
        "value": "5",
-       "text": "Online social networks (facebook, Instagram, Twitter, …)",
+       "text": {
+        "default": "Online social networks (facebook, Instagram, Twitter, …)",
+        "it": "I social (facebook, Instagram, Twitter, …)",
+        "de": "Soziale Netzwerke (Facebook, Instagram, Twitter,....)",
+        "de-at": "Soziale Netzwerke (Facebook, Instagram, Twitter,....)",
+        "de-ch": "Soziale Netzwerke (Facebook, Instagram, Twitter,....)",
+        "sl": "Spletna družbena omrežja (Facebook, Instagram, Twitter, ...)",
+        "fr": "Réseaux sociaux (Facebook, Instagram, Twitter, ...)"
+       },
        "enableIf": "{Q10} anyof \"9\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
       },
       {
        "value": "6",
-       "text": "The Internet (other websites, newsletters, blogs, forums, etc., NO social networks)",
+       "text": {
+        "default": "The Internet (other websites, newsletters, blogs, forums, etc., NO social networks)",
+        "it": "Internet (siti web, newsletter, blog, forum, ecc…, NON social network)",
+        "de": "Das Internet (andere Websites, Newsletter, Blogs, Foren, etc., KEINE sozialen Netzwerke)",
+        "de-at": "Das Internet (andere Websites, Newsletter, Blogs, Foren, etc., KEINE sozialen Netzwerke)",
+        "de-ch": "Das Internet (andere Websites, Newsletter, Blogs, Foren, etc., KEINE sozialen Netzwerke)",
+        "sl": "Internet (druge spletne strani,  glasila, blogi, forumi itn., BREZ socialnih omrežij)",
+        "fr": "Internet hors réseaux sociaux (sites, lettres, blogs, forums, …)"
+       },
        "enableIf": "{Q10} anyof \"10\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
       },
       {
        "value": "7",
-       "text": "Other",
+       "text": {
+        "default": "Other",
+        "it": "Altro",
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges",
+        "sl": "Drugo",
+        "fr": "Autre"
+       },
        "enableIf": "{Q10} anyof \"11\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
       },
       {
        "value": "8",
-       "text": "I am not interested in the environment",
+       "text": {
+        "default": "I am not interested in the environment",
+        "it": "Non sono interessato alle questioni ambientali",
+        "de": "Ich interessiere mich nicht für die Umwelt",
+        "de-at": "Ich interessiere mich nicht für die Umwelt",
+        "de-ch": "Ich interessiere mich nicht für die Umwelt",
+        "sl": "Okolje me ne zanima",
+        "fr": "Je ne suis pas intéressé par l'environnement"
+       },
        "enableIf": "{Q10} anyof \"12\" or {Q10.length} == 0"
       },
       {
        "value": "9",
-       "text": "I don't know",
+       "text": {
+        "default": "I don't know",
+        "it": "Non so",
+        "de": "Ich weiß es nicht",
+        "de-at": "Ich weiß es nicht",
+        "de-ch": "Ich weiß es nicht",
+        "sl": "Ne vem",
+        "fr": "Je ne sais pas"
+       },
        "enableIf": "{Q10} anyof \"13\" or {Q10.length} == 0"
       }
      ]
