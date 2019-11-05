@@ -4393,6 +4393,7 @@ export const surveyModel = {
         "sl": "Organi EU",
         "fr": "Les agences de l'UE"
        },
+       "visibleIf": "{QF1} != \"ch\"",
        "enableIf": "{Q9} anyof \"5\" or {Q9.length} < 2"
       },
       {
