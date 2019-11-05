@@ -4143,7 +4143,15 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q8",
-     "title": "Have you done any of the following actions in the past six months? (Multiple answers possible)",
+     "title": {
+      "default": "Have you done any of the following actions in the past six months? (Multiple answers possible)",
+      "it": "Quali tra queste attività hai intrapreso negli scorsi 6 mesi?\n(sono possibili più risposte)",
+      "de": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?\n(Mehrere Antworten möglich)",
+      "de-at": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?\n(Mehrere Antworten möglich)",
+      "de-ch": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?\n(Mehrere Antworten möglich)",
+      "sl": "Ste v zadnjih šestih mesecih izvedli katerega od naslednjih ukrepov?\n(Možnih je več odgovorov)",
+      "fr": "Avez-vous entrepris une des actions suivantes au cours des 6 derniers mois?\n(plusieurs réponses possibles)"
+     },
      "validators": [
       {
        "type": "expression",
@@ -4154,57 +4162,145 @@ export const surveyModel = {
      "choices": [
       {
        "value": "1",
-       "text": "Chosen a more environmentally-friendly way of travelling (walk, bicycle, public transport, electric car)",
+       "text": {
+        "default": "Chosen a more environmentally-friendly way of travelling (walk, bicycle, public transport, electric car)",
+        "it": "Ho scelto una modalità più eco-sostenibile di spostamento (camminare, bicicletta, trasporto pubblico, auto elettrica,…)",
+        "de": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
+        "de-at": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
+        "de-ch": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
+        "sl": "Izbrali okolju bolj prijazen način potovanja (hoja, kolo, javni prevoz, električni avtomobil)",
+        "fr": "Choisir un mode de transport plus respectueux de l'environnement (marche, vélo, transport public, véhicule électrique)"
+       },
        "enableIf": "{Q8} anyof \"1\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "2",
-       "text": "Avoided buying over-packaged products",
+       "text": {
+        "default": "Avoided buying over-packaged products",
+        "it": "Ho evitato di acquistare prodotti con molto imballaggio",
+        "de": "Den Kauf \"überverpackter\" Produkte vermieden.",
+        "de-at": "Den Kauf \"überverpackter\" Produkte vermieden.",
+        "de-ch": "Den Kauf \"überverpackter\" Produkte vermieden.",
+        "sl": "Izognili se nakupu preveč pakiranih izdelkov",
+        "fr": "Eviter d'acheter des produits sur-emballés"
+       },
        "enableIf": "{Q8} anyof \"2\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "3",
-       "text": "Bought local products",
+       "text": {
+        "default": "Bought local products",
+        "it": "Ho comprato prodotti locali",
+        "de": "Lokale Produkte gekauft.",
+        "de-at": "Lokale Produkte gekauft.",
+        "de-ch": "Lokale Produkte gekauft.",
+        "sl": "Kupili lokalne izdelke",
+        "fr": "Acheter des produits locaux"
+       },
        "enableIf": "{Q8} anyof \"3\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "4",
-       "text": "Cut down your water consumption",
+       "text": {
+        "default": "Cut down your water consumption",
+        "it": "Ho diminuito il consumo personale di acqua",
+        "de": "Den Wasserverbrauch reduziert.",
+        "de-at": "Den Wasserverbrauch reduziert.",
+        "de-ch": "Den Wasserverbrauch reduziert.",
+        "sl": "Zmanjšali porabo vode",
+        "fr": "Diminuer votre consommation d'eau"
+       },
        "enableIf": "{Q8} anyof \"4\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "5",
-       "text": "Separated most of your waste for recycling",
+       "text": {
+        "default": "Separated most of your waste for recycling",
+        "it": "Ho effettuato la raccolta differenziata",
+        "de": "Müll für Recycling getrennt.",
+        "de-at": "Müll für Recycling getrennt.",
+        "de-ch": "Müll für Recycling getrennt.",
+        "sl": "Ločili večino odpadkov za recikliranje",
+        "fr": "Trier vos déchets"
+       },
        "enableIf": "{Q8} anyof \"5\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "6",
-       "text": "Used your car less by avoiding unnecessary trips, working from home (teleworking), etc.",
+       "text": {
+        "default": "Used your car less by avoiding unnecessary trips, working from home (teleworking), etc.",
+        "it": "Ho usato meno la mia automobile evitando viaggi non necessari, lavorando da casa (telelavoro), ecc…",
+        "de": "Das Auto stehen gelassen, durch Vermeidung unnötiger Fahrten.",
+        "de-at": "Das Auto stehen gelassen, durch Vermeidung unnötiger Fahrten.",
+        "de-ch": "Das Auto stehen gelassen, durch Vermeidung unnötiger Fahrten.",
+        "sl": "Manjkrat uporabili avto in se izognili nepotrebnim potovanjem, delali od doma (delo na daljavo) itn",
+        "fr": "Moins utiliser votre voiture en évitant de vous déplacer (en particulier télétravail)"
+       },
        "enableIf": "{Q8} anyof \"6\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "7",
-       "text": "Bought products marked with an environmental label",
+       "text": {
+        "default": "Bought products marked with an environmental label",
+        "it": "Ho acquistato prodotti che riportano certificazione di sostenibilità ambientale",
+        "de": "Produkte mit Öko-Siegel gekauft.",
+        "de-at": "Produkte mit Öko-Siegel gekauft.",
+        "de-ch": "Produkte mit Öko-Siegel gekauft.",
+        "sl": "Kupili izdelke, označene z okoljsko oznako.",
+        "fr": "Acheter des produits avec un label environnemental"
+       },
        "enableIf": "{Q8} anyof \"7\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "8",
-       "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products",
+       "text": {
+        "default": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products",
+        "it": "Ho evitato di acquistare prodotti di plastica monouso, ad eccezione delle borse, come ad esempio posate, bicchieri, piatti, ecc…",
+        "de": "Wegwerf-Plastik-Produkte vermieden.",
+        "de-at": "Wegwerf-Plastik-Produkte vermieden.",
+        "de-ch": "Wegwerf-Plastik-Produkte vermieden.",
+        "sl": "Izognili se uporabi plastičnih izdelkov za enkratno uporabo, razen plastičnih vrečk (npr. plastični jedilni pribor, lončki, krožniki itn.) ali kupili plastične izdelke za večkratno uporabo",
+        "fr": "Eviter d'acheter des plastiques à usage unique (hors sacs) comme de la vaiselle à usage unique, ou acheter des plastiques recyclés"
+       },
        "enableIf": "{Q8} anyof \"8\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "9",
-       "text": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products",
+       "text": {
+        "default": "Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products",
+        "it": "Ho ridotto il consumo di energia (ad esempio abbassando il livello dell'aria condizionata o del riscaldamento, evitando di lasciare elettrodomestici in stand-by, acquistando elettrodomestici più efficienti)",
+        "de": "Den Energieverbrauchs (z. B. durch das Abschalten von Klimaanlagen oder Heizungen, den Verzicht auf Stand-by oder den Kauf energieeffizienter Geräte) reduziert.",
+        "de-at": "Den Energieverbrauchs (z. B. durch das Abschalten von Klimaanlagen oder Heizungen, den Verzicht auf Stand-by oder den Kauf energieeffizienter Geräte) reduziert.",
+        "de-ch": "Den Energieverbrauchs (z. B. durch das Abschalten von Klimaanlagen oder Heizungen, den Verzicht auf Stand-by oder den Kauf energieeffizienter Geräte) reduziert.",
+        "sl": "Zmanjšali porabo energije (npr. z izklopom klimatske naprave ali ogrevanja, naprav niste pustili v stanju pripravljenosti, kupujete energetsko učinkovite aparate)",
+        "fr": "Baisser votre consommation d'énergie (réglage du chauffage ou de la climatisation, extinction des équipements non utilisés, achat d'équipements plus performants, …)"
+       },
        "enableIf": "{Q8} anyof \"9\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
       },
       {
        "value": "10",
-       "text": "None",
+       "text": {
+        "default": "None",
+        "it": "Nessuna",
+        "de": "Keine",
+        "de-at": "Keine",
+        "de-ch": "Keine",
+        "sl": "Nobenega",
+        "fr": "Aucun"
+       },
        "enableIf": "{Q8} anyof \"10\" or {Q8.length} == 0"
       },
       {
        "value": "11",
-       "text": "I don’t know",
+       "text": {
+        "default": "I don’t know",
+        "it": "Non so",
+        "de": "Nicht bekannt",
+        "de-at": "Nicht bekannt",
+        "de-ch": "Nicht bekannt",
+        "sl": "Ne vem",
+        "fr": "Je ne sais pas"
+       },
        "enableIf": "{Q8} anyof \"11\" or {Q8.length} == 0"
       }
      ]
