@@ -4313,7 +4313,15 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q9",
-     "title": "In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution? (maximum two answers are possible)",
+     "title": {
+      "default": "In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution? (maximum two answers are possible)",
+      "it": "A tuo parere chi dovrebbe essere maggioremente responsabile per la promozione di nuove politiche per la mobilità in maniera da ridurre l'inquinamento atmosferico?\n(sono possibili al massimo 2 risposte)",
+      "de": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?(maximal zwei Antworten sind möglich)",
+      "de-ch": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?\n(maximal zwei Antworten sind möglich)",
+      "de-at": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?\n(maximal zwei Antworten sind möglich)",
+      "sl": "Kdo bi moral prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi zmanjšali onesnaževanje zraka?\n(Možna sta največ dva odgovora.)",
+      "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités en vue de réduire la pollution de l'air?\n(maximum 2 réponses possibles)"
+     },
      "validators": [
       {
        "type": "expression",
@@ -4324,47 +4332,119 @@ export const surveyModel = {
      "choices": [
       {
        "value": "1",
-       "text": "City authorities",
+       "text": {
+        "default": "City authorities",
+        "it": "Le città",
+        "de": "Die Stadtverwaltung",
+        "de-at": "Die Stadtverwaltung",
+        "de-ch": "Stadt",
+        "sl": "Mestne oblasti",
+        "fr": "Les villes"
+       },
        "enableIf": "{Q9} anyof \"1\" or {Q9.length} < 2"
       },
       {
        "value": "2",
-       "text": "Citizens themselves",
+       "text": {
+        "default": "Citizens themselves",
+        "it": "I cittadini stessi",
+        "de": "Die Bürgerinnen und Bürger",
+        "de-at": "Die Bürgerinnen und Bürger",
+        "de-ch": "Die Bürgerinnen und Bürger",
+        "sl": "Državljani sami",
+        "fr": "Les citoyens eux-mêmes"
+       },
        "enableIf": "{Q9} anyof \"2\" or {Q9.length} < 2"
       },
       {
        "value": "3",
-       "text": "Regional authorities",
+       "text": {
+        "default": "Regional authorities",
+        "it": "La Regione",
+        "de": "Die Landesregierungen",
+        "de-at": "Die Landesregierungen",
+        "de-ch": "Kanton",
+        "sl": "Regionalne oblasti",
+        "fr": "La Région"
+       },
        "enableIf": "{Q9} anyof \"3\" or {Q9.length} < 2"
       },
       {
        "value": "4",
-       "text": "National Government",
+       "text": {
+        "default": "National Government",
+        "it": "Lo Stato",
+        "de": "Die Bundesregierung",
+        "de-at": "Die Bundesregierung",
+        "de-ch": "Bund",
+        "sl": "Država",
+        "fr": "L'Etat"
+       },
        "enableIf": "{Q9} anyof \"4\" or {Q9.length} < 2"
       },
       {
        "value": "5",
-       "text": "EU bodies",
+       "text": {
+        "default": "EU bodies",
+        "it": "L'Unione Europea",
+        "de": "Die Europäische Union (EU)",
+        "de-at": "Die Europäische Union (EU)",
+        "de-ch": "Die Europäische Union (EU)",
+        "sl": "Organi EU",
+        "fr": "Les agences de l'UE"
+       },
        "enableIf": "{Q9} anyof \"5\" or {Q9.length} < 2"
       },
       {
        "value": "6",
-       "text": "Private companies",
+       "text": {
+        "default": "Private companies",
+        "it": "Le imprese private",
+        "de": "Die private Unternehmen",
+        "de-at": "Die private Unternehmen",
+        "de-ch": "Die private Unternehmen",
+        "sl": "Zasebna podjetja",
+        "fr": "Les sociétés privées"
+       },
        "enableIf": "{Q9} anyof \"6\" or {Q9.length} < 2"
       },
       {
        "value": "7",
-       "text": "Trade Unions or Political Parties",
+       "text": {
+        "default": "Trade Unions or Political Parties",
+        "it": "I sindacati o partiti politici",
+        "de": "Die Gewerkschaften und politischen Parteien",
+        "de-at": "Die Gewerkschaften und politischen Parteien",
+        "de-ch": "Die Gewerkschaften und politischen Parteien",
+        "sl": "Sindikati ali politične stranke",
+        "fr": "Les syndicats ou partis politiques"
+       },
        "enableIf": "{Q9} anyof \"7\" or {Q9.length} < 2"
       },
       {
        "value": "8",
-       "text": "Non-profit Associations/non-governmental organizations",
+       "text": {
+        "default": "Non-profit Associations/non-governmental organizations",
+        "it": "Le associazioni non-profit o non-governative",
+        "de": "Gemeinnützige Institutionen / Nichtregierungsorganisationen",
+        "de-at": "Gemeinnützige Institutionen / Nichtregierungsorganisationen",
+        "de-ch": "Gemeinnützige Institutionen / Nichtregierungsorganisationen",
+        "sl": "Neprofitna združenja/nevladne organizacije",
+        "fr": "Les associations"
+       },
        "enableIf": "{Q9} anyof \"8\" or {Q9.length} < 2"
       },
       {
        "value": "9",
-       "text": "Other",
+       "text": {
+        "default": "Other",
+        "it": "Altri",
+        "de": "Andere",
+        "de-at": "Andere",
+        "de-ch": "Andere",
+        "sl": "Drugi",
+        "fr": "Autres"
+       },
        "enableIf": "{Q9} anyof \"9\" or {Q9.length} < 2"
       }
      ]
