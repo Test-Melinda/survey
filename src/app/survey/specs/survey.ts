@@ -3807,23 +3807,38 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q7dot1IT",
      "visibleIf": "{QF1} == 'it'",
-     "title": "What can be, on average, the monthly cost of owning a (petrol) car in Italy (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+     "title": {
+      "default": "What can be, on average, the monthly cost of owning a (petrol) car in Italy (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+      "it": "Quale può essere il costo medio mensile per il possesso di un'auto (a benzina) in Italia (considerando il costo del carburante, il deprezzamento del mezzo, le tasse, l'assicurazione e la manutenzione)?\n\nCirca di…"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "150 euros"
+       "text": {
+        "default": "150 euros",
+        "it": "150 €"
+       }
       },
       {
        "value": "2",
-       "text": "300 euros"
+       "text": {
+        "default": "300 euros",
+        "it": "300 €"
+       }
       },
       {
        "value": "3",
-       "text": "600 euros"
+       "text": {
+        "default": "600 euros",
+        "it": "600 €"
+       }
       },
       {
        "value": "4",
-       "text": "1200 euros"
+       "text": {
+        "default": "1200 euros",
+        "it": "1200 €"
+       }
       }
      ]
     },
@@ -3831,23 +3846,38 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q7dot1AU",
      "visibleIf": "{QF1} == 'at' or {QF1} == 'li'",
-     "title": "What can be, on average, the monthly cost of owning a (petrol) car in Austria (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+     "title": {
+      "default": "What can be, on average, the monthly cost of owning a (petrol) car in Austria (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+      "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "100 euros"
+       "text": {
+        "default": "100 euros",
+        "de-at": "100 €"
+       }
       },
       {
        "value": "2",
-       "text": "250 euros"
+       "text": {
+        "default": "250 euros",
+        "de-at": "250 €"
+       }
       },
       {
        "value": "3",
-       "text": "500 euros"
+       "text": {
+        "default": "500 euros",
+        "de-at": "500 €"
+       }
       },
       {
        "value": "4",
-       "text": "1000 euros"
+       "text": {
+        "default": "1000 euros",
+        "de-at": "1000 €"
+       }
       }
      ]
     },
@@ -3855,23 +3885,38 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q7dot1SL",
      "visibleIf": "{QF1} == 'si'",
-     "title": "What can be, on average, the monthly cost of owning a (petrol) car in the EU (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+     "title": {
+      "default": "What can be, on average, the monthly cost of owning a (petrol) car in the EU (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+      "sl": "Kakšni so lahko povprečni mesečni stroški lastništva (bencinskega) avtomobila v EU (upoštevati gorivo, amortizacijo, davke, zavarovanje in vzdrževanje)?\nPribližno..."
+     },
      "choices": [
       {
        "value": "1",
-       "text": "100 euros"
+       "text": {
+        "default": "100 euros",
+        "sl": "100 €"
+       }
       },
       {
        "value": "2",
-       "text": "250 euros"
+       "text": {
+        "default": "250 euros",
+        "sl": "250 €"
+       }
       },
       {
        "value": "3",
-       "text": "500 euros"
+       "text": {
+        "default": "500 euros",
+        "sl": "500 €"
+       }
       },
       {
        "value": "4",
-       "text": "1000 euros"
+       "text": {
+        "default": "1000 euros",
+        "sl": "1000 €"
+       }
       }
      ]
     },
@@ -3879,7 +3924,10 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q7dot1SW",
      "visibleIf": "{QF1} == 'ch'",
-     "title": "What can be, on average, the monthly cost of owning a (petrol) car in Switzerland (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+     "title": {
+      "default": "What can be, on average, the monthly cost of owning a (petrol) car in Switzerland (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+      "de-ch": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der Schweiz  (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?"
+     },
      "choices": [
       {
        "value": "1",
@@ -3891,7 +3939,10 @@ export const surveyModel = {
       },
       {
        "value": "3",
-       "text": "500 Fr."
+       "text": {
+        "default": "500 Fr.",
+        "de-ch": "500  Fr."
+       }
       },
       {
        "value": "4",
@@ -3903,7 +3954,10 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q7dot1FR",
      "visibleIf": "{QF1} == 'fr'",
-     "title": "What can be, on average, the monthly cost of owning a (petrol) car in France (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+     "title": {
+      "default": "What can be, on average, the monthly cost of owning a (petrol) car in France (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+      "fr": "Quel est, en moyenne, le coût mensuel de possession d'une voiture en France (carburant, amortissement, taxes, assurance et entretien)?\nEnviron …"
+     },
      "choices": [
       {
        "value": "1",
@@ -3927,28 +3981,51 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q7dot1GE",
      "visibleIf": "{QF1} == 'de'",
-     "title": "What can be, on average, the monthly cost of owning a (petrol) car in Germany (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+     "title": {
+      "default": "What can be, on average, the monthly cost of owning a (petrol) car in Germany (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+      "de": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "100 euros"
+       "text": {
+        "default": "100 euros",
+        "de": "100 €"
+       }
       },
       {
        "value": "2",
-       "text": "250 euros"
+       "text": {
+        "default": "250 euros",
+        "de": "250 €"
+       }
       },
       {
        "value": "3",
-       "text": "500 euros"
+       "text": {
+        "default": "500 euros",
+        "de": "500 €"
+       }
       },
       {
        "value": "4",
-       "text": "1000 euros"
+       "text": {
+        "default": "1000 euros",
+        "de": "1000 €"
+       }
       }
      ]
     }
    ],
-   "description": "Here you find some questions about aspects of daily life connected to mobility. Even if you don’t know the correct answer we kindly ask you to select the option you think is closest to the reality according to your experience or ideas."
+   "description": {
+    "default": "Here you find some questions about aspects of daily life connected to mobility. Even if you don’t know the correct answer we kindly ask you to select the option you think is closest to the reality according to your experience or ideas.",
+    "it": "Qui di seguito troverai alcune domande riguardanti aspetti della vita quotidiana relativi alla mobilità. Anche se non conosci la risposta corretta ti chiediamo gentilmente di selezionare l'opzione che credi essere più vicina alla realtà, sulla base della tua esperienza od opinione.",
+    "de": "Hier finden Sie einige Fragen zu Aspekten des täglichen Lebens im Zusammenhang mit Mobilität. Auch wenn Sie die richtige Antwort nicht kennen, bitten wir Sie, die Option zu wählen, die Ihrer Meinung nach der Realität am nächsten kommt, entsprechend Ihrer Erfahrungen oder Ideen.",
+    "de-ch": "Hier finden Sie einige Fragen zu Aspekten des täglichen Lebens im Zusammenhang mit Mobilität. Auch wenn Sie die richtige Antwort nicht kennen, bitten wir Sie, die Option zu wählen, die Ihrer Meinung nach der.",
+    "de-at": "Hier finden Sie einige Fragen zu Aspekten des täglichen Lebens im Zusammenhang mit Mobilität. Auch wenn Sie die richtige Antwort nicht kennen, bitten wir Sie, die Option zu wählen, die Ihrer Meinung nach der Realität am nächsten kommt, entsprechend Ihrer Erfahrungen oder Ideen.",
+    "sl": "Sledita vprašanji o vidikih vsakdanjega življenja, povezanih z mobilnostjo. Tudi če ne poznate pravilnega odgovora, vas prosimo, da izberete možnost, za katero menite, da glede na vaše izkušnje ali ideje odraža dejansko stanje.",
+    "fr": "Vous allez trouver maintenant quelques questions sur des aspects de la vie quotidienne en lien avec la mobilité. Même si vous ne connaissez pas la bonne réponse, nous vous demandons de bien vouloir choisir l'option qui vous semble la plus proche de la réalité en fonction de votre expérience ou de vos idées."
+   }
   },
   {
    "name": "quiz2",
