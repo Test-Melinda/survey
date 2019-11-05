@@ -4077,23 +4077,61 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q7dot3",
-     "title": "How much physical activity WHO recommend to do every day? How many minutes of daily walking activities does it correspond to?",
+     "title": {
+      "default": "How much physical activity WHO recommend to do every day? How many minutes of daily walking activities does it correspond to?",
+      "it": "Quanta attività fisica è necessario fare quotidianamente in maniera da rispettare le prescrizioni dell'Organizzazione Mondiale della Sanità? A quanti minuti di \"cammino sostenuto\" corrisponde?",
+      "de": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie viele Minuten täglicher Gehzeit entspricht dies?",
+      "de-ch": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation WHO täglich? Wie viele Minuten täglicher Gehzeit entspricht dies?",
+      "de-at": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie viele Minuten täglicher Gehzeit entspricht dies?",
+      "sl": "Kakšen obseg dnevnih fizičnih aktivnosti v obliki hoje po svežem zraku priporoča svetovna zdravstvena organizacija (WHO)?",
+      "fr": "Quelle quantité d'activité physique quotidienne l'OMS (Organisation Mondiale de la Santé) recommande-t-elle ? A quelle durée de marche correspond-elle ?"
+     },
      "choices": [
       {
        "value": "A1",
-       "text": "5 minutes"
+       "text": {
+        "default": "5 minutes",
+        "it": "5 minuti",
+        "de": "5 Minuten",
+        "de-at": "5 Minuten",
+        "de-ch": "5 Minuten",
+        "sl": "5 minut"
+       }
       },
       {
        "value": "A2",
-       "text": "20 minutes"
+       "text": {
+        "default": "20 minutes",
+        "it": "20 minuti",
+        "de": "20 Minuten",
+        "de-at": "20 Minuten",
+        "de-ch": "20 Minuten",
+        "sl": "20 minut"
+       }
       },
       {
        "value": "A3",
-       "text": "1 hour"
+       "text": {
+        "default": "1 hour",
+        "it": "1 ora",
+        "de": "1 Stunde",
+        "de-at": "1 Stunde",
+        "de-ch": "1 Stunde",
+        "sl": "1 ura",
+        "fr": "1 heure"
+       }
       },
       {
        "value": "A4",
-       "text": "1,5 hours"
+       "text": {
+        "default": "1,5 hours",
+        "it": "1 ora e mezza",
+        "de": "1,5 Stunden",
+        "de-at": "1,5 Stunden",
+        "de-ch": "1,5 Stunden",
+        "sl": "1,5 ure",
+        "fr": "1 heure 1/2"
+       }
       }
      ]
     }
