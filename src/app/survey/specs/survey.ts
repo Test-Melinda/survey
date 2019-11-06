@@ -4845,31 +4845,87 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q14",
-     "title": "What is your occupational status?",
+     "title": {
+      "default": "What is your occupational status?",
+      "it": "Da un punto di vista occupazionale sei:",
+      "de": "Was ist Ihr Beschäftigungsverhältnis?",
+      "de-at": "Was ist Ihr Beschäftigungsverhältnis?",
+      "de-ch": "Was ist Ihr Beschäftigungsverhältnis?",
+      "sl": "Kakšen je vaš zaposlitveni status?",
+      "fr": "Quel est votre activité?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Employed"
+       "text": {
+        "default": "Employed",
+        "it": "Occupato/a",
+        "de": "Angestellt",
+        "de-at": "Angestellt",
+        "de-ch": "Angestellt",
+        "sl": "Zaposlen",
+        "fr": "Employé"
+       }
       },
       {
        "value": "2",
-       "text": "Unemployed"
+       "text": {
+        "default": "Unemployed",
+        "it": "Disoccupato/a",
+        "de": "Arbeitslos",
+        "de-at": "Arbeitslos",
+        "de-ch": "Arbeitslos",
+        "sl": "Brezposeln",
+        "fr": "Sans activité rémunérée"
+       }
       },
       {
        "value": "3",
-       "text": "Retired"
+       "text": {
+        "default": "Retired",
+        "it": "Pensionato/a",
+        "de": "Im Ruhestand",
+        "de-at": "Im Ruhestand",
+        "de-ch": "Im Ruhestand",
+        "sl": "Upokojenec",
+        "fr": "Retraité"
+       }
       },
       {
        "value": "4",
-       "text": "Student"
+       "text": {
+        "default": "Student",
+        "it": "Studente/essa (università)",
+        "de": "Studium",
+        "de-at": "Studium",
+        "de-ch": "Studium",
+        "sl": "Študent",
+        "fr": "Etudiant"
+       }
       },
       {
        "value": "5",
-       "text": "Pupil"
+       "text": {
+        "default": "Pupil",
+        "it": "Alunno/a (scuola superiore)",
+        "de": "Schüler/Schülerin",
+        "de-at": "Schüler/Schülerin",
+        "de-ch": "Schüler/Schülerin",
+        "sl": "Učenec",
+        "fr": "Ecolier"
+       }
       },
       {
        "value": "6",
-       "text": "Other"
+       "text": {
+        "default": "Other",
+        "it": "Altro",
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges",
+        "sl": "Drugo",
+        "fr": "Autre"
+       }
       }
      ]
     }
