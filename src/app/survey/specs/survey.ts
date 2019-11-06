@@ -5490,7 +5490,7 @@ export const surveyModel = {
    "name": "PS17",
    "elements": [
     {
-     "type": "text",
+     "type": "comment",
      "name": "PS4dot17",
      "visibleIf": "{QF1} == \"ch\"",
      "title": "Haben Sie weitere Kommentare zum Angebot von Taxito? Dann können Sie hier Ihre Erfahrungen, Kritiken und Wünsche anbringen.",
