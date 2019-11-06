@@ -4696,6 +4696,76 @@ export const surveyModel = {
    ]
   },
   {
+   "name": "PS1",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot1",
+     "visibleIf": "{QF1} == \"ch\"",
+     "title": {
+      "default": "Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?",
+      "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
+     },
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Ja",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "2",
+       "text": "Nein"
+      }
+     ]
+    }
+   ],
+   "description": "Seit Dezember 2019 wird zwischen Maladers und Chur das Mitfahrangebot Taxito angeboten.  Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich.  Dafür wurden Stelen aufgestellt, wo man – wie an einer Bushaltestelle – in Autos einsteigen und mitfahren kann."
+  },
+  {
+   "name": "PS2",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot2",
+     "visibleIf": "{PS4dot1} == \"1\"",
+     "title": {
+      "default": "Wie wurden Sie auf das Angebot aufmerksam?",
+      "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
+     },
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Informationsveranstaltungen",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "2",
+       "text": "Informationspost"
+      },
+      {
+       "value": "3",
+       "text": "Freunde bzw. Familie"
+      },
+      {
+       "value": "4",
+       "text": "Zeitung"
+      },
+      {
+       "value": "5",
+       "text": "Internet"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "name": "PS3",
    "elements": [
     {
@@ -4724,6 +4794,23 @@ export const surveyModel = {
         "default": "I don't know",
         "it": "Non so"
        }
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PS4dot3",
+     "visibleIf": "{PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\"",
+     "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als Fahrer/In genutzt?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Ja"
+      },
+      {
+       "value": "2",
+       "text": "Nein"
       }
      ]
     }
@@ -4764,6 +4851,39 @@ export const surveyModel = {
        }
       }
      ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PS4dot4",
+     "visibleIf": "{PS4dot3} == \"1\"",
+     "title": "Wie häufig nutzen Sie das Angebot als Fahrer/In bislang?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Täglich"
+      },
+      {
+       "value": "2",
+       "text": "Mehrmals pro Woche (2-3)"
+      },
+      {
+       "value": "3",
+       "text": "Mind. einmal pro Woche"
+      },
+      {
+       "value": "4",
+       "text": "Mehrmals im Monat"
+      },
+      {
+       "value": "5",
+       "text": "Mind. einmal pro Monat"
+      },
+      {
+       "value": "6",
+       "text": "Seltener als einmal im Monat"
+      }
+     ]
     }
    ]
   },
@@ -4796,6 +4916,36 @@ export const surveyModel = {
         "default": "I don't know",
         "it": "Non so"
        }
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PS4dot5",
+     "visibleIf": "{PS4dot3} == \"1\"",
+     "title": "Was sind Ihre Beweggründe, als Fahrer/in weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Ich möchte das Maladers verkehrlich besser erreichbar ist  "
+      },
+      {
+       "value": "2",
+       "text": "Finanzieller Ertrag"
+      },
+      {
+       "value": "3",
+       "text": "Fahrgäste sind mit persönlich bekannt"
+      },
+      {
+       "value": "4",
+       "text": "Ich fahre gerne in Begleitung"
+      },
+      {
+       "value": "5",
+       "text": "Ökologische Gründe"
       }
      ]
     }
@@ -4853,6 +5003,27 @@ export const surveyModel = {
        }
       }
      ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PS4dot6",
+     "visibleIf": "{PS4dot3} == \"1\"",
+     "title": "Wie beabsichtigen Sie das Angebot in Zukunft als Fahrer/in zu nutzen?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Weniger als bisher"
+      },
+      {
+       "value": "2",
+       "text": "Wie bisher"
+      },
+      {
+       "value": "3",
+       "text": "Mehr als bisher"
+      }
+     ]
     }
    ]
   },
@@ -4908,6 +5079,36 @@ export const surveyModel = {
        }
       }
      ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PS4dot7",
+     "visibleIf": "{PS4dot6} == \"1\"",
+     "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Fahrer/in, das Angebot weniger als bisher zu nützen?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Entsprach nicht meinen Erwartungen"
+      },
+      {
+       "value": "2",
+       "text": "Komplikationen bei der Buchung"
+      },
+      {
+       "value": "3",
+       "text": "Ich habe negative Erfahrungen mit den Mitfahrenden gemacht "
+      },
+      {
+       "value": "4",
+       "text": "Die Ankunft war dadurch unpünktlich"
+      },
+      {
+       "value": "5",
+       "text": "Es gab für mich unnötige Umwege"
+      }
+     ]
     }
    ]
   },
@@ -4942,6 +5143,358 @@ export const surveyModel = {
        }
       }
      ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PS4dot8",
+     "visibleIf": "{PS4dot1} == \"1\"",
+     "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als Mitfahrer/In genutzt?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Ja"
+      },
+      {
+       "value": "2",
+       "text": "Nein"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS9",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot9",
+     "visibleIf": "{PS4dot8} == \"1\"",
+     "title": "Wie häufig nutzen Sie das Angebot Mitfahrer/In bislang?",
+     "choices": [
+      {
+       "value": "1",
+       "text": "Täglich"
+      },
+      {
+       "value": "2",
+       "text": "Mehrmals pro Woche (2-3)"
+      },
+      {
+       "value": "3",
+       "text": "Mind. einmal pro Woche"
+      },
+      {
+       "value": "4",
+       "text": "Mehrmals im Monat"
+      },
+      {
+       "value": "5",
+       "text": "Mind. einmal pro Monat"
+      },
+      {
+       "value": "6",
+       "text": "Seltener als einmal im Monat"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS10",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot10",
+     "visibleIf": "{PS4dot8} == \"1\"",
+     "title": "Wenn Taxito Ihnen nicht zur Verfügung gestanden wäre, mit welchen Verkehrsmitteln hätten Sie dann ihre letzte Fahrt unternommen?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Ich hätte die Reise gar nicht unternommen (dann keine andere Auswahl/andere Möglichkeiten ausblenden)"
+      },
+      {
+       "value": "2",
+       "text": "Auto als Fahrer/In"
+      },
+      {
+       "value": "3",
+       "text": "Auto als Beifahrer/In"
+      },
+      {
+       "value": "4",
+       "text": "Motorrad"
+      },
+      {
+       "value": "5",
+       "text": "Bus/Tram/Metro/S-Bahn"
+      },
+      {
+       "value": "6",
+       "text": "Zug"
+      },
+      {
+       "value": "7",
+       "text": "Fahrrad (E-Fahrrad, normales)"
+      },
+      {
+       "value": "8",
+       "text": "Zu Fuss"
+      }
+     ]
+    }
+   ],
+   "description": "Denken Sie an Ihre letzte Taxitofahrt als Mitfahrer/in:"
+  },
+  {
+   "name": "PS11",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot11",
+     "visibleIf": "{PS4dot8} == \"1\"",
+     "title": "Haben Sie unmittelbar vor oder nach der Taxito-Fahrt ein weiteres Verkehrsmittel für dieselbe Reise benutzt?\n\nAlso sind Sie auf ein anderes Verkehrsmittel umgestiegen? Wenn ja, welche Verkehrsmittel?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Auto als Fahrer/In"
+      },
+      {
+       "value": "2",
+       "text": "Auto als Beifahrer/In"
+      },
+      {
+       "value": "3",
+       "text": "Motorrad"
+      },
+      {
+       "value": "4",
+       "text": "Bus/Tram/Metro/S-Bahn"
+      },
+      {
+       "value": "5",
+       "text": "Zug"
+      },
+      {
+       "value": "6",
+       "text": "Fahrrad (E-Fahrrad, normales)"
+      },
+      {
+       "value": "7",
+       "text": "Zu Fuss"
+      }
+     ]
+    }
+   ],
+   "description": "Denken Sie an Ihre letzte Taxitofahrt als Mitfahrer/in:"
+  },
+  {
+   "name": "PS12",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "question2",
+     "visibleIf": "{PS4dot8} == \"1\"",
+     "title": "Was waren Ihre Gründe für Ihre Nutzung des Angebots als Mitfahrer/in?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Hoher Komfort"
+      },
+      {
+       "value": "2",
+       "text": "Kostengünstig"
+      },
+      {
+       "value": "3",
+       "text": "Zeitsparend"
+      },
+      {
+       "value": "4",
+       "text": "Umweltfreundlich"
+      },
+      {
+       "value": "5",
+       "text": "Gesundheitsfördernd (Fussweg zur Stele)"
+      },
+      {
+       "value": "6",
+       "text": "Geselligkeit (Treffen von anderen Menschen)"
+      },
+      {
+       "value": "7",
+       "text": "Hohe Barrierefreiheit (Leichtes Ein- und Aussteigen)"
+      }
+     ]
+    }
+   ],
+   "description": "Denken Sie an Ihre letzte Taxitofahrt als Mitfahrer/in:"
+  },
+  {
+   "name": "PS13",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot13",
+     "visibleIf": "{PS4dot8} == \"1\"",
+     "title": "Wie beabsichtigen Sie das Angebot in Zukunft als Mitfahrer/in zu nutzen?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Weniger als bisher"
+      },
+      {
+       "value": "2",
+       "text": "Wie bisher"
+      },
+      {
+       "value": "3",
+       "text": "Mehr als bisher"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS14",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot14",
+     "visibleIf": "{PS4dot8} == \"1\" and {PS4dot13} == \"1\"",
+     "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Mitfahrer/in, das Angebot weniger als bisher zu nützen?",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Entsprach nicht meinen Erwartungen"
+      },
+      {
+       "value": "2",
+       "text": "Komplikationen bei der Buchung"
+      },
+      {
+       "value": "3",
+       "text": "Ich habe negative Erfahrungen mit den Mitfahrenden gemacht (Lenker/Passagiere)"
+      },
+      {
+       "value": "4",
+       "text": "Die Fahrt war unpünktlich"
+      },
+      {
+       "value": "5",
+       "text": "Es gab lange Wartezeiten"
+      },
+      {
+       "value": "6",
+       "text": "Die Fahrt führte nicht direkt an das Ziel"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS15",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot15",
+     "visibleIf": "{PS4dot1} == \"1\" and {PS4dot8} == \"2\"",
+     "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in nicht nutzen?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Schlechter Komfort"
+      },
+      {
+       "value": "2",
+       "text": "Teuer"
+      },
+      {
+       "value": "3",
+       "text": "Dauert zu lange (Fussweg zur Stele, lange Wartezeiten)"
+      },
+      {
+       "value": "4",
+       "text": "Ist nicht umweltfreundlich"
+      },
+      {
+       "value": "5",
+       "text": "Fahre lieber mit dem Bus"
+      },
+      {
+       "value": "6",
+       "text": "Möchte mich nicht zu Fremden ins Auto setzen "
+      },
+      {
+       "value": "7",
+       "text": "Zu kompliziert (Ein- und Aussteigen, Technik) "
+      },
+      {
+       "value": "8",
+       "text": "Fahre lieber mit dem eigenen Personenwagen "
+      },
+      {
+       "value": "9",
+       "text": "Hatte bisher noch keine Gelegenheit "
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS16",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PS4dot16",
+     "visibleIf": "{PS4dot3} == \"2\"",
+     "title": "Was sind die Gründe dafür, dass Sie das Angebot als Fahrer/in nicht nutzen?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Möchte nicht, dass Fremde ins Auto steigen"
+      },
+      {
+       "value": "2",
+       "text": "Dauert zu lange jemanden mitzunehmen"
+      },
+      {
+       "value": "3",
+       "text": "Fahre lieber alleine im Auto"
+      },
+      {
+       "value": "4",
+       "text": "Zu kompliziert (Ein- und Aussteigen, Technik)"
+      },
+      {
+       "value": "5",
+       "text": "Hatte bisher noch keine Gelegenheit es zu nutzen"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS17",
+   "elements": [
+    {
+     "type": "text",
+     "name": "PS4dot17",
+     "visibleIf": "{QF1} == \"ch\"",
+     "title": "Haben Sie weitere Kommentare zum Angebot von Taxito? Dann können Sie hier Ihre Erfahrungen, Kritiken und Wünsche anbringen.",
+     "isRequired": true
     }
    ]
   },
