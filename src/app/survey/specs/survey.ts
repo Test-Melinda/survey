@@ -4602,6 +4602,350 @@ export const surveyModel = {
    ]
   },
   {
+   "name": "PS1andPS2",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "S2Q1",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "Do you use the bicycle as much as you would like to in your daily trips?",
+      "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
+     },
+     "choices": [
+      {
+       "value": "A1",
+       "text": {
+        "default": "Yes",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "A2",
+       "text": "No"
+      },
+      {
+       "value": "A3",
+       "text": {
+        "default": "I don't know",
+        "it": "Non so"
+       }
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "S2Q2",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "Why?",
+      "it": "Perché?"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "It takes too long",
+        "it": "Si impiega troppo tempo negli spostamenti"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "It is too hard",
+        "it": "È troppo faticoso"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "It is dangerous",
+        "it": "È troppo pericoloso"
+       }
+      },
+      {
+       "value": "7",
+       "text": {
+        "default": "There are not enough cycle paths",
+        "it": "Non ci sono sufficienti piste ciclabili"
+       }
+      },
+      {
+       "value": "8",
+       "text": {
+        "default": "It can be easily stolen",
+        "it": "Può essere facilmente rubata"
+       }
+      },
+      {
+       "value": "9",
+       "text": {
+        "default": "Weather reasons (too much rain/too cold/too hot...)",
+        "it": "A causa del meteo (troppa pioggia/troppo freddo/troppo caldo,...)"
+       }
+      },
+      {
+       "value": "10",
+       "text": {
+        "default": "I don't own a bike",
+        "it": "Non possiedo una bici"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS3",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "S2Q3",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "Would you go to work by bicycle if there was a monetary incentive from your employer?",
+      "it": "Andresti al lavoro in bicicletta se ricevessi un incentivo economico dal tuo datore di lavoro?"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "2",
+       "text": "No"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "I don't know",
+        "it": "Non so"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS4",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "S2Q4",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "Is a bike-sharing* system available in the territories you usually cross during your daily activities (for work, study or purchase etc…)?",
+      "it": "Esiste un servizio di Bike-sharing* nel comune o nei comuni in cui ti sposti quotidianamente?"
+     },
+     "description": {
+      "default": "A bike sharing is a service where, after a subscription, anyone can use bicycles offered to the users in sharing.",
+      "it": "* il bike-sharing è un servizio di mobilità in cui, in seguito all'iscrizione, l'utente può utilizzare (in forma di noleggio a breve termine) le biciclette messe a disposizione da un operatore (pubblico o privato), in condivisione con altri utenti."
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "2",
+       "text": "No"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "I don't know",
+        "it": "Non so"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS5",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "S2Q5",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI} and [\"2\", \"3\"] contains {S2Q4}",
+     "title": {
+      "default": "If there was a bike sharing system*, would it be easier for you to use the bicycle in your daily trips?",
+      "it": "Se esistesse un servizio di Bike-sharing sarebbe più semplice per te utilizzare la bicicletta negli spostamenti quotidiani?"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "2",
+       "text": "No"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "I don't know",
+        "it": "Non so"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS6",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "S2Q6",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "Would you be interested in an electric bike-sharing system?",
+      "it": "Saresti interessato/a ad un servizio di Bike-sharing elettrico?"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes, but only if for free",
+        "it": "Sì, ma solo se gratis"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Yes, if the fee would be 5 euros/month maximum",
+        "it": "Sì, ma solo se la tariffa non superasse i 5 euro al mese"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Yes, if the fee would be 10 euros/month maximum",
+        "it": "Sì, ma solo se la tariffa non superasse i 10 euro al mese"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Yes, if the fee would be 15 euros/month maximum",
+        "it": "Sì, ma solo se la tariffa non superasse i 15 euro al mese"
+       }
+      },
+      {
+       "value": "5",
+       "text": "No"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "I don't know",
+        "it": "Non so"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS7",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "S2Q7",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "If there was an electric bike sharing system free of charge, would you use less the car?",
+      "it": "Se esistesse un servizio di Bike-sharing elettrico gratuito useresti di meno l'auto?"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": "No"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "More no than yes",
+        "it": "Più no che sì"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "More yes than no",
+        "it": "Più sì che no"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Yes",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "I don't know",
+        "it": "Non so"
+       }
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "I never use the car",
+        "it": "Non uso mai l'auto"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "PS8",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "S2Q8",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "Do you plan to buy an electric bike in the next 3 years?",
+      "it": "Hai in programma di acquistare una bicicletta elettrica nei prossimi 3 anni?"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "2",
+       "text": "No"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "I don't know",
+        "it": "Non so"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
    "name": "sociodemo",
    "elements": [
     {
