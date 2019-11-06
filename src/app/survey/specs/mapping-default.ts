@@ -8,13 +8,13 @@ answers?: Map<string, string>
         gid: 3,
         qid: 23,
         answers: new Map([
-            ["at", "A1"],
-            ["fr", "A2"],
-            ["de", "A3"],
-            ["it", "A4"],
-            ["fl", "A5"],
-            ["slo", "A6"],
-            ["ch", "A7"]
+            ["at", "1"],
+            ["fr", "2"],
+            ["de", "3"],
+            ["it", "4"],
+            ["fl", "5"],
+            ["si", "6"],
+            ["ch", "7"]
         ])
     }],
     ["QF2FD", {
