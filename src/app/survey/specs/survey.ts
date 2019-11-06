@@ -4607,7 +4607,15 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q11",
-     "title": "What is your age?",
+     "title": {
+      "default": "What is your age?",
+      "it": "Quanti anni hai?",
+      "de": "Wie alt sind Sie?",
+      "de-at": "Wie alt sind Sie?",
+      "de-ch": "Wie alt sind Sie?",
+      "sl": "Vaša starost",
+      "fr": "Quel age avez-vous?"
+     },
      "choices": [
       {
        "value": "A1",
@@ -4646,70 +4654,190 @@ export const surveyModel = {
     {
      "type": "dropdown",
      "name": "Q12",
-     "title": "You are:",
+     "title": {
+      "default": "You are:",
+      "it": "Tu sei:",
+      "de": "Sie sind:",
+      "de-at": "Sie sind:",
+      "de-ch": "Sie sind:",
+      "sl": "Spol:",
+      "fr": "Vous êtes:"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Male"
+       "text": {
+        "default": "Male",
+        "it": "Maschio",
+        "de": "Männlich",
+        "de-at": "Männlich",
+        "de-ch": "Männlich",
+        "sl": "Moški",
+        "fr": "Un homme"
+       }
       },
       {
        "value": "2",
-       "text": "Female"
+       "text": {
+        "default": "Female",
+        "it": "Femmina",
+        "de": "Weiblich",
+        "de-at": "Weiblich",
+        "de-ch": "Weiblich",
+        "sl": "Ženska",
+        "fr": "Une femme"
+       }
       },
       {
        "value": "3",
-       "text": "Other"
+       "text": {
+        "default": "Other",
+        "it": "Altro",
+        "de": "Anderes",
+        "de-at": "Anderes",
+        "de-ch": "Anderes",
+        "sl": "Drugo",
+        "fr": "Autre"
+       }
       },
       {
        "value": "4",
-       "text": "No answer"
+       "text": {
+        "default": "No answer",
+        "it": "Nessuna risposta",
+        "de": "Keine Antwort",
+        "de-at": "Keine Antwort",
+        "de-ch": "Keine Antwort",
+        "sl": "Ni odgovora",
+        "fr": "Ne souhaite pas répondre"
+       }
       }
      ]
     },
     {
      "type": "radiogroup",
      "name": "Q13",
-     "title": "What is your highest level of education?",
+     "title": {
+      "default": "What is your highest level of education?",
+      "it": "Qual è il tuo titolo di studio?",
+      "de": "Was ist Ihr höchster Bildungsabschluss?",
+      "de-at": "Was ist Ihr höchster Bildungsabschluss?",
+      "de-ch": "Was ist Ihr höchster Bildungsabschluss?",
+      "sl": "Vaša stopnja izobrazbe",
+      "fr": "Quel est votre niveau d'études?"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "PhD (ISCED 8)"
+       "text": {
+        "default": "PhD (ISCED 8)",
+        "it": "Dottorato",
+        "de": "Promotion",
+        "de-at": "Doktor/PhD",
+        "de-ch": "Promotion",
+        "sl": "Doktorat",
+        "fr": "Doctorat"
+       }
       },
       {
        "value": "2",
-       "text": "University degree (ISCED 5-7)"
+       "text": {
+        "default": "University degree (ISCED 5-7)",
+        "it": "Laurea",
+        "de": "Hochschulabschluss",
+        "de-at": "Universität Bachelor/Master",
+        "de-ch": "Hochschulabschluss",
+        "sl": "Univerzitetna stopnja",
+        "fr": "Licence ou Master"
+       }
       },
       {
        "value": "3",
-       "text": "Upper-secondary school diploma (ISCED 3-4)"
+       "text": {
+        "default": "Upper-secondary school diploma (ISCED 3-4)",
+        "it": "Diploma di scuola superiore",
+        "de": "Hochschulreife",
+        "de-at": "Matura",
+        "de-ch": "Hochschulreife",
+        "sl": "Srednja šola",
+        "fr": "Bac"
+       }
       },
       {
        "value": "4",
-       "text": "Lower-secondary and primary school (ISCED 2-1)"
+       "text": {
+        "default": "Lower-secondary and primary school (ISCED 2-1)",
+        "it": "Diploma di scuola media inferiore o licenza elementare",
+        "de": "Mittlere Reife und Haupschulabschluss",
+        "de-at": "Mittlere Reife/Grundschule",
+        "de-ch": "Mittlere Reife und Haupschulabschluss",
+        "sl": "Strokovna in osnovna šola",
+        "fr": "CAP/BEP/Brevet"
+       }
       }
      ]
     },
     {
      "type": "radiogroup",
      "name": "Q15",
-     "title": "Number of members in your houselhold (with you)",
+     "title": {
+      "default": "Number of members in your houselhold (with you)",
+      "it": "Di quante persone si compone il tuo nucleo famigliare (comprendendo te)?",
+      "de": "Anzahl der Mitglieder in Ihrem Haushalt (mit Ihnen)",
+      "de-at": "Anzahl der Mitglieder in Ihrem Haushalt (mit Ihnen)",
+      "de-ch": "Anzahl der Mitglieder in Ihrem Haushalt (mit Ihnen)",
+      "sl": "Število članov vašega gospodinjstva (skupaj z vami)",
+      "fr": "Nombre de personnes composant votre ménage (y compris vous)"
+     },
      "choices": [
       {
        "value": "0",
-       "text": "One"
+       "text": {
+        "default": "One",
+        "it": "Una",
+        "de": "1",
+        "de-at": "1",
+        "de-ch": "1",
+        "sl": "Eden",
+        "fr": "1"
+       }
       },
       {
        "value": "1",
-       "text": "Two"
+       "text": {
+        "default": "Two",
+        "it": "Due",
+        "de": "2",
+        "de-at": "2",
+        "de-ch": "2",
+        "sl": "Dva",
+        "fr": "2"
+       }
       },
       {
        "value": "2",
-       "text": "3 or more"
+       "text": {
+        "default": "3 or more",
+        "it": "Tre o più",
+        "de": "Mehr als 3",
+        "de-at": "3 oder mehr",
+        "de-ch": "Mehr als 3",
+        "sl": "Tri ali več",
+        "fr": "3 et plus"
+       }
       }
      ]
     }
    ],
-   "description": "In this last section we will ask you some socio-demograpich information in order to better contextualise your answers.\n\nWe remind you that all the answers will be kept anonymous and no one will be able to connect any information to your identity now and in the future."
+   "description": {
+    "default": "In this last section we will ask you some socio-demograpich information in order to better contextualise your answers.\n\nWe remind you that all the answers will be kept anonymous and no one will be able to connect any information to your identity now and in the future. We remind you that all the answers will be kept anonymous and no one will be able to connect any information to your identity now and in the future.",
+    "it": "In questa ultima sezione ti faremo alcune domande socio-anagrafiche in maniera da contestualizzare meglio le risposte date. Ti ricordiamo che tutte le risposte verranno mantenute anonime e nessuno sarà in grado, né ora né in futuro, di collegarle alla tua persona.",
+    "de": "Im letzten Abschnitt der Umfarge werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte bachten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
+    "de-at": "Im letzten Abschnitt der Umfarge werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte bachten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
+    "de-ch": "Im letzten Abschnitt der Umfarge werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte bachten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
+    "sl": "V zadnjem razdelku vas prosimo za nekaj socialno-demografskih podatkov, ki nam bodo omogočili boljše razumevnje vaših odgovorov. Zagotavljamo vam, da bodo vsi vaši odgovori anonimni in nihče ne bo mogel povezati informacij z vašo identiteto zdaj ali v prihodnosti.",
+    "fr": "Dans cette dernière partie, nous allons vous poser quelques questions socio-économiques pour remettre vos réponses dans leur contexte. Nous vous rappelons que toutes vos réponses resteront anonymes et qu'elles ne seront pas utilisées pour vous contacter dans le futur, ni pour vous identifier."
+   }
   },
   {
    "name": "job",
