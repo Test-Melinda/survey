@@ -4938,19 +4938,60 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q14bis",
      "visibleIf": "{Q14} == \"1\"",
-     "title": "You work as:",
+     "title": {
+      "default": "You work as:",
+      "it": "Qual è la tua posizione lavorativa?",
+      "de": "Sie arbeiten als:",
+      "de-at": "Sie arbeiten als:",
+      "de-ch": "Sie arbeiten als:",
+      "sl": "Delate kot:",
+      "fr": "Vous travaillez comme:"
+     },
+     "description": {
+      "default": "Only one answer is possible",
+      "de": "Nur eine Nennung möglich",
+      "it": "È possibile una sola risposta",
+      "de-at": "Nur eine Nennung möglich",
+      "de-ch": "Nur eine Nennung möglich",
+      "sl": "Izberite samo en odgovor",
+      "fr": "Une seule réponse possible"
+     },
      "choices": [
       {
        "value": "1",
-       "text": "Self Employed"
+       "text": {
+        "default": "Self Employed",
+        "it": "Lavoratore indipendente",
+        "de": "Selbstständige/r",
+        "de-at": "Selbstständige/r",
+        "de-ch": "Selbstständige/r",
+        "sl": "Samozaposleni",
+        "fr": "Indépendant / Auto-entrepreneur"
+       }
       },
       {
        "value": "2",
-       "text": "Employee"
+       "text": {
+        "default": "Employee",
+        "it": "Lavoratore dipendente",
+        "de": "Angestellte/r",
+        "de-at": "Angestellte/r",
+        "de-ch": "Angestellte/r",
+        "sl": "Zaposleni",
+        "fr": "Employé"
+       }
       },
       {
        "value": "3",
-       "text": "Other"
+       "text": {
+        "default": "Other",
+        "it": "Altro",
+        "de": "Andere",
+        "de-at": "Andere",
+        "de-ch": "Andere",
+        "sl": "Drugo",
+        "fr": "Autre"
+       }
       }
      ]
     }
