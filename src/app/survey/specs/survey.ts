@@ -5003,7 +5003,24 @@ export const surveyModel = {
     {
      "type": "text",
      "name": "MA",
-     "title": "If you like to receive any information and updates about Melinda project's events and progresses you can leave us your e-mail address in order to be informed in the future.   (The collected email addresses will be stored on secure servers located in the EU and processed in accordance to GDPR, not traded to anybody else, kept for the time of project activity, and always separately from the other survey data)",
+     "title": {
+      "default": "Se avessi piacere a ricevere informazioni e aggiornamenti sugli eventi e progressi del progetto Melinda puoi lasciarci qui di seguito il tuo indirizzo e-mail così da essere avvisato in futuro.",
+      "it": "Se hai piacere a ricevere informazioni e aggiornamenti sugli eventi e progressi del progetto Melinda puoi lasciarci qui di seguito il tuo indirizzo e-mail così da essere avvisato in futuro.",
+      "de": "Wenn Sie in Zukunft Informationen und Updates über Veranstaltungen und Ergebnisse des Melinda-Projekts erhalten möchten, können Sie Ihre E-Mail-Adresse angeben.",
+      "de-at": "Wenn Sie in Zukunft Informationen und Updates über Veranstaltungen und Ergebnisse des Melinda-Projekts erhalten möchten, können Sie Ihre E-Mail-Adresse angeben.",
+      "de-ch": "Wenn Sie in Zukunft Informationen und Updates über Veranstaltungen und Ergebnisse des Melinda-Projekts erhalten möchten, können Sie Ihre E-Mail-Adresse angeben.",
+      "sl": "Če želite prejemati novice o dogodkih in napredkih projekta Melinda, nam prosim zaupajte svoj elektronski naslov.",
+      "fr": "Si vous souhaitez recevoir des informations et des nouvelles du projet MELINDA, vous pouvez nous laisser votre courriel."
+     },
+     "description": {
+      "default": "(Gli indirizzi email raccolti saranno custoditi su server sicuri localizzati nei paesi dell'Unione Europea e gestiti nel rispetto del GDPR, non saranno ceduti a terzi e verranno conservati solo per il tempo di durata del progetto stesso, sempre separati dagli altri dati del questionario).",
+      "it": "(Gli indirizzi email raccolti saranno custoditi su server sicuri localizzati nei paesi dell'Unione Europea e gestiti nel rispetto del GDPR 2016/679, non saranno ceduti a terzi e verranno conservati solo per il tempo di durata del progetto stesso, sempre separati dagli altri dati del questionario).",
+      "de": "Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert).",
+      "de-at": "Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert).",
+      "de-ch": "Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert).",
+      "sl": "(Zbrani elektronski naslovi bodo shranjeni na varnih strežnikih, ki se nahajajo v EU, in bodo obdelani v skladu z GDPR. Z njimi se ne trguje, shranjeni bodo za čas projektne dejavnosti in vedno ločeno od drugih podatkov ankete.)",
+      "fr": "(Celui-ci sera stocké dans un espace sécurisé, dans l'UE, et utilisé en conformité avec le RGPD. Il ne sera transmis à personne d'autre, gardé uniquement pendant la durée du projet et toujours séparément des autres données du projet)"
+     },
      "validators": [
       {
        "type": "email"
