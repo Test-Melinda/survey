@@ -5655,7 +5655,7 @@ export const surveyModel = {
         "it": "Diploma di scuola superiore",
         "de": "Hochschulreife",
         "de-at": "Matura",
-        "de-ch": "Hochschulreife",
+        "de-ch": "Berufsabschluss",
         "sl": "Srednja šola",
         "fr": "Bac"
        }
@@ -5667,7 +5667,7 @@ export const surveyModel = {
         "it": "Diploma di scuola media inferiore o licenza elementare",
         "de": "Mittlere Reife und Haupschulabschluss",
         "de-at": "Mittlere Reife/Grundschule",
-        "de-ch": "Mittlere Reife und Haupschulabschluss",
+        "de-ch": "Matura/Sekundarschule",
         "sl": "Strokovna in osnovna šola",
         "fr": "CAP/BEP/Brevet"
        }
