@@ -6,10 +6,12 @@ import { LimesurveyQuestionsMapping, LimesurveyAnswerCode } from "./survey/limes
 import { LimesurveyResponseBuilder } from "./limesurvey/limesurvey-response-builder";
 import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src/app/limesurvey/limesurvey-client-factory.service";
 import { ScoreCalculatorService } from "./score/score-calculator.service";
+import { isDevMode } from '@angular/core';
 
 import { environment } from '../environments/environment';
 import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-provider.service';
 import { TranslateService } from '@ngx-translate/core';
+import { LimesurveyClient } from './limesurvey/limesurvey-client';
 
 @Component( {
     selector: 'app-root',
@@ -30,6 +32,8 @@ export class AppComponent implements OnInit {
 	private pilotSelectionQuestion = "QF1";
 	
 	public ignoreResponse = false;
+	
+	protected limesurveyCredentials = null;
     
     constructor(protected translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
         translate.setDefaultLang('en');
@@ -43,11 +47,17 @@ export class AppComponent implements OnInit {
         
         this.channel = this.parseChannel();
         console.log("Channel detected", this.channel);
+
+		let limesurveyCredentials = new LimesurveyClientCredentials();
+	    limesurveyCredentials.url = environment.limesurvey.api.url;
+	    limesurveyCredentials.username = environment.limesurvey.api.username;
+	    limesurveyCredentials.password = environment.limesurvey.api.password;
+		this.limesurveyCredentials = limesurveyCredentials;
     }
     
     private parseSource(){
         // Admitted values
-        let values = ['it', 'fr', 'si', 'de', 'ch', 'at'];
+        let values = ['at', 'fr', 'de', 'it', 'si', 'ch'];
         
         // Parse
         let src = new URLSearchParams(window.location.search).get('src') || null;
@@ -203,12 +213,7 @@ export class AppComponent implements OnInit {
 	        console.log("Full limesurvey response data", limesurveyResponse);
 	        
 	        // Create the client to communicate with Limesurvey
-	        let limesurveyCredentials = new LimesurveyClientCredentials();
-	        limesurveyCredentials.url = environment.limesurvey.api.url;
-	        limesurveyCredentials.username = environment.limesurvey.api.username;
-	        limesurveyCredentials.password = environment.limesurvey.api.password;
-	        
-	        this.limesurveyClientFactory.createClient(limesurveyCredentials).subscribe((limesurveyClient) => {
+	        this.limesurveyClientFactory.createClient(this.limesurveyCredentials).subscribe((limesurveyClient: LimesurveyClient) => {
 	            console.log("Limesurvey client", limesurveyClient);
 	            
 	            // Add the survey response
@@ -237,6 +242,47 @@ export class AppComponent implements OnInit {
 	
 	private isUserOutOfPilot(selectedArea: string): boolean {
 		return ((selectedArea == "li" && this.source != 'at') || (selectedArea != "li" && selectedArea != this.source));
+	}
+	
+	public isDevMode(){
+		return isDevMode();
+	}
+	
+	public devAutoMapRegion = "it";
+	public autoMap(){
+		console.log("Building automatic mapping for pilot", this.devAutoMapRegion);
+		
+		let surveyId = this.limesurveyMappingProviderService.getSurveyId(this.devAutoMapRegion);
+		console.log("Survey ID", surveyId);
+		
+		let scoreQuestionMapping = this.limesurveyMappingProviderService.getScoreQuestionMapping(this.devAutoMapRegion);
+		console.log("Score question mapping", scoreQuestionMapping);
+		
+		let pilotSelectionQuestionMapping = {
+			at: "1",
+            fr: "2",
+            de: "3",
+            it: "4",
+            fl: "5",
+            si: "6",
+            ch: "7"
+		};
+		console.log("Using default mapping for pilot selection question [question code, mapping]", this.pilotSelectionQuestion, pilotSelectionQuestionMapping);
+		this.limesurveyClientFactory.createClient(this.limesurveyCredentials).subscribe((limesurveyClient: LimesurveyClient) => {
+			limesurveyClient.getQuestionsIDs(surveyId).subscribe(questions => {
+				let mapping = [];
+				
+				for (let code in questions){
+					let qMapping = [code, questions[code]];
+					if (code == this.pilotSelectionQuestion){
+						qMapping[1].answers = pilotSelectionQuestionMapping;
+					}
+					mapping.push(qMapping);
+				}
+				
+				console.log("Automapping result", JSON.stringify(mapping));
+			});
+		});
 	}
     
 }

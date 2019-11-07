@@ -2,20 +2,20 @@
 export const mapping = new Map<string, {
 gid: number,
 qid: number,
-answers?: Map<string, string>
+answers?: {}
 }>([
     ["QF1", {
         gid: 3,
         qid: 23,
-        answers: new Map([
-            ["at", "1"],
-            ["fr", "2"],
-            ["de", "3"],
-            ["it", "4"],
-            ["fl", "5"],
-            ["si", "6"],
-            ["ch", "7"]
-        ])
+        answers: {
+			at: "1",
+            fr: "2",
+            de: "3",
+            it: "4",
+            fl: "5",
+            si: "6",
+            ch: "7"
+		}
     }],
     ["QF2FD", {
         gid: 3,

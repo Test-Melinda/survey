@@ -4,7 +4,7 @@ import * as mappingDefault from "./mapping-default";
 export const mappings = new Map<String, Map<string, {
     gid: number,
     qid: number,
-    answers?: Map<string, string>
+    answers?: {}
 }>>();
 
 mappings.set('default', mappingDefault.mapping);

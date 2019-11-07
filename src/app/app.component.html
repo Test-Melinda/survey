@@ -49,3 +49,22 @@
 		</div>
 	</div>
 </div>
+
+<div class="dev-tools" *ngIf="isDevMode()" class="mt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				Automatic mapping bulder: 
+				<select [(ngModel)]="devAutoMapRegion">
+					<option value="it">Italian pilot</option>
+					<option value="de">German pilot</option>
+					<option value="fr">French pilot</option>
+					<option value="ch">Swiss pilot</option>
+					<option value="at">Austrian pilot</option>
+					<option value="si">Slovenian pilot</option>
+				</select>
+				<button class="btn btn-secondary btn-sm" (click)="autoMap()">Automap!</button>
+			</div>
+		</div>
+	</div>
+</div>

@@ -3,11 +3,11 @@ export class LimesurveyQuestionsMapping {
     constructor(public surveyId: number, protected mapping = new Map<string, {
         gid: number,
         qid: number,
-        answers?: Map<string, string>
+        answers?: {}
     }>()){
     }
     
-    public setMapping(questionCode: string, gid: number, qid: number, answers?: Map<string, string>){
+    public setMapping(questionCode: string, gid: number, qid: number, answers?: {string: string}){
         this.mapping.set(questionCode, {
             gid: gid,
             qid: qid,
@@ -22,9 +22,9 @@ export class LimesurveyQuestionsMapping {
         }
         
         if (!questionMapping.answers){
-            questionMapping.answers = new Map<string, string>();
+            questionMapping.answers = {};
         }
-        questionMapping.answers.set(answerCode, mapping);
+        questionMapping.answers[answerCode] = mapping;
         
         this.mapping.set(questionCode, questionMapping);
     }
@@ -42,7 +42,7 @@ export class LimesurveyQuestionsMapping {
         if (questionMapping){
             let answers = questionMapping.answers;
             if (answers){
-                return questionMapping.answers.get(answerCode);
+                return questionMapping.answers[answerCode];
             }
         }
         return null;

@@ -84,5 +84,35 @@ export class LimesurveyClient {
             });
         });
     }
+
+	public getQuestionsIDs(surveyId: number): Observable<any> {
+		return new Observable<any>((observer) => {
+            // Add the response
+            this.sendRequest("list_questions", [surveyId]).subscribe((result: any) => {
+                console.log("Call response", result);
+                
+                if (!result){
+                    observer.error(new Error("Cannot add response to survey: no id assigned to response from Limesurvey"));
+                }
+                else {
+					let ids = {};
+					(<any[]>result).forEach((q: any) => {
+						if (!q.parent_qid || q.parent_qid == "0"){
+							ids[q.title] = {
+								qid: parseInt(q.qid),
+								gid: parseInt(q.gid)
+							};
+						}
+					})
+					
+                    observer.next(ids);
+                    observer.complete();
+                }
+            }, (error) => {
+                observer.error(error);
+                console.error("Cannot get questions list", error);
+            });
+        });
+	}
     
 }
