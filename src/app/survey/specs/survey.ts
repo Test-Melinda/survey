@@ -4614,18 +4614,18 @@ export const surveyModel = {
      },
      "choices": [
       {
-       "value": "A1",
+       "value": "1",
        "text": {
         "default": "Yes",
         "it": "Sì"
        }
       },
       {
-       "value": "A2",
+       "value": "2",
        "text": "No"
       },
       {
-       "value": "A3",
+       "value": "3",
        "text": {
         "default": "I don't know",
         "it": "Non so"
