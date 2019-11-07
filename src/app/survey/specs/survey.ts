@@ -4799,8 +4799,61 @@ export const surveyModel = {
     },
     {
      "type": "radiogroup",
+     "name": "_ch_Q11",
+     "visibleIf": "{QF1} == \"ch\"",
+     "title": {
+      "default": "What is your age?",
+      "it": "Quanti anni hai?",
+      "de": "Wie alt sind Sie?",
+      "de-at": "Wie alt sind Sie?",
+      "de-ch": "Wie alt sind Sie?",
+      "sl": "Vaša starost",
+      "fr": "Quel age avez-vous?"
+     },
+     "enableIf": "{QF1} == \"ch\"",
+     "choices": [
+      {
+       "value": "1",
+       "text": "16-17"
+      },
+      {
+       "value": "2",
+       "text": "18-20"
+      },
+      {
+       "value": "3",
+       "text": "21-25"
+      },
+      {
+       "value": "4",
+       "text": "26-35"
+      },
+      {
+       "value": "5",
+       "text": "36-45"
+      },
+      {
+       "value": "6",
+       "text": "46-55"
+      },
+      {
+       "value": "7",
+       "text": "56-65"
+      },
+      {
+       "value": "8",
+       "text": "66-75"
+      },
+      {
+       "value": "9",
+       "text": "over 75"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
      "name": "PS4dot3",
-     "visibleIf": "{PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\"",
+     "visibleIf": "{_ch_Q11} == \"1\" and {PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\"",
      "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als Fahrer/In genutzt?",
      "isRequired": true,
      "choices": [
@@ -5504,6 +5557,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q11",
+     "visibleIf": "{QF1} != \"ch\"",
      "title": {
       "default": "What is your age?",
       "it": "Quanti anni hai?",
@@ -5513,37 +5567,42 @@ export const surveyModel = {
       "sl": "Vaša starost",
       "fr": "Quel age avez-vous?"
      },
+     "enableIf": "{QF1} != \"ch\"",
      "choices": [
       {
-       "value": "A1",
-       "text": "16-20"
+       "value": "1",
+       "text": "16-17"
       },
       {
-       "value": "A2",
+       "value": "2",
+       "text": "18-20"
+      },
+      {
+       "value": "3",
        "text": "21-25"
       },
       {
-       "value": "A3",
+       "value": "4",
        "text": "26-35"
       },
       {
-       "value": "A4",
+       "value": "5",
        "text": "36-45"
       },
       {
-       "value": "A5",
+       "value": "6",
        "text": "46-55"
       },
       {
-       "value": "A6",
+       "value": "7",
        "text": "56-65"
       },
       {
-       "value": "A7",
+       "value": "8",
        "text": "66-75"
       },
       {
-       "value": "A8",
+       "value": "9",
        "text": "over 75"
       }
      ]
