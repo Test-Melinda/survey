@@ -4650,42 +4650,42 @@ export const surveyModel = {
        }
       },
       {
-       "value": "3",
+       "value": "2",
        "text": {
         "default": "It is too hard",
         "it": "È troppo faticoso"
        }
       },
       {
-       "value": "4",
+       "value": "3",
        "text": {
         "default": "It is dangerous",
         "it": "È troppo pericoloso"
        }
       },
       {
-       "value": "7",
+       "value": "4",
        "text": {
         "default": "There are not enough cycle paths",
         "it": "Non ci sono sufficienti piste ciclabili"
        }
       },
       {
-       "value": "8",
+       "value": "5",
        "text": {
         "default": "It can be easily stolen",
         "it": "Può essere facilmente rubata"
        }
       },
       {
-       "value": "9",
+       "value": "6",
        "text": {
         "default": "Weather reasons (too much rain/too cold/too hot...)",
         "it": "A causa del meteo (troppa pioggia/troppo freddo/troppo caldo,...)"
        }
       },
       {
-       "value": "10",
+       "value": "7",
        "text": {
         "default": "I don't own a bike",
         "it": "Non possiedo una bici"
