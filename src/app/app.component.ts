@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Model, SurveyNG, StylesManager, Survey, IQuestion } from 'survey-angular';
 import { SurveySpecificationService } from "src/app/survey/survey-specification.service";
 import { ResponseConverterService } from "src/app/survey/response-converter.service";
-import { LimesurveyQuestionsMapping, LimesurveyAnswerCode } from "./survey/limesurvey-questions-mapping";
+import { LimesurveyAnswerCode } from "./survey/limesurvey-questions-mapping";
 import { LimesurveyResponseBuilder } from "./limesurvey/limesurvey-response-builder";
 import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src/app/limesurvey/limesurvey-client-factory.service";
 import { ScoreCalculatorService } from "./score/score-calculator.service";
 import { isDevMode } from '@angular/core';
+import * as URI from 'urijs';
 
 import { environment } from '../environments/environment';
 import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-provider.service';
@@ -176,7 +177,7 @@ export class AppComponent implements OnInit {
         }
     }
 
-    private processResponse(response) {
+    private processResponse(response: any) {
         this.status = SurveyStatus.DONE;
 
         let responseData = response.data;
@@ -244,8 +245,8 @@ export class AppComponent implements OnInit {
 		return ((selectedArea == "li" && this.source != 'at') || (selectedArea != "li" && selectedArea != this.source));
 	}
 	
-	public isDevMode(){
-		return isDevMode();
+	public isDevMode(): boolean {
+		return isDevMode() || URI(window.location.href).hasQuery("mode", "dev");
 	}
 	
 	public devAutoMapRegion = "it";
