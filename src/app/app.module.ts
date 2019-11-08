@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { ScoreViewerComponent } from './score-viewer/score-viewer.component';
 import { SurveyIntroComponent } from './survey-intro/survey-intro.component';
 import { JsonTranslationLoader } from './i18n/json-translation-loader';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScoreViewerComponent,
-    SurveyIntroComponent
+    SurveyIntroComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

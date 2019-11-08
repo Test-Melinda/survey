@@ -9,6 +9,8 @@ export class SurveyIntroComponent implements OnInit {
     
     public privacyAccepted: boolean = false;
 	public contactEmail = "s.caiello@campus.unimib.it";
+	
+	public policyShown = false;
 
     @Output() privacyAcceptance = new EventEmitter<boolean>();
 
@@ -19,6 +21,17 @@ export class SurveyIntroComponent implements OnInit {
     
     public checkPrivacy(){
         this.privacyAcceptance.emit(this.privacyAccepted);
+    }
+
+	public showPolicy(){
+		this.policyShown = true;
+	}
+	
+	public onPrivacyAcceptance(accepted: boolean){
+        console.log('Privacy accepted', accepted);
+        if (accepted){
+            this.privacyAcceptance.emit(accepted);
+        }
     }
 
 }
