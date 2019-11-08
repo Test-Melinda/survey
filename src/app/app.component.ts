@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Model, SurveyNG, StylesManager, Survey, IQuestion } from 'survey-angular';
+import { Model, SurveyNG, StylesManager, Survey, IQuestion, surveyLocalization } from 'survey-angular';
 import { SurveySpecificationService } from "src/app/survey/survey-specification.service";
 import { ResponseConverterService } from "src/app/survey/response-converter.service";
 import { LimesurveyAnswerCode } from "./survey/limesurvey-questions-mapping";
@@ -13,6 +13,10 @@ import { environment } from '../environments/environment';
 import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-provider.service';
 import { TranslateService } from '@ngx-translate/core';
 import { LimesurveyClient } from './limesurvey/limesurvey-client';
+
+import { slovenianSurveyStrings } from './i18n/surveyjs/slovenian';
+import { austrianGermanSurveyStrings } from './i18n/surveyjs/austrian-german';
+import { swissGermanSurveyStrings } from './i18n/surveyjs/swiss-german';
 
 @Component( {
     selector: 'app-root',
@@ -54,6 +58,14 @@ export class AppComponent implements OnInit {
 	    limesurveyCredentials.username = environment.limesurvey.api.username;
 	    limesurveyCredentials.password = environment.limesurvey.api.password;
 		this.limesurveyCredentials = limesurveyCredentials;
+		
+		// Add surveyjs translationss
+		surveyLocalization.locales["sl"] = slovenianSurveyStrings;
+		surveyLocalization.localeNames["sl"] = "slovenian";
+		surveyLocalization.locales["de-at"] = austrianGermanSurveyStrings;
+		surveyLocalization.localeNames["de-at"] = "austrian german";
+		surveyLocalization.locales["de-ch"] = swissGermanSurveyStrings;
+		surveyLocalization.localeNames["de-ch"] = "swiss german";
     }
     
     private parseSource(){
@@ -109,7 +121,7 @@ export class AppComponent implements OnInit {
             
             // Styling
             StylesManager.applyTheme( "bootstrap" );
-            
+			
             var survey = new Model(this.surveySpecification.getLocalizedModel(locale));
 			survey.locale = locale;
             survey.onComplete.add((response) => {
@@ -297,3 +309,4 @@ enum SurveyStatus {
     DONE = 'done'
     
 }
+
