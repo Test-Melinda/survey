@@ -31,7 +31,15 @@ export class LimesurveyQuestionsMapping {
     
     public mapQuestion(questionCode: string): LimesurveyAnswerCode {
         let questionMapping = this.mapping.get(questionCode);
-        if (questionMapping){
+        
+		// If a mapping has not been found, tries with a localized question
+		let localizedQuestionCodeRegex = /_[A-Za-z0-9]{2}_(\w+)/i;
+		let localizedQuestionCodeMatch = questionCode.match(localizedQuestionCodeRegex);
+		if (!questionMapping && localizedQuestionCodeMatch && localizedQuestionCodeMatch.length > 1){
+			questionMapping = this.mapping.get(localizedQuestionCodeMatch[1]);
+		}
+		
+		if (questionMapping){
             return new LimesurveyAnswerCode(this.surveyId, questionMapping.gid, questionMapping.qid);
         }
         return null;
