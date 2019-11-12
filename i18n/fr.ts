@@ -25,5 +25,21 @@ export const data = {
 			"SHOW": "Afficher la politique"
 		},
 //		"START": "Start survey"
-    }
+    },
+	"SCORE_VIEWER": {
+		"THANKS": "Merci d'avoir rempli le questionnaire!",
+		"SCORE": "Votre niveau de sensibilisation à l'environnement et de respect environnemental est de:",
+		"TEXT": "Mais puisque vous avez contribué à ce projet, vous avez déjà avancé donc vous méritez un point supplémentaire!",
+		"SOLUTIONS": {
+			"TITLE": "Parmi les questions auxquelles vous avez répondu, il y en avait certaines difficiles. Vous trouverez ici les réponses correctes à ces questions:",
+			"Q_COST": "Selon l'indice Leaseplan du coût de l'automobile, le coût moyen de possession d'une voiture particulière (essence/diesel) est d'environ 500 euros par mois (donnée 2016). Ce calcul prend en compte les facteurs affectant les coûts des voitures comme le carburant, la dépréciation des voitures, les taxes, les assurances et l'entretien.",
+			"Q_DEATHS": "Selon les <a href=\"{{ eurostatLink }}\" target=\"_blank\">statistiques d'Eurostat</a> et <a href=\"{{ eeaLink }}\" target=\"_blank\">les données de l'Agence européenne de l'environnement</a>, les décès dus à la pollution atmosphérique sont environ dix fois plus fréquents que les décès routiers!",
+			"Q_DEATHS_MORE": "Cela ne signifie pas, bien entendu, que la sécurité routière n'est pas une question pertinente, mais que même si elle n'est pas immédiatement perçue comme telle, la pollution atmosphérique sur nos territoires constitue une menace sanitaire importante à laquelle nos sociétés doivent faire face avec vigueur. Sur le site web de l'<a href=\"{{ eeaLink }}\" target=\"_blank\">Agence européenne pour l'environnement</a>, vous trouverez plus d'informations et de données sur ces questions.",
+			"Q_ACTIVITY": "Selon l'<a href=\"{{ whoLink }}\" target=\"_blank\">Organisation mondiale de la santé</a>, la quantité recommandée d'activité physique modérée (comprenant des activités de loisirs comme la danse, le jardinage, la randonnée pédestre, la natation ou de déplacement comme la marche ou le vélo) devrait être d'au moins 150 minutes durant la semaine (à effectuer en périodes d'au moins 10 minutes).",
+			"Q_ACTIVITY_MORE": "Ceci est très utile pour améliorer la forme cardiorespiratoire et musculaire, la santé des os, réduire le risque de maladie et de dépression ! L'utilisation de modes de transport actifs peut vous aider à atteindre ces objectifs et à améliorer notre santé (et en même temps l'environnement)."
+		},
+		"CTA": "Essayez Melinda App!",
+		"CTA_MORE": "Mais <strong>vous pouvez faire encore plus et obtenir des conseils pour agir encore mieux et améliorer à la fois votre mobilité et les déplacements sur votre territoire</strong>. Essayez l'application Melinda ! Cette application pour smartphone a été conçue pour améliorer vos pratiques de mobilité, en vous proposant la meilleure combinaison de moyens de déplacement en fonction de vos objectifs sanitaires, environnementaux, économiques et temporels. En cliquant ici, vous pourrez télécharger l'application Melinda qui vous donnera cette opportunité!",
+		"APP_STORE": "Vous pouvez la trouver sur <strong>GooglePlay Store</strong> et <strong>IOS</strong>"
+	}
 };

@@ -25,5 +25,21 @@ export const data = {
 			"SHOW": "Datenschutzerklärung anzeigen"
 		},
 //		"START": "Start survey"
-    }
+    },
+	"SCORE_VIEWER": {
+//		"THANKS": "Thank you for having filled up the survey!",
+//		"SCORE": "Your level of Environmental awareness and compliance is",
+//		"TEXT": "But since you contributed to this project you already &quot;moved forward&quot;",
+//		"SOLUTIONS": {
+//			"TITLE": "Among the questions you answered to there were some &quot;tricky&quot; ones. Here you find the correct answers to them:",
+//			"Q_COST": "According to the Leaseplan Car Cost Index the average cost for the owning of a private petrol car in 2016 was about 500 euros/month. In the computation several factors affecting car costs are considered, that vary in each country, like fuel, car depreciation, taxes, insurance and maintenance.",
+//			"Q_DEATHS": "According to <a href=\"{{ eurostatLink }}\" target=\"_blank\">Eurostat Statistics</a> and <a href=\"{{ eeaLink }}\" target=\"_blank\">European Environmental Agency</a> data the deaths due to air pollution are about ten times more frequent than road incidents!",
+//			"Q_DEATHS_MORE": "This does not mean of course that road safety is not a relevant issue as well, but that even if not immediately self-evident air pollution in our territories is a relevant health threat that our societies need to face with decisiveness. In the <a href=\"{{ eeaLink }}\" target=\"_blank\">European Environmental Agency</a> website you can find more information and data about these issues (in all EU languages).",
+//			"Q_ACTIVITY": "According to the <a href=\"{{ whoLink }}\" target=\"_blank\">World Health Organization</a> the recommended amount of moderate physical activity (encompassing leisure activities like walking, dancing, gardening, hiking, swimming or transportation ones like walking or cycling) should be minimum 150 minutes throughout the week (to be performed in bouts of at least 10 minutes duration).",
+//			"Q_ACTIVITY_MORE": "This is very useful in order to improve cardiorespiratory and muscular fitness, bone health, reduce the risk of NCDs and depression! Using active transportation modes can help you reaching these goals, improving our health (and at the same time environmental conditions)."
+//		},
+//		"CTA": "Try Melinda App!",
+//		"CTA_MORE": "But <strong>you can do even more and get as well some tips in order to act even better and improve both your mobility and the mobility system in your territory</strong>. Try Melinda app! This smartphone application is thought for enhance your mobility planning, in order to drive you wherever you want, suggesting the best journey and transport means combination according to your health, environmental, economic and timing goals. Clicking here you will be able to download Melinda App that will give you this opportunity!",
+//		"APP_STORE": "You can find it on <strong>GooglePlay Store</strong> and <strong>IOS</strong> as well"
+	}
 };
