@@ -17,6 +17,7 @@ import { LimesurveyClient } from './limesurvey/limesurvey-client';
 import { slovenianSurveyStrings } from './i18n/surveyjs/slovenian';
 import { austrianGermanSurveyStrings } from './i18n/surveyjs/austrian-german';
 import { swissGermanSurveyStrings } from './i18n/surveyjs/swiss-german';
+import { Title } from '@angular/platform-browser';
 
 @Component( {
     selector: 'app-root',
@@ -40,7 +41,7 @@ export class AppComponent implements OnInit {
 	
 	protected limesurveyCredentials = null;
     
-    constructor(protected translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService){
+    constructor(protected translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService, protected titleService: Title){
         translate.setDefaultLang('en');
         
         this.source = this.parseSource();
@@ -96,29 +97,34 @@ export class AppComponent implements OnInit {
     }
     
     ngOnInit() {
+		// Set locale
+		let locale = 'en';
+		switch (this.source){
+			case 'de':
+				locale = 'de';
+				break;
+			case 'at':
+				locale = 'de-at';
+				break;
+			case 'ch':
+				locale = 'de-ch';
+				break;
+			case 'it':
+				locale = 'it';
+				break;
+			case 'fr':
+				locale = 'fr';
+				break;
+			case 'si':
+				locale = 'sl';
+				break;
+		}
+		this.translate.use(locale);
+		
+		// Page title
+		this.translate.get("APP.TITLE").subscribe(t => { this.titleService.setTitle(t); });
+		
         if (this.status != SurveyStatus.ERROR){
-            let locale = 'en';
-			switch (this.source){
-				case 'de':
-					locale = 'de';
-					break;
-				case 'at':
-					locale = 'de-at';
-					break;
-				case 'ch':
-					locale = 'de-ch';
-					break;
-				case 'it':
-					locale = 'it';
-					break;
-				case 'fr':
-					locale = 'fr';
-					break;
-				case 'si':
-					locale = 'sl';
-					break;
-			}
-            
             // Styling
             StylesManager.applyTheme( "bootstrap" );
 			

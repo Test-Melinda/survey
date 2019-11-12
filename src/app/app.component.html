@@ -3,14 +3,14 @@
 		<div class="col text-center">
 			<div class="loader rounded-circle bg-white my-3">
 				<img src="assets/img/loader.gif">
-				<p><em>loading&hellip;</em></p>
+				<p><em>{{ "APP.LOADING" | translate }}&hellip;</em></p>
 			</div>
 		</div>
 	</div>
 </div>
 
 <div class="container" *ngIf="status == SurveyStatus.ERROR">
-	<div class="alert alert-danger">Sorry, an error occurred. Please <a href="https://www.alpine-space.eu/projects/melinda/en/contact">contact us</a>. Thank you.</div>
+	<div class="alert alert-danger" [innerHtml]="'APP.LOAD_ERROR' | translate:{ contactLink: 'https://www.alpine-space.eu/projects/melinda/en/contact' }"></div>
 </div>
 
 <div *ngIf="status == SurveyStatus.READY">
@@ -31,18 +31,18 @@
 	<div class="highlighted-panel p-4">
 		<div class="row">
 			<div class="col">
-				<div *ngIf="surveyError; else success" class="alert alert-danger">Sorry, an error occurred. Please click the button below if you want to retry the survey. Otherwise please <a href="https://www.alpine-space.eu/projects/melinda/en/contact">contact us</a>. Thank you.</div>
+				<div *ngIf="surveyError; else success" class="alert alert-danger" [innerHtml]="'APP.SUBMIT_ERROR' | translate:{ contactLink: 'https://www.alpine-space.eu/projects/melinda/en/contact' }"></div>
 		
 				<ng-template #success>
 					<div *ngIf="!ignoreResponse; else responseIgnored">
 						<app-score-viewer *ngIf="score != null; else noScore" [score]="score"></app-score-viewer>
 						
 						<ng-template #noScore>
-							<h1>Thank you for having taken part to the survey!</h1>
+							<h1>{{ "APP.THANKS_NO_SCORE" | translate }}</h1>
 						</ng-template>
 					</div>
 					<ng-template #responseIgnored>
-						<h1>Thank you for having taken part to the survey!</h1>
+						<h1>{{ "APP.THANKS_RESPONSE_IGNORED" | translate }}</h1>
 					</ng-template>
 				</ng-template>
 			</div>
