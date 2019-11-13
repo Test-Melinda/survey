@@ -1499,6 +1499,10 @@ export const surveyModel = {
      },
      "choices": [
       {
+       "value": "7",
+       "text": "Podravska"
+      },
+      {
        "value": "1",
        "text": "Gorenjska"
       },
@@ -1521,10 +1525,6 @@ export const surveyModel = {
       {
        "value": "6",
        "text": "Osrednjeslovenska"
-      },
-      {
-       "value": "7",
-       "text": "Podravska"
       },
       {
        "value": "8",
@@ -1552,7 +1552,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2SL7",
      "visible": false,
-     "visibleIf": "{QF2SL}} = \"7\"",
+     "visibleIf": "{QF2SL} == \"7\"",
      "title": {
       "default": "Could you precise in which municipality do you live?",
       "sl": "Lahko natančneje navedete občino, v kateri živite?"
@@ -4762,6 +4762,46 @@ export const surveyModel = {
        "text": "Internet"
       }
      ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PSq2",
+     "visibleIf": "{QF1} == 'si'",
+     "title": {
+      "default": "Are you ready to change your mobility habits on the way to contribute to preserve natural environment?",
+      "sl": "Ali bi bili pripravljeni svoje potovalne navade spremeniti na ta način, da bi prispevali k ohranjanju naravnega okolja?"
+     },
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes",
+        "sl": "Da"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Maybe",
+        "sl": "Mogoče"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Yes, If some relevant alternative does exist",
+        "sl": "Če bi bila omogočena ustrezna alternativna možnost"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "No, I have no intent to change mobility habits",
+        "sl": "Nimam namena spreminjati potovalnih navad"
+       }
+      }
+     ]
     }
    ]
   },
@@ -4864,6 +4904,67 @@ export const surveyModel = {
       {
        "value": "2",
        "text": "Nein"
+      }
+     ]
+    },
+    {
+     "type": "matrix",
+     "name": "PSq3",
+     "visibleIf": "{QF1} == 'si' and {QF2SL} == '7'",
+     "title": {
+      "default": "Please assess existing stage of sustainable mobility offer in the city of Maribor. Particular domain assess with grades from 1 (not regulated) to 10 (excellent).",
+      "sl": "Ocenite stanje ponudbe trajnostne mobilnosti v mestu Maribor. Posamezna področja ocenite z ocenami od 1 (ni urejeno) do 5 (dobro urejeno)."
+     },
+     "isRequired": true,
+     "columns": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+     ],
+     "rows": [
+      {
+       "value": "SQ001",
+       "text": {
+        "default": "City public passenger transport (Marprom)",
+        "sl": "Mestni javni potniški promet (npr.: Marprom)"
+       }
+      },
+      {
+       "value": "SQ002",
+       "text": {
+        "default": "Taxi",
+        "sl": "Taksi"
+       }
+      },
+      {
+       "value": "SQ003",
+       "text": {
+        "default": "Car sharing (for example: Avant2go)",
+        "sl": "Souporaba osebnih vozil (Car sharing npr.: Avant2go)"
+       }
+      },
+      {
+       "value": "SQ004",
+       "text": {
+        "default": "Bike sharing, rent-a-bike",
+        "sl": "Souporaba, sposoja koles (Bike sharing)"
+       }
+      },
+      {
+       "value": "SQ005",
+       "text": {
+        "default": "Bike areas",
+        "sl": "Površine za kolesarjenje"
+       }
+      },
+      {
+       "value": "SQ006",
+       "text": {
+        "default": "Pedestrian areas",
+        "sl": "Peščeve površine"
+       }
       }
      ]
     }
