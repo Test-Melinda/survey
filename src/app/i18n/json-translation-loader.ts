@@ -12,7 +12,6 @@ import * as sl from '../../../i18n/sl';
 export class JsonTranslationLoader implements TranslateLoader {
 
 	public getTranslation(lang: string): Observable<any> {
-		console.log(en.data);
 		return Observable.create((observer: Observer<any>) => {
 			if (lang === 'de') {
 				observer.next(de.data);
