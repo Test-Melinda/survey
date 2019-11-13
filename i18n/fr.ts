@@ -26,6 +26,9 @@ export const data = {
 		},
 //		"START": "Start survey"
     },
+	"PRIVACY_POLICY": {
+//		"ACCEPT": "Accept and start survey"
+	},
 	"SCORE_VIEWER": {
 		"THANKS": "Merci d'avoir rempli le questionnaire!",
 		"SCORE": "Votre niveau de sensibilisation à l'environnement et de respect environnemental est de:",

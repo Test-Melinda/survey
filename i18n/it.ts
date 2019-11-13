@@ -26,6 +26,9 @@ export const data = {
 		},
 		"START": "Avvia l'indagine"
     },
+	"PRIVACY_POLICY": {
+		"ACCEPT": "Accetta e avvia l'indagine"
+	},
 	"SCORE_VIEWER": {
 		"THANKS": "Grazie per aver risposto alle nostre domande!",
 //		"SCORE": "Your level of Environmental awareness and compliance is",

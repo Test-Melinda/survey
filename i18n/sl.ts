@@ -26,6 +26,9 @@ export const data = {
 		},
 		"START": "Start survey"
     },
+	"PRIVACY_POLICY": {
+//		"ACCEPT": "Accept and start survey"
+	},
 	"SCORE_VIEWER": {
 		"THANKS": "Hvala, ker ste izpolnili anketo!",
 		"SCORE": "Vaša stopnja okoljske ozaveščenosti in skladnosti je:",

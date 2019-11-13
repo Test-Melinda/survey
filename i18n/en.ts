@@ -26,6 +26,9 @@ export const data = {
 		},
 		"START": "Start survey"
     },
+	"PRIVACY_POLICY": {
+		"ACCEPT": "Accept and start survey"
+	},
 	"SCORE_VIEWER": {
 		"THANKS": "Thank you for having filled up the survey!",
 		"SCORE": "Your level of Environmental awareness and compliance is",
