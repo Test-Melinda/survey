@@ -32,18 +32,18 @@ export const data = {
 	},
 	"SCORE_VIEWER": {
 		"THANKS": "Grazie per aver risposto alle nostre domande!",
-//		"SCORE": "Your level of Environmental awareness and compliance is",
-//		"TEXT": "But since you contributed to this project you already &quot;moved forward&quot;",
-//		"SOLUTIONS": {
-//			"TITLE": "Among the questions you answered to there were some &quot;tricky&quot; ones. Here you find the correct answers to them:",
-//			"Q_COST": "According to the Leaseplan Car Cost Index the average cost for the owning of a private petrol car in 2016 was about 500 euros/month. In the computation several factors affecting car costs are considered, that vary in each country, like fuel, car depreciation, taxes, insurance and maintenance.",
-//			"Q_DEATHS": "According to <a href=\"{{ eurostatLink }}\" target=\"_blank\">Eurostat Statistics</a> and <a href=\"{{ eeaLink }}\" target=\"_blank\">European Environmental Agency</a> data the deaths due to air pollution are about ten times more frequent than road incidents!",
-//			"Q_DEATHS_MORE": "This does not mean of course that road safety is not a relevant issue as well, but that even if not immediately self-evident air pollution in our territories is a relevant health threat that our societies need to face with decisiveness. In the <a href=\"{{ eeaLink }}\" target=\"_blank\">European Environmental Agency</a> website you can find more information and data about these issues (in all EU languages).",
-//			"Q_ACTIVITY": "According to the <a href=\"{{ whoLink }}\" target=\"_blank\">World Health Organization</a> the recommended amount of moderate physical activity (encompassing leisure activities like walking, dancing, gardening, hiking, swimming or transportation ones like walking or cycling) should be minimum 150 minutes throughout the week (to be performed in bouts of at least 10 minutes duration).",
-//			"Q_ACTIVITY_MORE": "This is very useful in order to improve cardiorespiratory and muscular fitness, bone health, reduce the risk of NCDs and depression! Using active transportation modes can help you reaching these goals, improving our health (and at the same time environmental conditions)."
-//		},
-//		"CTA": "Try Melinda App!",
-//		"CTA_MORE": "But <strong>you can do even more and get as well some tips in order to act even better and improve both your mobility and the mobility system in your territory</strong>. Try Melinda app! This smartphone application is thought for enhance your mobility planning, in order to drive you wherever you want, suggesting the best journey and transport means combination according to your health, environmental, economic and timing goals. Clicking here you will be able to download Melinda App that will give you this opportunity!",
-//		"APP_STORE": "You can find it on <strong>GooglePlay Store</strong> and <strong>IOS</strong> as well"
+		"SCORE": "Il tuo livello di consapevolezza ambientale è:",
+		"TEXT": "Ma dal momento che hai dato un contributo a questo progetto hai già cominciato a fare un altro passo avanti!",
+		"SOLUTIONS": {
+			"TITLE": "Tra le domande che abbiamo posto ve ne erano alcune &quot;spinose&quot;. Qui puoi trovare le risposte corrette:",
+			"Q_COST": "In base a quanto riportato dall'Indice di costo dell'auto elaborato da Leaseplan il costo mensile medio per il possesso e mantenimento di un'auto privata, a benzina, nel 2016 in Italia è stato di 600 euro al mese. Nel calcolo sono considerati diversi fattori di costo, che variano da paese a paese, come il carburante, il deprezzamento dell'auto, le tasse, l'assicurazione e il mantenimento.",
+			"Q_DEATHS": "Facendo riferimento alle <a href=\"{{ eurostatLink }}\" target=\"_blank\">statistiche Eurostat</a> e ai dati dell'<a href=\"{{ eeaLink }}\" target=\"_blank\">Agenzia Europea per l'Ambiente</a> i decessi dovuti allinquinamento dellaria sono circa 10 volte più frequenti di quelli causati dagli incidenti stradali!",
+			"Q_DEATHS_MORE": "Questo non significa naturalmente che la sicurezza stradale non sia un aspetto anchesso rilevante, ma piuttosto che, pur se non autoevidente, linquinamento dellaria nei nostril territori è una grave minaccia alla nostra salute che la società deve affrontare in maniera decisa. Nel sito web dell<a href=\"{{ eeaLink }}\" target=\"_blank\">Agenzia Europea per l'Ambiente</a> puoi trovare ulteriori informazioni e dati su questi temi (in tutte le lingue ufficiali dellUnione).",
+			"Q_ACTIVITY": "In base a quanto divulgato dall<a href=\"{{ whoLink }}\" target=\"_blank\">Organizzazione Mondiale della Sanità</a> la quantità di attività fisica moderata raccomandata (e comprendente anche attività del tempo libero come camminare, ballare, fare giardinaggio, passeggiare, nuotare o andare in bicicletta) dovrebbe raggiungere almeno i 150 minuti alla settimana (da praticarsi in sessioni da almeno 10 minuti continuativi).",
+			"Q_ACTIVITY_MORE": "Questo è molto utile in maniera da migliorare la forma cardio-vascolare e muscolare, la salute delle ossa e ridurre il rischio di diverse malattie tra cui la depressione! Tramite pratiche di mobilità attiva puoi mirare a rispettare gli obiettivi dellOMS, migliorando la tua salute (e allo stesso tempo la slaute dellambiente circostante)."
+		},
+		"CTA": "Prova lApp di Melinda!",
+		"CTA_MORE": "Ma puoi fare ancora di più e ricevere anche alcuni suggerimenti utili a migliorare la tua mobilità quotidiana e quella del tuo territorio. Prova lapp di Melinda! Questa applicazione per smartphone è stata pensata per aiutarti a pianificare al meglio la tua mobilità in maniera da condurti ovunque voglia suggerendoti il percorso migliore e la combinazione più adatta per migliorare la tua salute, lambiente e il risparmio in termini economici e di tempo. Cliccando qui potrai scaricare lapp di Melinda e cogliere questa opportunità!",
+		"APP_STORE": "Puoi trovarla sia su <strong>GooglePlay Store</strong> che <strong>IOS</strong>"
 	}
 };
