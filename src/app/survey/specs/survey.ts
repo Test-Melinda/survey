@@ -5350,7 +5350,7 @@ export const surveyModel = {
    "elements": [
     {
      "type": "radiogroup",
-     "name": "question2",
+     "name": "PS4dot12",
      "visibleIf": "{PS4dot8} == \"1\"",
      "title": "Was waren Ihre Gründe für Ihre Nutzung des Angebots als Mitfahrer/in?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
