@@ -1036,7 +1036,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2GB2EB",
      "visible": false,
-     "visibleIf": "{QF2GB2}} = \"19\"",
+     "visibleIf": "{QF2GB2} = \"19\"",
      "title": {
       "default": "In Landkreis Ebersberg, in which municipality do you live?",
       "de": "In welcher Kommune des Landkreises Ebersberg wohnen Sie?"
