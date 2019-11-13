@@ -252,6 +252,11 @@ export class AppComponent implements OnInit {
 			console.warn("Ignoring response: user located out of pilot area [selectedArea, pilot]", responseData[this.pilotSelectionQuestion], this.source);
 		}
     }
+
+	public retry(){
+		// Reload to retry
+		window.location.reload();
+	}
     
     public onPrivacyAcceptance(accepted: boolean){
         console.log('Privacy accepted', accepted);
