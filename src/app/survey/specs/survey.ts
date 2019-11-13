@@ -5042,6 +5042,67 @@ export const surveyModel = {
    ]
   },
   {
+   "name": "_si_PS4",
+   "elements": [
+    {
+     "type": "checkbox",
+     "name": "PSq4",
+     "visibleIf": "{QF1} == 'si' and {QF2SL} == '7'",
+     "title": {
+      "default": "Would you be willing to use public bus for your daily commute (especially to/from work) using integrated ticket once available in Maribor?",
+      "sl": "Ali bi bili v primeru uvedbe enotne vozovnice v sistem mestnega javnega prevoza v Mariboru pripravljeni za svoje vsakodnevne poti (predvsem na/iz dela) uporabljati avtobus?"
+     },
+     "description": {
+      "default": "(maximum 3 answers possible)",
+      "sl": "(Možni so največ trije odgovori.)"
+     },
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes without conditions",
+        "sl": "Prezpogojno da"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Yes, if the frequency would be higher and time tables harmonised",
+        "sl": "Da, v kolikor bi bili usklajeni vozni redi in večja frekvenca mestnega prometa"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Yes, if bus will be cheaper",
+        "sl": "Da, če bi bilo ceneje"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Public transport is irrelevant because of my residential address.",
+        "sl": "Javni prevoz zaradi mesta bivanja ne pride v poštev"
+       }
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Certainly not, it is not interesting for me",
+        "sl": "Nikakor ne, me ne zanima"
+       }
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{QF1} == 'si'",
+   "description": {
+    "default": "Integrated ticket can be used for all public transport modalities (trains, regional and city buses). It enables passengers the use of only one ticket for urban buses as well as for trains and regional buses.",
+    "sl": "Enotna vozovnica velja za prevoz z vsemi oblikami javnega prevoza (z vlakom, medkrajevnim avtobusom ter mestnim prometom). Pomembna prednost je, da lahko na območju mestnega pometa potnik z enotno vozovnico poleg vozil mestnega prevoznika uporablja tudi vlake in avtobuse v medkrajevnem prometu, kadar ustavljajo na tem območju."
+   }
+  },
+  {
    "name": "PS5",
    "elements": [
     {
@@ -5100,6 +5161,39 @@ export const surveyModel = {
       {
        "value": "5",
        "text": "Ökologische Gründe"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PSq5",
+     "visibleIf": "{QF1} == 'si' and {QF2SL} == '7'",
+     "title": {
+      "default": "Would you be willing to monitor/reconsider/alter your travel behaviour by using a mobile app showing you all available transport options in the city of Maribor?",
+      "sl": "Ali bi kot pripomoček pri spreminjanju potovalnih navad bili pripravljeni uporabljati mobilno aplikacijo, ki bi vam pri tem pomagala tako, da bi vas opozarjala na vse možne oblike mobilnosti v mestu Maribor?"
+     },
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Yes",
+        "sl": "Da"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Maybe",
+        "sl": "Mogoče"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "No",
+        "sl": "Ne"
+       }
       }
      ]
     }
