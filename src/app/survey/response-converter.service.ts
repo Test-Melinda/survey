@@ -28,6 +28,12 @@ export class ResponseConverterService {
                     mapped.setResponse(limesurveyQuestionId, "Y");
                 }
             }
+			else if (typeof(answer) === 'object'){
+				for (let aCode in answer){
+					limesurveyQuestionId.answerId = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
+					mapped.setResponse(limesurveyQuestionId, answer[aCode]);
+				}
+			}
             else {
                 mapped.setResponse(limesurveyQuestionId, this.requireLimesurveyAnswerMapping(mapping, rCode, answer, true));
             }
