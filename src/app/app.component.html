@@ -1,70 +1,117 @@
-<div class="container mt-5" *ngIf="status == SurveyStatus.LOADING">
-	<div class="row mt-5">
-		<div class="col text-center">
-			<div class="loader rounded-circle bg-white my-3">
-				<img src="assets/img/loader.gif">
-				<p><em>{{ "APP.LOADING" | translate }}&hellip;</em></p>
+<header>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+			<a class="navbar-brand" href="https://www.alpine-space.eu/projects/melinda" target="_blank"><img src="assets/img/logo-melinda.png" height="24"></a>
+			
+			<a class="navbar-brand ml-auto d-none d-lg-inline" href="https://www.alpine-space.eu/projects/melinda" target="_blank"><strong>M</strong>obility <strong>E</strong>cosystem
+	for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al
+	shift in the <strong>A</strong>lps</a>
+		</nav>
+	</header>
+
+	<!-- Begin page content -->
+	<main role="main" class="flex-shrink-0 my-4">
+
+		<div class="container mt-5" *ngIf="status == SurveyStatus.LOADING">
+			<div class="row mt-5">
+				<div class="col text-center">
+					<div class="loader rounded-circle bg-white my-3">
+						<img src="assets/img/loader.gif">
+						<p><em>{{ "APP.LOADING" | translate }}&hellip;</em></p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
-
-<div class="container" *ngIf="status == SurveyStatus.ERROR">
-	<div class="alert alert-danger" [innerHtml]="'APP.LOAD_ERROR' | translate:{ contactLink: 'https://www.alpine-space.eu/projects/melinda/en/contact' }"></div>
-</div>
-
-<div *ngIf="status == SurveyStatus.READY">
-	<app-survey-intro (privacyAcceptance)="onPrivacyAcceptance($event)"></app-survey-intro>
-</div>
-
-<div class="container" [hidden]="status != SurveyStatus.DOING">
-	<div class="highlighted-panel">
-		<div class="row">
-			<div class="col">
-				<div id="surveyElement"></div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="container" *ngIf="status == SurveyStatus.DONE" id="result">
-	<div class="highlighted-panel p-4">
-		<div class="row">
-			<div class="col">
-				<div *ngIf="surveyError; else success" class="alert alert-danger" [innerHtml]="'APP.SUBMIT_ERROR' | translate:{ contactLink: 'https://www.alpine-space.eu/projects/melinda/en/contact' }"></div>
 		
-				<ng-template #success>
-					<div *ngIf="!ignoreResponse; else responseIgnored">
-						<app-score-viewer *ngIf="score != null; else noScore" [score]="score"></app-score-viewer>
-						
-						<ng-template #noScore>
-							<h1>{{ "APP.THANKS_NO_SCORE" | translate }}</h1>
+		<div class="container" *ngIf="status == SurveyStatus.ERROR">
+			<div class="alert alert-danger" [innerHtml]="'APP.LOAD_ERROR' | translate:{ contactLink: 'https://www.alpine-space.eu/projects/melinda/en/contact' }"></div>
+		</div>
+		
+		<div *ngIf="status == SurveyStatus.READY">
+			<app-survey-intro (privacyAcceptance)="onPrivacyAcceptance($event)"></app-survey-intro>
+		</div>
+		
+		<div class="container" [hidden]="status != SurveyStatus.DOING">
+			<div class="highlighted-panel">
+				<div class="row">
+					<div class="col">
+						<div id="surveyElement"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container" *ngIf="status == SurveyStatus.DONE" id="result">
+			<div class="highlighted-panel p-4">
+				<div class="row">
+					<div class="col">
+						<div *ngIf="surveyError; else success" class="alert alert-danger" [innerHtml]="'APP.SUBMIT_ERROR' | translate:{ contactLink: 'https://www.alpine-space.eu/projects/melinda/en/contact' }"></div>
+				
+						<ng-template #success>
+							<div *ngIf="!ignoreResponse; else responseIgnored">
+								<app-score-viewer *ngIf="score != null; else noScore" [score]="score"></app-score-viewer>
+								
+								<ng-template #noScore>
+									<h1>{{ "APP.THANKS_NO_SCORE" | translate }}</h1>
+								</ng-template>
+							</div>
+							<ng-template #responseIgnored>
+								<h1>{{ "APP.THANKS_RESPONSE_IGNORED" | translate }}</h1>
+							</ng-template>
 						</ng-template>
 					</div>
-					<ng-template #responseIgnored>
-						<h1>{{ "APP.THANKS_RESPONSE_IGNORED" | translate }}</h1>
-					</ng-template>
-				</ng-template>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
-
-<div class="dev-tools" *ngIf="isDevMode()" class="mt-5">
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				Automatic mapping bulder: 
-				<select [(ngModel)]="devAutoMapRegion">
-					<option value="it">Italian pilot</option>
-					<option value="de">German pilot</option>
-					<option value="fr">French pilot</option>
-					<option value="ch">Swiss pilot</option>
-					<option value="at">Austrian pilot</option>
-					<option value="si">Slovenian pilot</option>
-				</select>
-				<button class="btn btn-secondary btn-sm" (click)="autoMap()">Automap!</button>
+		
+		<div class="dev-tools" *ngIf="isDevMode()" class="mt-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						Automatic mapping bulder: 
+						<select [(ngModel)]="devAutoMapRegion">
+							<option value="it">Italian pilot</option>
+							<option value="de">German pilot</option>
+							<option value="fr">French pilot</option>
+							<option value="ch">Swiss pilot</option>
+							<option value="at">Austrian pilot</option>
+							<option value="si">Slovenian pilot</option>
+						</select>
+						<button class="btn btn-secondary btn-sm" (click)="autoMap()">Automap!</button>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</div>
+	
+	</main>
+	
+	<footer class="footer mt-auto">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 text-center text-md-left" [ngSwitch]="source">
+					<ng-container *ngSwitchCase="'it'">
+						<a href="https://www.noncello.utifvg.it" title="UTI del Noncello" target="_blank"><img src="assets/img/logo_uti.png" alt="UTI del Noncello" height="70" class="mx-2 my-4"></a>
+					</ng-container>
+					<ng-container *ngSwitchCase="'fr'">
+						<a href="http://www.auvergnerhonealpes-ee.fr" title="Agence r&eacute;gionale de l'&acute;nergie et de l'environnement en Auvergne-Rhône-Alpes" target="_blank"><img src="assets/img/logo_aura-ee.png" alt="Agence r&eacute;gionale de l'&acute;nergie et de l'environnement en Auvergne-Rhône-Alpes" height="70" class="mx-2 my-4"></a>
+					</ng-container>
+					<ng-container *ngSwitchCase="'de'">
+						<a href="https://www.energieagentur-ebe-m.de" title="Energie-Agentur Ebersberg" target="_blank"><img src="assets/img/logo_ea-ebe.png" alt="Energie-Agentur Ebersberg" height="70" class="mx-2 my-4"></a>
+					</ng-container>
+					<ng-container *ngSwitchCase="'ch'">
+						<a href="https://www.hslu.ch/en/" title="Lucerne University of Applied Sciences and Arts" target="_blank"><img src="assets/img/logo_hslu.png" alt="Lucerne University of Applied Sciences and Arts" height="70" class="mx-2 my-4"></a>
+					</ng-container>
+					<ng-container *ngSwitchCase="'at'">
+						<a href="https://www.fhv.at" title="Vorarlberg University of Applied Sciences" target="_blank"><img src="assets/img/logo_fhv.png" alt="Vorarlberg University of Applied Sciences" height="70" class="mx-2 my-4"></a>
+					</ng-container>
+					<ng-container *ngSwitchCase="'si'">
+						<a href="http://www.maribor.si" title="Municipality of Maribor" target="_blank"><img src="assets/img/logo_maribor.png" alt="Municipality of Maribor" height="70" class="mx-2 my-4"></a>
+					</ng-container>
+				</div>
+				<div class="col-sm-12 col-md-6 text-center text-md-right">
+					<a href="https://www.unimib.it" title="Unimib Website" target="_blank"><img src="assets/img/logo_unimib.png" alt="Unimib logo" height="70" class="mx-2 my-4"></a>
+					<a href="https://www.alpine-space.eu/projects/melinda" title="Melinda Project Website" target="_blank"><img src="assets/img/melinda-project-logo.jpg" alt="Melinda project logo" height="70" class="mx-2"></a>
+				</div>
+			</div>
+		</div>
+	</footer>

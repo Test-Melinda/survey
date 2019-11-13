@@ -26,7 +26,7 @@ import { Title } from '@angular/platform-browser';
 } )
 export class AppComponent implements OnInit {
     
-    protected source = null;
+    public source = null;
     protected channel = null;
     
     public SurveyStatus = SurveyStatus;
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
 	
 	protected limesurveyCredentials = null;
     
-    constructor(protected translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService, protected titleService: Title){
+    constructor(public translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService, protected titleService: Title){
         translate.setDefaultLang('en');
         
         this.source = this.parseSource();
