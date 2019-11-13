@@ -53,7 +53,35 @@ export class AppComponent implements OnInit {
         
         this.channel = this.parseChannel();
         console.log("Channel detected", this.channel);
-
+		
+		// Set locale
+		let locale = 'en';
+		switch (this.source){
+			case 'de':
+				locale = 'de';
+				break;
+			case 'at':
+				locale = 'de-at';
+				break;
+			case 'ch':
+				locale = 'de-ch';
+				break;
+			case 'it':
+				locale = 'it';
+				break;
+			case 'fr':
+				locale = 'fr';
+				break;
+			case 'si':
+				locale = 'sl';
+				break;
+		}
+		this.translate.use(locale);
+		
+		// Page title
+		this.translate.get("APP.TITLE").subscribe(t => { this.titleService.setTitle(t); });
+		
+		// LimeSurvey credentials
 		let limesurveyCredentials = new LimesurveyClientCredentials();
 	    limesurveyCredentials.url = environment.limesurvey.api.url;
 	    limesurveyCredentials.username = environment.limesurvey.api.username;
@@ -97,39 +125,12 @@ export class AppComponent implements OnInit {
     }
     
     ngOnInit() {
-		// Set locale
-		let locale = 'en';
-		switch (this.source){
-			case 'de':
-				locale = 'de';
-				break;
-			case 'at':
-				locale = 'de-at';
-				break;
-			case 'ch':
-				locale = 'de-ch';
-				break;
-			case 'it':
-				locale = 'it';
-				break;
-			case 'fr':
-				locale = 'fr';
-				break;
-			case 'si':
-				locale = 'sl';
-				break;
-		}
-		this.translate.use(locale);
-		
-		// Page title
-		this.translate.get("APP.TITLE").subscribe(t => { this.titleService.setTitle(t); });
-		
         if (this.status != SurveyStatus.ERROR){
             // Styling
             StylesManager.applyTheme( "bootstrap" );
 			
-            var survey = new Model(this.surveySpecification.getLocalizedModel(locale));
-			survey.locale = locale;
+            var survey = new Model(this.surveySpecification.getLocalizedModel(this.translate.currentLang));
+			survey.locale = this.translate.currentLang;
             survey.onComplete.add((response) => {
                 this.processResponse(response);
             });
