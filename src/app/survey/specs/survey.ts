@@ -6149,6 +6149,45 @@ export const surveyModel = {
    ]
   },
   {
+   "name": "_si_PS1",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "PSq1",
+     "visibleIf": "{QF1} == 'si' and {Q14} == '1'",
+     "title": {
+      "default": "Location of your working place:",
+      "sl": "Lokacija vašega delovnega mesta:"
+     },
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Maribor - left side",
+        "sl": "Maribor - levi breg"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Maribor - right side",
+        "sl": "Maribor - desni breg"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Other locations",
+        "sl": "Drugje"
+       }
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{QF1} == 'si'"
+  },
+  {
    "name": "mail",
    "elements": [
     {
