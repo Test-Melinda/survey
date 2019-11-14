@@ -23,7 +23,7 @@ export const data = {
 		},
 		"PRIVACY": {
 			"ACCEPT": "Veuillez marquer la case de confidentialité pour continuer",
-			"SHOW": "Afficher la politique"
+			"SHOW": "Afficher la politique de confidentialité"
 		},
 //		"START": "Start survey"
     },

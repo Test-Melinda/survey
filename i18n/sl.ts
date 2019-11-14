@@ -23,7 +23,7 @@ export const data = {
 		},
 		"PRIVACY": {
 			"ACCEPT": "Označite KOTE ZA ZASEBNOST za nadaljevanje",
-//			"SHOW": "Show privacy policy"
+			"SHOW": "Pokaži obvestilo"
 		},
 		"START": "Start survey"
     },
