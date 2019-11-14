@@ -33,6 +33,14 @@ export const data = {
 	"SCORE_VIEWER": {
 		"THANKS": "Thank you for having filled up the survey!",
 		"SCORE": "Your level of Environmental awareness and compliance is",
+		"LEVEL": {
+			"EXCELLENT": "Excellent",
+			"VERY_GOOD": "Very good",
+			"GOOD": "Good",
+			"AVERAGE": "Average",
+			"LOW": "You could improve your score",
+			"VERY_LOW": "It is time to start"
+		},
 		"TEXT": "But since you contributed to this project you already &quot;moved forward&quot;",
 		"SOLUTIONS": {
 			"TITLE": "Among the questions you answered to there were some &quot;tricky&quot; ones. Here you find the correct answers to them:",
