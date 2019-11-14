@@ -8,7 +8,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class SurveyIntroComponent implements OnInit {
     
     public privacyAccepted: boolean = false;
-	public contactEmail = "s.caiello@campus.unimib.it";
+	public contactEmail = "simone.caiello@unimib.it";
 	
 	public policyShown = false;
 
