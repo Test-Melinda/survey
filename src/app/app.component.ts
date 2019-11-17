@@ -133,6 +133,7 @@ export class AppComponent implements OnInit {
 			survey.locale = this.translate.currentLang;
 			survey.requiredText = "";
 			survey.showQuestionNumbers = "off";
+			survey.showPageNumbers = false;
             survey.onComplete.add((response) => {
                 this.processResponse(response);
             });
@@ -146,6 +147,11 @@ export class AppComponent implements OnInit {
                     bar.parentElement.style.paddingRight = "1.5rem";
                     
                     (<HTMLElement>(bar.firstElementChild)).style.margin = "0";
+					
+					// Get the bar level
+					let level = bar.getElementsByClassName('progress-bar').item(0);
+					// Hide the page number
+					level.getElementsByTagName('span').item(0).style.display = 'none';
                 }
             });
             survey.onCurrentPageChanged.add((e) => {
