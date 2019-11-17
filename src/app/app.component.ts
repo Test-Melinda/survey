@@ -157,14 +157,25 @@ export class AppComponent implements OnInit {
                 }
             });
 			
-			// Make titles bolder a fix line-height of options labels
+			// Fix questions style
 			survey.onAfterRenderQuestion.add((survey, question) => {
+				// Make titles bolder
 				let titles = question.htmlElement.getElementsByClassName('text-bold');
 				for (let i = 0; i < titles.length; i++){
 					let h5 = <HTMLElement>(titles.item(i));
 					h5.style.fontWeight = "700";
 				}
 				
+				// Fix descriptions
+				let descriptions = question.htmlElement.getElementsByClassName('q-description');
+				if (descriptions.length > 0){
+					let description = descriptions.item(0);
+					description.style.marginTop = "-1em";
+					description.style.marginBottom = "1em";
+					description.style.fontSize = "90%";
+				}
+				
+				// Fix line-height of options labels
 				let labels = question.htmlElement.getElementsByTagName('label');
 				for (let i = 0; i < labels.length; i++){
 					let label = <HTMLElement>(labels.item(i));
@@ -215,7 +226,8 @@ export class AppComponent implements OnInit {
                     },
                     question: {
                         mainRoot: "sv_qstn px-4",
-                        title: "mb-4 mt-2 text-bold"
+                        title: "mb-4 mt-2 text-bold",
+						description: "q-description"
                     },
                     progress: "progress center-block mx-auto mb-4 survey-progress"
                 },
