@@ -259,6 +259,9 @@ export class AppComponent implements OnInit {
 	        this.score = this.scoreCalculator.calculate(responseData);
 			this.scoreValid = this.scoreCalculator.areScoreResponsesComplete(responseData);
 	        console.log("Score (valid?)", this.score, this.scoreValid);
+			
+			// Ignore added variables
+			delete responseData.source;
 	        
 	        // Convert to Limesurvey response
 	        let surveyRegion = this.source;
