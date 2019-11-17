@@ -157,12 +157,18 @@ export class AppComponent implements OnInit {
                 }
             });
 			
-			// Make titles bolder
-			survey.onAfterRenderQuestion.add((e) => {
-				let titles = document.getElementsByClassName('text-bold');
+			// Make titles bolder a fix line-height of options labels
+			survey.onAfterRenderQuestion.add((survey, question) => {
+				let titles = question.htmlElement.getElementsByClassName('text-bold');
 				for (let i = 0; i < titles.length; i++){
 					let h5 = <HTMLElement>(titles.item(i));
 					h5.style.fontWeight = "700";
+				}
+				
+				let labels = question.htmlElement.getElementsByTagName('label');
+				for (let i = 0; i < labels.length; i++){
+					let label = <HTMLElement>(labels.item(i));
+					label.style.lineHeight = "1.5";
 				}
 			});
 			
