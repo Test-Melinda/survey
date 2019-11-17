@@ -164,6 +164,7 @@ export class AppComponent implements OnInit {
 				for (let i = 0; i < titles.length; i++){
 					let h5 = <HTMLElement>(titles.item(i));
 					h5.style.fontWeight = "700";
+					h5.style.fontSize = "1.1rem";
 				}
 				
 				// Fix descriptions
