@@ -137,6 +137,9 @@ export class AppComponent implements OnInit {
 			survey.showPageNumbers = false;
             survey.onComplete.add((response) => {
                 this.processResponse(response);
+				
+				// Scroll to top
+                window.scrollTo(0, 0);
             });
 			
 			// Add margins to the progress bar
