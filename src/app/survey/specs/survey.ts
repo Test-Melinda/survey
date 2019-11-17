@@ -16,7 +16,7 @@ export const surveyModel = {
       "sl": "Izberite državo stalnega prebivališča",
       "it": "Seleziona il tuo paese di residenza"
      },
-     "enableIf": "{QF1} != 'si'",
+     "enableIf": "{source} != 'si'",
      "isRequired": true,
      "choices": [
       {
@@ -1874,7 +1874,7 @@ export const surveyModel = {
      "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
      "title": {
       "default": "In one or more of these municipalities: Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons do you usually carry out any of the following activities? (multiple answers are possible)",
-      "it": "In uno o più di questi comuni: Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons svolgi solitamente una o più delle seguenti attività?\n(sono possibili più risposte)"
+      "it": "In uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons svolgi solitamente una o più delle seguenti attività?\n(sono possibili più risposte)"
      },
      "choices": [
       {
