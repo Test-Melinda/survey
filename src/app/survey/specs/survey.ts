@@ -3114,7 +3114,7 @@ export const surveyModel = {
      "name": "Q4",
      "title": {
       "default": "Which of the following travel services have you ever heard of?",
-      "it": "Di quali dei seguenti servizi di mobilità hai sentito anche solo parlare?",
+      "it": "Di quali dei seguenti servizi di mobilità hai sentito parlare?",
       "de": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
       "de-ch": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
       "de-at": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
@@ -3131,7 +3131,8 @@ export const surveyModel = {
         "de": "Car-sharing",
         "de-at": "Car-sharing",
         "de-ch": "Car-sharing"
-       }
+       },
+       "enableIf": "{Q4} anyof \"1\" or !({Q4} anyof \"7\")"
       },
       {
        "value": "2",
@@ -3142,7 +3143,8 @@ export const surveyModel = {
         "de-ch": "Car-pooling",
         "sl": "Souporaba avtomobila (car pooling)",
         "fr": "Covoiturage"
-       }
+       },
+       "enableIf": "{Q4} anyof \"2\" or !({Q4} anyof \"7\")"
       },
       {
        "value": "3",
@@ -3153,7 +3155,8 @@ export const surveyModel = {
         "de-ch": "Bike-sharing",
         "sl": "Skupna uporaba kolesa (bike sharing)",
         "fr": "Vélopartage"
-       }
+       },
+       "enableIf": "{Q4} anyof \"3\" or !({Q4} anyof \"7\")"
       },
       {
        "value": "4",
@@ -3165,7 +3168,8 @@ export const surveyModel = {
         "it": "Servizi di trasporto a chiamata (non taxi)",
         "sl": "Sopotništvo (ride hailing)",
         "fr": "VTC"
-       }
+       },
+       "enableIf": "{Q4} anyof \"4\" or !({Q4} anyof \"7\")"
       },
       {
        "value": "8",
@@ -3175,7 +3179,8 @@ export const surveyModel = {
         "de-at": "Bedarfsbusse",
         "de-ch": "Bedarfsbusse"
        },
-       "visibleIf": "{QF1} == \"ch\""
+       "visibleIf": "{QF1} == \"ch\"",
+       "enableIf": "{Q4} anyof \"8\" or !({Q4} anyof \"7\")"
       },
       {
        "value": "5",
@@ -3186,7 +3191,8 @@ export const surveyModel = {
         "de-ch": "Roller-sharing",
         "sl": "Skupna uporaba skuterja (scooter sharing)",
         "fr": "Motopartage"
-       }
+       },
+       "enableIf": "{Q4} anyof \"5\" or !({Q4} anyof \"7\")"
       },
       {
        "value": "6",
@@ -3198,7 +3204,8 @@ export const surveyModel = {
         "it": "Panchine-autostop",
         "sl": "Klopi za štopanje",
         "fr": "Autostop organisé"
-       }
+       },
+       "enableIf": "{Q4} anyof \"6\" or !({Q4} anyof \"7\")"
       },
       {
        "value": "7",
@@ -3210,7 +3217,8 @@ export const surveyModel = {
         "it": "Nessuno di questi",
         "sl": "Nobenega izmed navedenih",
         "fr": "Aucune"
-       }
+       },
+       "enableIf": "{Q4} anyof \"7\" or {Q4.length} == 0"
       }
      ]
     },
@@ -3236,7 +3244,8 @@ export const surveyModel = {
         "de-ch": "Car-sharing",
         "sl": "Skupna uporaba avtomobila (car sharing)",
         "fr": "Autopartage"
-       }
+       },
+       "enableIf": "{Q5} anyof \"1\" or !({Q5} anyof \"7\")"
       },
       {
        "value": "2",
@@ -3247,7 +3256,8 @@ export const surveyModel = {
         "de-ch": "Car-pooling",
         "sl": "Souporaba avtomobila (car pooling)",
         "fr": "Covoiturage"
-       }
+       },
+       "enableIf": "{Q5} anyof \"2\" or !({Q5} anyof \"7\")"
       },
       {
        "value": "3",
@@ -3258,7 +3268,8 @@ export const surveyModel = {
         "de-ch": "Bike-sharing",
         "sl": "Skupna uporaba kolesa (bike sharing)",
         "fr": "Vélopartage"
-       }
+       },
+       "enableIf": "{Q5} anyof \"3\" or !({Q5} anyof \"7\")"
       },
       {
        "value": "4",
@@ -3270,7 +3281,8 @@ export const surveyModel = {
         "de-ch": "Ruftaxi (z.B. Uber, sonstiger Fahrdienstleister)",
         "sl": "Sopotništvo (ride hailing)",
         "fr": "VTC"
-       }
+       },
+       "enableIf": "{Q5} anyof \"4\" or !({Q5} anyof \"7\")"
       },
       {
        "value": "8",
@@ -3280,7 +3292,8 @@ export const surveyModel = {
         "de-at": "Bedarfsbusse",
         "de-ch": "Bedarfsbusse"
        },
-       "visibleIf": "{QF1} == \"ch\""
+       "visibleIf": "{QF1} == \"ch\"",
+       "enableIf": "{Q5} anyof \"8\" or !({Q5} anyof \"7\")"
       },
       {
        "value": "5",
@@ -3291,7 +3304,8 @@ export const surveyModel = {
         "de-ch": "Roller-sharing",
         "sl": "Skupna uporaba skuterja (scooter sharing)",
         "fr": "Motopartage"
-       }
+       },
+       "enableIf": "{Q5} anyof \"5\" or !({Q5} anyof \"7\")"
       },
       {
        "value": "6",
@@ -3303,7 +3317,8 @@ export const surveyModel = {
         "de-ch": "Mitfahrbänke",
         "sl": "Klopi za štopanje",
         "fr": "Autostop organisé"
-       }
+       },
+       "enableIf": "{Q5} anyof \"6\" or !({Q5} anyof \"7\")"
       },
       {
        "value": "7",
@@ -3315,7 +3330,8 @@ export const surveyModel = {
         "de-ch": "Keine der genannten",
         "sl": "Nobenega izmed navedenih",
         "fr": "Aucune"
-       }
+       },
+       "enableIf": "{Q5} anyof \"7\" or {Q5.length} == 0"
       }
      ]
     }
