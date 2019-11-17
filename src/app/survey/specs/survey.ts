@@ -3487,7 +3487,12 @@ export const surveyModel = {
        "enableIf": "{Q6} anyof \"9\" or {Q6.length} == 0"
       }
      ]
-    },
+    }
+   ]
+  },
+  {
+   "name": "Q6_bis",
+   "elements": [
     {
      "type": "radiogroup",
      "name": "Q6CARS",
@@ -3649,7 +3654,7 @@ export const surveyModel = {
      },
      "description": {
       "default": "To have access to means that you can easily use it even if you don't own it.",
-      "it": "per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso.",
+      "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso.",
       "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
