@@ -16,6 +16,7 @@ export const surveyModel = {
       "sl": "Izberite državo stalnega prebivališča",
       "it": "Seleziona il tuo paese di residenza"
      },
+     "enableIf": "{QF1} != 'si'",
      "isRequired": true,
      "choices": [
       {
@@ -1492,7 +1493,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2SL",
      "visible": false,
-     "visibleIf": "{QF1} = \"si\"",
+     "visibleIf": "{QF1} == \"si\"",
      "title": {
       "default": "Could you precise in which region do you live?",
       "sl": "Navedite prosim regijo, v kateri živite."

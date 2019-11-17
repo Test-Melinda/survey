@@ -151,7 +151,7 @@ export class AppComponent implements OnInit {
                 window.scrollTo(0, 0);
             });
             survey.showProgressBar = "top";
-			survey.setVariable("source", this.source);
+			survey.setValue("source", this.source);
 			
 			// Hide questions which are normally shown when the user is located out of the pilot area
 			let hiddenQuestions: IQuestion[] = [];
@@ -191,11 +191,17 @@ export class AppComponent implements OnInit {
                     progress: "progress center-block mx-auto mb-4 survey-progress"
                 },
             });
-            
+			
+			// Preselect the country in case of slovenian pilot and hide country selection
+			if (this.source == 'si'){
+				survey.setValue("QF1", this.source);
+				survey.getQuestionByName("QF1").visible = false;
+            }
+			
             this.status = SurveyStatus.READY;
         }
     }
-
+	
     private processResponse(response: any) {
         this.status = SurveyStatus.DONE;
 
