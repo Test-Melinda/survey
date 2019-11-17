@@ -137,6 +137,8 @@ export class AppComponent implements OnInit {
             survey.onComplete.add((response) => {
                 this.processResponse(response);
             });
+			
+			// Add margins to the progress bar
             survey.onRendered.add((e) => {
                 // Progress bar style
                 let progressBars = document.getElementsByClassName('survey-progress');
@@ -154,6 +156,17 @@ export class AppComponent implements OnInit {
 					level.getElementsByTagName('span').item(0).style.display = 'none';
                 }
             });
+			
+			// Make titles bolder
+			survey.onAfterRenderQuestion.add((e) => {
+				let titles = document.getElementsByClassName('text-bold');
+				for (let i = 0; i < titles.length; i++){
+					let h5 = <HTMLElement>(titles.item(i));
+					h5.style.fontWeight = "700";
+				}
+			});
+			
+			// Scrolls up on page change
             survey.onCurrentPageChanged.add((e) => {
                 // Scroll to top
                 window.scrollTo(0, 0);
@@ -196,7 +209,7 @@ export class AppComponent implements OnInit {
                     },
                     question: {
                         mainRoot: "sv_qstn px-4",
-                        title: "mb-4 mt-2"
+                        title: "mb-4 mt-2 text-bold"
                     },
                     progress: "progress center-block mx-auto mb-4 survey-progress"
                 },
