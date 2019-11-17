@@ -131,6 +131,7 @@ export class AppComponent implements OnInit {
 			
             var survey = new Model(this.surveySpecification.getLocalizedModel(this.translate.currentLang));
 			survey.locale = this.translate.currentLang;
+			survey.requiredText = "";
             survey.onComplete.add((response) => {
                 this.processResponse(response);
             });
@@ -151,6 +152,8 @@ export class AppComponent implements OnInit {
                 window.scrollTo(0, 0);
             });
             survey.showProgressBar = "top";
+			
+			// Set the source as a survey variable
 			survey.setValue("source", this.source);
 			
 			// Hide questions which are normally shown when the user is located out of the pilot area
