@@ -4531,7 +4531,7 @@ export const surveyModel = {
         "sl": "Časopisi in revije",
         "fr": "Journaux et magazines"
        },
-       "enableIf": "{Q10} anyof \"1\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
+       "enableIf": "{Q10} anyof \"1\" or ((!({Q10} anyof \"8\" or {Q10} anyof \"9\")) and {Q10.length} < 3)"
       },
       {
        "value": "2",
@@ -4544,7 +4544,7 @@ export const surveyModel = {
         "sl": "Televizijske novice in/ali radio",
         "fr": "Journaux radiophoniques et/ou télévisés"
        },
-       "enableIf": "{Q10} anyof \"3\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
+       "enableIf": "{Q10} anyof \"2\" or ((!({Q10} anyof \"8\" or {Q10} anyof \"9\")) and {Q10.length} < 3)"
       },
       {
        "value": "3",
@@ -4557,7 +4557,7 @@ export const surveyModel = {
         "sl": "Družina, prijatelji, sosedje ali znanci",
         "fr": "Famille, amis, voisins, collègues"
        },
-       "enableIf": "{Q10} anyof \"5\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
+       "enableIf": "{Q10} anyof \"3\" or ((!({Q10} anyof \"8\" or {Q10} anyof \"9\")) and {Q10.length} < 3)"
       },
       {
        "value": "4",
@@ -4570,7 +4570,7 @@ export const surveyModel = {
         "sl": "Knjige ali znanstvene publikacije in/ali informativno gradivo",
         "fr": "Livres, publications scientifiques"
        },
-       "enableIf": "{Q10} anyof \"6\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
+       "enableIf": "{Q10} anyof \"4\" or ((!({Q10} anyof \"8\" or {Q10} anyof \"9\")) and {Q10.length} < 3)"
       },
       {
        "value": "5",
@@ -4583,7 +4583,7 @@ export const surveyModel = {
         "sl": "Spletna družbena omrežja (Facebook, Instagram, Twitter, ...)",
         "fr": "Réseaux sociaux (Facebook, Instagram, Twitter, ...)"
        },
-       "enableIf": "{Q10} anyof \"9\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
+       "enableIf": "{Q10} anyof \"5\" or ((!({Q10} anyof \"8\" or {Q10} anyof \"9\")) and {Q10.length} < 3)"
       },
       {
        "value": "6",
@@ -4596,7 +4596,7 @@ export const surveyModel = {
         "sl": "Internet (druge spletne strani,  glasila, blogi, forumi itn., BREZ socialnih omrežij)",
         "fr": "Internet hors réseaux sociaux (sites, lettres, blogs, forums, …)"
        },
-       "enableIf": "{Q10} anyof \"10\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
+       "enableIf": "{Q10} anyof \"6\" or ((!({Q10} anyof \"8\" or {Q10} anyof \"9\")) and {Q10.length} < 3)"
       },
       {
        "value": "7",
@@ -4609,7 +4609,7 @@ export const surveyModel = {
         "sl": "Drugo",
         "fr": "Autre"
        },
-       "enableIf": "{Q10} anyof \"11\" or !({Q10} anyof \"12\" or {Q10} anyof \"13\")"
+       "enableIf": "{Q10} anyof \"7\" or ((!({Q10} anyof \"8\" or {Q10} anyof \"9\")) and {Q10.length} < 3)"
       },
       {
        "value": "8",
@@ -4622,7 +4622,7 @@ export const surveyModel = {
         "sl": "Okolje me ne zanima",
         "fr": "Je ne suis pas intéressé par l'environnement"
        },
-       "enableIf": "{Q10} anyof \"12\" or {Q10.length} == 0"
+       "enableIf": "{Q10} anyof \"8\" or {Q10.length} == 0"
       },
       {
        "value": "9",
@@ -4635,7 +4635,7 @@ export const surveyModel = {
         "sl": "Ne vem",
         "fr": "Je ne sais pas"
        },
-       "enableIf": "{Q10} anyof \"13\" or {Q10.length} == 0"
+       "enableIf": "{Q10} anyof \"9\" or {Q10.length} == 0"
       }
      ]
     }
