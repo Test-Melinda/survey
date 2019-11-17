@@ -6139,13 +6139,13 @@ export const surveyModel = {
       "fr": "Vous travaillez comme:"
      },
      "description": {
-      "default": "Only one answer is possible",
-      "de": "Nur eine Nennung möglich",
-      "it": "È possibile una sola risposta",
-      "de-at": "Nur eine Nennung möglich",
-      "de-ch": "Nur eine Nennung möglich",
-      "sl": "Izberite samo en odgovor",
-      "fr": "Une seule réponse possible"
+      "default": "(only one answer is possible)",
+      "de": "(nur eine Nennung möglich)",
+      "it": "(è possibile una sola risposta)",
+      "de-at": "(nur eine Nennung möglich)",
+      "de-ch": "(nur eine Nennung möglich)",
+      "sl": "(izberite samo en odgovor)",
+      "fr": "(une seule réponse possible)"
      },
      "choices": [
       {
