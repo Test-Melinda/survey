@@ -168,7 +168,7 @@ export class AppComponent implements OnInit {
 				let labels = question.htmlElement.getElementsByTagName('label');
 				for (let i = 0; i < labels.length; i++){
 					let label = <HTMLElement>(labels.item(i));
-					label.style.lineHeight = "1.5";
+					label.style.lineHeight = "1.4";
 				}
 			});
 			
