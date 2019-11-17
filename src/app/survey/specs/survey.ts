@@ -2773,7 +2773,7 @@ export const surveyModel = {
      "name": "Q1MOTORB",
      "title": {
       "default": "Which of these aspects would you associate to the MOTORBIKE/MOPED?",
-      "it": "uali aspetti associeresti alla MOTOCICLETTA/MOTORINO?",
+      "it": "Quali aspetti associeresti alla MOTOCICLETTA/MOTORINO?",
       "de": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
