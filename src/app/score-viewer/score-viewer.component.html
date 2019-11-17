@@ -1,8 +1,8 @@
 <h1>{{ "SCORE_VIEWER.THANKS" | translate }}</h1>
 
-<p>{{ "SCORE_VIEWER.SCORE" | translate }}</p>
+<p *ngIf="scoreValid">{{ "SCORE_VIEWER.SCORE" | translate }}</p>
 
-<p class="score">
+<p class="score" *ngIf="scoreValid">
 	<span class="score-number">{{ score | number:'1.1-1' }}</span> -
 	<span class="score-text" *ngIf="score >= 12">{{ "SCORE_VIEWER.LEVEL.EXCELLENT" | translate }}</span>
 	<span class="score-text" *ngIf="score >= 10 && score < 12">{{ "SCORE_VIEWER.LEVEL.VERY_GOOD" | translate }}</span>
@@ -12,7 +12,7 @@
 	<span class="score-text" *ngIf="score < 4">{{ "SCORE_VIEWER.LEVEL.VERY_LOW" | translate }}</span>
 </p>
 
-<p>{{ "SCORE_VIEWER.TEXT" | translate }}</p>
+<p *ngIf="scoreValid">{{ "SCORE_VIEWER.TEXT" | translate }}</p>
 
 <p>{{ "SCORE_VIEWER.SOLUTIONS.TITLE" | translate }}</p>
 

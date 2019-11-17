@@ -34,6 +34,7 @@ export class AppComponent implements OnInit {
     public surveyError = false;
     
     public score = null;
+	public scoreValid = false;
 
 	private pilotSelectionQuestion = "QF1";
 	
@@ -256,7 +257,8 @@ export class AppComponent implements OnInit {
 		if (!this.ignoreResponse){
 	        // Calculate the score
 	        this.score = this.scoreCalculator.calculate(responseData);
-	        console.log("Score", this.score);
+			this.scoreValid = this.scoreCalculator.areScoreResponsesComplete(responseData);
+	        console.log("Score (valid?)", this.score, this.scoreValid);
 	        
 	        // Convert to Limesurvey response
 	        let surveyRegion = this.source;

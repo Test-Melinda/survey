@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ScoreViewerComponent implements OnInit {
     
-    @Input() public score;
+    @Input() public score: number;
+	@Input() public scoreValid: boolean;
 
     constructor() { }
 

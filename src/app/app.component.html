@@ -52,7 +52,7 @@
 				
 						<ng-template #success>
 							<div *ngIf="!ignoreResponse; else responseIgnored">
-								<app-score-viewer *ngIf="score != null; else noScore" [score]="score"></app-score-viewer>
+								<app-score-viewer *ngIf="score != null; else noScore" [score]="score" [scoreValid]="scoreValid"></app-score-viewer>
 								
 								<ng-template #noScore>
 									<h1>{{ "APP.THANKS_NO_SCORE" | translate }}</h1>
