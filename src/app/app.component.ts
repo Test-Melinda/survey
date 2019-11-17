@@ -132,6 +132,7 @@ export class AppComponent implements OnInit {
             var survey = new Model(this.surveySpecification.getLocalizedModel(this.translate.currentLang));
 			survey.locale = this.translate.currentLang;
 			survey.requiredText = "";
+			survey.showQuestionNumbers = "off";
             survey.onComplete.add((response) => {
                 this.processResponse(response);
             });
