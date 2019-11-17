@@ -10,7 +10,7 @@ export const data = {
 	},
     "SURVEY_INTRO": {
         "TITLE": "Herzlich willkommen bei Melinda!",
-		"LEAD": "Das <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps &ndash; <strong>Projekt</strong> will ein besseres Verständnis der Mobilitätsgewohnheiten und Präferenzen des täglichen Lebens der Menschen generieren.",
+		"LEAD": "Das <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps - <strong>Projekt</strong> will ein besseres Verständnis der Mobilitätsgewohnheiten und Präferenzen des täglichen Lebens der Menschen generieren.",
 		"DESCRIPTION": "Mit dieser Umfrage möchten wir Ihre Einstellungen sammeln und Ihnen einige Tipps geben, wie Sie mit den ökologischen Herausforderungen umgehen können, mit denen wir uns alle dringend befassen sollten.",
 		"TIME_REQUIREMENTS": "Diese Umfrage benötigt nur 10 Minuten Ihrer Zeit.",
 		"LEGAL": {
@@ -41,9 +41,9 @@ export const data = {
 			"LOW": "Sie könnten Ihre Pubktezahl verbessern",
 			"VERY_LOW": "Es ist Zeit zu beginnen"
 		},
-		"TEXT": "Aber da Sie an diesem Projekt mitgewirkt haben, sind Sie bereits &quot;einen weiteren Schritt in die richtige Richtung gegangen&quot;",
+		"TEXT": "Aber da Sie an diesem Projekt mitgewirkt haben, sind Sie bereits \"einen weiteren Schritt in die richtige Richtung gegangen\"",
 		"SOLUTIONS": {
-			"TITLE": "Unter den Fragen, die Sie beantwortet haben, waren einige recht &quot;knifflige&quot;. Hier finden Sie die richtigen Antworten darauf:",
+			"TITLE": "Unter den Fragen, die Sie beantwortet haben, waren einige recht \"knifflige\". Hier finden Sie die richtigen Antworten darauf:",
 			"Q_COST": "Nach dem LeasePlan Car Cost Index lagen die durchschnittlichen Kosten für den privaten Besitz eines Autos mit Benzinmotor im Jahr 2016 bei etwa 500 Euro/Monat. In dieser Berechnung werden mehrere Faktoren berücksichtigt, die sich auf die Fahrzeugkosten auswirken. Diese sind in jedem Land unterschiedlich, bspw. Kraftstoffkosten, Fahrzeugabschreibung, Steuern, Versicherung und Wartung.",
 			"Q_DEATHS": "Laut <a href=\"{{ eurostatLink }}\" target=\"_blank\">Eurostat Statistics</a> und <a href=\"{{ eeaLink }}\" target=\"_blank\">European Environmental Agency</a> sind Todesfälle durch Luftverschmutzung etwa zehnmal häufiger als durch Verkehrsunfälle!",
 			"Q_DEATHS_MORE": "Dies zeigt, dass neben der Straßenverkehrssicherheit auch die nicht sofort erkennbare Luftverschmutzung eine relevante Gesundheitsgefahr ist, der unsere Gesellschaft mit Entschlossenheit begegnen muss. Auf der Website der <a href=\"{{ eeaLink }}\" target=\"_blank\">European Environmental Agency</a> finden Sie weitere Informationen und Daten zu diesen Themen (in allen EU-Sprachen).",

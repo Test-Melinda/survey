@@ -10,7 +10,7 @@ export const data = {
 	},
     "SURVEY_INTRO": {
         "TITLE": "Bienvenue dans Melinda!",
-		"LEAD": "Le <strong>projet</strong> <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps &ndash; a pour but de permettre une meilleure compréhension des habitudes de mobilité et des préférences de la vie quotidienne de chacun.",
+		"LEAD": "Le <strong>projet</strong> <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps - a pour but de permettre une meilleure compréhension des habitudes de mobilité et des préférences de la vie quotidienne de chacun.",
 		"DESCRIPTION": "Avec cette enquête, nous souhaitons recueillir vos points de vue et vous donner quelques conseils sur la façon de répondre aux défis environnementaux auxquels nous devons tous faire face de toute urgence.",
 		"TIME_REQUIREMENTS": "Ce sondage ne nécessitera que 7 à 8 minutes de votre temps.",
 		"LEGAL": {

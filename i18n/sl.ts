@@ -10,7 +10,7 @@ export const data = {
 	},
     "SURVEY_INTRO": {
         "TITLE": "Dobrodošli v projekt Melinda!",
-		"LEAD": "<strong>Projekt MELINDA</strong> - &laquo;Inovativni nizkoogljični ekosistem mobilnosti v Alpah&raquo; (&laquo;<strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps&raquo;) &ndash; želi ustvariti boljše razumevanje potovalnih navad in preferenc ljudi do mobilnosti v vsakdanjem življenju.",
+		"LEAD": "<strong>Projekt MELINDA</strong> - &laquo;Inovativni nizkoogljični ekosistem mobilnosti v Alpah&raquo; (&laquo;<strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps&raquo;) - želi ustvariti boljše razumevanje potovalnih navad in preferenc ljudi do mobilnosti v vsakdanjem življenju.",
 		"DESCRIPTION": "S to anketo želimo zbrati želimo spoznati vaša mnenja in vam posredovati nekaj nasvetov za čim uspešnejše spoprijemanje z okoljskimi izzivi.",
 		"TIME_REQUIREMENTS": "Čas reševanja ankete je približno 7 minut.",
 		"LEGAL": {
@@ -41,7 +41,7 @@ export const data = {
 			"LOW": "Svoj rezultat bi lahko izboljšali",
 			"VERY_LOW": "Nikoli ni prepozno začeti"
 		},
-		"TEXT": "Ker pa ste prispevali k temu projektu, ste že &laquo;naredili korak naprej&raquo;",
+		"TEXT": "Ker pa ste prispevali k temu projektu, ste že «naredili korak naprej»",
 		"SOLUTIONS": {
 			"TITLE": "Med vprašanji, na katera ste odgovorili, je bilo nekaj »zapletenih«. Pravilni odgovori so sledeči:",
 			"Q_COST": "Glede na stroškovni indeks avtomobilov LeasePlan je povprečni strošek za lastništvo zasebnega bencinskega avtomobila v letu 2016 znašal okoli 500 evrov/mesec. Pri izračunu se upošteva več dejavnikov, ki vplivajo na stroške avtomobila. Ti stroški se v posameznih državah razlikujejo, zaradi različnih stroškov , goriva, davkov, zavarovanja in vzdrževanja itd.",

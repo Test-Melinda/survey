@@ -10,7 +10,7 @@ export const data = {
 	},
     "SURVEY_INTRO": {
         "TITLE": "Benvenuti in Melinda!",
-		"LEAD": "Il progetto <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps &ndash; ha l'obiettivo di sviluppare una migliore comprensione delle abitudini e preferenze di mobilità nella vita quotidiana delle persone",
+		"LEAD": "Il progetto <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps - ha l'obiettivo di sviluppare una migliore comprensione delle abitudini e preferenze di mobilità nella vita quotidiana delle persone",
 		"DESCRIPTION": "Con questa indagine vorremmo conoscere le tue propensioni e fornirti alcuni spunti su come giostrarti tra le sfide ambientali che tutti dobbiamo affrontare con urgenza.",
 		"TIME_REQUIREMENTS": "L'indagine richiede solo 10 minuti di tempo per essere completata.",
 		"LEGAL": {
@@ -43,7 +43,7 @@ export const data = {
 		},
 		"TEXT": "Ma dal momento che hai dato un contributo a questo progetto hai già cominciato a fare un altro passo avanti!",
 		"SOLUTIONS": {
-			"TITLE": "Tra le domande che abbiamo posto ve ne erano alcune &quot;spinose&quot;. Qui puoi trovare le risposte corrette:",
+			"TITLE": "Tra le domande che abbiamo posto ve ne erano alcune \"spinose\". Qui puoi trovare le risposte corrette:",
 			"Q_COST": "In base a quanto riportato dall'Indice di costo dell'auto elaborato da Leaseplan il costo mensile medio per il possesso e mantenimento di un'auto privata, a benzina, nel 2016 in Italia è stato di 600 euro al mese. Nel calcolo sono considerati diversi fattori di costo, che variano da paese a paese, come il carburante, il deprezzamento dell'auto, le tasse, l'assicurazione e il mantenimento.",
 			"Q_DEATHS": "Facendo riferimento alle <a href=\"{{ eurostatLink }}\" target=\"_blank\">statistiche Eurostat</a> e ai dati dell'<a href=\"{{ eeaLink }}\" target=\"_blank\">Agenzia Europea per l'Ambiente</a> i decessi dovuti allinquinamento dellaria sono circa 10 volte più frequenti di quelli causati dagli incidenti stradali!",
 			"Q_DEATHS_MORE": "Questo non significa naturalmente che la sicurezza stradale non sia un aspetto anchesso rilevante, ma piuttosto che, pur se non autoevidente, linquinamento dellaria nei nostril territori è una grave minaccia alla nostra salute che la società deve affrontare in maniera decisa. Nel sito web dell<a href=\"{{ eeaLink }}\" target=\"_blank\">Agenzia Europea per l'Ambiente</a> puoi trovare ulteriori informazioni e dati su questi temi (in tutte le lingue ufficiali dellUnione).",

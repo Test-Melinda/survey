@@ -10,7 +10,7 @@ export const data = {
 	},
     "SURVEY_INTRO": {
         "TITLE": "Welcome to Melinda!",
-		"LEAD": "The <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps &ndash; <strong>project</strong> wants to generate a better understanding of mobility habits and preferences of people's daily lives.",
+		"LEAD": "The <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps - <strong>project</strong> wants to generate a better understanding of mobility habits and preferences of people's daily lives.",
 		"DESCRIPTION": "With this survey, we wish to collect your attitudes and give you some tips on how to deal with the environmental challenges that we all must face urgently.",
 		"TIME_REQUIREMENTS": "This survey only requires 10 minutes of your time.",
 		"LEGAL": {
@@ -41,9 +41,9 @@ export const data = {
 			"LOW": "You could improve your score",
 			"VERY_LOW": "It is time to start"
 		},
-		"TEXT": "But since you contributed to this project you already &quot;moved forward&quot;",
+		"TEXT": "But since you contributed to this project you already \"moved forward\"",
 		"SOLUTIONS": {
-			"TITLE": "Among the questions you answered to there were some &quot;tricky&quot; ones. Here you find the correct answers to them:",
+			"TITLE": "Among the questions you answered to there were some \"tricky\" ones. Here you find the correct answers to them:",
 			"Q_COST": "According to the Leaseplan Car Cost Index the average cost for the owning of a private petrol car in 2016 was about 500 euros/month. In the computation several factors affecting car costs are considered, that vary in each country, like fuel, car depreciation, taxes, insurance and maintenance.",
 			"Q_DEATHS": "According to <a href=\"{{ eurostatLink }}\" target=\"_blank\">Eurostat Statistics</a> and <a href=\"{{ eeaLink }}\" target=\"_blank\">European Environmental Agency</a> data the deaths due to air pollution are about ten times more frequent than road incidents!",
 			"Q_DEATHS_MORE": "This does not mean of course that road safety is not a relevant issue as well, but that even if not immediately self-evident air pollution in our territories is a relevant health threat that our societies need to face with decisiveness. In the <a href=\"{{ eeaLink }}\" target=\"_blank\">European Environmental Agency</a> website you can find more information and data about these issues (in all EU languages).",
