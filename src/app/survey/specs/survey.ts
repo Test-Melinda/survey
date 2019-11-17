@@ -3567,7 +3567,7 @@ export const surveyModel = {
      "visibleIf": "{Q6} anyof \"3\"",
      "title": {
       "default": "How often do you have access to a Motorbike/moped?",
-      "it": "Con quale frequenza puoi accedere a una bicicletta?",
+      "it": "Con quale frequenza puoi accedere a una motocicletta/motorino?",
       "de": "Wie oft steht Ihnen ein Motorrad/Moped zur Vefügung?",
       "de-at": "Verfügbarkeit eines Motorrads/Mopeds",
       "de-ch": "Verfügbarkeit eines Motorrads/Mopeds",
@@ -3576,12 +3576,12 @@ export const surveyModel = {
      },
      "description": {
       "default": "To have access to means that you can easily use it even if you don't own it.",
-      "it": "Con quale frequenza puoi accedere a una motocicletta/motorino?",
       "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
-      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété.",
+      "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso."
      },
      "choices": [
       {
@@ -3717,16 +3717,17 @@ export const surveyModel = {
       "de-at": "Verfügbarkeit eines Scooters/Skateboards/Hoverboards",
       "de-ch": "Verfügbarkeit eines Scooters/Skateboards/Hoverboards",
       "sl": "Kako pogosto lahko dostopate do skuterja/rolke?",
-      "fr": "Avez-vous accès à une trotinette/skateboard/hoverboard?"
+      "fr": "Avez-vous accès à une trotinette/skateboard/hoverboard?",
+      "it": "Con quale frequenza puoi accedere a un monopattino/skateboard/hoverboard?"
      },
      "description": {
       "default": "To have access to means that you can easily use it even if you don't own it.",
-      "it": "Con quale frequenza puoi accedere a una motocicletta/motorino?",
       "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
-      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété.",
+      "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso."
      },
      "choices": [
       {
