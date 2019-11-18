@@ -4099,15 +4099,7 @@ export const surveyModel = {
       }
      ]
     }
-   ],
-   "description": {
-    "it": "Qui di seguito troverai alcune domande riguardanti aspetti della vita quotidiana relativi alla mobilità. Anche se non conosci la risposta corretta ti chiediamo gentilmente di selezionare l'opzione che credi essere più vicina alla realtà, sulla base della tua esperienza od opinione.",
-    "de": "Hier finden Sie einige Fragen zu Aspekten des täglichen Lebens im Zusammenhang mit Mobilität. Auch wenn Sie die richtige Antwort nicht kennen, bitten wir Sie, die Option zu wählen, die Ihrer Meinung nach der Realität am nächsten kommt, entsprechend Ihrer Erfahrungen oder Ideen.",
-    "de-ch": "Hier finden Sie einige Fragen zu Aspekten des täglichen Lebens im Zusammenhang mit Mobilität. Auch wenn Sie die richtige Antwort nicht kennen, bitten wir Sie, die Option zu wählen, die Ihrer Meinung nach der.",
-    "de-at": "Hier finden Sie einige Fragen zu Aspekten des täglichen Lebens im Zusammenhang mit Mobilität. Auch wenn Sie die richtige Antwort nicht kennen, bitten wir Sie, die Option zu wählen, die Ihrer Meinung nach der Realität am nächsten kommt, entsprechend Ihrer Erfahrungen oder Ideen.",
-    "sl": "Sledita vprašanji o vidikih vsakdanjega življenja, povezanih z mobilnostjo. Tudi če ne poznate pravilnega odgovora, vas prosimo, da izberete možnost, za katero menite, da glede na vaše izkušnje ali ideje odraža dejansko stanje.",
-    "fr": "Vous allez trouver maintenant quelques questions sur des aspects de la vie quotidienne en lien avec la mobilité. Même si vous ne connaissez pas la bonne réponse, nous vous demandons de bien vouloir choisir l'option qui vous semble la plus proche de la réalité en fonction de votre expérience ou de vos idées."
-   }
+   ]
   },
   {
    "name": "quiz2",
@@ -6318,6 +6310,11 @@ export const surveyModel = {
      ],
      "inputType": "email"
     }
+   ]
+  }
+ ],
+ "checkErrorsMode": "onValueChanged"
+}
    ]
   }
  ],
