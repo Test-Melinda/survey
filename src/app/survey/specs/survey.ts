@@ -2457,7 +2457,7 @@ export const surveyModel = {
       "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ÖPNV?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit DEM ÖFFENTLICHEN VERKEHR?",
       "sl": "Katere od teh vidikov bi povezali z JAVNIM PREVOZOM?",
-      "fr": "Quels sont les qualificatifs qui correspondent le mieux au TRANSPORT PUBLIC URBAIN (Bus, Tram, Metro)?"
+      "fr": "Quels sont les qualificatifs qui correspondent le mieux au TRANSPORT PUBLIC URBAIN (Bus, Tram, Métro)?"
      },
      "validators": [
       {
@@ -2949,13 +2949,22 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "Q2",
      "title": {
-      "default": "What are the means of transport you use for your daily travels? (Multiple answers are possible)",
-      "it": "Quali sono i mezzi di trasporto che usi abitualmente per i tuoi spostamenti quotidiani?\n(sono possibili più risposte)",
-      "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?\n(Mehrfachnennungen sind möglich)",
-      "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?\n(Mehrfachnennungen sind möglich)",
-      "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?\n(Mehrfachnennungen sind möglich)",
-      "sl": "Katera prevozna sredstva uporabljate za vsakodnevna potovanja?\n(Možnih je več odgovorov)",
-      "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?\n(plusieurs réponses possibles)"
+      "default": "What are the means of transport you use for your daily travels?",
+      "it": "Quali sono i mezzi di trasporto che usi abitualmente per i tuoi spostamenti quotidiani?",
+      "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
+      "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
+      "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?",
+      "sl": "Katera prevozna sredstva uporabljate za vsakodnevna potovanja?",
+      "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "sl": "(Možnih je več odgovorov)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)",
+      "it": "(Sono possibili più risposte)",
+      "fr": "(Plusieurs réponses possibles)"
      },
      "choices": [
       {
