@@ -2,8 +2,8 @@ export const data = {
 	"APP": {
 		"TITLE": "Melinda anketi",
 		"LOADING": "nalagam",
-//		"LOAD_ERROR": "Sorry, an error occurred. Please <a href=\"{{ contactLink }}\">contact us</a>. Thank you.",
-//		"SUBMIT_ERROR": "Sorry, an error occurred. Please click the button below if you want to retry the survey. Otherwise please <a href=\"{{ contactLink }}\">contact us</a>. Thank you.",
+		"LOAD_ERROR": "Oprostite, prišlo je do napake. Prosimo, če <a href=\"{{ contactLink }}\">nas kontaktirate</a>. Hvala za razumevanje.",
+		"SUBMIT_ERROR": "Oprostite, prišlo je do napake. Prosimo, kliknite na spodnji gumb za ponovni poizkus. Drugače vas prosimo, če <a href=\"{{ contactLink }}\">nas kontaktirate</a>. Hvala za razumevanje.",
 		"THANKS_RESPONSE_IGNORED": "Najlepša hvala za sodelovanje v tej anketi.",
 		"THANKS_NO_SCORE": "Hvala, ker ste izpolnili anketo!",
 		"RETRY": "Poskusite ponovno"
@@ -22,13 +22,13 @@ export const data = {
 			"PRIVACY_ACCEPTANCE": "<strong>Z označitvijo polja za zasebnost spodaj označujete</strong>, da ste prebrali in razumeli ta obrazec za privolitev, da ste stari vsaj 16 let in se strinjate s sodelovanjem v tej raziskavi."
 		},
 		"PRIVACY": {
-			"ACCEPT": "Označite KOTE ZA ZASEBNOST za nadaljevanje",
-			"SHOW": "Pokaži obvestilo"
+			"ACCEPT": "Sprejemam obvestilo o zasebnosti",
+			"SHOW": "Pokaži obvestilo o zasebnosti"
 		},
-		"START": "Start survey"
+		"START": "Pričnite z izpolnjevanjem vprašalnika"
     },
 	"PRIVACY_POLICY": {
-//		"ACCEPT": "Accept and start survey"
+		"ACCEPT": "Sprejmi in prični z izpolnjevanjem vprašalnika"
 	},
 	"SCORE_VIEWER": {
 		"THANKS": "Hvala, ker ste izpolnili anketo!",

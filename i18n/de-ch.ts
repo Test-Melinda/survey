@@ -2,8 +2,8 @@ export const data = {
 	"APP": {
 		"TITLE": "Melinda Umfrage",
 		"LOADING": "Lade",
-//		"LOAD_ERROR": "Sorry, an error occurred. Please <a href=\"{{ contactLink }}\">contact us</a>. Thank you.",
-//		"SUBMIT_ERROR": "Sorry, an error occurred. Please click the button below if you want to retry the survey. Otherwise please <a href=\"{{ contactLink }}\">contact us</a>. Thank you.",
+		"LOAD_ERROR": "Sorry, es ist ein Fehler aufgetreten. Bitte <a href=\"{{ contactLink }}\">kontaktieren Sie uns</a>!",
+		"SUBMIT_ERROR": "Sorry, es ist ein Fehler aufgetreten. Bitte klicken Sie auf den folgenden Button, um die Umfrage fortzusetzen. Ansonsten <a href=\"{{ contactLink }}\">kontaktieren Sie uns</a> bitte.",
 		"THANKS_RESPONSE_IGNORED": "Wir bedanken uns für Ihre Teilnahme!",
 		"THANKS_NO_SCORE": "Wir bedanken uns für Ihre Teilnahme!",
 		"RETRY": "Versuchen Sie es erneut"
@@ -22,13 +22,13 @@ export const data = {
 			"PRIVACY_ACCEPTANCE": "Mit dem Ankreuzen des untenstehenden <strong>Kästchens Datenschutz</strong> geben Sie an, dass Sie diese Einwilligungserklärung gelesen und verstanden haben, dass Sie mindestens 16 Jahre alt sind und der Teilnahme an dieser Forschungsumfrage zustimmen."
 		},
 		"PRIVACY": {
-			"ACCEPT": "Markieren Sie das Kontrollkästchen Datenschutz, um fortzufahren",
+			"ACCEPT": "Ich stimme der Datenschutzerklärung zu",
 			"SHOW": "Datenschutzerklärung anzeigen"
 		},
-//		"START": "Start survey"
+		"START": "Befragung beginnen"
     },
 	"PRIVACY_POLICY": {
-//		"ACCEPT": "Accept and start survey"
+		"ACCEPT": "Zustimmen und Befragung beginnen"
 	},
 	"SCORE_VIEWER": {
 		"THANKS": "Vielen Dank, dass Sie die Umfrage ausgefüllt haben!",
@@ -37,9 +37,9 @@ export const data = {
 			"EXCELLENT": "Hervorragend",
 			"VERY_GOOD": "Sehr gut",
 			"GOOD": "Gut",
-			"AVERAGE": "Durchschnitt",
-			"LOW": "Sie könnten Ihre Pubktezahl verbessern",
-			"VERY_LOW": "Es ist Zeit zu beginnen"
+			"AVERAGE": "Durchschnittlich",
+			"LOW": "Sie könnten Ihre Punktzahl verbessern",
+			"VERY_LOW": "Es ist Zeit aktiv zu werden"
 		},
 		"TEXT": "Aber da Sie an diesem Projekt mitgewirkt haben, sind Sie bereits \"einen weiteren Schritt in die richtige Richtung gegangen\"",
 		"SOLUTIONS": {

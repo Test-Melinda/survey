@@ -2,8 +2,8 @@ export const data = {
 	"APP": {
 		"TITLE": "Questionnaire Melinda",
 		"LOADING": "chargement",
-//		"LOAD_ERROR": "Sorry, an error occurred. Please <a href=\"{{ contactLink }}\">contact us</a>. Thank you.",
-//		"SUBMIT_ERROR": "Sorry, an error occurred. Please click the button below if you want to retry the survey. Otherwise please <a href=\"{{ contactLink }}\">contact us</a>. Thank you.",
+		"LOAD_ERROR": "Désolé, une erreur est intervenue. Merci de <a href=\"{{ contactLink }}\">nous contacter</a>.",
+		"SUBMIT_ERROR": "Désolé, une erreur est intervenue. Merci de cliquer sur le bouton ci-dessous si vous voulez réessayer de répondre au questionnaire. Sinon, merci de <a href=\"{{ contactLink }}\">nous contacter</a>.",
 		"THANKS_RESPONSE_IGNORED": "Merci beaucoup pour votre participation à cette enquête.",
 		"THANKS_NO_SCORE": "Merci d'avoir rempli le questionnaire!",
 		"RETRY": "Essayez à nouveau"
