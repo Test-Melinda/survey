@@ -3769,9 +3769,9 @@ export const surveyModel = {
      "visibleIf": "{Q6} anyof \"5\"",
      "title": {
       "default": "How often do you have access to a scooter/skateboard/hoverboard?",
-      "de": "Wie oft steht Ihnen ein Scooter/Skateboards/Hoverboard zur Verfügung?",
-      "de-at": "Verfügbarkeit eines Scooters/Skateboards/Hoverboards",
-      "de-ch": "Verfügbarkeit eines Scooters/Skateboards/Hoverboards",
+      "de": "Wie oft steht Ihnen ein Roller/Skateboards/Hoverboard zur Verfügung?",
+      "de-at": "Verfügbarkeit eines Roller/Skateboards/Hoverboards",
+      "de-ch": "Verfügbarkeit eines Roller/Skateboards/Hoverboards",
       "sl": "Kako pogosto lahko dostopate do skuterja/rolke?",
       "fr": "Avez-vous accès à une trotinette/skateboard/hoverboard?",
       "it": "Con quale frequenza puoi accedere a un monopattino/skateboard/hoverboard?"
