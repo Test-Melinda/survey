@@ -1764,7 +1764,8 @@ export const surveyModel = {
         "de": "Arbeit/Geschäftlich",
         "de-at": "Arbeit/Geschäftlich",
         "de-ch": "Arbeit/Geschäftlich"
-       }
+       },
+       "enableIf": "{EQ1AU} anyof \"1\" or !({EQ1AU} anyof \"6\")"
       },
       {
        "value": "2",
@@ -1773,7 +1774,8 @@ export const surveyModel = {
         "de": "Ausbildung",
         "de-at": "Ausbildung",
         "de-ch": "Ausbildung"
-       }
+       },
+       "enableIf": "{EQ1AU} anyof \"2\" or !({EQ1AU} anyof \"6\")"
       },
       {
        "value": "3",
@@ -1782,7 +1784,8 @@ export const surveyModel = {
         "de": "Einkaufen",
         "de-ch": "Einkaufen",
         "de-at": "Einkaufen"
-       }
+       },
+       "enableIf": "{EQ1AU} anyof \"3\" or !({EQ1AU} anyof \"6\")"
       },
       {
        "value": "4",
@@ -1791,7 +1794,8 @@ export const surveyModel = {
         "de": "Freizeitaktivitäten",
         "de-at": "Freizeitaktivitäten",
         "de-ch": "Freizeitaktivitäten"
-       }
+       },
+       "enableIf": "{EQ1AU} anyof \"4\" or !({EQ1AU} anyof \"6\")"
       },
       {
        "value": "5",
@@ -1800,7 +1804,8 @@ export const surveyModel = {
         "de": "Sonstiges",
         "de-at": "Sonstiges",
         "de-ch": "Sonstiges"
-       }
+       },
+       "enableIf": "{EQ1AU} anyof \"5\" or !({EQ1AU} anyof \"6\")"
       },
       {
        "value": "6",
@@ -1809,7 +1814,8 @@ export const surveyModel = {
         "de": "Keine der genannten",
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
-       }
+       },
+       "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} == 0"
       }
      ]
     },
@@ -1828,42 +1834,48 @@ export const surveyModel = {
        "text": {
         "default": "Work/Business",
         "de": "Arbeit"
-       }
+       },
+       "enableIf": "{EQ1GE} anyof \"1\" or !({EQ1GE} anyof \"6\")"
       },
       {
        "value": "2",
        "text": {
         "default": "Study",
         "de": "Studium"
-       }
+       },
+       "enableIf": "{EQ1GE} anyof \"2\" or !({EQ1GE} anyof \"6\")"
       },
       {
        "value": "3",
        "text": {
         "default": "Shopping",
         "de": "Einkaufen"
-       }
+       },
+       "enableIf": "{EQ1GE} anyof \"3\" or !({EQ1GE} anyof \"6\")"
       },
       {
        "value": "4",
        "text": {
         "default": "Leisure activities (free time)",
         "de": "Freizeitaktivitäten"
-       }
+       },
+       "enableIf": "{EQ1GE} anyof \"4\" or !({EQ1GE} anyof \"6\")"
       },
       {
        "value": "5",
        "text": {
         "default": "Other",
         "de": "Sonstiges"
-       }
+       },
+       "enableIf": "{EQ1GE} anyof \"5\" or !({EQ1GE} anyof \"6\")"
       },
       {
        "value": "6",
        "text": {
         "default": "None",
         "de": "Keine der genannten"
-       }
+       },
+       "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} == 0"
       }
      ]
     },
@@ -1882,42 +1894,48 @@ export const surveyModel = {
        "text": {
         "default": "Work/Business",
         "it": "Lavoro/affari"
-       }
+       },
+       "enableIf": "{EQ1IT} anyof \"1\" or !({EQ1IT} anyof \"6\")"
       },
       {
        "value": "2",
        "text": {
         "default": "Study",
         "it": "Studio"
-       }
+       },
+       "enableIf": "{EQ1IT} anyof \"2\" or !({EQ1IT} anyof \"6\")"
       },
       {
        "value": "3",
        "text": {
         "default": "Shopping",
         "it": "Acquisti"
-       }
+       },
+       "enableIf": "{EQ1IT} anyof \"3\" or !({EQ1IT} anyof \"6\")"
       },
       {
        "value": "4",
        "text": {
         "default": "Leisure activities (free time)",
         "it": "Attività di svago (nel tempo libero)"
-       }
+       },
+       "enableIf": "{EQ1IT} anyof \"4\" or !({EQ1IT} anyof \"6\")"
       },
       {
        "value": "5",
        "text": {
         "default": "Other",
         "it": "Altro"
-       }
+       },
+       "enableIf": "{EQ1IT} anyof \"5\" or !({EQ1IT} anyof \"6\")"
       },
       {
        "value": "6",
        "text": {
         "default": "None",
         "it": "Nessuna"
-       }
+       },
+       "enableIf": "{EQ1IT} anyof \"6\" or {EQ1IT.length} == 0"
       }
      ]
     },
@@ -1936,42 +1954,48 @@ export const surveyModel = {
        "text": {
         "default": "Work/Business",
         "sl": "Delo/posel"
-       }
+       },
+       "enableIf": "{EQ1SL} anyof \"1\" or !({EQ1SL} anyof \"6\")"
       },
       {
        "value": "2",
        "text": {
         "default": "Study",
         "sl": "Študij"
-       }
+       },
+       "enableIf": "{EQ1SL} anyof \"2\" or !({EQ1SL} anyof \"6\")"
       },
       {
        "value": "3",
        "text": {
         "default": "Shopping",
         "sl": "Nakupovanje"
-       }
+       },
+       "enableIf": "{EQ1SL} anyof \"3\" or !({EQ1SL} anyof \"6\")"
       },
       {
        "value": "4",
        "text": {
         "default": "Leisure activities (free time)",
         "sl": "Aktivnosti v prostem času "
-       }
+       },
+       "enableIf": "{EQ1SL} anyof \"4\" or !({EQ1SL} anyof \"6\")"
       },
       {
        "value": "5",
        "text": {
         "default": "Other",
         "sl": "Drugo"
-       }
+       },
+       "enableIf": "{EQ1SL} anyof \"5\" or !({EQ1SL} anyof \"6\")"
       },
       {
        "value": "6",
        "text": {
         "default": "None",
         "sl": "Nobenega izmed navedenih"
-       }
+       },
+       "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} == 0"
       }
      ]
     },
@@ -1995,7 +2019,8 @@ export const surveyModel = {
         "de": "Arbeit/Geschäftlich",
         "de-at": "Arbeit/Geschäftlich",
         "de-ch": "Arbeit"
-       }
+       },
+       "enableIf": "{EQ1SW1} anyof \"1\" or !({EQ1SW1} anyof \"6\")"
       },
       {
        "value": "2",
@@ -2004,7 +2029,8 @@ export const surveyModel = {
         "de": "Ausbildung",
         "de-at": "Ausbildung",
         "de-ch": "Studium"
-       }
+       },
+       "enableIf": "{EQ1SW1} anyof \"2\" or !({EQ1SW1} anyof \"6\")"
       },
       {
        "value": "3",
@@ -2013,7 +2039,8 @@ export const surveyModel = {
         "de": "Einkaufen",
         "de-at": "Einkaufen",
         "de-ch": "Einkaufen"
-       }
+       },
+       "enableIf": "{EQ1SW1} anyof \"3\" or !({EQ1SW1} anyof \"6\")"
       },
       {
        "value": "4",
@@ -2022,7 +2049,8 @@ export const surveyModel = {
         "de": "Freizeitaktivitäten",
         "de-at": "Freizeitaktivitäten",
         "de-ch": "Freizeitaktivitäten"
-       }
+       },
+       "enableIf": "{EQ1SW1} anyof \"4\" or !({EQ1SW1} anyof \"6\")"
       },
       {
        "value": "5",
@@ -2031,7 +2059,8 @@ export const surveyModel = {
         "de": "Sonstiges",
         "de-at": "Sonstiges",
         "de-ch": "Sonstiges"
-       }
+       },
+       "enableIf": "{EQ1SW1} anyof \"5\" or !({EQ1SW1} anyof \"6\")"
       },
       {
        "value": "6",
@@ -2040,7 +2069,8 @@ export const surveyModel = {
         "de": "Keine der genannten",
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
-       }
+       },
+       "enableIf": "{EQ1SW1} anyof \"6\" or {EQ1SW1.length} == 0"
       }
      ]
     }
@@ -2062,42 +2092,48 @@ export const surveyModel = {
        "text": {
         "default": "Work/Business",
         "fr": "Travail"
-       }
+       },
+       "enableIf": "{EQ1FRGL} anyof \"1\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "2",
        "text": {
         "default": "Study",
         "fr": "Etudes"
-       }
+       },
+       "enableIf": "{EQ1FRGL} anyof \"2\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "3",
        "text": {
         "default": "Shopping",
         "fr": "Courses"
-       }
+       },
+       "enableIf": "{EQ1FRGL} anyof \"3\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "4",
        "text": {
         "default": "Leisure activities (free time)",
         "fr": "Loisirs"
-       }
+       },
+       "enableIf": "{EQ1FRGL} anyof \"4\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "5",
        "text": {
         "default": "Other",
         "fr": "Autres"
-       }
+       },
+       "enableIf": "{EQ1FRGL} anyof \"5\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "6",
        "text": {
         "default": "None",
         "fr": "Aucune"
-       }
+       },
+       "enableIf": "{EQ1FRGL} anyof \"6\" or {EQ1FRGL.length} == 0"
       }
      ]
     },
@@ -2114,42 +2150,48 @@ export const surveyModel = {
        "text": {
         "default": "Work/Business",
         "fr": "Travail"
-       }
+       },
+       "enableIf": "{EQ1FRGA} anyof \"1\" or !({EQ1FRGA} anyof \"6\")"
       },
       {
        "value": "2",
        "text": {
         "default": "Study",
         "fr": "Etudes"
-       }
+       },
+       "enableIf": "{EQ1FRGA} anyof \"2\" or !({EQ1FRGA} anyof \"6\")"
       },
       {
        "value": "3",
        "text": {
         "default": "Shopping",
         "fr": "Courses"
-       }
+       },
+       "enableIf": "{EQ1FRGA} anyof \"3\" or !({EQ1FRGA} anyof \"6\")"
       },
       {
        "value": "4",
        "text": {
         "default": "Leisure activities (free time)",
         "fr": "Loisirs"
-       }
+       },
+       "enableIf": "{EQ1FRGA} anyof \"4\" or !({EQ1FRGA} anyof \"6\")"
       },
       {
        "value": "5",
        "text": {
         "default": "Other",
         "fr": "Autres"
-       }
+       },
+       "enableIf": "{EQ1FRGA} anyof \"5\" or !({EQ1FRGA} anyof \"6\")"
       },
       {
        "value": "6",
        "text": {
         "default": "None",
         "fr": "Aucune"
-       }
+       },
+       "enableIf": "{EQ1FRGA} anyof \"6\" or {EQ1FRGA.length} == 0"
       }
      ]
     }
