@@ -4672,66 +4672,6 @@ export const surveyModel = {
        }
       }
      ]
-    },
-    {
-     "type": "radiogroup",
-     "name": "S2Q2",
-     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
-     "title": {
-      "default": "Why?",
-      "it": "Perché?"
-     },
-     "choices": [
-      {
-       "value": "1",
-       "text": {
-        "default": "It takes too long",
-        "it": "Si impiega troppo tempo negli spostamenti"
-       }
-      },
-      {
-       "value": "2",
-       "text": {
-        "default": "It is too hard",
-        "it": "È troppo faticoso"
-       }
-      },
-      {
-       "value": "3",
-       "text": {
-        "default": "It is dangerous",
-        "it": "È troppo pericoloso"
-       }
-      },
-      {
-       "value": "4",
-       "text": {
-        "default": "There are not enough cycle paths",
-        "it": "Non ci sono sufficienti piste ciclabili"
-       }
-      },
-      {
-       "value": "5",
-       "text": {
-        "default": "It can be easily stolen",
-        "it": "Può essere facilmente rubata"
-       }
-      },
-      {
-       "value": "6",
-       "text": {
-        "default": "Weather reasons (too much rain/too cold/too hot...)",
-        "it": "A causa del meteo (troppa pioggia/troppo freddo/troppo caldo,...)"
-       }
-      },
-      {
-       "value": "7",
-       "text": {
-        "default": "I don't own a bike",
-        "it": "Non possiedo una bici"
-       }
-      }
-     ]
     }
    ]
   },
@@ -4769,12 +4709,90 @@ export const surveyModel = {
    "elements": [
     {
      "type": "radiogroup",
+     "name": "S2Q2",
+     "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "According to your personal experience what do you think about cycling?",
+      "it": "Pensando alla tua esperienza personale, cosa ne pensi dell'andare in bicicletta?"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "It takes too long",
+        "it": "Si impiega troppo tempo negli spostamenti"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "It is an effective solution (faster than others)",
+        "it": "È una soluzione efficiente (più rapida di altre)"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "It is too dangerous",
+        "it": "È troppo pericoloso"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "There are not enough cycle paths",
+        "it": "Non ci sono sufficienti piste ciclabili"
+       }
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "It is healthy (I fell better when cycling)",
+        "it": "È salutare (mi sento meglio andando in bici)"
+       }
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "It can be easily stolen",
+        "it": "la bicicletta può essere facilmente rubata"
+       }
+      },
+      {
+       "value": "7",
+       "text": {
+        "default": "I have difficulties because I don't own a bike",
+        "it": "Ho difficoltà ad andare in bici perché non ne possiedo una"
+       }
+      },
+      {
+       "value": "8",
+       "text": {
+        "default": "It's uncomfortable due to weather reasons (too much rain/too cold/too hot...)",
+        "it": "è scomodo a causa del clima che abbiamo (troppa pioggia/troppo freddo/troppo caldo,...)"
+       }
+      },
+      {
+       "value": "9",
+       "text": {
+        "default": "It is too hard",
+        "it": "È troppo faticoso"
+       }
+      },
+      {
+       "value": "10",
+       "text": {
+        "default": "It is funny",
+        "it": "È divertente"
+       }
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
      "name": "PS4dot2",
      "visibleIf": "{PS4dot1} == \"1\"",
-     "title": {
-      "default": "Wie wurden Sie auf das Angebot aufmerksam?",
-      "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
-     },
+     "title": "Wie wurden Sie auf das Angebot aufmerksam?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
      "choices": [
