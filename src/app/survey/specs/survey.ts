@@ -6314,9 +6314,4 @@ export const surveyModel = {
   }
  ],
  "checkErrorsMode": "onValueChanged"
-}
-   ]
-  }
- ],
- "checkErrorsMode": "onValueChanged"
 };
