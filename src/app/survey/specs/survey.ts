@@ -2210,7 +2210,7 @@ export const surveyModel = {
      "name": "Q1TRAIN",
      "title": {
       "default": "Which of these aspects would you associate to the TRAIN?",
-      "it": "Quali aspetti associeresti al TRENO?",
+      "it": "Quali aspetti assoceresti al TRENO?",
       "de": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
@@ -2331,7 +2331,7 @@ export const surveyModel = {
      "name": "Q1CAR",
      "title": {
       "default": "Which of these aspects would you associate to the CAR?",
-      "it": "Quali aspetti associeresti all'AUTO?",
+      "it": "Quali aspetti assoceresti all'AUTO?",
       "de": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
@@ -2452,7 +2452,7 @@ export const surveyModel = {
      "name": "Q1PT",
      "title": {
       "default": "Which of these aspects would you associate to the PUBLIC TRANSPORT (Bus, Tram, Metro)?",
-      "it": "Quali aspetti associeresti al TRASPORTO PUBBLICO (Bus, Tram, Metro)?",
+      "it": "Quali aspetti assoceresti al TRASPORTO PUBBLICO (Bus, Tram, Metro)?",
       "de": "Welchen Aspekt verknüpfen Sie mit DEM ÖPNV?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ÖPNV?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit DEM ÖFFENTLICHEN VERKEHR?",
@@ -2573,7 +2573,7 @@ export const surveyModel = {
      "name": "Q1BIKE",
      "title": {
       "default": "Which of these aspects would you associate to the BIKE?",
-      "it": "Quali aspetti associeresti alla BICICLETTA?",
+      "it": "Quali aspetti assoceresti alla BICICLETTA?",
       "de": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
@@ -2694,7 +2694,7 @@ export const surveyModel = {
      "name": "Q1WALK",
      "title": {
       "default": "Which of these aspects would you associate to the WALK?",
-      "it": "Quali aspetti associeresti al CAMMINARE?",
+      "it": "Quali aspetti assoceresti al CAMMINARE?",
       "de": "Welchen Aspekt verknüpfen Sie mit DEM ZU Fuß GEHEN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ZU Fuß GEHEN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit DEM ZU FUSS GEHEN?",
@@ -2815,7 +2815,7 @@ export const surveyModel = {
      "name": "Q1MOTORB",
      "title": {
       "default": "Which of these aspects would you associate to the MOTORBIKE/MOPED?",
-      "it": "Quali aspetti associeresti alla MOTOCICLETTA/MOTORINO?",
+      "it": "Quali aspetti assoceresti alla MOTOCICLETTA/MOTORINO?",
       "de": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
@@ -2934,7 +2934,7 @@ export const surveyModel = {
    ],
    "description": {
     "default": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones.",
-    "it": "Quale di questi aspetti associeresti ai seguenti mezzi di spostamento: TRENO, AUTO, TRASPORTO PUBBLICO, BICICLETTA, CAMMINARE, MOTOCICLETTA/MOTORINO?\nPer favore, per ogni mezzo seleziona al massimo 3 delle opzioni elencate",
+    "it": "Quale di questi aspetti assoceresti ai seguenti mezzi di spostamento: TRENO, AUTO, TRASPORTO PUBBLICO, BICICLETTA, CAMMINARE, MOTOCICLETTA/MOTORINO?\nPer favore, per ogni mezzo seleziona al massimo 3 delle opzioni elencate",
     "de": "Welche Assoziationen verknüpfen Sie mit den folgenden Mobilitätsformen: Eisenbahn, Auto, ÖPNV, Fahrrad, zu Fuß, Motorrad?\n(Bitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen)",
     "de-ch": "Welche Assoziationen verknüpfen Sie mit den folgenden Mobilitätsformen: Eisenbahn, Auto, öffentlicher Verkehr, Fahrrad, zu FuSS, Motorrad?\nBitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen.",
     "de-at": "Welche der folgenden Aspekte würden Sie den folgenden Verkehrsmitteln zuordnen? Eisenbahn, Auto, öffentlicher Nahverkehr, Fahrrad, zu Fuß, Motorrad?\n(Bitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen)",
