@@ -222,7 +222,7 @@ export class AppComponent implements OnInit {
 			
 			// Reset errors for some specific questions to avoid showing them before that the user clicks to go to the next page
 			survey.onValueChanged.add((s, q) => {
-				if (q.name == "PS4dot2"){
+				if (["PS4dot2", "PS4dot10", "PS4dot11", "PS4dot12", "PS4dot14", "PS4dot15"].indexOf(q.name) != -1){
 					q.question.errors = [];
 				}
 			});

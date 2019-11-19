@@ -5616,12 +5616,13 @@ export const surveyModel = {
    "name": "PS10",
    "elements": [
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "PS4dot10",
      "visibleIf": "{PS4dot8} == \"1\"",
      "title": "Wenn Taxito Ihnen nicht zur Verfügung gestanden wäre, mit welchen Verkehrsmitteln hätten Sie dann ihre letzte Fahrt unternommen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
+     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5655,7 +5656,8 @@ export const surveyModel = {
        "value": "8",
        "text": "Zu Fuss"
       }
-     ]
+     ],
+     "otherText": "Sonstiges ((E-)Scooter etc.) und zwar Freies Textfeld"
     }
    ],
    "description": "Denken Sie an Ihre letzte Taxitofahrt als Mitfahrer/in:"
@@ -5664,12 +5666,13 @@ export const surveyModel = {
    "name": "PS11",
    "elements": [
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "PS4dot11",
      "visibleIf": "{PS4dot8} == \"1\"",
      "title": "Haben Sie unmittelbar vor oder nach der Taxito-Fahrt ein weiteres Verkehrsmittel für dieselbe Reise benutzt?\n\nAlso sind Sie auf ein anderes Verkehrsmittel umgestiegen? Wenn ja, welche Verkehrsmittel?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
+     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5699,7 +5702,8 @@ export const surveyModel = {
        "value": "7",
        "text": "Zu Fuss"
       }
-     ]
+     ],
+     "otherText": "Sonstiges ((E-)Scooter etc.) und zwar Freies Textfeld"
     }
    ],
    "description": "Denken Sie an Ihre letzte Taxitofahrt als Mitfahrer/in:"
@@ -5708,12 +5712,13 @@ export const surveyModel = {
    "name": "PS12",
    "elements": [
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "PS4dot12",
      "visibleIf": "{PS4dot8} == \"1\"",
      "title": "Was waren Ihre Gründe für Ihre Nutzung des Angebots als Mitfahrer/in?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
+     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5743,7 +5748,8 @@ export const surveyModel = {
        "value": "7",
        "text": "Hohe Barrierefreiheit (Leichtes Ein- und Aussteigen)"
       }
-     ]
+     ],
+     "otherText": "Sonstiges ((E-)Scooter etc.) und zwar Freies Textfeld"
     }
    ],
    "description": "Denken Sie an Ihre letzte Taxitofahrt als Mitfahrer/in:"
@@ -5783,6 +5789,7 @@ export const surveyModel = {
      "visibleIf": "{PS4dot8} == \"1\" and {PS4dot13} == \"1\"",
      "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Mitfahrer/in, das Angebot weniger als bisher zu nützen?",
      "isRequired": true,
+     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5808,7 +5815,8 @@ export const surveyModel = {
        "value": "6",
        "text": "Die Fahrt führte nicht direkt an das Ziel"
       }
-     ]
+     ],
+     "otherText": "Sonstiges ((E-)Scooter etc.) und zwar Freies Textfeld"
     }
    ]
   },
@@ -5822,6 +5830,7 @@ export const surveyModel = {
      "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in nicht nutzen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
+     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5859,7 +5868,8 @@ export const surveyModel = {
        "value": "9",
        "text": "Hatte bisher noch keine Gelegenheit "
       }
-     ]
+     ],
+     "otherText": "Sonstiges, und zwar freies Textfeld"
     }
    ]
   },
