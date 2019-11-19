@@ -3058,7 +3058,7 @@ export const surveyModel = {
         "it": "Camminare",
         "de": "Zu Fuß",
         "de-at": "Zu Fuß",
-        "de-ch": "Zu Fuß",
+        "de-ch": "Zu Fuss",
         "sl": "Hoja",
         "fr": "Marche"
        }
@@ -3169,7 +3169,7 @@ export const surveyModel = {
         "default": "Walk",
         "de": "Zu Fuß",
         "de-at": "Zu Fuß",
-        "de-ch": "Zu Fuß",
+        "de-ch": "Zu Fuss",
         "it": "Camminare",
         "sl": "Hoja",
         "fr": "Marche"
@@ -3557,7 +3557,7 @@ export const surveyModel = {
         "it": "Abbonamento al servizio di Car Sharing",
         "de": "Auto-Sharing-Mitgliedschaft",
         "de-at": "Auto-Sharing-Mitgliedschaft",
-        "de-ch": "Auto-Sharing-Mitgliedschaft",
+        "de-ch": "Carsharing-Mitgliedschaft",
         "sl": "Račun za storitev skupne uporabe avtomobilov (car sharing)",
         "fr": "Abonnement autopartage"
        },
@@ -4311,7 +4311,7 @@ export const surveyModel = {
         "it": "Ho scelto una modalità più eco-sostenibile di spostamento (camminare, bicicletta, trasporto pubblico, auto elettrica,…)",
         "de": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
         "de-at": "Eine umweltfreundlichere Art des Reisens/der Mobilität gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
-        "de-ch": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
+        "de-ch": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuss, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
         "sl": "Izbrali okolju bolj prijazen način potovanja (hoja, kolo, javni prevoz, električni avtomobil)",
         "fr": "Choisir un mode de transport plus respectueux de l'environnement (marche, vélo, transport public, véhicule électrique)"
        },
