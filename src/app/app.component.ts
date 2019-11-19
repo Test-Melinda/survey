@@ -322,7 +322,12 @@ export class AppComponent implements OnInit {
     }
 	
 	private isUserOutOfPilot(selectedArea: string): boolean {
-		return ((selectedArea == "li" && this.source != 'at') || (selectedArea != "li" && selectedArea != this.source));
+		let out: boolean = (selectedArea != this.source);
+		if (this.source == "at"){
+			out = (["li", "de", "at", "ch"].indexOf(selectedArea) == -1);
+		}
+		
+		return out;
 	}
 	
 	public isDevMode(): boolean {
