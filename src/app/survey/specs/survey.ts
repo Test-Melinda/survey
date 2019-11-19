@@ -101,7 +101,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2FD",
      "visible": false,
-     "visibleIf": "{QF1} = \"fr\"",
+     "visibleIf": "{QF1} == \"fr\"",
      "title": {
       "default": "Could you please precise in which Department do you live?",
       "fr": "Dans quel département vivez-vous?"
@@ -166,7 +166,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2AR",
      "visible": false,
-     "visibleIf": "{QF1} = \"at\"",
+     "visibleIf": "{QF1} == \"at\"",
      "title": {
       "default": "Could you please precise in which Region do you live?",
       "de": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt.",
@@ -242,7 +242,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2AR2",
      "visible": false,
-     "visibleIf": "{QF2AR} = \"A2\"",
+     "visibleIf": "{QF1} == \"at\" and {QF2AR} == \"A2\"",
      "title": {
       "default": "In which municipality? (if \"other\" please specify your Postal Code)",
       "de": "In welchem Gemeinde liegt Ihr Wohnort?\n(Wenn \"andere\", Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes)",
@@ -268,7 +268,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2FD10",
      "visible": false,
-     "visibleIf": "{QF2FD} = \"A11\"",
+     "visibleIf": "{QF1} == \"fr\" and {QF2FD} == \"A11\"",
      "title": {
       "default": "In which municipality?",
       "fr": "Dans quel commune vivez-vous?"
@@ -516,7 +516,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2FD13",
      "visible": false,
-     "visibleIf": "{QF2FD} = \"A13\"",
+     "visibleIf": "{QF1} == \"fr\" and {QF2FD} == \"A13\"",
      "title": {
       "default": "In which municipality?",
       "fr": "Dans quel commune vivez-vous?"
@@ -664,7 +664,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2GB",
      "visible": false,
-     "visibleIf": "{QF1} = \"de\"",
+     "visibleIf": "{QF1} == \"de\"",
      "title": {
       "default": "Could you please precise in which Bundesland do you live?",
       "de": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt."
@@ -740,7 +740,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2GB2",
      "visible": false,
-     "visibleIf": "{QF2GB} = \"A2\"",
+     "visibleIf": "{QF1} == \"de\" and {QF2GB} == \"A2\"",
      "title": {
       "default": "Could you precise in which Landkreis?",
       "de": "In welchem Landkreis liegt Ihr Wohnort?"
@@ -1037,7 +1037,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2GB2EB",
      "visible": false,
-     "visibleIf": "{QF2GB2} = \"19\"",
+     "visibleIf": "{QF1} == \"de\" and {QF2GB} == \"A2\" and {QF2GB2} = \"19\"",
      "title": {
       "default": "In Landkreis Ebersberg, in which municipality do you live?",
       "de": "In welcher Kommune des Landkreises Ebersberg wohnen Sie?"
@@ -1253,7 +1253,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "QF2IT",
      "visible": false,
-     "visibleIf": "{QF1} = \"it\"",
+     "visibleIf": "{QF1} == \"it\"",
      "title": {
       "default": "In which province do you live?",
       "it": "In quale provincia vivi?"
@@ -1276,7 +1276,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2ITUTI",
      "visible": false,
-     "visibleIf": "{QF2IT} = \"1\"",
+     "visibleIf": "{QF1} == 'it' and {QF2IT} = \"1\"",
      "title": {
       "default": "In which municipality?",
       "it": "In quale comune?"
