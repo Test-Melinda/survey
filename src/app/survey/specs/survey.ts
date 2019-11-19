@@ -5057,7 +5057,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot3",
-     "visibleIf": "{_ch_Q11} == \"1\" and {PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\"",
+     "visibleIf": "({_ch_Q11} != \"1\" and {_ch_Q11}) and {PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\"",
      "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als Fahrer/In genutzt?",
      "isRequired": true,
      "choices": [
