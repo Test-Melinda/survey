@@ -2239,7 +2239,7 @@ export const surveyModel = {
       "de": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
-      "sl": "Katere od teh vidikov bi povezali z VLAKOM?",
+      "sl": "VLAKOM",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux au TRAIN?"
      },
      "validators": [
@@ -2360,7 +2360,7 @@ export const surveyModel = {
       "de": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit AUTOVERKEHR?",
-      "sl": "Katere od teh vidikov bi povezali z AVTOMOBILOM?",
+      "sl": "AVTOMOBIL",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux au CAR?"
      },
      "validators": [
@@ -2481,7 +2481,7 @@ export const surveyModel = {
       "de": "Welchen Aspekt verknüpfen Sie mit DEM ÖPNV?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ÖPNV?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit DEM ÖFFENTLICHEN VERKEHR?",
-      "sl": "Katere od teh vidikov bi povezali z JAVNIM PREVOZOM?",
+      "sl": "JAVNI MESTNI PREVOZ (avtobus)",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux au TRANSPORT PUBLIC URBAIN (Bus, Tram, Métro)?"
      },
      "validators": [
@@ -2602,7 +2602,7 @@ export const surveyModel = {
       "de": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit FAHRRADFAHREN?",
-      "sl": "Katere od teh vidikov bi povezali s KOLESOM?",
+      "sl": "KOLESARJENJE",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux au VÉLO?"
      },
      "validators": [
@@ -2723,7 +2723,7 @@ export const surveyModel = {
       "de": "Welchen Aspekt verknüpfen Sie mit DEM ZU Fuß GEHEN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ZU Fuß GEHEN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit DEM ZU FUSS GEHEN?",
-      "sl": "Katere od teh vidikov bi povezali s HOJO?",
+      "sl": "HOJA",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux À LA MARCHE?"
      },
      "validators": [
@@ -2845,7 +2845,7 @@ export const surveyModel = {
       "de-at": "Welchen Aspekt verknüpfen Sie mit MOTORRAD/MOPED?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux aux 2 ROUES MOTORISÉS?",
-      "sl": "Katere od teh vidikov bi povezali z MOTORJEM/MOPEDOM?"
+      "sl": "MOTOR/MOPED"
      },
      "validators": [
       {
@@ -2963,7 +2963,7 @@ export const surveyModel = {
     "de": "Welche Assoziationen verknüpfen Sie mit den folgenden Mobilitätsformen: Eisenbahn, Auto, ÖPNV, Fahrrad, zu Fuß, Motorrad?\n(Bitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen)",
     "de-ch": "Welche Assoziationen verknüpfen Sie mit den folgenden Mobilitätsformen: Eisenbahn, Auto, öffentlicher Verkehr, Fahrrad, zu FuSS, Motorrad?\nBitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen.",
     "de-at": "Welche der folgenden Aspekte würden Sie den folgenden Verkehrsmitteln zuordnen? Eisenbahn, Auto, öffentlicher Nahverkehr, Fahrrad, zu Fuß, Motorrad?\n(Bitte wählen Sie für jede Mobilitätsart max. drei der folgenden Optionen)",
-    "sl": "Katere od teh vidikov bi povezali z naslednjimi vrstami prevoza: VLAK, AVTOMOBIL, JAVNI PREVOZ, KOLO, HOJA, MOTOR/MOPED?\nZa vsako rešitev mobilnosti izberite največ 3 možnosti.",
+    "sl": "Katere od naštetih trditev bi lahko povezali z omenjenimi načini prevoza? Za vsako rešitev mobilnosti izberite največ 3 možnosti.\n",
     "fr": "Quels sont les qualificatifs qui correspondent le mieux à ces différents modes de transport (train, car, transport public, vélo, marche, 2 roues motorisés)?\nPour chaque mode de transport, sélectionnez au maximum 3 termes parmi ceux proposés."
    }
   },
