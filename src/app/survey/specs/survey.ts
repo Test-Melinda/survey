@@ -1946,7 +1946,7 @@ export const surveyModel = {
      "visibleIf": "{QF1} == 'si'",
      "title": {
       "default": "In the city of Maribor do you usually carry out any of the following activities? (Multiple answers are possible)",
-      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?\n(Možnih je več odgovorov)"
+      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti? (Možnih je več odgovorov)"
      },
      "choices": [
       {
@@ -3069,6 +3069,15 @@ export const surveyModel = {
       "sl": "Katero prevozno sredstvo najpogosteje uporabljate (najdaljše potovanje glede na razdaljo)?",
       "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande?"
      },
+     "description": {
+      "default": "(Only one answer possible)",
+      "fr": "(Une seule réponse possible)",
+      "it": "(È possibile una sola risposta)",
+      "de": "(Nur eine Nennung möglich)",
+      "de-at": "(Nur eine Nennung möglich)",
+      "de-ch": "(Nur eine Nennung möglich)",
+      "sl": "(izberite samo en odgovor)"
+     },
      "choices": [
       {
        "value": "1",
@@ -3171,6 +3180,15 @@ export const surveyModel = {
       "de-at": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
       "sl": "Za katere od naslednjih rešitev mobilnosti ste že slišali?",
       "fr": "Desquelles de ces solutions de mobilité avez vous entendu parler?"
+     },
+     "description": {
+      "default": "(Multiple answers possible)",
+      "it": "(Possibili più risposte)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)",
+      "fr": "(Plusieurs réponses possibles)",
+      "sl": "(Možnih je več odgovorov)"
      },
      "choices": [
       {
@@ -3284,6 +3302,15 @@ export const surveyModel = {
       "de-at": "Welche davon haben Sie bisher genutzt?",
       "sl": "Katere od teh ste že uporabili?",
       "fr": "Lesquelles avez-vous utilisées?"
+     },
+     "description": {
+      "default": "(Multiple answers possible)",
+      "it": "(Possibili più risposte)",
+      "de-ch": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "fr": "(Plusieurs réponses possibles)",
+      "sl": "(Možnih je več odgovorov)"
      },
      "choices": [
       {
