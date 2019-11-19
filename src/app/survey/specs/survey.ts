@@ -4279,13 +4279,22 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "Q8",
      "title": {
-      "default": "Have you done any of the following actions in the past six months? (Multiple answers possible)",
-      "it": "Quali tra queste attività hai intrapreso negli scorsi 6 mesi?\n(sono possibili più risposte)",
-      "de": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?\n(Mehrere Antworten möglich)",
-      "de-at": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?\n(Mehrere Antworten möglich)",
-      "de-ch": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?\n(Mehrere Antworten möglich)",
-      "sl": "Ste v zadnjih šestih mesecih izvedli katerega od naslednjih ukrepov?\n(Možnih je več odgovorov)",
-      "fr": "Avez-vous entrepris une des actions suivantes au cours des 6 derniers mois?\n(plusieurs réponses possibles)"
+      "default": "Have you done any of the following actions in the past six months?",
+      "it": "Quali tra queste attività hai intrapreso negli scorsi 6 mesi?",
+      "de": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?",
+      "de-at": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?",
+      "de-ch": "Haben Sie in den letzten sechs Monaten eine der folgenden Aktionen durchgeführt?",
+      "sl": "Ste v zadnjih šestih mesecih izvedli katerega od naslednjih ukrepov?",
+      "fr": "Avez-vous entrepris une des actions suivantes au cours des 6 derniers mois?"
+     },
+     "description": {
+      "default": "(Multiple answers possible)",
+      "sl": "(Možnih je več odgovorov)",
+      "de": "(Mehrere Antworten möglich)",
+      "de-at": "(Mehrere Antworten möglich)",
+      "de-ch": "(Mehrere Antworten möglich)",
+      "it": "(Sono possibili più risposte)",
+      "fr": "(Plusieurs réponses possibles)"
      },
      "validators": [
       {
