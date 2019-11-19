@@ -187,7 +187,7 @@ export class AppComponent implements OnInit {
 					label.style.lineHeight = "1.4";
 				}
 				
-				// Add labels over question columns of PSQ3
+				// Add labels over question columns of PSq3
 				if (question.question.name == "PSq3"){
 					let matrixHeads = question.htmlElement.getElementsByTagName('thead');
 					if (matrixHeads.length > 0){
