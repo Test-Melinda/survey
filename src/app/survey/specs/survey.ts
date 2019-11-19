@@ -1751,10 +1751,16 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "{QF1} == \"at\" or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\"))",
      "title": {
-      "default": "In the Vorarlberg Region do you usually carry out any of the following activities? (Multiple answers are possible)",
-      "de": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?\n(Mehrfachnennungen sind möglich)",
-      "de-at": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus? \n\n(Mehrfachnennungen sind möglich)",
-      "de-ch": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus? \n\n(Mehrfachnennungen sind möglich)"
+      "default": "In the Vorarlberg Region do you usually carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?",
+      "de-at": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?",
+      "de-ch": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)"
      },
      "choices": [
       {
@@ -1825,8 +1831,12 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "{QF1} == \"de\"",
      "title": {
-      "default": "In the Landkreis Ebersberg do you usually carry out any of the following activities? (Multiple answers are possible)",
-      "de": "Welche dieser Aktivitäten führen Sie regelmäßig im Landkreis Ebersberg aus? (Mehrfachnennungen sind möglich)"
+      "default": "In the Landkreis Ebersberg do you usually carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führen Sie regelmäßig im Landkreis Ebersberg aus?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "de": "(Mehrfachnennungen sind möglich)"
      },
      "choices": [
       {
@@ -1885,8 +1895,12 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
      "title": {
-      "default": "In one or more of these municipalities: Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons do you usually carry out any of the following activities? (multiple answers are possible)",
-      "it": "In uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons svolgi solitamente una o più delle seguenti attività?\n(sono possibili più risposte)"
+      "default": "In one or more of these municipalities: Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons do you usually carry out any of the following activities?",
+      "it": "In uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons svolgi solitamente una o più delle seguenti attività?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "it": "(Sono possibili più risposte)"
      },
      "choices": [
       {
@@ -1945,8 +1959,12 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "{QF1} == 'si'",
      "title": {
-      "default": "In the city of Maribor do you usually carry out any of the following activities? (Multiple answers are possible)",
-      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti? (Možnih je več odgovorov)"
+      "default": "In the city of Maribor do you usually carry out any of the following activities?",
+      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "sl": "(Možnih je več odgovorov)"
      },
      "choices": [
       {
@@ -2005,11 +2023,18 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "{QFSW1} == 'A6'",
      "title": {
-      "default": "In the Canton of Berne do you usually carry out any of the following activities? (Multiple answers are possible)",
-      "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?\n(Mehrfachnennungen sind möglich)",
-      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?\n(Možnih je več odgovorov)",
-      "de-ch": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?\n(Mehrfachnennungen sind möglich)",
-      "de-at": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?\n(Mehrfachnennungen sind möglich)"
+      "default": "In the Canton of Berne do you usually carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
+      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?",
+      "de-ch": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
+      "de-at": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "sl": "(Možnih je več odgovorov)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)"
      },
      "choices": [
       {
