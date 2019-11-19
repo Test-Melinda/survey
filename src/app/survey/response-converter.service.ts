@@ -7,6 +7,8 @@ import { LimesurveyResponse } from '../limesurvey/limesurvey-response';
     providedIn: 'root'
 } )
 export class ResponseConverterService {
+	
+	public otherOptionSuffix = '-Comment';
 
     constructor( public limesurveyMappingProvider: LimesurveyMappingProviderService ) { }
 
@@ -17,26 +19,43 @@ export class ResponseConverterService {
         // Convert each response
         let mapped = new LimesurveyResponse();
         for ( let rCode in response ) {
+			// Detect comment of option "Other"
+			let otherOption = false;
+			if (rCode.endsWith(this.otherOptionSuffix)){
+				otherOption = true;
+				rCode = rCode.replace(this.otherOptionSuffix, '');
+			}
+			
             // Map question code
             let limesurveyQuestionId = this.requireLimesurveyQuestionMapping(mapping, rCode);
             
-            // Map answer(s) code(s)
-            let answer = response[rCode];
-            if ( Array.isArray( answer ) ) {
-                for (let aCode of answer){
-                    limesurveyQuestionId.answerId = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
-                    mapped.setResponse(limesurveyQuestionId, "Y");
-                }
-            }
-			else if (typeof(answer) === 'object'){
-				for (let aCode in answer){
-					limesurveyQuestionId.answerId = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
-					mapped.setResponse(limesurveyQuestionId, answer[aCode]);
-				}
+			// Map answer
+			if (otherOption){
+				limesurveyQuestionId.answerId = 'other';
+				mapped.setResponse(limesurveyQuestionId, response[rCode + this.otherOptionSuffix]);
 			}
-            else {
-                mapped.setResponse(limesurveyQuestionId, this.requireLimesurveyAnswerMapping(mapping, rCode, answer, true));
-            }
+			else {
+				let answer = response[rCode];
+				
+	            // Map answer(s) code(s)
+	            if ( Array.isArray( answer ) ) {
+	                for (let aCode of answer){
+						if (aCode != 'other'){
+							limesurveyQuestionId.answerId = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
+	                    	mapped.setResponse(limesurveyQuestionId, "Y");
+						}
+	                }
+	            }
+				else if (typeof(answer) === 'object'){
+					for (let aCode in answer){
+						limesurveyQuestionId.answerId = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
+						mapped.setResponse(limesurveyQuestionId, answer[aCode]);
+					}
+				}
+	            else {
+	                mapped.setResponse(limesurveyQuestionId, this.requireLimesurveyAnswerMapping(mapping, rCode, answer, true));
+	            }
+			}
         }
 
         return mapped;
