@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Model, SurveyNG, StylesManager, Survey, IQuestion, surveyLocalization } from 'survey-angular';
+import { Model, SurveyNG, StylesManager, Survey, IQuestion, surveyLocalization, OtherEmptyError } from 'survey-angular';
 import { SurveySpecificationService } from "src/app/survey/survey-specification.service";
 import { ResponseConverterService } from "src/app/survey/response-converter.service";
 import { LimesurveyAnswerCode } from "./survey/limesurvey-questions-mapping";
@@ -217,6 +217,13 @@ export class AppComponent implements OnInit {
 							}
 						}
 					}
+				}
+			});
+			
+			// Reset errors for some specific questions to avoid showing them before that the user clicks to go to the next page
+			survey.onValueChanged.add((s, q) => {
+				if (q.name == "PS4dot2"){
+					q.question.errors = [];
 				}
 			});
             
