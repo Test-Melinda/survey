@@ -313,6 +313,7 @@ export class AppComponent implements OnInit {
 	        // Add the score to the hidden Limesurvey response
 	        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);
 	        let scoreQuestionMapping = this.limesurveyMappingProviderService.getScoreQuestionMapping(surveyRegion);
+			console.log("Score question mapping", scoreQuestionMapping);
 	        limesurveyAnswers.setResponse(new LimesurveyAnswerCode(surveyId, scoreQuestionMapping.gid, scoreQuestionMapping.qid), this.score);
 	        
 	        let limesurveyResponseData = limesurveyAnswers.toResponseData();
