@@ -186,6 +186,31 @@ export class AppComponent implements OnInit {
 					let label = <HTMLElement>(labels.item(i));
 					label.style.lineHeight = "1.4";
 				}
+				
+				// Add labels over question columns of PSQ3
+				if (question.question.name == "PSq3"){
+					let matrixHeads = question.htmlElement.getElementsByTagName('thead');
+					if (matrixHeads.length > 0){
+						let head = <HTMLElement>(matrixHeads.item(0));
+						let labels = head.getElementsByTagName('th');
+						
+						if (labels.length > 0){
+							labels.item(0).prepend(document.createElement('br'));
+							let text = document.createElement('span');
+							text.innerText = "ni urejeno";
+							text.style.fontWeight = 'normal';
+							labels.item(0).prepend(text);
+						}
+						
+						if (labels.length > 1){
+							labels.item(labels.length - 1).prepend(document.createElement('br'));
+							let text = document.createElement('span');
+							text.innerText = "dobro urejeno";
+							text.style.fontWeight = 'normal';
+							labels.item(labels.length - 1).prepend(text);
+						}
+					}
+				}
 			});
 			
 			// Scrolls up on page change
