@@ -2842,7 +2842,7 @@ export const surveyModel = {
       "default": "Which of these aspects would you associate to the MOTORBIKE/MOPED?",
       "it": "Quali aspetti assoceresti alla MOTOCICLETTA/MOTORINO?",
       "de": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
-      "de-at": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
+      "de-at": "Welchen Aspekt verknüpfen Sie mit MOTORRAD/MOPED?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit MOTORRADFAHREN?",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux aux 2 ROUES MOTORISÉS?",
       "sl": "Katere od teh vidikov bi povezali z MOTORJEM/MOPEDOM?"
@@ -3202,7 +3202,7 @@ export const surveyModel = {
       "it": "Di quali dei seguenti servizi di mobilità hai sentito parlare?",
       "de": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
       "de-ch": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
-      "de-at": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "de-at": "Von welcheR der folgenden Mobilitätslösungen/Mobilitätsangebote haben Sie schon einmal gehört?",
       "sl": "Za katere od naslednjih rešitev mobilnosti ste že slišali?",
       "fr": "Desquelles de ces solutions de mobilité avez vous entendu parler?"
      },
@@ -4301,7 +4301,7 @@ export const surveyModel = {
         "default": "Chosen a more environmentally-friendly way of travelling (walk, bicycle, public transport, electric car)",
         "it": "Ho scelto una modalità più eco-sostenibile di spostamento (camminare, bicicletta, trasporto pubblico, auto elettrica,…)",
         "de": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
-        "de-at": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
+        "de-at": "Eine umweltfreundlichere Art des Reisens/der Mobilität gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
         "de-ch": "Eine umweltfreundlichere Art des Reisens gewählt (zu Fuß, mit dem Fahrrad, mit öffentlichen Verkehrsmitteln, mit dem Elektroauto).",
         "sl": "Izbrali okolju bolj prijazen način potovanja (hoja, kolo, javni prevoz, električni avtomobil)",
         "fr": "Choisir un mode de transport plus respectueux de l'environnement (marche, vélo, transport public, véhicule électrique)"
