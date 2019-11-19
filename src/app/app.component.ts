@@ -211,6 +211,14 @@ export class AppComponent implements OnInit {
 						}
 					}
 				}
+				
+				// Spacing of last 2 options of S2Q7
+				if (question.question.name == "S2Q7"){
+					let options = question.htmlElement.getElementsByClassName('radio');
+					if (options.length > 1){
+						(<HTMLElement>(options.item(options.length - 2))).className = (<HTMLElement>(options.item(options.length - 2))).className + " mt-2";
+					}
+				}
 			});
 			
 			// Scrolls up on page change
