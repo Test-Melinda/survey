@@ -328,21 +328,26 @@ export class AppComponent implements OnInit {
 	        
 	        console.log("Full limesurvey response data", limesurveyResponse);
 	        
-	        // Create the client to communicate with Limesurvey
-	        this.limesurveyClientFactory.createClient(this.limesurveyCredentials).subscribe((limesurveyClient: LimesurveyClient) => {
-	            console.log("Limesurvey client", limesurveyClient);
-	            
-	            // Add the survey response
-	            limesurveyClient.addResponse(surveyId, limesurveyResponse).subscribe((responseId: number) => {
-	                console.log("Limesurvey response ID", responseId);
-	            }, (error) => {
-	                console.error("Cannot add response", error);
-	                this.surveyError = true;
-	            });
-	        }, (error) => {
-	            console.error("Cannot authenticate with LimeSurvey platform", error);
-	            this.surveyError = true;
-	        });
+			if (!!environment.saveResult){
+		        // Create the client to communicate with Limesurvey
+		        this.limesurveyClientFactory.createClient(this.limesurveyCredentials).subscribe((limesurveyClient: LimesurveyClient) => {
+		            console.log("Limesurvey client", limesurveyClient);
+		            
+		            // Add the survey response
+		            limesurveyClient.addResponse(surveyId, limesurveyResponse).subscribe((responseId: number) => {
+		                console.log("Limesurvey response ID", responseId);
+		            }, (error) => {
+		                console.error("Cannot add response", error);
+		                this.surveyError = true;
+		            });
+		        }, (error) => {
+		            console.error("Cannot authenticate with LimeSurvey platform", error);
+		            this.surveyError = true;
+		        });
+			}
+			else {
+				console.warn("Results not saved as stated by configuration options");
+			}
 		}
 		else {
 			console.warn("Ignoring response: user located out of pilot area [selectedArea, pilot]", responseData[this.pilotSelectionQuestion], this.source);

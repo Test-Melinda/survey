@@ -4,6 +4,7 @@
 
 export const environment = {
     production: false,
+	saveResult: true,
     limesurvey: {
         api: {
             url: "http://localhost/limesurvey/index.php/admin/remotecontrol",
@@ -13,10 +14,10 @@ export const environment = {
         surveys: {
             default: 463632,
 //            at: 463632,
-//            ch: 463632,
+            ch: 643939,
 //            de: 463632,
 //            fr: 463632,
-//            it: 463632,
+            it: 991375,
 //            li: 463632,
 //            si: 463632
         },
@@ -25,6 +26,14 @@ export const environment = {
                 default: {
                     gid: 20,
                     qid: 234
+                },
+				it: {
+                    gid: 105,
+                    qid: 843
+                },
+				ch: {
+                    gid: 67,
+                    qid: 561
                 }
             }
         }
