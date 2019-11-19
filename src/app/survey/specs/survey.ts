@@ -4893,12 +4893,13 @@ export const surveyModel = {
      ]
     },
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "PS4dot2",
      "visibleIf": "{PS4dot1} == \"1\"",
      "title": "Wie wurden Sie auf das Angebot aufmerksam?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
+     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -4923,7 +4924,8 @@ export const surveyModel = {
        "value": "5",
        "text": "Internet"
       }
-     ]
+     ],
+     "otherText": "Sonstiges, und zwar freies Textfeld"
     },
     {
      "type": "radiogroup",
