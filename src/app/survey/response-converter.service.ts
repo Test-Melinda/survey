@@ -40,7 +40,7 @@ export class ResponseConverterService {
 	            // Map answer(s) code(s)
 	            if ( Array.isArray( answer ) ) {
 	                for (let aCode of answer){
-						if (aCode != 'other'){
+						if (aCode != 'other' || !((rCode + this.otherOptionSuffix) in response)){
 							limesurveyQuestionId.answerId = this.requireLimesurveyAnswerMapping(mapping, rCode, aCode, true);
 	                    	mapped.setResponse(limesurveyQuestionId, "Y");
 						}
@@ -53,7 +53,9 @@ export class ResponseConverterService {
 					}
 				}
 	            else {
-	                mapped.setResponse(limesurveyQuestionId, this.requireLimesurveyAnswerMapping(mapping, rCode, answer, true));
+					if (answer != 'other' || !((rCode + this.otherOptionSuffix) in response)){
+	                	mapped.setResponse(limesurveyQuestionId, this.requireLimesurveyAnswerMapping(mapping, rCode, answer, true));
+					}
 	            }
 			}
         }
