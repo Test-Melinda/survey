@@ -15,7 +15,7 @@ export const data = {
 		"TIME_REQUIREMENTS": "Diese Umfrage benötigt nur 10 Minuten Ihrer Zeit.",
 		"LEGAL": {
 			"TITLE": "Haftungsausschluss",
-			"INTRO": "Sie sind eingeladen, an einer Forschungsumfrage des MELINDA-Projekts teilzunehmen, welche unter anderem durch die Hochschule Luzern - Wirtschaft durchgeführt wird. Ihre Teilnahme an dieser Studie ist freiwillig und anonym. Sie werden nicht aufgefordert, Ihren Namen anzugeben.",
+			"INTRO": "Sie sind eingeladen, an einer Forschungsumfrage des MELINDA-Projekts teilzunehmen durchgeführt wird.",
 			"GDPR": "Die gesammelten Daten werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet.",
 			"SCOPE": "Um die Mobilitätsentscheidungen der Menschen besser verstehen zu können, stellen wir Ihnen einige Fragen zu Ihren Reisegewohnheiten, Präferenzen, Ihrem Umweltbewusstsein und zu statistischen Klassifizierungszwecken einige grundlegende soziodemografische Informationen (Alter, Geschlecht, Bildung, Beruf, Postleitzahl und Haushaltsgrösse). Ihre E-Mail-Adresse wird, wenn Sie sie uns zur Verfügung stellen (ist nicht zwingend erforderlich), getrennt von den Antworten gespeichert und nur zur Kommunikation mit den Entwicklungen des Projekts verwendet. Die gesammelten Informationen können von ausgewählten Forschungsmitarbeitenden der Projektpartner unter strikter Einhaltung von Maßnahmen zum Schutz der persönlichen Identität verwendet werden. Die zusammengefassten Ergebnisse der Studie können in Sitzungen veröffentlicht und/oder präsentiert werden.",
 			"CONTACT": "Wenn Sie weitere Fragen zu diesem Projekt haben oder eine forschungsbezogene Frage haben, können Sie sich an Simone Caiello unter <a href=\"mailto:{{ contactEmail }}\">{{ contactEmail }}</a> wenden.",
