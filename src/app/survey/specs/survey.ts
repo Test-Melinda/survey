@@ -3091,7 +3091,7 @@ export const surveyModel = {
       "de": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?",
       "de-ch": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?\n(Nur eine Nennung möglich)",
       "de-at": "Welches Transportmittel/Verkehrsmittel nutzen Sie am meisten (in Bezug auf die Distanz)?",
-      "sl": "Katero prevozno sredstvo najpogosteje uporabljate (najdaljše potovanje glede na razdaljo)?",
+      "sl": "S katerim načinom prevoza opravljate najdaljša potovanja?",
       "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande?"
      },
      "description": {
@@ -3101,7 +3101,7 @@ export const surveyModel = {
       "de": "(Nur eine Nennung möglich)",
       "de-at": "(Nur eine Nennung möglich)",
       "de-ch": "(Nur eine Nennung möglich)",
-      "sl": "(izberite samo en odgovor)"
+      "sl": "(Izberite samo en odgovor)"
      },
      "choices": [
       {
@@ -3203,7 +3203,7 @@ export const surveyModel = {
       "de": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
       "de-ch": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
       "de-at": "Von welcheR der folgenden Mobilitätslösungen/Mobilitätsangebote haben Sie schon einmal gehört?",
-      "sl": "Za katere od naslednjih rešitev mobilnosti ste že slišali?",
+      "sl": "Za katere od naslednjih storitev mobilnosti ste že slišali?",
       "fr": "Desquelles de ces solutions de mobilité avez vous entendu parler?"
      },
      "description": {
@@ -3325,7 +3325,7 @@ export const surveyModel = {
       "de": "Welche davon haben Sie bisher genutzt?",
       "de-ch": "Welche davon haben Sie bisher genutzt?",
       "de-at": "Welche davon haben Sie bisher genutzt?",
-      "sl": "Katere od teh ste že uporabili?",
+      "sl": "Katere od omenjenih ste že uporabili?",
       "fr": "Lesquelles avez-vous utilisées?"
      },
      "description": {
@@ -3452,7 +3452,7 @@ export const surveyModel = {
       "de": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
       "de-at": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
       "de-ch": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
-      "sl": "Lastnik katerih prevoznih sredstev ste ali do katerih imate dostop?",
+      "sl": "Do katerih prevoznih sredstev lahko dostopate?",
       "fr": "A quel moyens de transport avez-vous accès* ?"
      },
      "description": {
@@ -3529,7 +3529,7 @@ export const surveyModel = {
        "text": {
         "default": "Scooter/skateboard/hoverboard",
         "it": "Monopattino/skateboard/hoverboard",
-        "de": "Roller/Skateboard/Hoverboard",
+        "de": "Skiro/rolka/hoverboard",
         "de-at": "(E-)Scooter/Skateboard/Hoverboard",
         "de-ch": "Roller/Skateboard/Hoverboard",
         "sl": "Skuter/rolka/hoverboard",
