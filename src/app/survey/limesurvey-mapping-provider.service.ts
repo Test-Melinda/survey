@@ -32,7 +32,7 @@ export class LimesurveyMappingProviderService {
   } {
       let mapping = environment.limesurvey.metaQuestions.score.default;
       if (region in environment.limesurvey.metaQuestions.score){
-          mapping = environment.limesurvey.surveys[region];
+          mapping = environment.limesurvey.metaQuestions.score[region];
       }
       
       return mapping;
