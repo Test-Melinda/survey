@@ -2979,7 +2979,7 @@ export const surveyModel = {
       "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
       "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
       "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?",
-      "sl": "Katera prevozna sredstva uporabljate za vsakodnevna potovanja?",
+      "sl": "Katera načine prevoza uporabljate za vsakodnevna potovanja?",
       "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?"
      },
      "description": {
