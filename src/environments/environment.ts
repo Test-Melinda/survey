@@ -13,19 +13,18 @@ export const environment = {
         },
         surveys: {
             default: 463632,
-//            at: 463632,
+            at: 122333,
             ch: 643939,
-//            de: 463632,
-//            fr: 463632,
+            de: 163671,
+            fr: 776434,
             it: 991375,
-//            li: 463632,
-//            si: 463632
+            si: 966913
         },
         metaQuestions: {
             score: {
                 default: {
-                    gid: 20,
-                    qid: 234
+                    gid: 218,
+                    qid: 1973
                 },
 				it: {
                     gid: 105,
@@ -34,6 +33,22 @@ export const environment = {
 				ch: {
                     gid: 67,
                     qid: 561
+                },
+				de: {
+                    gid: 198,
+                    qid: 1754
+                },
+				at: {
+                    gid: 178,
+                    qid: 1535
+                },
+				si: {
+                    gid: 153,
+                    qid: 1299
+                },
+				fr: {
+                    gid: 133,
+                    qid: 1080
                 }
             }
         }

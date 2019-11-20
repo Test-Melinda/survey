@@ -380,8 +380,11 @@ export class AppComponent implements OnInit {
 		return isDevMode() || URI(window.location.href).hasQuery("mode", "dev");
 	}
 	
-	public devAutoMapRegion = "it";
+	public devAutoMapRegion = "";
 	public autoMap(){
+		if (!this.devAutoMapRegion){
+			this.devAutoMapRegion = null;
+		}
 		console.log("Building automatic mapping for pilot", this.devAutoMapRegion);
 		
 		let surveyId = this.limesurveyMappingProviderService.getSurveyId(this.devAutoMapRegion);
