@@ -43,6 +43,10 @@
                   "with": "src/environments/environment.prod.ts"
                 },
                 {
+                  "replace": "src/environments/limesurvey-settings.ts",
+                  "with": "src/environments/limesurvey-settings.prod.ts"
+                },
+                {
                   "replace": "src/app/survey/specs/mapping-default.ts",
                   "with": "src/app/survey/specs/mapping-default.prod.ts"
                 }

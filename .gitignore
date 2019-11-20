@@ -50,3 +50,4 @@ Thumbs.db
 
 # Limesurvey settings
 /src/environments/limesurvey-settings.ts
+/src/environments/limesurvey-settings.prod.ts
