@@ -667,7 +667,9 @@ export const surveyModel = {
      "visibleIf": "{QF1} == \"de\"",
      "title": {
       "default": "Could you please precise in which Bundesland do you live?",
-      "de": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt."
+      "de": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt.",
+      "de-at": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt.",
+      "de-ch": "Bitte nennen Sie uns das Bundesland, in dem Ihr Wohnort liegt."
      },
      "choices": [
       {
@@ -740,7 +742,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2GB2",
      "visible": false,
-     "visibleIf": "{QF1} == \"de\" and {QF2GB} == \"A2\"",
+     "visibleIf": "(!{source} or {source} == 'de') and {QF1} == \"de\" and {QF2GB} == \"A2\"",
      "title": {
       "default": "Could you precise in which Landkreis?",
       "de": "In welchem Landkreis liegt Ihr Wohnort?"
@@ -1037,7 +1039,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2GB2EB",
      "visible": false,
-     "visibleIf": "{QF1} == \"de\" and {QF2GB} == \"A2\" and {QF2GB2} = \"19\"",
+     "visibleIf": "(!{source} or {source} == 'de') and {QF1} == \"de\" and {QF2GB} == \"A2\" and {QF2GB2} = \"19\"",
      "title": {
       "default": "In Landkreis Ebersberg, in which municipality do you live?",
       "de": "In welcher Kommune des Landkreises Ebersberg wohnen Sie?"
@@ -1829,7 +1831,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "EQ1GE",
      "visible": false,
-     "visibleIf": "{QF1} == \"de\"",
+     "visibleIf": "(!{source} or {source} == 'de') and  {QF1} == \"de\"",
      "title": {
       "default": "In the Landkreis Ebersberg do you usually carry out any of the following activities?",
       "de": "Welche dieser Aktivitäten führen Sie regelmäßig im Landkreis Ebersberg aus?"
@@ -2021,7 +2023,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "EQ1SW1",
      "visible": false,
-     "visibleIf": "{QFSW1} == 'A6'",
+     "visibleIf": "(!{source} or {source} == 'ch') and {QFSW1} == 'A6'",
      "title": {
       "default": "In the Canton of Berne do you usually carry out any of the following activities?",
       "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
