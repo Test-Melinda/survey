@@ -2,7 +2,7 @@ import { limesurveySettings } from './limesurvey-settings';
 
 export const environment = {
     production: true,
-	saveResult: true,
+	saveResult: false,
     limesurvey: {
         api: {
             url: limesurveySettings.url,
