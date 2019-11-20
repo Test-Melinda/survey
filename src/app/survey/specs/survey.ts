@@ -2239,7 +2239,7 @@ export const surveyModel = {
       "de": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
       "de-at": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit der BAHN?",
-      "sl": "VLAKOM",
+      "sl": "VLAK",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux au TRAIN?"
      },
      "validators": [
