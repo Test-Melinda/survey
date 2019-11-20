@@ -37,3 +37,7 @@ body {
 .survey-progress {
 	width: 100%;
 }
+
+input[type="checkbox"]:disabled ~ span {
+    color: #808080;
+}
