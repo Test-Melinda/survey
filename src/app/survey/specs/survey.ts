@@ -5227,35 +5227,40 @@ export const surveyModel = {
        "text": {
         "default": "Yes without conditions",
         "sl": "Prezpogojno da"
-       }
+       },
+       "enableIf": "{PSq4} anyof \"1\" or !({PSq4} anyof \"4\" or {PSq4} anyof \"5\")"
       },
       {
        "value": "2",
        "text": {
         "default": "Yes, if the frequency would be higher and time tables harmonised",
         "sl": "Da, v kolikor bi bili usklajeni vozni redi in večja frekvenca mestnega prometa"
-       }
+       },
+       "enableIf": "{PSq4} anyof \"2\" or !({PSq4} anyof \"4\" or {PSq4} anyof \"5\")"
       },
       {
        "value": "3",
        "text": {
         "default": "Yes, if bus will be cheaper",
         "sl": "Da, če bi bilo ceneje"
-       }
+       },
+       "enableIf": "{PSq4} anyof \"3\" or !({PSq4} anyof \"4\" or {PSq4} anyof \"5\")"
       },
       {
        "value": "4",
        "text": {
         "default": "Public transport is irrelevant because of my residential address.",
         "sl": "Javni prevoz zaradi mesta bivanja ne pride v poštev"
-       }
+       },
+       "enableIf": "{PSq4} anyof \"4\" or {PSq4.length} == 0"
       },
       {
        "value": "5",
        "text": {
         "default": "Certainly not, it is not interesting for me",
         "sl": "Nikakor ne, me ne zanima"
-       }
+       },
+       "enableIf": "{PSq4} anyof \"5\" or {PSq4.length} == 0"
       }
      ]
     }
