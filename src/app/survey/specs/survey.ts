@@ -3898,7 +3898,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q6DRIVEL",
-     "visibleIf": "{QF1} == 'ch'",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == 'ch'",
      "title": {
       "default": "Do you have a driving licence?",
       "de-ch": "Hast Du einen Führerschein?",
@@ -4787,7 +4787,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot1",
-     "visibleIf": "{QF1} == \"ch\"",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\"",
      "title": {
       "default": "Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?",
       "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
@@ -5006,7 +5006,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "_ch_Q11",
-     "visibleIf": "{QF1} == \"ch\"",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\"",
      "title": {
       "default": "What is your age?",
       "it": "Quanti anni hai?",
@@ -5921,7 +5921,7 @@ export const surveyModel = {
     {
      "type": "comment",
      "name": "PS4dot17",
-     "visibleIf": "{QF1} == \"ch\"",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\"",
      "title": "Haben Sie weitere Kommentare zum Angebot von Taxito? Dann können Sie hier Ihre Erfahrungen, Kritiken und Wünsche anbringen.",
      "isRequired": true
     }
