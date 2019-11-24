@@ -3531,10 +3531,10 @@ export const surveyModel = {
        "text": {
         "default": "Scooter/skateboard/hoverboard",
         "it": "Monopattino/skateboard/hoverboard",
-        "de": "Skiro/rolka/hoverboard",
+        "de": "Roller/Skateboard/Hoverboard",
         "de-at": "(E-)Scooter/Skateboard/Hoverboard",
         "de-ch": "Roller/Skateboard/Hoverboard",
-        "sl": "Roller/Skateboard/Hoverboard",
+        "sl": "Skiro/rolka/hoverboard",
         "fr": "Trotinette/skateboard/hoverboard"
        },
        "enableIf": "{Q6} anyof \"5\" or !({Q6} anyof \"9\")"
