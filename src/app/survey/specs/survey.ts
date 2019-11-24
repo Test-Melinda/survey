@@ -4814,7 +4814,7 @@ export const surveyModel = {
    "name": "PS2",
    "elements": [
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "S2Q2",
      "visibleIf": "[\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
      "title": {
