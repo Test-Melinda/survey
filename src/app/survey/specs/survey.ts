@@ -1731,7 +1731,7 @@ export const surveyModel = {
      "type": "text",
      "name": "QF3",
      "visible": false,
-     "visibleIf": "{source} != 'at' and (\r\n({QF2FD} notempty and !([\"A11\", \"A13\"] anyof {QF2FD}))\r\nor\r\n({QF2AR} notempty and !([\"A1\", \"A2\"] anyof {QF2AR}))\r\nor\r\n({QF2GB2} notempty and {QF2GB2} != \"19\")\r\nor\r\n({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\r\nor\r\n{QFSW1} == \"A2\"\r\nor\r\n({QF2SL} notempty and {QF2SL} != \"7\")\r\n)",
+     "visibleIf": "{source} != 'at' and (\r\n({QF2FD} notempty and !([\"A11\", \"A13\"] anyof {QF2FD}))\r\nor\r\n({QF2AR} notempty and !([\"A1\", \"A2\"] anyof {QF2AR}))\r\nor\r\n({QF2GB2} notempty and {QF2GB2} != \"19\")\r\nor\r\n({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\r\nor\r\n{QFSW1} == \"A2\"\r\n)",
      "title": {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
