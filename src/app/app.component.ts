@@ -201,20 +201,26 @@ export class AppComponent implements OnInit {
 						let head = <HTMLElement>(matrixHeads.item(0));
 						let labels = head.getElementsByTagName('th');
 						
-						if (labels.length > 0){
-							labels.item(0).prepend(document.createElement('br'));
-							let text = document.createElement('span');
-							text.innerText = "ni urejeno";
-							text.style.fontWeight = 'normal';
-							labels.item(0).prepend(text);
-						}
-						
-						if (labels.length > 1){
-							labels.item(labels.length - 1).prepend(document.createElement('br'));
-							let text = document.createElement('span');
-							text.innerText = "dobro urejeno";
-							text.style.fontWeight = 'normal';
-							labels.item(labels.length - 1).prepend(text);
+						for (let i = 0; i < labels.length; i++){
+							let label = labels.item(i);
+							label.style.fontSize = '0.8rem';
+							
+							if (i == 0){
+								label.prepend(document.createElement('br'));
+								let text = document.createElement('span');
+								text.innerText = "ni urejeno";
+								text.style.textTransform = 'uppercase';
+								text.style.fontSize = '1rem';
+								label.prepend(text);
+							}
+							else if (i == labels.length - 1){
+								label.prepend(document.createElement('br'));
+								let text = document.createElement('span');
+								text.innerText = "dobro urejeno";
+								text.style.textTransform = 'uppercase';
+								text.style.fontSize = '1rem';
+								label.prepend(text);
+							}
 						}
 					}
 				}
