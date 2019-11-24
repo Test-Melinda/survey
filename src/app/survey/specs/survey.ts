@@ -3204,7 +3204,7 @@ export const surveyModel = {
       "it": "Di quali dei seguenti servizi di mobilità hai sentito parlare?",
       "de": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
       "de-ch": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
-      "de-at": "Von welcheR der folgenden Mobilitätslösungen/Mobilitätsangebote haben Sie schon einmal gehört?",
+      "de-at": "Von welche der folgenden Mobilitätslösungen/Mobilitätsangebote haben Sie schon einmal gehört?",
       "sl": "Za katere od naslednjih storitev mobilnosti ste že slišali?",
       "fr": "Desquelles de ces solutions de mobilité avez vous entendu parler?"
      },
