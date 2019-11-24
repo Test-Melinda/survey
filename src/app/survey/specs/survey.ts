@@ -1959,7 +1959,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "EQ1SL",
      "visible": false,
-     "visibleIf": "{QF1} == 'si'",
+     "visibleIf": "{QF1} == 'si' and {QF2SL} == '7'",
      "title": {
       "default": "In the city of Maribor do you usually carry out any of the following activities?",
       "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?"
