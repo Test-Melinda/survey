@@ -3460,9 +3460,9 @@ export const surveyModel = {
      "description": {
       "default": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
       "it": "* per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso (ad esempio: \"i miei genitori posseggono un'auto che posso utilizzare in caso ne avessi bisogno\")",
-      "de": " *Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
-      "de-at": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
-      "de-ch": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\").",
+      "de": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
+      "de-at": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
+      "de-ch": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
       "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti (na primer: »Moji starši imajo avto, ki ga lahko uporabim, če ga hočem/potrebujem.«)",
       "fr": "* Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété"
      },
@@ -3534,7 +3534,7 @@ export const surveyModel = {
         "de": "Skiro/rolka/hoverboard",
         "de-at": "(E-)Scooter/Skateboard/Hoverboard",
         "de-ch": "Roller/Skateboard/Hoverboard",
-        "sl": "Skuter/rolka/hoverboard",
+        "sl": "Roller/Skateboard/Hoverboard",
         "fr": "Trotinette/skateboard/hoverboard"
        },
        "enableIf": "{Q6} anyof \"5\" or !({Q6} anyof \"9\")"
