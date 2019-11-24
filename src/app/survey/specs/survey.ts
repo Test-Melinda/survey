@@ -1751,7 +1751,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "EQ1AU",
      "visible": false,
-     "visibleIf": "{QF1} == \"at\" or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\"))",
+     "visibleIf": "(!{source} or {source} == 'at') and ({QF1} == \"at\" or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\")))",
      "title": {
       "default": "In the Vorarlberg Region do you usually carry out any of the following activities?",
       "de": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?",
