@@ -742,7 +742,7 @@ export const surveyModel = {
      "type": "dropdown",
      "name": "QF2GB2",
      "visible": false,
-     "visibleIf": "(!{source} or {source} == 'de') and {QF1} == \"de\" and {QF2GB} == \"A2\"",
+     "visibleIf": "((!{source}) or {source} == 'de') and {QF1} == \"de\" and {QF2GB} == \"A2\"",
      "title": {
       "default": "Could you precise in which Landkreis?",
       "de": "In welchem Landkreis liegt Ihr Wohnort?"
