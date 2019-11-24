@@ -5831,7 +5831,7 @@ export const surveyModel = {
    "name": "PS15",
    "elements": [
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "PS4dot15",
      "visibleIf": "{PS4dot1} == \"1\" and {PS4dot8} == \"2\"",
      "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in <u>nicht nutzen</u>?",
