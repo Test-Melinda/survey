@@ -2023,7 +2023,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "EQ1SW1",
      "visible": false,
-     "visibleIf": "(!{source} or {source} == 'ch') and {QFSW1} == 'A6'",
+     "visibleIf": "((!{source}) or {source} == 'ch') and ({QFSW1} == 'A6' or {QFSW1} == 'A10' or {QFSW1} == 'A12' or {QFSW1} == 'A19')",
      "title": {
       "default": "In the Canton of Berne do you usually carry out any of the following activities?",
       "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
