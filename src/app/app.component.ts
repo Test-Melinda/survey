@@ -162,6 +162,12 @@ export class AppComponent implements OnInit {
                 }
             });
 			
+			// Hide question QF1 for slovenian pilot
+			survey.onAfterRenderQuestion.add((survey, question) => {
+				if (question.question.name == 'QF1' && this.source == 'si'){
+					question.htmlElement.style.display = 'none';
+				}
+			});
 			// Fix questions style
 			survey.onAfterRenderQuestion.add((survey, question) => {
 				// Make titles bolder
@@ -296,7 +302,7 @@ export class AppComponent implements OnInit {
 			// Preselect the country in case of slovenian pilot and hide country selection
 			if (this.source == 'si'){
 				survey.setValue("QF1", this.source);
-				survey.getQuestionByName("QF1").visible = false;
+				//survey.getQuestionByName("QF1").visible = false; // Cannot do this otherwise the response data are not returned... don't know why???
             }
 			
             this.status = SurveyStatus.READY;
