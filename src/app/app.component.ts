@@ -18,7 +18,6 @@ import { slovenianSurveyStrings } from './i18n/surveyjs/slovenian';
 import { austrianGermanSurveyStrings } from './i18n/surveyjs/austrian-german';
 import { swissGermanSurveyStrings } from './i18n/surveyjs/swiss-german';
 import { Title } from '@angular/platform-browser';
-import * as showdown from 'showdown';
 
 @Component( {
     selector: 'app-root',
@@ -269,20 +268,6 @@ export class AppComponent implements OnInit {
 					q.question.errors = [];
 				}
 			});
-
-			// Create showdown markdown converter
-			var converter = new showdown.Converter();
-			survey
-			    .onTextMarkdown
-			    .add((survey, options) => {
-			        //convert the mardown text to html
-			        var str = converter.makeHtml(options.text);
-			        //remove root paragraphs <p></p>
-			        str = str.substring(3);
-			        str = str.substring(0, str.length - 4);
-			        //set html
-			        options.html = str;
-			    });
 
             // Doc: https://surveyjs.io/Examples/Library/?id=survey-customcss&platform=jQuery&theme=default
             SurveyNG.render( "surveyElement", {
