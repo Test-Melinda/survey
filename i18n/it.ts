@@ -34,12 +34,9 @@ export const data = {
 		"THANKS": "Grazie per aver risposto alle nostre domande!",
 		"SCORE": "Il tuo livello di consapevolezza ambientale è:",
 		"LEVEL": {
-			"EXCELLENT": "Eccellente",
 			"VERY_GOOD": "Molto buono",
 			"GOOD": "Buono",
-			"AVERAGE": "Medio",
-			"LOW": "Puoi fare di più",
-			"VERY_LOW": "Non ci siamo, è ora di cambiare!"
+			"LOW": "Puoi fare di più"
 		},
 		"TEXT": "Ma dal momento che hai dato un contributo a questo progetto hai già cominciato a fare un altro passo avanti!",
 		"SOLUTIONS": {
