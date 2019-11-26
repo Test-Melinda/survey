@@ -1831,7 +1831,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "EQ1GE",
      "visible": false,
-     "visibleIf": "(!{source} or {source} == 'de') and  {QF1} == \"de\"",
+     "visibleIf": "((!{source}) or {source} == 'de') and  {QF1} == \"de\"",
      "title": {
       "default": "In the Landkreis Ebersberg do you usually carry out any of the following activities?",
       "de": "Welche dieser Aktivitäten führen Sie regelmäßig im Landkreis Ebersberg aus?"
