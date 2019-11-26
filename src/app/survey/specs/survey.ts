@@ -1562,6 +1562,10 @@ export const surveyModel = {
      },
      "choices": [
       {
+       "value": "17",
+       "text": "Maribor"
+      },
+      {
        "value": "1",
        "text": "Benedikt"
       },
@@ -1624,10 +1628,6 @@ export const surveyModel = {
       {
        "value": "16",
        "text": "Makole"
-      },
-      {
-       "value": "17",
-       "text": "Maribor"
       },
       {
        "value": "18",
