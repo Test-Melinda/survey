@@ -18,6 +18,7 @@ import { slovenianSurveyStrings } from './i18n/surveyjs/slovenian';
 import { austrianGermanSurveyStrings } from './i18n/surveyjs/austrian-german';
 import { swissGermanSurveyStrings } from './i18n/surveyjs/swiss-german';
 import { Title } from '@angular/platform-browser';
+import * as showdown from 'showdown';
 
 @Component( {
     selector: 'app-root',
@@ -261,6 +262,22 @@ export class AppComponent implements OnInit {
 					}
 				}
 			});
+			
+			// Create showdown markdown converter
+			var converter = new showdown.Converter({
+				underline: true
+			});
+			survey
+			    .onTextMarkdown
+			    .add((survey, options) => {
+			        //convert the mardown text to html
+			        var str = converter.makeHtml(options.text);
+			        //remove root paragraphs <p></p>
+			        str = str.substring(3);
+			        str = str.substring(0, str.length - 4);
+			        //set html
+			        options.html = str;
+			    });
 			
 			// Reset errors for some specific questions to avoid showing them before that the user clicks to go to the next page
 			survey.onValueChanged.add((s, q) => {

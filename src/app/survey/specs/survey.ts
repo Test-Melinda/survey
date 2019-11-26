@@ -3458,13 +3458,13 @@ export const surveyModel = {
       "fr": "A quel moyens de transport avez-vous accès* ?"
      },
      "description": {
-      "default": "* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
-      "it": "* per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso (ad esempio: \"i miei genitori posseggono un'auto che posso utilizzare in caso ne avessi bisogno\")",
-      "de": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
-      "de-at": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
-      "de-ch": "*Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
+      "default": "\\* to have access to means that you can easily use it even if you don't own it (for example: \"my parents own a car I can use if I want/need\")",
+      "it": "\\* per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso (ad esempio: \"i miei genitori posseggono un'auto che posso utilizzare in caso ne avessi bisogno\")",
+      "de": "\\* Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
+      "de-at": "\\* Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
+      "de-ch": "\\* Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört (z. B.: \"Meine Eltern besitzen ein Auto, das ich benutzen kann, wenn ich es will/benötige\")",
       "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti (na primer: »Moji starši imajo avto, ki ga lahko uporabim, če ga hočem/potrebujem.«)",
-      "fr": "* Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété"
+      "fr": "\\* Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété"
      },
      "validators": [
       {
@@ -5060,7 +5060,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot3",
      "visibleIf": "({_ch_Q11} != \"1\" and {_ch_Q11}) and {PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\" and {QFSW1} == \"A10\"",
-     "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als <u>Fahrer/In</u> genutzt?",
+     "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als __Fahrer/In__ genutzt?",
      "isRequired": true,
      "choices": [
       {
@@ -5149,7 +5149,7 @@ export const surveyModel = {
      },
      "description": {
       "default": "A bike sharing is a service where, after a subscription, anyone can use bicycles offered to the users in sharing.",
-      "it": "* il bike-sharing è un servizio di mobilità in cui, in seguito all'iscrizione, l'utente può utilizzare (in forma di noleggio a breve termine) le biciclette messe a disposizione da un operatore (pubblico o privato), in condivisione con altri utenti."
+      "it": "\\* il bike-sharing è un servizio di mobilità in cui, in seguito all'iscrizione, l'utente può utilizzare (in forma di noleggio a breve termine) le biciclette messe a disposizione da un operatore (pubblico o privato), in condivisione con altri utenti."
      },
      "choices": [
       {
@@ -5176,7 +5176,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot4",
      "visibleIf": "{PS4dot3} == \"1\" and {QFSW1} == \"A10\"",
-     "title": "Wie häufig nutzen Sie das Angebot <u>als Fahrer/In</u> bislang?",
+     "title": "Wie häufig nutzen Sie das Angebot __als Fahrer/In__ bislang?",
      "isRequired": true,
      "choices": [
       {
@@ -5309,7 +5309,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot5",
      "visibleIf": "{PS4dot3} == \"1\" and {QFSW1} == \"A10\"",
-     "title": "Was sind Ihre Beweggründe, <u>als Fahrer/In</u> weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
+     "title": "Was sind Ihre Beweggründe, __als Fahrer/In__ weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
      "choices": [
@@ -5503,7 +5503,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot7",
      "visibleIf": "{PS4dot6} == \"1\" and {QFSW1} == \"A10\"",
-     "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Fahrer/in, das Angebot <u>weniger als bisher</u> zu nützen?",
+     "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Fahrer/in, das Angebot __weniger als bisher__ zu nützen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
      "choices": [
@@ -5567,7 +5567,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot8",
      "visibleIf": "{PS4dot1} == \"1\" and {QFSW1} == \"A10\"",
-     "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als <u>Mitfahrer/In</u> genutzt?",
+     "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als __Mitfahrer/In__ genutzt?",
      "isRequired": true,
      "choices": [
       {
@@ -5589,7 +5589,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot9",
      "visibleIf": "{PS4dot8} == \"1\" and {QFSW1} == \"A10\"",
-     "title": "Wie häufig nutzen Sie das Angebot <u>Mitfahrer/In</u> bislang?",
+     "title": "Wie häufig nutzen Sie das Angebot __Mitfahrer/In__ bislang?",
      "choices": [
       {
        "value": "1",
@@ -5722,7 +5722,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "PS4dot12",
      "visibleIf": "{PS4dot8} == \"1\" and {QFSW1} == \"A10\"",
-     "title": "Was waren Ihre Gründe für <u>Ihre Nutzung</u> des Angebots als Mitfahrer/in?",
+     "title": "Was waren Ihre Gründe für __Ihre Nutzung__ des Angebots als Mitfahrer/in?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
      "hasOther": true,
@@ -5794,7 +5794,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot14",
      "visibleIf": "{PS4dot8} == \"1\" and {PS4dot13} == \"1\" and {QFSW1} == \"A10\"",
-     "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Mitfahrer/in, das Angebot <u>weniger als bisher</u> zu nützen?",
+     "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Mitfahrer/in, das Angebot __weniger als bisher__ zu nützen?",
      "isRequired": true,
      "hasOther": true,
      "choices": [
@@ -5834,7 +5834,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "PS4dot15",
      "visibleIf": "{PS4dot1} == \"1\" and {PS4dot8} == \"2\" and {QFSW1} == \"A10\"",
-     "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in <u>nicht nutzen</u>?",
+     "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in __nicht nutzen__?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
      "hasOther": true,
@@ -5887,7 +5887,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot16",
      "visibleIf": "{PS4dot3} == \"2\" and {QFSW1} == \"A10\"",
-     "title": "Was sind die Gründe dafür, dass Sie das Angebot als Fahrer/in <u>nicht nutzen</u>?",
+     "title": "Was sind die Gründe dafür, dass Sie das Angebot als Fahrer/in __nicht nutzen__?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
      "choices": [
