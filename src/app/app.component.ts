@@ -232,7 +232,7 @@ export class AppComponent implements OnInit {
 						let labels = row.getElementsByTagName('td');
 						
 						if (labels.length > 0){
-							labels.item(0).className += ' xs-text-uppercase xs-text-bold';
+							labels.item(0).className += ' xs-bg-gray-200 xs-text-bold';
 						}
 						
 						if (labels.length > 1){
