@@ -4787,7 +4787,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot1",
-     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\"",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\" and {QFSW1} == \"A10\"",
      "title": {
       "default": "Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?",
       "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
@@ -4897,7 +4897,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot2",
-     "visibleIf": "{PS4dot1} == \"1\"",
+     "visibleIf": "{PS4dot1} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Wie wurden Sie auf das Angebot aufmerksam?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5059,7 +5059,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot3",
-     "visibleIf": "({_ch_Q11} != \"1\" and {_ch_Q11}) and {PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\"",
+     "visibleIf": "({_ch_Q11} != \"1\" and {_ch_Q11}) and {PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als <u>Fahrer/In</u> genutzt?",
      "isRequired": true,
      "choices": [
@@ -5175,7 +5175,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot4",
-     "visibleIf": "{PS4dot3} == \"1\"",
+     "visibleIf": "{PS4dot3} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Wie häufig nutzen Sie das Angebot <u>als Fahrer/In</u> bislang?",
      "isRequired": true,
      "choices": [
@@ -5308,7 +5308,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot5",
-     "visibleIf": "{PS4dot3} == \"1\"",
+     "visibleIf": "{PS4dot3} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Was sind Ihre Beweggründe, <u>als Fahrer/In</u> weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5426,7 +5426,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot6",
-     "visibleIf": "{PS4dot3} == \"1\"",
+     "visibleIf": "{PS4dot3} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Wie beabsichtigen Sie das Angebot in Zukunft als Fahrer/in zu nutzen?",
      "isRequired": true,
      "choices": [
@@ -5502,7 +5502,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot7",
-     "visibleIf": "{PS4dot6} == \"1\"",
+     "visibleIf": "{PS4dot6} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Fahrer/in, das Angebot <u>weniger als bisher</u> zu nützen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5566,7 +5566,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot8",
-     "visibleIf": "{PS4dot1} == \"1\"",
+     "visibleIf": "{PS4dot1} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als <u>Mitfahrer/In</u> genutzt?",
      "isRequired": true,
      "choices": [
@@ -5588,7 +5588,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot9",
-     "visibleIf": "{PS4dot8} == \"1\"",
+     "visibleIf": "{PS4dot8} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Wie häufig nutzen Sie das Angebot <u>Mitfahrer/In</u> bislang?",
      "choices": [
       {
@@ -5625,7 +5625,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot10",
-     "visibleIf": "{PS4dot8} == \"1\"",
+     "visibleIf": "{PS4dot8} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Wenn Taxito Ihnen nicht zur Verfügung gestanden wäre, mit welchen Verkehrsmitteln hätten Sie dann ihre letzte Fahrt unternommen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5675,7 +5675,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot11",
-     "visibleIf": "{PS4dot8} == \"1\"",
+     "visibleIf": "{PS4dot8} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Haben Sie unmittelbar vor oder nach der Taxito-Fahrt ein weiteres Verkehrsmittel für dieselbe Reise benutzt?\n\nAlso sind Sie auf ein anderes Verkehrsmittel umgestiegen? Wenn ja, welche Verkehrsmittel?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5721,7 +5721,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot12",
-     "visibleIf": "{PS4dot8} == \"1\"",
+     "visibleIf": "{PS4dot8} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Was waren Ihre Gründe für <u>Ihre Nutzung</u> des Angebots als Mitfahrer/in?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5767,7 +5767,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot13",
-     "visibleIf": "{PS4dot8} == \"1\"",
+     "visibleIf": "{PS4dot8} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Wie beabsichtigen Sie das Angebot in Zukunft als Mitfahrer/in zu nutzen?",
      "isRequired": true,
      "choices": [
@@ -5793,7 +5793,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot14",
-     "visibleIf": "{PS4dot8} == \"1\" and {PS4dot13} == \"1\"",
+     "visibleIf": "{PS4dot8} == \"1\" and {PS4dot13} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Mitfahrer/in, das Angebot <u>weniger als bisher</u> zu nützen?",
      "isRequired": true,
      "hasOther": true,
@@ -5833,7 +5833,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot15",
-     "visibleIf": "{PS4dot1} == \"1\" and {PS4dot8} == \"2\"",
+     "visibleIf": "{PS4dot1} == \"1\" and {PS4dot8} == \"2\" and {QFSW1} == \"A10\"",
      "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in <u>nicht nutzen</u>?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5886,7 +5886,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot16",
-     "visibleIf": "{PS4dot3} == \"2\"",
+     "visibleIf": "{PS4dot3} == \"2\" and {QFSW1} == \"A10\"",
      "title": "Was sind die Gründe dafür, dass Sie das Angebot als Fahrer/in <u>nicht nutzen</u>?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5921,7 +5921,7 @@ export const surveyModel = {
     {
      "type": "comment",
      "name": "PS4dot17",
-     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\"",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\" and {QFSW1} == \"A10\"",
      "title": "Haben Sie weitere Kommentare zum Angebot von Taxito? Dann können Sie hier Ihre Erfahrungen, Kritiken und Wünsche anbringen.",
      "isRequired": true
     }
