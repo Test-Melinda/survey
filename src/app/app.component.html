@@ -45,7 +45,7 @@
 			<div class="highlighted-panel p-4">
 				<div class="row">
 					<div class="col">
-						<div *ngIf="surveyError; else success">
+						<div *ngIf="responseSaveError; else success">
 							<div class="alert alert-danger" [innerHtml]="'APP.SUBMIT_ERROR' | translate:{ contactLink: 'https://www.alpine-space.eu/projects/melinda/en/contact' }"></div>
 							<div class="text-center"><button class="btn btn-primary" (click)="retry()">{{ 'APP.RETRY' | translate }}</button></div>
 						</div>

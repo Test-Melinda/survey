@@ -32,7 +32,7 @@ export class AppComponent implements OnInit {
     
     public SurveyStatus = SurveyStatus;
     public status: SurveyStatus = SurveyStatus.LOADING;
-    public surveyError = false;
+    public responseSaveError = false;
     
     public score = null;
 	public scoreValid = false;
@@ -43,7 +43,7 @@ export class AppComponent implements OnInit {
 	
 	protected limesurveyCredentials = null;
 	
-	private surveyStateAutoSaveJob = null;
+	private surveyStateAutoSaveJobID = null;
 	private autoSaveSchedulingInterval = 10;
     
     constructor(public translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService, protected titleService: Title){
@@ -132,7 +132,7 @@ export class AppComponent implements OnInit {
     public ngOnInit() {
         if (this.status != SurveyStatus.ERROR){
             // Styling
-            StylesManager.applyTheme( "bootstrap" );
+            StylesManager.applyTheme("bootstrap");
 			
             var survey = new Model(this.surveySpecification.getLocalizedModel(this.translate.currentLang));
 			survey.locale = this.translate.currentLang;
@@ -143,12 +143,21 @@ export class AppComponent implements OnInit {
 			
 			// Handle survey completion
             survey.onComplete.add((response) => {
+				this.status = SurveyStatus.DONE;
+				
 				// Save survey state and cancel auto-save job
-				this.saveSurveyState(survey);
-				this.surveyStateAutoSaveJob();
+				this.saveSurveyState(survey).then();
+				clearInterval(this.surveyStateAutoSaveJobID);
 				
 				// Process and save responses
-                this.processResponse(response);
+                this.processResponse(response).then((response) => {
+					this.responseSaveError = false;
+				}, (error) => {
+					this.responseSaveError = true;
+					
+					// Save current state so that the user can retry after reloading
+					this.saveSurveyState(survey);
+				});
 				
 				// Scroll to top
                 window.scrollTo(0, 0);
@@ -287,25 +296,15 @@ export class AppComponent implements OnInit {
 				this.saveSurveyState(survey);
             });
 			
-			// Hide questions which are normally shown when the user is located out of the pilot area
-			let hiddenQuestions: IQuestion[] = [];
-			survey.onValueChanging.add((s, q) => {
+			// Handle hiding of questions which are normally shown when the user is located out of the pilot area
+			survey.onValueChanging.add((s: Survey, q) => {
 				if (q.name == this.pilotSelectionQuestion){
-					for (let question of hiddenQuestions){
-						question.visible = true;
-					}
+					this.showQuestions(s);
 				}
 			});
-			survey.onValueChanged.add((s, q) => {
+			survey.onValueChanged.add((s: Survey, q) => {
 				if (q.name == this.pilotSelectionQuestion && this.isUserOutOfPilot(q.value)){
-					for (let question of s.getAllQuestions(false)){
-						if (question.name != this.pilotSelectionQuestion){
-							if (question.visible){
-								question.visible = false;
-								hiddenQuestions.push(question);
-							}
-						}
-					}
+					this.hideQuestions(s);
 				}
 			});
 			
@@ -316,12 +315,12 @@ export class AppComponent implements OnInit {
 			survey
 			    .onTextMarkdown
 			    .add((survey: Survey, options) => {
-			        //convert the mardown text to html
+			        // Convert the mardown text to html
 			        var str = converter.makeHtml(options.text);
-			        //remove root paragraphs <p></p>
+			        // Remove root paragraphs <p></p>
 			        str = str.substring(3);
 			        str = str.substring(0, str.length - 4);
-			        //set html
+			        // Set html
 			        options.html = str;
 			    });
 			
@@ -364,8 +363,8 @@ export class AppComponent implements OnInit {
 				this.scheduleAutoSave(survey, this.autoSaveSchedulingInterval);
 				
 				// Restore status to let the user go directly to the question where it left the survey
-				if (state.status === SurveyStatus.DOING){
-					this.status = state.status;
+				if (state.status === SurveyStatus.DOING || state.status === SurveyStatus.DONE){
+					this.status = SurveyStatus.DOING;
 				}
 			}, (error) => {
 				this.scheduleAutoSave(survey, this.autoSaveSchedulingInterval);
@@ -376,77 +375,108 @@ export class AppComponent implements OnInit {
         }
     }
 
+	// Hide questions which are normally shown when the user is located out of the pilot area
+	private hiddenQuestions: IQuestion[] = [];
+	private hideQuestions(survey: Survey){
+		for (let question of survey.getAllQuestions(false)){
+				if (question.name != this.pilotSelectionQuestion){
+					if (question.visible){
+						question.visible = false;
+						this.hiddenQuestions.push(question);
+					}
+				}
+			}
+	}
+	private showQuestions(survey: Survey){
+		for (let question of this.hiddenQuestions){
+			question.visible = true;
+		}
+	}
+
 	private scheduleAutoSave(survey: Survey, interval: number){
-		this.surveyStateAutoSaveJob = window.setInterval(() => {
+		this.surveyStateAutoSaveJobID = window.setInterval(() => {
 			this.saveSurveyState(survey);
 		}, interval * 1000);
 	}
 	
-    private processResponse(response: any) {
-        this.status = SurveyStatus.DONE;
-
-        let responseData = response.data;
-        console.log("Original response data", responseData);
-
-		// Check if the response must be ignored due to the fact the the user is located out of the pilot
-		this.ignoreResponse = this.isUserOutOfPilot(responseData[this.pilotSelectionQuestion]);
-        
-		if (!this.ignoreResponse){
-	        // Calculate the score
-	        this.score = this.scoreCalculator.calculate(responseData);
-			this.scoreValid = this.scoreCalculator.areScoreResponsesComplete(responseData);
-	        console.log("Score (valid?)", this.score, this.scoreValid);
-			
-			// Ignore added variables
-			delete responseData.source;
+    private processResponse(response: any): Promise<any> {
+		return new Promise<any>((resolve, reject) => {
+			// Get responses
+	        let responseData = response.data;
+	        console.log("Original response data", responseData);
+	
+			// Check if the response must be ignored due to the fact the the user is located out of the pilot
+			this.ignoreResponse = this.isUserOutOfPilot(responseData[this.pilotSelectionQuestion]);
 	        
-	        // Convert to Limesurvey response
-	        let surveyRegion = this.source;
-	        let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
-	        
-	        // Add the score to the hidden Limesurvey response
-	        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);
-	        let scoreQuestionMapping = this.limesurveyMappingProviderService.getScoreQuestionMapping(surveyRegion);
-			console.log("Score question mapping", scoreQuestionMapping);
-	        limesurveyAnswers.setResponse(new LimesurveyAnswerCode(surveyId, scoreQuestionMapping.gid, scoreQuestionMapping.qid), this.score);
-	        
-	        let limesurveyResponseData = limesurveyAnswers.toResponseData();
-	        console.log("Limesurvey response data", limesurveyResponseData);
-	        
-	        // Build the full response information
-	        let builder = new LimesurveyResponseBuilder();
-	        builder.datestamp = new Date();
-	        builder.startDate = new Date(); // TODO: Change this!
-	        builder.startLanguage = 'it'; // TODO: Change this!
-	        builder.responses = limesurveyResponseData;
-	        let limesurveyResponse = builder.build();
-	        
-	        console.log("Full limesurvey response data", limesurveyResponse);
-	        
-			if (!!environment.saveResult){
-		        // Create the client to communicate with Limesurvey
-		        this.limesurveyClientFactory.createClient(this.limesurveyCredentials).subscribe((limesurveyClient: LimesurveyClient) => {
-		            console.log("Limesurvey client", limesurveyClient);
-		            
-		            // Add the survey response
-		            limesurveyClient.addResponse(surveyId, limesurveyResponse).subscribe((responseId: number) => {
-		                console.log("Limesurvey response ID", responseId);
-		            }, (error) => {
-		                console.error("Cannot add response", error);
-		                this.surveyError = true;
-		            });
-		        }, (error) => {
-		            console.error("Cannot authenticate with LimeSurvey platform", error);
-		            this.surveyError = true;
-		        });
+			if (!this.ignoreResponse){
+		        // Calculate the score
+		        this.score = this.scoreCalculator.calculate(responseData);
+				this.scoreValid = this.scoreCalculator.areScoreResponsesComplete(responseData);
+		        console.log("Score (valid?)", this.score, this.scoreValid);
+				
+				// Ignore added variables
+				delete responseData.source;
+		        
+		        // Convert to Limesurvey response
+		        let surveyRegion = this.source;
+		        let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
+		        
+		        // Add the score to the hidden Limesurvey response
+		        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);
+		        let scoreQuestionMapping = this.limesurveyMappingProviderService.getScoreQuestionMapping(surveyRegion);
+				console.log("Score question mapping", scoreQuestionMapping);
+		        limesurveyAnswers.setResponse(new LimesurveyAnswerCode(surveyId, scoreQuestionMapping.gid, scoreQuestionMapping.qid), this.score);
+		        
+		        let limesurveyResponseData = limesurveyAnswers.toResponseData();
+		        console.log("Limesurvey response data", limesurveyResponseData);
+		        
+		        // Build the full response information
+		        let builder = new LimesurveyResponseBuilder();
+		        builder.datestamp = new Date();
+		        builder.startDate = new Date(); // TODO: Change this!
+		        builder.startLanguage = 'it'; // TODO: Change this!
+		        builder.responses = limesurveyResponseData;
+		        let limesurveyResponse = builder.build();
+		        
+		        console.log("Full limesurvey response data", limesurveyResponse);
+		        
+				if (!!environment.saveResult){
+			        // Create the client to communicate with Limesurvey
+			        this.limesurveyClientFactory.createClient(this.limesurveyCredentials).subscribe((limesurveyClient: LimesurveyClient) => {
+			            console.log("Limesurvey client", limesurveyClient);
+			            
+			            // Add the survey response
+			            limesurveyClient.addResponse(surveyId, limesurveyResponse).subscribe((responseId: number) => {
+			                console.log("Limesurvey response ID", responseId);
+							resolve({
+								response: responseData,
+								limesurveyResponse: limesurveyResponse,
+							});
+			            }, (error) => {
+			                console.error("Cannot add response to LimeSurvery", error);
+							reject("Cannot save response");
+			            });
+			        }, (error) => {
+			            console.error("Cannot authenticate with LimeSurvey platform", error);
+			            reject("Cannot save response");
+			        });
+				}
+				else {
+					console.warn("Results not saved as stated by configuration options");
+					resolve({
+						response: responseData,
+						limesurveyResponse: limesurveyResponse,
+					});
+				}
 			}
 			else {
-				console.warn("Results not saved as stated by configuration options");
+				console.warn("Ignoring response: user located out of pilot area [selectedArea, pilot]", responseData[this.pilotSelectionQuestion], this.source);
+				resolve({
+					response: responseData,
+					limesurveyResponse: null,
+				});
 			}
-		}
-		else {
-			console.warn("Ignoring response: user located out of pilot area [selectedArea, pilot]", responseData[this.pilotSelectionQuestion], this.source);
-		}
+		});
     }
 
 	public retry(){
@@ -477,7 +507,8 @@ export class AppComponent implements OnInit {
 				let state = {
 					status: this.status,
 					responses: survey.data,
-					pageNum: survey.currentPageNo
+					pageNum: survey.currentPageNo,
+					responseSaveError: this.responseSaveError
 				};
 				
 				console.log("Saving survey state", state);
@@ -503,11 +534,20 @@ export class AppComponent implements OnInit {
 					// Load saved data only if the source is the same
 					if (typeof(state.responses) === 'object' && this.source === state.responses.source){
 						// Reload only if the survey was left in the middle, or if the response processing failed (so that the user doesn't have to respond again)
-						if (state.status  === SurveyStatus.DOING || state.status  === SurveyStatus.ERROR){
+						if (state.status === SurveyStatus.DOING || (state.status === SurveyStatus.DONE && state.responseSaveError === true)){
 							survey.data = state.responses;
 							
-							// Change to the the last viewed page
-							if (typeof(state.pageNum) === 'number' && state.pageNum >= 0){
+							// Trigger questions hiding when the user is out of pilot
+							if (this.pilotSelectionQuestion in state.responses && this.isUserOutOfPilot(state.responses[this.pilotSelectionQuestion])){
+								this.hideQuestions(survey);
+							}
+							
+							// If it's a retry after a saving error show the survey from the start, but all answers are already selected
+							if (state.responseSaveError){
+								survey.currentPageNo = 0;
+							}
+							// Else change to the the last viewed page
+							else if (typeof(state.pageNum) === 'number' && state.pageNum >= 0){
 								survey.currentPageNo = state.pageNum;
 							}
 							
