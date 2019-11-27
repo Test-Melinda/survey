@@ -162,9 +162,9 @@ export class AppComponent implements OnInit {
                 }
             });
 			
-			// Hide question QF1 for slovenian pilot
+			// Hide pilot selection question for slovenian pilot
 			survey.onAfterRenderQuestion.add((survey, question) => {
-				if (question.question.name == 'QF1' && this.source == 'si'){
+				if (question.question.name == this.pilotSelectionQuestion && this.source == 'si'){
 					question.htmlElement.style.display = 'none';
 				}
 			});
@@ -342,8 +342,8 @@ export class AppComponent implements OnInit {
 			
 			// Preselect the country in case of slovenian pilot and hide country selection
 			if (this.source == 'si'){
-				survey.setValue("QF1", this.source);
-				//survey.getQuestionByName("QF1").visible = false; // Cannot do this otherwise the response data are not returned... don't know why???
+				survey.setValue(this.pilotSelectionQuestion, this.source);
+				//survey.getQuestionByName(this.this.pilotSelectionQuestion).visible = false; // Cannot do this otherwise the response data are not returned... don't know why???
             }
 			
             this.status = SurveyStatus.READY;
