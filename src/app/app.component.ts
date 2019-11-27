@@ -44,6 +44,7 @@ export class AppComponent implements OnInit {
 	protected limesurveyCredentials = null;
 	
 	private surveyStateAutoSaveJob = null;
+	private autoSaveSchedulingInterval = 10;
     
     constructor(public translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService, protected titleService: Title){
         translate.setDefaultLang('en');
@@ -357,15 +358,29 @@ export class AppComponent implements OnInit {
 				survey.setValue(this.pilotSelectionQuestion, this.source);
 				//survey.getQuestionByName(this.this.pilotSelectionQuestion).visible = false; // Cannot do this otherwise the response data are not returned... don't know why???
             }
-
-			// Schedule auto-save of survey state every 10 seconds
-			this.surveyStateAutoSaveJob = window.setInterval(() => {
-				this.saveSurveyState(survey);
-			}, 10000);
+			
+			// Reload any saved response, if available, and then schedule auto-save of survey state every 10 seconds
+			this.loadState(survey).then((state) => {
+				this.scheduleAutoSave(survey, this.autoSaveSchedulingInterval);
+				
+				// Restore status to let the user go directly to the question where it left the survey
+				if (state.status === SurveyStatus.DOING){
+					this.status = state.status;
+				}
+			}, (error) => {
+				this.scheduleAutoSave(survey, this.autoSaveSchedulingInterval);
+			});
+			
 			
             this.status = SurveyStatus.READY;
         }
     }
+
+	private scheduleAutoSave(survey: Survey, interval: number){
+		this.surveyStateAutoSaveJob = window.setInterval(() => {
+			this.saveSurveyState(survey);
+		}, interval * 1000);
+	}
 	
     private processResponse(response: any) {
         this.status = SurveyStatus.DONE;
@@ -476,6 +491,37 @@ export class AppComponent implements OnInit {
 			}
 		});
 	}
+	
+	private loadState(survey: Survey): Promise<any> {
+		return new Promise<any>((resolve, reject) => {
+			if (typeof(window.localStorage) !== 'undefined'){
+				// Load saved state from local storage
+			    var state = JSON.parse(window.localStorage.getItem(this.surveyStateStorageItem) || null);
+				
+				console.log("Loading survey state", state);
+				if (state){
+					// Load saved data only if the source is the same
+					if (typeof(state.responses) === 'object' && this.source === state.responses.source){
+						// Reload only if the survey was left in the middle, or if the response processing failed (so that the user doesn't have to respond again)
+						if (state.status  === SurveyStatus.DOING || state.status  === SurveyStatus.ERROR){
+							survey.data = state.responses;
+							
+							// Change to the the last viewed page
+							if (typeof(state.pageNum) === 'number' && state.pageNum >= 0){
+								survey.currentPageNo = state.pageNum;
+							}
+							
+							resolve(state);
+						}
+						else reject("Ingnoring saved response due to save survey status: " + state.status);
+					}
+					else reject("No responses to load or different source");
+				}
+				else reject("No valid state saved");
+			}
+			else reject("Local storage not available");
+		});
+    }
 	
 	public isDevMode(): boolean {
 		return isDevMode() || URI(window.location.href).hasQuery("mode", "dev");
