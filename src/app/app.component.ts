@@ -42,6 +42,8 @@ export class AppComponent implements OnInit {
 	public ignoreResponse = false;
 	
 	protected limesurveyCredentials = null;
+	
+	private surveyStateAutoSaveJob = null;
     
     constructor(public translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService, protected titleService: Title){
         translate.setDefaultLang('en');
@@ -126,7 +128,7 @@ export class AppComponent implements OnInit {
         return new URLSearchParams(window.location.search).get('channel') || null;
     }
     
-    ngOnInit() {
+    public ngOnInit() {
         if (this.status != SurveyStatus.ERROR){
             // Styling
             StylesManager.applyTheme( "bootstrap" );
@@ -135,8 +137,16 @@ export class AppComponent implements OnInit {
 			survey.locale = this.translate.currentLang;
 			survey.requiredText = "";
 			survey.showQuestionNumbers = "off";
+			survey.showProgressBar = "top";
 			survey.showPageNumbers = false;
+			
+			// Handle survey completion
             survey.onComplete.add((response) => {
+				// Save survey state and cancel auto-save job
+				this.saveSurveyState(survey);
+				this.surveyStateAutoSaveJob();
+				
+				// Process and save responses
                 this.processResponse(response);
 				
 				// Scroll to top
@@ -268,11 +278,13 @@ export class AppComponent implements OnInit {
 			});
 			
 			// Scrolls up on page change
-            survey.onCurrentPageChanged.add((e) => {
+            survey.onCurrentPageChanged.add((survey: Survey) => {
                 // Scroll to top
                 window.scrollTo(0, 0);
+				
+				// Save state
+				this.saveSurveyState(survey);
             });
-            survey.showProgressBar = "top";
 			
 			// Hide questions which are normally shown when the user is located out of the pilot area
 			let hiddenQuestions: IQuestion[] = [];
@@ -302,7 +314,7 @@ export class AppComponent implements OnInit {
 			});
 			survey
 			    .onTextMarkdown
-			    .add((survey, options) => {
+			    .add((survey: Survey, options) => {
 			        //convert the mardown text to html
 			        var str = converter.makeHtml(options.text);
 			        //remove root paragraphs <p></p>
@@ -345,6 +357,11 @@ export class AppComponent implements OnInit {
 				survey.setValue("QF1", this.source);
 				//survey.getQuestionByName("QF1").visible = false; // Cannot do this otherwise the response data are not returned... don't know why???
             }
+
+			// Schedule auto-save of survey state every 10 seconds
+			this.surveyStateAutoSaveJob = window.setInterval(() => {
+				this.saveSurveyState(survey);
+			}, 10000);
 			
             this.status = SurveyStatus.READY;
         }
@@ -436,6 +453,28 @@ export class AppComponent implements OnInit {
 		}
 		
 		return out;
+	}
+	
+	private surveyStateStorageItem = 'surveyState';
+	private saveSurveyState(survey: Survey): Promise<any> {
+		return new Promise<any>((resolve, reject) => {
+			if (typeof(window.localStorage) !== 'undefined'){
+				let state = {
+					status: this.status,
+					responses: survey.data,
+					pageNum: survey.currentPageNo
+				};
+				
+				console.log("Saving survey state", state);
+				
+				window.localStorage.setItem(this.surveyStateStorageItem, JSON.stringify(state));
+				
+				resolve(state);
+			}
+			else {
+				reject("Storage not available");
+			}
+		});
 	}
 	
 	public isDevMode(): boolean {
