@@ -419,7 +419,7 @@ export class AppComponent implements OnInit {
 		        
 		        // Convert to Limesurvey response
 		        let surveyRegion = this.source;
-		        let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion);
+		        let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion, !this.isDevMode());
 		        
 		        // Add the score to the hidden Limesurvey response
 		        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);

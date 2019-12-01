@@ -12,7 +12,7 @@ export class ResponseConverterService {
 
     constructor( public limesurveyMappingProvider: LimesurveyMappingProviderService ) { }
 
-    public toLimesurveyResponse( response: any, region: string ): LimesurveyResponse {
+    public toLimesurveyResponse( response: any, region: string, ignoreMissingQuestionMapping: boolean = false ): LimesurveyResponse {
         // Get the survey questions mappings
         let mapping = this.limesurveyMappingProvider.getMapping( region );
 
@@ -27,7 +27,17 @@ export class ResponseConverterService {
 			}
 			
             // Map question code
-            let limesurveyQuestionId = this.requireLimesurveyQuestionMapping(mapping, rCode);
+            let limesurveyQuestionId: LimesurveyAnswerCode;
+			try {
+				limesurveyQuestionId = this.requireLimesurveyQuestionMapping(mapping, rCode);
+			}
+			catch (e){
+				if (ignoreMissingQuestionMapping){
+					console.warn("Ignoring response to question with code '" + rCode + "' due to missing mapping [mapping]", mapping);
+					continue;
+				}
+				else throw e;
+			}
             
 			// Map answer
 			if (otherOption){
