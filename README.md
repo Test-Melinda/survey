@@ -2,6 +2,8 @@
 
 This project is the survey developed in project [Melinda](https://www.alpine-space.eu/projects/melinda/en/home) (**M**obility **E**cosystem for **L**ow-carbon and **IN**novative mo**D**al shift in the **A**lps), an EU-funded Interreg Alpine Space project.
 
+The application stores responses in an existing deployment of Limesurvey. A different survey must exists on Limesurvey for each pilot region. A copy of the structure of each survey is available in the `limesurvey` folder: those backup files have been made with Limesurvey 3.19.3.
+
 The source code of the survey is published in this repository and it's freely available under the terms of the [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html).
 
 ## Linking to the survey
@@ -25,7 +27,9 @@ To create an hyperlink, simply insert an `<a>` tag in any HTML page, for example
 
 ## Deploying the application
 
-Configure the application with the correct settings for your Limesurvey installation by copying the `limesurvey-settings.ts.dist` file. Edit it appropriately and name it `limesurvey-settings.prod.ts`. 
+Make sure to have a Limesurvey deployment with all surveys correctly available and started. If not, import the surveys from the folder `limesurvey` into your Limesurvey installation.
+
+Configure the application with the correct settings for your Limesurvey installation by copying the `limesurvey-settings.ts.dist` file. Edit it appropriately and name it `limesurvey-settings.prod.ts`.
 
 Then build the application in production mode. The compilation output will be in the dist folder.
 
@@ -34,6 +38,14 @@ ng build --prod
 ```
 
 And finally upload the content of the dist folder to your favourite web hosting.
+
+### Common issues
+
+If during the process of importing the surveys into Limesurvey the IDs of questions have been changed, you need to re-map every survey. To do this, visit the application (with any of the above links) in the *dev mode*. To enable *dev mode* add parameter `mode=dev` to the URI query string.
+
+At the very bottom of the page, you can find a simple to to automatically generate mappings. The output is printed by Javascript into the browser console. To read it, open the browser development tools (the *inspector* in Chrome-based browsers). Then copy the output in the `mapping-*.prod.ts` files contained in folder `src/app/survey/specs`.
+
+Then rebuild the application and deploy it again.
 
 ## Developing the application
 
