@@ -23,13 +23,31 @@ To create an hyperlink, simply insert an `<a>` tag in any HTML page, for example
 <a href="https://alpine-space-melinda.github.io/?src=it">Join the survey now!</a>
 ```
 
+## Deploying the application
+
+Configure the application with the correct settings for your Limesurvey installation by copying the `limesurvey-settings.ts.dist` file. Edit it appropriately and name it `limesurvey-settings.prod.ts`. 
+
+Then build the application in production mode. The compilation output will be in the dist folder.
+
+```
+ng build --prod
+```
+
+And finally upload the content of the dist folder to your favourite web hosting.
+
 ## Developing the application
 
 This project il built with [Angular 8](https://angular.io) and [SurveyJS](https://surveyjs.io).
 
 ### Downloading dependencies
 
-Run `npm install`. 
+Run `npm install`.
+
+### Configuring for you Limesurvey installation
+
+The application stores the responses in Limesurvey surveys. So you need to configure the application with the settings appropriate for your Limesurvey deployment.
+
+To do this you need to copy the `limesurvey-settings.ts.dist` file, edit it appropriately, and name it `limesurvey-settings.ts`.
 
 ### Run a development server
 
