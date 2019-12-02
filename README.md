@@ -2,6 +2,8 @@
 
 This project is the survey for the project Melinda (**M**obility **E**cosystem for **L**ow-carbon and **IN**novative mo**D**al shift in the **A**lps), an EU-funded Interreg Alpine Space project.
 
+The source code of the survey is published in this repository and it's freely available under the terms of the [Apache License 2.0](https://spdx.org/licenses/Apache-2.0.html).
+
 ## Linking to the survey
 
 To link to the survey you have to create an hyperlink to one of the following URLs, which are specific to each pilot region.
