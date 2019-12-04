@@ -6055,7 +6055,7 @@ export const surveyModel = {
       "de": "Was ist Ihr höchster Bildungsabschluss?",
       "de-at": "Was ist Ihr höchster Bildungsabschluss?",
       "de-ch": "Was ist Ihr höchster Bildungsabschluss?",
-      "sl": "Vaša stopnja izobrazbe",
+      "sl": "Vaša najvišja dokončana stopnja izobrazbe",
       "fr": "Quel est votre niveau d'études?"
      },
      "choices": [
