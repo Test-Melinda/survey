@@ -4484,7 +4484,7 @@ export const surveyModel = {
         "de": "Die Stadtverwaltung",
         "de-at": "Die Stadtverwaltung",
         "de-ch": "Stadt",
-        "sl": "Mestne oblasti",
+        "sl": "Lokalne skupnosti (občine)",
         "fr": "Les villes"
        },
        "enableIf": "{Q9} anyof \"1\" or {Q9.length} < 2"
