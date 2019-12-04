@@ -34,6 +34,8 @@ export class AppComponent implements OnInit {
     public SurveyStatus = SurveyStatus;
     public status: SurveyStatus = SurveyStatus.LOADING;
     public responseSaveError = false;
+	
+	public startTime = null;
     
     public score = null;
 	public scoreValid = false;
@@ -434,7 +436,7 @@ export class AppComponent implements OnInit {
 		        // Build the full response information
 		        let builder = new LimesurveyResponseBuilder();
 		        builder.datestamp = new Date();
-		        builder.startDate = new Date(); // TODO: Change this!
+		        builder.startDate = this.startTime;
 		        builder.startLanguage = this.translate.currentLang;
 		        builder.responses = limesurveyResponseData;
 		        let limesurveyResponse = builder.build();
@@ -489,6 +491,7 @@ export class AppComponent implements OnInit {
         console.log('Privacy accepted', accepted);
         if (accepted){
             this.status = SurveyStatus.DOING;
+			this.startTime = new Date();
         }
     }
 	
@@ -507,6 +510,7 @@ export class AppComponent implements OnInit {
 			if (typeof(window.localStorage) !== 'undefined'){
 				let state = {
 					status: this.status,
+					startTime: this.startTime,
 					responses: survey.data,
 					pageNum: survey.currentPageNo,
 					responseSaveError: this.responseSaveError
@@ -536,6 +540,10 @@ export class AppComponent implements OnInit {
 					if (typeof(state.responses) === 'object' && this.source === state.responses.source){
 						// Reload only if the survey was left in the middle, or if the response processing failed (so that the user doesn't have to respond again)
 						if (state.status === SurveyStatus.DOING || (state.status === SurveyStatus.DONE && state.responseSaveError === true)){
+							// Restore start time
+							this.startTime = state.startTime || null;
+							
+							// Restore responses
 							survey.data = state.responses;
 							
 							// Trigger questions hiding when the user is out of pilot
