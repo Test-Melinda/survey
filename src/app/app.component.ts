@@ -435,7 +435,7 @@ export class AppComponent implements OnInit {
 		        let builder = new LimesurveyResponseBuilder();
 		        builder.datestamp = new Date();
 		        builder.startDate = new Date(); // TODO: Change this!
-		        builder.startLanguage = 'it'; // TODO: Change this!
+		        builder.startLanguage = this.translate.currentLang;
 		        builder.responses = limesurveyResponseData;
 		        let limesurveyResponse = builder.build();
 		        
