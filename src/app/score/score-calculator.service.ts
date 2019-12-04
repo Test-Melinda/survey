@@ -33,7 +33,10 @@ export class ScoreCalculatorService {
 		// Question Q2
 		let q = responseData.Q2;
 		if (q) {
-			if (("1" in q || "2" in q) && ("3" in q || "4" in q || "5" in q || "6" in q)) {
+			if (q.length == 1 && "7" in q){
+				scores.Q2 = 0.5;
+			}
+			else if (("1" in q || "2" in q) && ("3" in q || "4" in q || "5" in q || "6" in q)) {
 				scores.Q2 = 0.5;
 			}
 			else if ("5" in q || "6" in q) {
