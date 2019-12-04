@@ -6243,7 +6243,7 @@ export const surveyModel = {
         "de": "Schüler/Schülerin",
         "de-at": "Schüler/Schülerin",
         "de-ch": "Schüler/Schülerin",
-        "sl": "Učenec",
+        "sl": "Dijak",
         "fr": "Ecolier"
        }
       },
