@@ -3482,7 +3482,7 @@ export const surveyModel = {
         "de": "Autos",
         "de-at": "Autos",
         "de-ch": "Autos",
-        "sl": "Avtomobili",
+        "sl": "Avtomobil",
         "fr": "Voiture"
        },
        "enableIf": "{Q6} anyof \"1\" or !({Q6} anyof \"9\")"
