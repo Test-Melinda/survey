@@ -4379,7 +4379,7 @@ export const surveyModel = {
         "de": "Das Auto stehen gelassen, durch Vermeidung unnötiger Fahrten.",
         "de-at": "Das Auto stehen gelassen, durch Vermeidung unnötiger Fahrten.",
         "de-ch": "Das Auto stehen gelassen, durch Vermeidung unnötiger Fahrten.",
-        "sl": "Manjkrat uporabili avto in se izognili nepotrebnim potovanjem, delali od doma (delo na daljavo) itn",
+        "sl": "Manjkrat uporabili avto in se izognili nepotrebnim potovanjem, delali od doma (delo na daljavo) itn.",
         "fr": "Moins utiliser votre voiture en évitant de vous déplacer (en particulier télétravail)"
        },
        "enableIf": "{Q8} anyof \"6\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
@@ -4389,10 +4389,10 @@ export const surveyModel = {
        "text": {
         "default": "Bought products marked with an environmental label",
         "it": "Ho acquistato prodotti che riportano certificazione di sostenibilità ambientale",
-        "de": "Produkte mit Öko-Siegel gekauft.",
-        "de-at": "Produkte mit Öko-Siegel gekauft.",
-        "de-ch": "Produkte mit Öko-Siegel gekauft.",
-        "sl": "Kupili izdelke, označene z okoljsko oznako.",
+        "de": "Produkte mit Öko-Siegel gekauft",
+        "de-at": "Produkte mit Öko-Siegel gekauft",
+        "de-ch": "Produkte mit Öko-Siegel gekauft",
+        "sl": "Kupili izdelke, označene z okoljsko oznako",
         "fr": "Acheter des produits avec un label environnemental"
        },
        "enableIf": "{Q8} anyof \"7\" or !({Q8} anyof \"10\" or {Q8} anyof \"11\")"
