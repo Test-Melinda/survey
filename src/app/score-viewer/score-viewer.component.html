@@ -12,15 +12,21 @@
 
 <p>{{ "SCORE_VIEWER.SOLUTIONS.TITLE" | translate }}</p>
 
+<h6 *ngIf="source == 'si'">STROŠKI LASTNIŠTVA AVTOMOBILA</h6>
+
 <p>{{ "SCORE_VIEWER.SOLUTIONS.Q_COST" | translate }}</p>
 
 <hr>
+
+<h6 *ngIf="source == 'si'">VZROK ZA NAJVEČ SMRTNIH PRIMEROV V EU</h6>
 
 <p [innerHtml]="'SCORE_VIEWER.SOLUTIONS.Q_DEATHS' | translate:{ eurostatLink: 'http://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=tran_sf_roadve&lang=en', eeaLink: 'http://www.eea.europa.eu/media/newsreleases/many-europeans-still-exposed-to-air-pollution-2015/premature-deaths-attributable-to-air-pollution' }"></p>
 
 <p [innerHtml]="'SCORE_VIEWER.SOLUTIONS.Q_DEATHS_MORE' | translate:{ eeaLink: 'http://www.eea.europa.eu/media/newsreleases/many-europeans-still-exposed-to-air-pollution-2015/premature-deaths-attributable-to-air-pollution' }"></p>
 
 <hr>
+
+<h6 *ngIf="source == 'si'">PRIPOROČENA TELESNA AKTIVNOST</h6>
 
 <p [innerHtml]="'SCORE_VIEWER.SOLUTIONS.Q_ACTIVITY' | translate:{ whoLink: 'http://www.who.int/dietphysicalactivity/factsheet_adults/en/' }"></p>
 
