@@ -8,6 +8,7 @@ import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src
 import { ScoreCalculatorService } from "./score/score-calculator.service";
 import { isDevMode } from '@angular/core';
 import * as URI from 'urijs';
+import 'url-search-params-polyfill';
 
 import { environment } from '../environments/environment';
 import { LimesurveyMappingProviderService } from './survey/limesurvey-mapping-provider.service';
