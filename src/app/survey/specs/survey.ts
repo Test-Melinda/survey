@@ -1751,7 +1751,7 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "EQ1AU",
      "visible": false,
-     "visibleIf": "((!{source}) or {source} == \"at\") and ({QF1} == \"at\" or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\")))",
+     "visibleIf": "((!{source}) or {source} == \"at\") and (({QF1} == \"at\" and {QF2AR} == \"A1\") or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\")))",
      "title": {
       "default": "In the Vorarlberg Region do you usually carry out any of the following activities?",
       "de": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?",
@@ -1824,6 +1824,86 @@ export const surveyModel = {
         "de-ch": "Keine der genannten"
        },
        "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} == 0"
+      }
+     ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1AU2",
+     "visible": false,
+     "visibleIf": "((!{source}) or {source} == \"at\") and {QF1} == \"at\" and {QF2AR} != \"A1\"",
+     "title": {
+      "default": "For which of the following activities do you regularly leave your municipality?",
+      "de": "Für welche der folgenden Aktivitäten verlassen Sie regelmäßig Ihre Gemeinde?",
+      "de-at": "Für welche der folgenden Aktivitäten verlassen Sie regelmäßig Ihre Gemeinde?",
+      "de-ch": "Für welche der folgenden Aktivitäten verlassen Sie regelmäßig Ihre Gemeinde?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "de": "Arbeit/Geschäftlich",
+        "de-at": "Arbeit/Geschäftlich",
+        "de-ch": "Arbeit/Geschäftlich"
+       },
+       "enableIf": "{EQ1AU2} anyof \"1\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "de": "Ausbildung",
+        "de-at": "Ausbildung",
+        "de-ch": "Ausbildung"
+       },
+       "enableIf": "{EQ1AU2} anyof \"2\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "de": "Einkaufen",
+        "de-ch": "Einkaufen",
+        "de-at": "Einkaufen"
+       },
+       "enableIf": "{EQ1AU2} anyof \"3\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "de": "Freizeitaktivitäten",
+        "de-at": "Freizeitaktivitäten",
+        "de-ch": "Freizeitaktivitäten"
+       },
+       "enableIf": "{EQ1AU2} anyof \"4\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges"
+       },
+       "enableIf": "{EQ1AU2} anyof \"5\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten"
+       },
+       "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} == 0"
       }
      ]
     },
