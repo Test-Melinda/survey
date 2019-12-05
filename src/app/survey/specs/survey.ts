@@ -2722,8 +2722,8 @@ export const surveyModel = {
      "title": {
       "default": "Which of these aspects would you associate to the WALK?",
       "it": "Quali aspetti assoceresti al CAMMINARE?",
-      "de": "Welchen Aspekt verknüpfen Sie mit DEM ZU Fuß GEHEN?",
-      "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ZU Fuß GEHEN?",
+      "de": "Welchen Aspekt verknüpfen Sie mit DEM ZU FUSS GEHEN?",
+      "de-at": "Welchen Aspekt verknüpfen Sie mit DEM ZU FUSS GEHEN?",
       "de-ch": "Welchen Aspekt verknüpfen Sie mit DEM ZU FUSS GEHEN?",
       "sl": "HOJA",
       "fr": "Quels sont les qualificatifs qui correspondent le mieux À LA MARCHE?"
@@ -3451,9 +3451,9 @@ export const surveyModel = {
      "title": {
       "default": "Which means of transport do you own or have access to*?",
       "it": "A quali mezzi di trasporto hai accesso* o possiedi?",
-      "de": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
-      "de-at": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
-      "de-ch": "Welche Transportmittel besitzen Sie oder haben *Zugriff darauf?",
+      "de": "Welche Transportmittel besitzen Sie oder haben Zugriff* darauf?",
+      "de-at": "Welche Transportmittel besitzen Sie oder haben Zugriff* darauf?",
+      "de-ch": "Welche Transportmittel besitzen Sie oder haben Zugriff* darauf?",
       "sl": "Do katerih prevoznih sredstev lahko dostopate?",
       "fr": "A quel moyens de transport avez-vous accès* ?"
      },
@@ -3614,9 +3614,9 @@ export const surveyModel = {
      "description": {
       "default": "To have access to means that you can easily use it even if you don't own it.",
       "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso.",
-      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de": " ",
+      "de-at": " ",
+      "de-ch": " ",
       "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
       "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
      },
@@ -3686,9 +3686,9 @@ export const surveyModel = {
      },
      "description": {
       "default": "To have access to means that you can easily use it even if you don't own it.",
-      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de": " ",
+      "de-at": " ",
+      "de-ch": " ",
       "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
       "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété.",
       "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso."
@@ -3760,11 +3760,11 @@ export const surveyModel = {
      "description": {
       "default": "To have access to means that you can easily use it even if you don't own it.",
       "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso.",
-      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
       "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
-      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété."
+      "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété.",
+      "de-ch": " ",
+      "de-at": " ",
+      "de": " "
      },
      "choices": [
       {
@@ -3832,9 +3832,9 @@ export const surveyModel = {
      },
      "description": {
       "default": "To have access to means that you can easily use it even if you don't own it.",
-      "de": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "de-at": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
-      "de-ch": "Zugriff bedeutet, dass eine (Mit)Nutzung möglich ist, auch wenn einem das Transportmittel nicht persönlich gehört.",
+      "de": " ",
+      "de-at": " ",
+      "de-ch": " ",
       "sl": "Imeti dostop pomeni, da jih lahko enostavno uporabljate, tudi če jih nimate v lasti.",
       "fr": "Avoir accès signifie que vous pouvez facilement l'utiliser même si vous n'en avez pas la propriété.",
       "it": "Per \"Avere accesso\" si intende che puoi utilizzarli facilmente anche senza averne il diretto possesso."
@@ -4217,9 +4217,9 @@ export const surveyModel = {
      "title": {
       "default": "How much physical activity WHO recommend to do every day? How many minutes of daily walking activities does it correspond to?",
       "it": "Quanta attività fisica è necessario fare quotidianamente in maniera da rispettare le prescrizioni dell'Organizzazione Mondiale della Sanità? A quanti minuti di \"cammino sostenuto\" corrisponde?",
-      "de": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie viele Minuten täglicher Gehzeit entspricht dies?",
-      "de-ch": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation WHO täglich? Wie viele Minuten täglicher Gehzeit entspricht dies?",
-      "de-at": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie viele Minuten täglicher Gehzeit entspricht dies?",
+      "de": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie vielen Minuten täglicher Gehzeit entspricht dies?",
+      "de-ch": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation WHO täglich? Wie vielen Minuten täglicher Gehzeit entspricht dies?",
+      "de-at": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie vielen Minuten täglicher Gehzeit entspricht dies?",
       "sl": "Kakšen obseg dnevnih fizičnih aktivnosti v obliki hoje po svežem zraku priporoča svetovna zdravstvena organizacija (WHO)?",
       "fr": "Quelle quantité d'activité physique quotidienne l'OMS (Organisation Mondiale de la Santé) recommande-t-elle ? A quelle durée de marche correspond-elle ?"
      },
@@ -4460,13 +4460,22 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "Q9",
      "title": {
-      "default": "In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution? (maximum two answers are possible)",
-      "it": "A tuo parere chi dovrebbe essere maggioremente responsabile per la promozione di nuove politiche per la mobilità in maniera da ridurre l'inquinamento atmosferico?\n(sono possibili al massimo 2 risposte)",
-      "de": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?(maximal zwei Antworten sind möglich)",
-      "de-ch": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?\n(maximal zwei Antworten sind möglich)",
-      "de-at": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?\n(maximal zwei Antworten sind möglich)",
-      "sl": "Kdo bi moral prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi zmanjšali onesnaževanje zraka?\n(Možna sta največ dva odgovora.)",
-      "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités en vue de réduire la pollution de l'air?\n(maximum 2 réponses possibles)"
+      "default": "In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution?",
+      "it": "A tuo parere chi dovrebbe essere maggioremente responsabile per la promozione di nuove politiche per la mobilità in maniera da ridurre l'inquinamento atmosferico?",
+      "de": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
+      "de-ch": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
+      "de-at": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
+      "sl": "Kdo bi moral prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi zmanjšali onesnaževanje zraka?",
+      "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités en vue de réduire la pollution de l'air?"
+     },
+     "description": {
+      "default": "(maximum two answers are possible)",
+      "sl": "(Možna sta največ dva odgovora.)",
+      "de": "(maximal zwei Antworten sind möglich)",
+      "de-at": "(maximal zwei Antworten sind möglich)",
+      "de-ch": "(maximal zwei Antworten sind möglich)",
+      "it": "(sono possibili al massimo 2 risposte)",
+      "fr": "(maximum 2 réponses possibles)"
      },
      "validators": [
       {
@@ -4605,13 +4614,22 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "Q10",
      "title": {
-      "default": "From the following list, which are your three main sources of information about the environment (climate change, pollution, …)?\n\n(maximum 3 answers possible)",
-      "it": "Scegliendo dalla seguente lista, quali sono le tue tre principali fonti di informazione riguardo all'ambiente? (cambiamento climatico, inquinamento…)\n(sono possibili al massimo 3 risposte)",
-      "de": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umwelt (Klimawandel, Umweltverschmutzung,....)?\n(maximal 3 Antworten möglich)",
-      "de-ch": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umwelt (Klimawandel, Umweltverschmutzung,....)?\n(maximal 3 Antworten möglich)",
-      "de-at": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umweltaspekte (Klimawandel, Umweltverschmutzung,....)?\n(maximal 3 Antworten möglich)",
-      "sl": "Kateri so vaši trije glavni viri informacij o okolju (podnebnih spremembah, onesnaževanju, ...)?\n(Možni so največ trije odgovori)",
+      "default": "From the following list, which are your three main sources of information about the environment (climate change, pollution, …)?",
+      "it": "Scegliendo dalla seguente lista, quali sono le tue tre principali fonti di informazione riguardo all'ambiente? (cambiamento climatico, inquinamento…)",
+      "de": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umwelt (Klimawandel, Umweltverschmutzung,....)?",
+      "de-ch": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umwelt (Klimawandel, Umweltverschmutzung,....)?",
+      "de-at": "Welche der folgenden Auswahlmöglichkeiten sind Ihre drei wichtigsten Informationsquellen über die Umweltaspekte (Klimawandel, Umweltverschmutzung,....)?",
+      "sl": "Kateri so vaši trije glavni viri informacij o okolju (podnebnih spremembah, onesnaževanju, ...)?",
       "fr": "Dans la liste suivante, indiquez quelles sont les 3 principales sources d'information sur l'environnement (changement climatique, pollution, …)?"
+     },
+     "description": {
+      "default": "(maximum 3 answers possible)",
+      "sl": "(Možni so največ trije odgovori)",
+      "de": "(maximal drei Antworten möglich)",
+      "it": "(sono possibili al massimo 3 risposte)",
+      "de-at": "(maximal drei Antworten möglich)",
+      "de-ch": "(maximal drei Antworten möglich)",
+      "fr": "(maximum 3 réponses possibles)"
      },
      "validators": [
       {
@@ -6384,11 +6402,11 @@ export const surveyModel = {
       "fr": "Si vous souhaitez recevoir des informations et des nouvelles du projet MELINDA, vous pouvez nous laisser votre courriel."
      },
      "description": {
-      "default": "(Gli indirizzi email raccolti saranno custoditi su server sicuri localizzati nei paesi dell'Unione Europea e gestiti nel rispetto del GDPR, non saranno ceduti a terzi e verranno conservati solo per il tempo di durata del progetto stesso, sempre separati dagli altri dati del questionario).",
-      "it": "(Gli indirizzi email raccolti saranno custoditi su server sicuri localizzati nei paesi dell'Unione Europea e gestiti nel rispetto del GDPR 2016/679, non saranno ceduti a terzi e verranno conservati solo per il tempo di durata del progetto stesso, sempre separati dagli altri dati del questionario).",
-      "de": "Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert).",
-      "de-at": "Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert).",
-      "de-ch": "Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert).",
+      "default": "(Gli indirizzi email raccolti saranno custoditi su server sicuri localizzati nei paesi dell'Unione Europea e gestiti nel rispetto del GDPR, non saranno ceduti a terzi e verranno conservati solo per il tempo di durata del progetto stesso, sempre separati dagli altri dati del questionario)",
+      "it": "(Gli indirizzi email raccolti saranno custoditi su server sicuri localizzati nei paesi dell'Unione Europea e gestiti nel rispetto del GDPR 2016/679, non saranno ceduti a terzi e verranno conservati solo per il tempo di durata del progetto stesso, sempre separati dagli altri dati del questionario)",
+      "de": "(Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert)",
+      "de-at": "(Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert)",
+      "de-ch": "(Die gesammelten E-Mail-Adressen werden auf sicheren Servern in der EU gespeichert und gemäß DSGVO verarbeitet, nicht an Dritte weitergegeben, für die Zeit der Projekttätigkeit aufbewahrt und immer getrennt von anderen Erhebungsdaten gespeichert)",
       "sl": "(Zbrani elektronski naslovi bodo shranjeni na varnih strežnikih, ki se nahajajo v EU, in bodo obdelani v skladu z GDPR. Z njimi se ne trguje, shranjeni bodo za čas projektne dejavnosti in vedno ločeno od drugih podatkov ankete.)",
       "fr": "(Celui-ci sera stocké dans un espace sécurisé, dans l'UE, et utilisé en conformité avec le RGPD. Il ne sera transmis à personne d'autre, gardé uniquement pendant la durée du projet et toujours séparément des autres données du projet)"
      },
