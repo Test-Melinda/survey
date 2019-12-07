@@ -3196,7 +3196,8 @@ export const surveyModel = {
         "it": "Automobile (sia come guidatore che come passeggero)",
         "sl": "Avtomobil (kot voznik ali sopotnik)",
         "fr": "Voiture (conducteur ou passager)"
-       }
+       },
+       "enableIf": "((!{Q2}) or (['1'] anyof {Q2})"
       },
       {
        "value": "2",
@@ -3208,7 +3209,8 @@ export const surveyModel = {
         "it": "Motocicletta",
         "sl": "Motor",
         "fr": "2 roues motorisés"
-       }
+       },
+       "enableIf": "((!{Q2}) or (['2'] anyof {Q2})"
       },
       {
        "value": "3",
@@ -3220,7 +3222,8 @@ export const surveyModel = {
         "it": "Trasporto Pubblico (bus/tram/metro)",
         "sl": "Javni prevoz",
         "fr": "Transport public (bus/tram/métro)"
-       }
+       },
+       "enableIf": "((!{Q2}) or (['3'] anyof {Q2})"
       },
       {
        "value": "4",
@@ -3231,7 +3234,8 @@ export const surveyModel = {
         "de-ch": "Bahn",
         "it": "Treno",
         "sl": "Vlak"
-       }
+       },
+       "enableIf": "((!{Q2}) or (['4'] anyof {Q2})"
       },
       {
        "value": "5",
@@ -3243,7 +3247,8 @@ export const surveyModel = {
         "it": "Bicicletta / Bicicletta elettrica",
         "sl": "Kolo (tudi električno kolo)",
         "fr": "Vélo/Vélo à assistance électrique"
-       }
+       },
+       "enableIf": "((!{Q2}) or (['5'] anyof {Q2})"
       },
       {
        "value": "6",
@@ -3255,7 +3260,8 @@ export const surveyModel = {
         "it": "Camminare",
         "sl": "Hoja",
         "fr": "Marche"
-       }
+       },
+       "enableIf": "((!{Q2}) or (['6'] anyof {Q2})"
       },
       {
        "value": "7",
@@ -3267,7 +3273,8 @@ export const surveyModel = {
         "it": "Altro (monopattino/skateboard/hoverboard, …)",
         "sl": "Drugo",
         "fr": "Autre (trotinette/skateboard/hoverboard/…)"
-       }
+       },
+       "enableIf": "((!{Q2}) or (['7'] anyof {Q2})"
       }
      ]
     }
