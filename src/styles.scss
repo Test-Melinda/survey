@@ -62,3 +62,7 @@ body {
 		background-color: $gray-200;
 	}
 }
+
+input[type="radio"], input[type="checkbox"] {
+	outline: none;
+}
