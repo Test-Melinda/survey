@@ -110,7 +110,12 @@ export class AppComponent implements OnInit {
         let values = ['at', 'fr', 'de', 'it', 'si', 'ch'];
         
         // Parse
-        let src = new URLSearchParams(window.location.search).get('src') || null;
+		let src = null;
+		new URLSearchParams(window.location.search).forEach((value, name) => {
+			if (value && name.toLowerCase() === 'src'){
+				src = value.toLowerCase();
+			}
+		});
         if (src){
             src = src.toLowerCase();
             if (values.indexOf(src) != -1){
