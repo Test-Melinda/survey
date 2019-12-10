@@ -48,6 +48,8 @@ export class AppComponent implements OnInit {
 	
 	private surveyStateAutoSaveJobID = null;
 	private autoSaveSchedulingInterval = 10;
+	
+	private queryParams: Map<string, string> = null;
     
     constructor(public translate: TranslateService, public surveySpecification: SurveySpecificationService, public responseConverter: ResponseConverterService, public limesurveyClientFactory: LimesurveyClientFactoryService, public limesurveyMappingProviderService: LimesurveyMappingProviderService, public scoreCalculator: ScoreCalculatorService, protected titleService: Title){
         translate.setDefaultLang('en');
@@ -104,18 +106,24 @@ export class AppComponent implements OnInit {
 		surveyLocalization.locales["de-ch"] = swissGermanSurveyStrings;
 		surveyLocalization.localeNames["de-ch"] = "swiss german";
     }
+
+	private parseQueryParams(): Map<string, string> {
+		if (!this.queryParams){
+			this.queryParams = new Map<string, string>();
+			new URLSearchParams(window.location.search).forEach((value, name) => {
+				this.queryParams.set(name.toLowerCase(), value);
+			});
+		}
+		
+		return this.queryParams;
+    }
     
     private parseSource(): string {
         // Admitted values
         let values = ['at', 'fr', 'de', 'it', 'si', 'ch'];
         
         // Parse
-		let src = null;
-		new URLSearchParams(window.location.search).forEach((value, name) => {
-			if (value && name.toLowerCase() === 'src'){
-				src = value.toLowerCase();
-			}
-		});
+		let src = this.parseQueryParams().get('src') || null;
         if (src){
             src = src.toLowerCase();
             if (values.indexOf(src) != -1){
@@ -134,7 +142,7 @@ export class AppComponent implements OnInit {
     
     private parseChannel(): string {
         // Parse
-        return new URLSearchParams(window.location.search).get('channel') || null;
+        return this.parseQueryParams().get('channel') || null;
     }
     
     public ngOnInit() {
@@ -417,25 +425,25 @@ export class AppComponent implements OnInit {
 			this.ignoreResponse = this.isUserOutOfPilot(responseData[this.pilotSelectionQuestion]);
 	        
 			if (!this.ignoreResponse){
+				// Ignore added variables
+				delete responseData.source;
+				
 		        // Calculate the score
 		        this.score = this.scoreCalculator.calculate(responseData);
 				this.scoreValid = this.scoreCalculator.areScoreResponsesComplete(responseData);
 		        console.log("Score (valid?)", this.score, this.scoreValid);
 				
-				// Ignore added variables
-				delete responseData.source;
-		        
+				// Add the score channel to the responses
+				responseData[environment.limesurvey.metaQuestions.score] = this.score;
+				
+				// Add the source channel to the responses
+				if (this.channel){
+					responseData[environment.limesurvey.metaQuestions.channel] = this.channel;
+				}
+				
 		        // Convert to Limesurvey response
 		        let surveyRegion = this.source;
-		        let limesurveyAnswers = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion, !this.isDevMode());
-		        
-		        // Add the score to the hidden Limesurvey response
-		        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);
-		        let scoreQuestionMapping = this.limesurveyMappingProviderService.getScoreQuestionMapping(surveyRegion);
-				console.log("Score question mapping", scoreQuestionMapping);
-		        limesurveyAnswers.setResponse(new LimesurveyAnswerCode(surveyId, scoreQuestionMapping.gid, scoreQuestionMapping.qid), this.score);
-		        
-		        let limesurveyResponseData = limesurveyAnswers.toResponseData();
+		        let limesurveyResponseData = this.responseConverter.toLimesurveyResponse(responseData, surveyRegion, !this.isDevMode()).toResponseData();
 		        console.log("Limesurvey response data", limesurveyResponseData);
 		        
 		        // Build the full response information
@@ -449,6 +457,7 @@ export class AppComponent implements OnInit {
 		        console.log("Full limesurvey response data", limesurveyResponse);
 		        
 				if (!!environment.saveResult){
+			        let surveyId = this.limesurveyMappingProviderService.getSurveyId(surveyRegion);
 			        // Create the client to communicate with Limesurvey
 			        this.limesurveyClientFactory.createClient(this.limesurveyCredentials).subscribe((limesurveyClient: LimesurveyClient) => {
 			            console.log("Limesurvey client", limesurveyClient);
@@ -515,6 +524,7 @@ export class AppComponent implements OnInit {
 			if (typeof(window.localStorage) !== 'undefined'){
 				let state = {
 					status: this.status,
+					channel: this.channel,
 					startTime: this.startTime,
 					responses: survey.data,
 					pageNum: survey.currentPageNo,
@@ -547,6 +557,9 @@ export class AppComponent implements OnInit {
 						if (state.status === SurveyStatus.DOING || (state.status === SurveyStatus.DONE && state.responseSaveError === true)){
 							// Restore start time
 							this.startTime = state.startTime || null;
+							
+							// Restore channel
+							this.channel = state.channel || null;
 							
 							// Restore responses
 							survey.data = state.responses;
@@ -591,9 +604,6 @@ export class AppComponent implements OnInit {
 		let surveyId = this.limesurveyMappingProviderService.getSurveyId(this.devAutoMapRegion);
 		console.log("Survey ID", surveyId);
 		
-		let scoreQuestionMapping = this.limesurveyMappingProviderService.getScoreQuestionMapping(this.devAutoMapRegion);
-		console.log("Score question mapping", scoreQuestionMapping);
-		
 		let pilotSelectionQuestionMapping = {
 			at: "1",
             fr: "2",
@@ -616,7 +626,8 @@ export class AppComponent implements OnInit {
 					mapping.push(qMapping);
 				}
 				
-				console.log("Automapping result", JSON.stringify(mapping));
+				console.log("Automapping result (copy and paste the following JSON into the corresponding mapping file)");
+				console.log(JSON.stringify(mapping));
 			});
 		});
 	}

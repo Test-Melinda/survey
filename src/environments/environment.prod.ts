@@ -19,36 +19,8 @@ export const environment = {
             si: 966913
         },
         metaQuestions: {
-            score: {
-                default: {
-                    gid: 2321,
-                    qid: 45708
-                },
-                at: {
-                    gid: 2499,
-                    qid: 47787
-                },
-                ch: {
-                    gid: 2518,
-                    qid: 48005
-                },
-                de: {
-                    gid: 2537,
-                    qid: 48223
-                },
-                fr: {
-                    gid: 2461,
-                    qid: 47351
-                },
-                it: {
-                    gid: 2556,
-                    qid: 48441
-                },
-                si: {
-                    gid: 2480,
-                    qid: 47569
-                }
-            }
+            score: 'SCORE',
+			channel: 'LINK'
         }
     }
 };
