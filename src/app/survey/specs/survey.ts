@@ -5433,12 +5433,13 @@ export const surveyModel = {
      ]
     },
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "PS4dot5",
      "visibleIf": "{PS4dot3} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
      "title": "Was sind Ihre Beweggründe, __als Fahrer/In__ weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
+     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5460,7 +5461,8 @@ export const surveyModel = {
        "value": "5",
        "text": "Ökologische Gründe"
       }
-     ]
+     ],
+     "otherText": "Sonstiges, und zwar Freies Textfeld"
     },
     {
      "type": "radiogroup",
@@ -5627,12 +5629,13 @@ export const surveyModel = {
      ]
     },
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "PS4dot7",
      "visibleIf": "{PS4dot6} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
      "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Fahrer/in, das Angebot __weniger als bisher__ zu nützen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
+     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5654,7 +5657,8 @@ export const surveyModel = {
        "value": "5",
        "text": "Es gab für mich unnötige Umwege"
       }
-     ]
+     ],
+     "otherText": "Sonstiges, und zwar Freies Textfeld"
     }
    ]
   },
