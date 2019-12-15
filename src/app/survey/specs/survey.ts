@@ -1731,7 +1731,7 @@ export const surveyModel = {
      "type": "text",
      "name": "QF3",
      "visible": false,
-     "visibleIf": "{source} != 'at' and (\r\n({QF2FD} notempty and !([\"A11\", \"A13\"] anyof {QF2FD}))\r\nor\r\n({QF2AR} notempty and !([\"A1\", \"A2\"] anyof {QF2AR}))\r\nor\r\n({QF2GB2} notempty and {QF2GB2} != \"19\")\r\nor\r\n({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\r\nor\r\n{QFSW1} == \"A2\"\r\n)",
+     "visibleIf": "{source} != 'at' and {source} != 'ch' and {QF1} != 'ch' and (\r\n({QF2FD} notempty and !([\"A11\", \"A13\"] anyof {QF2FD}))\r\nor\r\n({QF2AR} notempty and !([\"A1\", \"A2\"] anyof {QF2AR}))\r\nor\r\n({QF2GB2} notempty and {QF2GB2} != \"19\")\r\nor\r\n({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\r\n)",
      "title": {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
@@ -1741,6 +1741,28 @@ export const surveyModel = {
       "de-ch": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
       "de-at": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes."
      }
+    },
+    {
+     "type": "text",
+     "name": "_ch_QF3",
+     "visible": false,
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == 'ch'",
+     "title": {
+      "default": "Could you please specify your postal code?",
+      "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "sl": "Lahko navedete poštno številko?",
+      "fr": "Quel est votre code postal?",
+      "it": "Puoi indicare per favore il codice di avviamento postale (cap) del tuo comune?",
+      "de-ch": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "de-at": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes."
+     },
+     "validators": [
+      {
+       "type": "regex",
+       "text": "The postal code must be a 4 digits number",
+       "regex": "^[0-9]{4}$"
+      }
+     ]
     }
    ]
   },
