@@ -11,7 +11,7 @@ export const data = {
     "SURVEY_INTRO": {
         "TITLE": "Herzlich willkommen bei Melinda!",
 		"LEAD": "Das <strong>MELINDA</strong> - <strong>M</strong>obility <strong>E</strong>cosystem for <strong>L</strong>ow-carbon and <strong>IN</strong>novative mo<strong>D</strong>al shift in the <strong>A</strong>lps - <strong>Projekt</strong> will ein besseres Verständnis der Mobilitätsgewohnheiten und Präferenzen des täglichen Lebens der Menschen generieren.",
-		"DESCRIPTION": "Mit dieser Umfrage möchten wir Ihre Einstellungen sammeln und Ihnen einige Tipps geben, wie Sie mit den ökologischen Herausforderungen umgehen können, mit denen wir uns alle dringend befassen sollten.",
+		"DESCRIPTION": "Mit dieser Umfrage möchten wir Ihre Einstellungen zum Thema Mitfahrgelegenheiten sammeln, die in ihrer Region in Form des Anbieters taxito aktuell eingeführt wurden.",
 		"TIME_REQUIREMENTS": "Diese Umfrage benötigt nur 10 Minuten Ihrer Zeit.",
 		"LEGAL": {
 			"TITLE": "Haftungsausschluss",
