@@ -5187,7 +5187,7 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot3",
      "visibleIf": "({_ch_Q11} != \"1\" and {_ch_Q11}) and {PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
-     "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als __Fahrer/In__ genutzt?",
+     "title": "Haben Sie bis zum heutigen Zeitpunkt bereits Taxito als __Fahrer/In__ genutzt?",
      "isRequired": true,
      "choices": [
       {
