@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Model, SurveyNG, StylesManager, Survey, IQuestion, surveyLocalization, OtherEmptyError } from 'survey-angular';
+import { Model, SurveyNG, StylesManager, Survey, IQuestion, surveyLocalization } from 'survey-angular';
 import { SurveySpecificationService } from "src/app/survey/survey-specification.service";
 import { ResponseConverterService } from "src/app/survey/response-converter.service";
-import { LimesurveyAnswerCode } from "./survey/limesurvey-questions-mapping";
 import { LimesurveyResponseBuilder } from "./limesurvey/limesurvey-response-builder";
 import { LimesurveyClientFactoryService, LimesurveyClientCredentials } from "src/app/limesurvey/limesurvey-client-factory.service";
 import { ScoreCalculatorService } from "./score/score-calculator.service";
