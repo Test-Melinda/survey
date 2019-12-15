@@ -4010,9 +4010,9 @@ export const surveyModel = {
      "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == 'ch'",
      "title": {
       "default": "Do you have a driving licence?",
-      "de-ch": "Hast Du einen Führerschein?",
-      "de-at": "Hast Du einen Führerschein?",
-      "de": "Hast Du einen Führerschein?"
+      "de-ch": "Haben Sie einen Führerschein?",
+      "de-at": "Haben Sie einen Führerschein?",
+      "de": "Haben Sie einen Führerschein?"
      },
      "choices": [
       {
