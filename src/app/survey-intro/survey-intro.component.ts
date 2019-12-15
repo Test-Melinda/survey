@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-survey-intro',
@@ -8,13 +9,26 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 export class SurveyIntroComponent implements OnInit {
     
     public privacyAccepted: boolean = false;
-	public contactEmail = "simone.caiello@unimib.it";
+	public localizedContacts = {
+		default: {
+			name: "Simone Caiello",
+			email: "simone.caiello@unimib.it"
+		},
+		"de-ch": {
+			name: "Timo Ohnmacht",
+			email: "timo.ohnmacht@hslu.ch"
+		},
+		"sl": {
+			name: "Simoneja Caiello",
+			email: "simone.caiello@unimib.it"
+		}
+	};
 	
 	public policyShown = false;
 
     @Output() privacyAcceptance = new EventEmitter<boolean>();
 
-    constructor() { }
+    constructor(public translate: TranslateService) { }
 
     ngOnInit() {
     }
@@ -33,5 +47,14 @@ export class SurveyIntroComponent implements OnInit {
             this.privacyAcceptance.emit(accepted);
         }
     }
+
+	public getContact(){
+		let contact = this.localizedContacts.default;
+		if (this.translate.currentLang in this.localizedContacts){
+			contact = this.localizedContacts[this.translate.currentLang];
+		}
+		
+		return contact;
+	}
 
 }
