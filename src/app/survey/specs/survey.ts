@@ -5922,10 +5922,11 @@ export const surveyModel = {
    "name": "PS14",
    "elements": [
     {
-     "type": "radiogroup",
+     "type": "checkbox",
      "name": "PS4dot14",
      "visibleIf": "{PS4dot8} == \"1\" and {PS4dot13} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
      "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Mitfahrer/in, das Angebot __weniger als bisher__ zu nützen?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
      "hasOther": true,
      "choices": [
