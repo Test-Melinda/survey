@@ -1759,7 +1759,12 @@ export const surveyModel = {
      "validators": [
       {
        "type": "regex",
-       "text": "The postal code must be a 4 digits number",
+       "text": {
+        "default": "The postal code must be a 4 digits number",
+        "de": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden.",
+        "de-at": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden.",
+        "de-ch": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden."
+       },
        "regex": "^[0-9]{4}$"
       }
      ]
