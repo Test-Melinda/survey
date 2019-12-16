@@ -20,7 +20,8 @@ export const environment = {
         },
         metaQuestions: {
             score: 'SCORE',
-			channel: 'LINK'
+			channel: 'LINK',
+			referrer: 'SOURCE'
         }
     }
 };
