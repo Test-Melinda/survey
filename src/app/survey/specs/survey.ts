@@ -5970,7 +5970,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot15",
-     "visibleIf": "{PS4dot1} == \"1\" and {PS4dot8} == \"2\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
+     "visibleIf": "{PS4dot1} == \"1\" and {PS4dot8} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
      "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in __nicht nutzen__?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
