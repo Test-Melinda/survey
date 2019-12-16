@@ -3201,7 +3201,7 @@ export const surveyModel = {
       "de-ch": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
       "de-at": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
       "sl": "S katerim načinom prevoza opravljate najdaljša potovanja?",
-      "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande?"
+      "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande pour vos déplacement quotidiens?"
      },
      "description": {
       "default": "(Only one answer possible)",
