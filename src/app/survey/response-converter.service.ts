@@ -69,7 +69,7 @@ export class ResponseConverterService {
 	            }
 			}
         }
-
+		
         return mapped;
     }
 

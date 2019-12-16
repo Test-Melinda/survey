@@ -29,6 +29,7 @@ export class AppComponent implements OnInit {
     
     public source = null;
     protected channel = null;
+	protected referrer = null;
     
     public SurveyStatus = SurveyStatus;
     public status: SurveyStatus = SurveyStatus.LOADING;
@@ -62,6 +63,9 @@ export class AppComponent implements OnInit {
         
         this.channel = this.parseChannel();
         console.log("Channel detected", this.channel);
+		
+		this.referrer = this.parseReferrer();
+        console.log("Referrer detected", this.referrer);
 		
 		// Set locale
 		let locale = 'en';
@@ -143,6 +147,11 @@ export class AppComponent implements OnInit {
         // Parse
         return this.parseQueryParams().get('channel') || null;
     }
+	
+	private parseReferrer(): string {
+        // Parse
+        return window.document.referrer || null;
+    }
     
     public ngOnInit() {
         if (this.status != SurveyStatus.ERROR){
@@ -168,6 +177,7 @@ export class AppComponent implements OnInit {
                 this.processResponse(response).then((response) => {
 					this.responseSaveError = false;
 				}, (error) => {
+					console.error("Response save error", error);
 					this.responseSaveError = true;
 					
 					// Save current state so that the user can retry after reloading
@@ -432,12 +442,17 @@ export class AppComponent implements OnInit {
 				this.scoreValid = this.scoreCalculator.areScoreResponsesComplete(responseData);
 		        console.log("Score (valid?)", this.score, this.scoreValid);
 				
-				// Add the score channel to the responses
+				// Add the score to the responses
 				responseData[environment.limesurvey.metaQuestions.score] = this.score;
 				
 				// Add the source channel to the responses
 				if (this.channel){
 					responseData[environment.limesurvey.metaQuestions.channel] = this.channel;
+				}
+				
+				// Add the referrer to the responses
+				if (this.referrer){
+					responseData[environment.limesurvey.metaQuestions.referrer] = this.referrer;
 				}
 				
 		        // Convert to Limesurvey response
@@ -524,6 +539,7 @@ export class AppComponent implements OnInit {
 				let state = {
 					status: this.status,
 					channel: this.channel,
+					referrer: this.referrer,
 					startTime: this.startTime,
 					responses: survey.data,
 					pageNum: survey.currentPageNo,
@@ -559,6 +575,9 @@ export class AppComponent implements OnInit {
 							
 							// Restore channel
 							this.channel = state.channel || null;
+							
+							// Restore referrer
+							this.referrer = state.referrer || null;
 							
 							// Restore responses
 							survey.data = state.responses;
