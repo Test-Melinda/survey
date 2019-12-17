@@ -312,6 +312,12 @@ export class AppComponent implements OnInit {
 				}
 			});
 			
+			if (this.isDevMode()){
+				survey.onAfterRenderQuestion.add((survey: Survey, q) => {
+					console.log("Showing question", q.question.name);
+				});
+			}
+			
 			// Scrolls up on page change
             survey.onCurrentPageChanged.add((survey: Survey) => {
                 // Scroll to top
@@ -546,7 +552,9 @@ export class AppComponent implements OnInit {
 					responseSaveError: this.responseSaveError
 				};
 				
-				console.log("Saving survey state", state);
+				if (this.isDevMode()){
+					console.log("Saving survey state", state);
+				}
 				
 				window.localStorage.setItem(this.surveyStateStorageItem, JSON.stringify(state));
 				

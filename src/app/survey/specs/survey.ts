@@ -4919,9 +4919,32 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot1",
-     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\" and {QFSW1} == \"A10\"",
      "title": {
       "default": "Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?",
+      "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
+     },
+     "isRequired": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Ja",
+        "it": "Sì"
+       }
+      },
+      {
+       "value": "2",
+       "text": "Nein"
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "PS4dot1BIS",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\" and {QFSW1} == \"A12\"",
+     "title": {
+      "default": "Seit Anfang 2020 wird im Luzerner Seetal das Mitfahrangebot Taxito angeboten. Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich. Dafür wurden Stelen aufgestellt, wo man - wie an einer Bushaltestelle - in Autos einsteigen und mitfahren kann.",
       "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
      },
      "isRequired": true,
@@ -5029,7 +5052,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot2",
-     "visibleIf": "{PS4dot1} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
+     "visibleIf": "({PS4dot1} == \"1\" and {QFSW1} == \"A10\") or ({PS4dot1BIS} == \"1\" and {QFSW1} == \"A12\")",
      "title": "Wie wurden Sie auf das Angebot aufmerksam?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5191,7 +5214,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot3",
-     "visibleIf": "({_ch_Q11} != \"1\" and {_ch_Q11}) and {PS4dot1} == \"1\" and {Q6DRIVEL} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
+     "visibleIf": "({_ch_Q11} != \"1\" and {_ch_Q11}) and {Q6DRIVEL} == \"1\" and (({PS4dot1} == \"1\" and {QFSW1} == \"A10\") or ({PS4dot1BIS} == \"1\" and {QFSW1} == \"A12\"))",
      "title": "Haben Sie bis zum heutigen Zeitpunkt bereits Taxito als __Fahrer/In__ genutzt?",
      "isRequired": true,
      "choices": [
@@ -5702,7 +5725,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "PS4dot8",
-     "visibleIf": "{PS4dot1} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
+     "visibleIf": "({PS4dot1} == \"1\" and {QFSW1} == \"A10\") or ({PS4dot1BIS} == \"1\" and {QFSW1} == \"A12\")",
      "title": "Haben Sie bis zum heutigen Zeitpunkt bereits dieses Angebot als __Mitfahrer/In__ genutzt?",
      "isRequired": true,
      "choices": [
@@ -5970,7 +5993,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot15",
-     "visibleIf": "{PS4dot1} == \"1\" and {PS4dot8} == \"1\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
+     "visibleIf": "(({PS4dot1} == \"1\" and {QFSW1} == \"A10\") or ({PS4dot1BIS} == \"1\" and {QFSW1} == \"A12\")) and {PS4dot8} == \"1\"",
      "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in __nicht nutzen__?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
