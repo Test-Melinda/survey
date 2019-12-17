@@ -4636,6 +4636,7 @@ export const surveyModel = {
         "sl": "Regionalne oblasti",
         "fr": "La Région"
        },
+       "visibleIf": "((!{source}) or {source} != 'si') and {QF1} != 'si'",
        "enableIf": "{Q9} anyof \"3\" or {Q9.length} < 2"
       },
       {
