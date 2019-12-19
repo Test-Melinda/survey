@@ -4944,18 +4944,12 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "PS4dot1BIS",
      "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\" and {QFSW1} == \"A12\"",
-     "title": {
-      "default": "Seit Anfang 2020 wird im Luzerner Seetal das Mitfahrangebot Taxito angeboten. Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich. Dafür wurden Stelen aufgestellt, wo man - wie an einer Bushaltestelle - in Autos einsteigen und mitfahren kann.",
-      "it": "Utilizzi la bicicletta tanto quanto vorresti durante i tuoi spostamenti quotidiani?"
-     },
+     "title": "Seit Anfang 2020 wird im Luzerner Seetal das Mitfahrangebot Taxito angeboten. Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich. Dafür wurden Stelen aufgestellt, wo man – wie an einer Bushaltestelle – in Autos einsteigen und mitfahren kann.<br/>Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?",
      "isRequired": true,
      "choices": [
       {
        "value": "1",
-       "text": {
-        "default": "Ja",
-        "it": "Sì"
-       }
+       "text": "Ja"
       },
       {
        "value": "2",
