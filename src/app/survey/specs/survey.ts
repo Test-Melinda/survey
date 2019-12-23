@@ -4939,12 +4939,18 @@ export const surveyModel = {
        "text": "Nein"
       }
      ]
-    },
+    }
+   ],
+   "description": "Seit Dezember 2019 wird zwischen Maladers und Chur das Mitfahrangebot Taxito angeboten.  Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich.  Dafür wurden Stelen aufgestellt, wo man – wie an einer Bushaltestelle – in Autos einsteigen und mitfahren kann."
+  },
+  {
+   "name": "PS1bis",
+   "elements": [
     {
      "type": "radiogroup",
      "name": "PS4dot1BIS",
      "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == \"ch\" and ({QFSW1} == \"A1\" or {QFSW1} == \"A12\")",
-     "title": "Seit Anfang 2020 wird im Luzerner Seetal das Mitfahrangebot Taxito angeboten. Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich. Dafür wurden Stelen aufgestellt, wo man – wie an einer Bushaltestelle – in Autos einsteigen und mitfahren kann.<br/>Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?",
+     "title": "Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?",
      "isRequired": true,
      "choices": [
       {
@@ -4958,7 +4964,7 @@ export const surveyModel = {
      ]
     }
    ],
-   "description": "Seit Dezember 2019 wird zwischen Maladers und Chur das Mitfahrangebot Taxito angeboten.  Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich.  Dafür wurden Stelen aufgestellt, wo man – wie an einer Bushaltestelle – in Autos einsteigen und mitfahren kann."
+   "description": "Seit Anfang 2020 wird im Luzerner Seetal das Mitfahrangebot Taxito angeboten. Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich. Dafür wurden Stelen aufgestellt, wo man – wie an einer Bushaltestelle – in Autos einsteigen und mitfahren kann."
   },
   {
    "name": "PS2",
