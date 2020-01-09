@@ -5464,7 +5464,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "PS4dot5",
-     "visibleIf": "{PS4dot3} == \"1\" and ({QFSW1} == \"A1\" or {QFSW1} == \"A10\" or {QFSW1} == \"A12\")",
+     "visibleIf": "{PS4dot3} == \"1\" and {QFSW1} == \"A10\"",
      "title": "Was sind Ihre Beweggründe, __als Fahrer/In__ weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
@@ -5473,6 +5473,38 @@ export const surveyModel = {
       {
        "value": "1",
        "text": "Ich möchte das Maladers verkehrlich besser erreichbar ist  "
+      },
+      {
+       "value": "2",
+       "text": "Finanzieller Ertrag"
+      },
+      {
+       "value": "3",
+       "text": "Fahrgäste sind mit persönlich bekannt"
+      },
+      {
+       "value": "4",
+       "text": "Ich fahre gerne in Begleitung"
+      },
+      {
+       "value": "5",
+       "text": "Ökologische Gründe"
+      }
+     ],
+     "otherText": "Sonstiges, und zwar Freies Textfeld"
+    },
+    {
+     "type": "checkbox",
+     "name": "PS4dot5BIS",
+     "visibleIf": "{PS4dot3} == \"1\" and ({QFSW1} == \"A1\" or {QFSW1} == \"A12\")",
+     "title": "Was sind Ihre Beweggründe, __als Fahrer/In__ weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
+     "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
+     "isRequired": true,
+     "hasOther": true,
+     "choices": [
+      {
+       "value": "1",
+       "text": "Ich möchte das Luzerner Seetal verkehrlich besser erreichbar ist"
       },
       {
        "value": "2",
