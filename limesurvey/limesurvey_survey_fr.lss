@@ -12172,6 +12172,42 @@
     <relevance><![CDATA[((776434X2444X47293.NAOK == "A1" or 776434X2444X47293.NAOK == "A3" or 776434X2444X47293.NAOK == "A4" or 776434X2444X47293.NAOK == "A5" or 776434X2444X47293.NAOK == "A6" or 776434X2444X47293.NAOK == "A7"))]]></relevance>
     <modulename/>
    </row>
+   <row>
+    <qid><![CDATA[50021]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[776434]]></sid>
+    <gid><![CDATA[2461]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[SOURCE]]></title>
+    <question><![CDATA[Survey link source]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50021]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[776434]]></sid>
+    <gid><![CDATA[2461]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[SOURCE]]></title>
+    <question/>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[fr]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
   </rows>
  </questions>
  <subquestions>
@@ -17735,6 +17771,11 @@
     <attribute><![CDATA[exclude_all_others]]></attribute>
     <value><![CDATA[6]]></value>
    </row>
+   <row>
+    <qid><![CDATA[50021]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
   </rows>
  </question_attributes>
  <surveys>
@@ -17813,7 +17854,7 @@
     <usecookie><![CDATA[N]]></usecookie>
     <allowregister><![CDATA[N]]></allowregister>
     <allowsave><![CDATA[Y]]></allowsave>
-    <autonumber_start><![CDATA[7]]></autonumber_start>
+    <autonumber_start><![CDATA[1]]></autonumber_start>
     <autoredirect><![CDATA[Y]]></autoredirect>
     <allowprev><![CDATA[Y]]></allowprev>
     <printanswers><![CDATA[N]]></printanswers>
@@ -17842,7 +17883,7 @@
     <questionindex><![CDATA[0]]></questionindex>
     <navigationdelay><![CDATA[0]]></navigationdelay>
     <nokeyboard><![CDATA[N]]></nokeyboard>
-    <alloweditaftercompletion><![CDATA[Y]]></alloweditaftercompletion>
+    <alloweditaftercompletion><![CDATA[N]]></alloweditaftercompletion>
     <googleanalyticsstyle><![CDATA[1]]></googleanalyticsstyle>
     <googleanalyticsapikey><![CDATA[9999useGlobal9999]]></googleanalyticsapikey>
     <gsid><![CDATA[1]]></gsid>

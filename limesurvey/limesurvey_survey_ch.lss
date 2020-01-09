@@ -8585,6 +8585,42 @@
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
    </row>
+   <row>
+    <qid><![CDATA[50134]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[Yes]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50134]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[No]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50134]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[Ja]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50134]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[Nein]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
   </rows>
  </answers>
  <conditions>
@@ -8860,6 +8896,15 @@
     <scenario><![CDATA[3]]></scenario>
    </row>
    <row>
+    <cid><![CDATA[9442]]></cid>
+    <qid><![CDATA[48914]]></qid>
+    <cqid><![CDATA[47954]]></cqid>
+    <cfieldname><![CDATA[643939X2501X47954]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A10]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
     <cid><![CDATA[8972]]></cid>
     <qid><![CDATA[48922]]></qid>
     <cqid><![CDATA[47986]]></cqid>
@@ -8902,6 +8947,15 @@
     <cfieldname><![CDATA[643939X2578X48922]]></cfieldname>
     <method><![CDATA[==]]></method>
     <value><![CDATA[1]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
+    <cid><![CDATA[9449]]></cid>
+    <qid><![CDATA[48934]]></qid>
+    <cqid><![CDATA[47954]]></cqid>
+    <cfieldname><![CDATA[643939X2501X47954]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A10]]></value>
     <scenario><![CDATA[1]]></scenario>
    </row>
    <row>
@@ -9541,6 +9595,51 @@
     <cfieldname><![CDATA[643939X2501X47947]]></cfieldname>
     <method><![CDATA[==]]></method>
     <value><![CDATA[7]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
+    <cid><![CDATA[9444]]></cid>
+    <qid><![CDATA[50134]]></qid>
+    <cqid><![CDATA[47954]]></cqid>
+    <cfieldname><![CDATA[643939X2501X47954]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A1]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
+    <cid><![CDATA[9445]]></cid>
+    <qid><![CDATA[50134]]></qid>
+    <cqid><![CDATA[47954]]></cqid>
+    <cfieldname><![CDATA[643939X2501X47954]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A12]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
+    <cid><![CDATA[9446]]></cid>
+    <qid><![CDATA[50137]]></qid>
+    <cqid><![CDATA[47954]]></cqid>
+    <cfieldname><![CDATA[643939X2501X47954]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A1]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
+    <cid><![CDATA[9447]]></cid>
+    <qid><![CDATA[50137]]></qid>
+    <cqid><![CDATA[47954]]></cqid>
+    <cfieldname><![CDATA[643939X2501X47954]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A12]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
+    <cid><![CDATA[9448]]></cid>
+    <qid><![CDATA[50137]]></qid>
+    <cqid><![CDATA[48922]]></cqid>
+    <cfieldname><![CDATA[643939X2578X48922]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[1]]></value>
     <scenario><![CDATA[1]]></scenario>
    </row>
   </rows>
@@ -12836,7 +12935,7 @@
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[1]]></relevance>
+    <relevance><![CDATA[((643939X2501X47954.NAOK == "A10"))]]></relevance>
     <modulename/>
    </row>
    <row>
@@ -12865,7 +12964,7 @@
     <language><![CDATA[de]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[1]]></relevance>
+    <relevance><![CDATA[((643939X2501X47954.NAOK == "A10"))]]></relevance>
    </row>
    <row>
     <qid><![CDATA[48915]]></qid>
@@ -13002,7 +13101,7 @@
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[(((!is_empty(643939X2578X48922.NAOK) && (643939X2578X48922.NAOK == 1))))]]></relevance>
+    <relevance><![CDATA[((643939X2501X47954.NAOK == "A10") and ((!is_empty(643939X2578X48922.NAOK) && (643939X2578X48922.NAOK == 1))))]]></relevance>
     <modulename/>
    </row>
    <row>
@@ -13024,7 +13123,7 @@
     <language><![CDATA[de]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[(((!is_empty(643939X2578X48922.NAOK) && (643939X2578X48922.NAOK == 1))))]]></relevance>
+    <relevance><![CDATA[((643939X2501X47954.NAOK == "A10") and ((!is_empty(643939X2578X48922.NAOK) && (643939X2578X48922.NAOK == 1))))]]></relevance>
     <modulename/>
    </row>
    <row>
@@ -13563,6 +13662,134 @@
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[(((!is_empty(643939X2501X47947.NAOK) && (643939X2501X47947.NAOK == 7))))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50018]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2518]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[SOURCE]]></title>
+    <question><![CDATA[Survey link source]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50018]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2518]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[SOURCE]]></title>
+    <question/>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50134]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2589]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[PS4dot1BIS]]></title>
+    <question><![CDATA[<p><span style="font-size:18px;"><span style="font-family:Arial,Helvetica,sans-serif;">Seit Anfang 2020 wird im Luzerner Seetal das Mitfahrangebot Taxito angeboten. Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich. Dafür wurden Stelen aufgestellt, wo man – wie an einer Bushaltestelle – in Autos einsteigen und mitfahren kann.</span></span></p>
+
+<hr />
+<p> </p>
+
+<p><strong><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?</span></span></strong></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((643939X2501X47954.NAOK == "A1" or 643939X2501X47954.NAOK == "A12"))]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50134]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2589]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[PS4dot1BIS]]></title>
+    <question><![CDATA[<p><span style="font-size:18px;"><span style="font-family:Arial,Helvetica,sans-serif;">Seit Anfang 2020 wird im Luzerner Seetal das Mitfahrangebot Taxito angeboten. Taxito macht freie Plätze in Fahrzeugen für Alle zugänglich. Dafür wurden Stelen aufgestellt, wo man – wie an einer Bushaltestelle – in Autos einsteigen und mitfahren kann.</span></span></p>
+
+<hr />
+<p> </p>
+
+<p><strong><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Haben Sie bis zum heutigen Zeitpunkt von diesem Angebot gehört?</span></span></strong></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((643939X2501X47954.NAOK == "A1" or 643939X2501X47954.NAOK == "A12"))]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50137]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[PS4dot5BIS]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Was sind Ihre Beweggründe, <u>als Fahrer/in</u> weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?  </strong></span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[Y]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <question_order><![CDATA[6]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((643939X2501X47954.NAOK == "A1" or 643939X2501X47954.NAOK == "A12") and ((!is_empty(643939X2578X48922.NAOK) && (643939X2578X48922.NAOK == 1))))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50137]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[PS4dot5BIS]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Was sind Ihre Beweggründe, <u>als Fahrer/in</u> weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?  </strong></span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[Y]]></other>
+    <mandatory><![CDATA[Y]]></mandatory>
+    <question_order><![CDATA[6]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((643939X2501X47954.NAOK == "A1" or 643939X2501X47954.NAOK == "A12") and ((!is_empty(643939X2578X48922.NAOK) && (643939X2578X48922.NAOK == 1))))]]></relevance>
    </row>
   </rows>
  </questions>
@@ -20028,6 +20255,166 @@
     <relevance><![CDATA[1]]></relevance>
     <modulename/>
    </row>
+   <row>
+    <qid><![CDATA[50138]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[1]]></title>
+    <question><![CDATA[Ich möchte das Luzerner Seetal verkehrlich besser erreichbar ist  ]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50138]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[5]]></title>
+    <question><![CDATA[Ökologische Gründe]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[5]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50139]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[2]]></title>
+    <question><![CDATA[Finanzieller Ertrag]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50139]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[4]]></title>
+    <question><![CDATA[Ich fahre gerne in Begleitung]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50140]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[3]]></title>
+    <question><![CDATA[Fahrgäste sind mit persönlich bekannt]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50140]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[3]]></title>
+    <question><![CDATA[Fahrgäste sind mit persönlich bekannt]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50141]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[4]]></title>
+    <question><![CDATA[Ich fahre gerne in Begleitung]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50141]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[2]]></title>
+    <question><![CDATA[Finanzieller Ertrag]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50142]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[5]]></title>
+    <question><![CDATA[Ökologische Gründe]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[5]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50142]]></qid>
+    <parent_qid><![CDATA[50137]]></parent_qid>
+    <sid><![CDATA[643939]]></sid>
+    <gid><![CDATA[2591]]></gid>
+    <type><![CDATA[T]]></type>
+    <title><![CDATA[1]]></title>
+    <question><![CDATA[Ich möchte das Maladers verkehrlich besser erreichbar ist  ]]></question>
+    <other><![CDATA[N]]></other>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
   </rows>
  </subquestions>
  <question_attributes>
@@ -20286,6 +20673,23 @@
     <value><![CDATA[Sonstiges, und zwar freies Textfeld]]></value>
     <language><![CDATA[en]]></language>
    </row>
+   <row>
+    <qid><![CDATA[50018]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[50137]]></qid>
+    <attribute><![CDATA[other_replace_text]]></attribute>
+    <value><![CDATA[Sonstiges, und zwar Freies Textfeld]]></value>
+    <language><![CDATA[de]]></language>
+   </row>
+   <row>
+    <qid><![CDATA[50137]]></qid>
+    <attribute><![CDATA[other_replace_text]]></attribute>
+    <value><![CDATA[Sonstiges, und zwar Freies Textfeld]]></value>
+    <language><![CDATA[en]]></language>
+   </row>
   </rows>
  </question_attributes>
  <surveys>
@@ -20364,7 +20768,7 @@
     <usecookie><![CDATA[N]]></usecookie>
     <allowregister><![CDATA[N]]></allowregister>
     <allowsave><![CDATA[Y]]></allowsave>
-    <autonumber_start><![CDATA[5]]></autonumber_start>
+    <autonumber_start><![CDATA[11]]></autonumber_start>
     <autoredirect><![CDATA[Y]]></autoredirect>
     <allowprev><![CDATA[Y]]></allowprev>
     <printanswers><![CDATA[N]]></printanswers>
