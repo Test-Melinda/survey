@@ -1731,7 +1731,7 @@ export const surveyModel = {
      "type": "text",
      "name": "QF3",
      "visible": false,
-     "visibleIf": "{source} != 'at' and {source} != 'ch' and {QF1} != 'ch' and (\r\n({QF2FD} notempty and !([\"A11\", \"A13\"] anyof {QF2FD}))\r\nor\r\n({QF2AR} notempty and !([\"A1\", \"A2\"] anyof {QF2AR}))\r\nor\r\n({QF2GB2} notempty and {QF2GB2} != \"19\")\r\nor\r\n({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\r\n)",
+     "visibleIf": "{source} != 'at' and\r\n{source} != 'ch' and {QF1} != 'ch' and\r\n{source} != 'fr' and {QF1} != 'fr' and\r\n{source} != 'de' and {QF1} != 'de' and (\r\n({QF2AR} notempty and !([\"A1\", \"A2\"] anyof {QF2AR}))\r\nor\r\n({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\r\n)",
      "title": {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
@@ -1741,6 +1741,34 @@ export const surveyModel = {
       "de-ch": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
       "de-at": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes."
      }
+    },
+    {
+     "type": "text",
+     "name": "_fr_QF3",
+     "visible": false,
+     "visibleIf": "((!{source}) or {source} == 'fr') and {QF1} == 'fr' and ({QF2FD} notempty and !([\"A11\", \"A13\"] anyof {QF2FD}))",
+     "title": {
+      "default": "Could you please specify your postal code?",
+      "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "sl": "Lahko navedete poštno številko?",
+      "fr": "Quel est votre code postal?",
+      "it": "Puoi indicare per favore il codice di avviamento postale (cap) del tuo comune?",
+      "de-ch": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "de-at": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes."
+     },
+     "validators": [
+      {
+       "type": "regex",
+       "text": {
+        "default": "The postal code must be a 5 digits number",
+        "de": "Die Postleitzahl muss mit einer 5-stelligen Nummer angegeben werden.",
+        "de-at": "Die Postleitzahl muss mit einer 5-stelligen Nummer angegeben werden.",
+        "de-ch": "Die Postleitzahl muss mit einer 5-stelligen Nummer angegeben werden.",
+        "fr": "Le code postal doit être composé de 5 chiffres"
+       },
+       "regex": "^[0-9]{5}$"
+      }
+     ]
     },
     {
      "type": "text",
@@ -1763,9 +1791,38 @@ export const surveyModel = {
         "default": "The postal code must be a 4 digits number",
         "de": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden.",
         "de-at": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden.",
-        "de-ch": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden."
+        "de-ch": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden.",
+        "fr": "Le code postal doit être composé de 4 chiffres"
        },
        "regex": "^[0-9]{4}$"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "_de_QF3",
+     "visible": false,
+     "visibleIf": "((!{source}) or {source} == 'de') and {QF1} == 'de' and (({QF2GB2} notempty and {QF2GB2} != \"19\"))",
+     "title": {
+      "default": "Could you please specify your postal code?",
+      "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "sl": "Lahko navedete poštno številko?",
+      "fr": "Quel est votre code postal?",
+      "it": "Puoi indicare per favore il codice di avviamento postale (cap) del tuo comune?",
+      "de-ch": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "de-at": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes."
+     },
+     "validators": [
+      {
+       "type": "regex",
+       "text": {
+        "default": "The postal code must be a 5 digits number",
+        "de": "Die Postleitzahl muss mit einer 5-stelligen Nummer angegeben werden.",
+        "de-at": "Die Postleitzahl muss mit einer 5-stelligen Nummer angegeben werden.",
+        "de-ch": "Die Postleitzahl muss mit einer 5-stelligen Nummer angegeben werden.",
+        "fr": "Le code postal doit être composé de 5 chiffres"
+       },
+       "regex": "^[0-9]{5}$"
       }
      ]
     }
