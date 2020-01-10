@@ -4165,7 +4165,7 @@ export const surveyModel = {
      "visibleIf": "{QF1} == 'at' or {QF1} == 'li'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in Austria (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
-      "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
+      "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Österreich (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
      },
      "choices": [
       {
