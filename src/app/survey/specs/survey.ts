@@ -4123,7 +4123,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q7dot1IT",
-     "visibleIf": "{QF1} == 'it'",
+     "visibleIf": "((!{source}) or {source} == 'it') and {QF1} == 'it'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in Italy (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
       "it": "Quale può essere il costo medio mensile per il possesso di un'auto (a benzina) in Italia (considerando il costo del carburante, il deprezzamento del mezzo, le tasse, l'assicurazione e la manutenzione)?\n\nCirca di…"
@@ -4162,7 +4162,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q7dot1AU",
-     "visibleIf": "{QF1} == 'at' or {QF1} == 'li'",
+     "visibleIf": "((!{source}) or {source} == 'at') and {QF1} == 'at'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in Austria (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
       "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Österreich (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
@@ -4201,7 +4201,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q7dot1SL",
-     "visibleIf": "{QF1} == 'si'",
+     "visibleIf": "((!{source}) or {source} == 'si') and {QF1} == 'si'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in the EU (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
       "sl": "Kakšni so lahko povprečni mesečni stroški lastništva (bencinskega) avtomobila v EU (upoštevati gorivo, amortizacijo, davke, zavarovanje in vzdrževanje)?\nPribližno..."
@@ -4240,7 +4240,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q7dot1SW",
-     "visibleIf": "{QF1} == 'ch'",
+     "visibleIf": "((!{source}) or {source} == 'ch' or {source} == 'at') and {QF1} == 'ch'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in Switzerland (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
       "de-ch": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der Schweiz  (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?"
@@ -4270,7 +4270,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q7dot1FR",
-     "visibleIf": "{QF1} == 'fr'",
+     "visibleIf": "((!{source}) or {source} == 'fr') and {QF1} == 'fr'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in France (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
       "fr": "Quel est, en moyenne, le coût mensuel de possession d'une voiture en France (carburant, amortissement, taxes, assurance et entretien)?\nEnviron …"
@@ -4297,7 +4297,7 @@ export const surveyModel = {
     {
      "type": "radiogroup",
      "name": "Q7dot1GE",
-     "visibleIf": "{QF1} == 'de'",
+     "visibleIf": "((!{source}) or {source} == 'de' or {source} == 'at') and {QF1} == 'de'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in Germany (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
       "de": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
@@ -4329,6 +4329,60 @@ export const surveyModel = {
        "text": {
         "default": "1000 euros",
         "de": "1000 €"
+       }
+      }
+     ]
+    },
+    {
+     "type": "radiogroup",
+     "name": "Q7dot1EU",
+     "visibleIf": "((!{source}) or {source} == 'at') and {QF1} == 'li'",
+     "title": {
+      "default": "What can be, on average, the monthly cost of owning a (petrol) car in the EU (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
+      "sl": "Kakšni so lahko povprečni mesečni stroški lastništva (bencinskega) avtomobila v EU (upoštevati gorivo, amortizacijo, davke, zavarovanje in vzdrževanje)?\nPribližno...",
+      "de": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der EU (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…",
+      "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der EU (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…",
+      "de-ch": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der EU (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "100 euros",
+        "sl": "100 €",
+        "de": "100 €",
+        "de-at": "100 €",
+        "de-ch": "100 €"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "250 euros",
+        "sl": "250 €",
+        "de": "250 €",
+        "de-at": "250 €",
+        "de-ch": "250 €"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "500 euros",
+        "sl": "500 €",
+        "de": "500 €",
+        "de-at": "500 €",
+        "de-ch": "500 €"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "1000 euros",
+        "sl": "1000 €",
+        "de": "1000 €",
+        "de-at": "1000 €",
+        "de-ch": "1000 €"
        }
       }
      ]
