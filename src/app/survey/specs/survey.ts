@@ -4193,7 +4193,9 @@ export const surveyModel = {
      "visibleIf": "((!{source}) or {source} == 'at') and {QF1} == 'at'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in Austria (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
-      "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Österreich (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
+      "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Österreich (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…",
+      "de": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Österreich (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…",
+      "de-ch": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Österreich (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
      },
      "choices": [
       {
@@ -4271,7 +4273,9 @@ export const surveyModel = {
      "visibleIf": "((!{source}) or {source} == 'ch' or {source} == 'at') and {QF1} == 'ch'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in Switzerland (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
-      "de-ch": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der Schweiz  (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?"
+      "de-ch": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der Schweiz  (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?",
+      "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der Schweiz  (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?",
+      "de": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der Schweiz  (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?"
      },
      "choices": [
       {
@@ -4328,7 +4332,9 @@ export const surveyModel = {
      "visibleIf": "((!{source}) or {source} == 'de' or {source} == 'at') and {QF1} == 'de'",
      "title": {
       "default": "What can be, on average, the monthly cost of owning a (petrol) car in Germany (considering fuel, depreciation, taxes, insurance and maintenance)?\n\nClose to…",
-      "de": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
+      "de": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…",
+      "de-at": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…",
+      "de-ch": "Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?\nSchätzungsweise…"
      },
      "choices": [
       {
