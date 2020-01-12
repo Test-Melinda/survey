@@ -1731,7 +1731,7 @@ export const surveyModel = {
      "type": "text",
      "name": "QF3",
      "visible": false,
-     "visibleIf": "{source} != 'at' and\r\n{source} != 'ch' and {QF1} != 'ch' and\r\n{source} != 'fr' and {QF1} != 'fr' and\r\n{source} != 'de' and {QF1} != 'de' and (\r\n({QF2AR} notempty and !([\"A1\", \"A2\"] anyof {QF2AR}))\r\nor\r\n({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))\r\n)",
+     "visibleIf": "(((!{source})) or ({source} != 'at' and {source} != 'ch' and {source} != 'de' and {source} != 'fr')) and {QF1} != 'at' and {QF1} != 'ch' and {QF1} != 'de' and {QF1} != 'fr'",
      "title": {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
@@ -1774,7 +1774,35 @@ export const surveyModel = {
      "type": "text",
      "name": "_ch_QF3",
      "visible": false,
-     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == 'ch'",
+     "visibleIf": "((!{source}) or {source} == 'ch') and {QF1} == 'ch' and ({QFSW1} notempty and !([\"A6\", \"A10\", \"A12\", \"A19\"] anyof {QFSW1}))",
+     "title": {
+      "default": "Could you please specify your postal code?",
+      "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "sl": "Lahko navedete poštno številko?",
+      "fr": "Quel est votre code postal?",
+      "it": "Puoi indicare per favore il codice di avviamento postale (cap) del tuo comune?",
+      "de-ch": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
+      "de-at": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes."
+     },
+     "validators": [
+      {
+       "type": "regex",
+       "text": {
+        "default": "The postal code must be a 4 digits number",
+        "de": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden.",
+        "de-at": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden.",
+        "de-ch": "Die Postleitzahl muss mit einer 4-stelligen Nummer angegeben werden.",
+        "fr": "Le code postal doit être composé de 4 chiffres"
+       },
+       "regex": "^[0-9]{4}$"
+      }
+     ]
+    },
+    {
+     "type": "text",
+     "name": "_at_QF3",
+     "visible": false,
+     "visibleIf": "((!{source}) or {source} == 'at') and {QF1} == 'at' and ({QF2AR} notempty and (!([\"A1\", \"A2\"] anyof {QF2AR})) or ({QF2AR2} notempty and {QF2AR2} != \"A1\"))",
      "title": {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
