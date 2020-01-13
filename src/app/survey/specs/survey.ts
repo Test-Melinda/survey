@@ -1731,7 +1731,7 @@ export const surveyModel = {
      "type": "text",
      "name": "QF3",
      "visible": false,
-     "visibleIf": "(((!{source})) or ({source} != 'at' and {source} != 'ch' and {source} != 'de' and {source} != 'fr')) and {QF1} != 'at' and {QF1} != 'ch' and {QF1} != 'de' and {QF1} != 'fr'",
+     "visibleIf": "((!{source}) or {source} == 'it') and {QF1} == 'it'",
      "title": {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
