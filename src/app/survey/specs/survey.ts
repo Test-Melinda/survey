@@ -250,18 +250,26 @@ export const surveyModel = {
       "de-ch": "In welchem Gemeinde liegt Ihr Wohnort?\n(Wenn \"andere\", Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes)"
      },
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "A1",
        "text": "Zirl"
+      },
+      {
+       "value": "A2",
+       "text": {
+        "default": "Other",
+        "de": "Andere",
+        "de-at": "Andere",
+        "de-ch": "Andere"
+       }
       }
      ],
      "otherText": {
-      "default": "Other (postal code)",
-      "de": "Andere (Postleitzahl)",
-      "de-at": "Andere (Postleitzahl)",
-      "de-ch": "Andere (Postleitzahl)"
+      "default": "Other",
+      "de": "Andere",
+      "de-at": "Andere",
+      "de-ch": "Andere"
      }
     },
     {
@@ -1802,7 +1810,7 @@ export const surveyModel = {
      "type": "text",
      "name": "_at_QF3",
      "visible": false,
-     "visibleIf": "((!{source}) or {source} == 'at') and {QF1} == 'at' and ({QF2AR} notempty and (!([\"A1\", \"A2\"] anyof {QF2AR})) or ({QF2AR2} notempty and {QF2AR2} != \"A1\"))",
+     "visibleIf": "((!{source}) or {source} == 'at') and {QF1} == 'at' and ({QF2AR} notempty and (!([\"A1\", \"A2\"] anyof {QF2AR})) or ({QF2AR2} notempty and {QF2AR2} == \"A2\"))",
      "title": {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
