@@ -369,7 +369,8 @@ export class AppComponent implements OnInit {
                     pageDescription: "text-justify px-4 mb-3",
                     navigationButton: "btn",
                     navigation: {
-                        next: "btn-primary"
+                        next: "btn sv_next_btn btn-primary",
+						"complete": "btn sv_complete_btn btn-primary",
                     },
                     question: {
                         mainRoot: "sv_qstn px-4",
