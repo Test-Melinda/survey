@@ -27,6 +27,15 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
+    <qid><![CDATA[47734]]></qid>
+    <code><![CDATA[A2]]></code>
+    <answer><![CDATA[Andere]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
     <qid><![CDATA[47768]]></qid>
     <code><![CDATA[1]]></code>
     <answer><![CDATA[16-17]]></answer>
@@ -483,6 +492,42 @@
     <sortorder><![CDATA[7]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[100 euros]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[250 euros]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <code><![CDATA[3]]></code>
+    <answer><![CDATA[500 euros]]></answer>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[1]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <code><![CDATA[4]]></code>
+    <answer><![CDATA[1000 euros]]></answer>
+    <sortorder><![CDATA[4]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
@@ -1710,6 +1755,78 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
+    <qid><![CDATA[50145]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[100 euros]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[250 euros]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <code><![CDATA[3]]></code>
+    <answer><![CDATA[500 euros]]></answer>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[1]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <code><![CDATA[4]]></code>
+    <answer><![CDATA[1000 euros]]></answer>
+    <sortorder><![CDATA[4]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[100 Fr.]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[250 Fr.]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <code><![CDATA[3]]></code>
+    <answer><![CDATA[500 Fr.]]></answer>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[1]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <code><![CDATA[4]]></code>
+    <answer><![CDATA[1000 Fr.]]></answer>
+    <sortorder><![CDATA[4]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
     <qid><![CDATA[47757]]></qid>
     <code><![CDATA[1]]></code>
     <answer><![CDATA[100 €]]></answer>
@@ -1743,6 +1860,78 @@
     <sortorder><![CDATA[4]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[100 €]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[250 €]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <code><![CDATA[3]]></code>
+    <answer><![CDATA[500 €]]></answer>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[1]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <code><![CDATA[4]]></code>
+    <answer><![CDATA[1000 €]]></answer>
+    <sortorder><![CDATA[4]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[100 Fr.]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[250 Fr.]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <code><![CDATA[3]]></code>
+    <answer><![CDATA[500 Fr.]]></answer>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[1]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <code><![CDATA[4]]></code>
+    <answer><![CDATA[1000 Fr.]]></answer>
+    <sortorder><![CDATA[4]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
@@ -2034,10 +2223,55 @@
     <scale_id><![CDATA[0]]></scale_id>
    </row>
    <row>
+    <qid><![CDATA[50143]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[100 €]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[250 €]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <code><![CDATA[3]]></code>
+    <answer><![CDATA[500 €]]></answer>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[1]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <code><![CDATA[4]]></code>
+    <answer><![CDATA[1000 €]]></answer>
+    <sortorder><![CDATA[4]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
     <qid><![CDATA[47734]]></qid>
     <code><![CDATA[A1]]></code>
     <answer><![CDATA[Zirl]]></answer>
     <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[47734]]></qid>
+    <code><![CDATA[A2]]></code>
+    <answer><![CDATA[other]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
     <assessment_value><![CDATA[0]]></assessment_value>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
@@ -4315,6 +4549,15 @@
     <scenario><![CDATA[3]]></scenario>
    </row>
    <row>
+    <cid><![CDATA[9452]]></cid>
+    <qid><![CDATA[50143]]></qid>
+    <cqid><![CDATA[47729]]></cqid>
+    <cfieldname><![CDATA[122333X2482X47729]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A03]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
     <cid><![CDATA[9001]]></cid>
     <qid><![CDATA[47736]]></qid>
     <cqid><![CDATA[47729]]></cqid>
@@ -4621,6 +4864,24 @@
     <scenario><![CDATA[1]]></scenario>
    </row>
    <row>
+    <cid><![CDATA[9454]]></cid>
+    <qid><![CDATA[50145]]></qid>
+    <cqid><![CDATA[47729]]></cqid>
+    <cfieldname><![CDATA[122333X2482X47729]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A05]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
+    <cid><![CDATA[9453]]></cid>
+    <qid><![CDATA[50144]]></qid>
+    <cqid><![CDATA[47729]]></cqid>
+    <cfieldname><![CDATA[122333X2482X47729]]></cfieldname>
+    <method><![CDATA[==]]></method>
+    <value><![CDATA[A07]]></value>
+    <scenario><![CDATA[1]]></scenario>
+   </row>
+   <row>
     <cid><![CDATA[9016]]></cid>
     <qid><![CDATA[47746]]></qid>
     <cqid><![CDATA[47729]]></cqid>
@@ -4657,39 +4918,12 @@
     <scenario><![CDATA[1]]></scenario>
    </row>
    <row>
-    <cid><![CDATA[9059]]></cid>
-    <qid><![CDATA[47757]]></qid>
-    <cqid><![CDATA[47729]]></cqid>
-    <cfieldname><![CDATA[122333X2482X47729]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[A07]]></value>
-    <scenario><![CDATA[1]]></scenario>
-   </row>
-   <row>
-    <cid><![CDATA[9002]]></cid>
-    <qid><![CDATA[47757]]></qid>
-    <cqid><![CDATA[47729]]></cqid>
-    <cfieldname><![CDATA[122333X2482X47729]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[A03]]></value>
-    <scenario><![CDATA[1]]></scenario>
-   </row>
-   <row>
     <cid><![CDATA[8573]]></cid>
     <qid><![CDATA[47757]]></qid>
     <cqid><![CDATA[47729]]></cqid>
     <cfieldname><![CDATA[122333X2482X47729]]></cfieldname>
     <method><![CDATA[==]]></method>
     <value><![CDATA[A01]]></value>
-    <scenario><![CDATA[1]]></scenario>
-   </row>
-   <row>
-    <cid><![CDATA[8574]]></cid>
-    <qid><![CDATA[47757]]></qid>
-    <cqid><![CDATA[47729]]></cqid>
-    <cfieldname><![CDATA[122333X2482X47729]]></cfieldname>
-    <method><![CDATA[==]]></method>
-    <value><![CDATA[A05]]></value>
     <scenario><![CDATA[1]]></scenario>
    </row>
    <row>
@@ -5346,7 +5580,7 @@
 ]]></question>
     <preg/>
     <help/>
-    <other><![CDATA[Y]]></other>
+    <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
     <question_order><![CDATA[5]]></question_order>
     <language><![CDATA[de]]></language>
@@ -5368,7 +5602,7 @@
 ]]></question>
     <preg/>
     <help/>
-    <other><![CDATA[Y]]></other>
+    <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
     <question_order><![CDATA[3]]></question_order>
     <language><![CDATA[en]]></language>
@@ -5393,7 +5627,7 @@
     <language><![CDATA[de]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[1]]></relevance>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A07"))]]></relevance>
     <modulename/>
    </row>
    <row>
@@ -5412,7 +5646,7 @@
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[1]]></relevance>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A07"))]]></relevance>
     <modulename/>
    </row>
    <row>
@@ -5967,7 +6201,7 @@
     <gid><![CDATA[2488]]></gid>
     <type><![CDATA[L]]></type>
     <title><![CDATA[Q7dot1AU]]></title>
-    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)? </span></span></p>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Österreich (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)?</span></span></p>
 
 <p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Schätzungsweise…</span></span></p>
 ]]></question>
@@ -5979,7 +6213,7 @@
     <language><![CDATA[de]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[((122333X2482X47729.NAOK == "A01" or 122333X2482X47729.NAOK == "A03" or 122333X2482X47729.NAOK == "A05" or 122333X2482X47729.NAOK == "A07"))]]></relevance>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A01"))]]></relevance>
     <modulename/>
    </row>
    <row>
@@ -6001,7 +6235,7 @@
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
-    <relevance><![CDATA[((122333X2482X47729.NAOK == "A01" or 122333X2482X47729.NAOK == "A03" or 122333X2482X47729.NAOK == "A05" or 122333X2482X47729.NAOK == "A07"))]]></relevance>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A01"))]]></relevance>
     <modulename/>
    </row>
    <row>
@@ -6990,6 +7224,134 @@
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[122333]]></sid>
+    <gid><![CDATA[2488]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[Q7dot1GE]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;">What can be, on average, the monthly cost of owning a (petrol) car in Germany (considering fuel, depreciation, taxes, insurance and maintenance)?</span></p>
+
+<p><span style="font-size:20px;">Close to…</span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A03"))]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50143]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[122333]]></sid>
+    <gid><![CDATA[2488]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[Q7dot1GE]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in Deutschland (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)? </span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Schätzungsweise…</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A03"))]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[122333]]></sid>
+    <gid><![CDATA[2488]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[Q7dot1SW]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der Schweiz (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)? </span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Schätzungsweise…</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A07"))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50144]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[122333]]></sid>
+    <gid><![CDATA[2488]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[Q7dot1SW]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;">What can be, on average, the monthly cost of owning a (petrol) car in Switzerland (considering fuel, depreciation, taxes, insurance and maintenance)?</span></p>
+
+<p><span style="font-size:20px;">Close to…</span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A07"))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[122333]]></sid>
+    <gid><![CDATA[2488]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[Q7dot1EU]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;">What can be, on average, the monthly cost of owning a (petrol) car in EU (considering fuel, depreciation, taxes, insurance and maintenance)?</span></p>
+
+<p><span style="font-size:20px;">Close to…</span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A05"))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[50145]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[122333]]></sid>
+    <gid><![CDATA[2488]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[Q7dot1EU]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Wie hoch sind im Durchschnitt die monatlichen Kosten für den Besitz eines (Benzin-)Autos in der EU (unter Berücksichtigung von Kraftstoff, Abschreibungen, Steuern, Versicherung und Wartung)? </span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Schätzungsweise…</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((122333X2482X47729.NAOK == "A05"))]]></relevance>
    </row>
   </rows>
  </questions>
@@ -10644,7 +11006,7 @@
     <usecookie><![CDATA[N]]></usecookie>
     <allowregister><![CDATA[N]]></allowregister>
     <allowsave><![CDATA[Y]]></allowsave>
-    <autonumber_start><![CDATA[1]]></autonumber_start>
+    <autonumber_start><![CDATA[9]]></autonumber_start>
     <autoredirect><![CDATA[Y]]></autoredirect>
     <allowprev><![CDATA[Y]]></allowprev>
     <printanswers><![CDATA[N]]></printanswers>
