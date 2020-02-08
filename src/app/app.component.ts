@@ -125,8 +125,28 @@ export class AppComponent implements OnInit {
         // Admitted values
         let values = ['at', 'fr', 'de', 'it', 'si', 'ch'];
         
+		let src = null;
+		
+		// Predefined matches by host (third-level domain)
+		let predefined = {
+			'ch': ['maladers']
+		};
+		let thirdLevelDomainMatches = window.location.hostname.match(/^([a-z0-9\-]+\.)*([a-z0-9\-]+)\.[a-z0-9\-]+\.[a-z]+$/i);
+		if (thirdLevelDomainMatches && thirdLevelDomainMatches.length >= 3 && thirdLevelDomainMatches[3]){
+			let thirdLevelDomain = thirdLevelDomainMatches[3];
+			for (let s in predefined){
+				if (predefined[s].indexOf(thirdLevelDomain) > -1){
+					src = s;
+					break;
+				}
+			}
+			if (src){
+				console.log("Source matched by host [host, source]", thirdLevelDomain, src);
+			}
+		}
+
         // Parse
-		let src = this.parseQueryParams().get('src') || null;
+		src = this.parseQueryParams().get('src') || null;
         if (src){
             src = src.toLowerCase();
             if (values.indexOf(src) != -1){
