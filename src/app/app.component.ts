@@ -132,8 +132,8 @@ export class AppComponent implements OnInit {
 			'ch': ['maladers']
 		};
 		let thirdLevelDomainMatches = window.location.hostname.match(/^([a-z0-9\-]+\.)*([a-z0-9\-]+)\.[a-z0-9\-]+\.[a-z]+$/i);
-		if (thirdLevelDomainMatches && thirdLevelDomainMatches.length >= 3 && thirdLevelDomainMatches[3]){
-			let thirdLevelDomain = thirdLevelDomainMatches[3];
+		if (thirdLevelDomainMatches && thirdLevelDomainMatches.length >= 3 && thirdLevelDomainMatches[2]){
+			let thirdLevelDomain = thirdLevelDomainMatches[2];
 			for (let s in predefined){
 				if (predefined[s].indexOf(thirdLevelDomain) > -1){
 					src = s;
@@ -146,7 +146,7 @@ export class AppComponent implements OnInit {
 		}
 
         // Parse
-		src = this.parseQueryParams().get('src') || null;
+		src = src || this.parseQueryParams().get('src') || null;
         if (src){
             src = src.toLowerCase();
             if (values.indexOf(src) != -1){
