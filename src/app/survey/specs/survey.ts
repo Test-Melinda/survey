@@ -1871,7 +1871,7 @@ export const surveyModel = {
      "type": "html",
      "name": "_it_intro",
      "visibleIf": "{QF1} == 'it'",
-     "html": "<p>The next questions we are going to ask you are referred to the period before the COVID19 health emergency outbreak. We kindly ask you to please answer thinking about your habits BEFORE that event.</p>"
+     "html": "<p>Le domande che seguono si riferiscono al periodo precedente l'emergenza sanitaria da COVID19, ti chiediamo perciò di rispondere pensando ai tuoi comportamenti abituali <strong>PRIMA</strong> di questo improvviso evento.</p>"
     }
    ]
   },
@@ -3658,6 +3658,17 @@ export const surveyModel = {
        "enableIf": "{Q5} anyof \"7\" or {Q5.length} == 0"
       }
      ]
+    }
+   ]
+  },
+  {
+   "name": "current_behaviour",
+   "elements": [
+    {
+     "type": "html",
+     "name": "mobC19",
+     "visibleIf": "{QF1} == 'it'",
+     "html": "<p>Ora invece ti chiediamo di rispondere alle domande che seguiranno considerando la situazione attuale, <strong>DOPO</strong> l'eplosione dell'emergenza da COVID19, pensando quindi ai tuoi comportamenti abituali <strong>OGGI</strong>.</p>"
     }
    ]
   },
