@@ -2423,7 +2423,7 @@ export const surveyModel = {
      ]
     }
    ],
-   "visibleIf": "{QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13'",
+   "visibleIf": "{QF1} == 'fr' and ({QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13')",
    "description": {
     "default": "In the Greater Lyon or Greater Annecy do you usually carry out any of the following activities?",
     "fr": "Quelles activités pratiquez-vous sur le Grand Lyon ou le Grand Annecy?\n(plusieurs réponses possibles)"
@@ -3159,6 +3159,7 @@ export const surveyModel = {
      ]
     }
    ],
+   "visibleIf": "{QF1} != \"it\"",
    "description": {
     "default": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones.",
     "it": "Quale di questi aspetti assoceresti ai seguenti mezzi di spostamento: TRENO, AUTO, TRASPORTO PUBBLICO, BICICLETTA, CAMMINARE, MOTOCICLETTA/MOTORINO?\nPer favore, per ogni mezzo seleziona al massimo 3 delle opzioni elencate",
@@ -5210,7 +5211,6 @@ export const surveyModel = {
      "title": "Wie wurden Sie auf das Angebot aufmerksam?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5236,6 +5236,7 @@ export const surveyModel = {
        "text": "Internet"
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges, und zwar freies Textfeld"
     },
     {
@@ -5621,7 +5622,6 @@ export const surveyModel = {
      "title": "Was sind Ihre Beweggründe, __als Fahrer/In__ weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5644,6 +5644,7 @@ export const surveyModel = {
        "text": "Ökologische Gründe"
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges, und zwar Freies Textfeld"
     },
     {
@@ -5653,7 +5654,6 @@ export const surveyModel = {
      "title": "Was sind Ihre Beweggründe, __als Fahrer/In__ weitere Mitfahrende mit Hilfe von Taxito mitzunehmen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5676,6 +5676,7 @@ export const surveyModel = {
        "text": "Ökologische Gründe"
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges, und zwar Freies Textfeld"
     },
     {
@@ -5849,7 +5850,6 @@ export const surveyModel = {
      "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Fahrer/in, das Angebot __weniger als bisher__ zu nützen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -5872,6 +5872,7 @@ export const surveyModel = {
        "text": "Es gab für mich unnötige Umwege"
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges, und zwar Freies Textfeld"
     }
    ]
@@ -5974,7 +5975,6 @@ export const surveyModel = {
      "title": "Wenn Taxito Ihnen nicht zur Verfügung gestanden wäre, mit welchen Verkehrsmitteln hätten Sie dann ihre letzte Fahrt unternommen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -6009,6 +6009,7 @@ export const surveyModel = {
        "text": "Zu Fuss"
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges ((E-)Scooter etc.) und zwar Freies Textfeld"
     }
    ],
@@ -6024,7 +6025,6 @@ export const surveyModel = {
      "title": "Haben Sie unmittelbar vor oder nach der Taxito-Fahrt ein weiteres Verkehrsmittel für dieselbe Reise benutzt?\n\nAlso sind Sie auf ein anderes Verkehrsmittel umgestiegen? Wenn ja, welche Verkehrsmittel?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -6055,6 +6055,7 @@ export const surveyModel = {
        "text": "Zu Fuss"
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges ((E-)Scooter etc.) und zwar Freies Textfeld"
     }
    ],
@@ -6070,7 +6071,6 @@ export const surveyModel = {
      "title": "Was waren Ihre Gründe für __Ihre Nutzung__ des Angebots als Mitfahrer/in?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -6101,6 +6101,7 @@ export const surveyModel = {
        "text": "Hohe Barrierefreiheit (Leichtes Ein- und Aussteigen)"
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges ((E-)Scooter etc.) und zwar Freies Textfeld"
     }
    ],
@@ -6142,7 +6143,6 @@ export const surveyModel = {
      "title": "Was ist der Grund, weshalb Sie in Zukunft beabsichtigen als Mitfahrer/in, das Angebot __weniger als bisher__ zu nützen?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -6169,6 +6169,7 @@ export const surveyModel = {
        "text": "Die Fahrt führte nicht direkt an das Ziel"
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges ((E-)Scooter etc.) und zwar Freies Textfeld"
     }
    ]
@@ -6183,7 +6184,6 @@ export const surveyModel = {
      "title": "Was sind die Gründe dafür, dass Sie das Angebot als Mitfahrer/in __nicht nutzen__?",
      "description": "Bitte zutreffendes ankreuzen (Mehrfachantworten möglich)",
      "isRequired": true,
-     "hasOther": true,
      "choices": [
       {
        "value": "1",
@@ -6222,6 +6222,7 @@ export const surveyModel = {
        "text": "Hatte bisher noch keine Gelegenheit "
       }
      ],
+     "hasOther": true,
      "otherText": "Sonstiges, und zwar freies Textfeld"
     }
    ]
