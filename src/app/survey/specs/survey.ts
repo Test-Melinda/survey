@@ -3178,7 +3178,7 @@ export const surveyModel = {
      "name": "Q2",
      "title": {
       "default": "What are the means of transport you use for your daily travels?",
-      "it": "Quali sono i mezzi di trasporto che usi abitualmente per i tuoi spostamenti quotidiani?",
+      "it": "Quali erano i mezzi di trasporto che usavi abitualmente per i tuoi spostamenti quotidiani?",
       "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
       "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
       "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?",
@@ -3290,7 +3290,7 @@ export const surveyModel = {
      "name": "Q3",
      "title": {
       "default": "What is the mean of transport you use the most (longest trip in terms of distance)?",
-      "it": "Tra i mezzi di trasporto che usi quotidianamente qual è il principale, ovvero quello con cui copri la distanza più lunga?",
+      "it": "Tra i mezzi di trasporto che usavi quotidianamente qual era il principale, ovvero quello con cui coprivi la distanza più lunga?",
       "de": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
       "de-ch": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
       "de-at": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
@@ -4729,7 +4729,7 @@ export const surveyModel = {
      "name": "Q9",
      "title": {
       "default": "In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution?",
-      "it": "A tuo parere chi dovrebbe essere maggiormente responsabile per la promozione di nuove politiche per la mobilità in maniera da ridurre l'inquinamento atmosferico?",
+      "it": "A tuo parere chi dovrebbe essere maggioremente responsabile per la promozione di nuove politiche per la mobilità in maniera da affrontare la crisi da COVID19?",
       "de": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
       "de-ch": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
       "de-at": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
