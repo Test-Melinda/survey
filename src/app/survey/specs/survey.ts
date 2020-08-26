@@ -1865,7 +1865,7 @@ export const surveyModel = {
    ]
   },
   {
-   "name": "activities_intro",
+   "name": "page1",
    "elements": [
     {
      "type": "html",
@@ -4157,6 +4157,212 @@ export const surveyModel = {
      ]
     }
    ]
+  },
+  {
+   "name": "Q2_post_covid19",
+   "elements": [
+    {
+     "type": "checkbox",
+     "name": "Q2Covid19",
+     "title": {
+      "default": "What are the means of transport you use for your daily travels?",
+      "it": "Quali sono i mezzi di trasporto che usi abitualmente per i tuoi spostamenti quotidiani?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "it": "(sono possibili più risposte)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Car (both as a driver/passenger)",
+        "it": "Automobile (sia come guidatore che come passeggero)",
+        "de": "Auto (Als Fahrer und Beifahrer)",
+        "de-at": "Auto (Als Fahrer*in und Passagier*in)",
+        "fr": "Voiture (conducteur ou passager)",
+        "de-ch": "Auto (Als Fahrer und Beifahrer)",
+        "sl": "Avtomobil (kot voznik ali sopotnik)"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Motorbike",
+        "it": "Motocicletta",
+        "de": "Motorrad",
+        "de-at": "Motorrad",
+        "de-ch": "Motorrad",
+        "fr": "2 roues motorisés",
+        "sl": "Motor"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Public transport (Bus/tram/metro)",
+        "it": "Trasporto Pubblico (bus/tram/metro)",
+        "de": "ÖPNV (Bus/Tram/Metro)",
+        "de-at": "Öffentlicher Verkehr (Bus/Tram/U-Bahn/Schnellzug)",
+        "de-ch": "Öffentlicher Verkehr (Bus/Tram/Metro)",
+        "sl": "Javni prevoz",
+        "fr": "Transport public (bus/tram/métro)"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Train",
+        "it": "Treno",
+        "de": "Bahn",
+        "de-at": "Bahn",
+        "de-ch": "Bahn",
+        "sl": "Vlak"
+       }
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Bicycle / e-bike",
+        "it": "Bicicletta / Bicicletta elettrica",
+        "sl": "Kolo (tudi električno kolo)",
+        "fr": "Vélo/Vélo à assistance électrique",
+        "de": "Fahrrad (E-Fahrrad, ...)",
+        "de-at": "Fahrrad (E-Fahrrad, ...)",
+        "de-ch": "Fahrrad (E-Fahrrad, ...)"
+       }
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "Walk",
+        "it": "Camminare",
+        "de": "Zu Fuß",
+        "de-at": "Zu Fuß",
+        "de-ch": "Zu Fuss",
+        "sl": "Hoja",
+        "fr": "Marche"
+       }
+      },
+      {
+       "value": "7",
+       "text": {
+        "default": "Other (scooter/skateboard/hoverboard, …)",
+        "it": "Altro (monopattino/skateboard/hoverboard, …)",
+        "de": "Sonstiges ((E-)Scooter, ...)",
+        "de-at": "Sonstiges ((E-)Scooter, ...)",
+        "de-ch": "Sonstiges ((E-)Scooter, ...)",
+        "fr": "Autre (trotinette/skateboard/hoverboard/…)",
+        "sl": "Drugo"
+       }
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{QF1} == 'it'"
+  },
+  {
+   "name": "Q3_post_covid19",
+   "elements": [
+    {
+     "type": "radiogroup",
+     "name": "Q3Covid19",
+     "title": {
+      "default": "What is the mean of transport you use the most (longest trip in terms of distance)?",
+      "it": "Tra i mezzi di trasporto che usi quotidianamente qual è il principale, ovvero quello con cui copri la distanza più lunga?"
+     },
+     "description": {
+      "default": "(Only one answer is possible)",
+      "it": "(È possibile una sola risposta)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Car (both as a driver/passenger)",
+        "it": "Automobile (sia come guidatore che come passeggero)",
+        "de": "Auto (Als Fahrer und Beifahrer)",
+        "de-at": "Auto (Als Fahrer*in und Passagier*in)",
+        "fr": "Voiture (conducteur ou passager)",
+        "de-ch": "Auto (Als Fahrer und Beifahrer)",
+        "sl": "Avtomobil (kot voznik ali sopotnik)"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Motorbike",
+        "it": "Motocicletta",
+        "de": "Motorrad",
+        "de-at": "Motorrad",
+        "de-ch": "Motorrad",
+        "fr": "2 roues motorisés",
+        "sl": "Motor"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Public transport (Bus/tram/metro)",
+        "it": "Trasporto Pubblico (bus/tram/metro)",
+        "de": "ÖPNV (Bus/Tram/Metro)",
+        "de-at": "Öffentlicher Verkehr (Bus/Tram/U-Bahn/Schnellzug)",
+        "de-ch": "Öffentlicher Verkehr (Bus/Tram/Metro)",
+        "sl": "Javni prevoz",
+        "fr": "Transport public (bus/tram/métro)"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Train",
+        "it": "Treno",
+        "de": "Bahn",
+        "de-at": "Bahn",
+        "de-ch": "Bahn",
+        "sl": "Vlak"
+       }
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Bicycle / e-bike",
+        "it": "Bicicletta / Bicicletta elettrica",
+        "sl": "Kolo (tudi električno kolo)",
+        "fr": "Vélo/Vélo à assistance électrique",
+        "de": "Fahrrad (E-Fahrrad, ...)",
+        "de-at": "Fahrrad (E-Fahrrad, ...)",
+        "de-ch": "Fahrrad (E-Fahrrad, ...)"
+       }
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "Walk",
+        "it": "Camminare",
+        "de": "Zu Fuß",
+        "de-at": "Zu Fuß",
+        "de-ch": "Zu Fuss",
+        "sl": "Hoja",
+        "fr": "Marche"
+       }
+      },
+      {
+       "value": "7",
+       "text": {
+        "default": "Other (scooter/skateboard/hoverboard, …)",
+        "it": "Altro (monopattino/skateboard/hoverboard, …)",
+        "de": "Sonstiges ((E-)Scooter, ...)",
+        "de-at": "Sonstiges ((E-)Scooter, ...)",
+        "de-ch": "Sonstiges ((E-)Scooter, ...)",
+        "fr": "Autre (trotinette/skateboard/hoverboard/…)",
+        "sl": "Drugo"
+       }
+      }
+     ]
+    }
+   ],
+   "visibleIf": "{QF1} == 'it'"
   },
   {
    "name": "quiz1_intro",
