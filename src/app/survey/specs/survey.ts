@@ -3159,7 +3159,7 @@ export const surveyModel = {
      ]
     }
    ],
-   "visibleIf": "{QF1} != \"it\"",
+   "visibleIf": "{QF1} != 'it'",
    "description": {
     "default": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones.",
     "it": "Quale di questi aspetti assoceresti ai seguenti mezzi di spostamento: TRENO, AUTO, TRASPORTO PUBBLICO, BICICLETTA, CAMMINARE, MOTOCICLETTA/MOTORINO?\nPer favore, per ogni mezzo seleziona al massimo 3 delle opzioni elencate",
@@ -4719,7 +4719,8 @@ export const surveyModel = {
       }
      ]
     }
-   ]
+   ],
+   "visibleIf": "{QF1} != 'it'"
   },
   {
    "name": "Responsibility",
@@ -5032,7 +5033,8 @@ export const surveyModel = {
       }
      ]
     }
-   ]
+   ],
+   "visibleIf": "{QF1} != 'it'"
   },
   {
    "name": "PS1andPS2",
