@@ -1865,6 +1865,17 @@ export const surveyModel = {
    ]
   },
   {
+   "name": "activities_intro",
+   "elements": [
+    {
+     "type": "html",
+     "name": "_it_intro",
+     "visibleIf": "{QF1} == 'it'",
+     "html": "<p>The next questions we are going to ask you are referred to the period before the COVID19 health emergency outbreak. We kindly ask you to please answer thinking about your habits BEFORE that event.</p>"
+    }
+   ]
+  },
+  {
    "name": "activities",
    "elements": [
     {
