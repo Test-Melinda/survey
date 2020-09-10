@@ -1870,10 +1870,14 @@ export const surveyModel = {
     {
      "type": "html",
      "name": "_it_intro",
-     "visibleIf": "{QF1} <> 'ch' and {QF1} <> 'li'",
+     "visibleIf": "{QF1} <> 'ch'",
      "html": {
-      "default": "<p>The next questions we are going to ask you are referred to the period before the COVID19 health emergency outbreak. We kindly ask you to please answer thinking about your habits <strong>BEFORE</strong> that event.</p>",
-      "sl": "<p>Naslednja vprašanja, ki vam jih bomo zastavili, se nanašajo na obdobje pred pandemijo COVID19. Ko odgovarjate na vprašanja, prosmo, da imate v mislih vaše potovalne navade <strong>PRED</strong> izbruhom pandemije.</p>"
+      "default": "<p>The next questions we are going to ask you refer to the period before the COVID19 health emergency outbreak. We kindly ask you to please answer thinking about your habits <strong>BEFORE</strong> that event.</p>",
+      "sl": "<p>Naslednja vprašanja, ki vam jih bomo zastavili, se nanašajo na obdobje pred pandemijo COVID19. Ko odgovarjate na vprašanja, prosmo, da imate v mislih vaše potovalne navade <strong>PRED</strong> izbruhom pandemije.</p>",
+      "de": "<p>Die folgenden Fragen zielen darauf ab, Ihre Gewohnheiten <strong>VOR</strong> dem Ausbruch der COVID19 Pandemie zu erheben.</p>",
+      "de-at": "<p>Die folgenden Fragen zielen darauf ab, Ihre Gewohnheiten <strong>VOR</strong> dem Ausbruch der COVID19 Pandemie zu erheben.</p>",
+      "de-ch": "<p>Die folgenden Fragen zielen darauf ab, Ihre Gewohnheiten <strong>VOR</strong> dem Ausbruch der COVID19 Pandemie zu erheben.</p>",
+      "it": "Le domande che seguono si riferiscono al periodo precedente l'emergenza sanitaria da COVID19, ti chiediamo perciò di rispondere pensando ai tuoi comportamenti abituali <strong>PRIMA</strong> di questo improvviso evento."
      }
     }
    ]
@@ -2047,12 +2051,16 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "((!{source}) or {source} == 'de') and  {QF1} == \"de\"",
      "title": {
-      "default": "In the Landkreis Ebersberg do you usually carry out any of the following activities?",
-      "de": "Welche dieser Aktivitäten führen Sie regelmäßig im Landkreis Ebersberg aus?"
+      "default": "Thinking of  the time before the emergence of COVID19 pandemic, In the Landkreis Ebersberg/Vorarlberg region were you used to carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führten Sie VOR dem Ausbruch der COVID19 Pandemie regelmäßig im Landkreis Ebersberg aus?",
+      "de-at": "Welche dieser Aktivitäten führten Sie VOR dem Ausbruch der COVID19 Pandemie regelmäßig im Landkreis Ebersberg aus?",
+      "de-ch": "Welche dieser Aktivitäten führten Sie VOR dem Ausbruch der COVID19 Pandemie regelmäßig im Landkreis Ebersberg aus?"
      },
      "description": {
       "default": "(Multiple answers are possible)",
-      "de": "(Mehrfachnennungen sind möglich)"
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)"
      },
      "choices": [
       {
@@ -3193,7 +3201,7 @@ export const surveyModel = {
      "title": {
       "default": "What were the means of transport you used to use for your daily travels?",
       "it": "Quali erano i mezzi di trasporto che usavi abitualmente per i tuoi spostamenti quotidiani?",
-      "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
+      "de": "Welche Transportmittel benutzten Sie für Ihre täglichen Wege?",
       "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
       "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?",
       "sl": "Katere načine prevoza ste uporabljali za vsakodnevna potovanja?",
@@ -3305,7 +3313,7 @@ export const surveyModel = {
      "title": {
       "default": "What is the mean of transport you used to use the most (longest trip in terms of distance)?",
       "it": "Tra i mezzi di trasporto che usavi quotidianamente qual era il principale, ovvero quello con cui coprivi la distanza più lunga?",
-      "de": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
+      "de": "Welches Transportmittel nutzten Sie am meisten (in Bezug auf die Entfernung)?",
       "de-ch": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
       "de-at": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
       "sl": "S katerim načinom prevoza ste opravljali najdaljša potovanja?",
@@ -3670,10 +3678,11 @@ export const surveyModel = {
     {
      "type": "html",
      "name": "mobC19",
-     "visibleIf": "{QF1} <> 'ch' and {QF1} <> 'li'",
+     "visibleIf": "{QF1} <> 'it'",
      "html": {
       "default": "<p>Now we ask you to answer thinking about the <strong>CURRENT</strong> situation: about your habits and condition now, <strong>AFTER</strong> the COVID19 outbreak.</p>",
-      "sl": "<p>Sedaj  pri odgovarjanju na vprašanja upoštevajte <strong>TRENUTNO</strong> situacijo: vaše navade in pogoje sedaj, v času pandemije COVID19.</p>"
+      "sl": "<p>Sedaj  pri odgovarjanju na vprašanja upoštevajte <strong>TRENUTNO</strong> situacijo: vaše navade in pogoje sedaj, v času pandemije COVID19.</p>",
+      "de": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>"
      }
     }
    ]
@@ -3914,7 +3923,7 @@ export const surveyModel = {
      "title": {
       "default": "How often do you have access to a Motorbike/moped?",
       "it": "Con quale frequenza puoi accedere a una motocicletta/motorino?",
-      "de": "Wie oft steht Ihnen ein Motorrad/Moped zur Vefügung?",
+      "de": "Wie oft steht Ihnen ein Motorrad/Moped zur Verfügung?",
       "de-at": "Verfügbarkeit eines Motorrads/Mopeds",
       "de-ch": "Verfügbarkeit eines Motorrads/Mopeds",
       "sl": "Kako pogosto lahko dostopate do motorja/mopeda?",
@@ -4172,7 +4181,7 @@ export const surveyModel = {
      "name": "EQ1ITtoday",
      "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
      "title": {
-      "default": "Thinking to the current time, in one or more of these municipalities: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons, do you carry out any of the following activities?",
+      "default": "Thinking of the current time, in one or more of these municipalities: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons, do you carry out any of the following activities?",
       "it": "Pensando al periodo precedente l'emergenza sanitaria da COVID19, in uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons eri solito/a svolgere una o più delle seguenti attività?"
      },
      "description": {
@@ -4230,7 +4239,7 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "{QF1} == 'si' and {QF2SL} == '7'",
      "title": {
-      "default": "Thinking to the current time, in the city of Maribor do you carry out any of the following activities?",
+      "default": "Thinking of the current time, in the city of Maribor do you carry out any of the following activities?",
       "sl": "Če imate v mislih TRENUTNO situacijo, ALI V MESTU Maribor izvajate katero izmed naštetih aktivnosti"
      },
      "description": {
@@ -4287,6 +4296,74 @@ export const surveyModel = {
        "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} == 0"
       }
      ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1GEtoday",
+     "visible": false,
+     "visibleIf": "((!{source}) or {source} == 'de') and  {QF1} == \"de\"",
+     "title": {
+      "default": "Thinking of the current time, In the Landkreis Ebersberg/Vorarlberg region do you carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führen Sie derzeit regelmäßig im Landkreis Ebersberg aus?",
+      "de-at": "Welche dieser Aktivitäten führen Sie derzeit regelmäßig im Landkreis Ebersberg aus?",
+      "de-ch": "Welche dieser Aktivitäten führen Sie derzeit regelmäßig im Landkreis Ebersberg aus?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "de": "Arbeit"
+       },
+       "enableIf": "{EQ1GE} anyof \"1\" or !({EQ1GE} anyof \"6\")"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "de": "Studium"
+       },
+       "enableIf": "{EQ1GE} anyof \"2\" or !({EQ1GE} anyof \"6\")"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "de": "Einkaufen"
+       },
+       "enableIf": "{EQ1GE} anyof \"3\" or !({EQ1GE} anyof \"6\")"
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "de": "Freizeitaktivitäten"
+       },
+       "enableIf": "{EQ1GE} anyof \"4\" or !({EQ1GE} anyof \"6\")"
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "de": "Sonstiges"
+       },
+       "enableIf": "{EQ1GE} anyof \"5\" or !({EQ1GE} anyof \"6\")"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "de": "Keine der genannten"
+       },
+       "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} == 0"
+      }
+     ]
     }
    ]
   },
@@ -4298,11 +4375,19 @@ export const surveyModel = {
      "name": "Q2Covid19",
      "title": {
       "default": "What are the means of transport you use for your daily travels?",
-      "it": "Quali sono i mezzi di trasporto che usi abitualmente per i tuoi spostamenti quotidiani?"
+      "it": "Quali sono i mezzi di trasporto che usi abitualmente per i tuoi spostamenti quotidiani?",
+      "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Wege?",
+      "de-at": "Welche Transportmittel benutzen Sie für Ihre täglichen Wege?",
+      "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Wege?",
+      "sl": "Katera načine prevoza uporabljate za vsakodnevna potovanja?"
      },
      "description": {
       "default": "(Multiple answers are possible)",
-      "it": "(sono possibili più risposte)"
+      "it": "(sono possibili più risposte)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)",
+      "sl": "(Možnih je več odgovorov)"
      },
      "choices": [
       {
@@ -4401,7 +4486,11 @@ export const surveyModel = {
      "name": "Q3Covid19",
      "title": {
       "default": "What is the mean of transport you use the most (longest trip in terms of distance)?",
-      "it": "Tra i mezzi di trasporto che usi quotidianamente qual è il principale, ovvero quello con cui copri la distanza più lunga?"
+      "it": "Tra i mezzi di trasporto che usi quotidianamente qual è il principale, ovvero quello con cui copri la distanza più lunga?",
+      "sl": "S katerim načinom prevoza opravljate najdaljša potovanja?",
+      "de": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?",
+      "de-at": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?",
+      "de-ch": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?"
      },
      "description": {
       "default": "(Only one answer is possible)",
@@ -6761,9 +6850,9 @@ export const surveyModel = {
      "title": {
       "default": "What is your highest level of education?",
       "it": "Qual è il tuo titolo di studio?",
-      "de": "Was ist Ihr höchster Bildungsabschluss?",
-      "de-at": "Was ist Ihr höchster Bildungsabschluss?",
-      "de-ch": "Was ist Ihr höchster Bildungsabschluss?",
+      "de": "Was ist Ihr höchster Hauptschulabschluss?",
+      "de-at": "Was ist Ihr höchster Hauptschulabschluss?",
+      "de-ch": "Was ist Ihr höchster Hauptschulabschluss?",
       "sl": "Vaša najvišja dokončana stopnja izobrazbe",
       "fr": "Quel est votre niveau d'études?"
      },
@@ -6873,9 +6962,9 @@ export const surveyModel = {
    "description": {
     "default": "In this last section we will ask you some socio-demograpich information in order to better contextualise your answers.\n\nWe remind you that all the answers will be kept anonymous and no one will be able to connect any information to your identity now and in the future. We remind you that all the answers will be kept anonymous and no one will be able to connect any information to your identity now and in the future.",
     "it": "In questa ultima sezione ti faremo alcune domande socio-anagrafiche in maniera da contestualizzare meglio le risposte date. Ti ricordiamo che tutte le risposte verranno mantenute anonime e nessuno sarà in grado, né ora né in futuro, di collegarle alla tua persona.",
-    "de": "Im letzten Abschnitt der Umfrage werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte achten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
-    "de-at": "Im letzten Abschnitt der Umfrage werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte achten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
-    "de-ch": "Im letzten Abschnitt der Umfrage werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte achten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
+    "de": "Im letzten Abschnitt der Umfrage werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte beachten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
+    "de-at": "Im letzten Abschnitt der Umfrage werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte beachten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
+    "de-ch": "Im letzten Abschnitt der Umfrage werden wir Sie nach einigen soziodemographischen Informationen fragen, um Ihre Antworten besser einordnen zu können. Bitte beachten Sie, dass alle Antworten anonym sind und niemand in der Lage sein wird, jetzt und in Zukunft Ihre Auskünfte mit Ihrer Identität zu verbinden.",
     "sl": "V zadnjem razdelku vas prosimo za nekaj socialno-demografskih podatkov, ki nam bodo omogočili boljše razumevanje vaših odgovorov. Zagotavljamo vam, da bodo vsi vaši odgovori anonimni in nihče ne bo mogel povezati informacij z vašo identiteto zdaj ali v prihodnosti.",
     "fr": "Dans cette dernière partie, nous allons vous poser quelques questions socio-économiques pour remettre vos réponses dans leur contexte. Nous vous rappelons que toutes vos réponses resteront anonymes et qu'elles ne seront pas utilisées pour vous contacter dans le futur, ni pour vous identifier."
    }
