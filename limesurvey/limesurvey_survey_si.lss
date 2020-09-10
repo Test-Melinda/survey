@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document>
  <LimeSurveyDocType>Survey</LimeSurveyDocType>
- <DBVersion>359</DBVersion>
+ <DBVersion>360</DBVersion>
  <languages>
   <language>sl</language>
   <language>en</language>
@@ -2393,6 +2393,132 @@
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
    </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[Car (both as a driver/passenger)]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[Motorbike]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[3]]></code>
+    <answer><![CDATA[Public transport (Bus/tram/metro)]]></answer>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[4]]></code>
+    <answer><![CDATA[Train]]></answer>
+    <sortorder><![CDATA[4]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[5]]></code>
+    <answer><![CDATA[Bicycle / e-bike]]></answer>
+    <sortorder><![CDATA[5]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[6]]></code>
+    <answer><![CDATA[Walk]]></answer>
+    <sortorder><![CDATA[6]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[7]]></code>
+    <answer><![CDATA[Other (scooter/skateboard/hoverboard, …)]]></answer>
+    <sortorder><![CDATA[7]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[1]]></code>
+    <answer><![CDATA[Avtomobil (kot voznik ali sopotnik)]]></answer>
+    <sortorder><![CDATA[1]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[2]]></code>
+    <answer><![CDATA[Motor]]></answer>
+    <sortorder><![CDATA[2]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[3]]></code>
+    <answer><![CDATA[Javni prevoz]]></answer>
+    <sortorder><![CDATA[3]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[4]]></code>
+    <answer><![CDATA[Vlak]]></answer>
+    <sortorder><![CDATA[4]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[5]]></code>
+    <answer><![CDATA[Kolo (tudi električno kolo)]]></answer>
+    <sortorder><![CDATA[5]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[6]]></code>
+    <answer><![CDATA[Hoja]]></answer>
+    <sortorder><![CDATA[6]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <code><![CDATA[7]]></code>
+    <answer><![CDATA[Drugo]]></answer>
+    <sortorder><![CDATA[7]]></sortorder>
+    <assessment_value><![CDATA[0]]></assessment_value>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+   </row>
   </rows>
  </answers>
  <conditions>
@@ -2604,7 +2730,7 @@
     <gid><![CDATA[2463]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Filtering]]></group_name>
-    <group_order><![CDATA[0]]></group_order>
+    <group_order><![CDATA[1]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2614,7 +2740,7 @@
     <gid><![CDATA[2463]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Filtering]]></group_name>
-    <group_order><![CDATA[0]]></group_order>
+    <group_order><![CDATA[1]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2624,7 +2750,7 @@
     <gid><![CDATA[2464]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Activities in the pilot area]]></group_name>
-    <group_order><![CDATA[1]]></group_order>
+    <group_order><![CDATA[3]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2634,7 +2760,7 @@
     <gid><![CDATA[2464]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Activities in the pilot area]]></group_name>
-    <group_order><![CDATA[1]]></group_order>
+    <group_order><![CDATA[3]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2644,7 +2770,7 @@
     <gid><![CDATA[2465]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Question 1]]></group_name>
-    <group_order><![CDATA[2]]></group_order>
+    <group_order><![CDATA[4]]></group_order>
     <description><![CDATA[Which of these aspects would you associate to the following different transport modes? Please drag the ones you choose in the right box from the most important to the least important. (max. 3 answers per each mobility solution possible)]]></description>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2654,7 +2780,7 @@
     <gid><![CDATA[2465]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Question 1]]></group_name>
-    <group_order><![CDATA[2]]></group_order>
+    <group_order><![CDATA[4]]></group_order>
     <description><![CDATA[Which of these aspects would you associate to the following different transport modes? Please drag the ones you choose in the right box from the most important to the least important. (max. 3 answers per each mobility solution possible)]]></description>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2664,7 +2790,7 @@
     <gid><![CDATA[2466]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Mobilità quotidiana 1]]></group_name>
-    <group_order><![CDATA[3]]></group_order>
+    <group_order><![CDATA[5]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2674,7 +2800,7 @@
     <gid><![CDATA[2466]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Mobilità quotidiana 1]]></group_name>
-    <group_order><![CDATA[3]]></group_order>
+    <group_order><![CDATA[5]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2684,7 +2810,7 @@
     <gid><![CDATA[2467]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Mobilità quotidiana 2]]></group_name>
-    <group_order><![CDATA[4]]></group_order>
+    <group_order><![CDATA[6]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2694,7 +2820,7 @@
     <gid><![CDATA[2467]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Mobilità quotidiana 2]]></group_name>
-    <group_order><![CDATA[4]]></group_order>
+    <group_order><![CDATA[6]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2704,7 +2830,7 @@
     <gid><![CDATA[2468]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Mobilità quotidiana 3]]></group_name>
-    <group_order><![CDATA[5]]></group_order>
+    <group_order><![CDATA[7]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2714,7 +2840,7 @@
     <gid><![CDATA[2468]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Mobilità quotidiana 3]]></group_name>
-    <group_order><![CDATA[5]]></group_order>
+    <group_order><![CDATA[7]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2724,7 +2850,7 @@
     <gid><![CDATA[2469]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Quiz 1]]></group_name>
-    <group_order><![CDATA[8]]></group_order>
+    <group_order><![CDATA[14]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2734,7 +2860,7 @@
     <gid><![CDATA[2469]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Quiz 1]]></group_name>
-    <group_order><![CDATA[8]]></group_order>
+    <group_order><![CDATA[14]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2744,7 +2870,7 @@
     <gid><![CDATA[2470]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Quiz 2]]></group_name>
-    <group_order><![CDATA[9]]></group_order>
+    <group_order><![CDATA[15]]></group_order>
     <description><![CDATA[In EU how much frequent are deaths due to air pollution versus road incidents? Compared to deaths due to road incidents, Air pollution-linked deaths, are:]]></description>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2754,7 +2880,7 @@
     <gid><![CDATA[2470]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Quiz 2]]></group_name>
-    <group_order><![CDATA[9]]></group_order>
+    <group_order><![CDATA[15]]></group_order>
     <description><![CDATA[In EU how much frequent are deaths due to air pollution versus road incidents? Compared to deaths due to road incidents, Air pollution-linked deaths, are:]]></description>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2764,7 +2890,7 @@
     <gid><![CDATA[2471]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Quiz 3]]></group_name>
-    <group_order><![CDATA[10]]></group_order>
+    <group_order><![CDATA[16]]></group_order>
     <description><![CDATA[How much physical activity must be done every day in order to match WHO recommendations? How many minutes of daily walking activities does it correspond to?]]></description>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2774,7 +2900,7 @@
     <gid><![CDATA[2471]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Quiz 3]]></group_name>
-    <group_order><![CDATA[10]]></group_order>
+    <group_order><![CDATA[16]]></group_order>
     <description><![CDATA[How much physical activity must be done every day in order to match WHO recommendations? How many minutes of daily walking activities does it correspond to?]]></description>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2784,7 +2910,7 @@
     <gid><![CDATA[2472]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Sustainable behaviour]]></group_name>
-    <group_order><![CDATA[11]]></group_order>
+    <group_order><![CDATA[17]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2794,7 +2920,7 @@
     <gid><![CDATA[2472]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Sustainable behaviour]]></group_name>
-    <group_order><![CDATA[11]]></group_order>
+    <group_order><![CDATA[17]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2804,7 +2930,7 @@
     <gid><![CDATA[2473]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[responsibility ]]></group_name>
-    <group_order><![CDATA[12]]></group_order>
+    <group_order><![CDATA[18]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2814,7 +2940,7 @@
     <gid><![CDATA[2473]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[responsibility ]]></group_name>
-    <group_order><![CDATA[12]]></group_order>
+    <group_order><![CDATA[18]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2824,7 +2950,7 @@
     <gid><![CDATA[2474]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[sources of information]]></group_name>
-    <group_order><![CDATA[13]]></group_order>
+    <group_order><![CDATA[19]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2834,7 +2960,7 @@
     <gid><![CDATA[2474]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[sources of information]]></group_name>
-    <group_order><![CDATA[13]]></group_order>
+    <group_order><![CDATA[19]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2844,7 +2970,7 @@
     <gid><![CDATA[2475]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[sociodemo ]]></group_name>
-    <group_order><![CDATA[18]]></group_order>
+    <group_order><![CDATA[24]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2854,7 +2980,7 @@
     <gid><![CDATA[2475]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[sociodemo ]]></group_name>
-    <group_order><![CDATA[18]]></group_order>
+    <group_order><![CDATA[24]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2864,7 +2990,7 @@
     <gid><![CDATA[2476]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[job]]></group_name>
-    <group_order><![CDATA[19]]></group_order>
+    <group_order><![CDATA[25]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2874,7 +3000,7 @@
     <gid><![CDATA[2476]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[job]]></group_name>
-    <group_order><![CDATA[19]]></group_order>
+    <group_order><![CDATA[25]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2884,7 +3010,7 @@
     <gid><![CDATA[2477]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Job2 ]]></group_name>
-    <group_order><![CDATA[20]]></group_order>
+    <group_order><![CDATA[26]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2894,7 +3020,7 @@
     <gid><![CDATA[2477]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Job2 ]]></group_name>
-    <group_order><![CDATA[20]]></group_order>
+    <group_order><![CDATA[26]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2904,7 +3030,7 @@
     <gid><![CDATA[2478]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[mobility capital]]></group_name>
-    <group_order><![CDATA[6]]></group_order>
+    <group_order><![CDATA[9]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2914,7 +3040,7 @@
     <gid><![CDATA[2478]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[mobility capital]]></group_name>
-    <group_order><![CDATA[6]]></group_order>
+    <group_order><![CDATA[9]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2924,7 +3050,7 @@
     <gid><![CDATA[2479]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[mail]]></group_name>
-    <group_order><![CDATA[22]]></group_order>
+    <group_order><![CDATA[28]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2934,7 +3060,7 @@
     <gid><![CDATA[2479]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[mail]]></group_name>
-    <group_order><![CDATA[22]]></group_order>
+    <group_order><![CDATA[28]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2944,7 +3070,7 @@
     <gid><![CDATA[2480]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[widget]]></group_name>
-    <group_order><![CDATA[23]]></group_order>
+    <group_order><![CDATA[29]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2954,7 +3080,7 @@
     <gid><![CDATA[2480]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[widget]]></group_name>
-    <group_order><![CDATA[23]]></group_order>
+    <group_order><![CDATA[29]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2964,7 +3090,7 @@
     <gid><![CDATA[2616]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name/>
-    <group_order><![CDATA[14]]></group_order>
+    <group_order><![CDATA[20]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2974,7 +3100,7 @@
     <gid><![CDATA[2616]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[PS2]]></group_name>
-    <group_order><![CDATA[14]]></group_order>
+    <group_order><![CDATA[20]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -2984,7 +3110,7 @@
     <gid><![CDATA[2617]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name/>
-    <group_order><![CDATA[15]]></group_order>
+    <group_order><![CDATA[21]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -2994,7 +3120,7 @@
     <gid><![CDATA[2617]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[PS3]]></group_name>
-    <group_order><![CDATA[15]]></group_order>
+    <group_order><![CDATA[21]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -3004,7 +3130,7 @@
     <gid><![CDATA[2618]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name/>
-    <group_order><![CDATA[16]]></group_order>
+    <group_order><![CDATA[22]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -3014,7 +3140,7 @@
     <gid><![CDATA[2618]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[PS4]]></group_name>
-    <group_order><![CDATA[16]]></group_order>
+    <group_order><![CDATA[22]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -3024,7 +3150,7 @@
     <gid><![CDATA[2619]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name/>
-    <group_order><![CDATA[17]]></group_order>
+    <group_order><![CDATA[23]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -3034,7 +3160,7 @@
     <gid><![CDATA[2619]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[PS5]]></group_name>
-    <group_order><![CDATA[17]]></group_order>
+    <group_order><![CDATA[23]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -3044,7 +3170,7 @@
     <gid><![CDATA[2620]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[PS1]]></group_name>
-    <group_order><![CDATA[21]]></group_order>
+    <group_order><![CDATA[27]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
     <randomization_group/>
@@ -3054,7 +3180,7 @@
     <gid><![CDATA[2620]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name/>
-    <group_order><![CDATA[21]]></group_order>
+    <group_order><![CDATA[27]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -3064,7 +3190,7 @@
     <gid><![CDATA[2629]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name/>
-    <group_order><![CDATA[7]]></group_order>
+    <group_order><![CDATA[10]]></group_order>
     <description/>
     <language><![CDATA[sl]]></language>
     <randomization_group/>
@@ -3074,9 +3200,109 @@
     <gid><![CDATA[2629]]></gid>
     <sid><![CDATA[966913]]></sid>
     <group_name><![CDATA[Q6_bis]]></group_name>
-    <group_order><![CDATA[7]]></group_order>
+    <group_order><![CDATA[10]]></group_order>
     <description/>
     <language><![CDATA[en]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2836]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name><![CDATA[INTRODUCTION]]></group_name>
+    <group_order><![CDATA[2]]></group_order>
+    <description/>
+    <language><![CDATA[en]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2836]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name/>
+    <group_order><![CDATA[2]]></group_order>
+    <description/>
+    <language><![CDATA[sl]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2837]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name><![CDATA[Activities in the pilot area post covid]]></group_name>
+    <group_order><![CDATA[11]]></group_order>
+    <description/>
+    <language><![CDATA[en]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2837]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name/>
+    <group_order><![CDATA[11]]></group_order>
+    <description/>
+    <language><![CDATA[sl]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2838]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name><![CDATA[Q2COVID19]]></group_name>
+    <group_order><![CDATA[12]]></group_order>
+    <description/>
+    <language><![CDATA[en]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2838]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name/>
+    <group_order><![CDATA[12]]></group_order>
+    <description/>
+    <language><![CDATA[sl]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2839]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name><![CDATA[Q3COVID19]]></group_name>
+    <group_order><![CDATA[13]]></group_order>
+    <description/>
+    <language><![CDATA[en]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2839]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name/>
+    <group_order><![CDATA[13]]></group_order>
+    <description/>
+    <language><![CDATA[sl]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2840]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name><![CDATA[current behaviour]]></group_name>
+    <group_order><![CDATA[8]]></group_order>
+    <description/>
+    <language><![CDATA[en]]></language>
+    <randomization_group/>
+    <grelevance/>
+   </row>
+   <row>
+    <gid><![CDATA[2840]]></gid>
+    <sid><![CDATA[966913]]></sid>
+    <group_name/>
+    <group_order><![CDATA[8]]></group_order>
+    <description/>
+    <language><![CDATA[sl]]></language>
     <randomization_group/>
     <grelevance/>
    </row>
@@ -3115,7 +3341,7 @@
     <help><![CDATA[<span style="font-size:14px;">Only one answer possible.</span>]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[Y]]></mandatory>
-    <question_order><![CDATA[0]]></question_order>
+    <question_order><![CDATA[1]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3148,15 +3374,15 @@
     <gid><![CDATA[2464]]></gid>
     <type><![CDATA[M]]></type>
     <title><![CDATA[EQ1SL]]></title>
-    <question><![CDATA[<p><span style="font-size:18px;">In the city of Maribor do you usually carry out any of the following activities?</span></p>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Thinking of the time before the emergence of COVID19 pandemic, In the city of Maribor were you used to carry out any of the following activities? </span></span></p>
 
-<p><span style="font-size:18px;">(Multiple answers are possible)</span></p>
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(multiple answers are possible)</span></span></p>
 ]]></question>
     <preg/>
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[0]]></question_order>
+    <question_order><![CDATA[1]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3170,7 +3396,7 @@
     <gid><![CDATA[2464]]></gid>
     <type><![CDATA[M]]></type>
     <title><![CDATA[EQ1SL]]></title>
-    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti? </span></span></p>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Če razmišljate o času <strong>PRED </strong>pandemijo COVID19, katere od navedenih aktivnosti običajno izvajate v mestu Maribor? </span></span></p>
 
 <p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(Možnih je več odgovorov)</span></span></p>
 ]]></question>
@@ -3178,7 +3404,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[5]]></question_order>
+    <question_order><![CDATA[1]]></question_order>
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3478,7 +3704,7 @@
     <gid><![CDATA[2466]]></gid>
     <type><![CDATA[M]]></type>
     <title><![CDATA[Q2]]></title>
-    <question><![CDATA[<p><span style="font-size:20px;">What are the means of transport you use for your daily travels?</span></p>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">What were the means of transport you used to use for your daily travels? </span></span></p>
 
 <p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(Multiple answers are possible)</span></span></p>
 ]]></question>
@@ -3500,9 +3726,7 @@
     <gid><![CDATA[2466]]></gid>
     <type><![CDATA[M]]></type>
     <title><![CDATA[Q2]]></title>
-    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Katera načine prevoza uporabljate za vsakodnevna potovanja? </span></span></p>
-
-<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(Možnih je več odgovorov)</span></span></p>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Katere načine prevoza ste uporabljali za vsakodnevna potovanja? (Možnih je več odgovorov)</span></span></p>
 ]]></question>
     <preg/>
     <help/>
@@ -3522,9 +3746,9 @@
     <gid><![CDATA[2467]]></gid>
     <type><![CDATA[L]]></type>
     <title><![CDATA[Q3]]></title>
-    <question><![CDATA[<span style="font-size:20px;">What is the mean of transport you use the most (longest trip in terms of distance)?</span>]]></question>
+    <question><![CDATA[<span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">What is the mean of transport you used to use the most (longest trip in terms of distance)?</span></span>]]></question>
     <preg/>
-    <help><![CDATA[<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Možen je samo en odgovor</span></span>]]></help>
+    <help><![CDATA[<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Izberite samo en odgovor.</span></span>]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
     <question_order><![CDATA[1]]></question_order>
@@ -3541,7 +3765,7 @@
     <gid><![CDATA[2467]]></gid>
     <type><![CDATA[L]]></type>
     <title><![CDATA[Q3]]></title>
-    <question><![CDATA[<span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">S katerim načinom prevoza opravljate najdaljša potovanja?</span></span>]]></question>
+    <question><![CDATA[<span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">S katerim načinom prevoza ste opravljali najdaljša potovanja?</span></span>]]></question>
     <preg/>
     <help><![CDATA[<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Možen je samo en odgovor</span></span>]]></help>
     <other><![CDATA[N]]></other>
@@ -3566,7 +3790,7 @@
     <help><![CDATA[<span style="font-size:14px;">Multiple answers are possible</span>]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[1]]></question_order>
+    <question_order><![CDATA[2]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3586,7 +3810,7 @@
     <help><![CDATA[<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Možnih je več odgovorov</span></span>]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[1]]></question_order>
+    <question_order><![CDATA[2]]></question_order>
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3606,7 +3830,7 @@
     <help><![CDATA[<span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Multiple answers are possible</span></span>]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[2]]></question_order>
+    <question_order><![CDATA[1]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3626,7 +3850,7 @@
     <help><![CDATA[<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Možnih je več odgovorov</span></span>]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[2]]></question_order>
+    <question_order><![CDATA[1]]></question_order>
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3645,7 +3869,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[0]]></question_order>
+    <question_order><![CDATA[1]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3686,7 +3910,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[1]]></question_order>
+    <question_order><![CDATA[2]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3708,7 +3932,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[4]]></question_order>
+    <question_order><![CDATA[2]]></question_order>
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -3846,9 +4070,7 @@
     <gid><![CDATA[2473]]></gid>
     <type><![CDATA[M]]></type>
     <title><![CDATA[Q9]]></title>
-    <question><![CDATA[<p><span style="font-size:20px;">In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution?</span></p>
-
-<p><span style="font-size:18px;">(maximum <strong>two </strong>answers are possible)</span></p>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">In your opinion who should be mainly responsible for promoting new mobility policies in order to face COVID19 post-emergency period?</span></span></p>
 ]]></question>
     <preg/>
     <help/>
@@ -3868,9 +4090,7 @@
     <gid><![CDATA[2473]]></gid>
     <type><![CDATA[M]]></type>
     <title><![CDATA[Q9]]></title>
-    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Kdo bi moral prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi zmanjšali onesnaževanje zraka? </span></span></p>
-
-<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(Možna sta največ <strong>dva </strong>odgovora.)</span></span></p>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Kdo bi moral po vašem mnenju prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi se najbolje soočili s situacijo po pandemiji COVID19?</span></span></p>
 ]]></question>
     <preg/>
     <help/>
@@ -4395,7 +4615,7 @@
     <help><![CDATA[<span style="font-size:14px;">Choose between the given options</span>]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[2]]></question_order>
+    <question_order><![CDATA[3]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -4414,7 +4634,7 @@
     <help><![CDATA[<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Izberite med danimi možnostmi</span></span>]]></help>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[14]]></question_order>
+    <question_order><![CDATA[3]]></question_order>
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -4433,7 +4653,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[3]]></question_order>
+    <question_order><![CDATA[4]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -4452,7 +4672,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[15]]></question_order>
+    <question_order><![CDATA[4]]></question_order>
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -4519,7 +4739,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[4]]></question_order>
+    <question_order><![CDATA[5]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -4538,7 +4758,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[16]]></question_order>
+    <question_order><![CDATA[5]]></question_order>
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -4631,7 +4851,7 @@
     <help/>
     <other><![CDATA[N]]></other>
     <mandatory><![CDATA[N]]></mandatory>
-    <question_order><![CDATA[1]]></question_order>
+    <question_order><![CDATA[2]]></question_order>
     <language><![CDATA[en]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -4923,6 +5143,200 @@
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
    </row>
+   <row>
+    <qid><![CDATA[54033]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2836]]></gid>
+    <type><![CDATA[X]]></type>
+    <title><![CDATA[intro]]></title>
+    <question><![CDATA[<span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">The next questions we are going to ask you are referred to the period before the COVID19 health emergency outbreak. We kindly ask you to please answer thinking about your habits BEFORE that event. </span></span>]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54033]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2836]]></gid>
+    <type><![CDATA[X]]></type>
+    <title><![CDATA[intro]]></title>
+    <question><![CDATA[<span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Naslednja vprašanja, ki vam jih bomo zastavili, se nanašajo na obdobje pred pandemijo COVID19. Ko odgovarjate na vprašanja, prosmo, da imate v mislih vaše potovalne navade <strong>PRED </strong>izbruhom pandemije.</span></span>]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54034]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[EQ1SLtoday]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Thinking to the current time, In the city of Maribor do you carry out any of the following activities? </span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(multiple answers are possible)</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54034]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[EQ1SLtoday]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Če imate v mislih <strong>TRENUTNO </strong>situacijo, ALI V MESTU Maribor izvajate katero izmed naštetih aktivnosti </span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(možnih je več odgovorov)</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54041]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[Q2Covid19]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;">What are the means of transport you use for your daily travels?</span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(Multiple answers are possible)</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((966913X2463X47511.NAOK == "A6"))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54041]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[Q2Covid19]]></title>
+    <question><![CDATA[<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Katera načine prevoza uporabljate za vsakodnevna potovanja? </span></span></p>
+
+<p><span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">(Možnih je več odgovorov)</span></span></p>
+]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((966913X2463X47511.NAOK == "A6"))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2839]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[Q3Covid19]]></title>
+    <question><![CDATA[<span style="font-size:20px;">What is the mean of transport you use the most (longest trip in terms of distance)?</span>]]></question>
+    <preg/>
+    <help><![CDATA[<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Možen je samo en odgovor</span></span>]]></help>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54049]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2839]]></gid>
+    <type><![CDATA[L]]></type>
+    <title><![CDATA[Q3Covid19]]></title>
+    <question><![CDATA[<span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">S katerim načinom prevoza opravljate najdaljša potovanja?</span></span>]]></question>
+    <preg/>
+    <help><![CDATA[<span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Možen je samo en odgovor</span></span>]]></help>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54050]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2840]]></gid>
+    <type><![CDATA[X]]></type>
+    <title><![CDATA[CurrentBeh]]></title>
+    <question><![CDATA[<span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Now we ask you to answer thinking about the <strong>CURRENT</strong> situation: about your habits and condition now, <u>AFTER </u>the COVID19 outbreak.</span></span>]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54050]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2840]]></gid>
+    <type><![CDATA[X]]></type>
+    <title><![CDATA[CurrentBeh]]></title>
+    <question><![CDATA[<span style="font-size:20px;"><span style="font-family:Arial,Helvetica,sans-serif;">Sedaj  pri odgovarjanju na vprašanja upoštevajte <strong>TRENUTNO</strong> situacijo: vaše navade in pogoje sedaj, v času pandemije COVID19.</span></span>]]></question>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+   </row>
   </rows>
  </questions>
  <subquestions>
@@ -4951,7 +5365,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Work/Business]]></question>
     <other><![CDATA[N]]></other>
@@ -4968,7 +5382,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Delo/posel]]></question>
     <other><![CDATA[N]]></other>
@@ -4985,7 +5399,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Study]]></question>
     <other><![CDATA[N]]></other>
@@ -5002,7 +5416,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Študij]]></question>
     <other><![CDATA[N]]></other>
@@ -5019,7 +5433,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Shopping]]></question>
     <other><![CDATA[N]]></other>
@@ -5036,7 +5450,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Nakupovanje]]></question>
     <other><![CDATA[N]]></other>
@@ -5053,7 +5467,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Leisure activities (free time)]]></question>
     <other><![CDATA[N]]></other>
@@ -5070,7 +5484,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Aktivnosti v prostem času ]]></question>
     <other><![CDATA[N]]></other>
@@ -5087,7 +5501,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Other]]></question>
     <other><![CDATA[N]]></other>
@@ -5104,7 +5518,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Drugo]]></question>
     <other><![CDATA[N]]></other>
@@ -5121,7 +5535,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Good Comfort]]></question>
     <other><![CDATA[N]]></other>
@@ -5138,7 +5552,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Udobje]]></question>
     <other><![CDATA[N]]></other>
@@ -5155,7 +5569,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[High Accessibility]]></question>
     <other><![CDATA[N]]></other>
@@ -5172,7 +5586,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Visoka dostopnost]]></question>
     <other><![CDATA[N]]></other>
@@ -5189,7 +5603,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Cost efficiency]]></question>
     <other><![CDATA[N]]></other>
@@ -5206,7 +5620,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Stroškovna učinkovitost]]></question>
     <other><![CDATA[N]]></other>
@@ -5223,7 +5637,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Time saving]]></question>
     <other><![CDATA[N]]></other>
@@ -5240,7 +5654,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Prihranek časa]]></question>
     <other><![CDATA[N]]></other>
@@ -5257,7 +5671,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Reducing pollution]]></question>
     <other><![CDATA[N]]></other>
@@ -5274,7 +5688,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Zmanjšanje onesnaževanja]]></question>
     <other><![CDATA[N]]></other>
@@ -5291,7 +5705,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Improve health conditions]]></question>
     <other><![CDATA[N]]></other>
@@ -5308,7 +5722,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Boljši zdravstveni pogoji]]></question>
     <other><![CDATA[N]]></other>
@@ -5325,7 +5739,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[High Sociability]]></question>
     <other><![CDATA[N]]></other>
@@ -5342,7 +5756,7 @@
     <parent_qid><![CDATA[47527]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Družabnost]]></question>
     <other><![CDATA[N]]></other>
@@ -5359,7 +5773,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Good Comfort]]></question>
     <other><![CDATA[N]]></other>
@@ -5376,7 +5790,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Udobje]]></question>
     <other><![CDATA[N]]></other>
@@ -5393,7 +5807,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[High Accessibility]]></question>
     <other><![CDATA[N]]></other>
@@ -5410,7 +5824,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Visoka dostopnost]]></question>
     <other><![CDATA[N]]></other>
@@ -5427,7 +5841,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Cost efficiency]]></question>
     <other><![CDATA[N]]></other>
@@ -5444,7 +5858,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Stroškovna učinkovitost]]></question>
     <other><![CDATA[N]]></other>
@@ -5461,7 +5875,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Time saving]]></question>
     <other><![CDATA[N]]></other>
@@ -5478,7 +5892,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Prihranek časa]]></question>
     <other><![CDATA[N]]></other>
@@ -5495,7 +5909,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Reducing pollution]]></question>
     <other><![CDATA[N]]></other>
@@ -5512,7 +5926,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Zmanjšanje onesnaževanja]]></question>
     <other><![CDATA[N]]></other>
@@ -5529,7 +5943,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Improve health conditions]]></question>
     <other><![CDATA[N]]></other>
@@ -5546,7 +5960,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Boljši zdravstveni pogoji]]></question>
     <other><![CDATA[N]]></other>
@@ -5563,7 +5977,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[High Sociability]]></question>
     <other><![CDATA[N]]></other>
@@ -5580,7 +5994,7 @@
     <parent_qid><![CDATA[47528]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Družabnost]]></question>
     <other><![CDATA[N]]></other>
@@ -5597,7 +6011,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Good Comfort]]></question>
     <other><![CDATA[N]]></other>
@@ -5614,7 +6028,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Udobje]]></question>
     <other><![CDATA[N]]></other>
@@ -5631,7 +6045,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[High Accessibility]]></question>
     <other><![CDATA[N]]></other>
@@ -5648,7 +6062,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Visoka dostopnost]]></question>
     <other><![CDATA[N]]></other>
@@ -5665,7 +6079,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Cost efficiency]]></question>
     <other><![CDATA[N]]></other>
@@ -5682,7 +6096,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Stroškovna učinkovitost]]></question>
     <other><![CDATA[N]]></other>
@@ -5699,7 +6113,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Time saving]]></question>
     <other><![CDATA[N]]></other>
@@ -5716,7 +6130,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Prihranek časa]]></question>
     <other><![CDATA[N]]></other>
@@ -5733,7 +6147,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Reducing pollution]]></question>
     <other><![CDATA[N]]></other>
@@ -5750,7 +6164,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Zmanjšanje onesnaževanja]]></question>
     <other><![CDATA[N]]></other>
@@ -5767,7 +6181,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Improve health conditions]]></question>
     <other><![CDATA[N]]></other>
@@ -5784,7 +6198,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Boljši zdravstveni pogoji]]></question>
     <other><![CDATA[N]]></other>
@@ -5801,7 +6215,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[High Sociability]]></question>
     <other><![CDATA[N]]></other>
@@ -5818,7 +6232,7 @@
     <parent_qid><![CDATA[47529]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Družabnost]]></question>
     <other><![CDATA[N]]></other>
@@ -5835,7 +6249,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Good Comfort]]></question>
     <other><![CDATA[N]]></other>
@@ -5852,7 +6266,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Udobje]]></question>
     <other><![CDATA[N]]></other>
@@ -5869,7 +6283,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[High Accessibility]]></question>
     <other><![CDATA[N]]></other>
@@ -5886,7 +6300,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Visoka dostopnost]]></question>
     <other><![CDATA[N]]></other>
@@ -5903,7 +6317,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Cost efficiency]]></question>
     <other><![CDATA[N]]></other>
@@ -5920,7 +6334,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Stroškovna učinkovitost]]></question>
     <other><![CDATA[N]]></other>
@@ -5937,7 +6351,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Time saving]]></question>
     <other><![CDATA[N]]></other>
@@ -5954,7 +6368,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Prihranek časa]]></question>
     <other><![CDATA[N]]></other>
@@ -5971,7 +6385,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Reducing pollution]]></question>
     <other><![CDATA[N]]></other>
@@ -5988,7 +6402,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Zmanjšanje onesnaževanja]]></question>
     <other><![CDATA[N]]></other>
@@ -6005,7 +6419,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Improve health conditions]]></question>
     <other><![CDATA[N]]></other>
@@ -6022,7 +6436,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Boljši zdravstveni pogoji]]></question>
     <other><![CDATA[N]]></other>
@@ -6039,7 +6453,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[High Sociability]]></question>
     <other><![CDATA[N]]></other>
@@ -6056,7 +6470,7 @@
     <parent_qid><![CDATA[47530]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Družabnost]]></question>
     <other><![CDATA[N]]></other>
@@ -6073,7 +6487,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Good Comfort]]></question>
     <other><![CDATA[N]]></other>
@@ -6090,7 +6504,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Udobje]]></question>
     <other><![CDATA[N]]></other>
@@ -6107,7 +6521,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[High Accessibility]]></question>
     <other><![CDATA[N]]></other>
@@ -6124,7 +6538,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Visoka dostopnost]]></question>
     <other><![CDATA[N]]></other>
@@ -6141,7 +6555,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Cost efficiency]]></question>
     <other><![CDATA[N]]></other>
@@ -6158,7 +6572,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Stroškovna učinkovitost]]></question>
     <other><![CDATA[N]]></other>
@@ -6175,7 +6589,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Time saving]]></question>
     <other><![CDATA[N]]></other>
@@ -6192,7 +6606,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Prihranek časa]]></question>
     <other><![CDATA[N]]></other>
@@ -6209,7 +6623,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Reducing pollution]]></question>
     <other><![CDATA[N]]></other>
@@ -6226,7 +6640,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Zmanjšanje onesnaževanja]]></question>
     <other><![CDATA[N]]></other>
@@ -6243,7 +6657,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Improve health conditions]]></question>
     <other><![CDATA[N]]></other>
@@ -6260,7 +6674,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Boljši zdravstveni pogoji]]></question>
     <other><![CDATA[N]]></other>
@@ -6277,7 +6691,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[High Sociability]]></question>
     <other><![CDATA[N]]></other>
@@ -6294,7 +6708,7 @@
     <parent_qid><![CDATA[47531]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Družabnost]]></question>
     <other><![CDATA[N]]></other>
@@ -6311,7 +6725,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Good Comfort]]></question>
     <other><![CDATA[N]]></other>
@@ -6328,7 +6742,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Udobje]]></question>
     <other><![CDATA[N]]></other>
@@ -6345,7 +6759,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[High Accessibility]]></question>
     <other><![CDATA[N]]></other>
@@ -6362,7 +6776,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Visoka dostopnost]]></question>
     <other><![CDATA[N]]></other>
@@ -6379,7 +6793,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Cost efficiency]]></question>
     <other><![CDATA[N]]></other>
@@ -6396,7 +6810,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Stroškovna učinkovitost]]></question>
     <other><![CDATA[N]]></other>
@@ -6413,7 +6827,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Time saving]]></question>
     <other><![CDATA[N]]></other>
@@ -6430,7 +6844,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Prihranek časa]]></question>
     <other><![CDATA[N]]></other>
@@ -6447,7 +6861,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Reducing pollution]]></question>
     <other><![CDATA[N]]></other>
@@ -6464,7 +6878,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Zmanjšanje onesnaževanja]]></question>
     <other><![CDATA[N]]></other>
@@ -6481,7 +6895,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Improve health conditions]]></question>
     <other><![CDATA[N]]></other>
@@ -6498,7 +6912,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Boljši zdravstveni pogoji]]></question>
     <other><![CDATA[N]]></other>
@@ -6515,7 +6929,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[High Sociability]]></question>
     <other><![CDATA[N]]></other>
@@ -6532,7 +6946,7 @@
     <parent_qid><![CDATA[47532]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2465]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Družabnost]]></question>
     <other><![CDATA[N]]></other>
@@ -6549,7 +6963,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Car (both as a driver/passenger)]]></question>
     <other><![CDATA[N]]></other>
@@ -6566,7 +6980,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Avtomobil (kot voznik ali sopotnik)]]></question>
     <other><![CDATA[N]]></other>
@@ -6583,7 +6997,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Motorbike]]></question>
     <other><![CDATA[N]]></other>
@@ -6600,7 +7014,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Motor]]></question>
     <other><![CDATA[N]]></other>
@@ -6617,7 +7031,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Public transport (Bus/tram/metro)]]></question>
     <other><![CDATA[N]]></other>
@@ -6634,7 +7048,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Javni prevoz]]></question>
     <other><![CDATA[N]]></other>
@@ -6651,7 +7065,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Train]]></question>
     <other><![CDATA[N]]></other>
@@ -6668,7 +7082,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Vlak]]></question>
     <other><![CDATA[N]]></other>
@@ -6685,7 +7099,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Bicycle / e-bike]]></question>
     <other><![CDATA[N]]></other>
@@ -6702,7 +7116,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Kolo (tudi električno kolo)]]></question>
     <other><![CDATA[N]]></other>
@@ -6719,7 +7133,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Walk]]></question>
     <other><![CDATA[N]]></other>
@@ -6736,7 +7150,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Hoja]]></question>
     <other><![CDATA[N]]></other>
@@ -6753,7 +7167,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Other (scooter/skateboard/hoverboard, …)]]></question>
     <other><![CDATA[N]]></other>
@@ -6770,7 +7184,7 @@
     <parent_qid><![CDATA[47533]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2466]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Drugo]]></question>
     <other><![CDATA[N]]></other>
@@ -6787,7 +7201,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[car sharing]]></question>
     <other><![CDATA[N]]></other>
@@ -6804,7 +7218,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Skupna uporaba avtomobila (car sharing)]]></question>
     <other><![CDATA[N]]></other>
@@ -6821,7 +7235,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[car pooling]]></question>
     <other><![CDATA[N]]></other>
@@ -6838,7 +7252,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Souporaba avtomobila (car pooling)]]></question>
     <other><![CDATA[N]]></other>
@@ -6855,7 +7269,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[bike sharing ]]></question>
     <other><![CDATA[N]]></other>
@@ -6872,7 +7286,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Skupna uporaba kolesa (bike sharing) ]]></question>
     <other><![CDATA[N]]></other>
@@ -6889,7 +7303,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[ride hailing]]></question>
     <other><![CDATA[N]]></other>
@@ -6906,7 +7320,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Sopotništvo (ride hailing)]]></question>
     <other><![CDATA[N]]></other>
@@ -6923,7 +7337,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[scooter sharing]]></question>
     <other><![CDATA[N]]></other>
@@ -6940,7 +7354,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Skupna uporaba skuterja (scooter sharing)]]></question>
     <other><![CDATA[N]]></other>
@@ -6957,7 +7371,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[hitchhiking benches]]></question>
     <other><![CDATA[N]]></other>
@@ -6974,7 +7388,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Klopi za štopanje]]></question>
     <other><![CDATA[N]]></other>
@@ -6991,7 +7405,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[None of these]]></question>
     <other><![CDATA[N]]></other>
@@ -7008,7 +7422,7 @@
     <parent_qid><![CDATA[47535]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Nobenega izmed navedenih]]></question>
     <other><![CDATA[N]]></other>
@@ -7025,7 +7439,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[car sharing]]></question>
     <other><![CDATA[N]]></other>
@@ -7042,7 +7456,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Skupna uporaba avtomobila (car sharing)]]></question>
     <other><![CDATA[N]]></other>
@@ -7059,7 +7473,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[car pooling]]></question>
     <other><![CDATA[N]]></other>
@@ -7076,7 +7490,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Souporaba avtomobila (car pooling)]]></question>
     <other><![CDATA[N]]></other>
@@ -7093,7 +7507,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[bike sharing ]]></question>
     <other><![CDATA[N]]></other>
@@ -7110,7 +7524,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Skupna uporaba kolesa (bike sharing) ]]></question>
     <other><![CDATA[N]]></other>
@@ -7127,7 +7541,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[ride hailing]]></question>
     <other><![CDATA[N]]></other>
@@ -7144,7 +7558,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Sopotništvo (ride hailing)]]></question>
     <other><![CDATA[N]]></other>
@@ -7161,7 +7575,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[scooter sharing]]></question>
     <other><![CDATA[N]]></other>
@@ -7178,7 +7592,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Skupna uporaba skuterja (scooter sharing)]]></question>
     <other><![CDATA[N]]></other>
@@ -7195,7 +7609,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[hitchhiking benches]]></question>
     <other><![CDATA[N]]></other>
@@ -7212,7 +7626,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Klopi za štopanje]]></question>
     <other><![CDATA[N]]></other>
@@ -7229,7 +7643,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[None of these]]></question>
     <other><![CDATA[N]]></other>
@@ -7246,7 +7660,7 @@
     <parent_qid><![CDATA[47536]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2468]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Nobenega izmed navedenih]]></question>
     <other><![CDATA[N]]></other>
@@ -7263,7 +7677,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Chosen a more environmentally-friendly way of travelling (walk, bicycle, public transport, electric car)]]></question>
     <other><![CDATA[N]]></other>
@@ -7280,7 +7694,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Izbrali okolju bolj prijazen način potovanja (hoja, kolo, javni prevoz, električni avtomobil)]]></question>
     <other><![CDATA[N]]></other>
@@ -7297,7 +7711,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Avoided buying over-packaged products]]></question>
     <other><![CDATA[N]]></other>
@@ -7314,7 +7728,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Izognili se nakupu preveč pakiranih izdelkov]]></question>
     <other><![CDATA[N]]></other>
@@ -7331,7 +7745,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Bought local products]]></question>
     <other><![CDATA[N]]></other>
@@ -7348,7 +7762,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Kupili lokalne izdelke]]></question>
     <other><![CDATA[N]]></other>
@@ -7365,7 +7779,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Cut down your water consumption]]></question>
     <other><![CDATA[N]]></other>
@@ -7382,7 +7796,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Zmanjšali porabo vode]]></question>
     <other><![CDATA[N]]></other>
@@ -7399,7 +7813,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Separated most of your waste for recycling]]></question>
     <other><![CDATA[N]]></other>
@@ -7416,7 +7830,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Ločili večino odpadkov za recikliranje]]></question>
     <other><![CDATA[N]]></other>
@@ -7433,7 +7847,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Used your car less by avoiding unnecessary trips, working from home (teleworking), etc.]]></question>
     <other><![CDATA[N]]></other>
@@ -7450,7 +7864,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Manjkrat uporabili avto in se izognili nepotrebnim potovanjem, delali od doma (delo na daljavo) itn]]></question>
     <other><![CDATA[N]]></other>
@@ -7467,7 +7881,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Bought products marked with an environmental label]]></question>
     <other><![CDATA[N]]></other>
@@ -7484,7 +7898,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Kupili izdelke, označene z okoljsko oznako.]]></question>
     <other><![CDATA[N]]></other>
@@ -7501,7 +7915,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[8]]></title>
     <question><![CDATA[Avoided single-use plastic goods other than plastic bags (e.g. plastic cutlery, cups, plates, etc.) or bought reusable plastic products]]></question>
     <other><![CDATA[N]]></other>
@@ -7518,7 +7932,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[8]]></title>
     <question><![CDATA[Izognili se uporabi plastičnih izdelkov za enkratno uporabo, razen plastičnih vrečk (npr. plastični jedilni pribor, lončki, krožniki itn.) ali kupili plastične izdelke za večkratno uporabo]]></question>
     <other><![CDATA[N]]></other>
@@ -7535,7 +7949,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[9]]></title>
     <question><![CDATA[Cut down your energy consumption (e.g. by turning down air conditioning or heating, not leaving appliances on stand-by, buying energy-efficient appliances)]]></question>
     <other><![CDATA[N]]></other>
@@ -7552,7 +7966,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[9]]></title>
     <question><![CDATA[Zmanjšali porabo energije (npr. z izklopom klimatske naprave ali ogrevanja, naprav niste pustili v stanju pripravljenosti, kupujete energetsko učinkovite aparate)]]></question>
     <other><![CDATA[N]]></other>
@@ -7569,7 +7983,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[10]]></title>
     <question><![CDATA[None]]></question>
     <other><![CDATA[N]]></other>
@@ -7586,7 +8000,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[10]]></title>
     <question><![CDATA[Nobenega]]></question>
     <other><![CDATA[N]]></other>
@@ -7603,7 +8017,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[11]]></title>
     <question><![CDATA[I don’t know]]></question>
     <other><![CDATA[N]]></other>
@@ -7620,7 +8034,7 @@
     <parent_qid><![CDATA[47546]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2472]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[11]]></title>
     <question><![CDATA[Ne vem]]></question>
     <other><![CDATA[N]]></other>
@@ -7637,7 +8051,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[City authorities]]></question>
     <other><![CDATA[N]]></other>
@@ -7654,7 +8068,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Mestne oblasti]]></question>
     <other><![CDATA[N]]></other>
@@ -7671,7 +8085,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Citizens themselves]]></question>
     <other><![CDATA[N]]></other>
@@ -7688,7 +8102,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Državljani sami]]></question>
     <other><![CDATA[N]]></other>
@@ -7705,7 +8119,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Regional authorities]]></question>
     <other><![CDATA[N]]></other>
@@ -7722,7 +8136,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Regionalne oblasti]]></question>
     <other><![CDATA[N]]></other>
@@ -7739,7 +8153,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[National Government]]></question>
     <other><![CDATA[N]]></other>
@@ -7756,7 +8170,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Država]]></question>
     <other><![CDATA[N]]></other>
@@ -7773,7 +8187,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Private companies]]></question>
     <other><![CDATA[N]]></other>
@@ -7790,7 +8204,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Zasebna podjetja]]></question>
     <other><![CDATA[N]]></other>
@@ -7807,7 +8221,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Trade Unions or Political Parties]]></question>
     <other><![CDATA[N]]></other>
@@ -7824,7 +8238,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Sindikati ali politične stranke]]></question>
     <other><![CDATA[N]]></other>
@@ -7841,7 +8255,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[8]]></title>
     <question><![CDATA[Non-profit Associations/ non-governmental organizations]]></question>
     <other><![CDATA[N]]></other>
@@ -7858,7 +8272,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[8]]></title>
     <question><![CDATA[Neprofitna združenja/nevladne organizacije]]></question>
     <other><![CDATA[N]]></other>
@@ -7875,7 +8289,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[9]]></title>
     <question><![CDATA[Other]]></question>
     <other><![CDATA[N]]></other>
@@ -7892,7 +8306,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[9]]></title>
     <question><![CDATA[Drugi]]></question>
     <other><![CDATA[N]]></other>
@@ -7909,7 +8323,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Newspapers and magazines]]></question>
     <other><![CDATA[N]]></other>
@@ -7926,7 +8340,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[časopisi in revije]]></question>
     <other><![CDATA[N]]></other>
@@ -7943,7 +8357,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Television news and/or radio]]></question>
     <other><![CDATA[N]]></other>
@@ -7960,7 +8374,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Televizijske novice in/ali radio]]></question>
     <other><![CDATA[N]]></other>
@@ -7977,7 +8391,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Family, friends, neighbours or colleagues]]></question>
     <other><![CDATA[N]]></other>
@@ -7994,7 +8408,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Družina, prijatelji, sosedje ali znanci]]></question>
     <other><![CDATA[N]]></other>
@@ -8011,7 +8425,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Books or scientific publications and/or information materials]]></question>
     <other><![CDATA[N]]></other>
@@ -8028,7 +8442,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Knjige ali znanstvene publikacije in/ali informativno gradivo]]></question>
     <other><![CDATA[N]]></other>
@@ -8045,7 +8459,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Online social networks (facebook, Instagram, Twitter, …)]]></question>
     <other><![CDATA[N]]></other>
@@ -8062,7 +8476,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Spletna družbena omrežja (Facebook, Instagram, Twitter, ...)]]></question>
     <other><![CDATA[N]]></other>
@@ -8079,7 +8493,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[The Internet (other websites, newsletters, blogs, forums, etc., NO social networks)]]></question>
     <other><![CDATA[N]]></other>
@@ -8096,7 +8510,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Internet (druge spletne strani,  glasila, blogi, forumi itn., BREZ socialnih omrežij)]]></question>
     <other><![CDATA[N]]></other>
@@ -8113,7 +8527,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Other]]></question>
     <other><![CDATA[N]]></other>
@@ -8130,7 +8544,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Drugo]]></question>
     <other><![CDATA[N]]></other>
@@ -8147,7 +8561,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[8]]></title>
     <question><![CDATA[I am not interested in the environment]]></question>
     <other><![CDATA[N]]></other>
@@ -8164,7 +8578,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[8]]></title>
     <question><![CDATA[Okolje me ne zanima]]></question>
     <other><![CDATA[N]]></other>
@@ -8181,7 +8595,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[9]]></title>
     <question><![CDATA[I Don’t know]]></question>
     <other><![CDATA[N]]></other>
@@ -8198,7 +8612,7 @@
     <parent_qid><![CDATA[47548]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2474]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[9]]></title>
     <question><![CDATA[Ne vem]]></question>
     <other><![CDATA[N]]></other>
@@ -8215,7 +8629,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Cars]]></question>
     <other><![CDATA[N]]></other>
@@ -8232,7 +8646,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Avtomobili]]></question>
     <other><![CDATA[N]]></other>
@@ -8249,7 +8663,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Public Transport Season ticket]]></question>
     <other><![CDATA[N]]></other>
@@ -8266,7 +8680,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Mesečna vozovnica za javni prevoz]]></question>
     <other><![CDATA[N]]></other>
@@ -8283,7 +8697,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Motorbike/moped]]></question>
     <other><![CDATA[N]]></other>
@@ -8300,7 +8714,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Motor/moped]]></question>
     <other><![CDATA[N]]></other>
@@ -8317,7 +8731,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Bicycle]]></question>
     <other><![CDATA[N]]></other>
@@ -8334,7 +8748,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Kolo (tudi električno kolo)]]></question>
     <other><![CDATA[N]]></other>
@@ -8351,7 +8765,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Scooter/skateboard/hoverboard]]></question>
     <other><![CDATA[N]]></other>
@@ -8368,7 +8782,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Skiro/rolka/hoverboard]]></question>
     <other><![CDATA[N]]></other>
@@ -8385,7 +8799,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Bike Sharing account]]></question>
     <other><![CDATA[N]]></other>
@@ -8402,7 +8816,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Račun za storitev skupne uporabe koles (bike sharing)]]></question>
     <other><![CDATA[N]]></other>
@@ -8419,7 +8833,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Car sharing account]]></question>
     <other><![CDATA[N]]></other>
@@ -8436,7 +8850,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[7]]></title>
     <question><![CDATA[Račun za storitev skupne uporabe avtomobilov (car sharing)]]></question>
     <other><![CDATA[N]]></other>
@@ -8453,7 +8867,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[8]]></title>
     <question><![CDATA[Other]]></question>
     <other><![CDATA[N]]></other>
@@ -8470,7 +8884,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[8]]></title>
     <question><![CDATA[Drugo]]></question>
     <other><![CDATA[N]]></other>
@@ -8487,7 +8901,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[9]]></title>
     <question><![CDATA[None of these]]></question>
     <other><![CDATA[N]]></other>
@@ -8504,7 +8918,7 @@
     <parent_qid><![CDATA[47556]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2478]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[9]]></title>
     <question><![CDATA[Ničesar od omenjenega]]></question>
     <other><![CDATA[N]]></other>
@@ -8521,7 +8935,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[EU bodies]]></question>
     <other><![CDATA[N]]></other>
@@ -8538,7 +8952,7 @@
     <parent_qid><![CDATA[47547]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2473]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Organi EU]]></question>
     <other><![CDATA[N]]></other>
@@ -8555,7 +8969,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[None]]></question>
     <other><![CDATA[N]]></other>
@@ -8572,7 +8986,7 @@
     <parent_qid><![CDATA[47523]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2464]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[6]]></title>
     <question><![CDATA[Nobenega izmed navedenih]]></question>
     <other><![CDATA[N]]></other>
@@ -8589,7 +9003,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ001]]></title>
     <question><![CDATA[Mestni javni potniški promet (npr.: Marprom)]]></question>
     <other><![CDATA[N]]></other>
@@ -8605,7 +9019,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ001]]></title>
     <question><![CDATA[City public passenger transport (Marprom)]]></question>
     <other><![CDATA[N]]></other>
@@ -8621,7 +9035,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ002]]></title>
     <question><![CDATA[Taxi]]></question>
     <other><![CDATA[N]]></other>
@@ -8637,7 +9051,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ002]]></title>
     <question><![CDATA[Taksi]]></question>
     <other><![CDATA[N]]></other>
@@ -8653,7 +9067,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ003]]></title>
     <question><![CDATA[Car sharing (for example: Avant2go)]]></question>
     <other><![CDATA[N]]></other>
@@ -8669,7 +9083,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ003]]></title>
     <question><![CDATA[Souporaba osebnih vozil (Car sharing npr.: Avant2go)]]></question>
     <other><![CDATA[N]]></other>
@@ -8685,7 +9099,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ004]]></title>
     <question><![CDATA[Bike sharing, rent-a-bike]]></question>
     <other><![CDATA[N]]></other>
@@ -8701,7 +9115,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ004]]></title>
     <question><![CDATA[Souporaba, sposoja koles (Bike sharing)]]></question>
     <other><![CDATA[N]]></other>
@@ -8717,7 +9131,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ005]]></title>
     <question><![CDATA[Površine za kolesarjenje]]></question>
     <other><![CDATA[N]]></other>
@@ -8733,7 +9147,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ005]]></title>
     <question><![CDATA[Bike areas]]></question>
     <other><![CDATA[N]]></other>
@@ -8749,7 +9163,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ006]]></title>
     <question><![CDATA[Peščeve površine]]></question>
     <other><![CDATA[N]]></other>
@@ -8765,7 +9179,7 @@
     <parent_qid><![CDATA[49558]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2617]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[A]]></type>
     <title><![CDATA[SQ006]]></title>
     <question><![CDATA[Pedestrian areas]]></question>
     <other><![CDATA[N]]></other>
@@ -8781,7 +9195,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Prezpogojno da]]></question>
     <other><![CDATA[N]]></other>
@@ -8797,7 +9211,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[1]]></title>
     <question><![CDATA[Yes without conditions]]></question>
     <other><![CDATA[N]]></other>
@@ -8813,7 +9227,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Yes, if the frequency would be higher and time tables harmonised]]></question>
     <other><![CDATA[N]]></other>
@@ -8829,7 +9243,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[2]]></title>
     <question><![CDATA[Da, v kolikor bi bili usklajeni vozni redi in večja frekvenca mestnega prometa]]></question>
     <other><![CDATA[N]]></other>
@@ -8845,7 +9259,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Yes, if bus will be cheaper]]></question>
     <other><![CDATA[N]]></other>
@@ -8861,7 +9275,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[3]]></title>
     <question><![CDATA[Da, če bi bilo ceneje]]></question>
     <other><![CDATA[N]]></other>
@@ -8877,7 +9291,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Public transport is irrelevant because of my residential address.]]></question>
     <other><![CDATA[N]]></other>
@@ -8893,7 +9307,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[4]]></title>
     <question><![CDATA[Javni prevoz zaradi mesta bivanja ne pride v poštev]]></question>
     <other><![CDATA[N]]></other>
@@ -8909,7 +9323,7 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Certainly not, it is not interesting for me]]></question>
     <other><![CDATA[N]]></other>
@@ -8925,11 +9339,453 @@
     <parent_qid><![CDATA[49566]]></parent_qid>
     <sid><![CDATA[966913]]></sid>
     <gid><![CDATA[2618]]></gid>
-    <type><![CDATA[T]]></type>
+    <type><![CDATA[M]]></type>
     <title><![CDATA[5]]></title>
     <question><![CDATA[Nikakor ne, me ne zanima]]></question>
     <other><![CDATA[N]]></other>
     <question_order><![CDATA[5]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54035]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[1]]></title>
+    <question><![CDATA[Work/Business]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54035]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[1]]></title>
+    <question><![CDATA[Delo/posel]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54036]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[2]]></title>
+    <question><![CDATA[Study]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54036]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[2]]></title>
+    <question><![CDATA[Študij]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54037]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[3]]></title>
+    <question><![CDATA[Shopping]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54037]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[3]]></title>
+    <question><![CDATA[Nakupovanje]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54038]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[4]]></title>
+    <question><![CDATA[Leisure activities (free time)]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54038]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[4]]></title>
+    <question><![CDATA[Aktivnosti v prostem času ]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54039]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[5]]></title>
+    <question><![CDATA[Other]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[5]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54039]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[5]]></title>
+    <question><![CDATA[Drugo]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[5]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54040]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[6]]></title>
+    <question><![CDATA[None]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[6]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54040]]></qid>
+    <parent_qid><![CDATA[54034]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2837]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[6]]></title>
+    <question><![CDATA[Nobenega izmed navedenih]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[6]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54042]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[1]]></title>
+    <question><![CDATA[Car (both as a driver/passenger)]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54042]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[1]]></title>
+    <question><![CDATA[Avtomobil (kot voznik ali sopotnik)]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[1]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54043]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[2]]></title>
+    <question><![CDATA[Motorbike]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54043]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[2]]></title>
+    <question><![CDATA[Motor]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[2]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54044]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[3]]></title>
+    <question><![CDATA[Public transport (Bus/tram/metro)]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54044]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[3]]></title>
+    <question><![CDATA[Javni prevoz]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[3]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54045]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[4]]></title>
+    <question><![CDATA[Train]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54045]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[4]]></title>
+    <question><![CDATA[Vlak]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54046]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[5]]></title>
+    <question><![CDATA[Bicycle / e-bike]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[5]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54046]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[5]]></title>
+    <question><![CDATA[Kolo (tudi električno kolo)]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[5]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54047]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[6]]></title>
+    <question><![CDATA[Walk]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[6]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54047]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[6]]></title>
+    <question><![CDATA[Hoja]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[6]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54048]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[7]]></title>
+    <question><![CDATA[Other (scooter/skateboard/hoverboard, …)]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[7]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[1]]></relevance>
+    <modulename/>
+   </row>
+   <row>
+    <qid><![CDATA[54048]]></qid>
+    <parent_qid><![CDATA[54041]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2838]]></gid>
+    <type><![CDATA[M]]></type>
+    <title><![CDATA[7]]></title>
+    <question><![CDATA[Drugo]]></question>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[7]]></question_order>
     <language><![CDATA[sl]]></language>
     <scale_id><![CDATA[0]]></scale_id>
     <same_default><![CDATA[0]]></same_default>
@@ -8952,9 +9808,24 @@
     <value><![CDATA[1]]></value>
    </row>
    <row>
+    <qid><![CDATA[47526]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[47527]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
+   <row>
     <qid><![CDATA[47527]]></qid>
     <attribute><![CDATA[max_answers]]></attribute>
     <value><![CDATA[3]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[47528]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
    </row>
    <row>
     <qid><![CDATA[47528]]></qid>
@@ -8963,8 +9834,18 @@
    </row>
    <row>
     <qid><![CDATA[47529]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[47529]]></qid>
     <attribute><![CDATA[max_answers]]></attribute>
     <value><![CDATA[3]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[47530]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
    </row>
    <row>
     <qid><![CDATA[47530]]></qid>
@@ -8973,8 +9854,18 @@
    </row>
    <row>
     <qid><![CDATA[47531]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[47531]]></qid>
     <attribute><![CDATA[max_answers]]></attribute>
     <value><![CDATA[3]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[47532]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
    </row>
    <row>
     <qid><![CDATA[47532]]></qid>
@@ -8997,6 +9888,11 @@
     <value><![CDATA[10;11]]></value>
    </row>
    <row>
+    <qid><![CDATA[47546]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
+   <row>
     <qid><![CDATA[47547]]></qid>
     <attribute><![CDATA[max_answers]]></attribute>
     <value><![CDATA[2]]></value>
@@ -9005,6 +9901,11 @@
     <qid><![CDATA[47548]]></qid>
     <attribute><![CDATA[exclude_all_others]]></attribute>
     <value><![CDATA[8;9]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[47548]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
    </row>
    <row>
     <qid><![CDATA[47548]]></qid>
@@ -9069,6 +9970,11 @@
    <row>
     <qid><![CDATA[50020]]></qid>
     <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[54034]]></qid>
+    <attribute><![CDATA[min_answers]]></attribute>
     <value><![CDATA[1]]></value>
    </row>
   </rows>
@@ -9149,7 +10055,7 @@
     <usecookie><![CDATA[N]]></usecookie>
     <allowregister><![CDATA[N]]></allowregister>
     <allowsave><![CDATA[Y]]></allowsave>
-    <autonumber_start><![CDATA[23]]></autonumber_start>
+    <autonumber_start><![CDATA[32]]></autonumber_start>
     <autoredirect><![CDATA[Y]]></autoredirect>
     <allowprev><![CDATA[Y]]></allowprev>
     <printanswers><![CDATA[N]]></printanswers>

@@ -1865,13 +1865,16 @@ export const surveyModel = {
    ]
   },
   {
-   "name": "page1",
+   "name": "intro",
    "elements": [
     {
      "type": "html",
      "name": "_it_intro",
-     "visibleIf": "{QF1} == 'it'",
-     "html": "<p>Le domande che seguono si riferiscono al periodo precedente l'emergenza sanitaria da COVID19, ti chiediamo perciò di rispondere pensando ai tuoi comportamenti abituali <strong>PRIMA</strong> di questo improvviso evento.</p>"
+     "visibleIf": "{QF1} <> 'ch' and {QF1} <> 'li'",
+     "html": {
+      "default": "<p>The next questions we are going to ask you are referred to the period before the COVID19 health emergency outbreak. We kindly ask you to please answer thinking about your habits <strong>BEFORE</strong> that event.</p>",
+      "sl": "<p>Naslednja vprašanja, ki vam jih bomo zastavili, se nanašajo na obdobje pred pandemijo COVID19. Ko odgovarjate na vprašanja, prosmo, da imate v mislih vaše potovalne navade <strong>PRED</strong> izbruhom pandemije.</p>"
+     }
     }
    ]
   },
@@ -2172,8 +2175,8 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "{QF1} == 'si' and {QF2SL} == '7'",
      "title": {
-      "default": "In the city of Maribor do you usually carry out any of the following activities?",
-      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?"
+      "default": "Thinking to the time before the emergence of COVID19 pandemic, In the city of Maribor were you used to carry out any of the following activities?",
+      "sl": "Če razmišljate o času PRED pandemijo COVID19, katere od navedenih aktivnosti običajno izvajate v mestu Maribor?"
      },
      "description": {
       "default": "(Multiple answers are possible)",
@@ -3188,12 +3191,12 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "Q2",
      "title": {
-      "default": "What are the means of transport you use for your daily travels?",
+      "default": "What were the means of transport you used to use for your daily travels?",
       "it": "Quali erano i mezzi di trasporto che usavi abitualmente per i tuoi spostamenti quotidiani?",
       "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
       "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
       "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?",
-      "sl": "Katera načine prevoza uporabljate za vsakodnevna potovanja?",
+      "sl": "Katere načine prevoza ste uporabljali za vsakodnevna potovanja?",
       "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?"
      },
      "description": {
@@ -3300,12 +3303,12 @@ export const surveyModel = {
      "type": "radiogroup",
      "name": "Q3",
      "title": {
-      "default": "What is the mean of transport you use the most (longest trip in terms of distance)?",
+      "default": "What is the mean of transport you used to use the most (longest trip in terms of distance)?",
       "it": "Tra i mezzi di trasporto che usavi quotidianamente qual era il principale, ovvero quello con cui coprivi la distanza più lunga?",
       "de": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
       "de-ch": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
       "de-at": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
-      "sl": "S katerim načinom prevoza opravljate najdaljša potovanja?",
+      "sl": "S katerim načinom prevoza ste opravljali najdaljša potovanja?",
       "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande pour vos déplacement quotidiens?"
      },
      "description": {
@@ -3667,8 +3670,11 @@ export const surveyModel = {
     {
      "type": "html",
      "name": "mobC19",
-     "visibleIf": "{QF1} == 'it'",
-     "html": "<p>Ora invece ti chiediamo di rispondere alle domande che seguiranno considerando la situazione attuale, <strong>DOPO</strong> l'eplosione dell'emergenza da COVID19, pensando quindi ai tuoi comportamenti abituali <strong>OGGI</strong>.</p>"
+     "visibleIf": "{QF1} <> 'ch' and {QF1} <> 'li'",
+     "html": {
+      "default": "<p>Now we ask you to answer thinking about the <strong>CURRENT</strong> situation: about your habits and condition now, <strong>AFTER</strong> the COVID19 outbreak.</p>",
+      "sl": "<p>Sedaj  pri odgovarjanju na vprašanja upoštevajte <strong>TRENUTNO</strong> situacijo: vaše navade in pogoje sedaj, v času pandemije COVID19.</p>"
+     }
     }
    ]
   },
@@ -4159,6 +4165,132 @@ export const surveyModel = {
    ]
   },
   {
+   "name": "activities_post_covid",
+   "elements": [
+    {
+     "type": "checkbox",
+     "name": "EQ1ITtoday",
+     "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
+     "title": {
+      "default": "Thinking to the current time, in one or more of these municipalities: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons, do you carry out any of the following activities?",
+      "it": "Pensando al periodo precedente l'emergenza sanitaria da COVID19, in uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons eri solito/a svolgere una o più delle seguenti attività?"
+     },
+     "description": {
+      "default": "(multiple answers are possible)",
+      "it": "(Sono possibili più risposte)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "it": "Lavoro/affari"
+       }
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "it": "Studio"
+       }
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "it": "Acquisti"
+       }
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "it": "Attività di svago (nel tempo libero)"
+       }
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "it": "Altro"
+       }
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "it": "Nessuna"
+       }
+      }
+     ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1SLtoday",
+     "visible": false,
+     "visibleIf": "{QF1} == 'si' and {QF2SL} == '7'",
+     "title": {
+      "default": "Thinking to the current time, in the city of Maribor do you carry out any of the following activities?",
+      "sl": "Če imate v mislih TRENUTNO situacijo, ALI V MESTU Maribor izvajate katero izmed naštetih aktivnosti"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "sl": "(Možnih je več odgovorov)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "sl": "Delo/posel"
+       },
+       "enableIf": "{EQ1SL} anyof \"1\" or !({EQ1SL} anyof \"6\")"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "sl": "Študij"
+       },
+       "enableIf": "{EQ1SL} anyof \"2\" or !({EQ1SL} anyof \"6\")"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "sl": "Nakupovanje"
+       },
+       "enableIf": "{EQ1SL} anyof \"3\" or !({EQ1SL} anyof \"6\")"
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "sl": "Aktivnosti v prostem času "
+       },
+       "enableIf": "{EQ1SL} anyof \"4\" or !({EQ1SL} anyof \"6\")"
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "sl": "Drugo"
+       },
+       "enableIf": "{EQ1SL} anyof \"5\" or !({EQ1SL} anyof \"6\")"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "sl": "Nobenega izmed navedenih"
+       },
+       "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} == 0"
+      }
+     ]
+    }
+   ]
+  },
+  {
    "name": "Q2_post_covid19",
    "elements": [
     {
@@ -4259,7 +4391,7 @@ export const surveyModel = {
      ]
     }
    ],
-   "visibleIf": "{QF1} == 'it'"
+   "visibleIf": "{QF1} <> 'ch' and {QF1} <> 'li'"
   },
   {
    "name": "Q3_post_covid19",
@@ -4362,7 +4494,7 @@ export const surveyModel = {
      ]
     }
    ],
-   "visibleIf": "{QF1} == 'it'"
+   "visibleIf": "{QF1} <> 'ch' and {QF1} <> 'li'"
   },
   {
    "name": "quiz1_intro",
@@ -4957,12 +5089,12 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "Q9",
      "title": {
-      "default": "In your opinion who should be mainly responsible for promoting new mobility policies in order to reduce air pollution?",
+      "default": "\tIn your opinion who should be mainly responsible for promoting new mobility policies in order to face COVID19 post-emergency period?",
       "it": "A tuo parere chi dovrebbe essere maggioremente responsabile per la promozione di nuove politiche per la mobilità in maniera da affrontare la crisi da COVID19?",
       "de": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
       "de-ch": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
       "de-at": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
-      "sl": "Kdo bi moral prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi zmanjšali onesnaževanje zraka?",
+      "sl": "Kdo bi moral po vašem mnenju prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi se najbolje soočili s situacijo po pandemiji COVID19?",
       "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités en vue de réduire la pollution de l'air?"
      },
      "description": {
