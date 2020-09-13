@@ -1869,7 +1869,7 @@ export const surveyModel = {
    "elements": [
     {
      "type": "html",
-     "name": "_it_intro",
+     "name": "intro",
      "visibleIf": "{QF1} <> 'ch'",
      "html": {
       "default": "<p>The next questions we are going to ask you refer to the period before the COVID19 health emergency outbreak. We kindly ask you to please answer thinking about your habits <strong>BEFORE</strong> that event.</p>",
@@ -1891,10 +1891,10 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "((!{source}) or {source} == \"at\") and (({QF1} == \"at\" and {QF2AR} == \"A1\") or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\")))",
      "title": {
-      "default": "In the Vorarlberg Region do you usually carry out any of the following activities?",
-      "de": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?",
-      "de-at": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?",
-      "de-ch": "Welche dieser Aktivitäten führen Sie regelmäßig in Vorarlberg aus?"
+      "default": "Thinking of  the time before the emergence of COVID19 pandemic, In the Vorarlberg region were you used to carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führten Sie VOR dem Ausbruch der COVID19 Pandemie regelmäßig in Vorarlberg aus?",
+      "de-at": "Welche dieser Aktivitäten führten Sie VOR dem Ausbruch der COVID19 Pandemie regelmäßig in Vorarlberg aus?",
+      "de-ch": "Welche dieser Aktivitäten führten Sie VOR dem Ausbruch der COVID19 Pandemie regelmäßig in Vorarlberg aus?"
      },
      "description": {
       "default": "(Multiple answers are possible)",
@@ -1971,10 +1971,10 @@ export const surveyModel = {
      "visible": false,
      "visibleIf": "((!{source}) or {source} == \"at\") and {QF1} == \"at\" and {QF2AR} != \"A1\"",
      "title": {
-      "default": "For which of the following activities do you regularly leave your municipality?",
-      "de": "Für welche der folgenden Aktivitäten verlassen Sie regelmäßig Ihre Gemeinde?",
-      "de-at": "Für welche der folgenden Aktivitäten verlassen Sie regelmäßig Ihre Gemeinde?",
-      "de-ch": "Für welche der folgenden Aktivitäten verlassen Sie regelmäßig Ihre Gemeinde?"
+      "default": "For which of the following activities were you used to regularly leave your municipality?",
+      "de": "Für welche der folgenden Aktivitäten haben Sie in Vor-COVID19-Zeiten regelmäßig Ihre Gemeinde verlassen?",
+      "de-at": "Für welche der folgenden Aktivitäten haben Sie in Vor-COVID19-Zeiten regelmäßig Ihre Gemeinde verlassen?",
+      "de-ch": "Für welche der folgenden Aktivitäten haben Sie in Vor-COVID19-Zeiten regelmäßig Ihre Gemeinde verlassen?"
      },
      "description": {
       "default": "(Multiple answers are possible)",
@@ -3202,8 +3202,8 @@ export const surveyModel = {
       "default": "What were the means of transport you used to use for your daily travels?",
       "it": "Quali erano i mezzi di trasporto che usavi abitualmente per i tuoi spostamenti quotidiani?",
       "de": "Welche Transportmittel benutzten Sie für Ihre täglichen Wege?",
-      "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Reisen?",
-      "de-at": "Welche Transportmittel/Verkehrsmittel benutzen Sie für Ihre täglichen Reisen/tägliche Mobilität?",
+      "de-ch": "Welche Transportmittel benutzten Sie für Ihre täglichen Wege?",
+      "de-at": "Welche Transportmittel benutzten Sie für Ihre täglichen Wege?",
       "sl": "Katere načine prevoza ste uporabljali za vsakodnevna potovanja?",
       "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?"
      },
@@ -3314,8 +3314,8 @@ export const surveyModel = {
       "default": "What is the mean of transport you used to use the most (longest trip in terms of distance)?",
       "it": "Tra i mezzi di trasporto che usavi quotidianamente qual era il principale, ovvero quello con cui coprivi la distanza più lunga?",
       "de": "Welches Transportmittel nutzten Sie am meisten (in Bezug auf die Entfernung)?",
-      "de-ch": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
-      "de-at": "Welches Transportmittel nutzen Sie dabei am meisten (in Bezug auf die Entfernung)?",
+      "de-ch": "Welches Transportmittel nutzten Sie am meisten (in Bezug auf die Entfernung)?",
+      "de-at": "Welches Transportmittel nutzten Sie am meisten (in Bezug auf die Entfernung)?",
       "sl": "S katerim načinom prevoza ste opravljali najdaljša potovanja?",
       "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande pour vos déplacement quotidiens?"
      },
@@ -3682,7 +3682,9 @@ export const surveyModel = {
      "html": {
       "default": "<p>Now we ask you to answer thinking about the <strong>CURRENT</strong> situation: about your habits and condition now, <strong>AFTER</strong> the COVID19 outbreak.</p>",
       "sl": "<p>Sedaj  pri odgovarjanju na vprašanja upoštevajte <strong>TRENUTNO</strong> situacijo: vaše navade in pogoje sedaj, v času pandemije COVID19.</p>",
-      "de": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>"
+      "de": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>",
+      "de-at": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>",
+      "de-ch": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>"
      }
     }
    ]
@@ -4364,6 +4366,166 @@ export const surveyModel = {
        "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} == 0"
       }
      ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1AUtoday",
+     "visible": false,
+     "visibleIf": "((!{source}) or {source} == \"at\") and (({QF1} == \"at\" and {QF2AR} == \"A1\") or {QF1} == \"li\" or ({QF1} == \"de\" and {QF2GB} == \"A2\") or ({QF1} == \"ch\" and ({QFSW1} == \"A10\" or {QFSW1} == \"A19\")))",
+     "title": {
+      "default": "Thinking of the current time, In the Vorarlberg region do you carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führen Sie derzeit regelmäßig in Vorarlberg aus?",
+      "de-at": "Welche dieser Aktivitäten führen Sie derzeit regelmäßig in Vorarlberg aus?",
+      "de-ch": "Welche dieser Aktivitäten führen Sie derzeit regelmäßig in Vorarlberg aus?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "de": "Arbeit/Geschäftlich",
+        "de-at": "Arbeit/Geschäftlich",
+        "de-ch": "Arbeit/Geschäftlich"
+       },
+       "enableIf": "{EQ1AU} anyof \"1\" or !({EQ1AU} anyof \"6\")"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "de": "Ausbildung",
+        "de-at": "Ausbildung",
+        "de-ch": "Ausbildung"
+       },
+       "enableIf": "{EQ1AU} anyof \"2\" or !({EQ1AU} anyof \"6\")"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "de": "Einkaufen",
+        "de-ch": "Einkaufen",
+        "de-at": "Einkaufen"
+       },
+       "enableIf": "{EQ1AU} anyof \"3\" or !({EQ1AU} anyof \"6\")"
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "de": "Freizeitaktivitäten",
+        "de-at": "Freizeitaktivitäten",
+        "de-ch": "Freizeitaktivitäten"
+       },
+       "enableIf": "{EQ1AU} anyof \"4\" or !({EQ1AU} anyof \"6\")"
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges"
+       },
+       "enableIf": "{EQ1AU} anyof \"5\" or !({EQ1AU} anyof \"6\")"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten"
+       },
+       "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} == 0"
+      }
+     ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1AU2today",
+     "visible": false,
+     "visibleIf": "((!{source}) or {source} == \"at\") and {QF1} == \"at\" and {QF2AR} != \"A1\"",
+     "title": {
+      "default": "Thinking of the current time, for which of the following activities do you regularly leave your municipality?",
+      "de": "Für welche der folgenden Aktivitäten verlassen Sie derzeit regelmäßig Ihre Gemeinde?\n(Mehrfachnennungen sind möglich)",
+      "de-at": "Für welche der folgenden Aktivitäten verlassen Sie derzeit regelmäßig Ihre Gemeinde?\n(Mehrfachnennungen sind möglich)",
+      "de-ch": "Für welche der folgenden Aktivitäten verlassen Sie derzeit regelmäßig Ihre Gemeinde?\n(Mehrfachnennungen sind möglich)"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "de": "Arbeit/Geschäftlich",
+        "de-at": "Arbeit/Geschäftlich",
+        "de-ch": "Arbeit/Geschäftlich"
+       },
+       "enableIf": "{EQ1AU2} anyof \"1\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "de": "Ausbildung",
+        "de-at": "Ausbildung",
+        "de-ch": "Ausbildung"
+       },
+       "enableIf": "{EQ1AU2} anyof \"2\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "de": "Einkaufen",
+        "de-ch": "Einkaufen",
+        "de-at": "Einkaufen"
+       },
+       "enableIf": "{EQ1AU2} anyof \"3\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "de": "Freizeitaktivitäten",
+        "de-at": "Freizeitaktivitäten",
+        "de-ch": "Freizeitaktivitäten"
+       },
+       "enableIf": "{EQ1AU2} anyof \"4\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges"
+       },
+       "enableIf": "{EQ1AU2} anyof \"5\" or !({EQ1AU2} anyof \"6\")"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten"
+       },
+       "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} == 0"
+      }
+     ]
     }
    ]
   },
@@ -4476,7 +4638,7 @@ export const surveyModel = {
      ]
     }
    ],
-   "visibleIf": "{QF1} <> 'ch' and {QF1} <> 'li'"
+   "visibleIf": "{QF1} <> 'ch'"
   },
   {
    "name": "Q3_post_covid19",
@@ -4583,7 +4745,7 @@ export const surveyModel = {
      ]
     }
    ],
-   "visibleIf": "{QF1} <> 'ch' and {QF1} <> 'li'"
+   "visibleIf": "{QF1} <> 'ch'"
   },
   {
    "name": "quiz1_intro",
@@ -5178,11 +5340,11 @@ export const surveyModel = {
      "type": "checkbox",
      "name": "Q9",
      "title": {
-      "default": "\tIn your opinion who should be mainly responsible for promoting new mobility policies in order to face COVID19 post-emergency period?",
+      "default": "In your opinion who should be mainly responsible for promoting new mobility policies in order to face COVID19 post-emergency period?",
       "it": "A tuo parere chi dovrebbe essere maggioremente responsabile per la promozione di nuove politiche per la mobilità in maniera da affrontare la crisi da COVID19?",
       "de": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
-      "de-ch": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
-      "de-at": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Reduzierung der Luftverschmutzung verantwortlich sein?",
+      "de-ch": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Bewältigung der Herausforderungen nach der akuten Pandemie verantwortlich sein?",
+      "de-at": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Bewältigung der Herausforderungen nach der akuten Pandemie verantwortlich sein?",
       "sl": "Kdo bi moral po vašem mnenju prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi se najbolje soočili s situacijo po pandemiji COVID19?",
       "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités en vue de réduire la pollution de l'air?"
      },
@@ -6863,7 +7025,7 @@ export const surveyModel = {
         "default": "PhD (ISCED 8)",
         "it": "Dottorato",
         "de": "Promotion",
-        "de-at": "Doktor/PhD",
+        "de-at": "Promotion",
         "de-ch": "Promotion",
         "sl": "Doktorat",
         "fr": "Doctorat"
@@ -6875,7 +7037,7 @@ export const surveyModel = {
         "default": "University degree (ISCED 5-7)",
         "it": "Laurea",
         "de": "Hochschulabschluss",
-        "de-at": "Universität Bachelor/Master",
+        "de-at": "Hochschulabschluss",
         "de-ch": "Hochschulabschluss",
         "sl": "Univerzitetna stopnja",
         "fr": "Licence ou Master"
@@ -6887,7 +7049,7 @@ export const surveyModel = {
         "default": "Upper-secondary school diploma (ISCED 3-4)",
         "it": "Diploma di scuola superiore",
         "de": "Hochschulreife",
-        "de-at": "Matura",
+        "de-at": "Hochschulreife",
         "de-ch": "Berufsabschluss",
         "sl": "Srednja šola",
         "fr": "Bac"
@@ -6899,7 +7061,7 @@ export const surveyModel = {
         "default": "Lower-secondary and primary school (ISCED 2-1)",
         "it": "Diploma di scuola media inferiore o licenza elementare",
         "de": "Mittlere Reife und Haupschulabschluss",
-        "de-at": "Mittlere Reife/Grundschule",
+        "de-at": "Mittlere Reife und Hauptschulabschluss",
         "de-ch": "Matura/Sekundarschule",
         "sl": "Strokovna in osnovna šola",
         "fr": "CAP/BEP/Brevet"
