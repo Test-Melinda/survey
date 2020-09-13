@@ -3181,6 +3181,7 @@ export const surveyModel = {
      ]
     }
    ],
+   "visible": false,
    "visibleIf": "{QF1} != 'it'",
    "description": {
     "default": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones.",
@@ -5331,6 +5332,7 @@ export const surveyModel = {
      ]
     }
    ],
+   "visible": false,
    "visibleIf": "{QF1} != 'it'"
   },
   {
@@ -5645,6 +5647,7 @@ export const surveyModel = {
      ]
     }
    ],
+   "visible": false,
    "visibleIf": "{QF1} != 'it'"
   },
   {
