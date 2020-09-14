@@ -3770,7 +3770,8 @@ export const surveyModel = {
       "de": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>",
       "de-at": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>",
       "de-ch": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>",
-      "fr": "<p>Nous vous demandons maintenant de répondre en pensant à la situation ACTUELLE : à vos habitudes et à votre situation actuelle, <strong>APRÈS</strong> l'apparition du COVID19.</p>"
+      "fr": "<p>Nous vous demandons maintenant de répondre en pensant à la situation ACTUELLE : à vos habitudes et à votre situation actuelle, <strong>APRÈS</strong> l'apparition du COVID19.</p>",
+      "it": "<p>Ora invece ti chiediamo di rispondere alle domande che seguiranno considerando la situazione attuale, <strong>DOPO</strong> l'eplosione dell'emergenza da COVID19, pensando quindi ai tuoi comportamenti abituali <strong>OGGI</strong>.</p>"
      }
     }
    ]
