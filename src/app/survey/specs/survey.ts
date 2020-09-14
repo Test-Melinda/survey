@@ -3764,7 +3764,6 @@ export const surveyModel = {
     {
      "type": "html",
      "name": "mobC19",
-     "visibleIf": "{QF1} <> 'it'",
      "html": {
       "default": "<p>Now we ask you to answer thinking about the <strong>CURRENT</strong> situation: about your habits and condition now, <strong>AFTER</strong> the COVID19 outbreak.</p>",
       "sl": "<p>Sedaj  pri odgovarjanju na vprašanja upoštevajte <strong>TRENUTNO</strong> situacijo: vaše navade in pogoje sedaj, v času pandemije COVID19.</p>",
