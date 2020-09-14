@@ -5529,13 +5529,6 @@ export const surveyModel = {
       "it": "(sono possibili al massimo 2 risposte)",
       "fr": "(maximum 2 réponses possibles)"
      },
-     "validators": [
-      {
-       "type": "expression",
-       "text": "Please select at most 2 answers",
-       "expression": "{Q9.length} <= 2"
-      }
-     ],
      "choices": [
       {
        "value": "1",
