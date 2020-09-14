@@ -7,17 +7,24 @@ export class ScoreCalculatorService {
 
 	constructor() { }
 
-	public areScoreResponsesComplete(responseData: any): boolean {
+	public areScoreResponsesComplete(responseData: any, preCovid: boolean): boolean {
+		let complete: boolean;
+		if (preCovid){
+			complete = (!!responseData.Q2 && !!responseData.Q3);
+		}
+		else {
+			complete = (!!responseData.Q2Covid19 && !!responseData.Q3Covid19);
+		}
+		
 		return (
-			!!responseData.Q2 &&
-			!!responseData.Q3 &&
+			complete &&
 			(!!responseData.Q7dot1IT || !!responseData.Q7dot1AU || !!responseData.Q7dot1SL || !!responseData.Q7dot1SW || !!responseData.Q7dot1FR || !!responseData.Q7dot1GE) &&
 			!!responseData.Q7dot2 &&
 			!!responseData.Q7dot3
 		);
 	}
 
-	public calculate(responseData: any): number {
+	public calculate(responseData: any, preCovid: boolean): number {
 		let scores = {
 			Q2: 0,
 			Q3: 0,
@@ -27,7 +34,7 @@ export class ScoreCalculatorService {
 		}
 
 		// Question Q2
-		let q = responseData.Q2;
+		let q = (preCovid)?responseData.Q2:responseData.Q2Covid19;
 		if (q) {
 			if (q.length == 1 && "7" in q){
 				scores.Q2 = 0.5;
@@ -44,7 +51,7 @@ export class ScoreCalculatorService {
 		}
 
 		// Question Q3
-		q = responseData.Q3;
+		q = (preCovid)?responseData.Q3:responseData.Q3Covid19;
 		if (q) {
 			if (q == "3" || q == "4") {
 				scores.Q3 = 4;

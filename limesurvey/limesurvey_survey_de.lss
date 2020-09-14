@@ -6176,6 +6176,42 @@
     <relevance><![CDATA[((163671X2520X48165.NAOK == "A3") and (163671X2520X48168.NAOK == "A2"))]]></relevance>
     <modulename/>
    </row>
+   <row>
+    <qid><![CDATA[54085]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[163671]]></sid>
+    <gid><![CDATA[2537]]></gid>
+    <type><![CDATA[N]]></type>
+    <title><![CDATA[SCORE2]]></title>
+    <question/>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[de]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((163671X2520X48165.NAOK == "A3"))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54085]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[163671]]></sid>
+    <gid><![CDATA[2537]]></gid>
+    <type><![CDATA[N]]></type>
+    <title><![CDATA[SCORE2]]></title>
+    <question/>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((163671X2520X48165.NAOK == "A3"))]]></relevance>
+   </row>
   </rows>
  </questions>
  <subquestions>
@@ -10164,11 +10200,6 @@
     <value><![CDATA[1]]></value>
    </row>
    <row>
-    <qid><![CDATA[48201]]></qid>
-    <attribute><![CDATA[max_answers]]></attribute>
-    <value><![CDATA[2]]></value>
-   </row>
-   <row>
     <qid><![CDATA[48202]]></qid>
     <attribute><![CDATA[exclude_all_others]]></attribute>
     <value><![CDATA[8;9]]></value>
@@ -10237,6 +10268,11 @@
     <qid><![CDATA[54001]]></qid>
     <attribute><![CDATA[assessment_value]]></attribute>
     <value><![CDATA[3]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[54085]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
    </row>
   </rows>
  </question_attributes>

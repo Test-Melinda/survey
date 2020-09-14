@@ -6582,6 +6582,42 @@
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[((991375X2539X48383.NAOK == "A4") and ((!is_empty(991375X2539X48436.NAOK) && (991375X2539X48436.NAOK == 16)) or (!is_empty(991375X2539X48436.NAOK) && (991375X2539X48436.NAOK == 21)) or (!is_empty(991375X2539X48436.NAOK) && (991375X2539X48436.NAOK == 30)) or (!is_empty(991375X2539X48436.NAOK) && (991375X2539X48436.NAOK == 31)) or (!is_empty(991375X2539X48436.NAOK) && (991375X2539X48436.NAOK == 34)) or (!is_empty(991375X2539X48436.NAOK) && (991375X2539X48436.NAOK == 48))))]]></relevance>
    </row>
+   <row>
+    <qid><![CDATA[54084]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[991375]]></sid>
+    <gid><![CDATA[2556]]></gid>
+    <type><![CDATA[N]]></type>
+    <title><![CDATA[SCORE2]]></title>
+    <question/>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((991375X2539X48383.NAOK == "A4"))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54084]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[991375]]></sid>
+    <gid><![CDATA[2556]]></gid>
+    <type><![CDATA[N]]></type>
+    <title><![CDATA[SCORE2]]></title>
+    <question/>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[it]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((991375X2539X48383.NAOK == "A4"))]]></relevance>
+   </row>
   </rows>
  </questions>
  <subquestions>
@@ -11100,11 +11136,6 @@
     <value><![CDATA[1]]></value>
    </row>
    <row>
-    <qid><![CDATA[48419]]></qid>
-    <attribute><![CDATA[max_answers]]></attribute>
-    <value><![CDATA[2]]></value>
-   </row>
-   <row>
     <qid><![CDATA[48420]]></qid>
     <attribute><![CDATA[exclude_all_others]]></attribute>
     <value><![CDATA[8;9]]></value>
@@ -11185,6 +11216,11 @@
     <qid><![CDATA[53983]]></qid>
     <attribute><![CDATA[exclude_all_others]]></attribute>
     <value><![CDATA[6]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[54084]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
+    <value><![CDATA[1]]></value>
    </row>
   </rows>
  </question_attributes>

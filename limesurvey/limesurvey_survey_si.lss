@@ -5337,6 +5337,42 @@
     <same_default><![CDATA[0]]></same_default>
     <relevance><![CDATA[1]]></relevance>
    </row>
+   <row>
+    <qid><![CDATA[54087]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2480]]></gid>
+    <type><![CDATA[N]]></type>
+    <title><![CDATA[SCORE2]]></title>
+    <question/>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[en]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((966913X2463X47511.NAOK == "A6"))]]></relevance>
+   </row>
+   <row>
+    <qid><![CDATA[54087]]></qid>
+    <parent_qid><![CDATA[0]]></parent_qid>
+    <sid><![CDATA[966913]]></sid>
+    <gid><![CDATA[2480]]></gid>
+    <type><![CDATA[N]]></type>
+    <title><![CDATA[SCORE2]]></title>
+    <question/>
+    <preg/>
+    <help/>
+    <other><![CDATA[N]]></other>
+    <mandatory><![CDATA[N]]></mandatory>
+    <question_order><![CDATA[4]]></question_order>
+    <language><![CDATA[sl]]></language>
+    <scale_id><![CDATA[0]]></scale_id>
+    <same_default><![CDATA[0]]></same_default>
+    <relevance><![CDATA[((966913X2463X47511.NAOK == "A6"))]]></relevance>
+   </row>
   </rows>
  </questions>
  <subquestions>
@@ -9893,11 +9929,6 @@
     <value><![CDATA[1]]></value>
    </row>
    <row>
-    <qid><![CDATA[47547]]></qid>
-    <attribute><![CDATA[max_answers]]></attribute>
-    <value><![CDATA[2]]></value>
-   </row>
-   <row>
     <qid><![CDATA[47548]]></qid>
     <attribute><![CDATA[exclude_all_others]]></attribute>
     <value><![CDATA[8;9]]></value>
@@ -9975,6 +10006,11 @@
    <row>
     <qid><![CDATA[54034]]></qid>
     <attribute><![CDATA[min_answers]]></attribute>
+    <value><![CDATA[1]]></value>
+   </row>
+   <row>
+    <qid><![CDATA[54087]]></qid>
+    <attribute><![CDATA[hidden]]></attribute>
     <value><![CDATA[1]]></value>
    </row>
   </rows>

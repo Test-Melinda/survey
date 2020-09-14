@@ -37,9 +37,9 @@ export class AppComponent implements OnInit {
 	
 	public startTime = null;
     
-    public score = null;
-	public scoreValid = false;
-
+    public score: { precovid: number, postcovid: number } = null;
+	public scoreValid: { precovid: boolean, postcovid: boolean } = { precovid: false, postcovid: false };
+	
 	private pilotSelectionQuestion = "QF1";
 	
 	public ignoreResponse = false;
@@ -464,13 +464,20 @@ export class AppComponent implements OnInit {
 				// Ignore added variables
 				delete responseData.source;
 				
-		        // Calculate the score
-		        this.score = this.scoreCalculator.calculate(responseData);
-				this.scoreValid = this.scoreCalculator.areScoreResponsesComplete(responseData);
+		        // Calculate the score (pre Covid)
+		        this.score = {
+					precovid: this.scoreCalculator.calculate(responseData, true),
+					postcovid: this.scoreCalculator.calculate(responseData, false),
+				};
+				this.scoreValid = {
+					precovid: this.scoreCalculator.areScoreResponsesComplete(responseData, true),
+					postcovid: this.scoreCalculator.areScoreResponsesComplete(responseData, false),
+				};
 		        console.log("Score (valid?)", this.score, this.scoreValid);
-				
+
 				// Add the score to the responses
-				responseData[environment.limesurvey.metaQuestions.score] = this.score;
+				responseData[environment.limesurvey.metaQuestions.score.precovid] = this.score.precovid;
+				responseData[environment.limesurvey.metaQuestions.score.postcovid] = this.score.postcovid;
 				
 				// Add the source channel to the responses
 				if (this.channel){
