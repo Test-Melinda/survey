@@ -1877,7 +1877,8 @@ export const surveyModel = {
       "de": "<p>Die folgenden Fragen zielen darauf ab, Ihre Gewohnheiten <strong>VOR</strong> dem Ausbruch der COVID19 Pandemie zu erheben.</p>",
       "de-at": "<p>Die folgenden Fragen zielen darauf ab, Ihre Gewohnheiten <strong>VOR</strong> dem Ausbruch der COVID19 Pandemie zu erheben.</p>",
       "de-ch": "<p>Die folgenden Fragen zielen darauf ab, Ihre Gewohnheiten <strong>VOR</strong> dem Ausbruch der COVID19 Pandemie zu erheben.</p>",
-      "it": "Le domande che seguono si riferiscono al periodo precedente l'emergenza sanitaria da COVID19, ti chiediamo perciò di rispondere pensando ai tuoi comportamenti abituali <strong>PRIMA</strong> di questo improvviso evento."
+      "it": "<p>Le domande che seguono si riferiscono al periodo precedente l'emergenza sanitaria da COVID19, ti chiediamo perciò di rispondere pensando ai tuoi comportamenti abituali <strong>PRIMA</strong> di questo improvviso evento.</p>",
+      "fr": "<p>Les questions suivantes se rapportent à la période précédant l'apparition de la Covid19. Nous vous demandons de bien vouloir répondre en prenant compte vos habitudes <strong>AVANT</strong> cette crise. </p>"
      }
     }
    ]
@@ -2322,6 +2323,90 @@ export const surveyModel = {
        "enableIf": "{EQ1SW1} anyof \"6\" or {EQ1SW1.length} == 0"
       }
      ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1FR",
+     "visible": false,
+     "visibleIf": "{QF1} == 'fr' and ({QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13')",
+     "title": {
+      "default": "Thinking to the time before the emergence of COVID19 pandemic, In the Greater Lyon or Greater Annecy were you used to carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
+      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?",
+      "de-ch": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
+      "de-at": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
+      "fr": "Durant la période précédant l'émergence de la pandémie de COVID19, aviez-vous l'habitude de mener l'une des activités suivantes?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "sl": "(Možnih je več odgovorov)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)",
+      "fr": "(Plusieurs réponses possibles)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "de": "Arbeit/Geschäftlich",
+        "de-at": "Arbeit/Geschäftlich",
+        "de-ch": "Arbeit"
+       },
+       "enableIf": "{EQ1SW1} anyof \"1\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "de": "Ausbildung",
+        "de-at": "Ausbildung",
+        "de-ch": "Studium"
+       },
+       "enableIf": "{EQ1SW1} anyof \"2\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "de": "Einkaufen",
+        "de-at": "Einkaufen",
+        "de-ch": "Einkaufen"
+       },
+       "enableIf": "{EQ1SW1} anyof \"3\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "de": "Freizeitaktivitäten",
+        "de-at": "Freizeitaktivitäten",
+        "de-ch": "Freizeitaktivitäten"
+       },
+       "enableIf": "{EQ1SW1} anyof \"4\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges"
+       },
+       "enableIf": "{EQ1SW1} anyof \"5\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten"
+       },
+       "enableIf": "{EQ1SW1} anyof \"6\" or {EQ1SW1.length} == 0"
+      }
+     ]
     }
    ]
   },
@@ -2448,7 +2533,7 @@ export const surveyModel = {
    "visibleIf": "{QF1} == 'fr' and ({QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13')",
    "description": {
     "default": "In the Greater Lyon or Greater Annecy do you usually carry out any of the following activities?",
-    "fr": "Quelles activités pratiquez-vous sur le Grand Lyon ou le Grand Annecy?\n(plusieurs réponses possibles)"
+    "fr": "Durant la période précédant l'émergence de la pandémie de COVID19, aviez-vous l'habitude de mener l'une des activités suivantes?"
    }
   },
   {
@@ -3206,7 +3291,7 @@ export const surveyModel = {
       "de-ch": "Welche Transportmittel benutzten Sie für Ihre täglichen Wege?",
       "de-at": "Welche Transportmittel benutzten Sie für Ihre täglichen Wege?",
       "sl": "Katere načine prevoza ste uporabljali za vsakodnevna potovanja?",
-      "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?"
+      "fr": "Quels moyens de transport utilisiez-vous pour vos déplacements quotidiens?"
      },
      "description": {
       "default": "(Multiple answers are possible)",
@@ -3318,7 +3403,7 @@ export const surveyModel = {
       "de-ch": "Welches Transportmittel nutzten Sie am meisten (in Bezug auf die Entfernung)?",
       "de-at": "Welches Transportmittel nutzten Sie am meisten (in Bezug auf die Entfernung)?",
       "sl": "S katerim načinom prevoza ste opravljali najdaljša potovanja?",
-      "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande pour vos déplacement quotidiens?"
+      "fr": "Quel est le moyen de transport avec lequel vous parcouriez la distance la plus grande?"
      },
      "description": {
       "default": "(Only one answer possible)",
@@ -3685,7 +3770,8 @@ export const surveyModel = {
       "sl": "<p>Sedaj  pri odgovarjanju na vprašanja upoštevajte <strong>TRENUTNO</strong> situacijo: vaše navade in pogoje sedaj, v času pandemije COVID19.</p>",
       "de": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>",
       "de-at": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>",
-      "de-ch": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>"
+      "de-ch": "<p>Im Folgenden bitten wir Sie an die <strong>DERZEITIGE</strong> Situation zu denken: Ihre Gewohnheiten <strong>NACH</strong> dem Ausbruch der Pandemie.</p>",
+      "fr": "<p>Nous vous demandons maintenant de répondre en pensant à la situation ACTUELLE : à vos habitudes et à votre situation actuelle, <strong>APRÈS</strong> l'apparition du COVID19.</p>"
      }
     }
    ]
@@ -4527,6 +4613,90 @@ export const surveyModel = {
        "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} == 0"
       }
      ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1FRtoday",
+     "visible": false,
+     "visibleIf": "{QF1} == 'fr' and ({QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13')",
+     "title": {
+      "default": "Thinking to the current time, In the Greater Lyon or Greater Annecy do you carry out any of the following activities?",
+      "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
+      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?",
+      "de-ch": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
+      "de-at": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
+      "fr": "Durant la période précédant l'émergence de la pandémie de COVID19, aviez-vous l'habitude de mener l'une des activités suivantes?"
+     },
+     "description": {
+      "default": "(Multiple answers are possible)",
+      "sl": "(Možnih je več odgovorov)",
+      "de": "(Mehrfachnennungen sind möglich)",
+      "de-at": "(Mehrfachnennungen sind möglich)",
+      "de-ch": "(Mehrfachnennungen sind möglich)",
+      "fr": "(Plusieurs réponses possibles)"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "de": "Arbeit/Geschäftlich",
+        "de-at": "Arbeit/Geschäftlich",
+        "de-ch": "Arbeit"
+       },
+       "enableIf": "{EQ1SW1} anyof \"1\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "de": "Ausbildung",
+        "de-at": "Ausbildung",
+        "de-ch": "Studium"
+       },
+       "enableIf": "{EQ1SW1} anyof \"2\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "de": "Einkaufen",
+        "de-at": "Einkaufen",
+        "de-ch": "Einkaufen"
+       },
+       "enableIf": "{EQ1SW1} anyof \"3\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "de": "Freizeitaktivitäten",
+        "de-at": "Freizeitaktivitäten",
+        "de-ch": "Freizeitaktivitäten"
+       },
+       "enableIf": "{EQ1SW1} anyof \"4\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "de": "Sonstiges",
+        "de-at": "Sonstiges",
+        "de-ch": "Sonstiges"
+       },
+       "enableIf": "{EQ1SW1} anyof \"5\" or !({EQ1SW1} anyof \"6\")"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "de": "Keine der genannten",
+        "de-at": "Keine der genannten",
+        "de-ch": "Keine der genannten"
+       },
+       "enableIf": "{EQ1SW1} anyof \"6\" or {EQ1SW1.length} == 0"
+      }
+     ]
     }
    ]
   },
@@ -5348,7 +5518,7 @@ export const surveyModel = {
       "de-ch": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Bewältigung der Herausforderungen nach der akuten Pandemie verantwortlich sein?",
       "de-at": "Wer sollte Ihrer Meinung nach hauptsächlich für die Förderung neuer Mobilitätsstrategien zur Bewältigung der Herausforderungen nach der akuten Pandemie verantwortlich sein?",
       "sl": "Kdo bi moral po vašem mnenju prevzeti odgovornost za spodbujanje novih politik mobilnosti, da bi se najbolje soočili s situacijo po pandemiji COVID19?",
-      "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités en vue de réduire la pollution de l'air?"
+      "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités après la période post-Covid19?"
      },
      "description": {
       "default": "(maximum two answers are possible)",
