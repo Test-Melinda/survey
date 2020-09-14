@@ -9,13 +9,15 @@ import { ScoreViewerComponent } from './score-viewer/score-viewer.component';
 import { SurveyIntroComponent } from './survey-intro/survey-intro.component';
 import { JsonTranslationLoader } from './i18n/json-translation-loader';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { ScoreLevelsComponent } from './score-levels/score-levels.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ScoreViewerComponent,
     SurveyIntroComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    ScoreLevelsComponent
   ],
   imports: [
     BrowserModule,

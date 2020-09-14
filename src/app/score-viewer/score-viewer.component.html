@@ -1,14 +1,17 @@
 <h2 class="text-center mb-4">{{ "SCORE_VIEWER.THANKS" | translate }}</h2>
 
-<p *ngIf="scoreValid" class="score-level-intro text-center">{{ "SCORE_VIEWER.SCORE" | translate }}</p>
+<p *ngIf="scoreValid.precovid || scoreValid.postcovid" class="score-level-intro text-center">{{ "SCORE_VIEWER.SCORE" | translate }}</p>
 
-<div class="score-levels my-4" *ngIf="scoreValid">
-	<div class="score-level level-3" [ngClass]="{ 'level-active': (score >= 5) }">{{ "SCORE_VIEWER.LEVEL.VERY_GOOD" | translate }}</div>
-	<div class="score-level level-2" [ngClass]="{ 'level-active': (score >= 2 && score < 5) }">{{ "SCORE_VIEWER.LEVEL.GOOD" | translate }}</div>
-	<div class="score-level level-1" [ngClass]="{ 'level-active': (score < 2) }">{{ "SCORE_VIEWER.LEVEL.LOW" | translate }}</div>
+<div class="row" *ngIf="scoreValid.precovid || scoreValid.postcovid">
+	<div class="col" *ngIf="scoreValid.precovid" [ngClass]="{ 'col-md-6': scoreValid.postcovid }">
+		<app-score-levels [score]="score.precovid"></app-score-levels>
+	</div>
+	<div class="col" *ngIf="scoreValid.postcovid" [ngClass]="{ 'col-md-6': scoreValid.precovid }">
+		<app-score-levels [score]="score.postcovid"></app-score-levels>
+	</div>
 </div>
 
-<h5 *ngIf="scoreValid" class="score-level-cta my-4 text-center">{{ "SCORE_VIEWER.TEXT" | translate }}</h5>
+<h5 *ngIf="scoreValid.precovid || scoreValid.postcovid" class="score-level-cta my-4 text-center">{{ "SCORE_VIEWER.TEXT" | translate }}</h5>
 
 <!--
 <hr>
