@@ -2323,90 +2323,6 @@ export const surveyModel = {
        "enableIf": "{EQ1SW1} anyof \"6\" or {EQ1SW1.length} == 0"
       }
      ]
-    },
-    {
-     "type": "checkbox",
-     "name": "EQ1FR",
-     "visible": false,
-     "visibleIf": "{QF1} == 'fr' and ({QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13')",
-     "title": {
-      "default": "Thinking to the time before the emergence of COVID19 pandemic, In the Greater Lyon or Greater Annecy were you used to carry out any of the following activities?",
-      "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
-      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?",
-      "de-ch": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
-      "de-at": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
-      "fr": "Durant la période précédant l'émergence de la pandémie de COVID19, aviez-vous l'habitude de mener l'une des activités suivantes?"
-     },
-     "description": {
-      "default": "(Multiple answers are possible)",
-      "sl": "(Možnih je več odgovorov)",
-      "de": "(Mehrfachnennungen sind möglich)",
-      "de-at": "(Mehrfachnennungen sind möglich)",
-      "de-ch": "(Mehrfachnennungen sind möglich)",
-      "fr": "(Plusieurs réponses possibles)"
-     },
-     "choices": [
-      {
-       "value": "1",
-       "text": {
-        "default": "Work/Business",
-        "de": "Arbeit/Geschäftlich",
-        "de-at": "Arbeit/Geschäftlich",
-        "de-ch": "Arbeit"
-       },
-       "enableIf": "{EQ1SW1} anyof \"1\" or !({EQ1SW1} anyof \"6\")"
-      },
-      {
-       "value": "2",
-       "text": {
-        "default": "Study",
-        "de": "Ausbildung",
-        "de-at": "Ausbildung",
-        "de-ch": "Studium"
-       },
-       "enableIf": "{EQ1SW1} anyof \"2\" or !({EQ1SW1} anyof \"6\")"
-      },
-      {
-       "value": "3",
-       "text": {
-        "default": "Shopping",
-        "de": "Einkaufen",
-        "de-at": "Einkaufen",
-        "de-ch": "Einkaufen"
-       },
-       "enableIf": "{EQ1SW1} anyof \"3\" or !({EQ1SW1} anyof \"6\")"
-      },
-      {
-       "value": "4",
-       "text": {
-        "default": "Leisure activities (free time)",
-        "de": "Freizeitaktivitäten",
-        "de-at": "Freizeitaktivitäten",
-        "de-ch": "Freizeitaktivitäten"
-       },
-       "enableIf": "{EQ1SW1} anyof \"4\" or !({EQ1SW1} anyof \"6\")"
-      },
-      {
-       "value": "5",
-       "text": {
-        "default": "Other",
-        "de": "Sonstiges",
-        "de-at": "Sonstiges",
-        "de-ch": "Sonstiges"
-       },
-       "enableIf": "{EQ1SW1} anyof \"5\" or !({EQ1SW1} anyof \"6\")"
-      },
-      {
-       "value": "6",
-       "text": {
-        "default": "None",
-        "de": "Keine der genannten",
-        "de-at": "Keine der genannten",
-        "de-ch": "Keine der genannten"
-       },
-       "enableIf": "{EQ1SW1} anyof \"6\" or {EQ1SW1.length} == 0"
-      }
-     ]
     }
    ]
   },
@@ -2532,7 +2448,7 @@ export const surveyModel = {
    ],
    "visibleIf": "{QF1} == 'fr' and ({QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13')",
    "description": {
-    "default": "In the Greater Lyon or Greater Annecy do you usually carry out any of the following activities?",
+    "default": "Thinking to the time before the emergence of COVID19 pandemic, In the Greater Lyon or Greater Annecy were you used to carry out any of the following activities?",
     "fr": "Durant la période précédant l'émergence de la pandémie de COVID19, aviez-vous l'habitude de mener l'une des activités suivantes?"
    }
   },
@@ -4613,92 +4529,134 @@ export const surveyModel = {
        "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} == 0"
       }
      ]
-    },
+    }
+   ]
+  },
+  {
+   "name": "activities_greater_lyon_post_covid",
+   "elements": [
     {
      "type": "checkbox",
-     "name": "EQ1FRtoday",
-     "visible": false,
-     "visibleIf": "{QF1} == 'fr' and ({QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13')",
+     "name": "EQ1FRGLtoday",
      "title": {
-      "default": "Thinking to the current time, In the Greater Lyon or Greater Annecy do you carry out any of the following activities?",
-      "de": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
-      "sl": "Ali v mestu Maribor običajno izvajate katere od naslednjih aktivnosti?",
-      "de-ch": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
-      "de-at": "Welche dieser Aktivitäten führen Sie in ihrer Wohngemeinde regelmässig aus?",
-      "fr": "Durant la période précédant l'émergence de la pandémie de COVID19, aviez-vous l'habitude de mener l'une des activités suivantes?"
-     },
-     "description": {
-      "default": "(Multiple answers are possible)",
-      "sl": "(Možnih je več odgovorov)",
-      "de": "(Mehrfachnennungen sind möglich)",
-      "de-at": "(Mehrfachnennungen sind möglich)",
-      "de-ch": "(Mehrfachnennungen sind möglich)",
-      "fr": "(Plusieurs réponses possibles)"
+      "default": "In the Greater Lyon",
+      "fr": "Sur le Grand Lyon"
      },
      "choices": [
       {
        "value": "1",
        "text": {
         "default": "Work/Business",
-        "de": "Arbeit/Geschäftlich",
-        "de-at": "Arbeit/Geschäftlich",
-        "de-ch": "Arbeit"
+        "fr": "Travail"
        },
-       "enableIf": "{EQ1SW1} anyof \"1\" or !({EQ1SW1} anyof \"6\")"
+       "enableIf": "{EQ1FRGL} anyof \"1\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "2",
        "text": {
         "default": "Study",
-        "de": "Ausbildung",
-        "de-at": "Ausbildung",
-        "de-ch": "Studium"
+        "fr": "Etudes"
        },
-       "enableIf": "{EQ1SW1} anyof \"2\" or !({EQ1SW1} anyof \"6\")"
+       "enableIf": "{EQ1FRGL} anyof \"2\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "3",
        "text": {
         "default": "Shopping",
-        "de": "Einkaufen",
-        "de-at": "Einkaufen",
-        "de-ch": "Einkaufen"
+        "fr": "Courses"
        },
-       "enableIf": "{EQ1SW1} anyof \"3\" or !({EQ1SW1} anyof \"6\")"
+       "enableIf": "{EQ1FRGL} anyof \"3\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "4",
        "text": {
         "default": "Leisure activities (free time)",
-        "de": "Freizeitaktivitäten",
-        "de-at": "Freizeitaktivitäten",
-        "de-ch": "Freizeitaktivitäten"
+        "fr": "Loisirs"
        },
-       "enableIf": "{EQ1SW1} anyof \"4\" or !({EQ1SW1} anyof \"6\")"
+       "enableIf": "{EQ1FRGL} anyof \"4\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "5",
        "text": {
         "default": "Other",
-        "de": "Sonstiges",
-        "de-at": "Sonstiges",
-        "de-ch": "Sonstiges"
+        "fr": "Autres"
        },
-       "enableIf": "{EQ1SW1} anyof \"5\" or !({EQ1SW1} anyof \"6\")"
+       "enableIf": "{EQ1FRGL} anyof \"5\" or !({EQ1FRGL} anyof \"6\")"
       },
       {
        "value": "6",
        "text": {
         "default": "None",
-        "de": "Keine der genannten",
-        "de-at": "Keine der genannten",
-        "de-ch": "Keine der genannten"
+        "fr": "Aucune"
        },
-       "enableIf": "{EQ1SW1} anyof \"6\" or {EQ1SW1.length} == 0"
+       "enableIf": "{EQ1FRGL} anyof \"6\" or {EQ1FRGL.length} == 0"
+      }
+     ]
+    },
+    {
+     "type": "checkbox",
+     "name": "EQ1FRGAtoday",
+     "title": {
+      "default": "In the Greater Annecy",
+      "fr": "Sur le Grand Annecy"
+     },
+     "choices": [
+      {
+       "value": "1",
+       "text": {
+        "default": "Work/Business",
+        "fr": "Travail"
+       },
+       "enableIf": "{EQ1FRGA} anyof \"1\" or !({EQ1FRGA} anyof \"6\")"
+      },
+      {
+       "value": "2",
+       "text": {
+        "default": "Study",
+        "fr": "Etudes"
+       },
+       "enableIf": "{EQ1FRGA} anyof \"2\" or !({EQ1FRGA} anyof \"6\")"
+      },
+      {
+       "value": "3",
+       "text": {
+        "default": "Shopping",
+        "fr": "Courses"
+       },
+       "enableIf": "{EQ1FRGA} anyof \"3\" or !({EQ1FRGA} anyof \"6\")"
+      },
+      {
+       "value": "4",
+       "text": {
+        "default": "Leisure activities (free time)",
+        "fr": "Loisirs"
+       },
+       "enableIf": "{EQ1FRGA} anyof \"4\" or !({EQ1FRGA} anyof \"6\")"
+      },
+      {
+       "value": "5",
+       "text": {
+        "default": "Other",
+        "fr": "Autres"
+       },
+       "enableIf": "{EQ1FRGA} anyof \"5\" or !({EQ1FRGA} anyof \"6\")"
+      },
+      {
+       "value": "6",
+       "text": {
+        "default": "None",
+        "fr": "Aucune"
+       },
+       "enableIf": "{EQ1FRGA} anyof \"6\" or {EQ1FRGA.length} == 0"
       }
      ]
     }
-   ]
+   ],
+   "visibleIf": "{QF1} == 'fr' and ({QF2FD} == 'A1' or {QF2FD} == 'A3' or {QF2FD} == 'A5' or {QF2FD} == 'A6' or {QF2FD} == 'A7' or {QF2FD} == 'A8' or {QF2FD} == 'A10' or {QF2FD} == 'A11' or {QF2FD} == 'A12' or {QF2FD} == 'A13')",
+   "description": {
+    "default": "Thinking to the current time, In the Greater Lyon or Greater Annecy do you carry out any of the following activities?",
+    "fr": "Quelles activités pratiquez-vous actuellement?"
+   }
   },
   {
    "name": "Q2_post_covid19",
