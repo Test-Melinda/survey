@@ -19,7 +19,10 @@ export const environment = {
             si: 966913
         },
         metaQuestions: {
-            score: 'SCORE',
+            score: {
+				precovid: 'SCORE',
+				postcovid: 'SCORE2'
+			},
 			channel: 'LINK',
 			referrer: 'SOURCE'
         }
