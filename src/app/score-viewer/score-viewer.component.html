@@ -4,12 +4,12 @@
 
 <div class="row" *ngIf="scoreValid.precovid || scoreValid.postcovid">
 	<div class="col" *ngIf="scoreValid.precovid" [ngClass]="{ 'col-md-5': scoreValid.postcovid }">
-		<p class="levels-heading">{{ "SCORE_VIEWER.LEVELS_HEADING.BEFORE" | translate }}</p>
+		<p class="levels-heading" *ngIf="scoreValid.precovid && scoreValid.postcovid">{{ "SCORE_VIEWER.LEVELS_HEADING.BEFORE" | translate }}</p>
 		<app-score-levels [score]="score.precovid.value" [level]="score.precovid.level"></app-score-levels>
 	</div>
-	<div class="col-2 covid-break d-none d-md-flex"><img src="assets/img/covid_break.jpg"></div>
+	<div class="col-2 covid-break d-none d-md-flex" *ngIf="scoreValid.precovid && scoreValid.postcovid"><img src="assets/img/covid_break.jpg"></div>
 	<div class="col" *ngIf="scoreValid.postcovid" [ngClass]="{ 'col-md-5': scoreValid.precovid }">
-		<p class="levels-heading">{{ "SCORE_VIEWER.LEVELS_HEADING.AFTER" | translate }}</p>
+		<p class="levels-heading" *ngIf="scoreValid.precovid && scoreValid.postcovid">{{ "SCORE_VIEWER.LEVELS_HEADING.AFTER" | translate }}</p>
 		<app-score-levels [score]="score.postcovid.value" [level]="score.postcovid.level"></app-score-levels>
 	</div>
 </div>
