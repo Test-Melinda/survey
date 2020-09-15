@@ -33,6 +33,10 @@ export const data = {
 	"SCORE_VIEWER": {
 		"THANKS": "Grazie per aver risposto alle nostre domande!",
 		"SCORE": "Il tuo livello di consapevolezza ambientale è:",
+		"LEVELS_HEADING": {
+			"BEFORE": "Prima del Covid19",
+			"AFTER": "Dopo il Covid19"
+		},
 		"LEVEL": {
 			"VERY_GOOD": "Molto buono",
 			"GOOD": "Buono",

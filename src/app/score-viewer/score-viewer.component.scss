@@ -1,3 +1,19 @@
+.levels-heading {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.covid-break {
+	align-items: center;
+	justify-items: center;
+	
+	img {
+		max-width: 100%;
+	}
+}
+
 .score-level-intro {
 	font-weight: 500;
 }

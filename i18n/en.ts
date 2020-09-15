@@ -33,6 +33,10 @@ export const data = {
 	"SCORE_VIEWER": {
 		"THANKS": "Thank you for having filled up the survey!",
 		"SCORE": "Your level of Environmental awareness and compliance is",
+		"LEVELS_HEADING": {
+			"BEFORE": "Before Covid19",
+			"AFTER": "After Covid19"
+		},
 		"LEVEL": {
 			"VERY_GOOD": "Very good",
 			"GOOD": "Good",
