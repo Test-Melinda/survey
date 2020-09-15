@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ScoreLevelsComponent implements OnInit {
 	
 	@Input() public score: number;
+	@Input() public level: number;
 
 	constructor() { }
 

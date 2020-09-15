@@ -4,10 +4,10 @@
 
 <div class="row" *ngIf="scoreValid.precovid || scoreValid.postcovid">
 	<div class="col" *ngIf="scoreValid.precovid" [ngClass]="{ 'col-md-6': scoreValid.postcovid }">
-		<app-score-levels [score]="score.precovid"></app-score-levels>
+		<app-score-levels [score]="score.precovid.value" [level]="score.precovid.level"></app-score-levels>
 	</div>
 	<div class="col" *ngIf="scoreValid.postcovid" [ngClass]="{ 'col-md-6': scoreValid.precovid }">
-		<app-score-levels [score]="score.postcovid"></app-score-levels>
+		<app-score-levels [score]="score.postcovid.value" [level]="score.postcovid.level"></app-score-levels>
 	</div>
 </div>
 

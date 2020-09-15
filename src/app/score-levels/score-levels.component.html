@@ -1,5 +1,5 @@
 <div class="score-levels my-4">
-	<div class="score-level level-3" [ngClass]="{ 'level-active': (score >= 5) }">{{ "SCORE_VIEWER.LEVEL.VERY_GOOD" | translate }}</div>
-	<div class="score-level level-2" [ngClass]="{ 'level-active': (score >= 2 && score < 5) }">{{ "SCORE_VIEWER.LEVEL.GOOD" | translate }}</div>
-	<div class="score-level level-1" [ngClass]="{ 'level-active': (score < 2) }">{{ "SCORE_VIEWER.LEVEL.LOW" | translate }}</div>
+	<div class="score-level level-3" [ngClass]="{ 'level-active': (level == 3) }">{{ "SCORE_VIEWER.LEVEL.VERY_GOOD" | translate }}</div>
+	<div class="score-level level-2" [ngClass]="{ 'level-active': (level == 2) }">{{ "SCORE_VIEWER.LEVEL.GOOD" | translate }}</div>
+	<div class="score-level level-1" [ngClass]="{ 'level-active': (level == 1) }">{{ "SCORE_VIEWER.LEVEL.LOW" | translate }}</div>
 </div>

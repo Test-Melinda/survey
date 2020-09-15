@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 	
 	public startTime = null;
     
-    public score: { precovid: number, postcovid: number } = null;
+    public score: { precovid: { value: number, level: number }, postcovid: { value: number, level: number } } = null;
 	public scoreValid: { precovid: boolean, postcovid: boolean } = { precovid: false, postcovid: false };
 	
 	private pilotSelectionQuestion = "QF1";
@@ -465,13 +465,21 @@ export class AppComponent implements OnInit {
 				delete responseData.source;
 				
 		        // Calculate the score (pre Covid)
+				let preCovidScore = this.scoreCalculator.calculate(this.source, responseData, true);
+				let postCovidScore = this.scoreCalculator.calculate(this.source, responseData, false);
 		        this.score = {
-					precovid: this.scoreCalculator.calculate(responseData, true),
-					postcovid: this.scoreCalculator.calculate(responseData, false),
+					precovid: {
+						value: preCovidScore,
+						level: this.scoreCalculator.getScoreLevel(this.source, preCovidScore)
+					},
+					postcovid: {
+						value: postCovidScore,
+						level: this.scoreCalculator.getScoreLevel(this.source, postCovidScore)
+					}
 				};
 				this.scoreValid = {
-					precovid: this.scoreCalculator.areScoreResponsesComplete(responseData, true),
-					postcovid: this.scoreCalculator.areScoreResponsesComplete(responseData, false),
+					precovid: this.scoreCalculator.areScoreResponsesComplete(this.source, responseData, true),
+					postcovid: this.scoreCalculator.areScoreResponsesComplete(this.source, responseData, false),
 				};
 		        console.log("Score (valid?)", this.score, this.scoreValid);
 
