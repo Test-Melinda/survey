@@ -3182,8 +3182,7 @@ export const surveyModel = {
      ]
     }
    ],
-   "visible": false,
-   "visibleIf": "{QF1} != 'it'",
+   "visibleIf": "((!{source}) || {source} == 'ch') and {QF1} == 'ch'",
    "description": {
     "default": "Which of these aspects would you associate to the following different transport modes: TRAIN, CAR, PUBLIC TRANSPORT, BICYCLE, WALK, MOTORBIKE/MOPED? Please, for each mobility solution select maximum 3 options between the given ones.",
     "it": "Quale di questi aspetti assoceresti ai seguenti mezzi di spostamento: TRENO, AUTO, TRASPORTO PUBBLICO, BICICLETTA, CAMMINARE, MOTOCICLETTA/MOTORINO?\nPer favore, per ogni mezzo seleziona al massimo 3 delle opzioni elencate",
@@ -5288,6 +5287,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q8",
+     "visibleIf": "((!{source}) || {source} == 'ch') and {QF1} == 'ch'",
      "title": {
       "default": "Have you done any of the following actions in the past six months?",
       "it": "Quali di queste azioni hai compiuto negli scorsi 6 mesi?",
@@ -5459,9 +5459,7 @@ export const surveyModel = {
       }
      ]
     }
-   ],
-   "visible": false,
-   "visibleIf": "{QF1} != 'it'"
+   ]
   },
   {
    "name": "Responsibility",
@@ -5617,6 +5615,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "Q10",
+     "visibleIf": "((!{source}) || {source} == 'ch') and {QF1} == 'ch'",
      "title": {
       "default": "From the following list, which are your three main sources of information about the environment (climate change, pollution, …)?",
       "it": "Scegliendo dalla seguente lista, quali sono le tue tre principali fonti di informazione riguardo all'ambiente? (cambiamento climatico, inquinamento…)",
@@ -5767,9 +5766,7 @@ export const surveyModel = {
       }
      ]
     }
-   ],
-   "visible": false,
-   "visibleIf": "{QF1} != 'it'"
+   ]
   },
   {
    "name": "PS1andPS2",
