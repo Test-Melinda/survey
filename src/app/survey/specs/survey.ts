@@ -1962,7 +1962,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} == 0"
+       "enableIf": "{EQ1AU} anyof \"6\" or (!{EQ1AU})"
       }
      ]
     },
@@ -2042,7 +2042,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} == 0"
+       "enableIf": "{EQ1AU2} anyof \"6\" or (!{EQ1AU2})"
       }
      ]
     },
@@ -2110,7 +2110,7 @@ export const surveyModel = {
         "default": "None",
         "de": "Keine der genannten"
        },
-       "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} == 0"
+       "enableIf": "{EQ1GE} anyof \"6\" or (!{EQ1GE})"
       }
      ]
     },
@@ -2174,7 +2174,7 @@ export const surveyModel = {
         "default": "None",
         "it": "Nessuna"
        },
-       "enableIf": "{EQ1IT} anyof \"6\" or {EQ1IT.length} == 0"
+       "enableIf": "{EQ1IT} anyof \"6\" or (!{EQ1IT})"
       }
      ]
     },
@@ -2238,7 +2238,7 @@ export const surveyModel = {
         "default": "None",
         "sl": "Nobenega izmed navedenih"
        },
-       "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} == 0"
+       "enableIf": "{EQ1SL} anyof \"6\" or (!{EQ1SL})"
       }
      ]
     },
@@ -2320,7 +2320,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1SW1} anyof \"6\" or {EQ1SW1.length} == 0"
+       "enableIf": "{EQ1SW1} anyof \"6\" or (!{EQ1SW1})"
       }
      ]
     }
@@ -2383,7 +2383,7 @@ export const surveyModel = {
         "default": "None",
         "fr": "Aucune"
        },
-       "enableIf": "{EQ1FRGL} anyof \"6\" or {EQ1FRGL.length} == 0"
+       "enableIf": "{EQ1FRGL} anyof \"6\" or (!{EQ1FRGL})"
       }
      ]
     },
@@ -2441,7 +2441,7 @@ export const surveyModel = {
         "default": "None",
         "fr": "Aucune"
        },
-       "enableIf": "{EQ1FRGA} anyof \"6\" or {EQ1FRGA.length} == 0"
+       "enableIf": "{EQ1FRGA} anyof \"6\" or (!{EQ1FRGA})"
       }
      ]
     }
@@ -3545,7 +3545,7 @@ export const surveyModel = {
         "sl": "Nobenega izmed navedenih",
         "fr": "Aucune"
        },
-       "enableIf": "{Q4} anyof \"7\" or {Q4.length} == 0"
+       "enableIf": "{Q4} anyof \"7\" or (!{Q4})"
       }
      ]
     },
@@ -3667,7 +3667,7 @@ export const surveyModel = {
         "sl": "Nobenega izmed navedenih",
         "fr": "Aucune"
        },
-       "enableIf": "{Q5} anyof \"7\" or {Q5.length} == 0"
+       "enableIf": "{Q5} anyof \"7\" or (!{Q5})"
       }
      ]
     }
@@ -4298,7 +4298,7 @@ export const surveyModel = {
         "default": "None",
         "sl": "Nobenega izmed navedenih"
        },
-       "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} == 0"
+       "enableIf": "{EQ1SL} anyof \"6\" or (!{EQ1SL})"
       }
      ]
     },
@@ -4366,7 +4366,7 @@ export const surveyModel = {
         "default": "None",
         "de": "Keine der genannten"
        },
-       "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} == 0"
+       "enableIf": "{EQ1GE} anyof \"6\" or (!{EQ1GE})"
       }
      ]
     },
@@ -4446,7 +4446,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} == 0"
+       "enableIf": "{EQ1AU} anyof \"6\" or (!{EQ1AU})"
       }
      ]
     },
@@ -4526,7 +4526,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} == 0"
+       "enableIf": "{EQ1AU2} anyof \"6\" or (!{EQ1AU2})"
       }
      ]
     }
@@ -4589,7 +4589,7 @@ export const surveyModel = {
         "default": "None",
         "fr": "Aucune"
        },
-       "enableIf": "{EQ1FRGL} anyof \"6\" or {EQ1FRGL.length} == 0"
+       "enableIf": "{EQ1FRGL} anyof \"6\" or (!{EQ1FRGL})"
       }
      ]
     },
@@ -4647,7 +4647,7 @@ export const surveyModel = {
         "default": "None",
         "fr": "Aucune"
        },
-       "enableIf": "{EQ1FRGA} anyof \"6\" or {EQ1FRGA.length} == 0"
+       "enableIf": "{EQ1FRGA} anyof \"6\" or (!{EQ1FRGA})"
       }
      ]
     }
@@ -5454,7 +5454,7 @@ export const surveyModel = {
         "sl": "Nobenega",
         "fr": "Aucun"
        },
-       "enableIf": "{Q8} anyof \"10\" or {Q8.length} == 0"
+       "enableIf": "{Q8} anyof \"10\" or (!{Q8})"
       },
       {
        "value": "11",
@@ -5467,7 +5467,7 @@ export const surveyModel = {
         "sl": "Ne vem",
         "fr": "Je ne sais pas"
        },
-       "enableIf": "{Q8} anyof \"11\" or {Q8.length} == 0"
+       "enableIf": "{Q8} anyof \"11\" or (!{Q8})"
       }
      ]
     }
@@ -5755,7 +5755,7 @@ export const surveyModel = {
         "sl": "Okolje me ne zanima",
         "fr": "Je ne suis pas intéressé par l'environnement"
        },
-       "enableIf": "{Q10} anyof \"8\" or {Q10.length} == 0"
+       "enableIf": "{Q10} anyof \"8\" or (!{Q10})"
       },
       {
        "value": "9",
@@ -5768,7 +5768,7 @@ export const surveyModel = {
         "sl": "Ne vem",
         "fr": "Je ne sais pas"
        },
-       "enableIf": "{Q10} anyof \"9\" or {Q10.length} == 0"
+       "enableIf": "{Q10} anyof \"9\" or (!{Q10})"
       }
      ]
     }
@@ -6280,7 +6280,7 @@ export const surveyModel = {
         "default": "Yes without conditions",
         "sl": "Prezpogojno da"
        },
-       "enableIf": "{PSq4} anyof \"1\" or {PSq4.length} == 0"
+       "enableIf": "{PSq4} anyof \"1\" or (!{PSq4})"
       },
       {
        "value": "2",
@@ -6312,7 +6312,7 @@ export const surveyModel = {
         "default": "Certainly not, it is not interesting for me",
         "sl": "Nikakor ne, me ne zanima"
        },
-       "enableIf": "{PSq4} anyof \"5\" or {PSq4.length} == 0"
+       "enableIf": "{PSq4} anyof \"5\" or (!{PSq4})"
       }
      ]
     }
