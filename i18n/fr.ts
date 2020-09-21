@@ -33,6 +33,10 @@ export const data = {
 	"SCORE_VIEWER": {
 		"THANKS": "Merci d'avoir rempli le questionnaire!",
 		"SCORE": "Votre niveau de sensibilisation à l'environnement et de respect environnemental est de:",
+		"LEVELS_HEADING": {
+			"BEFORE": "Avant COVID-19",
+			"AFTER": "Aprés COVID-19"
+		},
 		"LEVEL": {
 			"VERY_GOOD": "Trés bon",
 			"GOOD": "Bon",

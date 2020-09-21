@@ -33,6 +33,10 @@ export const data = {
 	"SCORE_VIEWER": {
 		"THANKS": "Hvala, ker ste izpolnili anketo!",
 		"SCORE": "Vaša stopnja okoljske ozaveščenosti in skladnosti je:",
+		"LEVELS_HEADING": {
+			"BEFORE": "Pred COVID-19",
+			"AFTER": "V času COVID19"
+		},
 		"LEVEL": {
 			"VERY_GOOD": "Zelo dobro",
 			"GOOD": "Dobro",
