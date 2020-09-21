@@ -4797,7 +4797,8 @@ export const surveyModel = {
         "fr": "Voiture (conducteur ou passager)",
         "de-ch": "Auto (Als Fahrer und Beifahrer)",
         "sl": "Avtomobil (kot voznik ali sopotnik)"
-       }
+       },
+       "enableIf": "((!{Q2Covid19}) or (['1'] anyof {Q2Covid19})"
       },
       {
        "value": "2",
@@ -4809,7 +4810,8 @@ export const surveyModel = {
         "de-ch": "Motorrad",
         "fr": "2 roues motorisés",
         "sl": "Motor"
-       }
+       },
+       "enableIf": "((!{Q2Covid19}) or (['2'] anyof {Q2Covid19})"
       },
       {
        "value": "3",
@@ -4821,7 +4823,8 @@ export const surveyModel = {
         "de-ch": "Öffentlicher Verkehr (Bus/Tram/Metro)",
         "sl": "Javni prevoz",
         "fr": "Transport public (bus/tram/métro)"
-       }
+       },
+       "enableIf": "((!{Q2Covid19}) or (['3'] anyof {Q2Covid19})"
       },
       {
        "value": "4",
@@ -4832,7 +4835,8 @@ export const surveyModel = {
         "de-at": "Bahn",
         "de-ch": "Bahn",
         "sl": "Vlak"
-       }
+       },
+       "enableIf": "((!{Q2Covid19}) or (['4'] anyof {Q2Covid19})"
       },
       {
        "value": "5",
@@ -4844,7 +4848,8 @@ export const surveyModel = {
         "de": "Fahrrad (E-Fahrrad, ...)",
         "de-at": "Fahrrad (E-Fahrrad, ...)",
         "de-ch": "Fahrrad (E-Fahrrad, ...)"
-       }
+       },
+       "enableIf": "((!{Q2Covid19}) or (['5'] anyof {Q2Covid19})"
       },
       {
        "value": "6",
@@ -4856,7 +4861,8 @@ export const surveyModel = {
         "de-ch": "Zu Fuss",
         "sl": "Hoja",
         "fr": "Marche"
-       }
+       },
+       "enableIf": "((!{Q2Covid19}) or (['6'] anyof {Q2Covid19})"
       },
       {
        "value": "7",
@@ -4868,7 +4874,8 @@ export const surveyModel = {
         "de-ch": "Sonstiges ((E-)Scooter, ...)",
         "fr": "Autre (trotinette/skateboard/hoverboard/…)",
         "sl": "Drugo"
-       }
+       },
+       "enableIf": "((!{Q2Covid19}) or (['7'] anyof {Q2Covid19})"
       }
      ]
     }
