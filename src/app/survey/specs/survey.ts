@@ -1739,7 +1739,7 @@ export const surveyModel = {
      "type": "text",
      "name": "QF3",
      "visible": false,
-     "visibleIf": "((!{source}) or {source} == 'it') and {QF1} == 'it'",
+     "visibleIf": "((!{source}) or {source} == 'it') and {QF1} == 'it' and {QF2IT} and {QF2IT} != \"1\"",
      "title": {
       "default": "Could you please specify your postal code?",
       "de": "Bitte nennen Sie uns die Postleitzahl Ihres Wohnortes.",
@@ -4183,6 +4183,7 @@ export const surveyModel = {
     {
      "type": "checkbox",
      "name": "EQ1ITtoday",
+     "visible": false,
      "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
      "title": {
       "default": "Thinking of the current time, in one or more of these municipalities: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons, do you carry out any of the following activities?",
@@ -5484,13 +5485,8 @@ export const surveyModel = {
       "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités après la période post-Covid19?"
      },
      "description": {
-      "default": "(maximum two answers are possible)",
-      "sl": "(Možna sta največ dva odgovora.)",
-      "de": "(maximal zwei Antworten sind möglich)",
-      "de-at": "(maximal zwei Antworten sind möglich)",
-      "de-ch": "(maximal zwei Antworten sind möglich)",
-      "it": "(sono possibili al massimo 2 risposte)",
-      "fr": "(maximum 2 réponses possibles)"
+      "default": "",
+      "de-ch": "(maximal zwei Antworten sind möglich)"
      },
      "choices": [
       {
@@ -5504,7 +5500,7 @@ export const surveyModel = {
         "sl": "Lokalne skupnosti (občine)",
         "fr": "Les villes"
        },
-       "enableIf": "{Q9} anyof \"1\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"1\" or {Q9.length} < 2)"
       },
       {
        "value": "2",
@@ -5517,7 +5513,7 @@ export const surveyModel = {
         "sl": "Državljani sami",
         "fr": "Les citoyens eux-mêmes"
        },
-       "enableIf": "{Q9} anyof \"2\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"2\" or {Q9.length} < 2)"
       },
       {
        "value": "3",
@@ -5531,7 +5527,7 @@ export const surveyModel = {
         "fr": "La Région"
        },
        "visibleIf": "((!{source}) or {source} != 'si') and {QF1} != 'si'",
-       "enableIf": "{Q9} anyof \"3\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"3\" or {Q9.length} < 2)"
       },
       {
        "value": "4",
@@ -5544,7 +5540,7 @@ export const surveyModel = {
         "sl": "Država",
         "fr": "L'Etat"
        },
-       "enableIf": "{Q9} anyof \"4\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"4\" or {Q9.length} < 2)"
       },
       {
        "value": "5",
@@ -5558,7 +5554,7 @@ export const surveyModel = {
         "fr": "Les agences de l'UE"
        },
        "visibleIf": "{QF1} != \"ch\"",
-       "enableIf": "{Q9} anyof \"5\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"5\" or {Q9.length} < 2)"
       },
       {
        "value": "6",
@@ -5571,7 +5567,7 @@ export const surveyModel = {
         "sl": "Zasebna podjetja",
         "fr": "Les sociétés privées"
        },
-       "enableIf": "{Q9} anyof \"6\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"6\" or {Q9.length} < 2)"
       },
       {
        "value": "7",
@@ -5584,7 +5580,7 @@ export const surveyModel = {
         "sl": "Sindikati ali politične stranke",
         "fr": "Les syndicats ou partis politiques"
        },
-       "enableIf": "{Q9} anyof \"7\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"7\" or {Q9.length} < 2)"
       },
       {
        "value": "8",
@@ -5597,7 +5593,7 @@ export const surveyModel = {
         "sl": "Neprofitna združenja/nevladne organizacije",
         "fr": "Les associations"
        },
-       "enableIf": "{Q9} anyof \"8\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"8\" or {Q9.length} < 2)"
       },
       {
        "value": "9",
@@ -5610,7 +5606,7 @@ export const surveyModel = {
         "sl": "Drugi",
         "fr": "Autres"
        },
-       "enableIf": "{Q9} anyof \"9\" or {Q9.length} < 2"
+       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"9\" or {Q9.length} < 2)"
       }
      ]
     }
