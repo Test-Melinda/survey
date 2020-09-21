@@ -1962,7 +1962,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} == 0"
+       "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} < 1"
       }
      ]
     },
@@ -2042,7 +2042,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} == 0"
+       "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} < 1"
       }
      ]
     },
@@ -2174,7 +2174,7 @@ export const surveyModel = {
         "default": "None",
         "it": "Nessuna"
        },
-       "enableIf": "{EQ1IT} anyof \"6\" or {EQ1IT.length} == 0"
+       "enableIf": "{EQ1IT} anyof \"6\" or {EQ1IT.length} < 1"
       }
      ]
     },
@@ -2238,7 +2238,7 @@ export const surveyModel = {
         "default": "None",
         "sl": "Nobenega izmed navedenih"
        },
-       "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} == 0"
+       "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} < 1"
       }
      ]
     },
@@ -3838,7 +3838,7 @@ export const surveyModel = {
         "sl": "Ničesar od omenjenega",
         "fr": "Aucun"
        },
-       "enableIf": "{Q6} anyof \"9\" or {Q6.length} == 0"
+       "enableIf": "{Q6} anyof \"9\" or {Q6.length} = 0"
       }
      ]
     }
@@ -4298,7 +4298,7 @@ export const surveyModel = {
         "default": "None",
         "sl": "Nobenega izmed navedenih"
        },
-       "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} == 0"
+       "enableIf": "{EQ1SL} anyof \"6\" or {EQ1SL.length} < 1"
       }
      ]
     },
@@ -4366,7 +4366,7 @@ export const surveyModel = {
         "default": "None",
         "de": "Keine der genannten"
        },
-       "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} == 0"
+       "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} < 1"
       }
      ]
     },
@@ -4446,7 +4446,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} == 0"
+       "enableIf": "{EQ1AU} anyof \"6\" or {EQ1AU.length} < 1"
       }
      ]
     },
@@ -4526,7 +4526,7 @@ export const surveyModel = {
         "de-at": "Keine der genannten",
         "de-ch": "Keine der genannten"
        },
-       "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} == 0"
+       "enableIf": "{EQ1AU2} anyof \"6\" or {EQ1AU2.length} < 1"
       }
      ]
     }
@@ -4589,7 +4589,7 @@ export const surveyModel = {
         "default": "None",
         "fr": "Aucune"
        },
-       "enableIf": "{EQ1FRGL} anyof \"6\" or {EQ1FRGL.length} == 0"
+       "enableIf": "{EQ1FRGL} anyof \"6\" or {EQ1FRGL.length} < 1"
       }
      ]
     },
@@ -4647,7 +4647,7 @@ export const surveyModel = {
         "default": "None",
         "fr": "Aucune"
        },
-       "enableIf": "{EQ1FRGA} anyof \"6\" or {EQ1FRGA.length} == 0"
+       "enableIf": "{EQ1FRGA} anyof \"6\" or {EQ1FRGA.length} < 1"
       }
      ]
     }
@@ -4670,7 +4670,8 @@ export const surveyModel = {
       "de": "Welche Transportmittel benutzen Sie für Ihre täglichen Wege?",
       "de-at": "Welche Transportmittel benutzen Sie für Ihre täglichen Wege?",
       "de-ch": "Welche Transportmittel benutzen Sie für Ihre täglichen Wege?",
-      "sl": "Katera načine prevoza uporabljate za vsakodnevna potovanja?"
+      "sl": "Katera načine prevoza uporabljate za vsakodnevna potovanja?",
+      "fr": "Quels moyens de transport utilisez-vous pour vos déplacements quotidiens?"
      },
      "description": {
       "default": "(Multiple answers are possible)",
@@ -4678,7 +4679,8 @@ export const surveyModel = {
       "de": "(Mehrfachnennungen sind möglich)",
       "de-at": "(Mehrfachnennungen sind möglich)",
       "de-ch": "(Mehrfachnennungen sind möglich)",
-      "sl": "(Možnih je več odgovorov)"
+      "sl": "(Možnih je več odgovorov)",
+      "fr": "(plusieurs réponses possibles)"
      },
      "choices": [
       {
@@ -4781,11 +4783,13 @@ export const surveyModel = {
       "sl": "S katerim načinom prevoza opravljate najdaljša potovanja?",
       "de": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?",
       "de-at": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?",
-      "de-ch": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?"
+      "de-ch": "Welches Transportmittel nutzen Sie am meisten (in Bezug auf die Entfernung)?",
+      "fr": "Quel est le moyen de transport avec lequel vous parcourez la distance la plus grande?"
      },
      "description": {
       "default": "(Only one answer is possible)",
-      "it": "(È possibile una sola risposta)"
+      "it": "(È possibile una sola risposta)",
+      "fr": "Une seule réponse possible"
      },
      "choices": [
       {
