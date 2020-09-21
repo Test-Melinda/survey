@@ -2110,7 +2110,7 @@ export const surveyModel = {
         "default": "None",
         "de": "Keine der genannten"
        },
-       "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} == 0"
+       "enableIf": "{EQ1GE} anyof \"6\" or {EQ1GE.length} < 1"
       }
      ]
     },
@@ -5485,7 +5485,6 @@ export const surveyModel = {
       "fr": "A votre avis qui devrait être le principal porteur de la promotion de nouvelles mobilités après la période post-Covid19?"
      },
      "description": {
-      "default": "",
       "de-ch": "(maximal zwei Antworten sind möglich)"
      },
      "choices": [
