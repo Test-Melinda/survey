@@ -5503,7 +5503,7 @@ export const surveyModel = {
         "sl": "Lokalne skupnosti (občine)",
         "fr": "Les villes"
        },
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"1\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"1\" or {Q9.length} < 2)"
       },
       {
        "value": "2",
@@ -5516,7 +5516,7 @@ export const surveyModel = {
         "sl": "Državljani sami",
         "fr": "Les citoyens eux-mêmes"
        },
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"2\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"2\" or {Q9.length} < 2)"
       },
       {
        "value": "3",
@@ -5530,7 +5530,7 @@ export const surveyModel = {
         "fr": "La Région"
        },
        "visibleIf": "((!{source}) or {source} != 'si') and {QF1} != 'si'",
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"3\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"3\" or {Q9.length} < 2)"
       },
       {
        "value": "4",
@@ -5543,7 +5543,7 @@ export const surveyModel = {
         "sl": "Država",
         "fr": "L'Etat"
        },
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"4\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"4\" or {Q9.length} < 2)"
       },
       {
        "value": "5",
@@ -5557,7 +5557,7 @@ export const surveyModel = {
         "fr": "Les agences de l'UE"
        },
        "visibleIf": "{QF1} != \"ch\"",
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"5\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"5\" or {Q9.length} < 2)"
       },
       {
        "value": "6",
@@ -5570,7 +5570,7 @@ export const surveyModel = {
         "sl": "Zasebna podjetja",
         "fr": "Les sociétés privées"
        },
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"6\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"6\" or {Q9.length} < 2)"
       },
       {
        "value": "7",
@@ -5583,7 +5583,7 @@ export const surveyModel = {
         "sl": "Sindikati ali politične stranke",
         "fr": "Les syndicats ou partis politiques"
        },
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"7\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"7\" or {Q9.length} < 2)"
       },
       {
        "value": "8",
@@ -5596,7 +5596,7 @@ export const surveyModel = {
         "sl": "Neprofitna združenja/nevladne organizacije",
         "fr": "Les associations"
        },
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"8\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"8\" or {Q9.length} < 2)"
       },
       {
        "value": "9",
@@ -5609,7 +5609,7 @@ export const surveyModel = {
         "sl": "Drugi",
         "fr": "Autres"
        },
-       "enableIf": "((!{source}) or ({source} == 'ch')) or ({Q9} anyof \"9\" or {Q9.length} < 2)"
+       "enableIf": "({source} != 'ch') or ({Q9} anyof \"9\" or {Q9.length} < 2)"
       }
      ]
     }
