@@ -4187,7 +4187,7 @@ export const surveyModel = {
      "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
      "title": {
       "default": "Thinking of the current time, in one or more of these municipalities: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons, do you carry out any of the following activities?",
-      "it": "Pensando al periodo precedente l'emergenza sanitaria da COVID19, in uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons eri solito/a svolgere una o più delle seguenti attività?"
+      "it": "Pensando al periodo presente, in uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons sei solito/a svolgere una o più delle seguenti attività?"
      },
      "description": {
       "default": "(multiple answers are possible)",
