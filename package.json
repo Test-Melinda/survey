@@ -1,6 +1,6 @@
 {
   "name": "melinda-survey",
-  "version": "1.6.4",
+  "version": "2.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
