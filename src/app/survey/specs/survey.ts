@@ -6179,7 +6179,7 @@ export const surveyModel = {
        "value": "SQ006",
        "text": {
         "default": "Pedestrian areas",
-        "sl": "Peščeve površine"
+        "sl": "Površine za pešce"
        }
       }
      ]
@@ -6278,7 +6278,7 @@ export const surveyModel = {
        "value": "1",
        "text": {
         "default": "Yes without conditions",
-        "sl": "Prezpogojno da"
+        "sl": "Brezpogojno da"
        },
        "enableIf": "{PSq4} anyof \"1\" or (!{PSq4})"
       },
@@ -6320,7 +6320,7 @@ export const surveyModel = {
    "visibleIf": "{QF1} == 'si'",
    "description": {
     "default": "Integrated ticket can be used for all public transport modalities (trains, regional and city buses). It enables passengers the use of only one ticket for urban buses as well as for trains and regional buses.",
-    "sl": "Enotna vozovnica velja za prevoz z vsemi oblikami javnega prevoza (z vlakom, medkrajevnim avtobusom ter mestnim prometom). Pomembna prednost je, da lahko na območju mestnega pometa potnik z enotno vozovnico poleg vozil mestnega prevoznika uporablja tudi vlake in avtobuse v medkrajevnem prometu, kadar ustavljajo na tem območju."
+    "sl": "Enotna vozovnica velja za prevoz z vsemi oblikami javnega prevoza (z vlakom, medkrajevnim avtobusom ter mestnim prometom). Pomembna prednost je, da lahko na območju mestnega prometa potnik z enotno vozovnico poleg vozil mestnega prevoznika uporablja tudi vlake in avtobuse v medkrajevnem prometu, kadar ustavljajo na tem območju."
    }
   },
   {
