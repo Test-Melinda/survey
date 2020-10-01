@@ -1,6 +1,6 @@
 export const data = {
 	"APP": {
-		"TITLE": "Melinda anketi",
+		"TITLE": "Melinda anketa",
 		"LOADING": "nalagam",
 		"LOAD_ERROR": "Oprostite, prišlo je do napake. Prosimo, če <a href=\"{{ contactLink }}\">nas kontaktirate</a>. Hvala za razumevanje.",
 		"SUBMIT_ERROR": "Oprostite, prišlo je do napake. Prosimo, kliknite na spodnji gumb za ponovni poizkus. Drugače vas prosimo, če <a href=\"{{ contactLink }}\">nas kontaktirate</a>. Hvala za razumevanje.",
