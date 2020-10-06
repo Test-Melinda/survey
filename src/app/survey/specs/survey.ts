@@ -7374,7 +7374,7 @@ export const surveyModel = {
      "visibleIf": "{QF1} != 'ch' or ({QF1} == 'ch' and {MApp1} == '2')",
      "title": {
       "default": "If you like to receive any information and updates about Melinda project's events and progresses you can leave us your e-mail address in order to be informed in the future.",
-      "it": "Se hai piacere a ricevere informazioni e aggiornamenti sugli eventi e progressi del progetto Melinda puoi lasciarci qui di seguito il tuo indirizzo e-mail così da essere avvisato in futuro.",
+      "it": "Se hai piacere a ricevere informazioni e aggiornamenti sugli eventi e progressi del progetto Melinda puoi lasciarci qui di seguito il tuo indirizzo e-mail così da essere avvisato/a in futuro",
       "de": "Wenn Sie in Zukunft Informationen und Updates über Veranstaltungen und Ergebnisse des Melinda-Projekts erhalten möchten, können Sie Ihre E-Mail-Adresse angeben.",
       "de-at": "Wenn Sie in Zukunft Informationen und Updates über Veranstaltungen und Ergebnisse des Melinda-Projekts erhalten möchten, können Sie Ihre E-Mail-Adresse angeben.",
       "de-ch": "Wenn Sie in Zukunft Informationen und Updates über Veranstaltungen und Ergebnisse des Melinda-Projekts erhalten möchten, können Sie Ihre E-Mail-Adresse angeben.",
