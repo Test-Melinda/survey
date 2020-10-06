@@ -2116,70 +2116,6 @@ export const surveyModel = {
     },
     {
      "type": "checkbox",
-     "name": "EQ1IT",
-     "visible": false,
-     "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
-     "title": {
-      "default": "Thinking to the time before the emergence of COVID19 pandemic, in one or more of these municipalities: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons, were you used to carry out any of the following activities?",
-      "it": "Pensando al periodo precedente l'emergenza sanitaria da COVID19, in uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons eri solito/a svolgere una o più delle seguenti attività?"
-     },
-     "description": {
-      "default": "(Multiple answers are possible)",
-      "it": "(Sono possibili più risposte)"
-     },
-     "choices": [
-      {
-       "value": "1",
-       "text": {
-        "default": "Work/Business",
-        "it": "Lavoro/affari"
-       },
-       "enableIf": "{EQ1IT} anyof \"1\" or !({EQ1IT} anyof \"6\")"
-      },
-      {
-       "value": "2",
-       "text": {
-        "default": "Study",
-        "it": "Studio"
-       },
-       "enableIf": "{EQ1IT} anyof \"2\" or !({EQ1IT} anyof \"6\")"
-      },
-      {
-       "value": "3",
-       "text": {
-        "default": "Shopping",
-        "it": "Acquisti"
-       },
-       "enableIf": "{EQ1IT} anyof \"3\" or !({EQ1IT} anyof \"6\")"
-      },
-      {
-       "value": "4",
-       "text": {
-        "default": "Leisure activities (free time)",
-        "it": "Attività di svago (nel tempo libero)"
-       },
-       "enableIf": "{EQ1IT} anyof \"4\" or !({EQ1IT} anyof \"6\")"
-      },
-      {
-       "value": "5",
-       "text": {
-        "default": "Other",
-        "it": "Altro"
-       },
-       "enableIf": "{EQ1IT} anyof \"5\" or !({EQ1IT} anyof \"6\")"
-      },
-      {
-       "value": "6",
-       "text": {
-        "default": "None",
-        "it": "Nessuna"
-       },
-       "enableIf": "{EQ1IT} anyof \"6\" or (!{EQ1IT})"
-      }
-     ]
-    },
-    {
-     "type": "checkbox",
      "name": "EQ1SL",
      "visible": false,
      "visibleIf": "{QF1} == 'si' and {QF2SL} == '7'",
@@ -4180,64 +4116,6 @@ export const surveyModel = {
   {
    "name": "activities_post_covid",
    "elements": [
-    {
-     "type": "checkbox",
-     "name": "EQ1ITtoday",
-     "visible": false,
-     "visibleIf": "{QF1} == 'it' and {QF2ITUTI} notempty and [\"16\", \"21\", \"30\", \"31\", \"34\", \"48\"] contains {QF2ITUTI}",
-     "title": {
-      "default": "Thinking of the current time, in one or more of these municipalities: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola, Cordenons, do you carry out any of the following activities?",
-      "it": "Pensando al periodo presente, in uno o più di questi comuni: Pordenone, Porcia, Fontanafredda, Roveredo in Piano, Zoppola o Cordenons sei solito/a svolgere una o più delle seguenti attività?"
-     },
-     "description": {
-      "default": "(multiple answers are possible)",
-      "it": "(Sono possibili più risposte)"
-     },
-     "choices": [
-      {
-       "value": "1",
-       "text": {
-        "default": "Work/Business",
-        "it": "Lavoro/affari"
-       }
-      },
-      {
-       "value": "2",
-       "text": {
-        "default": "Study",
-        "it": "Studio"
-       }
-      },
-      {
-       "value": "3",
-       "text": {
-        "default": "Shopping",
-        "it": "Acquisti"
-       }
-      },
-      {
-       "value": "4",
-       "text": {
-        "default": "Leisure activities (free time)",
-        "it": "Attività di svago (nel tempo libero)"
-       }
-      },
-      {
-       "value": "5",
-       "text": {
-        "default": "Other",
-        "it": "Altro"
-       }
-      },
-      {
-       "value": "6",
-       "text": {
-        "default": "None",
-        "it": "Nessuna"
-       }
-      }
-     ]
-    },
     {
      "type": "checkbox",
      "name": "EQ1SLtoday",
