@@ -12,17 +12,25 @@
 		
 		text-align: center;
 		font-weight: 500;
-		color: #505050;
+		color: #707070;
 		line-height: 1.2;
 		
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+		animation-direction: reverse;
+		animation-fill-mode: both;
+		
 		&.level-1 {
-			background-color: #e84c19;
+			animation-name: level-1-highlight;
+			background-color: rgba(232,76,25,0.4);
 		}
 		&.level-2 {
-			background-color: #e2de09;
+			animation-name: level-2-highlight;
+			background-color: rgba(226,222,9,0.4);
 		}
 		&.level-3 {
-			background-color: #8cbe21;
+			animation-name: level-3-highlight;
+			background-color: rgba(140,190,33,0.4);
 		}
 		
 		&.level-active {
@@ -31,6 +39,36 @@
 			box-shadow: 0px 0px 4px 0px rgba(1, 1, 1, 0.5);
 			font-weight: 700;
 			color: #222222;
+			border-radius: 0.4em;
+			animation-direction: normal;
 		}
+		
+	}
+}
+
+@keyframes level-1-highlight {
+	from {
+		background-color: rgba(232,76,25,0.4);
+	}
+	to {
+		background-color: rgba(232,76,25,1);
+	}
+}
+
+@keyframes level-2-highlight {
+	from {
+		background-color: rgba(226,222,9,0.4);
+	}
+	to {
+		background-color: rgba(226,222,9,1);
+	}
+}
+
+@keyframes level-3-highlight {
+	from {
+		background-color: rgba(140,190,33,0.4);
+	}
+	to {
+		background-color: rgba(140,190,33,1);
 	}
 }
