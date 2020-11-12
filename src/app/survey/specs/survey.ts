@@ -5114,7 +5114,7 @@ export const surveyModel = {
      "title": {
       "default": "How much physical activity WHO recommend to do every day? How many minutes of daily walking activities does it correspond to?",
       "it": "Quanta attività fisica è necessario fare quotidianamente in maniera da rispettare le prescrizioni dell'Organizzazione Mondiale della Sanità? A quanti minuti di \"cammino sostenuto\" corrisponde?",
-      "de": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie vielen Minuten täglicher Gehzeit entspricht dies?",
+      "de": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie vielen Minuten täglicher Gehzeit entspricht das ungefähr?",
       "de-ch": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation WHO täglich? Wie vielen Minuten täglicher Gehzeit entspricht dies?",
       "de-at": "Wie viel körperliche Aktivität empfiehlt die World Health Organisation (WHO) täglich? Wie vielen Minuten täglicher Gehzeit entspricht dies?",
       "sl": "Kakšen obseg dnevnih fizičnih aktivnosti v obliki hoje po svežem zraku priporoča svetovna zdravstvena organizacija (WHO)?",
@@ -7116,9 +7116,9 @@ export const surveyModel = {
        "text": {
         "default": "3 or more",
         "it": "Tre o più",
-        "de": "Mehr als 3",
+        "de": "3 oder mehr",
         "de-at": "3 oder mehr",
-        "de-ch": "Mehr als 3",
+        "de-ch": "3 oder mehr",
         "sl": "Tri ali več",
         "fr": "3 et plus"
        }
