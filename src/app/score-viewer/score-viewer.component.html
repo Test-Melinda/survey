@@ -16,18 +16,25 @@
 
 <h5 *ngIf="scoreValid.precovid || scoreValid.postcovid" class="score-level-cta my-4 text-center">{{ "SCORE_VIEWER.TEXT" | translate }}</h5>
 
-<!--
-<hr>
-
-<p class="app-cta">{{ "SCORE_VIEWER.CTA" | translate }}</p>
-
-<p [innerHtml]="'SCORE_VIEWER.CTA_MORE' | translate"></p>
-
-<p class="app-cta-store" [innerHtml]="'SCORE_VIEWER.APP_STORE' | translate"></p>
-
-<hr>
--->
-
+<ng-container *ngIf="source == 'fr'">
+	<hr>
+	
+	<p class="app-cta">{{ "SCORE_VIEWER.CTA" | translate }}</p>
+	
+	<p [innerHtml]="'SCORE_VIEWER.CTA_MORE' | translate"></p>
+	
+	<div class="row">
+		<div class="col col-12 col-md-6 button-play-store">
+			<a href="https://play.google.com/store/apps/details?id=at.fhv.mobilitychoices&gl=IT" title="Download from Google Play" target="_blank"><img alt="Download from Google Play" src="assets/img/app/play_store.png"></a>
+		</div>
+		<div class="col col-12 col-md-6 button-app-store">
+			<a href="https://apps.apple.com/at/app/melinda/id1341607634" title="Download from App Store" target="_blank"><img alt="Download from App Store" src="assets/img/app/app_store.svg"></a>
+		</div>
+	</div>
+	<!-- <p class="app-cta-store" [innerHtml]="'SCORE_VIEWER.APP_STORE' | translate"></p> -->
+	
+	<hr>
+</ng-container>
 
 <p>{{ "SCORE_VIEWER.SOLUTIONS.TITLE" | translate }}</p>
 
