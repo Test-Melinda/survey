@@ -32,7 +32,7 @@ export const data = {
 	},
 	"SCORE_VIEWER": {
 		"THANKS": "Vielen Dank, dass Sie die Umfrage ausgefüllt haben!",
-		"SCORE": "Ihr Grad an Umweltbewusstsein ist:",
+		"SCORE": "Ihr Mobilitätsverhalten in Bezug auf Umweltbewusstsein ist:",
 		"LEVELS_HEADING": {
 			"BEFORE": "Vor COVID-19",
 			"AFTER": "Nach COVID-19"
