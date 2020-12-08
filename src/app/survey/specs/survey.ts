@@ -934,6 +934,10 @@ export const surveyModel = {
        "text": "München (Landkreis)"
       },
       {
+       "value": 72,
+       "text": "München (Stadt)"
+      },
+      {
        "value": "45",
        "text": "Neuburg-Schrobenha"
       },
@@ -3369,9 +3373,9 @@ export const surveyModel = {
      "title": {
       "default": "Which of the following travel services have you ever heard of?",
       "it": "Di quali dei seguenti servizi di mobilità hai sentito parlare?",
-      "de": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
-      "de-ch": "Von welche der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
-      "de-at": "Von welche der folgenden Mobilitätslösungen/Mobilitätsangebote haben Sie schon einmal gehört?",
+      "de": "Von welchen der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "de-ch": "Von welchen der folgenden Mobilitätslösungen haben Sie schon einmal gehört?",
+      "de-at": "Von welchen der folgenden Mobilitätslösungen/Mobilitätsangebote haben Sie schon einmal gehört?",
       "sl": "Za katere od naslednjih storitev mobilnosti ste že slišali?",
       "fr": "Desquelles de ces solutions de mobilité avez vous entendu parler?"
      },
@@ -3401,7 +3405,7 @@ export const surveyModel = {
        "value": "2",
        "text": {
         "default": "Car pooling",
-        "de": "Car-pooling",
+        "de": "Car-pooling/Fahrgemeinschaften",
         "de-at": "Car-pooling",
         "de-ch": "Car-pooling",
         "sl": "Souporaba avtomobila (car pooling)",
@@ -3790,7 +3794,7 @@ export const surveyModel = {
      "title": {
       "default": "How often do you have access to a car?",
       "it": "Con quale frequenza puoi accedere a un'auto?",
-      "de": "Wie oft steht Ihnen ein Auto zu Verfügung?",
+      "de": "Wie oft steht Ihnen ein Auto zur Verfügung?",
       "de-at": "Verfügbarkeit eines Autos",
       "de-ch": "Verfügbarkeit eines Autos",
       "sl": "Kako pogosto lahko dostopate do avtomobila?",
@@ -4666,7 +4670,10 @@ export const surveyModel = {
      },
      "description": {
       "default": "(Only one answer is possible)",
-      "it": "(È possibile una sola risposta)",
+      "de": "(nur eine Nennung möglich)",
+      "it": "(è possibile una sola risposta)",
+      "de-at": "(nur eine Nennung möglich)",
+      "de-ch": "(nur eine Nennung möglich)",
       "fr": "Une seule réponse possible"
      },
      "choices": [
@@ -7017,7 +7024,7 @@ export const surveyModel = {
      "title": {
       "default": "What is your highest level of education?",
       "it": "Qual è il tuo titolo di studio?",
-      "de": "Was ist Ihr höchster Hauptschulabschluss?",
+      "de": "Was ist Ihr höchster Schulabschluss?",
       "de-at": "Was ist Ihr höchster Hauptschulabschluss?",
       "de-ch": "Was ist Ihr höchster Hauptschulabschluss?",
       "sl": "Vaša najvišja dokončana stopnja izobrazbe",
