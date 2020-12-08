@@ -7220,6 +7220,19 @@ export const surveyModel = {
        }
       },
       {
+       "value": 7,
+       "text": {
+        "default": "Self Employed",
+        "it": "Lavoratore indipendente",
+        "de": "Selbstständige/r",
+        "de-at": "Selbstständige/r",
+        "de-ch": "Selbstständige/r",
+        "sl": "Samozaposleni",
+        "fr": "Indépendant / Auto-entrepreneur"
+       },
+       "visibleIf": "((!{source}) or {source} == 'de') and {QF1} == 'de'"
+      },
+      {
        "value": "6",
        "text": {
         "default": "Other",
@@ -7271,7 +7284,8 @@ export const surveyModel = {
         "de-ch": "Selbstständige/r",
         "sl": "Samozaposleni",
         "fr": "Indépendant / Auto-entrepreneur"
-       }
+       },
+       "visibleIf": "((!{source}) or {source} != 'de') and {QF1} != 'de'"
       },
       {
        "value": "2",
