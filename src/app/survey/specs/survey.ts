@@ -3527,7 +3527,7 @@ export const surveyModel = {
        "value": "2",
        "text": {
         "default": "Car pooling",
-        "de": "Car-pooling",
+        "de": "Car-pooling/Fahrgemeinschaften",
         "de-at": "Car-pooling",
         "de-ch": "Car-pooling",
         "sl": "Souporaba avtomobila (car pooling)",
@@ -7172,6 +7172,15 @@ export const surveyModel = {
        }
       },
       {
+       "value": 7,
+       "text": {
+        "default": "Self-employed",
+        "it": "Alunno/a (scuola superiore)",
+        "de": "Selbstständige/r"
+       },
+       "visibleIf": "((!{source}) or {source} == 'de') and {QF1} == 'de'"
+      },
+      {
        "value": "2",
        "text": {
         "default": "Unemployed",
@@ -7218,19 +7227,6 @@ export const surveyModel = {
         "sl": "Dijak",
         "fr": "Ecolier"
        }
-      },
-      {
-       "value": 7,
-       "text": {
-        "default": "Self Employed",
-        "it": "Lavoratore indipendente",
-        "de": "Selbstständige/r",
-        "de-at": "Selbstständige/r",
-        "de-ch": "Selbstständige/r",
-        "sl": "Samozaposleni",
-        "fr": "Indépendant / Auto-entrepreneur"
-       },
-       "visibleIf": "((!{source}) or {source} == 'de') and {QF1} == 'de'"
       },
       {
        "value": "6",
@@ -7292,7 +7288,7 @@ export const surveyModel = {
        "text": {
         "default": "Employee",
         "it": "Lavoratore dipendente",
-        "de": "Angestellte/r",
+        "de": "Angestellte/r öffentlicher Dienst",
         "de-at": "Angestellte/r",
         "de-ch": "Angestellte/r",
         "sl": "Zaposleni",
