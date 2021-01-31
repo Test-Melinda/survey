@@ -484,8 +484,8 @@ export class AppComponent implements OnInit {
 		        console.log("Score (valid?)", this.score, this.scoreValid);
 
 				// Add the score to the responses
-				responseData[environment.limesurvey.metaQuestions.score.precovid] = this.score.precovid;
-				responseData[environment.limesurvey.metaQuestions.score.postcovid] = this.score.postcovid;
+				responseData[environment.limesurvey.metaQuestions.score.precovid] = this.score.precovid.value;
+				responseData[environment.limesurvey.metaQuestions.score.postcovid] = this.score.postcovid.value;
 				
 				// Add the source channel to the responses
 				if (this.channel){
